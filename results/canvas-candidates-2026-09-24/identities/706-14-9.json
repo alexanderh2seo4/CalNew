@@ -1,0 +1,14 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 12813,
+        "ConnectivitySMILES": "CCCCCCC1CCC(=O)O1",
+        "IUPACName": "5-hexyloxolan-2-one",
+        "InChIKey": "IFYYFLINQYPWGJ-UHFFFAOYSA-N",
+        "MolecularFormula": "C10H18O2",
+        "SMILES": "CCCCCCC1CCC(=O)O1"
+      }
+    ]
+  }
+}

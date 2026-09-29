@@ -1,0 +1,1358 @@
+{
+  "branch_errors": {},
+  "candidates": [
+    {
+      "candidate_type": "known_reference_structure",
+      "cas": "28940-11-6",
+      "cid": 120101,
+      "identity_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/28940-11-6/property/SMILES,ConnectivitySMILES,InChIKey,IUPACName,MolecularFormula/JSON",
+      "iupac": "7-methyl-1,5-benzodioxepin-3-one",
+      "material_note": "A resolved structure is not verification of an obtainable batch or isomer composition.",
+      "molecule_id": "SWUIQEBPZIHZQS-UHFFFAOYSA-N",
+      "name": "Calone",
+      "novelty": "Known compound; no novelty claim",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/120101",
+      "smiles": "CC1=CC2=C(C=C1)OCC(=O)CO2",
+      "stereochemistry": "achiral",
+      "structure": {
+        "bertz_complexity": 344.02313678649665,
+        "heavy_atoms": 13,
+        "molecular_weight": 178.18699999999995,
+        "rdkit_logp": 1.3353199999999998,
+        "rings": 2,
+        "rotatable_bonds": 0
+      },
+      "threshold": {
+        "estimates": {
+          "air_detection_threshold": 0.3241835832595825
+        },
+        "expert_disagreement": 0.7473258273682757,
+        "expert_predictions": {
+          "chemprop": {
+            "air_detection_threshold": 1.2058589354039135
+          },
+          "descriptor_linear": {
+            "air_detection_threshold": 0.3241835832595825
+          },
+          "fingerprint_rf": {
+            "air_detection_threshold": 1.7889511460398038
+          },
+          "fingerprint_xgb": {
+            "air_detection_threshold": 1.349246859550476
+          },
+          "molformer": {
+            "air_detection_threshold": 1.598128080368042
+          },
+          "stereo_dmpnn": {
+            "air_detection_threshold": 1.1478972434997559
+          },
+          "tanimoto_gp": {
+            "air_detection_threshold": 1.4954824239989764
+          },
+          "unimol2": {
+            "air_detection_threshold": -0.6155886650085449
+          }
+        },
+        "interval90_ppbv": [
+          0.039131720171077085,
+          113.72036037255184
+        ],
+        "log10_ppbv": 0.3241835832595825,
+        "model_version": "86da4f52aacab3a12a112ce53fd1fb2fcbdf1024d41ed5c7d0129d7ea08576a3",
+        "partition": "outside_endpoint_dataset",
+        "ppbv": 2.1095196893730908,
+        "selected": "descriptor_linear",
+        "training_similarity": 0.3103448275862069,
+        "unavailable_experts": []
+      }
+    },
+    {
+      "candidate_type": "known_reference_structure",
+      "cas": "1205-17-0",
+      "cid": 64805,
+      "identity_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/1205-17-0/property/SMILES,ConnectivitySMILES,InChIKey,IUPACName,MolecularFormula/JSON",
+      "iupac": "3-(1,3-benzodioxol-5-yl)-2-methylpropanal",
+      "material_note": "A resolved structure is not verification of an obtainable batch or isomer composition.",
+      "molecule_id": "BOPPSUHPZARXTH-UHFFFAOYSA-N",
+      "name": "Helional",
+      "novelty": "Known compound; no novelty claim",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/64805",
+      "smiles": "CC(CC1=CC2=C(C=C1)OCO2)C=O",
+      "stereochemistry": "unspecified",
+      "structure": {
+        "bertz_complexity": 346.38592250333227,
+        "heavy_atoms": 14,
+        "molecular_weight": 192.21399999999994,
+        "rdkit_logp": 1.7928,
+        "rings": 2,
+        "rotatable_bonds": 3
+      },
+      "threshold": {
+        "estimates": {
+          "air_detection_threshold": -2.27520751953125
+        },
+        "expert_disagreement": 1.6457794573232094,
+        "expert_predictions": {
+          "chemprop": {
+            "air_detection_threshold": 1.208838930074901
+          },
+          "descriptor_linear": {
+            "air_detection_threshold": -2.27520751953125
+          },
+          "fingerprint_rf": {
+            "air_detection_threshold": 1.459190345244642
+          },
+          "fingerprint_xgb": {
+            "air_detection_threshold": 0.5768982768058777
+          },
+          "molformer": {
+            "air_detection_threshold": 0.8920756578445435
+          },
+          "stereo_dmpnn": {
+            "air_detection_threshold": 0.9376523494720459
+          },
+          "tanimoto_gp": {
+            "air_detection_threshold": 1.0503060896281267
+          },
+          "unimol2": {
+            "air_detection_threshold": -3.13907790184021
+          }
+        },
+        "interval90_ppbv": [
+          9.843234609377616e-05,
+          0.28605340683115354
+        ],
+        "log10_ppbv": -2.27520751953125,
+        "model_version": "86da4f52aacab3a12a112ce53fd1fb2fcbdf1024d41ed5c7d0129d7ea08576a3",
+        "partition": "outside_endpoint_dataset",
+        "ppbv": 0.005306308315816926,
+        "selected": "descriptor_linear",
+        "training_similarity": 0.21212121212121213,
+        "unavailable_experts": []
+      }
+    },
+    {
+      "candidate_type": "known_reference_structure",
+      "cas": "67634-15-5",
+      "cid": 105513,
+      "identity_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/67634-15-5/property/SMILES,ConnectivitySMILES,InChIKey,IUPACName,MolecularFormula/JSON",
+      "iupac": "3-(4-ethylphenyl)-2,2-dimethylpropanal",
+      "material_note": "A resolved structure is not verification of an obtainable batch or isomer composition.",
+      "molecule_id": "JFTSYAALCNQOKO-UHFFFAOYSA-N",
+      "name": "Floralozone",
+      "novelty": "Known compound; no novelty claim",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/105513",
+      "smiles": "CCC1=CC=C(C=C1)CC(C)(C)C=O",
+      "stereochemistry": "achiral",
+      "structure": {
+        "bertz_complexity": 295.5165310232545,
+        "heavy_atoms": 14,
+        "molecular_weight": 190.28599999999997,
+        "rdkit_logp": 3.0166000000000013,
+        "rings": 1,
+        "rotatable_bonds": 4
+      },
+      "threshold": {
+        "estimates": {
+          "air_detection_threshold": -1.5371432304382324
+        },
+        "expert_disagreement": 0.9243783015266142,
+        "expert_predictions": {
+          "chemprop": {
+            "air_detection_threshold": 1.4053030149541041
+          },
+          "descriptor_linear": {
+            "air_detection_threshold": -1.5371432304382324
+          },
+          "fingerprint_rf": {
+            "air_detection_threshold": 1.288996807486418
+          },
+          "fingerprint_xgb": {
+            "air_detection_threshold": 0.7624462842941284
+          },
+          "molformer": {
+            "air_detection_threshold": 1.3255623579025269
+          },
+          "stereo_dmpnn": {
+            "air_detection_threshold": 1.4360520839691162
+          },
+          "tanimoto_gp": {
+            "air_detection_threshold": 0.984534744529683
+          },
+          "unimol2": {
+            "air_detection_threshold": 1.0541789531707764
+          }
+        },
+        "interval90_ppbv": [
+          0.0005385203576487385,
+          1.5649894477430644
+        ],
+        "log10_ppbv": -1.5371432304382324,
+        "model_version": "86da4f52aacab3a12a112ce53fd1fb2fcbdf1024d41ed5c7d0129d7ea08576a3",
+        "partition": "outside_endpoint_dataset",
+        "ppbv": 0.02903065064918623,
+        "selected": "descriptor_linear",
+        "training_similarity": 0.4782608695652174,
+        "unavailable_experts": []
+      }
+    },
+    {
+      "candidate_type": "known_reference_structure",
+      "cas": "106-72-9",
+      "cid": 61016,
+      "identity_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/106-72-9/property/SMILES,ConnectivitySMILES,InChIKey,IUPACName,MolecularFormula/JSON",
+      "iupac": "2,6-dimethylhept-5-enal",
+      "material_note": "A resolved structure is not verification of an obtainable batch or isomer composition.",
+      "molecule_id": "YGFGZTXGYTUXBA-UHFFFAOYSA-N",
+      "name": "Melonal",
+      "novelty": "Known compound; no novelty claim",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/61016",
+      "smiles": "CC(CCC=C(C)C)C=O",
+      "stereochemistry": "unspecified",
+      "structure": {
+        "bertz_complexity": 120.68995593589281,
+        "heavy_atoms": 10,
+        "molecular_weight": 140.22599999999997,
+        "rdkit_logp": 2.567800000000001,
+        "rings": 0,
+        "rotatable_bonds": 4
+      },
+      "threshold": {
+        "estimates": {
+          "air_detection_threshold": 0.3125650882720947
+        },
+        "expert_disagreement": 1.176233618007414,
+        "expert_predictions": {
+          "chemprop": {
+            "air_detection_threshold": 1.6641521824322663
+          },
+          "descriptor_linear": {
+            "air_detection_threshold": 0.3125650882720947
+          },
+          "fingerprint_rf": {
+            "air_detection_threshold": 1.664600295624287
+          },
+          "fingerprint_xgb": {
+            "air_detection_threshold": 1.516106367111206
+          },
+          "molformer": {
+            "air_detection_threshold": 2.9353485107421875
+          },
+          "stereo_dmpnn": {
+            "air_detection_threshold": 1.8090825080871582
+          },
+          "tanimoto_gp": {
+            "air_detection_threshold": 1.439797611701923
+          },
+          "unimol2": {
+            "air_detection_threshold": -1.3163740634918213
+          }
+        },
+        "interval90_ppbv": [
+          0.03809872520211657,
+          110.71838244723567
+        ],
+        "log10_ppbv": 0.3125650882720947,
+        "model_version": "86da4f52aacab3a12a112ce53fd1fb2fcbdf1024d41ed5c7d0129d7ea08576a3",
+        "partition": "outside_endpoint_dataset",
+        "ppbv": 2.0538328139554296,
+        "selected": "descriptor_linear",
+        "training_similarity": 0.30434782608695654,
+        "unavailable_experts": []
+      }
+    },
+    {
+      "candidate_type": "known_reference_structure",
+      "cas": "103-95-7",
+      "cid": 517827,
+      "identity_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/103-95-7/property/SMILES,ConnectivitySMILES,InChIKey,IUPACName,MolecularFormula/JSON",
+      "iupac": "2-methyl-3-(4-propan-2-ylphenyl)propanal",
+      "material_note": "A resolved structure is not verification of an obtainable batch or isomer composition.",
+      "molecule_id": "ZFNVDHOSLNRHNN-UHFFFAOYSA-N",
+      "name": "Cyclamen aldehyde",
+      "novelty": "Known compound; no novelty claim",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/517827",
+      "smiles": "CC(C)C1=CC=C(C=C1)CC(C)C=O",
+      "stereochemistry": "unspecified",
+      "structure": {
+        "bertz_complexity": 284.6088020325841,
+        "heavy_atoms": 14,
+        "molecular_weight": 190.28599999999994,
+        "rdkit_logp": 3.1875000000000018,
+        "rings": 1,
+        "rotatable_bonds": 4
+      },
+      "threshold": {
+        "estimates": {
+          "air_detection_threshold": -0.5379354953765869
+        },
+        "expert_disagreement": 0.7763580537832084,
+        "expert_predictions": {
+          "chemprop": {
+            "air_detection_threshold": 1.3796632098377435
+          },
+          "descriptor_linear": {
+            "air_detection_threshold": -0.5379354953765869
+          },
+          "fingerprint_rf": {
+            "air_detection_threshold": 1.4225679840898446
+          },
+          "fingerprint_xgb": {
+            "air_detection_threshold": 0.5801905989646912
+          },
+          "molformer": {
+            "air_detection_threshold": 2.189018726348877
+          },
+          "stereo_dmpnn": {
+            "air_detection_threshold": 1.414232611656189
+          },
+          "tanimoto_gp": {
+            "air_detection_threshold": 1.0327565044304596
+          },
+          "unimol2": {
+            "air_detection_threshold": 0.3889646530151367
+          }
+        },
+        "interval90_ppbv": [
+          0.005375388534118515,
+          15.621371065978751
+        ],
+        "log10_ppbv": -0.5379354953765869,
+        "model_version": "86da4f52aacab3a12a112ce53fd1fb2fcbdf1024d41ed5c7d0129d7ea08576a3",
+        "partition": "outside_endpoint_dataset",
+        "ppbv": 0.28977739545256614,
+        "selected": "descriptor_linear",
+        "training_similarity": 0.39285714285714285,
+        "unavailable_experts": []
+      }
+    },
+    {
+      "candidate_type": "known_reference_structure",
+      "cas": "18479-58-8",
+      "cid": 29096,
+      "identity_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/18479-58-8/property/SMILES,ConnectivitySMILES,InChIKey,IUPACName,MolecularFormula/JSON",
+      "iupac": "2,6-dimethyloct-7-en-2-ol",
+      "material_note": "A resolved structure is not verification of an obtainable batch or isomer composition.",
+      "molecule_id": "XSNQECSCDATQEL-UHFFFAOYSA-N",
+      "name": "Dihydromyrcenol",
+      "novelty": "Known compound; no novelty claim",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/29096",
+      "smiles": "CC(CCCC(C)(C)O)C=C",
+      "stereochemistry": "unspecified",
+      "structure": {
+        "bertz_complexity": 110.53140972006526,
+        "heavy_atoms": 11,
+        "molecular_weight": 156.269,
+        "rdkit_logp": 2.749700000000001,
+        "rings": 0,
+        "rotatable_bonds": 5
+      },
+      "threshold": {
+        "estimates": {
+          "air_detection_threshold": 1.50434410572052
+        },
+        "expert_disagreement": 0.6010802239083414,
+        "expert_predictions": {
+          "chemprop": {
+            "air_detection_threshold": 1.7882609140758936
+          },
+          "descriptor_linear": {
+            "air_detection_threshold": 1.50434410572052
+          },
+          "fingerprint_rf": {
+            "air_detection_threshold": 1.881162863633563
+          },
+          "fingerprint_xgb": {
+            "air_detection_threshold": 3.150642156600952
+          },
+          "molformer": {
+            "air_detection_threshold": 3.2627551555633545
+          },
+          "stereo_dmpnn": {
+            "air_detection_threshold": 2.0205066204071045
+          },
+          "tanimoto_gp": {
+            "air_detection_threshold": 1.9342404186001216
+          },
+          "unimol2": {
+            "air_detection_threshold": 2.171072483062744
+          }
+        },
+        "interval90_ppbv": [
+          0.5925015102971032,
+          1721.8636179982989
+        ],
+        "log10_ppbv": 1.50434410572052,
+        "model_version": "86da4f52aacab3a12a112ce53fd1fb2fcbdf1024d41ed5c7d0129d7ea08576a3",
+        "partition": "outside_endpoint_dataset",
+        "ppbv": 31.940676169887613,
+        "selected": "descriptor_linear",
+        "training_similarity": 0.2857142857142857,
+        "unavailable_experts": []
+      }
+    },
+    {
+      "candidate_type": "known_reference_structure",
+      "cas": "122-78-1",
+      "cid": 998,
+      "identity_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/122-78-1/property/SMILES,ConnectivitySMILES,InChIKey,IUPACName,MolecularFormula/JSON",
+      "iupac": "2-phenylacetaldehyde",
+      "material_note": "A resolved structure is not verification of an obtainable batch or isomer composition.",
+      "molecule_id": "DTUQWGWMVIHBKE-UHFFFAOYSA-N",
+      "name": "Phenylacetaldehyde",
+      "novelty": "Known compound; no novelty claim",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/998",
+      "smiles": "C1=CC=C(C=C1)CC=O",
+      "stereochemistry": "achiral",
+      "structure": {
+        "bertz_complexity": 179.01894049376423,
+        "heavy_atoms": 9,
+        "molecular_weight": 120.15099999999997,
+        "rdkit_logp": 1.428,
+        "rings": 1,
+        "rotatable_bonds": 2
+      },
+      "threshold": {
+        "estimates": {
+          "air_detection_threshold": -0.9253509044647217
+        },
+        "expert_disagreement": 0.8884044468489525,
+        "expert_predictions": {
+          "chemprop": {
+            "air_detection_threshold": 1.24241082603784
+          },
+          "descriptor_linear": {
+            "air_detection_threshold": -0.9253509044647217
+          },
+          "fingerprint_rf": {
+            "air_detection_threshold": 1.5591961035323714
+          },
+          "fingerprint_xgb": {
+            "air_detection_threshold": 1.6007009744644165
+          },
+          "molformer": {
+            "air_detection_threshold": 0.885306715965271
+          },
+          "stereo_dmpnn": {
+            "air_detection_threshold": 1.4886388778686523
+          },
+          "tanimoto_gp": {
+            "air_detection_threshold": 1.359658490652409
+          },
+          "unimol2": {
+            "air_detection_threshold": -0.2791728973388672
+          }
+        },
+        "interval90_ppbv": [
+          0.002202898318995393,
+          6.401824136660472
+        ],
+        "log10_ppbv": -0.9253509044647217,
+        "model_version": "86da4f52aacab3a12a112ce53fd1fb2fcbdf1024d41ed5c7d0129d7ea08576a3",
+        "partition": "outside_endpoint_dataset",
+        "ppbv": 0.11875423204734005,
+        "selected": "descriptor_linear",
+        "training_similarity": 0.42857142857142855,
+        "unavailable_experts": []
+      }
+    },
+    {
+      "candidate_type": "known_reference_structure",
+      "cas": "60-12-8",
+      "cid": 6054,
+      "identity_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/60-12-8/property/SMILES,ConnectivitySMILES,InChIKey,IUPACName,MolecularFormula/JSON",
+      "iupac": "2-phenylethanol",
+      "material_note": "A resolved structure is not verification of an obtainable batch or isomer composition.",
+      "molecule_id": "WRMNZCZEMHIOCP-UHFFFAOYSA-N",
+      "name": "2-Phenylethanol",
+      "novelty": "Known compound; no novelty claim",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/6054",
+      "smiles": "C1=CC=C(C=C1)CCO",
+      "stereochemistry": "achiral",
+      "structure": {
+        "bertz_complexity": 157.4784207656209,
+        "heavy_atoms": 9,
+        "molecular_weight": 122.16699999999997,
+        "rdkit_logp": 1.2214,
+        "rings": 1,
+        "rotatable_bonds": 2
+      },
+      "threshold": {
+        "estimates": {
+          "air_detection_threshold": 0.778313934803009
+        },
+        "expert_disagreement": 0.4290418078230326,
+        "expert_predictions": {
+          "chemprop": {
+            "air_detection_threshold": 1.2862588098831906
+          },
+          "descriptor_linear": {
+            "air_detection_threshold": 0.778313934803009
+          },
+          "fingerprint_rf": {
+            "air_detection_threshold": 1.7318802405128289
+          },
+          "fingerprint_xgb": {
+            "air_detection_threshold": 1.9359142780303955
+          },
+          "molformer": {
+            "air_detection_threshold": 0.7878915667533875
+          },
+          "stereo_dmpnn": {
+            "air_detection_threshold": 1.5631235837936401
+          },
+          "tanimoto_gp": {
+            "air_detection_threshold": 1.0344128813447475
+          },
+          "unimol2": {
+            "air_detection_threshold": 0.8157075643539429
+          }
+        },
+        "interval90_ppbv": [
+          0.11134206990296208,
+          323.57024579127244
+        ],
+        "log10_ppbv": 0.778313934803009,
+        "model_version": "86da4f52aacab3a12a112ce53fd1fb2fcbdf1024d41ed5c7d0129d7ea08576a3",
+        "partition": "development_group",
+        "ppbv": 6.002247989329538,
+        "selected": "descriptor_linear",
+        "training_similarity": 1.0,
+        "unavailable_experts": []
+      }
+    },
+    {
+      "candidate_type": "known_reference_structure",
+      "cas": "140-11-4",
+      "cid": 8785,
+      "identity_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/140-11-4/property/SMILES,ConnectivitySMILES,InChIKey,IUPACName,MolecularFormula/JSON",
+      "iupac": "benzyl acetate",
+      "material_note": "A resolved structure is not verification of an obtainable batch or isomer composition.",
+      "molecule_id": "QUKGYYKBILRGFE-UHFFFAOYSA-N",
+      "name": "Benzyl acetate",
+      "novelty": "Known compound; no novelty claim",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/8785",
+      "smiles": "CC(=O)OCC1=CC=CC=C1",
+      "stereochemistry": "achiral",
+      "structure": {
+        "bertz_complexity": 228.57786591623355,
+        "heavy_atoms": 11,
+        "molecular_weight": 150.177,
+        "rdkit_logp": 1.7496999999999998,
+        "rings": 1,
+        "rotatable_bonds": 2
+      },
+      "threshold": {
+        "estimates": {
+          "air_detection_threshold": 0.2632347345352173
+        },
+        "expert_disagreement": 0.47561627430732256,
+        "expert_predictions": {
+          "chemprop": {
+            "air_detection_threshold": 1.2425176111733518
+          },
+          "descriptor_linear": {
+            "air_detection_threshold": 0.2632347345352173
+          },
+          "fingerprint_rf": {
+            "air_detection_threshold": 1.5219754183752003
+          },
+          "fingerprint_xgb": {
+            "air_detection_threshold": 1.9493577480316162
+          },
+          "molformer": {
+            "air_detection_threshold": 1.5932059288024902
+          },
+          "stereo_dmpnn": {
+            "air_detection_threshold": 1.1904728412628174
+          },
+          "tanimoto_gp": {
+            "air_detection_threshold": 1.2950353134575567
+          },
+          "unimol2": {
+            "air_detection_threshold": 1.7250956296920776
+          }
+        },
+        "interval90_ppbv": [
+          0.03400792158130519,
+          98.8301327117729
+        ],
+        "log10_ppbv": 0.2632347345352173,
+        "model_version": "86da4f52aacab3a12a112ce53fd1fb2fcbdf1024d41ed5c7d0129d7ea08576a3",
+        "partition": "outside_endpoint_dataset",
+        "ppbv": 1.8333050491208378,
+        "selected": "descriptor_linear",
+        "training_similarity": 0.4074074074074074,
+        "unavailable_experts": []
+      }
+    },
+    {
+      "candidate_type": "known_reference_structure",
+      "cas": "103-45-7",
+      "cid": 7654,
+      "identity_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/103-45-7/property/SMILES,ConnectivitySMILES,InChIKey,IUPACName,MolecularFormula/JSON",
+      "iupac": "2-phenylethyl acetate",
+      "material_note": "A resolved structure is not verification of an obtainable batch or isomer composition.",
+      "molecule_id": "MDHYEMXUFSJLGV-UHFFFAOYSA-N",
+      "name": "Phenethyl acetate",
+      "novelty": "Known compound; no novelty claim",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/7654",
+      "smiles": "CC(=O)OCCC1=CC=CC=C1",
+      "stereochemistry": "achiral",
+      "structure": {
+        "bertz_complexity": 241.27530899395387,
+        "heavy_atoms": 12,
+        "molecular_weight": 164.204,
+        "rdkit_logp": 1.7922,
+        "rings": 1,
+        "rotatable_bonds": 3
+      },
+      "threshold": {
+        "estimates": {
+          "air_detection_threshold": 0.6061183214187622
+        },
+        "expert_disagreement": 0.40871037868838445,
+        "expert_predictions": {
+          "chemprop": {
+            "air_detection_threshold": 1.2926777830289669
+          },
+          "descriptor_linear": {
+            "air_detection_threshold": 0.6061183214187622
+          },
+          "fingerprint_rf": {
+            "air_detection_threshold": 1.776540945326038
+          },
+          "fingerprint_xgb": {
+            "air_detection_threshold": 1.9493577480316162
+          },
+          "molformer": {
+            "air_detection_threshold": 1.4294486045837402
+          },
+          "stereo_dmpnn": {
+            "air_detection_threshold": 1.2902052402496338
+          },
+          "tanimoto_gp": {
+            "air_detection_threshold": 1.5275074712399306
+          },
+          "unimol2": {
+            "air_detection_threshold": 1.9146091938018799
+          }
+        },
+        "interval90_ppbv": [
+          0.07489687152464967,
+          217.65716363409848
+        ],
+        "log10_ppbv": 0.6061183214187622,
+        "model_version": "86da4f52aacab3a12a112ce53fd1fb2fcbdf1024d41ed5c7d0129d7ea08576a3",
+        "partition": "outside_endpoint_dataset",
+        "ppbv": 4.037553791731168,
+        "selected": "descriptor_linear",
+        "training_similarity": 0.5416666666666666,
+        "unavailable_experts": []
+      }
+    },
+    {
+      "candidate_type": "known_reference_structure",
+      "cas": "928-96-1",
+      "cid": 5281167,
+      "identity_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/928-96-1/property/SMILES,ConnectivitySMILES,InChIKey,IUPACName,MolecularFormula/JSON",
+      "iupac": "(Z)-hex-3-en-1-ol",
+      "material_note": "A resolved structure is not verification of an obtainable batch or isomer composition.",
+      "molecule_id": "UFLHIIWVXFIJGU-ARJAWSKDSA-N",
+      "name": "cis-3-Hexen-1-ol",
+      "novelty": "Known compound; no novelty claim",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/5281167",
+      "smiles": "CC/C=C\\CCO",
+      "stereochemistry": "specified",
+      "structure": {
+        "bertz_complexity": 48.14170945007629,
+        "heavy_atoms": 7,
+        "molecular_weight": 100.161,
+        "rdkit_logp": 1.335,
+        "rings": 0,
+        "rotatable_bonds": 3
+      },
+      "threshold": {
+        "estimates": {
+          "air_detection_threshold": 1.7615011930465698
+        },
+        "expert_disagreement": 0.38186433966456534,
+        "expert_predictions": {
+          "chemprop": {
+            "air_detection_threshold": 1.5855778847286666
+          },
+          "descriptor_linear": {
+            "air_detection_threshold": 1.7615011930465698
+          },
+          "fingerprint_rf": {
+            "air_detection_threshold": 1.6756287576259936
+          },
+          "fingerprint_xgb": {
+            "air_detection_threshold": 2.023756980895996
+          },
+          "molformer": {
+            "air_detection_threshold": 1.764191746711731
+          },
+          "stereo_dmpnn": {
+            "air_detection_threshold": 1.844539761543274
+          },
+          "tanimoto_gp": {
+            "air_detection_threshold": 1.4702277491787925
+          },
+          "unimol2": {
+            "air_detection_threshold": 0.6772952079772949
+          }
+        },
+        "interval90_ppbv": [
+          1.0711407680145058,
+          3112.8331086854123
+        ],
+        "log10_ppbv": 1.7615011930465698,
+        "model_version": "86da4f52aacab3a12a112ce53fd1fb2fcbdf1024d41ed5c7d0129d7ea08576a3",
+        "partition": "outside_endpoint_dataset",
+        "ppbv": 57.743245897146046,
+        "selected": "descriptor_linear",
+        "training_similarity": 0.35294117647058826,
+        "unavailable_experts": []
+      }
+    },
+    {
+      "candidate_type": "known_reference_structure",
+      "cas": "3681-71-8",
+      "cid": 5363388,
+      "identity_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/3681-71-8/property/SMILES,ConnectivitySMILES,InChIKey,IUPACName,MolecularFormula/JSON",
+      "iupac": "[(Z)-hex-3-enyl] acetate",
+      "material_note": "A resolved structure is not verification of an obtainable batch or isomer composition.",
+      "molecule_id": "NPFVOOAXDOBMCE-PLNGDYQASA-N",
+      "name": "cis-3-Hexenyl acetate",
+      "novelty": "Known compound; no novelty claim",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/5363388",
+      "smiles": "CC/C=C\\CCOC(=O)C",
+      "stereochemistry": "specified",
+      "structure": {
+        "bertz_complexity": 116.42599881712918,
+        "heavy_atoms": 10,
+        "molecular_weight": 142.198,
+        "rdkit_logp": 1.9058,
+        "rings": 0,
+        "rotatable_bonds": 4
+      },
+      "threshold": {
+        "estimates": {
+          "air_detection_threshold": 2.034416437149048
+        },
+        "expert_disagreement": 0.75114586923028,
+        "expert_predictions": {
+          "chemprop": {
+            "air_detection_threshold": 1.5034392579490123
+          },
+          "descriptor_linear": {
+            "air_detection_threshold": 2.034416437149048
+          },
+          "fingerprint_rf": {
+            "air_detection_threshold": 1.7603609426081588
+          },
+          "fingerprint_xgb": {
+            "air_detection_threshold": 2.087238073348999
+          },
+          "molformer": {
+            "air_detection_threshold": 3.248932123184204
+          },
+          "stereo_dmpnn": {
+            "air_detection_threshold": 1.4429751634597778
+          },
+          "tanimoto_gp": {
+            "air_detection_threshold": 1.7564440728996165
+          },
+          "unimol2": {
+            "air_detection_threshold": 0.36363470554351807
+          }
+        },
+        "interval90_ppbv": [
+          2.007991144287711,
+          5835.406047957693
+        ],
+        "log10_ppbv": 2.034416437149048,
+        "model_version": "86da4f52aacab3a12a112ce53fd1fb2fcbdf1024d41ed5c7d0129d7ea08576a3",
+        "partition": "outside_endpoint_dataset",
+        "ppbv": 108.24714161409528,
+        "selected": "descriptor_linear",
+        "training_similarity": 0.5217391304347826,
+        "unavailable_experts": []
+      }
+    },
+    {
+      "candidate_type": "known_reference_structure",
+      "cas": "706-14-9",
+      "cid": 12813,
+      "identity_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/706-14-9/property/SMILES,ConnectivitySMILES,InChIKey,IUPACName,MolecularFormula/JSON",
+      "iupac": "5-hexyloxolan-2-one",
+      "material_note": "A resolved structure is not verification of an obtainable batch or isomer composition.",
+      "molecule_id": "IFYYFLINQYPWGJ-UHFFFAOYSA-N",
+      "name": "gamma-Decalactone",
+      "novelty": "Known compound; no novelty claim",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/12813",
+      "smiles": "CCCCCCC1CCC(=O)O1",
+      "stereochemistry": "unspecified",
+      "structure": {
+        "bertz_complexity": 142.77400566229178,
+        "heavy_atoms": 12,
+        "molecular_weight": 170.25199999999998,
+        "rdkit_logp": 2.6624000000000008,
+        "rings": 1,
+        "rotatable_bonds": 5
+      },
+      "threshold": {
+        "estimates": {
+          "air_detection_threshold": 1.5627902746200562
+        },
+        "expert_disagreement": 0.40043024949173334,
+        "expert_predictions": {
+          "chemprop": {
+            "air_detection_threshold": 1.781358042939561
+          },
+          "descriptor_linear": {
+            "air_detection_threshold": 1.5627902746200562
+          },
+          "fingerprint_rf": {
+            "air_detection_threshold": 1.8763803517159596
+          },
+          "fingerprint_xgb": {
+            "air_detection_threshold": 1.5316829681396484
+          },
+          "molformer": {
+            "air_detection_threshold": 1.2953405380249023
+          },
+          "stereo_dmpnn": {
+            "air_detection_threshold": 1.8565168380737305
+          },
+          "tanimoto_gp": {
+            "air_detection_threshold": 1.7632808171576355
+          },
+          "unimol2": {
+            "air_detection_threshold": 2.7429213523864746
+          }
+        },
+        "interval90_ppbv": [
+          0.6778531687907409,
+          1969.9033494452565
+        ],
+        "log10_ppbv": 1.5627902746200562,
+        "model_version": "86da4f52aacab3a12a112ce53fd1fb2fcbdf1024d41ed5c7d0129d7ea08576a3",
+        "partition": "outside_endpoint_dataset",
+        "ppbv": 36.54182846592328,
+        "selected": "descriptor_linear",
+        "training_similarity": 0.2962962962962963,
+        "unavailable_experts": []
+      }
+    },
+    {
+      "candidate_type": "known_reference_structure",
+      "cas": "705-86-2",
+      "cid": 12810,
+      "identity_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/705-86-2/property/SMILES,ConnectivitySMILES,InChIKey,IUPACName,MolecularFormula/JSON",
+      "iupac": "6-pentyloxan-2-one",
+      "material_note": "A resolved structure is not verification of an obtainable batch or isomer composition.",
+      "molecule_id": "GHBSPIPJMLAMEP-UHFFFAOYSA-N",
+      "name": "delta-Decalactone",
+      "novelty": "Known compound; no novelty claim",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/12810",
+      "smiles": "CCCCCC1CCCC(=O)O1",
+      "stereochemistry": "unspecified",
+      "structure": {
+        "bertz_complexity": 142.77400566229178,
+        "heavy_atoms": 12,
+        "molecular_weight": 170.25199999999998,
+        "rdkit_logp": 2.6624000000000008,
+        "rings": 1,
+        "rotatable_bonds": 4
+      },
+      "threshold": {
+        "estimates": {
+          "air_detection_threshold": 1.5367374420166016
+        },
+        "expert_disagreement": 0.38601058179990866,
+        "expert_predictions": {
+          "chemprop": {
+            "air_detection_threshold": 1.8054200707127888
+          },
+          "descriptor_linear": {
+            "air_detection_threshold": 1.5367374420166016
+          },
+          "fingerprint_rf": {
+            "air_detection_threshold": 1.8141427574468436
+          },
+          "fingerprint_xgb": {
+            "air_detection_threshold": 1.5316829681396484
+          },
+          "molformer": {
+            "air_detection_threshold": 1.1887909173965454
+          },
+          "stereo_dmpnn": {
+            "air_detection_threshold": 1.970088005065918
+          },
+          "tanimoto_gp": {
+            "air_detection_threshold": 1.8168366495598973
+          },
+          "unimol2": {
+            "air_detection_threshold": 2.606121063232422
+          }
+        },
+        "interval90_ppbv": [
+          0.6383851823734876,
+          1855.2057685843365
+        ],
+        "log10_ppbv": 1.5367374420166016,
+        "model_version": "86da4f52aacab3a12a112ce53fd1fb2fcbdf1024d41ed5c7d0129d7ea08576a3",
+        "partition": "outside_endpoint_dataset",
+        "ppbv": 34.4141812763003,
+        "selected": "descriptor_linear",
+        "training_similarity": 0.25,
+        "unavailable_experts": []
+      }
+    },
+    {
+      "candidate_type": "known_reference_structure",
+      "cas": "14901-07-6",
+      "cid": 26955,
+      "identity_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/14901-07-6/property/SMILES,ConnectivitySMILES,InChIKey,IUPACName,MolecularFormula/JSON",
+      "iupac": "4-(2,6,6-trimethylcyclohexen-1-yl)but-3-en-2-one",
+      "material_note": "A resolved structure is not verification of an obtainable batch or isomer composition.",
+      "molecule_id": "PSQYTAPXSHCGMF-UHFFFAOYSA-N",
+      "name": "beta-Ionone",
+      "novelty": "Known compound; no novelty claim",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/26955",
+      "smiles": "CC1=C(C(CCC1)(C)C)C=CC(=O)C",
+      "stereochemistry": "unspecified",
+      "structure": {
+        "bertz_complexity": 292.35742381695854,
+        "heavy_atoms": 14,
+        "molecular_weight": 192.302,
+        "rdkit_logp": 3.6582000000000026,
+        "rings": 1,
+        "rotatable_bonds": 2
+      },
+      "threshold": {
+        "estimates": {
+          "air_detection_threshold": 2.1878044605255127
+        },
+        "expert_disagreement": 0.40851126989451086,
+        "expert_predictions": {
+          "chemprop": {
+            "air_detection_threshold": 1.6621670669289343
+          },
+          "descriptor_linear": {
+            "air_detection_threshold": 2.1878044605255127
+          },
+          "fingerprint_rf": {
+            "air_detection_threshold": 1.921053658670378
+          },
+          "fingerprint_xgb": {
+            "air_detection_threshold": 1.9469695091247559
+          },
+          "molformer": {
+            "air_detection_threshold": 1.3815951347351074
+          },
+          "stereo_dmpnn": {
+            "air_detection_threshold": 1.651090145111084
+          },
+          "tanimoto_gp": {
+            "air_detection_threshold": 1.7841943866662584
+          },
+          "unimol2": {
+            "air_detection_threshold": 0.7583471536636353
+          }
+        },
+        "interval90_ppbv": [
+          2.858576482914992,
+          8307.284892368865
+        ],
+        "log10_ppbv": 2.1878044605255127,
+        "model_version": "86da4f52aacab3a12a112ce53fd1fb2fcbdf1024d41ed5c7d0129d7ea08576a3",
+        "partition": "outside_endpoint_dataset",
+        "ppbv": 154.10064643018418,
+        "selected": "descriptor_linear",
+        "training_similarity": 0.18181818181818182,
+        "unavailable_experts": []
+      }
+    },
+    {
+      "candidate_type": "known_reference_structure",
+      "cas": "127-41-3",
+      "cid": 5282108,
+      "identity_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/127-41-3/property/SMILES,ConnectivitySMILES,InChIKey,IUPACName,MolecularFormula/JSON",
+      "iupac": "(E)-4-(2,6,6-trimethylcyclohex-2-en-1-yl)but-3-en-2-one",
+      "material_note": "A resolved structure is not verification of an obtainable batch or isomer composition.",
+      "molecule_id": "UZFLPKAIBPNNCA-BQYQJAHWSA-N",
+      "name": "alpha-Ionone",
+      "novelty": "Known compound; no novelty claim",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/5282108",
+      "smiles": "CC1=CCCC(C1/C=C/C(=O)C)(C)C",
+      "stereochemistry": "unspecified",
+      "structure": {
+        "bertz_complexity": 281.61068830948335,
+        "heavy_atoms": 14,
+        "molecular_weight": 192.30199999999996,
+        "rdkit_logp": 3.5141000000000027,
+        "rings": 1,
+        "rotatable_bonds": 2
+      },
+      "threshold": {
+        "estimates": {
+          "air_detection_threshold": 2.4323880672454834
+        },
+        "expert_disagreement": 1.0041515983112832,
+        "expert_predictions": {
+          "chemprop": {
+            "air_detection_threshold": 1.75391780385858
+          },
+          "descriptor_linear": {
+            "air_detection_threshold": 2.4323880672454834
+          },
+          "fingerprint_rf": {
+            "air_detection_threshold": 1.9135114479107076
+          },
+          "fingerprint_xgb": {
+            "air_detection_threshold": 2.1257638931274414
+          },
+          "molformer": {
+            "air_detection_threshold": 3.1285250186920166
+          },
+          "stereo_dmpnn": {
+            "air_detection_threshold": 1.8745204210281372
+          },
+          "tanimoto_gp": {
+            "air_detection_threshold": 1.8451538518387682
+          },
+          "unimol2": {
+            "air_detection_threshold": 4.909621238708496
+          }
+        },
+        "interval90_ppbv": [
+          5.020343383736783,
+          14589.577363237826
+        ],
+        "log10_ppbv": 2.4323880672454834,
+        "model_version": "86da4f52aacab3a12a112ce53fd1fb2fcbdf1024d41ed5c7d0129d7ea08576a3",
+        "partition": "outside_endpoint_dataset",
+        "ppbv": 270.6375587146894,
+        "selected": "descriptor_linear",
+        "training_similarity": 0.20930232558139536,
+        "unavailable_experts": []
+      }
+    },
+    {
+      "candidate_type": "known_reference_structure",
+      "cas": "24851-98-7",
+      "cid": 102861,
+      "identity_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/24851-98-7/property/SMILES,ConnectivitySMILES,InChIKey,IUPACName,MolecularFormula/JSON",
+      "iupac": "methyl 2-(3-oxo-2-pentylcyclopentyl)acetate",
+      "material_note": "A resolved structure is not verification of an obtainable batch or isomer composition.",
+      "molecule_id": "KVWWIYGFBYDJQC-UHFFFAOYSA-N",
+      "name": "Methyl dihydrojasmonate",
+      "novelty": "Known compound; no novelty claim",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/102861",
+      "smiles": "CCCCCC1C(CCC1=O)CC(=O)OC",
+      "stereochemistry": "unspecified",
+      "structure": {
+        "bertz_complexity": 247.56226150533917,
+        "heavy_atoms": 16,
+        "molecular_weight": 226.31599999999995,
+        "rdkit_logp": 2.725100000000001,
+        "rings": 1,
+        "rotatable_bonds": 6
+      },
+      "threshold": {
+        "estimates": {
+          "air_detection_threshold": 2.3671317100524902
+        },
+        "expert_disagreement": 0.4678897527580023,
+        "expert_predictions": {
+          "chemprop": {
+            "air_detection_threshold": 1.8181899807569348
+          },
+          "descriptor_linear": {
+            "air_detection_threshold": 2.3671317100524902
+          },
+          "fingerprint_rf": {
+            "air_detection_threshold": 1.5816347707729042
+          },
+          "fingerprint_xgb": {
+            "air_detection_threshold": 1.0799462795257568
+          },
+          "molformer": {
+            "air_detection_threshold": 0.8165781497955322
+          },
+          "stereo_dmpnn": {
+            "air_detection_threshold": 1.6906019449234009
+          },
+          "tanimoto_gp": {
+            "air_detection_threshold": 1.4094714855784072
+          },
+          "unimol2": {
+            "air_detection_threshold": 2.0315308570861816
+          }
+        },
+        "interval90_ppbv": [
+          4.319933545723765,
+          12554.122268519235
+        ],
+        "log10_ppbv": 2.3671317100524902,
+        "model_version": "86da4f52aacab3a12a112ce53fd1fb2fcbdf1024d41ed5c7d0129d7ea08576a3",
+        "partition": "outside_endpoint_dataset",
+        "ppbv": 232.87974133636865,
+        "selected": "descriptor_linear",
+        "training_similarity": 0.358974358974359,
+        "unavailable_experts": []
+      }
+    },
+    {
+      "candidate_type": "known_reference_structure",
+      "cas": "6790-58-5",
+      "cid": 10857465,
+      "identity_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/6790-58-5/property/SMILES,ConnectivitySMILES,InChIKey,IUPACName,MolecularFormula/JSON",
+      "iupac": "(3aR,5aS,9aS,9bR)-3a,6,6,9a-tetramethyl-2,4,5,5a,7,8,9,9b-octahydro-1H-benzo[e][1]benzofuran",
+      "material_note": "A resolved structure is not verification of an obtainable batch or isomer composition.",
+      "molecule_id": "YPZUZOLGGMJZJO-LQKXBSAESA-N",
+      "name": "Ambroxide",
+      "novelty": "Known compound; no novelty claim",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/10857465",
+      "smiles": "C[C@]12CCCC([C@@H]1CC[C@@]3([C@@H]2CCO3)C)(C)C",
+      "stereochemistry": "specified",
+      "structure": {
+        "bertz_complexity": 317.4868683012557,
+        "heavy_atoms": 17,
+        "molecular_weight": 236.39899999999997,
+        "rdkit_logp": 4.408000000000004,
+        "rings": 3,
+        "rotatable_bonds": 0
+      },
+      "threshold": {
+        "estimates": {
+          "air_detection_threshold": 4.269104957580566
+        },
+        "expert_disagreement": 1.2655186571150026,
+        "expert_predictions": {
+          "chemprop": {
+            "air_detection_threshold": 2.339930487166948
+          },
+          "descriptor_linear": {
+            "air_detection_threshold": 4.269104957580566
+          },
+          "fingerprint_rf": {
+            "air_detection_threshold": 2.1571500647516046
+          },
+          "fingerprint_xgb": {
+            "air_detection_threshold": 2.465959310531616
+          },
+          "molformer": {
+            "air_detection_threshold": 1.1475675106048584
+          },
+          "stereo_dmpnn": {
+            "air_detection_threshold": 3.3363380432128906
+          },
+          "tanimoto_gp": {
+            "air_detection_threshold": 2.3810520571176452
+          },
+          "unimol2": {
+            "air_detection_threshold": 5.423104286193848
+          }
+        },
+        "interval90_ppbv": [
+          344.70716732240544,
+          1001750.577780095
+        ],
+        "log10_ppbv": 4.269104957580566,
+        "model_version": "86da4f52aacab3a12a112ce53fd1fb2fcbdf1024d41ed5c7d0129d7ea08576a3",
+        "partition": "outside_endpoint_dataset",
+        "ppbv": 18582.53491938491,
+        "selected": "descriptor_linear",
+        "training_similarity": 0.21052631578947367,
+        "unavailable_experts": []
+      }
+    },
+    {
+      "candidate_type": "structure_defined_analogue",
+      "identity_url": "https://patents.google.com/patent/EP0902024B1/en",
+      "material_note": "Computational structure only; no batch, procurement or synthesis verification.",
+      "molecule_id": "CLPVTGQRYUCTAO-UHFFFAOYSA-N",
+      "name": "7-Ethyl Calone scaffold",
+      "novelty": "Related substitutions appear in prior art; no novelty claim",
+      "smiles": "CCC1=CC2=C(C=C1)OCC(=O)CO2",
+      "stereochemistry": "achiral",
+      "structure": {
+        "bertz_complexity": 357.5503185287034,
+        "heavy_atoms": 14,
+        "molecular_weight": 192.21399999999994,
+        "rdkit_logp": 1.5892999999999997,
+        "rings": 2,
+        "rotatable_bonds": 1
+      },
+      "threshold": {
+        "estimates": {
+          "air_detection_threshold": 0.18670368194580078
+        },
+        "expert_disagreement": 1.1639526502376933,
+        "expert_predictions": {
+          "chemprop": {
+            "air_detection_threshold": 1.2328135764674775
+          },
+          "descriptor_linear": {
+            "air_detection_threshold": 0.18670368194580078
+          },
+          "fingerprint_rf": {
+            "air_detection_threshold": 1.4975445846067719
+          },
+          "fingerprint_xgb": {
+            "air_detection_threshold": 0.9074028134346008
+          },
+          "molformer": {
+            "air_detection_threshold": 1.363855004310608
+          },
+          "stereo_dmpnn": {
+            "air_detection_threshold": 1.1246544122695923
+          },
+          "tanimoto_gp": {
+            "air_detection_threshold": 1.2269612302781439
+          },
+          "unimol2": {
+            "air_detection_threshold": -2.2538833618164062
+          }
+        },
+        "interval90_ppbv": [
+          0.02851340205596718,
+          82.86255608177109
+        ],
+        "log10_ppbv": 0.18670368194580078,
+        "model_version": "86da4f52aacab3a12a112ce53fd1fb2fcbdf1024d41ed5c7d0129d7ea08576a3",
+        "partition": "outside_endpoint_dataset",
+        "ppbv": 1.5371055191315486,
+        "selected": "descriptor_linear",
+        "training_similarity": 0.35714285714285715,
+        "unavailable_experts": []
+      }
+    },
+    {
+      "candidate_type": "structure_defined_analogue",
+      "identity_url": "https://patents.google.com/patent/EP0902024B1/en",
+      "material_note": "Computational structure only; no batch, procurement or synthesis verification.",
+      "molecule_id": "KQPGRKHBHURUAP-UHFFFAOYSA-N",
+      "name": "7-n-Propyl Calone scaffold",
+      "novelty": "Related substitutions appear in prior art; no novelty claim",
+      "smiles": "CCCC1=CC2=C(C=C1)OCC(=O)CO2",
+      "stereochemistry": "achiral",
+      "structure": {
+        "bertz_complexity": 371.130023116199,
+        "heavy_atoms": 15,
+        "molecular_weight": 206.24099999999993,
+        "rdkit_logp": 1.9793999999999996,
+        "rings": 2,
+        "rotatable_bonds": 2
+      },
+      "threshold": {
+        "estimates": {
+          "air_detection_threshold": 0.14028716087341309
+        },
+        "expert_disagreement": 0.8195837850439884,
+        "expert_predictions": {
+          "chemprop": {
+            "air_detection_threshold": 1.2679268926473721
+          },
+          "descriptor_linear": {
+            "air_detection_threshold": 0.14028716087341309
+          },
+          "fingerprint_rf": {
+            "air_detection_threshold": 1.6329628410083208
+          },
+          "fingerprint_xgb": {
+            "air_detection_threshold": 0.9074028134346008
+          },
+          "molformer": {
+            "air_detection_threshold": 0.6603446006774902
+          },
+          "stereo_dmpnn": {
+            "air_detection_threshold": 1.162804365158081
+          },
+          "tanimoto_gp": {
+            "air_detection_threshold": 1.3867982190558483
+          },
+          "unimol2": {
+            "air_detection_threshold": -1.079254388809204
+          }
+        },
+        "interval90_ppbv": [
+          0.025623149874454427,
+          74.46321871013882
+        ],
+        "log10_ppbv": 0.14028716087341309,
+        "model_version": "86da4f52aacab3a12a112ce53fd1fb2fcbdf1024d41ed5c7d0129d7ea08576a3",
+        "partition": "outside_endpoint_dataset",
+        "ppbv": 1.3812972935411718,
+        "selected": "descriptor_linear",
+        "training_similarity": 0.3235294117647059,
+        "unavailable_experts": []
+      }
+    },
+    {
+      "candidate_type": "structure_defined_analogue",
+      "identity_url": "https://patents.google.com/patent/EP0902024B1/en",
+      "material_note": "Computational structure only; no batch, procurement or synthesis verification.",
+      "molecule_id": "RFSYHLFFESXTQI-UHFFFAOYSA-N",
+      "name": "7-Isopropyl Calone scaffold",
+      "novelty": "Related substitutions appear in prior art; no novelty claim",
+      "smiles": "CC(C)C1=CC2=C(C=C1)OCC(=O)CO2",
+      "stereochemistry": "achiral",
+      "structure": {
+        "bertz_complexity": 382.4536635897696,
+        "heavy_atoms": 15,
+        "molecular_weight": 206.24099999999993,
+        "rdkit_logp": 2.1502999999999997,
+        "rings": 2,
+        "rotatable_bonds": 1
+      },
+      "threshold": {
+        "estimates": {
+          "air_detection_threshold": 1.0511711835861206
+        },
+        "expert_disagreement": 0.4018209525392246,
+        "expert_predictions": {
+          "chemprop": {
+            "air_detection_threshold": 1.2653712715781624
+          },
+          "descriptor_linear": {
+            "air_detection_threshold": 1.0511711835861206
+          },
+          "fingerprint_rf": {
+            "air_detection_threshold": 1.8659447429179012
+          },
+          "fingerprint_xgb": {
+            "air_detection_threshold": 1.349246859550476
+          },
+          "molformer": {
+            "air_detection_threshold": 1.8150932788848877
+          },
+          "stereo_dmpnn": {
+            "air_detection_threshold": 1.1523168087005615
+          },
+          "tanimoto_gp": {
+            "air_detection_threshold": 1.7621882053088902
+          },
+          "unimol2": {
+            "air_detection_threshold": 0.6393675804138184
+          }
+        },
+        "interval90_ppbv": [
+          0.20869716021594567,
+          606.4930487269271
+        ],
+        "log10_ppbv": 1.0511711835861206,
+        "model_version": "86da4f52aacab3a12a112ce53fd1fb2fcbdf1024d41ed5c7d0129d7ea08576a3",
+        "partition": "outside_endpoint_dataset",
+        "ppbv": 11.250483410059358,
+        "selected": "descriptor_linear",
+        "training_similarity": 0.3125,
+        "unavailable_experts": []
+      }
+    }
+  ]
+}

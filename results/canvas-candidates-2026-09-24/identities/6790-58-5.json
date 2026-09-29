@@ -1,0 +1,14 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 10857465,
+        "ConnectivitySMILES": "CC1(CCCC2(C1CCC3(C2CCO3)C)C)C",
+        "IUPACName": "(3aR,5aS,9aS,9bR)-3a,6,6,9a-tetramethyl-2,4,5,5a,7,8,9,9b-octahydro-1H-benzo[e][1]benzofuran",
+        "InChIKey": "YPZUZOLGGMJZJO-LQKXBSAESA-N",
+        "MolecularFormula": "C16H28O",
+        "SMILES": "C[C@]12CCCC([C@@H]1CC[C@@]3([C@@H]2CCO3)C)(C)C"
+      }
+    ]
+  }
+}

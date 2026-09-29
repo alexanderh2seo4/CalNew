@@ -1,0 +1,14 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 7654,
+        "ConnectivitySMILES": "CC(=O)OCCC1=CC=CC=C1",
+        "IUPACName": "2-phenylethyl acetate",
+        "InChIKey": "MDHYEMXUFSJLGV-UHFFFAOYSA-N",
+        "MolecularFormula": "C10H12O2",
+        "SMILES": "CC(=O)OCCC1=CC=CC=C1"
+      }
+    ]
+  }
+}

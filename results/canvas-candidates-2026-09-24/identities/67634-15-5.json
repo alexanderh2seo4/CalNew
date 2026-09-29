@@ -1,0 +1,14 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 105513,
+        "ConnectivitySMILES": "CCC1=CC=C(C=C1)CC(C)(C)C=O",
+        "IUPACName": "3-(4-ethylphenyl)-2,2-dimethylpropanal",
+        "InChIKey": "JFTSYAALCNQOKO-UHFFFAOYSA-N",
+        "MolecularFormula": "C13H18O",
+        "SMILES": "CCC1=CC=C(C=C1)CC(C)(C)C=O"
+      }
+    ]
+  }
+}

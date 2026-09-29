@@ -1,0 +1,14 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 102861,
+        "ConnectivitySMILES": "CCCCCC1C(CCC1=O)CC(=O)OC",
+        "IUPACName": "methyl 2-(3-oxo-2-pentylcyclopentyl)acetate",
+        "InChIKey": "KVWWIYGFBYDJQC-UHFFFAOYSA-N",
+        "MolecularFormula": "C13H22O3",
+        "SMILES": "CCCCCC1C(CCC1=O)CC(=O)OC"
+      }
+    ]
+  }
+}

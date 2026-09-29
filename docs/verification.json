@@ -1,0 +1,27 @@
+{
+  "basic_runs": [
+    {
+      "development_predictions": "finite",
+      "failures": {},
+      "final_holdout": "unopened",
+      "group_separation": "verified",
+      "run": "basic-threshold-models",
+      "saved_model": "present",
+      "selected": "descriptor_linear",
+      "source_identity": "matches_current_source"
+    },
+    {
+      "development_predictions": "finite",
+      "failures": {},
+      "final_holdout": "unopened",
+      "group_separation": "verified",
+      "run": "basic-descriptor-models",
+      "saved_model": "present",
+      "selected": "organiser_mean",
+      "source_identity": "matches_current_source"
+    }
+  ],
+  "example_predictions": "verified",
+  "prospective_validation": "not_performed",
+  "test_command": ".venv/bin/python -m pytest -q"
+}

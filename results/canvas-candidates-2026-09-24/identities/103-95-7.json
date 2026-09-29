@@ -1,0 +1,14 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 517827,
+        "ConnectivitySMILES": "CC(C)C1=CC=C(C=C1)CC(C)C=O",
+        "IUPACName": "2-methyl-3-(4-propan-2-ylphenyl)propanal",
+        "InChIKey": "ZFNVDHOSLNRHNN-UHFFFAOYSA-N",
+        "MolecularFormula": "C13H18O",
+        "SMILES": "CC(C)C1=CC=C(C=C1)CC(C)C=O"
+      }
+    ]
+  }
+}

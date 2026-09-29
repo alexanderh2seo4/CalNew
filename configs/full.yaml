@@ -1,0 +1,40 @@
+name: architecture-selection
+profile: full
+seed: 42
+strategy: structural
+outer_folds: 5
+inner_folds: 3
+trials: 50
+seeds: [42, 137, 271, 811, 2026]
+minimum_positive_labels: 20
+bootstrap_repeats: 1000
+organisers: [mean, stacking, gating]
+models:
+  - name: descriptor_linear
+    family: classical
+    estimator: linear
+    features: descriptors
+    search: {alpha: [0.1, 1, 10, 100], C: [0.01, 0.1, 1, 10]}
+  - name: fingerprint_linear
+    family: classical
+    estimator: linear
+    features: morgan
+    search: {radius: [2, 3], alpha: [1, 10, 100], C: [0.01, 0.1, 1]}
+  - name: fingerprint_rf
+    family: classical
+    estimator: rf
+    features: morgan
+    search: {radius: [2, 3], n_estimators: [200, 500], min_samples_leaf: [1, 2, 5], max_features: [sqrt, 0.2, 0.5]}
+  - name: fingerprint_xgb
+    family: classical
+    estimator: xgb
+    features: combined
+    search: {radius: [2, 3], n_estimators: [100, 300, 600], max_depth: [3, 5, 7], learning_rate: [0.02, 0.05, 0.1]}
+  - name: stereo_dmpnn
+    family: graph
+    epochs: 80
+    search: {width: [256, 512, 1024], depth: [3, 5, 7], dropout: [0, 0.1, 0.3], learning_rate: [0.0001, 0.001]}
+  - {name: tanimoto_gp, family: classical, estimator: gp, features: morgan, task: regression, search: {radius: [2, 3]}}
+  - {name: molformer, family: molformer, mode: frozen, checkpoint: ibm-research/MoLFormer-XL-both-10pct, revision: 361063d0ad524ef77cf39b08469f6be770dc550f, batch_size: 16, search: {alpha: [1, 10, 100], C: [0.01, 0.1, 1]}}
+  - {name: unimol2, family: unimol2, mode: frozen, model_size: 84m, batch_size: 8, search: {alpha: [1, 10, 100], C: [0.01, 0.1, 1]}}
+

@@ -1,0 +1,14 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 6054,
+        "ConnectivitySMILES": "C1=CC=C(C=C1)CCO",
+        "IUPACName": "2-phenylethanol",
+        "InChIKey": "WRMNZCZEMHIOCP-UHFFFAOYSA-N",
+        "MolecularFormula": "C8H10O",
+        "SMILES": "C1=CC=C(C=C1)CCO"
+      }
+    ]
+  }
+}

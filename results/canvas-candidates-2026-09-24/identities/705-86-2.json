@@ -1,0 +1,14 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 12810,
+        "ConnectivitySMILES": "CCCCCC1CCCC(=O)O1",
+        "IUPACName": "6-pentyloxan-2-one",
+        "InChIKey": "GHBSPIPJMLAMEP-UHFFFAOYSA-N",
+        "MolecularFormula": "C10H18O2",
+        "SMILES": "CCCCCC1CCCC(=O)O1"
+      }
+    ]
+  }
+}

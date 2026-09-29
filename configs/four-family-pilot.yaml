@@ -1,0 +1,20 @@
+name: four-family-threshold-pilot
+profile: pilot
+seed: 42
+strategy: structural
+outer_folds: 3
+inner_folds: 2
+trials: 1
+seeds: [42]
+minimum_positive_labels: 20
+bootstrap_repeats: 200
+organisers: [mean, stacking, gating]
+models:
+  - {name: descriptor_linear, family: classical, estimator: linear, features: descriptors, alpha: 10.0, C: 0.1}
+  - {name: fingerprint_rf, family: classical, estimator: rf, features: morgan, n_estimators: 120, min_samples_leaf: 2}
+  - {name: fingerprint_xgb, family: classical, estimator: xgb, features: morgan, n_estimators: 100, max_depth: 4}
+  - {name: tanimoto_gp, family: classical, estimator: gp, features: morgan, task: regression}
+  - {name: stereo_dmpnn, family: graph, width: 128, depth: 3, dropout: 0.1, epochs: 15, batch_size: 64}
+  - {name: chemprop, family: chemprop, width: 128, depth: 3, dropout: 0.1, epochs: 15, batch_size: 64}
+  - {name: molformer, family: molformer, mode: frozen, checkpoint: ibm-research/MoLFormer-XL-both-10pct, revision: 361063d0ad524ef77cf39b08469f6be770dc550f, alpha: 10.0, C: 0.1}
+  - {name: unimol2, family: unimol2, mode: frozen, model_size: 84m, revision: bf37d253c0f5ac61f468137eb00059978a104ff0, pooling: mean, append_chirality: true, alpha: 10.0, C: 0.1}

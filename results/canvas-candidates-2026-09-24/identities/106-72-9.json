@@ -1,0 +1,14 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 61016,
+        "ConnectivitySMILES": "CC(CCC=C(C)C)C=O",
+        "IUPACName": "2,6-dimethylhept-5-enal",
+        "InChIKey": "YGFGZTXGYTUXBA-UHFFFAOYSA-N",
+        "MolecularFormula": "C9H16O",
+        "SMILES": "CC(CCC=C(C)C)C=O"
+      }
+    ]
+  }
+}

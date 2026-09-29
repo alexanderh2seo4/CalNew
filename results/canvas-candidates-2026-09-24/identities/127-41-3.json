@@ -1,0 +1,14 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 5282108,
+        "ConnectivitySMILES": "CC1=CCCC(C1C=CC(=O)C)(C)C",
+        "IUPACName": "(E)-4-(2,6,6-trimethylcyclohex-2-en-1-yl)but-3-en-2-one",
+        "InChIKey": "UZFLPKAIBPNNCA-BQYQJAHWSA-N",
+        "MolecularFormula": "C13H20O",
+        "SMILES": "CC1=CCCC(C1/C=C/C(=O)C)(C)C"
+      }
+    ]
+  }
+}

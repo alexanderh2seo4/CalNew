@@ -1,0 +1,172 @@
+[
+  {
+    "applicability": {
+      "max_training_tanimoto": 0.5555555555555556,
+      "shift_coverage_guarantee": false,
+      "stereochemistry": "achiral"
+    },
+    "context": {
+      "concentration_specific": false,
+      "prediction_conditions": "air_detection_threshold"
+    },
+    "endpoint": "air_detection_threshold",
+    "estimates": {
+      "air_detection_threshold": 3.1798651218414307
+    },
+    "molecule_id": "LFQSCWFLJHTTHZ-UHFFFAOYSA-N",
+    "provenance": {
+      "data": {
+        "aggregate_observations": 57,
+        "permitted_use": "research",
+        "snapshot_id": "955c3ab05ff9fb7d6d0af5af4ab1d5f09c01a4ebeabacb45b6a2027ba7705833",
+        "source": "abraham_2012",
+        "target_semantics": "air_detection_threshold",
+        "unit": "log10(ppbv)"
+      },
+      "expert_outputs": {
+        "chemprop": [
+          1.637138403882589
+        ],
+        "descriptor_linear": [
+          3.1798651218414307
+        ],
+        "fingerprint_rf": [
+          1.7904883852061484
+        ],
+        "fingerprint_xgb": [
+          2.023756980895996
+        ],
+        "molformer": [
+          1.6421616077423096
+        ],
+        "stereo_dmpnn": [
+          1.9773786067962646
+        ],
+        "tanimoto_gp": [
+          2.0382081586355003
+        ],
+        "unimol2": [
+          4.088099479675293
+        ]
+      },
+      "model_version": "86da4f52aacab3a12a112ce53fd1fb2fcbdf1024d41ed5c7d0129d7ea08576a3",
+      "selected": "descriptor_linear",
+      "validation_status": "See run report; prospective validation is not implied"
+    },
+    "reason": null,
+    "smiles": "CCO",
+    "status": "available",
+    "uncertainty": {
+      "measurement_variation": {
+        "reason": "Not separately identifiable in this run",
+        "status": "unavailable"
+      },
+      "model_disagreement": {
+        "air_detection_threshold": 0.817929205422664
+      },
+      "participant_variation": {
+        "reason": "This run has no participant-level head",
+        "status": "unavailable"
+      },
+      "prediction_interval": {
+        "air_detection_threshold": {
+          "coverage_target": 0.9,
+          "lower": 1.4482104778289795,
+          "status": "available",
+          "upper": 4.911519765853882
+        }
+      }
+    }
+  },
+  {
+    "applicability": {
+      "max_training_tanimoto": 1.0,
+      "shift_coverage_guarantee": false,
+      "stereochemistry": "achiral"
+    },
+    "context": {
+      "concentration_specific": false,
+      "prediction_conditions": "air_detection_threshold"
+    },
+    "endpoint": "air_detection_threshold",
+    "estimates": {
+      "air_detection_threshold": 2.4636998176574707
+    },
+    "molecule_id": "KWOLFJPFCHCOCG-UHFFFAOYSA-N",
+    "provenance": {
+      "data": {
+        "aggregate_observations": 57,
+        "permitted_use": "research",
+        "snapshot_id": "955c3ab05ff9fb7d6d0af5af4ab1d5f09c01a4ebeabacb45b6a2027ba7705833",
+        "source": "abraham_2012",
+        "target_semantics": "air_detection_threshold",
+        "unit": "log10(ppbv)"
+      },
+      "expert_outputs": {
+        "chemprop": [
+          1.1414248221538137
+        ],
+        "descriptor_linear": [
+          2.4636998176574707
+        ],
+        "fingerprint_rf": [
+          1.7205075690792044
+        ],
+        "fingerprint_xgb": [
+          1.9493577480316162
+        ],
+        "molformer": [
+          2.369616985321045
+        ],
+        "stereo_dmpnn": [
+          1.0017507076263428
+        ],
+        "tanimoto_gp": [
+          2.222254720522725
+        ],
+        "unimol2": [
+          2.0709176063537598
+        ]
+      },
+      "model_version": "86da4f52aacab3a12a112ce53fd1fb2fcbdf1024d41ed5c7d0129d7ea08576a3",
+      "selected": "descriptor_linear",
+      "validation_status": "See run report; prospective validation is not implied"
+    },
+    "reason": null,
+    "smiles": "CC(=O)c1ccccc1",
+    "status": "available",
+    "uncertainty": {
+      "measurement_variation": {
+        "reason": "Not separately identifiable in this run",
+        "status": "unavailable"
+      },
+      "model_disagreement": {
+        "air_detection_threshold": 0.5098798587665021
+      },
+      "participant_variation": {
+        "reason": "This run has no participant-level head",
+        "status": "unavailable"
+      },
+      "prediction_interval": {
+        "air_detection_threshold": {
+          "coverage_target": 0.9,
+          "lower": 0.7320451736450195,
+          "status": "available",
+          "upper": 4.195354461669922
+        }
+      }
+    }
+  },
+  {
+    "applicability": {},
+    "context": {},
+    "endpoint": "air_detection_threshold",
+    "estimates": {},
+    "molecule_id": null,
+    "provenance": {},
+    "reason": "Invalid SMILES: 'invalid'",
+    "smiles": "invalid",
+    "status": "unavailable",
+    "uncertainty": {}
+  }
+]

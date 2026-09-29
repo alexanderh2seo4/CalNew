@@ -1,0 +1,14 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 64805,
+        "ConnectivitySMILES": "CC(CC1=CC2=C(C=C1)OCO2)C=O",
+        "IUPACName": "3-(1,3-benzodioxol-5-yl)-2-methylpropanal",
+        "InChIKey": "BOPPSUHPZARXTH-UHFFFAOYSA-N",
+        "MolecularFormula": "C11H12O3",
+        "SMILES": "CC(CC1=CC2=C(C=C1)OCO2)C=O"
+      }
+    ]
+  }
+}

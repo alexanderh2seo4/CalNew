@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "calnew"
+version = "0.1.0"
+description = "Provenance-aware molecular olfaction research and architecture benchmarking"
+requires-python = ">=3.11"
+dependencies = ["numpy>=2.0,<2.3", "pandas>=2.2", "scipy>=1.12", "scikit-learn>=1.6", "rdkit>=2024.3", "pyarrow>=17", "pydantic>=2.8", "requests>=2.32", "PyYAML>=6", "joblib>=1.4"]
+
+[project.optional-dependencies]
+models = ["torch>=2.4", "xgboost>=2.1", "transformers>=4.45", "huggingface-hub>=0.25", "safetensors>=0.4", "optuna>=4", "gpytorch>=1.13"]
+pretrained = ["unimol-tools==0.1.6", "chemprop==2.3.1", "transformers==5.17.0"]
+dev = ["pytest>=8", "matplotlib>=3.9"]
+
+[project.scripts]
+calnew = "calnew.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

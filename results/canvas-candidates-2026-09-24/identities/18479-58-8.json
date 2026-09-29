@@ -1,0 +1,14 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 29096,
+        "ConnectivitySMILES": "CC(CCCC(C)(C)O)C=C",
+        "IUPACName": "2,6-dimethyloct-7-en-2-ol",
+        "InChIKey": "XSNQECSCDATQEL-UHFFFAOYSA-N",
+        "MolecularFormula": "C10H20O",
+        "SMILES": "CC(CCCC(C)(C)O)C=C"
+      }
+    ]
+  }
+}

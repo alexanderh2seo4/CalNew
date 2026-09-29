@@ -1,0 +1,14 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 120101,
+        "ConnectivitySMILES": "CC1=CC2=C(C=C1)OCC(=O)CO2",
+        "IUPACName": "7-methyl-1,5-benzodioxepin-3-one",
+        "InChIKey": "SWUIQEBPZIHZQS-UHFFFAOYSA-N",
+        "MolecularFormula": "C10H10O3",
+        "SMILES": "CC1=CC2=C(C=C1)OCC(=O)CO2"
+      }
+    ]
+  }
+}

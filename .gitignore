@@ -1,0 +1,20 @@
+.venv*/
+__pycache__/
+.pytest_cache/
+*.egg-info/
+.DS_Store
+data/raw/
+data/snapshots/
+data/features/
+data/checkpoints/
+data/cache/
+data/conformers/
+data/evidence.sqlite*
+data/documents/
+data/review/
+runs/
+logs/
+data/pretrained-features.log
+*.partial
+.env
+.papers and mails.txt.lock

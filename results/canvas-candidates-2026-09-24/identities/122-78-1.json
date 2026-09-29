@@ -1,0 +1,14 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 998,
+        "ConnectivitySMILES": "C1=CC=C(C=C1)CC=O",
+        "IUPACName": "2-phenylacetaldehyde",
+        "InChIKey": "DTUQWGWMVIHBKE-UHFFFAOYSA-N",
+        "MolecularFormula": "C8H8O",
+        "SMILES": "C1=CC=C(C=C1)CC=O"
+      }
+    ]
+  }
+}

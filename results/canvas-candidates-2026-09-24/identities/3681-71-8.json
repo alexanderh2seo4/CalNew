@@ -1,0 +1,14 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 5363388,
+        "ConnectivitySMILES": "CCC=CCCOC(=O)C",
+        "IUPACName": "[(Z)-hex-3-enyl] acetate",
+        "InChIKey": "NPFVOOAXDOBMCE-PLNGDYQASA-N",
+        "MolecularFormula": "C8H14O2",
+        "SMILES": "CC/C=C\\CCOC(=O)C"
+      }
+    ]
+  }
+}

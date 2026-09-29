@@ -1,0 +1,14 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 26955,
+        "ConnectivitySMILES": "CC1=C(C(CCC1)(C)C)C=CC(=O)C",
+        "IUPACName": "4-(2,6,6-trimethylcyclohexen-1-yl)but-3-en-2-one",
+        "InChIKey": "PSQYTAPXSHCGMF-UHFFFAOYSA-N",
+        "MolecularFormula": "C13H20O",
+        "SMILES": "CC1=C(C(CCC1)(C)C)C=CC(=O)C"
+      }
+    ]
+  }
+}

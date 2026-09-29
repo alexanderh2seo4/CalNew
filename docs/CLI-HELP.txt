@@ -1,0 +1,12 @@
+usage: __main__.py [-h]
+                   {doctor,sources,fetch,ingest,snapshot,import-reviewed,quality-audit,benchmark,audit-holdout,report,predict,conformers,discover,retrieve,extraction-audit,suggest}
+                   ...
+
+CALNEW reproducible molecular odour research
+
+positional arguments:
+  {doctor,sources,fetch,ingest,snapshot,import-reviewed,quality-audit,benchmark,audit-holdout,report,predict,conformers,discover,retrieve,extraction-audit,suggest}
+    doctor              Check runtime and optional dependencies
+
+options:
+  -h, --help            show this help message and exit

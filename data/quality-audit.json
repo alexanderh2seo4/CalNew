@@ -1,0 +1,28 @@
+{
+  "candidate_duplicate_observations": 0,
+  "censoring": {
+    "exact": 398254
+  },
+  "duplicate_ids": [],
+  "endpoints": {
+    "air_detection_threshold": 268,
+    "catalogue_descriptor": 397986
+  },
+  "interpretation": "Counts are audit flags, not inferred reliability scores; copied experiments require review.",
+  "missing_methods": 397986,
+  "missing_source_hashes": 0,
+  "molecules": 3622,
+  "observations": 398254,
+  "origins": {
+    "measured": 398197,
+    "upstream_aggregate": 57
+  },
+  "review_status": {
+    "upstream_curated": 3790
+  },
+  "stereochemistry": {
+    "achiral": 1868,
+    "specified": 586,
+    "unspecified": 1168
+  }
+}

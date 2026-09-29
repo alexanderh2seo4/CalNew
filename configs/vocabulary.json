@@ -1,0 +1,7 @@
+{
+  "version": "1.0.0",
+  "policy": "Preserve source-specific meanings; these are spelling variants only, not a perceptual taxonomy.",
+  "aliases": {"odourless": "odorless", "sulphurous": "sulfurous"},
+  "keep_distinct": [["marine", "ozonic", "watery"], ["fruity", "sweet"], ["mint", "minty"], ["musky", "musk"]],
+  "source_zeros": "Catalogue zero means descriptor not recorded; panel missing means not assessed."
+}
