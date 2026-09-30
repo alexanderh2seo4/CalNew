@@ -9,6 +9,7 @@ Verification: **44 automated tests passed** (21 original + 23 pipeline), depende
 ## Start here
 
 - [Modular quality → potency → combiner pipeline](docs/PIPELINE.md) (example model; `calnew pipeline train/predict`, plus the NOSE paper benchmark)
+- [Continuation report](docs/CONTINUATION.md) (state of the NOSE parity work, and what was tried and failed)
 - [Basic-model results and interpretation](docs/BASIC-MODELS.md)
 - [Architecture and implementation status](docs/ARCHITECTURE.md)
 - [Improvements with substantial computing capacity](docs/IMPROVEMENTS.md)
