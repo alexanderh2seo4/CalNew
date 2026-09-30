@@ -36,6 +36,11 @@ def main(argv=None):
     t.add_argument('--reserved-run',type=Path,nargs='*',default=[Path('runs/basic-threshold-models'),Path('runs/basic-descriptor-models')])
     t.add_argument('--anchor',choices=['fingerprint','unimol2'],default='fingerprint');t.add_argument('--folds',type=int,default=5)
     t.add_argument('--fast',action='store_true');t.add_argument('--threads',type=int,default=8);t.add_argument('--cache',type=Path,default=Path('data/features'))
+    t=ps.add_parser('paper-benchmark',help='NOSE (arXiv:2604.10452) downstream protocol on non-reserved molecules')
+    t.add_argument('--snapshot',type=Path);t.add_argument('--out',type=Path,required=True);t.add_argument('--seeds',type=int,nargs='+',default=[42,43,44])
+    t.add_argument('--split-seed',type=int,default=42);t.add_argument('--threads',type=int,default=8)
+    t.add_argument('--robustness-splits',type=int,nargs='*',default=[43,44,45,46])
+    t.add_argument('--reserved-run',type=Path,nargs='*',default=[Path('runs/basic-threshold-models'),Path('runs/basic-descriptor-models')])
     t=ps.add_parser('predict');t.add_argument('--run',type=Path,required=True);t.add_argument('--smiles',nargs='+',required=True)
     t.add_argument('--dilution',type=float,default=1e-3);t.add_argument('--mixture',action='store_true');t.add_argument('--out',type=Path)
     a=p.parse_args(argv)
@@ -117,8 +122,14 @@ def main(argv=None):
                 snapshot=a.snapshot or Path(read_json(Path('data/current.json'))['snapshot'])
                 metrics=run_pipeline(snapshot,a.reserved_run,a.out,anchor=a.anchor,folds=a.folds,fast=a.fast,cache_root=a.cache,threads=a.threads,
                                      log=lambda m:print(m,file=__import__('sys').stderr,flush=True))
-                result={'report':str(a.out/'REPORT.md'),'threshold_ensemble':metrics['threshold']['ensemble'],
+                result={'report':str(a.out/'REPORT.md'),'threshold_ensemble':metrics['threshold']['ensemble'],'threshold_v2':metrics['threshold']['v2'],
                         'intensity':metrics['intensity']['pipeline_stage_B2_hill']}
+            elif a.pipeline_command=='paper-benchmark':
+                from .pipeline.paper_benchmark import run_paper_benchmark
+                snapshot=a.snapshot or Path(read_json(Path('data/current.json'))['snapshot'])
+                result=run_paper_benchmark(snapshot,a.reserved_run,a.out,tuple(a.seeds),a.split_seed,tuple(a.robustness_splits),threads=a.threads,
+                                           log=lambda m:print(m,file=__import__('sys').stderr,flush=True))
+                result={'report':str(a.out/'REPORT.md'),'summary':result}
             else:
                 result=pipeline_predict(a.run,a.smiles,a.dilution,a.mixture)
                 if a.out: write_json(a.out,result)

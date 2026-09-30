@@ -371,6 +371,83 @@ class FlatBaseline:
         return self.model.predict(self.scaler.transform({"x": x})["x"])
 
 
+# ---------------------------------------------------------------- Tabular heads (v2)
+class TabularEnsemble:
+    """Equal-weight average of tree / ridge members, each on its own block combination.
+
+    Members are (kind, block names); kinds are "extra_trees", "xgboost" and "ridge" (grouped-CV
+    alpha). Missing descriptor values are imputed with training medians. Optional `columns`
+    (e.g. the stimulus log dilution) are appended to every member's inputs.
+
+    Tree kinds with a "+aux" suffix also train on `auxiliary` rows (blocks, targets, weight) from a
+    related measurement, with a trailing medium flag (0 = task rows, 1 = auxiliary rows); they
+    always predict with the flag at 0. Without auxiliary rows they reduce to the plain tree.
+    """
+
+    def __init__(self, members, seed=0, threads=-1):
+        self.members, self.seed, self.threads = [(k, tuple(b)) for k, b in members], seed, threads
+
+    def _x(self, blocks, names, columns):
+        x = stack(blocks, names).astype(np.float64)
+        return x if columns is None else np.column_stack([x, columns])
+
+    def fit(self, blocks: dict, y: np.ndarray, groups: np.ndarray, columns=None, auxiliary=None):
+        from sklearn.impute import SimpleImputer
+        from xgboost import XGBRegressor
+        y = np.asarray(y, float)
+        self.models, self.auxiliary_rows = [], 0
+        for kind, names in self.members:
+            x = self._x(blocks, names, columns)
+            if kind == "ridge":
+                self.models.append(GroupedRidge().fit(x, y, groups))
+                continue
+            weight, target = None, y
+            if kind.endswith("+aux"):
+                if columns is not None:
+                    raise ValueError("+aux members do not take extra columns")
+                kind = kind[:-4]
+                x = np.column_stack([x, np.zeros(len(x))])
+                if auxiliary is not None and len(auxiliary[1]):
+                    aux_blocks, aux_y, aux_weight = auxiliary
+                    xa = np.column_stack([self._x(aux_blocks, names, None), np.ones(len(aux_y))])
+                    x, target = np.vstack([x, xa]), np.concatenate([y, np.asarray(aux_y, float)])
+                    weight = np.concatenate([np.ones(len(y)), np.full(len(aux_y), float(aux_weight))])
+                    self.auxiliary_rows = len(aux_y)
+            imputer = SimpleImputer(strategy="median", keep_empty_features=True).fit(x)
+            if kind == "extra_trees":
+                model = ExtraTreesRegressor(n_estimators=500, max_features=0.3, min_samples_leaf=2, n_jobs=self.threads, random_state=self.seed)
+            elif kind == "xgboost":
+                model = XGBRegressor(n_estimators=400, learning_rate=0.03, max_depth=4, subsample=0.8, colsample_bytree=0.3,
+                                     min_child_weight=2, n_jobs=self.threads if self.threads > 0 else None, random_state=self.seed, verbosity=0)
+            else:
+                raise ValueError(f"Unknown member kind: {kind}")
+            self.models.append((imputer, model.fit(imputer.transform(x), target, sample_weight=weight)))
+        return self
+
+    def predict_members(self, blocks: dict, columns=None) -> np.ndarray:
+        out = []
+        for (kind, names), model in zip(self.members, self.models):
+            x = self._x(blocks, names, columns)
+            if kind.endswith("+aux"):
+                x = np.column_stack([x, np.zeros(len(x))])  # predict as a task (air) row
+            out.append(model.predict(x) if kind == "ridge" else model[1].predict(model[0].transform(x)))
+        return np.column_stack(out)
+
+    def predict(self, blocks: dict, columns=None) -> np.ndarray:
+        return self.predict_members(blocks, columns).mean(1)
+
+
+_RDKIT_EXPLICIT = ("rdkit",) + ("transport", "hbond", "osmophore", "chain")
+# Member sets chosen by repeated inner CV on the NOSE split-42 training portion only (docs/PIPELINE.md).
+# `unimol2` members use frozen Uni-Mol2 embeddings (NaN + availability column when conformers fail).
+# Threshold trees also learn from Li et al. 2025 water thresholds (pipeline/auxiliary.py) via "+aux".
+THRESHOLD_MEMBERS = (("xgboost+aux", _RDKIT_EXPLICIT + ("fingerprint",)), ("extra_trees+aux", _RDKIT_EXPLICIT + ("fingerprint",)),
+                     ("ridge", ("fingerprint",)), ("ridge", ("unimol2",)))
+HEDONIC_MEMBERS = (("extra_trees", _RDKIT_EXPLICIT + ("quality", "direction")), ("extra_trees", _RDKIT_EXPLICIT + ("fingerprint",)))
+RAVIA_MEMBERS = (("xgboost", _RDKIT_EXPLICIT + ("quality", "direction")), ("xgboost", _RDKIT_EXPLICIT + ("quality",)),
+                 ("xgboost", _RDKIT_EXPLICIT + ("fingerprint",)), ("extra_trees", ("unimol2",)))
+
+
 # ---------------------------------------------------------------- Mixtures (analytic, unvalidated)
 def combine_mixture(components: list[dict], primacy_fraction=0.2, weighting="uniform") -> dict:
     """Analytic mixture rule from the literature; no mixture data train or validate it here.

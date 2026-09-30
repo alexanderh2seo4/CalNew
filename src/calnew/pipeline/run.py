@@ -13,18 +13,24 @@ from pathlib import Path
 
 import joblib
 import numpy as np
+import pandas as pd
 import torch
 from scipy.stats import pearsonr, spearmanr
 from sklearn.metrics import average_precision_score, roc_auc_score
 
 from ..chemistry import identify, nearest_similarity
 from ..io import digest, read_json, write_json
+from .auxiliary import exclude_touching, load_li_2025
 from .blocks import EXPLICIT_BLOCKS, STRUCTURE_BLOCKS, BlockCache
 from .data import load_stages
-from .stages import (THRESHOLD_VARIANTS, CombinerStage, FlatBaseline, IntensityStage, QualityBaseline, QualityStage,
-                     ThresholdStage, combine_mixture, quality_features, stack)
+from .stages import (HEDONIC_MEMBERS, THRESHOLD_MEMBERS, THRESHOLD_VARIANTS, CombinerStage, FlatBaseline, IntensityStage,
+                     QualityBaseline, QualityStage, TabularEnsemble, ThresholdStage, combine_mixture, quality_features, stack)
 
 LOG3 = float(np.log10(3))
+
+
+def _tab(blocks, members, rows=slice(None)):
+    return {n: blocks[n][rows] for _, names in members for n in names}
 
 
 def _settings(anchor, fast):
@@ -92,10 +98,19 @@ def run_pipeline(snapshot: Path, reserved_runs: list[Path], out: Path, anchor="f
     ids = data.molecules.index.to_numpy()
     row = {m: i for i, m in enumerate(ids)}
     cache = BlockCache(cache_root)
-    names = sorted(set(cfg["quality_blocks"]) | set(cfg["potency_blocks"]) - {"quality"})
+    names = sorted(set(cfg["quality_blocks"]) | set(cfg["potency_blocks"]) - {"quality"} | {"rdkit", "unimol2"})
     log(f"features: {names} for {len(ids)} molecules")
     B = cache.blocks(names, data.molecules.smiles.tolist())
     fold = np.array([data.folds[m] for m in ids])
+    # Training-only water thresholds for the "+aux" threshold members (reserved molecules already dropped).
+    aux = load_li_2025(data, reserved_runs, pd.read_parquet(Path(snapshot) / "molecules.parquet").set_index("molecule_id"))
+    aux_blocks = cache.blocks(sorted({n for k, b in THRESHOLD_MEMBERS if k.endswith("+aux") for n in b}), aux.smiles.tolist())
+
+    def auxiliary(test_rows=None):
+        keep = np.ones(len(aux), bool) if test_rows is None else exclude_touching(
+            aux, ids[test_rows], data.molecules.smiles.to_numpy()[test_rows], by_scaffold=True)
+        # t_y is log10(ppbv) (higher = weaker); aux.y is -log10(mg/L) (higher = more potent): flip to align.
+        return {n: v[keep] for n, v in aux_blocks.items()}, -aux.y.to_numpy()[keep], 1.0
     group = np.array([data.groups[m] for m in ids])
 
     q_rows = np.array([row[m] for m in data.quality["ids"]])
@@ -145,14 +160,14 @@ def run_pipeline(snapshot: Path, reserved_runs: list[Path], out: Path, anchor="f
            "threshold": {}, "intensity": np.full(len(p_rows), np.nan), "intensity_sd": np.full(len(p_rows), np.nan),
            "hill": np.full((len(p_rows), 3), np.nan), "profile_oracle": np.full(p_prof.shape, np.nan),
            "profile_predicted": np.full(p_prof.shape, np.nan), "pleasant_oracle": np.full(len(p_rows), np.nan),
-           "pleasant_predicted": np.full(len(p_rows), np.nan), "panel_direction": np.full(p_prof.shape, np.nan), "flat_ridge": np.full(flat_targets.shape, np.nan),
+           "pleasant_predicted": np.full(len(p_rows), np.nan), "pleasant_v2": np.full(len(p_rows), np.nan), "panel_direction": np.full(p_prof.shape, np.nan), "flat_ridge": np.full(flat_targets.shape, np.nan),
            "flat_trees": np.full(flat_targets.shape, np.nan)}
     gates = {}
     for k in range(folds):
         log(f"outer fold {k}")
         probabilities, D = meta(k)
         Q = quality_features(probabilities)
-        Bk = {**B, "quality": Q}
+        Bk = {**B, "quality": Q, "direction": D}
         # A: quality on held-out fold
         te = fold[q_rows] == k
         oof["quality"][te] = stage_a(frozenset({k}))[0][q_rows[te]]
@@ -166,6 +181,11 @@ def run_pipeline(snapshot: Path, reserved_runs: list[Path], out: Path, anchor="f
         for name, value in threshold.predict(pick(t_rows[te])).items():
             oof["threshold"].setdefault(name, np.full(len(t_y), np.nan))[te] = value
         oof["threshold"].setdefault("null_mean", np.full(len(t_y), np.nan))[te] = t_y[tr].mean()
+        # v2: B1 ensemble averaged with descriptor-tree and fingerprint-ridge members.
+        members = TabularEnsemble(THRESHOLD_MEMBERS, threads=threads).fit(_tab(Bk, THRESHOLD_MEMBERS, t_rows[tr]), t_y[tr], group[t_rows[tr]],
+                                                                          auxiliary=auxiliary(np.flatnonzero(fold == k)))
+        oof["threshold"].setdefault("v2", np.full(len(t_y), np.nan))[te] = np.column_stack(
+            [oof["threshold"]["ensemble"][te], members.predict_members(_tab(Bk, THRESHOLD_MEMBERS, t_rows[te]))]).mean(1)
         gates[f"fold{k}_threshold"] = [n.fusion.gates() for n in threshold.nets]
         # B2: intensity dose-response
         tr, te = fold[p_rows] != k, fold[p_rows] == k
@@ -180,6 +200,9 @@ def run_pipeline(snapshot: Path, reserved_runs: list[Path], out: Path, anchor="f
         gates[f"fold{k}_combiner"] = {"penalty": combiner.selected_penalty, "prior_weight": combiner.prior_weight}
         oof["profile_oracle"][te], oof["pleasant_oracle"][te] = combiner.predict(Q[p_rows[te]], p_int[te], p_x[te], D[p_rows[te]])
         oof["profile_predicted"][te], oof["pleasant_predicted"][te] = combiner.predict(Q[p_rows[te]], mean, p_x[te], D[p_rows[te]])
+        # C v2 hedonic head: descriptor trees on structure + stage-A outputs + dilution.
+        hedonic = TabularEnsemble(HEDONIC_MEMBERS, threads=threads).fit(_tab(Bk, HEDONIC_MEMBERS, p_rows[tr]), p_pl[tr], group[p_rows[tr]], p_x[tr][:, None])
+        oof["pleasant_v2"][te] = hedonic.predict(_tab(Bk, HEDONIC_MEMBERS, p_rows[te]), p_x[te][:, None])
         # End-to-end baselines
         fx_tr, fx_te = flat_x(p_rows[tr], p_x[tr]), flat_x(p_rows[te], p_x[te])
         oof["flat_ridge"][te] = FlatBaseline("ridge").fit(fx_tr, flat_targets[tr], group[p_rows[tr]]).predict(fx_te)
@@ -200,6 +223,7 @@ def run_pipeline(snapshot: Path, reserved_runs: list[Path], out: Path, anchor="f
                       "flat_extra_trees": _regression(p_int, oof["flat_trees"][:, 0])},
         "pleasantness": {"pipeline_oracle_intensity": _regression(p_pl, oof["pleasant_oracle"]),
                          "pipeline_predicted_intensity": _regression(p_pl, oof["pleasant_predicted"]),
+                         "pipeline_v2_hedonic": _regression(p_pl, oof["pleasant_v2"]),
                          "flat_ridge": _regression(p_pl, oof["flat_ridge"][:, 1]),
                          "flat_extra_trees": _regression(p_pl, oof["flat_trees"][:, 1])},
         "profile": {"pipeline_oracle_intensity": _profile_metrics(p_prof, oof["profile_oracle"], descriptors),
@@ -220,7 +244,7 @@ def run_pipeline(snapshot: Path, reserved_runs: list[Path], out: Path, anchor="f
     # ------------------------------------------------------------ final fit
     probabilities_f, Df = meta(None)
     Qf = quality_features(probabilities_f)
-    Bf = {**B, "quality": Qf}
+    Bf = {**B, "quality": Qf, "direction": Df}
     pick = lambda rows: {n: Bf[n][rows] for n in cfg["potency_blocks"]}
     final_quality = QualityStage(cfg["quality_blocks"], anchor, **cfg["quality"]).fit(qb(a_rows), labels_all[a_rows], direction_all[a_rows])
     final = {
@@ -229,10 +253,13 @@ def run_pipeline(snapshot: Path, reserved_runs: list[Path], out: Path, anchor="f
         "threshold": ThresholdStage(cfg["potency_blocks"], anchor, **cfg["threshold"]).fit(pick(t_rows), t_y, group[t_rows]),
         "intensity": IntensityStage(cfg["potency_blocks"], anchor, **cfg["intensity"]).fit(pick(p_rows), p_x, p_int),
         "combiner": CombinerStage(**cfg["combiner"]).fit(Qf[p_rows], p_int, p_x, p_prof, p_pl, group[p_rows], prior=Df[p_rows]),
+        "threshold_v2": TabularEnsemble(THRESHOLD_MEMBERS, threads=threads).fit(_tab(Bf, THRESHOLD_MEMBERS, t_rows), t_y, group[t_rows],
+                                                                                auxiliary=auxiliary()),
+        "hedonic": TabularEnsemble(HEDONIC_MEMBERS, threads=threads).fit(_tab(Bf, HEDONIC_MEMBERS, p_rows), p_pl, group[p_rows], p_x[:, None]),
         "training_smiles": {"quality": data.molecules.smiles.to_numpy()[q_rows].tolist(),
                             "threshold": data.molecules.smiles.to_numpy()[t_rows].tolist(),
                             "panel": data.molecules.smiles.to_numpy()[np.unique(p_rows)].tolist()},
-        "threshold_abs_error_q90": float(np.quantile(np.abs(oof["threshold"]["ensemble"] - t_y), 0.9)),
+        "threshold_abs_error_q90": float(np.quantile(np.abs(oof["threshold"]["v2"] - t_y), 0.9)),
         "intensity_abs_error_q90": float(np.quantile(np.abs(oof["intensity"] - p_int), 0.9)),
         "dilution_range": [float(p_x.min()), float(p_x.max())],
     }
@@ -253,7 +280,7 @@ def run_pipeline(snapshot: Path, reserved_runs: list[Path], out: Path, anchor="f
     write_json(out / "run.json", manifest)
     write_json(out / "gates.json", gates)
     write_json(out / "metrics.json", metrics)
-    (out / "REPORT.md").write_text(render(metrics, manifest))
+    (out / "REPORT.md").write_text(render(metrics, manifest), encoding="utf-8")
     log(f"done in {manifest['seconds']}s")
     return metrics
 
@@ -290,6 +317,9 @@ def render(metrics, manifest) -> str:
     for name in metrics["profile"]:
         p, q = metrics["profile"][name], metrics["pleasantness"][name]
         lines.append(f"| {name} | {p['mean_descriptor_pearson']:.3f} | {p['mean_profile_cosine']:.3f} | {p['rmse']:.3f} | {q.get('pearson', float('nan')):.3f} |")
+    for name, m in metrics["pleasantness"].items():
+        if name not in metrics["profile"]:
+            lines.append(f"| {name} (pleasantness only) | | | | {m.get('pearson', float('nan')):.3f} |")
     lines += ["", "`oracle` feeds measured intensity into the combiner; `predicted` feeds stage-B2 output. The gap is the error "
               "propagated from the potency stage.", "", "## Limits", "",
               f"- Concentration axis: {manifest['concentration_axis']}.", f"- Profile targets: {manifest['profile_semantics']}.",
@@ -303,17 +333,23 @@ def predict(run: Path, smiles: list[str], dilution: float = 1e-3, mixture: bool 
     bundle = joblib.load(Path(run) / "pipeline.joblib")  # trusted local artifact (pickle)
     cfg = bundle["settings"]
     canonical = [identify(s).smiles for s in smiles]
-    names = sorted(set(cfg["quality_blocks"]) | set(cfg["potency_blocks"]) - {"quality"})
+    names = sorted(set(cfg["quality_blocks"]) | set(cfg["potency_blocks"]) - {"quality"} | ({"rdkit", "unimol2"} if "threshold_v2" in bundle else set()))
     B = BlockCache(cache_root).blocks(names, canonical)
     probabilities, _, panel_direction = bundle["quality"].predict({n: B[n] for n in cfg["quality_blocks"]})
     Q = quality_features(probabilities)
-    pb = {**{n: B[n] for n in names}, "quality": Q}
+    pb = {**{n: B[n] for n in names}, "quality": Q, "direction": panel_direction}
     potency = {n: pb[n] for n in cfg["potency_blocks"]}
     threshold = bundle["threshold"].predict(potency)
+    v2 = "threshold_v2" in bundle  # runs before v2 serve the v1 heads
+    if v2:
+        threshold["v1_ensemble"] = threshold["ensemble"]
+        threshold["ensemble"] = np.column_stack([threshold["ensemble"], bundle["threshold_v2"].predict_members(_tab(pb, bundle["threshold_v2"].members))]).mean(1)
     x = np.full(len(canonical), np.log10(dilution))
     hill_params = bundle["intensity"].params(potency).mean(0)
     intensity, intensity_sd = bundle["intensity"].predict(potency, x)
     profile, pleasant = bundle["combiner"].predict(Q, intensity, x, panel_direction)
+    if v2:
+        pleasant = bundle["hedonic"].predict(_tab(pb, bundle["hedonic"].members), x[:, None])
     directions = bundle["combiner"].direction(Q, panel_direction)
     lo, hi = bundle["dilution_range"]
     similarity = {k: nearest_similarity(canonical, v) for k, v in bundle["training_smiles"].items()}

@@ -45,6 +45,8 @@ def _reserved_from_runs(runs: list[Path], snapshot_molecules: pd.DataFrame) -> t
         if "snapshot" not in identity:
             raise ValueError(f"Run {run} does not record its snapshot; cannot resolve its reserved test molecules")
         snapshot = Path(identity["snapshot"])
+        if not snapshot.exists() and (Path("data/snapshots") / snapshot.name).exists():  # checkout on another machine
+            snapshot = Path("data/snapshots") / snapshot.name
         rows = np.asarray(split["row_ids"])
         test = np.asarray(split["partitions"]["test"], dtype=int)
         ids = rows[test]
@@ -150,3 +152,23 @@ def load_stages(snapshot: Path, reserved_runs: list[Path], folds: int = 5, seed:
                "profile": panel[descriptor_names].to_numpy(float), "descriptors": descriptor_names, "raters": panel.raters.to_numpy()},
         molecules=molecules.loc[usable, ["smiles", "connectivity_id"]], groups={m: group_of[m] for m in usable}, folds=fold_of,
         reserved=reserved, manifest=manifest)
+
+
+def exclude_reserved(frame: pd.DataFrame, data, runs, molecules: pd.DataFrame) -> pd.DataFrame:
+    """Drop molecules touching earlier final tests or the pipeline test partition."""
+    conn, scaffolds = _reserved_from_runs(runs, molecules)
+    test_ids = data.reserved["pipeline_test_molecules"]
+    test_conn = {i.split("-")[0] for i in test_ids}
+    test_scaffolds = {g for g in data.reserved["pipeline_test_groups"] if str(g).startswith("scaffold:")}
+    from ..chemistry import fingerprints
+    from ..models.classical import tanimoto
+    acyclic_test = [molecules.at[i, "smiles"] for i in test_ids if not scaffold(molecules.at[i, "smiles"])]
+    fp_test = fingerprints(acyclic_test, chirality=False) if acyclic_test else None
+    keep = []
+    for mid, smi in zip(frame.molecule_id, frame.smiles):
+        ring = scaffold(smi)
+        bad = mid.split("-")[0] in conn | test_conn or ("scaffold:" + ring) in scaffolds | test_scaffolds
+        if not bad and not ring and fp_test is not None:  # acyclic: Butina clusters used Tanimoto distance 0.4
+            bad = tanimoto(fingerprints([smi], chirality=False), fp_test).max() >= 0.6
+        keep.append(not bad)
+    return frame[np.array(keep)]

@@ -127,6 +127,8 @@ STRUCTURE_BLOCKS = EXPLICIT_BLOCKS + ("pharmacophore", "fingerprint")
 
 
 def block_names(block: str) -> list[str]:
+    if block == "rdkit":
+        return [name for name, _ in Descriptors.descList]
     if block == "transport":
         return list(TRANSPORT)
     if block == "hbond":
@@ -142,7 +144,20 @@ def block_names(block: str) -> list[str]:
     raise ValueError(f"Block {block} has no named columns")
 
 
+def _rdkit(mol):
+    values = []
+    for _, function in Descriptors.descList:
+        try:
+            values.append(float(function(mol)))
+        except (ValueError, ZeroDivisionError, RuntimeError):
+            values.append(np.nan)
+    return np.clip(values, -1e6, 1e6)  # Ipc and a few others overflow float32; trees only need the order
+
+
 def compute_block(block: str, smiles: list[str]) -> np.ndarray:
+    if block == "rdkit":
+        # Full RDKit 2D descriptor set (volatility/size/polarity proxies); column set follows the RDKit version.
+        return np.asarray([_rdkit(Chem.MolFromSmiles(s)) for s in smiles], dtype=np.float32)
     if block in BLOCK_FUNCTIONS:
         rows = []
         for s in smiles:
@@ -161,36 +176,49 @@ def compute_block(block: str, smiles: list[str]) -> np.ndarray:
         return np.stack([_fingerprint(s) for s in smiles]).astype(np.float32)
     if block == "unimol2":
         return unimol2_rows(smiles)
+    if block == "molformer":
+        return pretrained_rows("molformer", smiles)
     raise ValueError(f"Unknown block: {block}")
 
 
-def unimol2_rows(smiles: list[str], threads: int = 8, failures: list | None = None) -> np.ndarray:
-    """Frozen Uni-Mol2 embeddings plus a final availability column.
+# Frozen MoLFormer-XL checkpoint already pinned by the earlier CALNEW baseline runs.
+MOLFORMER = {"family": "molformer", "checkpoint": "ibm-research/MoLFormer-XL-both-10pct",
+             "revision": "361063d0ad524ef77cf39b08469f6be770dc550f"}
 
-    A molecule whose conformers cannot be generated is an unavailable branch: its row is NaN
-    (imputed later from training folds only) and the availability column is 0, so the model
-    can tell a missing 3D view from a real one.
+
+def pretrained_rows(family: str, smiles: list[str], threads: int = 8, failures: list | None = None, chunk: int = 64) -> np.ndarray:
+    """Frozen pretrained embeddings plus a final availability column.
+
+    A molecule the encoder cannot embed (no conformers for Uni-Mol2, unsupported tokens for
+    MoLFormer) is an unavailable branch: its row is NaN (imputed later from training folds only)
+    and the availability column is 0, so the model can tell a missing view from a real one.
     """
     from ..models.pretrained import PretrainedModel
-    model = PretrainedModel({"family": "unimol2", "threads": threads}, "regression", "data/features")
-    try:
-        x = model.embed(smiles).astype(np.float32)
-        return np.column_stack([x, np.ones(len(x), np.float32)])
-    except ValueError:
-        pass  # at least one molecule failed; resolve individually (successful ones are cached)
-    rows, width = [], None
-    for s in smiles:
+    config = {**(MOLFORMER if family == "molformer" else {"family": family}), "threads": threads}
+    model = PretrainedModel(config, "regression", "data/features")
+    rows = []
+    for start in range(0, len(smiles), chunk):
+        batch = smiles[start:start + chunk]
         try:
-            row = model.embed([s])[0].astype(np.float32)
-            width = len(row)
-            rows.append(row)
-        except ValueError as exc:
-            rows.append(None)
-            if failures is not None:
-                failures.append({"smiles": s, "reason": str(exc)})
+            rows.extend(model.embed(batch).astype(np.float32))
+            continue
+        except ValueError:
+            pass  # at least one molecule failed; resolve this chunk individually (successful ones are cached)
+        for s in batch:
+            try:
+                rows.append(model.embed([s])[0].astype(np.float32))
+            except ValueError as exc:
+                rows.append(None)
+                if failures is not None:
+                    failures.append({"smiles": s, "reason": str(exc)})
+    width = next((len(r) for r in rows if r is not None), None)
     if width is None:
-        raise ValueError("Uni-Mol2 embedding failed for every molecule")
+        raise ValueError(f"{family} embedding failed for every molecule")
     return np.stack([np.append(r, 1.0) if r is not None else np.append(np.full(width, np.nan), 0.0) for r in rows]).astype(np.float32)
+
+
+def unimol2_rows(smiles: list[str], threads: int = 8, failures: list | None = None) -> np.ndarray:
+    return pretrained_rows("unimol2", smiles, threads, failures)
 
 
 class BlockCache:

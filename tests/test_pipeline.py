@@ -3,9 +3,9 @@ import pytest
 import torch
 from rdkit import Chem
 
-from calnew.pipeline.blocks import OSMOPHORES, compute_block, longest_aliphatic_chain
+from calnew.pipeline.blocks import OSMOPHORES, block_names, compute_block, longest_aliphatic_chain
 from calnew.pipeline.fusion import BlockFusion, BlockScaler, gram_schmidt, train_fusion
-from calnew.pipeline.stages import CombinerStage, GroupedRidge, combine_mixture, hill
+from calnew.pipeline.stages import HEDONIC_MEMBERS, CombinerStage, GroupedRidge, TabularEnsemble, combine_mixture, hill
 
 
 @pytest.mark.parametrize("smiles,length", [("CCCCCCCC=O", 8), ("CC(C)CCCC(C)C", 7), ("c1ccccc1CCCC", 4), ("c1ccccc1", 0),
@@ -114,3 +114,76 @@ def test_combiner_refuses_mismatched_prior_setting():
     model.predict(q, np.full(20, 50.0), np.full(20, -3.0), prior)
     with pytest.raises(ValueError):
         model.predict(q, np.full(20, 50.0), np.full(20, -3.0))
+
+
+def test_paper_split_is_deterministic_and_uses_paper_ratios():
+    from calnew.pipeline.paper_benchmark import random_split
+    tr, va, te = random_split(268, (0.6, 0.2, 0.2), 42)
+    assert (len(tr), len(va), len(te)) == (160, 54, 54)  # paper Table 10
+    assert tuple(map(len, random_split(474, (0.8, 0.1, 0.1)))) == (379, 47, 48)
+    assert tuple(map(len, random_split(248, (0.8, 0.1, 0.1)))) == (198, 25, 25)
+    assert len(set(tr) | set(va) | set(te)) == 268
+    assert np.array_equal(te, random_split(268, (0.6, 0.2, 0.2), 42)[2])
+
+
+def test_ravia_dilution_labels_parse_without_guessing():
+    from calnew.ingest import _ravia_fraction
+    assert _ravia_fraction("100.00%") == (1.0, "reported_dilution_percent")
+    assert _ravia_fraction("10.00%")[0] == pytest.approx(0.1)
+    assert _ravia_fraction("Solid") == (None, "solid_undiluted")
+    assert _ravia_fraction("-") == (None, "unreported") and _ravia_fraction(float("nan")) == (None, "unreported")
+
+
+def test_rdkit_block_is_finite_or_nan_and_named():
+    x = compute_block("rdkit", ["CCO", "c1ccccc1O", "CC(C)(C)CCCCCCCCCCCCCCCCCCCC"])
+    assert x.shape == (3, len(block_names("rdkit")))
+    assert np.all(np.isnan(x) | (np.abs(x) <= 1e6))
+    assert x[0, block_names("rdkit").index("MolWt")] == pytest.approx(46.07, abs=0.01)
+
+
+def test_tabular_ensemble_averages_members_and_imputes():
+    rng = np.random.default_rng(0)
+    n = 80
+    blocks = {name: rng.normal(size=(n, 4)).astype(np.float32) for name in ("rdkit", "transport", "hbond", "osmophore", "chain", "quality", "direction", "fingerprint")}
+    blocks["rdkit"][::7, 1] = np.nan
+    y = blocks["rdkit"][:, 0] * 2 + blocks["quality"][:, 0]
+    y = np.nan_to_num(y)
+    model = TabularEnsemble(HEDONIC_MEMBERS, seed=1, threads=1).fit(blocks, y, np.arange(n), columns=np.ones((n, 1)))
+    members = model.predict_members(blocks, columns=np.ones((n, 1)))
+    assert members.shape == (n, len(HEDONIC_MEMBERS))
+    assert np.allclose(model.predict(blocks, columns=np.ones((n, 1))), members.mean(1))
+    assert np.corrcoef(model.predict(blocks, columns=np.ones((n, 1))), y)[0, 1] > 0.8
+    with pytest.raises(ValueError):
+        TabularEnsemble((("svm", ("rdkit",)),)).fit(blocks, y, np.arange(n))
+
+
+def test_aux_members_use_flagged_rows_and_predict_as_task_rows():
+    rng = np.random.default_rng(0)
+    names = ("rdkit", "transport", "hbond", "osmophore", "chain", "fingerprint")
+    make = lambda n: {k: rng.normal(size=(n, 3)).astype(np.float32) for k in names}
+    task, aux = make(40), make(200)
+    y = task["rdkit"][:, 0].astype(float)
+    y_aux = aux["rdkit"][:, 0] + 5.0  # same structure signal, different medium offset
+    members = (("extra_trees+aux", names), ("ridge", ("fingerprint",)))
+    with_aux = TabularEnsemble(members, seed=0, threads=1).fit(task, y, np.arange(40), auxiliary=(aux, y_aux, 1.0))
+    assert with_aux.auxiliary_rows == 200
+    pred = with_aux.predict_members(task)[:, 0]
+    assert abs(pred.mean() - y.mean()) < 1.0  # flag 0 at prediction: no medium offset leaks in
+    plain = TabularEnsemble(members, seed=0, threads=1).fit(task, y, np.arange(40))
+    assert plain.auxiliary_rows == 0 and plain.predict(task).shape == (40,)
+    with pytest.raises(ValueError):
+        TabularEnsemble(members).fit(task, y, np.arange(40), columns=np.ones((40, 1)), auxiliary=(aux, y_aux, 1.0))
+
+
+def test_exclude_touching_drops_same_molecule_and_scaffold_analogues():
+    import pandas as pd
+    from calnew.pipeline.auxiliary import exclude_touching
+    from calnew.chemistry import identify, scaffold
+    smiles = ["CCCCCCCC=O", "c1ccccc1CC=O", "c1ccccc1O", "CCCCCCCCC=O", "CC(C)(C)S"]
+    aux = pd.DataFrame({"molecule_id": [identify(s).molecule_id for s in smiles], "smiles": smiles})
+    aux["connectivity"] = [m.split("-")[0] for m in aux.molecule_id]
+    aux["scaffold"] = [scaffold(s) for s in aux.smiles]
+    held = [identify("CCCCCCCC=O").molecule_id]
+    assert exclude_touching(aux, held).tolist() == [False, True, True, True, True]
+    keep = exclude_touching(aux, held + [identify("c1ccccc1C").molecule_id], ["CCCCCCCC=O", "c1ccccc1C"], by_scaffold=True)
+    assert keep.tolist() == [False, False, False, False, True]  # benzene scaffold and the nonanal analogue go

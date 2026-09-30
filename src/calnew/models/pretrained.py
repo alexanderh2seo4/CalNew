@@ -43,8 +43,10 @@ class PretrainedModel(ClassicalModel):
         from transformers import AutoModel,AutoTokenizer
         checkpoint=self.config.get('checkpoint','ibm-research/MoLFormer-XL-both-10pct')
         kwargs=dict(revision=self.config['revision'],trust_remote_code=True,cache_dir=str(Path('data/checkpoints').resolve()))
-        tokenizer=AutoTokenizer.from_pretrained(checkpoint,**kwargs)
-        model=AutoModel.from_pretrained(checkpoint,deterministic_eval=True,**kwargs).eval()
+        if getattr(self,'_molformer_loaded',None) is None:  # load once per adapter instance
+            self._molformer_loaded=(AutoTokenizer.from_pretrained(checkpoint,**kwargs),
+                                    AutoModel.from_pretrained(checkpoint,deterministic_eval=True,**kwargs).eval())
+        tokenizer,model=self._molformer_loaded
         device=self.config.get('device','cpu'); model.to(device); torch.set_num_threads(self.config.get('threads',4))
         rows=[]
         # Published tokenizer/checkpoint may discard stereo tokens; preserve provenance and
