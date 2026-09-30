@@ -85,12 +85,17 @@ def ingest_source(raw_root: Path, store: EvidenceStore) -> dict:
             rejected.append({"cid": str(row["CID"]), "reason": str(exc)})
     store.db.commit()
     stimulus_table = pd.read_csv(Path(raw_root) / "stimuli.csv")
-    stimuli = {}
+    stimuli, unresolved_stimuli = {}, []
     for _, row in stimulus_table.iterrows():
         key = str(row["Stimulus"])
         if source["adapter"] != "catalogue_sparse":
             key = _cid(row["Stimulus"])
-        cid = _cid(row["CID"] if "CID" in row else row["CIDs"])
+        try:
+            cid = _cid(row["CID"] if "CID" in row else row["CIDs"])
+        except (ValueError, TypeError):
+            # Upstream occasionally stores a CAS number in the CID column; keep it out rather than guess.
+            unresolved_stimuli.append({"stimulus": key, "identifier": str(row.get("CID", row.get("CIDs")))})
+            continue
         if cid not in mapping:
             continue
         m = mapping[cid]
@@ -170,7 +175,7 @@ def ingest_source(raw_root: Path, store: EvidenceStore) -> dict:
                 count += int(store.add(observation))
         store.db.commit()
     report = {"source": sid, "new_observations": count, "molecules_resolved": len(mapping), "rejected_molecules": rejected,
-              "unresolved_behavior_rows": skipped, "source_manifest": manifest}
+              "unresolved_stimuli": unresolved_stimuli, "unresolved_behavior_rows": skipped, "source_manifest": manifest}
     write_json(Path(raw_root) / "ingestion-report.json", report)
     return report
 

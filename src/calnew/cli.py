@@ -30,6 +30,14 @@ def main(argv=None):
     s=sub.add_parser('retrieve');s.add_argument('pmcid');s.add_argument('--out',type=Path,default=Path('data/documents'))
     s=sub.add_parser('extraction-audit');s.add_argument('--gold',type=Path,required=True);s.add_argument('--predicted',type=Path,required=True);s.add_argument('--out',type=Path,required=True)
     s=sub.add_parser('suggest');s.add_argument('pool',type=Path);s.add_argument('--batch-size',type=int,required=True);s.add_argument('--policy',choices=['mixed','random','diversity'],default='mixed');s.add_argument('--out',type=Path,required=True)
+    s=sub.add_parser('pipeline',help='Modular quality -> potency -> combiner pipeline')
+    ps=s.add_subparsers(dest='pipeline_command',required=True)
+    t=ps.add_parser('train');t.add_argument('--snapshot',type=Path);t.add_argument('--out',type=Path,required=True)
+    t.add_argument('--reserved-run',type=Path,nargs='*',default=[Path('runs/basic-threshold-models'),Path('runs/basic-descriptor-models')])
+    t.add_argument('--anchor',choices=['fingerprint','unimol2'],default='fingerprint');t.add_argument('--folds',type=int,default=5)
+    t.add_argument('--fast',action='store_true');t.add_argument('--threads',type=int,default=8);t.add_argument('--cache',type=Path,default=Path('data/features'))
+    t=ps.add_parser('predict');t.add_argument('--run',type=Path,required=True);t.add_argument('--smiles',nargs='+',required=True)
+    t.add_argument('--dilution',type=float,default=1e-3);t.add_argument('--mixture',action='store_true');t.add_argument('--out',type=Path)
     a=p.parse_args(argv)
     try:
         if a.command=='doctor':
@@ -103,6 +111,17 @@ def main(argv=None):
             pool=read_json(a.pool)
             result=suggest(pool['candidates'],a.batch_size,anchors=pool.get('anchors',[]),protected_groups=pool.get('protected_groups',[]),policy=a.policy)
             write_json(a.out,result)
+        elif a.command=='pipeline':
+            from .pipeline.run import predict as pipeline_predict,run_pipeline
+            if a.pipeline_command=='train':
+                snapshot=a.snapshot or Path(read_json(Path('data/current.json'))['snapshot'])
+                metrics=run_pipeline(snapshot,a.reserved_run,a.out,anchor=a.anchor,folds=a.folds,fast=a.fast,cache_root=a.cache,threads=a.threads,
+                                     log=lambda m:print(m,file=__import__('sys').stderr,flush=True))
+                result={'report':str(a.out/'REPORT.md'),'threshold_ensemble':metrics['threshold']['ensemble'],
+                        'intensity':metrics['intensity']['pipeline_stage_B2_hill']}
+            else:
+                result=pipeline_predict(a.run,a.smiles,a.dilution,a.mixture)
+                if a.out: write_json(a.out,result)
         print(json.dumps(clean_json(result),indent=2))
     except (ValueError,RuntimeError,OSError,ImportError,KeyError) as exc:
         p.exit(2,f'CALNEW: {type(exc).__name__}: {exc}\n')

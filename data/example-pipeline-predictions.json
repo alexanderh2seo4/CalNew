@@ -1,0 +1,322 @@
+{
+  "anchor": "fingerprint",
+  "concentration_axis": "log10 solution dilution in paraffin oil (Keller protocol)",
+  "molecules": [
+    {
+      "applicability": {
+        "nearest_tanimoto_panel": 1.0,
+        "nearest_tanimoto_quality": 1.0,
+        "nearest_tanimoto_threshold": 1.0
+      },
+      "at_dilution": {
+        "dilution": 0.001,
+        "in_trained_range": true,
+        "intensity_0_100": 72.03773981074487,
+        "intensity_seed_sd": 0.631319561984618,
+        "pleasantness_0_100": 44.16501235961914,
+        "profile": {
+          "acid": 6.15,
+          "ammonia/urinous": 4.01,
+          "bakery": 1.7,
+          "burnt": 5.12,
+          "chemical": 15.78,
+          "cold": 5.02,
+          "decayed": 3.68,
+          "edible": 4.28,
+          "fish": 0.91,
+          "flower": 5.96,
+          "fruit": 5.48,
+          "garlic": 1.87,
+          "grass": 2.95,
+          "musky": 7.33,
+          "sour": 6.6,
+          "spices": 4.5,
+          "sweaty": 3.59,
+          "sweet": 12.4,
+          "warm": 4.31,
+          "wood": 3.45
+        }
+      },
+      "dose_response": {
+        "I_max": 86.22815704345703,
+        "slope": 0.6481274962425232,
+        "x50_log10_dilution": -5.513949871063232
+      },
+      "molecule_id": "NUJGJRNETVAIRJ-UHFFFAOYSA-N",
+      "quality": {
+        "semantics": "ranking of catalogue (Leffingwell) descriptor records; positive-weighted, not calibrated",
+        "top_catalogue_labels": {
+          "citrus": 0.919,
+          "fatty": 0.916,
+          "floral": 0.753,
+          "green": 0.751,
+          "orange": 0.947,
+          "waxy": 0.937
+        }
+      },
+      "smiles": "CCCCCCCC=O",
+      "threshold": {
+        "approx_90pct_log_interval": [
+          -1.3617213585492016,
+          2.1352992657424674
+        ],
+        "fusion_sd_log10": 0.4493781626224518,
+        "log10_ppbv": 0.38678895359663285,
+        "ppbv": 2.436626446386391
+      }
+    },
+    {
+      "applicability": {
+        "nearest_tanimoto_panel": 0.14285714285714285,
+        "nearest_tanimoto_quality": 1.0,
+        "nearest_tanimoto_threshold": 1.0
+      },
+      "at_dilution": {
+        "dilution": 0.001,
+        "in_trained_range": true,
+        "intensity_0_100": 58.94090077332843,
+        "intensity_seed_sd": 7.786258017372979,
+        "pleasantness_0_100": 32.23197937011719,
+        "profile": {
+          "acid": 4.73,
+          "ammonia/urinous": 5.03,
+          "bakery": 1.84,
+          "burnt": 4.78,
+          "chemical": 10.32,
+          "cold": 2.62,
+          "decayed": 6.77,
+          "edible": 5.22,
+          "fish": 2.84,
+          "flower": 3.75,
+          "fruit": 2.23,
+          "garlic": 5.97,
+          "grass": 1.94,
+          "musky": 8.93,
+          "sour": 9.3,
+          "spices": 6.05,
+          "sweaty": 4.54,
+          "sweet": 7.42,
+          "warm": 4.47,
+          "wood": 1.79
+        }
+      },
+      "dose_response": {
+        "I_max": 77.76487731933594,
+        "slope": 0.8067073822021484,
+        "x50_log10_dilution": -4.4079060554504395
+      },
+      "molecule_id": "WMXCDAVJEZZYLT-UHFFFAOYSA-N",
+      "quality": {
+        "semantics": "ranking of catalogue (Leffingwell) descriptor records; positive-weighted, not calibrated",
+        "top_catalogue_labels": {
+          "meaty": 0.983,
+          "onion": 0.903,
+          "roasted": 0.838,
+          "savory": 0.797,
+          "sulfurous": 0.999,
+          "tropical": 0.962
+        }
+      },
+      "smiles": "CC(C)(C)S",
+      "threshold": {
+        "approx_90pct_log_interval": [
+          -3.3393390432987955,
+          0.15768158099287355
+        ],
+        "fusion_sd_log10": 0.6533659100532532,
+        "log10_ppbv": -1.590828731152961,
+        "ppbv": 0.02565495568689483
+      }
+    },
+    {
+      "applicability": {
+        "nearest_tanimoto_panel": 1.0,
+        "nearest_tanimoto_quality": 1.0,
+        "nearest_tanimoto_threshold": 0.20588235294117646
+      },
+      "at_dilution": {
+        "dilution": 0.001,
+        "in_trained_range": true,
+        "intensity_0_100": 84.94032043376747,
+        "intensity_seed_sd": 0.7399684310360719,
+        "pleasantness_0_100": 37.728187561035156,
+        "profile": {
+          "acid": 7.56,
+          "ammonia/urinous": 3.87,
+          "bakery": 4.1,
+          "burnt": 7.48,
+          "chemical": 12.63,
+          "cold": 2.98,
+          "decayed": 4.35,
+          "edible": 9.25,
+          "fish": 1.67,
+          "flower": 5.25,
+          "fruit": 2.87,
+          "garlic": 4.64,
+          "grass": 9.12,
+          "musky": 6.35,
+          "sour": 5.57,
+          "spices": 11.91,
+          "sweaty": 2.9,
+          "sweet": 8.34,
+          "warm": 7.23,
+          "wood": 7.34
+        }
+      },
+      "dose_response": {
+        "I_max": 93.40583038330078,
+        "slope": 0.5029183030128479,
+        "x50_log10_dilution": -7.59490966796875
+      },
+      "molecule_id": "UXFSPRAGHGMRSQ-UHFFFAOYSA-N",
+      "quality": {
+        "semantics": "ranking of catalogue (Leffingwell) descriptor records; positive-weighted, not calibrated",
+        "top_catalogue_labels": {
+          "earthy": 0.925,
+          "fresh": 0.438,
+          "green": 0.804,
+          "herbal": 0.729,
+          "nutty": 0.425,
+          "vegetable": 0.924
+        }
+      },
+      "smiles": "COc1nccnc1CC(C)C",
+      "threshold": {
+        "approx_90pct_log_interval": [
+          -0.9620010731462296,
+          2.5350195511454396
+        ],
+        "fusion_sd_log10": 0.45679569244384766,
+        "log10_ppbv": 0.7865092389996049,
+        "ppbv": 6.116588149906796
+      }
+    },
+    {
+      "applicability": {
+        "nearest_tanimoto_panel": 1.0,
+        "nearest_tanimoto_quality": 1.0,
+        "nearest_tanimoto_threshold": 0.21212121212121213
+      },
+      "at_dilution": {
+        "dilution": 0.001,
+        "in_trained_range": true,
+        "intensity_0_100": 72.4808416939132,
+        "intensity_seed_sd": 1.7857400850982488,
+        "pleasantness_0_100": 50.10259246826172,
+        "profile": {
+          "acid": 3.95,
+          "ammonia/urinous": 2.87,
+          "bakery": 9.96,
+          "burnt": 3.83,
+          "chemical": 7.88,
+          "cold": 1.92,
+          "decayed": 2.87,
+          "edible": 14.12,
+          "fish": 0.8,
+          "flower": 3.72,
+          "fruit": 4.8,
+          "garlic": 1.39,
+          "grass": 1.35,
+          "musky": 3.13,
+          "sour": 3.21,
+          "spices": 5.25,
+          "sweaty": 1.43,
+          "sweet": 17.98,
+          "warm": 6.59,
+          "wood": 1.81
+        }
+      },
+      "dose_response": {
+        "I_max": 86.91822052001953,
+        "slope": 0.4672586917877197,
+        "x50_log10_dilution": -6.780635833740234
+      },
+      "molecule_id": "MWOOGOJBHIARFG-UHFFFAOYSA-N",
+      "quality": {
+        "semantics": "ranking of catalogue (Leffingwell) descriptor records; positive-weighted, not calibrated",
+        "top_catalogue_labels": {
+          "almond": 0.571,
+          "cherry": 0.802,
+          "coumarinic": 0.626,
+          "creamy": 0.882,
+          "sweet": 0.8,
+          "vanilla": 0.992
+        }
+      },
+      "smiles": "COc1cc(C=O)ccc1O",
+      "threshold": {
+        "approx_90pct_log_interval": [
+          -2.445853882109595,
+          1.0511667421820738
+        ],
+        "fusion_sd_log10": 0.4231705069541931,
+        "log10_ppbv": -0.6973435699637607,
+        "ppbv": 0.2007504049656466
+      }
+    },
+    {
+      "applicability": {
+        "nearest_tanimoto_panel": 0.5151515151515151,
+        "nearest_tanimoto_quality": 0.53125,
+        "nearest_tanimoto_threshold": 0.23076923076923078
+      },
+      "at_dilution": {
+        "dilution": 0.001,
+        "in_trained_range": true,
+        "intensity_0_100": 37.19008715052869,
+        "intensity_seed_sd": 3.499189784695109,
+        "pleasantness_0_100": 50.78662109375,
+        "profile": {
+          "acid": 3.21,
+          "ammonia/urinous": 2.1,
+          "bakery": 2.04,
+          "burnt": 3.3,
+          "chemical": 9.11,
+          "cold": 3.31,
+          "decayed": 2.61,
+          "edible": 4.53,
+          "fish": 1.02,
+          "flower": 6.66,
+          "fruit": 2.62,
+          "garlic": 2.3,
+          "grass": 4.07,
+          "musky": 5.38,
+          "sour": 7.52,
+          "spices": 4.77,
+          "sweaty": 2.14,
+          "sweet": 9.74,
+          "warm": 3.68,
+          "wood": 4.34
+        }
+      },
+      "dose_response": {
+        "I_max": 73.07303619384766,
+        "slope": 0.4203883409500122,
+        "x50_log10_dilution": -3.045586585998535
+      },
+      "molecule_id": "CDOSHBSSFJOMGT-UHFFFAOYSA-N",
+      "quality": {
+        "semantics": "ranking of catalogue (Leffingwell) descriptor records; positive-weighted, not calibrated",
+        "top_catalogue_labels": {
+          "citrus": 0.92,
+          "floral": 0.911,
+          "fresh": 0.879,
+          "rose": 0.685,
+          "sweet": 0.536,
+          "woody": 0.776
+        }
+      },
+      "smiles": "C=CC(C)(O)CCC=C(C)C",
+      "threshold": {
+        "approx_90pct_log_interval": [
+          -0.4239318831907961,
+          3.073088741100873
+        ],
+        "fusion_sd_log10": 0.3572750389575958,
+        "log10_ppbv": 1.3245784289550384,
+        "ppbv": 21.114384646655115
+      }
+    }
+  ],
+  "run": "runs/modular-pipeline-fingerprint-v2"
+}

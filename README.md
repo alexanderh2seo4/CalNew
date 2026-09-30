@@ -4,10 +4,11 @@ A runnable research system for comparing molecular odour models. The initial imp
 
 **Current stage: basic models and computational pilots.** This is not yet a prospectively validated human odour system. Water thresholds, participant-specific predictions, receptor transfer and molecule generation are not trained endpoints in the supplied artifacts.
 
-Verification: **21 automated tests passed**, dependency checks passed, saved prediction artifacts were exercised, and both final holdouts remain unopened. See [artifact verification](docs/verification.json).
+Verification: **38 automated tests passed** (21 original + 17 pipeline), dependency checks passed, saved prediction artifacts were exercised, and both final holdouts remain unopened. See [artifact verification](docs/verification.json).
 
 ## Start here
 
+- [Modular quality → potency → combiner pipeline](docs/PIPELINE.md) (example model; `calnew pipeline train/predict`)
 - [Basic-model results and interpretation](docs/BASIC-MODELS.md)
 - [Architecture and implementation status](docs/ARCHITECTURE.md)
 - [Improvements with substantial computing capacity](docs/IMPROVEMENTS.md)
