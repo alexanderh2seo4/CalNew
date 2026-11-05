@@ -1,0 +1,434 @@
+{
+  "verified_date": "2026-10-27",
+  "status": "Adopted exact identities with route-specific safeguards; original proposal preserved.",
+  "scope": "Ten additional independently established aroma parents for root review. Ingredient membership is separate from individual-paper relevance and present regulatory authorization.",
+  "compared_allowlists": [
+    "research/named_aroma_allowlist_expanded.json",
+    "research/named_aroma_allowlist_2026-10-27_v2.json"
+  ],
+  "chemicals": [
+    {
+      "name": "coumarin",
+      "cas_as_source": "91-64-5",
+      "exact_parent_synonyms": [
+        "coumarin",
+        "cumarin",
+        "1,2-benzopyrone",
+        "2H-1-benzopyran-2-one",
+        "benzo-alpha-pyrone"
+      ],
+      "source_url": "https://www.fda.gov/cosmetics/cosmetic-ingredients/allergens-cosmetics",
+      "source_authority": "US FDA, Allergens in Cosmetics",
+      "verified_use": "fragrance ingredient; historical flavoring",
+      "membership_evidence": "FDA explicitly includes coumarin in its fragrance-ingredient list.",
+      "supporting_urls": [
+        "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=COUMARINPROHIBITED&set=foodsubstances",
+        "https://ec.europa.eu/health/ph_risk/committees/04_sccp/docs/sccp_o_061.pdf"
+      ],
+      "identity_evidence": "FDA food record identifies CAS 91-64-5 and the listed exact chemical aliases; the SCCP chemical specification independently identifies the same parent.",
+      "regulatory_note": "FDA food record is COUMARIN--PROHIBITED and links 21 CFR 189.130. Fragrance membership and historical flavor use do not imply food authorization.",
+      "classifier_safeguards_needed": [
+        "Do not admit generic coumarins, coumarin derivatives, coumarin anticoagulants, warfarin, dicoumarol, coumarin hybrids, metal complexes, fluorescent coumarin dyes or substituted coumarin libraries through this entry.",
+        "Bare coumarin in a title may denote a scaffold/class rather than administered parent. Require explicit unchanged-parent evidence in title/abstract; otherwise defer for identity review."
+      ],
+      "recommended_routes": [
+        "exact-parent physical properties",
+        "centrally assayed unchanged-parent pharmacology/toxicology with extra identity safeguards"
+      ],
+      "literature_anchors": [
+        {
+          "title": "Toxicology and Carcinogenesis Studies of Coumarin (CASRN 91-64-5) in F344/N Rats and B6C3F1 Mice (Gavage Studies), NTP TR-422",
+          "url": "https://ntp.niehs.nih.gov/publications/reports/tr?type=Technical+Report",
+          "evidence": "Official NTP index identifies a dedicated 1993 unchanged-parent animal study, distinct from coumarin-class drug papers."
+        },
+        {
+          "title": "NIST Chemistry WebBook: Coumarin",
+          "url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C91645",
+          "evidence": "Official parent identity/property record and linked phase-change literature."
+        }
+      ]
+    },
+    {
+      "name": "benzyl alcohol",
+      "cas_as_source": "100-51-6",
+      "exact_parent_synonyms": [
+        "benzyl alcohol",
+        "benzenemethanol",
+        "phenylmethanol",
+        "phenylcarbinol",
+        "phenyl carbinol",
+        "phenylmethyl alcohol",
+        "alpha-hydroxytoluene",
+        "benzenecarbinol"
+      ],
+      "source_url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=BENZYLALCOHOL&set=FoodSubstances",
+      "source_authority": "US FDA, Substances Added to Food",
+      "verified_use": "flavoring agent or adjuvant; also solvent or vehicle; fragrance ingredient",
+      "membership_evidence": "FDA assigns explicit flavoring technical effect and FEMA 2137; FDA cosmetic fragrance list also names benzyl alcohol.",
+      "supporting_urls": [
+        "https://www.fda.gov/cosmetics/cosmetic-ingredients/allergens-cosmetics",
+        "https://www.femaflavor.org/flavor-library/search?fulltext=&page=2"
+      ],
+      "identity_evidence": "FDA CAS and synonyms identify the unchanged C7H8O parent.",
+      "classifier_safeguards_needed": [
+        "Exclude reagent/substrate-only, catalytic oxidation-only, transfer-hydrogenation-only and unrelated solute studies where benzyl alcohol is merely solvent/cosolvent/vehicle.",
+        "A preservative or excipient mention is not central pharmacology. Include only when unchanged benzyl alcohol itself is the administered/assayed agent, explicitly measured physical-property target, or intended aroma-parent production product.",
+        "Do not match benzyl alcohol derivatives, substituted benzyl alcohols, benzyl ethers or benzyl esters by substring."
+      ],
+      "recommended_routes": [
+        "central-parent pharmacology/toxicology",
+        "exact-parent physical properties",
+        "aroma-parent production"
+      ],
+      "literature_anchors": [
+        {
+          "title": "NTP TR-343: Toxicology and Carcinogenesis Studies of Benzyl Alcohol (CASRN 100-51-6)",
+          "url": "https://ntp.niehs.nih.gov/sites/default/files/ntp/htdocs/lt_rpts/tr343.pdf",
+          "evidence": "Dedicated unchanged-parent gavage study in rats and mice; not incidental solvent use."
+        },
+        {
+          "title": "NIST Chemistry WebBook: Benzyl alcohol",
+          "url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C100516&Mask=4&Units=CAL",
+          "evidence": "Phase-change data and underlying references."
+        }
+      ]
+    },
+    {
+      "name": "benzyl benzoate",
+      "cas_as_source": "120-51-4",
+      "exact_parent_synonyms": [
+        "benzyl benzoate",
+        "benzyl benzenecarboxylate",
+        "benzyl phenylformate",
+        "phenylmethyl benzoate",
+        "benzoic acid benzyl ester",
+        "benzoic acid, benzyl ester",
+        "benzoic acid, phenylmethyl ester"
+      ],
+      "source_url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=BENZYLBENZOATE&set=FoodSubstances",
+      "source_authority": "US FDA, Substances Added to Food; FEMA",
+      "verified_use": "flavoring agent or adjuvant; also solvent or vehicle; fragrance ingredient",
+      "membership_evidence": "FDA assigns explicit flavoring technical effect and FEMA 2138. FEMA individual record supplies balsamic/herb/oil flavor profile.",
+      "supporting_urls": [
+        "https://www.femaflavor.org/flavor-library/benzyl-benzoate",
+        "https://www.fda.gov/cosmetics/cosmetic-ingredients/allergens-cosmetics"
+      ],
+      "identity_evidence": "FDA individual record identifies CAS 120-51-4 and exact ester aliases.",
+      "classifier_safeguards_needed": [
+        "Exclude solvent/vehicle-only benzyl benzoate and unrelated solute or bulk-material papers. Do not transfer aroma membership to generic benzoates or other benzyl esters."
+      ],
+      "recommended_routes": [
+        "central-parent pharmacology/toxicology",
+        "exact-parent physical properties",
+        "aroma-parent production"
+      ],
+      "literature_anchors": [
+        {
+          "title": "NIST Chemistry WebBook: Benzyl Benzoate",
+          "url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C120514&Mask=FFF",
+          "evidence": "Parent phase-change data, enthalpies of vaporization and underlying experimental references."
+        }
+      ]
+    },
+    {
+      "name": "methyl benzoate",
+      "cas_as_source": "93-58-3",
+      "exact_parent_synonyms": [
+        "methyl benzoate",
+        "methyl benzenecarboxylate",
+        "benzoic acid methyl ester",
+        "benzoic acid, methyl ester"
+      ],
+      "source_url": "https://www.femaflavor.org/flavor-library/methyl-benzoate",
+      "source_authority": "FEMA Flavor Ingredient Library; US FDA",
+      "verified_use": "flavor ingredient",
+      "membership_evidence": "FEMA 2683 identifies CAS 93-58-3 with herb/lettuce/prune/violet flavor profile. FDA explicitly lists flavoring technical effect.",
+      "supporting_urls": [
+        "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=METHYLBENZOATE&set=FoodSubstances"
+      ],
+      "identity_evidence": "FEMA and FDA agree on CAS; FDA supplies exact methyl ester aliases. Historical Oil of Niobe alias omitted from automatic synonyms to avoid mixture/product ambiguity.",
+      "classifier_safeguards_needed": [
+        "Exclude generic substituted methyl-benzoate libraries and reagent/substrate/solvent-only studies, insect-only pesticidal studies, and unrelated polymers/materials."
+      ],
+      "recommended_routes": [
+        "central-parent pharmacology/toxicology",
+        "exact-parent physical properties",
+        "aroma-parent production"
+      ],
+      "literature_anchors": [
+        {
+          "title": "NIST Chemistry WebBook: Benzoic acid, methyl ester",
+          "url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C93583&Mask=74&Units=SI",
+          "evidence": "Parent phase-change, Henry-law and reference sections; supports bounded physical-property discovery."
+        }
+      ]
+    },
+    {
+      "name": "ethyl butyrate",
+      "cas_as_source": "105-54-4",
+      "exact_parent_synonyms": [
+        "ethyl butyrate",
+        "ethyl butanoate",
+        "ethyl n-butyrate",
+        "ethyl n-butanoate",
+        "butanoic acid ethyl ester",
+        "butanoic acid, ethyl ester",
+        "butyric acid ethyl ester"
+      ],
+      "source_url": "https://www.femaflavor.org/flavor-library/ethyl-butyrate",
+      "source_authority": "FEMA Flavor Ingredient Library",
+      "verified_use": "flavor ingredient",
+      "membership_evidence": "FEMA 2427 identifies CAS 105-54-4 and an apple/butter/cheese/pineapple/strawberry profile.",
+      "supporting_urls": [
+        "https://webbook.nist.gov/cgi/cbook.cgi?ID=C105544"
+      ],
+      "identity_evidence": "NIST identifies unchanged ethyl butanoate CAS 105-54-4 and exact n-butyrate aliases.",
+      "classifier_safeguards_needed": [
+        "Ethyl isobutyrate is distinct. Exclude incidental solvent, extraction medium, unrelated substrate/reagent and reaction-product-mixture mentions."
+      ],
+      "recommended_routes": [
+        "exact-parent physical properties",
+        "aroma-parent production",
+        "central-parent pharmacology/toxicology"
+      ],
+      "literature_anchors": [
+        {
+          "title": "Vapor-liquid equilibria of carbon dioxide with isopropyl acetate, diethyl carbonate and ethyl butyrate at elevated pressures",
+          "url": "https://scholars.lib.ntu.edu.tw/bitstreams/b4af7733-dc9e-49fc-bb4e-63c235016fb7/download",
+          "evidence": "Author-institution copy of Cheng and Chen, Fluid Phase Equilibria 234 (2005) 77-83; explicitly measures ester equilibrium compositions."
+        }
+      ]
+    },
+    {
+      "name": "ethyl hexanoate",
+      "cas_as_source": "123-66-0",
+      "exact_parent_synonyms": [
+        "ethyl hexanoate",
+        "ethyl caproate",
+        "ethyl n-hexanoate",
+        "hexanoic acid ethyl ester",
+        "hexanoic acid, ethyl ester",
+        "caproic acid ethyl ester"
+      ],
+      "source_url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=ETHYLHEXANOATE&set=FoodSubstances",
+      "source_authority": "US FDA, Substances Added to Food; FEMA",
+      "verified_use": "flavoring agent or adjuvant",
+      "membership_evidence": "FDA explicitly assigns flavoring technical effect and FEMA 2439. FEMA gives apple-peel/brandy/fruit-gum/overripe-fruit/pineapple profile.",
+      "supporting_urls": [
+        "https://www.femaflavor.org/flavor-library/ethyl-hexanoate",
+        "https://webbook.nist.gov/cgi/cbook.cgi?ID=C123660"
+      ],
+      "identity_evidence": "FDA, FEMA and NIST agree on CAS 123-66-0; caproate is the same ester.",
+      "classifier_safeguards_needed": [
+        "Exclude ethyl 2-methylbutyrate, generic hexanoates, incidental solvent/extraction-medium, and unrelated reaction substrate uses."
+      ],
+      "recommended_routes": [
+        "exact-parent physical properties",
+        "aroma-parent production",
+        "central-parent pharmacology/toxicology"
+      ],
+      "literature_anchors": [
+        {
+          "title": "NIST Chemistry WebBook: Hexanoic acid, ethyl ester",
+          "url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C123660",
+          "evidence": "Dedicated parent identity with phase-change and thermochemistry data routes and underlying literature."
+        }
+      ]
+    },
+    {
+      "name": "methyl dihydrojasmonate",
+      "cas_as_source": "24851-98-7",
+      "exact_parent_synonyms": [
+        "methyl dihydrojasmonate",
+        "methyldihydrojasmonate",
+        "methyl (2-pentyl-3-oxocyclopentyl)acetate",
+        "methyl (3-oxo-2-pentylcyclopentyl)acetate",
+        "methyl 3-oxo-2-pentylcyclopentaneacetate",
+        "hedione"
+      ],
+      "source_url": "https://hfpappexternal.fda.gov/Scripts/Fdcc/index.cfm?id=METHYLDIHYDROJASMONATE&set=FoodSubstances",
+      "source_authority": "US FDA, Substances Added to Food; FDA GSRS; FEMA",
+      "verified_use": "flavor enhancer; flavoring agent or adjuvant; fragrance substance",
+      "membership_evidence": "FDA explicitly assigns flavoring effects and FEMA 3408. European Commission fragrance-allergen table explicitly lists methyl dihydrojasmonate CAS 24851-98-7 as fragrance substance.",
+      "supporting_urls": [
+        "https://www.femaflavor.org/flavor-library/methyl-dihydrojasmonate",
+        "https://precision.fda.gov/uniisearch/srs/unii/3GW44CIE3Y",
+        "https://ec.europa.eu/health/scientific_committees/opinions_layman/perfume-allergies/en/figtableboxes/table-13-4.htm"
+      ],
+      "identity_evidence": "FDA synthetic methyl dihydrojasmonate UNII 3GW44CIE3Y maps Hedione and CAS 24851-98-7; the food record independently establishes ingredient use.",
+      "classifier_safeguards_needed": [
+        "Do not merge methyl jasmonate, jasmonic acid or their derivatives with methyl dihydrojasmonate.",
+        "Commercial Hedione can have cis/trans and enantiomer composition differences; preserve reported composition. Do not automatically identify Hedione HC, enriched stereoisomers or a formulated fragrance mixture with the generic parent, or infer stereospecific effects from generic identity.",
+        "Omit bare MDJ automatic alias because it is an ambiguous abbreviation; require expansion or CAS evidence."
+      ],
+      "recommended_routes": [
+        "central-parent odorant-receptor/pharmacology",
+        "exact-parent physical properties",
+        "aroma-parent production"
+      ],
+      "literature_anchors": [
+        {
+          "title": "The smelling of Hedione results in sex-differentiated human brain activity",
+          "doi": "10.1016/j.neuroimage.2015.03.029",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1053811915002116",
+          "evidence": "Primary 2015 receptor-expression and human fMRI work centrally administering the named odorant; retain study limitations, with no efficacy or pheromone-status inference."
+        }
+      ]
+    },
+    {
+      "name": "galaxolide",
+      "cas_as_source": "1222-05-5",
+      "exact_parent_synonyms": [
+        "galaxolide",
+        "hexamethylindanopyran",
+        "HHCB",
+        "1,3,4,6,7,8-hexahydro-4,6,6,7,8,8-hexamethylcyclopenta[g]-2-benzopyran"
+      ],
+      "source_url": "https://webprod.hc-sc.gc.ca/nhpid-bdipsn/ingredReq?id=11610&wbdisable=true",
+      "source_authority": "Health Canada NHPID",
+      "verified_use": "fragrance ingredient",
+      "membership_evidence": "Individual chemical record identifies Hexamethylindanopyran, common name Galaxolide, CAS 1222-05-5, non-medicinal purpose Fragrance Ingredient.",
+      "supporting_urls": [
+        "https://health-infobase.canada.ca/biomonitoring/?mx=serum&v=LAB_HHCB"
+      ],
+      "identity_evidence": "Health Canada's biomonitoring record explicitly expands HHCB to the same Galaxolide chemical name.",
+      "classifier_safeguards_needed": [
+        "Commercial fragrance materials can be diluted or stereoisomer mixtures; preserve purity/composition. A Galaxolide trade formulation is not automatically pure CAS 1222-05-5.",
+        "Exclude HHCB-lactone, oxidation/transformation products, environmental occurrence/removal engineering without central parent pharmacology or measured allowed physical properties, and incidental biomonitoring mentions."
+      ],
+      "recommended_routes": [
+        "central-parent pharmacology/toxicology",
+        "exact-parent physical properties",
+        "aroma-parent production"
+      ],
+      "literature_anchors": [
+        {
+          "title": "The systemic exposure to the polycyclic musks, AHTN and HHCB, under conditions of use as fragrance ingredients: evidence of lack of complete absorption from a skin reservoir",
+          "doi": "10.1016/S0378-4274(99)00174-5",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0378427499001745",
+          "evidence": "Primary dermal radiolabeled-parent study in rats and humans; central parent exposure, absorption and evaporation."
+        }
+      ]
+    },
+    {
+      "name": "tonalide",
+      "cas_as_source": "1506-02-1",
+      "additional_cas_as_source": [
+        "21145-77-7"
+      ],
+      "exact_parent_synonyms": [
+        "tonalide",
+        "tonalid",
+        "AHTN",
+        "acetyl hexamethyl tetralin",
+        "acetylhexamethyltetrahydronaphthalene",
+        "7-acetyl-1,1,3,4,4,6-hexamethyltetralin",
+        "7-acetyl-1,1,3,4,4,6-hexamethyl-1,2,3,4-tetrahydronaphthalene",
+        "1-(5,6,7,8-tetrahydro-3,5,5,6,8,8-hexamethyl-2-naphthyl)ethan-1-one"
+      ],
+      "source_url": "https://echa.europa.eu/substance-information/-/substanceinfo/100.014.667",
+      "source_authority": "ECHA; European Commission cosmetic regulation Annex III entry 182; Australian AICIS identity assessment",
+      "verified_use": "fragrance ingredient",
+      "membership_evidence": "ECHA identifies AHTN/Tonalide CAS 1506-02-1 and links cosmetic Annex III. The official Annex III entry 182 explicitly covers AHTN in fine-fragrance and fragrance-cream product categories, linking both CAS numbers.",
+      "supporting_urls": [
+        "https://webgate.ec.europa.eu/reqs2/public/v2/requirement/auxi/eu/32009R1223_spcosmet_annex_3.pdf",
+        "https://www.industrialchemicals.gov.au/sites/default/files/Tonalide%20and%20related%20polycyclic%20musks_%20Environment%20tier%20II%20assessment.pdf",
+        "https://health-infobase.canada.ca/biomonitoring/?mx=serum&v=LAB_AHTN"
+      ],
+      "identity_evidence": "AICIS explicitly states CAS 21145-77-7 and 1506-02-1 are identifiers for the same substance, and technical tonalide is a racemic mixture. Health Canada expands tonalide/AHTN independently.",
+      "regulatory_note": "Fragrance restrictions exist. Sources here establish identity and historical/regulated use only; no inference of unrestricted current authorization or safety. ECHA brief-profile fetch returned 403; identity infocard and official regulation were accessible.",
+      "classifier_safeguards_needed": [
+        "Preserve racemic/enantiomer-specific results and commercial product purity; do not turn all tonalide-related polycyclic musks into this identity.",
+        "Exclude environmental occurrence/removal engineering, transformed AHTN products and unrelated mixtures unless the unchanged parent is the central eligible pharmacology or physical-property target."
+      ],
+      "recommended_routes": [
+        "central-parent pharmacology/toxicology",
+        "exact-parent physical properties",
+        "aroma-parent production"
+      ],
+      "literature_anchors": [
+        {
+          "title": "The systemic exposure to the polycyclic musks, AHTN and HHCB, under conditions of use as fragrance ingredients",
+          "doi": "10.1016/S0378-4274(99)00174-5",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0378427499001745",
+          "evidence": "Primary dermal parent-exposure, absorption and evaporation research."
+        }
+      ]
+    },
+    {
+      "name": "lilial",
+      "cas_as_source": "80-54-6",
+      "exact_parent_synonyms": [
+        "lilial",
+        "butylphenyl methylpropional",
+        "2-(4-tert-butylbenzyl)propionaldehyde",
+        "3-(4-tert-butylphenyl)-2-methylpropanal",
+        "lily aldehyde",
+        "lysmeral",
+        "p-t-butyl-alpha-methylhydrocinnamic aldehyde"
+      ],
+      "source_url": "https://www.canada.ca/en/health-canada/services/chemicals-product-safety/lilial.html",
+      "source_authority": "Health Canada; US FDA fragrance list and FDA GSRS",
+      "verified_use": "historical/currently assessed fragrance ingredient; EU cosmetic use prohibited",
+      "membership_evidence": "Health Canada explicitly describes lilial as a synthetic fragrance ingredient used in consumer products. FDA also lists Lilial among fragrance ingredients and flags its EU prohibition.",
+      "supporting_urls": [
+        "https://www.fda.gov/cosmetics/cosmetic-ingredients/allergens-cosmetics",
+        "https://precision.fda.gov/uniisearch/srs/unii/T7540GJV69",
+        "https://www.gov.uk/government/news/opss-issues-cosmetics-reminder-on-banned-chemical"
+      ],
+      "identity_evidence": "FDA GSRS T7540GJV69 maps the listed parent aliases to CAS 80-54-6 and an unspecified-stereochemistry structure.",
+      "regulatory_note": "FDA explicitly says Lilial is no longer permitted in EU cosmetics. UK OPSS documents the Great Britain cosmetic ban since December 2022. This proposal preserves historical fragrance identity and makes no approval/safety claim.",
+      "classifier_safeguards_needed": [
+        "Commercial Lilial is commonly racemic; preserve tested stereochemistry/purity. Do not merge with HICC/Lyral, cyclamen aldehyde, other lily fragrances or lilial derivatives.",
+        "Exclude incidental product-mixture mentions and environmental remediation; unchanged parent must be the central eligible study target."
+      ],
+      "recommended_routes": [
+        "central-parent pharmacology/toxicology",
+        "exact-parent physical properties",
+        "historical aroma-parent production"
+      ],
+      "literature_anchors": [
+        {
+          "title": "Toxicological investigation of lilial",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10613275/",
+          "evidence": "Primary research article centrally investigating the named CAS 80-54-6 parent; used only as a research lead, with no toxicological conclusion inferred."
+        }
+      ]
+    }
+  ],
+  "deferred_identity_candidates": [
+    {
+      "term": "ambroxide / Ambroxan / Ambrox",
+      "reason": "Strong aroma membership exists, but this pass did not finish an exact stereochemical mapping that would justify merging the labels into one CAS entry. FEMA 3471 records 3738-00-9 for 1,5,5,9-tetramethyl-13-oxatricyclo(8.3.0.0(4,9))tridecane, while PubChem (-)-Ambroxide/Ambroxan has CAS 6790-58-5 and defined stereochemistry. Do not silently treat those CAS/sterochemical levels as equivalent or use supplier FEMA claims to bridge them.",
+      "source_urls": [
+        "https://www.femaflavor.org/flavor-library/1559-tetramethyl-13-oxatricyclo830049tridecane",
+        "https://pubchem.ncbi.nlm.nih.gov/compound/Ambroxan"
+      ],
+      "automatic_adoption": false
+    },
+    {
+      "term": "Lyral / HICC",
+      "reason": "FDA establishes fragrance membership and explicitly flags EU prohibition, but HICC/Lyral can denote commercial positional-isomer material. Exact individual-parent/mixture CAS and aliases were not resolved in this bounded pass; do not add a mixture as a discrete molecule.",
+      "source_urls": [
+        "https://www.fda.gov/cosmetics/cosmetic-ingredients/allergens-cosmetics"
+      ],
+      "automatic_adoption": false
+    }
+  ],
+  "review_and_adoption_requirements": [
+    "This file is a proposal, not an allowlist activation. Root must review parent identities and classifier guards before adoption.",
+    "Every proposed parent has independently established flavor/fragrance membership. Generic drug, solvent or medicinal-plant membership was not used to establish aroma identity.",
+    "Exact lexical aliases do not prove unchanged parent identity. Derivative/scaffold, substrate-only, solvent-only, absence/background and mixture guards remain mandatory.",
+    "Coumarin and benzyl alcohol are high-ambiguity additions: defer pharmacology admission if the current classifier cannot distinguish parent-versus-family and central-agent-versus-solvent/preservative roles.",
+    "Trade names with different isomer proportions, dilutions or formulations must retain study-specific identity; do not count aliases or commercial grades as additional molecules.",
+    "Literature anchors are source-verified discovery leads only, not accepted atlas records, full-text relevance adjudications, efficacy claims or manufactured citation edges.",
+    "This bounded proposal contains 10 recommended parent identities and 2 explicitly deferred identity candidates. No code, database, Site or live collection changes were made."
+  ],
+  "adoption_note": "Coumarin automatic parent pharmacology requires explicit parent CAS91-64-5 or an unambiguous structural alias in text, not the coumarin drug class. Solvent/reagent/vehicle-only benzyl alcohol use remains excluded. Commercial mixture/stereo caveats and historical bans remain attached.",
+  "route_limits": {
+    "coumarin_pharmacology": "Require explicit unchanged-parent CAS 91-64-5 or unambiguous structural alias, not generic coumarin/anticoagulant family.",
+    "coumarin_and_benzyl_alcohol_production": "Require explicit aroma/flavor/fragrance purpose; generic drug-intermediate/reagent production is not admitted through these ambiguous identities.",
+    "physical_properties": "Parent must be the measured/calculated property target; solvent/cosolvent/modifier, sealant dissolution, substituted drug names and bulk materials do not qualify.",
+    "pharmacology": "Unchanged parent central biological endpoint; drug class, metabolites, reagent/vehicle use, protein formulation stability and pesticide-development auxiliary safety arms do not qualify."
+  }
+}

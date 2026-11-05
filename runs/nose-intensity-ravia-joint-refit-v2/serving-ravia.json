@@ -1,0 +1,18 @@
+{
+  "artifact_sha256": "d02eadb6ecbb2043d7f96ea1e0421c3ea4cf9ce947264ff95c7102ff9090dc0c",
+  "host": "compute-host",
+  "monotonicity": "Single Ravia endpoint; internal coordinate0 is study-conditioned, not measured dilution",
+  "recipe": "joint_0.25_current",
+  "reserved_holdouts_opened": false,
+  "snapshot": "data\\snapshots\\828751d0a24e8149",
+  "source_molecules": 326,
+  "source_proxy_counts": [
+    301,
+    297,
+    305,
+    326
+  ],
+  "source_weight": 0.25,
+  "training_molecules": 114,
+  "validated_endpoint": "Ravia published group-mean intensity at each molecule's most concentrated presentation"
+}

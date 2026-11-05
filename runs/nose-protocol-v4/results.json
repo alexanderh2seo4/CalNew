@@ -1,0 +1,1158 @@
+{
+  "manifest": {
+    "auxiliary": {
+      "rows_after_reserved_exclusion": 567,
+      "rows_per_threshold_fit": [
+        0,
+        542
+      ],
+      "source": "Li et al. 2025 water ODT, Zenodo 10.5281/zenodo.17559514 (CC BY 4.0)"
+    },
+    "differences": "- CALNEW's reserved final tests and the pipeline test partition stay closed, so every dataset\n  is smaller than in the paper (e.g. Abraham 186 vs 268).\n- Keller molecule targets use each molecule's higher-concentration stimulus; descriptor\n  strength covers the 20 semantic descriptors (the paper's 21-dim target is not specified).\n- Ravia uses published group means at each molecule's most concentrated dilution\n  (178 molecules in the public files vs 248 in the paper).\n- Models train on the train split only; the validation split is not used (no early stopping).\n- Threshold tree members also train on Li et al. 2025 water thresholds (CC BY 4.0) as flagged\n  auxiliary rows; rows of the split's validation/test molecules and of reserved molecules are dropped.",
+    "paper_n": {
+      "descriptor_strength_keller": 474,
+      "intensity_keller": 474,
+      "intensity_ravia": 248,
+      "pleasantness_keller": 474,
+      "threshold_abraham": 268
+    },
+    "protocol": "NOSE arXiv:2604.10452 downstream: random split seed 42, model seeds [42, 43, 44]",
+    "reserved_holdouts_opened": false,
+    "robustness": "split seeds [42, 43, 44, 45, 46, 47, 48, 49, 50, 51] with model seed 42",
+    "seconds": 1371,
+    "snapshot": "data/snapshots/828751d0a24e8149",
+    "split_id": "3384a456e4f35282192120b3a2d8f969aae88ae0f5e34d8b3e1aee177cb2465a",
+    "splits": {
+      "abraham": {
+        "n": 186,
+        "test": 38,
+        "train": 111,
+        "val": 37
+      },
+      "keller": {
+        "n": 326,
+        "test": 33,
+        "train": 260,
+        "val": 33
+      },
+      "ravia": {
+        "n": 114,
+        "test": 12,
+        "train": 91,
+        "val": 11
+      }
+    }
+  },
+  "paper": {
+    "descriptor_strength_keller": {
+      "AttentiveFP": [
+        0.327,
+        0.065
+      ],
+      "ChemBERTa": [
+        0.33,
+        0.089
+      ],
+      "GCN": [
+        0.171,
+        0.006
+      ],
+      "GIN": [
+        0.128,
+        0.007
+      ],
+      "Morgan": [
+        0.244,
+        0.023
+      ],
+      "NOSE": [
+        0.348,
+        0.06
+      ],
+      "POM": [
+        0.314,
+        0.039
+      ],
+      "Uni-Mol": [
+        0.33,
+        0.05
+      ]
+    },
+    "intensity_keller": {
+      "AttentiveFP": [
+        0.33,
+        0.01
+      ],
+      "ChemBERTa": [
+        0.39,
+        0.07
+      ],
+      "GCN": [
+        0.11,
+        0.05
+      ],
+      "GIN": [
+        0.06,
+        0.14
+      ],
+      "Morgan": [
+        0.05,
+        0.02
+      ],
+      "NOSE": [
+        0.42,
+        0.01
+      ],
+      "POM": [
+        0.32,
+        0.07
+      ],
+      "Uni-Mol": [
+        0.27,
+        0.03
+      ]
+    },
+    "intensity_ravia": {
+      "AttentiveFP": [
+        0.47,
+        0.0
+      ],
+      "ChemBERTa": [
+        0.47,
+        0.06
+      ],
+      "GCN": [
+        0.19,
+        0.01
+      ],
+      "GIN": [
+        0.19,
+        0.11
+      ],
+      "Morgan": [
+        0.1,
+        0.19
+      ],
+      "NOSE": [
+        0.49,
+        0.03
+      ],
+      "POM": [
+        0.32,
+        0.06
+      ],
+      "Uni-Mol": [
+        0.31,
+        0.02
+      ]
+    },
+    "pleasantness_keller": {
+      "AttentiveFP": [
+        0.52,
+        0.05
+      ],
+      "ChemBERTa": [
+        0.65,
+        0.04
+      ],
+      "GCN": [
+        0.43,
+        0.01
+      ],
+      "GIN": [
+        0.3,
+        0.04
+      ],
+      "Morgan": [
+        0.51,
+        0.03
+      ],
+      "NOSE": [
+        0.71,
+        0.05
+      ],
+      "POM": [
+        0.68,
+        0.03
+      ],
+      "Uni-Mol": [
+        0.68,
+        0.02
+      ]
+    },
+    "threshold_abraham": {
+      "AttentiveFP": [
+        0.59,
+        0.35
+      ],
+      "ChemBERTa": [
+        0.81,
+        0.02
+      ],
+      "GCN": [
+        0.22,
+        0.09
+      ],
+      "GIN": [
+        0.72,
+        0.02
+      ],
+      "Morgan": [
+        0.6,
+        0.18
+      ],
+      "NOSE": [
+        0.84,
+        0.03
+      ],
+      "POM": [
+        0.79,
+        0.02
+      ],
+      "Uni-Mol": [
+        0.78,
+        0.05
+      ]
+    }
+  },
+  "paper_mae": {
+    "descriptor_strength_keller": {
+      "AttentiveFP": 6.232,
+      "ChemBERTa": 6.11,
+      "GCN": 6.247,
+      "GIN": 6.528,
+      "Morgan": 6.483,
+      "NOSE": 5.862,
+      "POM": 6.304,
+      "Uni-Mol": 6.741
+    }
+  },
+  "per_seed": {
+    "descriptor_strength_keller": [
+      {
+        "explicit_fp_extra_trees": {
+          "mae": 2.6522107630646383,
+          "pearson_flattened": 0.6237613691200861,
+          "pearson_mean_per_descriptor": 0.43580974310808623
+        },
+        "morgan_ridge": {
+          "mae": 2.748588867483381,
+          "pearson_flattened": 0.5734984956918425,
+          "pearson_mean_per_descriptor": 0.3606359885618618
+        },
+        "pipeline_C": {
+          "mae": 2.7959467078040925,
+          "pearson_flattened": 0.5881789610308845,
+          "pearson_mean_per_descriptor": 0.3733738280484983
+        },
+        "pipeline_v2": {
+          "mae": 2.7959467078040925,
+          "pearson_flattened": 0.5881789610308845,
+          "pearson_mean_per_descriptor": 0.3733738280484983
+        }
+      },
+      {
+        "explicit_fp_extra_trees": {
+          "mae": 2.6522107630646383,
+          "pearson_flattened": 0.6237613691200861,
+          "pearson_mean_per_descriptor": 0.43580974310808623
+        },
+        "morgan_ridge": {
+          "mae": 2.748588867483381,
+          "pearson_flattened": 0.5734984956918425,
+          "pearson_mean_per_descriptor": 0.3606359885618618
+        },
+        "pipeline_C": {
+          "mae": 2.730648868598903,
+          "pearson_flattened": 0.6189696338296479,
+          "pearson_mean_per_descriptor": 0.403404703418108
+        },
+        "pipeline_v2": {
+          "mae": 2.730648868598903,
+          "pearson_flattened": 0.6189696338296479,
+          "pearson_mean_per_descriptor": 0.403404703418108
+        }
+      },
+      {
+        "explicit_fp_extra_trees": {
+          "mae": 2.6522107630646388,
+          "pearson_flattened": 0.6237613691200861,
+          "pearson_mean_per_descriptor": 0.4358097431080862
+        },
+        "morgan_ridge": {
+          "mae": 2.748588867483381,
+          "pearson_flattened": 0.5734984956918425,
+          "pearson_mean_per_descriptor": 0.3606359885618618
+        },
+        "pipeline_C": {
+          "mae": 2.68790930148798,
+          "pearson_flattened": 0.6193082553056066,
+          "pearson_mean_per_descriptor": 0.4489754814705809
+        },
+        "pipeline_v2": {
+          "mae": 2.68790930148798,
+          "pearson_flattened": 0.6193082553056066,
+          "pearson_mean_per_descriptor": 0.4489754814705809
+        }
+      }
+    ],
+    "intensity_keller": [
+      {
+        "explicit_fp_extra_trees": 0.39019436273390357,
+        "morgan_ridge": 0.44092577629287744,
+        "pipeline_B2": 0.6646382219744102,
+        "pipeline_v2": 0.6646382219744102
+      },
+      {
+        "explicit_fp_extra_trees": 0.3901943627339036,
+        "morgan_ridge": 0.44092577629287744,
+        "pipeline_B2": 0.680293710255792,
+        "pipeline_v2": 0.680293710255792
+      },
+      {
+        "explicit_fp_extra_trees": 0.39019436273390357,
+        "morgan_ridge": 0.44092577629287744,
+        "pipeline_B2": 0.6370982474496056,
+        "pipeline_v2": 0.6370982474496056
+      }
+    ],
+    "intensity_ravia": [
+      {
+        "explicit_fp_extra_trees": 0.3206690006417152,
+        "morgan_ridge": 0.0675748560514302,
+        "pipeline_B2": 0.026856042024194726,
+        "pipeline_v2": 0.475565816113844
+      },
+      {
+        "explicit_fp_extra_trees": 0.3206690006417152,
+        "morgan_ridge": 0.0675748560514302,
+        "pipeline_B2": -0.07644740747673742,
+        "pipeline_v2": 0.4406381715117731
+      },
+      {
+        "explicit_fp_extra_trees": 0.3206690006417152,
+        "morgan_ridge": 0.0675748560514302,
+        "pipeline_B2": 0.1124004468256393,
+        "pipeline_v2": 0.4415133803602412
+      }
+    ],
+    "pleasantness_keller": [
+      {
+        "explicit_fp_extra_trees": 0.5501657931849194,
+        "morgan_ridge": 0.49394134712543586,
+        "pipeline_C": 0.4471153012316264,
+        "pipeline_v2": 0.5575872541437734
+      },
+      {
+        "explicit_fp_extra_trees": 0.5501657931849193,
+        "morgan_ridge": 0.49394134712543586,
+        "pipeline_C": 0.4162367897058314,
+        "pipeline_v2": 0.5209243303247769
+      },
+      {
+        "explicit_fp_extra_trees": 0.5501657931849193,
+        "morgan_ridge": 0.49394134712543586,
+        "pipeline_C": 0.3777022828965624,
+        "pipeline_v2": 0.554841354539141
+      }
+    ],
+    "threshold_abraham": [
+      {
+        "explicit_fp_extra_trees": 0.7381094311214266,
+        "morgan_ridge": 0.6387543335404018,
+        "pipeline_B1_ensemble": 0.7931914466578931,
+        "pipeline_B1_fusion": 0.7551773971312344,
+        "pipeline_v2": 0.7610311031004149,
+        "ridge_explicit_quality": 0.7813801123794626
+      },
+      {
+        "explicit_fp_extra_trees": 0.7381094311214266,
+        "morgan_ridge": 0.6387543335404018,
+        "pipeline_B1_ensemble": 0.8319426954212192,
+        "pipeline_B1_fusion": 0.7349273630298266,
+        "pipeline_v2": 0.7796287257115987,
+        "ridge_explicit_quality": 0.8343588221593281
+      },
+      {
+        "explicit_fp_extra_trees": 0.7381094311214266,
+        "morgan_ridge": 0.6387543335404018,
+        "pipeline_B1_ensemble": 0.786101545695293,
+        "pipeline_B1_fusion": 0.7649263472489141,
+        "pipeline_v2": 0.7626063847843116,
+        "ridge_explicit_quality": 0.7625519208898479
+      }
+    ]
+  },
+  "robustness": {
+    "descriptor_strength_keller": {
+      "explicit_fp_extra_trees": {
+        "mae": [
+          2.3866569427180346,
+          0.15728470459426006
+        ],
+        "pearson_flattened": [
+          0.713619884368751,
+          0.048236099038554754
+        ],
+        "pearson_mean_per_descriptor": [
+          0.49119300118455805,
+          0.0444718436011876
+        ]
+      },
+      "morgan_ridge": {
+        "mae": [
+          2.5398587188028077,
+          0.13513947270952323
+        ],
+        "pearson_flattened": [
+          0.6644191447094576,
+          0.04557955138834052
+        ],
+        "pearson_mean_per_descriptor": [
+          0.4262731403971344,
+          0.05930563374187338
+        ]
+      },
+      "pipeline_C": {
+        "mae": [
+          2.556144882441129,
+          0.13974854183993263
+        ],
+        "pearson_flattened": [
+          0.6761602309677099,
+          0.04400871938368142
+        ],
+        "pearson_mean_per_descriptor": [
+          0.4200067926711057,
+          0.06623506261917757
+        ]
+      },
+      "pipeline_v2": {
+        "mae": [
+          2.556144882441129,
+          0.13974854183993263
+        ],
+        "pearson_flattened": [
+          0.6761602309677099,
+          0.04400871938368142
+        ],
+        "pearson_mean_per_descriptor": [
+          0.4200067926711057,
+          0.06623506261917757
+        ]
+      }
+    },
+    "intensity_keller": {
+      "explicit_fp_extra_trees": [
+        0.36189279751017667,
+        0.1312813554819543
+      ],
+      "morgan_ridge": [
+        0.25451588249123397,
+        0.15254076400058214
+      ],
+      "pipeline_B2": [
+        0.5694019011656755,
+        0.1449301102265161
+      ],
+      "pipeline_v2": [
+        0.5694019011656755,
+        0.1449301102265161
+      ]
+    },
+    "intensity_ravia": {
+      "explicit_fp_extra_trees": [
+        0.4643797260259114,
+        0.2743170105668683
+      ],
+      "morgan_ridge": [
+        0.3259670336014665,
+        0.28425427746398363
+      ],
+      "pipeline_B2": [
+        0.3554815354473533,
+        0.33084187287436206
+      ],
+      "pipeline_v2": [
+        0.5388941171880777,
+        0.20974066265638996
+      ]
+    },
+    "pleasantness_keller": {
+      "explicit_fp_extra_trees": [
+        0.6535824484016046,
+        0.07394168432531179
+      ],
+      "morgan_ridge": [
+        0.6023343752711948,
+        0.09086313674281069
+      ],
+      "pipeline_C": [
+        0.5576323890723209,
+        0.07044363550022864
+      ],
+      "pipeline_v2": [
+        0.6730932674225034,
+        0.07338953604723493
+      ]
+    },
+    "threshold_abraham": {
+      "explicit_fp_extra_trees": [
+        0.7828912102909833,
+        0.05843051384758445
+      ],
+      "morgan_ridge": [
+        0.6711977315676783,
+        0.06041402673164058
+      ],
+      "pipeline_B1_ensemble": [
+        0.780747453524745,
+        0.0874546641988945
+      ],
+      "pipeline_B1_fusion": [
+        0.7747908128894134,
+        0.07907729750713215
+      ],
+      "pipeline_v2": [
+        0.7859350870164596,
+        0.042568794727512814
+      ],
+      "ridge_explicit_quality": [
+        0.7442967653845218,
+        0.10197561425194403
+      ]
+    }
+  },
+  "robustness_per_split": {
+    "descriptor_strength_keller": [
+      {
+        "explicit_fp_extra_trees": {
+          "mae": 2.6522107630646383,
+          "pearson_flattened": 0.6237613691200861,
+          "pearson_mean_per_descriptor": 0.43580974310808623
+        },
+        "morgan_ridge": {
+          "mae": 2.748588867483381,
+          "pearson_flattened": 0.5734984956918425,
+          "pearson_mean_per_descriptor": 0.3606359885618618
+        },
+        "pipeline_C": {
+          "mae": 2.7959467078040925,
+          "pearson_flattened": 0.5881789610308845,
+          "pearson_mean_per_descriptor": 0.3733738280484983
+        },
+        "pipeline_v2": {
+          "mae": 2.7959467078040925,
+          "pearson_flattened": 0.5881789610308845,
+          "pearson_mean_per_descriptor": 0.3733738280484983
+        }
+      },
+      {
+        "explicit_fp_extra_trees": {
+          "mae": 2.5211094491439163,
+          "pearson_flattened": 0.6859514629292855,
+          "pearson_mean_per_descriptor": 0.41635555531978297
+        },
+        "morgan_ridge": {
+          "mae": 2.6849535752674325,
+          "pearson_flattened": 0.6275390248098773,
+          "pearson_mean_per_descriptor": 0.3404443581231761
+        },
+        "pipeline_C": {
+          "mae": 2.725099202835872,
+          "pearson_flattened": 0.6320003975482699,
+          "pearson_mean_per_descriptor": 0.30565513158061774
+        },
+        "pipeline_v2": {
+          "mae": 2.725099202835872,
+          "pearson_flattened": 0.6320003975482699,
+          "pearson_mean_per_descriptor": 0.30565513158061774
+        }
+      },
+      {
+        "explicit_fp_extra_trees": {
+          "mae": 2.4241618528065847,
+          "pearson_flattened": 0.7143340161089793,
+          "pearson_mean_per_descriptor": 0.4876319296611755
+        },
+        "morgan_ridge": {
+          "mae": 2.6405989388027056,
+          "pearson_flattened": 0.6426538384383715,
+          "pearson_mean_per_descriptor": 0.40696562395174957
+        },
+        "pipeline_C": {
+          "mae": 2.6082133147349262,
+          "pearson_flattened": 0.6851059945110825,
+          "pearson_mean_per_descriptor": 0.4049335397277402
+        },
+        "pipeline_v2": {
+          "mae": 2.6082133147349262,
+          "pearson_flattened": 0.6851059945110825,
+          "pearson_mean_per_descriptor": 0.4049335397277402
+        }
+      },
+      {
+        "explicit_fp_extra_trees": {
+          "mae": 2.206095674649145,
+          "pearson_flattened": 0.7780882951850525,
+          "pearson_mean_per_descriptor": 0.518875116174082
+        },
+        "morgan_ridge": {
+          "mae": 2.3761367064343397,
+          "pearson_flattened": 0.7383868564403693,
+          "pearson_mean_per_descriptor": 0.43687850451493915
+        },
+        "pipeline_C": {
+          "mae": 2.343922098058597,
+          "pearson_flattened": 0.7534747470354265,
+          "pearson_mean_per_descriptor": 0.47248540695882824
+        },
+        "pipeline_v2": {
+          "mae": 2.343922098058597,
+          "pearson_flattened": 0.7534747470354265,
+          "pearson_mean_per_descriptor": 0.47248540695882824
+        }
+      },
+      {
+        "explicit_fp_extra_trees": {
+          "mae": 2.437010992231124,
+          "pearson_flattened": 0.7275705895458766,
+          "pearson_mean_per_descriptor": 0.5206002292399816
+        },
+        "morgan_ridge": {
+          "mae": 2.6158427242666478,
+          "pearson_flattened": 0.6726729615535162,
+          "pearson_mean_per_descriptor": 0.47963141007112053
+        },
+        "pipeline_C": {
+          "mae": 2.6784577219643286,
+          "pearson_flattened": 0.6506830074643686,
+          "pearson_mean_per_descriptor": 0.40593132853795816
+        },
+        "pipeline_v2": {
+          "mae": 2.6784577219643286,
+          "pearson_flattened": 0.6506830074643686,
+          "pearson_mean_per_descriptor": 0.40593132853795816
+        }
+      },
+      {
+        "explicit_fp_extra_trees": {
+          "mae": 2.2510100806024576,
+          "pearson_flattened": 0.7322088659866891,
+          "pearson_mean_per_descriptor": 0.4757848485395254
+        },
+        "morgan_ridge": {
+          "mae": 2.419890123720368,
+          "pearson_flattened": 0.6743256943482674,
+          "pearson_mean_per_descriptor": 0.3676719748924152
+        },
+        "pipeline_C": {
+          "mae": 2.5274701949289535,
+          "pearson_flattened": 0.6698046787095504,
+          "pearson_mean_per_descriptor": 0.3604811263110714
+        },
+        "pipeline_v2": {
+          "mae": 2.5274701949289535,
+          "pearson_flattened": 0.6698046787095504,
+          "pearson_mean_per_descriptor": 0.3604811263110714
+        }
+      },
+      {
+        "explicit_fp_extra_trees": {
+          "mae": 2.5011151100818854,
+          "pearson_flattened": 0.657063978312833,
+          "pearson_mean_per_descriptor": 0.4718141197861322
+        },
+        "morgan_ridge": {
+          "mae": 2.535403886455449,
+          "pearson_flattened": 0.6702069655222117,
+          "pearson_mean_per_descriptor": 0.4583870718958492
+        },
+        "pipeline_C": {
+          "mae": 2.383456589753063,
+          "pearson_flattened": 0.7152390954028349,
+          "pearson_mean_per_descriptor": 0.5138460989618425
+        },
+        "pipeline_v2": {
+          "mae": 2.383456589753063,
+          "pearson_flattened": 0.7152390954028349,
+          "pearson_mean_per_descriptor": 0.5138460989618425
+        }
+      },
+      {
+        "explicit_fp_extra_trees": {
+          "mae": 2.3326794117527534,
+          "pearson_flattened": 0.7271794123884379,
+          "pearson_mean_per_descriptor": 0.4892526264678228
+        },
+        "morgan_ridge": {
+          "mae": 2.603479133856213,
+          "pearson_flattened": 0.6409427002898924,
+          "pearson_mean_per_descriptor": 0.39723283633822515
+        },
+        "pipeline_C": {
+          "mae": 2.553928258691171,
+          "pearson_flattened": 0.6651288838742703,
+          "pearson_mean_per_descriptor": 0.3772594233249678
+        },
+        "pipeline_v2": {
+          "mae": 2.553928258691171,
+          "pearson_flattened": 0.6651288838742703,
+          "pearson_mean_per_descriptor": 0.3772594233249678
+        }
+      },
+      {
+        "explicit_fp_extra_trees": {
+          "mae": 2.0961093078949435,
+          "pearson_flattened": 0.7917956359544651,
+          "pearson_mean_per_descriptor": 0.5826663142923642
+        },
+        "morgan_ridge": {
+          "mae": 2.316158404975301,
+          "pearson_flattened": 0.730534025532042,
+          "pearson_mean_per_descriptor": 0.5364155873683997
+        },
+        "pipeline_C": {
+          "mae": 2.4417600639867634,
+          "pearson_flattened": 0.705873226222006,
+          "pearson_mean_per_descriptor": 0.5102730438763023
+        },
+        "pipeline_v2": {
+          "mae": 2.4417600639867634,
+          "pearson_flattened": 0.705873226222006,
+          "pearson_mean_per_descriptor": 0.5102730438763023
+        }
+      },
+      {
+        "explicit_fp_extra_trees": {
+          "mae": 2.445066784952904,
+          "pearson_flattened": 0.6982452181558053,
+          "pearson_mean_per_descriptor": 0.513139529256628
+        },
+        "morgan_ridge": {
+          "mae": 2.457534826766243,
+          "pearson_flattened": 0.6734308844681864,
+          "pearson_mean_per_descriptor": 0.4784680482536078
+        },
+        "pipeline_C": {
+          "mae": 2.503194671653524,
+          "pearson_flattened": 0.6961133178784051,
+          "pearson_mean_per_descriptor": 0.4758289993832303
+        },
+        "pipeline_v2": {
+          "mae": 2.503194671653524,
+          "pearson_flattened": 0.6961133178784051,
+          "pearson_mean_per_descriptor": 0.4758289993832303
+        }
+      }
+    ],
+    "intensity_keller": [
+      {
+        "explicit_fp_extra_trees": 0.39019436273390357,
+        "morgan_ridge": 0.44092577629287744,
+        "pipeline_B2": 0.6646382219744102,
+        "pipeline_v2": 0.6646382219744102
+      },
+      {
+        "explicit_fp_extra_trees": 0.4173059069139805,
+        "morgan_ridge": 0.29293971870792945,
+        "pipeline_B2": 0.6124789703916509,
+        "pipeline_v2": 0.6124789703916509
+      },
+      {
+        "explicit_fp_extra_trees": 0.31320607336154904,
+        "morgan_ridge": 0.22085232923184198,
+        "pipeline_B2": 0.25485821818567156,
+        "pipeline_v2": 0.25485821818567156
+      },
+      {
+        "explicit_fp_extra_trees": 0.34322706999914965,
+        "morgan_ridge": 0.11613326959828434,
+        "pipeline_B2": 0.4497782504460763,
+        "pipeline_v2": 0.4497782504460763
+      },
+      {
+        "explicit_fp_extra_trees": 0.36876484837273976,
+        "morgan_ridge": 0.07291782681797193,
+        "pipeline_B2": 0.6402128479220839,
+        "pipeline_v2": 0.6402128479220839
+      },
+      {
+        "explicit_fp_extra_trees": 0.09537800836800446,
+        "morgan_ridge": 0.26635930863791757,
+        "pipeline_B2": 0.45495094441505757,
+        "pipeline_v2": 0.45495094441505757
+      },
+      {
+        "explicit_fp_extra_trees": 0.39843648747681826,
+        "morgan_ridge": 0.41087566499813793,
+        "pipeline_B2": 0.7746348295477772,
+        "pipeline_v2": 0.7746348295477772
+      },
+      {
+        "explicit_fp_extra_trees": 0.5729405952194958,
+        "morgan_ridge": 0.3031244660362038,
+        "pipeline_B2": 0.7022705072241353,
+        "pipeline_v2": 0.7022705072241353
+      },
+      {
+        "explicit_fp_extra_trees": 0.5159331512883397,
+        "morgan_ridge": 0.4475568043569061,
+        "pipeline_B2": 0.5069101806427379,
+        "pipeline_v2": 0.5069101806427379
+      },
+      {
+        "explicit_fp_extra_trees": 0.2035414713677861,
+        "morgan_ridge": -0.0265263397657311,
+        "pipeline_B2": 0.6332860409071537,
+        "pipeline_v2": 0.6332860409071537
+      }
+    ],
+    "intensity_ravia": [
+      {
+        "explicit_fp_extra_trees": 0.3206690006417152,
+        "morgan_ridge": 0.0675748560514302,
+        "pipeline_B2": 0.026856042024194726,
+        "pipeline_v2": 0.475565816113844
+      },
+      {
+        "explicit_fp_extra_trees": 0.42409932323361643,
+        "morgan_ridge": 0.22443016003736757,
+        "pipeline_B2": -0.08214084772047625,
+        "pipeline_v2": 0.45134676520596095
+      },
+      {
+        "explicit_fp_extra_trees": 0.2744296258800163,
+        "morgan_ridge": 0.26805333668868053,
+        "pipeline_B2": 0.36110414060061957,
+        "pipeline_v2": 0.2924935322638141
+      },
+      {
+        "explicit_fp_extra_trees": 0.31551374774792856,
+        "morgan_ridge": 0.6434253013614035,
+        "pipeline_B2": 0.2748188469573182,
+        "pipeline_v2": 0.4278780427415638
+      },
+      {
+        "explicit_fp_extra_trees": -0.05345960912522263,
+        "morgan_ridge": 0.003978992225540115,
+        "pipeline_B2": -0.08022314709775907,
+        "pipeline_v2": 0.13902079408006968
+      },
+      {
+        "explicit_fp_extra_trees": 0.708548481578364,
+        "morgan_ridge": 0.7475147041496004,
+        "pipeline_B2": 0.5709482200399565,
+        "pipeline_v2": 0.7209270799619453
+      },
+      {
+        "explicit_fp_extra_trees": 0.3099838654767044,
+        "morgan_ridge": 0.04294682283006143,
+        "pipeline_B2": 0.1814153967254561,
+        "pipeline_v2": 0.572929001994225
+      },
+      {
+        "explicit_fp_extra_trees": 0.8040778796486887,
+        "morgan_ridge": 0.6148221107429694,
+        "pipeline_B2": 0.8583003746572632,
+        "pipeline_v2": 0.7744830035398484
+      },
+      {
+        "explicit_fp_extra_trees": 0.6745625404731366,
+        "morgan_ridge": 0.021911070370444083,
+        "pipeline_B2": 0.73987800367992,
+        "pipeline_v2": 0.7416214581318414
+      },
+      {
+        "explicit_fp_extra_trees": 0.8653724047041671,
+        "morgan_ridge": 0.6250129815571681,
+        "pipeline_B2": 0.7038583246070396,
+        "pipeline_v2": 0.7926756778476639
+      }
+    ],
+    "pleasantness_keller": [
+      {
+        "explicit_fp_extra_trees": 0.5501657931849194,
+        "morgan_ridge": 0.49394134712543586,
+        "pipeline_C": 0.4471153012316264,
+        "pipeline_v2": 0.5575872541437734
+      },
+      {
+        "explicit_fp_extra_trees": 0.7124652287749415,
+        "morgan_ridge": 0.6330212753003125,
+        "pipeline_C": 0.6222585615119209,
+        "pipeline_v2": 0.6113185413407992
+      },
+      {
+        "explicit_fp_extra_trees": 0.7013362088059419,
+        "morgan_ridge": 0.638740377175523,
+        "pipeline_C": 0.5941310584366231,
+        "pipeline_v2": 0.73493302870541
+      },
+      {
+        "explicit_fp_extra_trees": 0.5291458511074153,
+        "morgan_ridge": 0.5033047687596535,
+        "pipeline_C": 0.5936109808403697,
+        "pipeline_v2": 0.5875730826453869
+      },
+      {
+        "explicit_fp_extra_trees": 0.7503680211153096,
+        "morgan_ridge": 0.688544042738864,
+        "pipeline_C": 0.5567097062878651,
+        "pipeline_v2": 0.748003044391478
+      },
+      {
+        "explicit_fp_extra_trees": 0.6516525208686901,
+        "morgan_ridge": 0.43509135407401756,
+        "pipeline_C": 0.4998523364434775,
+        "pipeline_v2": 0.7142104841093858
+      },
+      {
+        "explicit_fp_extra_trees": 0.6105868583205001,
+        "morgan_ridge": 0.6747468943544745,
+        "pipeline_C": 0.6725893344004195,
+        "pipeline_v2": 0.7146536681626348
+      },
+      {
+        "explicit_fp_extra_trees": 0.7131294590553829,
+        "morgan_ridge": 0.5851605185321923,
+        "pipeline_C": 0.5980788990991721,
+        "pipeline_v2": 0.7471953413796024
+      },
+      {
+        "explicit_fp_extra_trees": 0.7214670240977136,
+        "morgan_ridge": 0.7301100670652005,
+        "pipeline_C": 0.5450583042966699,
+        "pipeline_v2": 0.7304340911157003
+      },
+      {
+        "explicit_fp_extra_trees": 0.5955075186852319,
+        "morgan_ridge": 0.6406831075862749,
+        "pipeline_C": 0.4469194081750659,
+        "pipeline_v2": 0.5850241382308641
+      }
+    ],
+    "threshold_abraham": [
+      {
+        "explicit_fp_extra_trees": 0.7381094311214266,
+        "morgan_ridge": 0.6387543335404018,
+        "pipeline_B1_ensemble": 0.7931914466578931,
+        "pipeline_B1_fusion": 0.7551773971312344,
+        "pipeline_v2": 0.7610311031004149,
+        "ridge_explicit_quality": 0.7813801123794626
+      },
+      {
+        "explicit_fp_extra_trees": 0.7862267158332154,
+        "morgan_ridge": 0.6442092980527137,
+        "pipeline_B1_ensemble": 0.8341372890457177,
+        "pipeline_B1_fusion": 0.8401626669030254,
+        "pipeline_v2": 0.7957091796719524,
+        "ridge_explicit_quality": 0.7875095383303746
+      },
+      {
+        "explicit_fp_extra_trees": 0.8127543069631286,
+        "morgan_ridge": 0.6634179898537088,
+        "pipeline_B1_ensemble": 0.802761902227018,
+        "pipeline_B1_fusion": 0.805375598390636,
+        "pipeline_v2": 0.8144860688814011,
+        "ridge_explicit_quality": 0.7498634479911706
+      },
+      {
+        "explicit_fp_extra_trees": 0.8331409972401251,
+        "morgan_ridge": 0.7063927390948951,
+        "pipeline_B1_ensemble": 0.905577666047627,
+        "pipeline_B1_fusion": 0.8701294155539454,
+        "pipeline_v2": 0.82503624475682,
+        "ridge_explicit_quality": 0.8899433869181868
+      },
+      {
+        "explicit_fp_extra_trees": 0.7877443492553936,
+        "morgan_ridge": 0.6558956947150972,
+        "pipeline_B1_ensemble": 0.7274587434142978,
+        "pipeline_B1_fusion": 0.7285519997180827,
+        "pipeline_v2": 0.7806364441860948,
+        "ridge_explicit_quality": 0.684536447050156
+      },
+      {
+        "explicit_fp_extra_trees": 0.8191991847860008,
+        "morgan_ridge": 0.6473111781786693,
+        "pipeline_B1_ensemble": 0.7997342108816416,
+        "pipeline_B1_fusion": 0.7601273417320515,
+        "pipeline_v2": 0.8066950537325741,
+        "ridge_explicit_quality": 0.8001032736438838
+      },
+      {
+        "explicit_fp_extra_trees": 0.8275523664747099,
+        "morgan_ridge": 0.769871590596954,
+        "pipeline_B1_ensemble": 0.834838967544501,
+        "pipeline_B1_fusion": 0.8444447851051077,
+        "pipeline_v2": 0.8032662485681485,
+        "ridge_explicit_quality": 0.798570149049463
+      },
+      {
+        "explicit_fp_extra_trees": 0.6308348257879912,
+        "morgan_ridge": 0.6224186436440202,
+        "pipeline_B1_ensemble": 0.6018976379882655,
+        "pipeline_B1_fusion": 0.6162553167935002,
+        "pipeline_v2": 0.7030821514416041,
+        "ridge_explicit_quality": 0.5271565794845376
+      },
+      {
+        "explicit_fp_extra_trees": 0.7660947245051167,
+        "morgan_ridge": 0.5811785285125164,
+        "pipeline_B1_ensemble": 0.6594400608478199,
+        "pipeline_B1_fusion": 0.6764599979688988,
+        "pipeline_v2": 0.7237363181447467,
+        "ridge_explicit_quality": 0.6103886587285942
+      },
+      {
+        "explicit_fp_extra_trees": 0.8272552009427248,
+        "morgan_ridge": 0.7825273194878059,
+        "pipeline_B1_ensemble": 0.8484366105926675,
+        "pipeline_B1_fusion": 0.8512236095976515,
+        "pipeline_v2": 0.8456720576808403,
+        "ridge_explicit_quality": 0.8135160602693892
+      }
+    ]
+  },
+  "summary": {
+    "descriptor_strength_keller": {
+      "explicit_fp_extra_trees": {
+        "mae": [
+          2.6522107630646388,
+          3.6259732146947156e-16
+        ],
+        "pearson_flattened": [
+          0.6237613691200861,
+          0.0
+        ],
+        "pearson_mean_per_descriptor": [
+          0.43580974310808623,
+          3.204937810639273e-17
+        ]
+      },
+      "morgan_ridge": {
+        "mae": [
+          2.748588867483381,
+          0.0
+        ],
+        "pearson_flattened": [
+          0.5734984956918425,
+          0.0
+        ],
+        "pearson_mean_per_descriptor": [
+          0.3606359885618618,
+          0.0
+        ]
+      },
+      "pipeline_C": {
+        "mae": [
+          2.738168292630325,
+          0.044425417606001584
+        ],
+        "pearson_flattened": [
+          0.6088189500553797,
+          0.014595330904652475
+        ],
+        "pearson_mean_per_descriptor": [
+          0.40858467097906237,
+          0.03108082525703567
+        ]
+      },
+      "pipeline_v2": {
+        "mae": [
+          2.738168292630325,
+          0.044425417606001584
+        ],
+        "pearson_flattened": [
+          0.6088189500553797,
+          0.014595330904652475
+        ],
+        "pearson_mean_per_descriptor": [
+          0.40858467097906237,
+          0.03108082525703567
+        ]
+      }
+    },
+    "intensity_keller": {
+      "explicit_fp_extra_trees": [
+        0.39019436273390357,
+        3.204937810639273e-17
+      ],
+      "morgan_ridge": [
+        0.4409257762928774,
+        5.551115123125783e-17
+      ],
+      "pipeline_B2": [
+        0.6606767265599359,
+        0.01785557030171692
+      ],
+      "pipeline_v2": [
+        0.6606767265599359,
+        0.01785557030171692
+      ]
+    },
+    "intensity_ravia": {
+      "explicit_fp_extra_trees": [
+        0.3206690006417152,
+        0.0
+      ],
+      "morgan_ridge": [
+        0.0675748560514302,
+        0.0
+      ],
+      "pipeline_B2": [
+        0.020936360457698866,
+        0.07721036196020781
+      ],
+      "pipeline_v2": [
+        0.4525724559952861,
+        0.01626268642810645
+      ]
+    },
+    "pleasantness_keller": {
+      "explicit_fp_extra_trees": [
+        0.5501657931849193,
+        6.409875621278546e-17
+      ],
+      "morgan_ridge": [
+        0.49394134712543586,
+        0.0
+      ],
+      "pipeline_C": [
+        0.4136847912780068,
+        0.02839514395781666
+      ],
+      "pipeline_v2": [
+        0.5444509796692304,
+        0.016673580163286995
+      ]
+    },
+    "threshold_abraham": {
+      "explicit_fp_extra_trees": [
+        0.7381094311214266,
+        0.0
+      ],
+      "morgan_ridge": [
+        0.6387543335404018,
+        0.0
+      ],
+      "pipeline_B1_ensemble": [
+        0.8037452292581352,
+        0.020147613546498504
+      ],
+      "pipeline_B1_fusion": [
+        0.751677035803325,
+        0.012494643135192158
+      ],
+      "pipeline_v2": [
+        0.7677554045321084,
+        0.008420300666421384
+      ],
+      "ridge_explicit_quality": [
+        0.7927636184762129,
+        0.03040006497550383
+      ]
+    }
+  }
+}

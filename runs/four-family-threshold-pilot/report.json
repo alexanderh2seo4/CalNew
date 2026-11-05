@@ -1,0 +1,365 @@
+{
+  "best_point_estimate": "descriptor_linear",
+  "calibration_rows": 40,
+  "data_caveats": {
+    "aggregate_observations": 57,
+    "permitted_use": "research",
+    "snapshot_id": "955c3ab05ff9fb7d6d0af5af4ab1d5f09c01a4ebeabacb45b6a2027ba7705833",
+    "source": "abraham_2012",
+    "target_semantics": "air_detection_threshold",
+    "unit": "log10(ppbv)"
+  },
+  "development_rows": 188,
+  "endpoint": "air_detection_threshold",
+  "failures": {},
+  "final_test_accessed": false,
+  "labels": [
+    "air_detection_threshold"
+  ],
+  "limitations": [
+    "No source-disjoint or prospective result is inferred from structural CV.",
+    "Abraham processed duplicates are already aggregated.",
+    "Pilot results do not establish the final architecture winner."
+  ],
+  "one_se_cutoff": -0.9925423532981517,
+  "paired_comparisons_vs_first_control": {
+    "chemprop": {
+      "ci95": [
+        -0.48117039535052325,
+        -0.22887968456654234
+      ],
+      "mean_improvement": -0.3672373541423417,
+      "repeats": 200,
+      "resampling_unit": "molecule_connectivity"
+    },
+    "fingerprint_rf": {
+      "ci95": [
+        -0.40416411403912156,
+        -0.171771225657173
+      ],
+      "mean_improvement": -0.29033178426420436,
+      "repeats": 200,
+      "resampling_unit": "molecule_connectivity"
+    },
+    "fingerprint_xgb": {
+      "ci95": [
+        -0.28914511507291996,
+        -0.04707709242629675
+      ],
+      "mean_improvement": -0.17385451911377142,
+      "repeats": 200,
+      "resampling_unit": "molecule_connectivity"
+    },
+    "molformer": {
+      "ci95": [
+        -0.3921201742717393,
+        -0.11698805295671692
+      ],
+      "mean_improvement": -0.24462155486611986,
+      "repeats": 200,
+      "resampling_unit": "molecule_connectivity"
+    },
+    "stereo_dmpnn": {
+      "ci95": [
+        -0.53393163647064,
+        -0.26812337447191054
+      ],
+      "mean_improvement": -0.413343956817634,
+      "repeats": 200,
+      "resampling_unit": "molecule_connectivity"
+    },
+    "tanimoto_gp": {
+      "ci95": [
+        -0.3501195395433578,
+        -0.1361547965252461
+      ],
+      "mean_improvement": -0.23981056675349535,
+      "repeats": 200,
+      "resampling_unit": "molecule_connectivity"
+    },
+    "unimol2": {
+      "ci95": [
+        -0.23582842387647435,
+        -0.026453229539396925
+      ],
+      "mean_improvement": -0.12840981040778895,
+      "repeats": 200,
+      "resampling_unit": "molecule_connectivity"
+    }
+  },
+  "profile": "pilot",
+  "prospective_validation": "not_performed",
+  "reserved_test_rows": 40,
+  "rows": 268,
+  "runtime_seconds": 9.814914226531982,
+  "selected": "descriptor_linear",
+  "selection_rule": "simplest candidate in declared order within one standard error of best outer-CV score",
+  "source": "abraham_2012",
+  "status": "computational_pilot",
+  "summary": {
+    "chemprop": {
+      "evaluation": {
+        "per_label": {
+          "air_detection_threshold": {
+            "mae": 1.2883494930656316,
+            "n": 188,
+            "rmse": 1.6145764184541582,
+            "spearman": 0.12054334355141681
+          }
+        },
+        "primary": 1.2883494930656316,
+        "primary_metric": "macro_mae",
+        "supported_labels": 1,
+        "task": "regression",
+        "total_labels": 1
+      },
+      "fold_scores": [
+        -1.0804215348318638,
+        -1.3849080377083183,
+        -1.3516275689696549
+      ],
+      "mean_score": -1.2723190471699457,
+      "standard_error": 0.0964285380148161
+    },
+    "descriptor_linear": {
+      "evaluation": {
+        "per_label": {
+          "air_detection_threshold": {
+            "mae": 0.9261922725225341,
+            "n": 188,
+            "rmse": 1.1992800700175594,
+            "spearman": 0.6398155322411866
+          }
+        },
+        "primary": 0.9261922725225341,
+        "primary_metric": "macro_mae",
+        "supported_labels": 1,
+        "task": "regression",
+        "total_labels": 1
+      },
+      "fold_scores": [
+        -1.0425927848302206,
+        -0.9076523144769034,
+        -0.8705896848736387
+      ],
+      "mean_score": -0.9402782613935875,
+      "standard_error": 0.05226409190456416
+    },
+    "fingerprint_rf": {
+      "evaluation": {
+        "per_label": {
+          "air_detection_threshold": {
+            "mae": 1.2153271107557644,
+            "n": 188,
+            "rmse": 1.5391509284416904,
+            "spearman": 0.2224124659030033
+          }
+        },
+        "primary": 1.2153271107557644,
+        "primary_metric": "macro_mae",
+        "supported_labels": 1,
+        "task": "regression",
+        "total_labels": 1
+      },
+      "fold_scores": [
+        -1.0623642039684542,
+        -1.3543190304251598,
+        -1.223265171618216
+      ],
+      "mean_score": -1.2133161353372766,
+      "standard_error": 0.08442677826580626
+    },
+    "fingerprint_xgb": {
+      "evaluation": {
+        "per_label": {
+          "air_detection_threshold": {
+            "mae": 1.1016563536574568,
+            "n": 188,
+            "rmse": 1.432127967088015,
+            "spearman": 0.3828892880886777
+          }
+        },
+        "primary": 1.1016563536574568,
+        "primary_metric": "macro_mae",
+        "supported_labels": 1,
+        "task": "regression",
+        "total_labels": 1
+      },
+      "fold_scores": [
+        -0.8377632786556879,
+        -1.0250287560875575,
+        -1.2951340085277232
+      ],
+      "mean_score": -1.0526420144236563,
+      "standard_error": 0.13275147853899993
+    },
+    "molformer": {
+      "evaluation": {
+        "per_label": {
+          "air_detection_threshold": {
+            "mae": 1.1751033301541822,
+            "n": 188,
+            "rmse": 1.4991522480623949,
+            "spearman": 0.5051216698807901
+          }
+        },
+        "primary": 1.1751033301541822,
+        "primary_metric": "macro_mae",
+        "supported_labels": 1,
+        "task": "regression",
+        "total_labels": 1
+      },
+      "fold_scores": [
+        -1.1131854722662609,
+        -1.038910328664144,
+        -1.287666318437114
+      ],
+      "mean_score": -1.1465873731225062,
+      "standard_error": 0.07372618451086502
+    },
+    "organiser_gating": {
+      "evaluation": {
+        "per_label": {
+          "air_detection_threshold": {
+            "mae": 1.0492099644646005,
+            "n": 188,
+            "rmse": 1.3469753954583088,
+            "spearman": 0.5157889746779502
+          }
+        },
+        "primary": 1.0492099644646005,
+        "primary_metric": "macro_mae",
+        "supported_labels": 1,
+        "task": "regression",
+        "total_labels": 1
+      },
+      "fold_scores": [
+        -1.0207208418757758,
+        -0.8714217819069227,
+        -1.1664129787523863
+      ],
+      "mean_score": -1.0195185341783617,
+      "standard_error": 0.08515874531706302
+    },
+    "organiser_mean": {
+      "evaluation": {
+        "per_label": {
+          "air_detection_threshold": {
+            "mae": 1.0106909772056574,
+            "n": 188,
+            "rmse": 1.2701830364791062,
+            "spearman": 0.5644551100739836
+          }
+        },
+        "primary": 1.0106909772056574,
+        "primary_metric": "macro_mae",
+        "supported_labels": 1,
+        "task": "regression",
+        "total_labels": 1
+      },
+      "fold_scores": [
+        -0.9115542841761796,
+        -0.9638884898223654,
+        -1.0936109660765494
+      ],
+      "mean_score": -0.9896845800250315,
+      "standard_error": 0.05411480868933868
+    },
+    "organiser_stacking": {
+      "evaluation": {
+        "per_label": {
+          "air_detection_threshold": {
+            "mae": 1.0848069029804681,
+            "n": 188,
+            "rmse": 1.3365420576610414,
+            "spearman": 0.5017191129963663
+          }
+        },
+        "primary": 1.0848069029804681,
+        "primary_metric": "macro_mae",
+        "supported_labels": 1,
+        "task": "regression",
+        "total_labels": 1
+      },
+      "fold_scores": [
+        -1.0451790458373202,
+        -1.1606386557816704,
+        -1.0642365077202098
+      ],
+      "mean_score": -1.0900180697797335,
+      "standard_error": 0.03573628916007355
+    },
+    "stereo_dmpnn": {
+      "evaluation": {
+        "per_label": {
+          "air_detection_threshold": {
+            "mae": 1.3321629031559086,
+            "n": 188,
+            "rmse": 1.659455236702872,
+            "spearman": 0.17630446022157928
+          }
+        },
+        "primary": 1.3321629031559086,
+        "primary_metric": "macro_mae",
+        "supported_labels": 1,
+        "task": "regression",
+        "total_labels": 1
+      },
+      "fold_scores": [
+        -1.091436214734904,
+        -1.344884706064097,
+        -1.4617111335609174
+      ],
+      "mean_score": -1.2993440181199727,
+      "standard_error": 0.10928760919659158
+    },
+    "tanimoto_gp": {
+      "evaluation": {
+        "per_label": {
+          "air_detection_threshold": {
+            "mae": 1.1660063895532393,
+            "n": 188,
+            "rmse": 1.459934378481755,
+            "spearman": 0.3493316514230492
+          }
+        },
+        "primary": 1.1660063895532393,
+        "primary_metric": "macro_mae",
+        "supported_labels": 1,
+        "task": "regression",
+        "total_labels": 1
+      },
+      "fold_scores": [
+        -0.9884913895703121,
+        -1.1096509736330227,
+        -1.2988873076800258
+      ],
+      "mean_score": -1.1323432236277868,
+      "standard_error": 0.09031908279753081
+    },
+    "unimol2": {
+      "evaluation": {
+        "per_label": {
+          "air_detection_threshold": {
+            "mae": 1.0564296385453271,
+            "n": 188,
+            "rmse": 1.371293943867092,
+            "spearman": 0.5702018913936421
+          }
+        },
+        "primary": 1.0564296385453271,
+        "primary_metric": "macro_mae",
+        "supported_labels": 1,
+        "task": "regression",
+        "total_labels": 1
+      },
+      "fold_scores": [
+        -1.20671841925176,
+        -0.96628478895696,
+        -1.0222569504100627
+      ],
+      "mean_score": -1.0650867195395943,
+      "standard_error": 0.07263579119357724
+    }
+  }
+}

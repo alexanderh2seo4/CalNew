@@ -1,0 +1,41 @@
+{
+  "renderer": "mermaid-cli 11.12.0",
+  "diagrams": [
+    {
+      "file": "diagram-01.svg",
+      "nodes": 21,
+      "viewBox": "0 0 1658.5 2278",
+      "nodeOverlaps": []
+    },
+    {
+      "file": "diagram-02.svg",
+      "nodes": 22,
+      "viewBox": "0 0 1826 2084.359375",
+      "nodeOverlaps": []
+    },
+    {
+      "file": "diagram-03.svg",
+      "nodes": 15,
+      "viewBox": "0 0 2123.5 1068",
+      "nodeOverlaps": []
+    },
+    {
+      "file": "diagram-04.svg",
+      "nodes": 18,
+      "viewBox": "0 0 2185.91015625 1078",
+      "nodeOverlaps": []
+    },
+    {
+      "file": "diagram-05.svg",
+      "nodes": 17,
+      "viewBox": "0 0 1282.734375 1758",
+      "nodeOverlaps": []
+    },
+    {
+      "file": "diagram-06.svg",
+      "nodes": 8,
+      "viewBox": "0 0 1791.09375 318",
+      "nodeOverlaps": []
+    }
+  ]
+}

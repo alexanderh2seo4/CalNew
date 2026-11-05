@@ -1,0 +1,19 @@
+{
+  "baseline": "runs/nose-semantic-trees-inner-v2",
+  "candidates": [
+    "explicit_svr",
+    "rdkit_svr",
+    "unimol1_svr",
+    "tanimoto_gp",
+    "equal v2 blends"
+  ],
+  "fold_seeds": [
+    100,
+    101,
+    102
+  ],
+  "inner_tuning": "3-fold CV inside each training fold; C={1,10,100}, gamma={0.01,0.1,1} times scale",
+  "promotion": "Mean Pearson gain >=0.01; positive gain in at least two repeats",
+  "reserved_holdouts_opened": false,
+  "test_based_selection": false
+}

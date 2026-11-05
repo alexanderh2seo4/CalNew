@@ -1,0 +1,113 @@
+{
+  "identity": {
+    "code_identity": "5815e6fa2dd619709d97fc750d7207a8011dbd6ba577539c36ff797938661da0",
+    "configuration": {
+      "bootstrap_repeats": 200,
+      "inner_folds": 2,
+      "minimum_positive_labels": 20,
+      "models": [
+        {
+          "C": 0.1,
+          "alpha": 10.0,
+          "estimator": "linear",
+          "family": "classical",
+          "features": "descriptors",
+          "name": "descriptor_linear"
+        },
+        {
+          "estimator": "rf",
+          "family": "classical",
+          "features": "morgan",
+          "min_samples_leaf": 2,
+          "n_estimators": 120,
+          "name": "fingerprint_rf"
+        },
+        {
+          "estimator": "xgb",
+          "family": "classical",
+          "features": "morgan",
+          "max_depth": 4,
+          "n_estimators": 100,
+          "name": "fingerprint_xgb"
+        },
+        {
+          "estimator": "gp",
+          "family": "classical",
+          "features": "morgan",
+          "name": "tanimoto_gp",
+          "task": "regression"
+        },
+        {
+          "batch_size": 64,
+          "depth": 3,
+          "dropout": 0.1,
+          "epochs": 15,
+          "family": "graph",
+          "name": "stereo_dmpnn",
+          "width": 128
+        },
+        {
+          "batch_size": 64,
+          "depth": 3,
+          "dropout": 0.1,
+          "epochs": 15,
+          "family": "chemprop",
+          "name": "chemprop",
+          "width": 128
+        },
+        {
+          "C": 0.1,
+          "alpha": 10.0,
+          "checkpoint": "ibm-research/MoLFormer-XL-both-10pct",
+          "family": "molformer",
+          "mode": "frozen",
+          "name": "molformer",
+          "revision": "361063d0ad524ef77cf39b08469f6be770dc550f"
+        },
+        {
+          "C": 0.1,
+          "alpha": 10.0,
+          "append_chirality": true,
+          "family": "unimol2",
+          "mode": "frozen",
+          "model_size": "84m",
+          "name": "unimol2",
+          "pooling": "mean",
+          "revision": "bf37d253c0f5ac61f468137eb00059978a104ff0"
+        }
+      ],
+      "name": "four-family-threshold-pilot",
+      "organisers": [
+        "mean",
+        "stacking",
+        "gating"
+      ],
+      "outer_folds": 3,
+      "profile": "pilot",
+      "seed": 42,
+      "seeds": [
+        42
+      ],
+      "strategy": "structural",
+      "trials": 1
+    },
+    "dataset_signature": "af53039f4237cf554251e291546612921a0ea2c4ea83af419abd7edef4a668fd",
+    "endpoint": "air_detection_threshold",
+    "snapshot": "/path/to/calnew/data/snapshots/955c3ab05ff9fb7d",
+    "source": "abraham_2012"
+  },
+  "packages": {
+    "chemprop": "2.3.1",
+    "numpy": "2.2.6",
+    "pandas": "3.0.6",
+    "rdkit": "2026.3.6",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "torch": "2.14.0",
+    "transformers": "5.17.0",
+    "unimol-tools": "0.1.6",
+    "xgboost": "3.4.1"
+  },
+  "status": "complete",
+  "test_accessed": false
+}

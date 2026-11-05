@@ -1,0 +1,569 @@
+{
+  "database": "/path/to/calnew/aroma_atlas_2026-10-26/data/atlas.sqlite",
+  "counts": {
+    "candidates": 242205,
+    "accepted": 50104,
+    "rejected": 192101,
+    "unique_directed_edges": 298910,
+    "raw_edge_rows": 482025
+  },
+  "query_completion": [
+    {
+      "name": "receptor_models",
+      "hits": 9831,
+      "seen": 9831,
+      "complete": 1
+    },
+    {
+      "name": "fragrance",
+      "hits": 10236,
+      "seen": 10236,
+      "complete": 1
+    },
+    {
+      "name": "odorants",
+      "hits": 12421,
+      "seen": 12421,
+      "complete": 1
+    },
+    {
+      "name": "named_resources",
+      "hits": 29,
+      "seen": 29,
+      "complete": 1
+    },
+    {
+      "name": "odor_threshold",
+      "hits": 7663,
+      "seen": 7663,
+      "complete": 1
+    },
+    {
+      "name": "odor_chemistry",
+      "hits": 18589,
+      "seen": 18589,
+      "complete": 1
+    },
+    {
+      "name": "flavor_volatiles",
+      "hits": 14645,
+      "seen": 14646,
+      "complete": 1
+    },
+    {
+      "name": "aroma",
+      "hits": 24431,
+      "seen": 24430,
+      "complete": 1
+    },
+    {
+      "name": "scent_chemistry",
+      "hits": 5565,
+      "seen": 5565,
+      "complete": 1
+    },
+    {
+      "name": "named_aroma_pharmacology",
+      "hits": 5965,
+      "seen": 5965,
+      "complete": 1
+    },
+    {
+      "name": "named_pharmacology_extension",
+      "hits": 3601,
+      "seen": 3601,
+      "complete": 1
+    },
+    {
+      "name": "named_parent_production",
+      "hits": 2026,
+      "seen": 2027,
+      "complete": 1
+    },
+    {
+      "name": "named_parent_pharmacology_expanded",
+      "hits": 5177,
+      "seen": 5177,
+      "complete": 1
+    },
+    {
+      "name": "characterized_aroma_oils",
+      "hits": 2741,
+      "seen": 2741,
+      "complete": 1
+    },
+    {
+      "name": "parent_titles_v2_bc4aaa244e_2",
+      "hits": 911,
+      "seen": 911,
+      "complete": 1
+    },
+    {
+      "name": "parent_titles_v2_bc4aaa244e_3",
+      "hits": 898,
+      "seen": 898,
+      "complete": 1
+    },
+    {
+      "name": "parent_titles_v2_bc4aaa244e_4",
+      "hits": 466,
+      "seen": 466,
+      "complete": 1
+    },
+    {
+      "name": "parent_titles_v2_bc4aaa244e_5",
+      "hits": 277,
+      "seen": 277,
+      "complete": 1
+    },
+    {
+      "name": "parent_titles_v2_bc4aaa244e_1",
+      "hits": 3689,
+      "seen": 3689,
+      "complete": 1
+    },
+    {
+      "name": "parent_titles_v2_bc4aaa244e_0",
+      "hits": 17546,
+      "seen": 17546,
+      "complete": 1
+    },
+    {
+      "name": "parent_titles_v4_6f11f690f2_benzyl_alcohol",
+      "hits": 89,
+      "seen": 89,
+      "complete": 1
+    },
+    {
+      "name": "parent_titles_v4_36a176fe45_benzyl_benzoate",
+      "hits": 128,
+      "seen": 128,
+      "complete": 1
+    },
+    {
+      "name": "parent_titles_v4_29282ff8bb_coumarin",
+      "hits": 109,
+      "seen": 109,
+      "complete": 1
+    },
+    {
+      "name": "parent_titles_v4_074c62529a_ethyl_butyrate",
+      "hits": 36,
+      "seen": 36,
+      "complete": 1
+    },
+    {
+      "name": "parent_titles_v4_7504d76a39_ethyl_hexanoate",
+      "hits": 33,
+      "seen": 33,
+      "complete": 1
+    },
+    {
+      "name": "parent_titles_v4_282fd2057a_methyl_benzoate",
+      "hits": 152,
+      "seen": 152,
+      "complete": 1
+    },
+    {
+      "name": "parent_titles_v4_5679132e82_methyl_dihydrojasmonate",
+      "hits": 25,
+      "seen": 25,
+      "complete": 1
+    },
+    {
+      "name": "parent_titles_v4_f569bb1ea9_tonalide",
+      "hits": 59,
+      "seen": 59,
+      "complete": 1
+    },
+    {
+      "name": "parent_titles_v4_226454ba5b_galaxolide",
+      "hits": 85,
+      "seen": 85,
+      "complete": 1
+    },
+    {
+      "name": "parent_titles_v4_cde7fca5a7_lilial",
+      "hits": 17,
+      "seen": 17,
+      "complete": 1
+    },
+    {
+      "name": "parent_titles_v5_453a661aef_gamma_nonalactone",
+      "hits": 7,
+      "seen": 7,
+      "complete": 1
+    },
+    {
+      "name": "parent_titles_v5_419b9bace1_gamma_undecalactone",
+      "hits": 3,
+      "seen": 3,
+      "complete": 1
+    },
+    {
+      "name": "parent_titles_v5_44fc9dcd05_delta_decalactone",
+      "hits": 18,
+      "seen": 18,
+      "complete": 1
+    },
+    {
+      "name": "parent_titles_v5_c5e1df240e_gamma_decalactone",
+      "hits": 76,
+      "seen": 76,
+      "complete": 1
+    },
+    {
+      "name": "parent_titles_v5_19d81cc8d7_hydroxycitronellal",
+      "hits": 18,
+      "seen": 18,
+      "complete": 1
+    },
+    {
+      "name": "parent_titles_v5_b62f1153ec_anisyl_alcohol",
+      "hits": 31,
+      "seen": 31,
+      "complete": 1
+    },
+    {
+      "name": "parent_titles_v5_fb1f9c87e5_eugenyl_acetate",
+      "hits": 17,
+      "seen": 17,
+      "complete": 1
+    },
+    {
+      "name": "parent_titles_v5_66c8e196b3_geranyl_acetate",
+      "hits": 33,
+      "seen": 33,
+      "complete": 1
+    },
+    {
+      "name": "parent_titles_v5_0f5e0a9044_alpha_terpinene",
+      "hits": 33,
+      "seen": 33,
+      "complete": 1
+    },
+    {
+      "name": "parent_titles_v5_dc16bd4d31_cinnamyl_alcohol",
+      "hits": 242,
+      "seen": 242,
+      "complete": 1
+    },
+    {
+      "name": "parent_titles_v5_e8be38cfe8_terpinolene",
+      "hits": 41,
+      "seen": 41,
+      "complete": 1
+    },
+    {
+      "name": "parent_titles_v5_32b4607dba_hexadecanolactone",
+      "hits": 11,
+      "seen": 11,
+      "complete": 1
+    },
+    {
+      "name": "parent_titles_v5_0c407346a3_gamma_terpinene",
+      "hits": 61,
+      "seen": 61,
+      "complete": 1
+    },
+    {
+      "name": "parent_titles_v5_83ab45432b__sclareol",
+      "hits": 148,
+      "seen": 148,
+      "complete": 1
+    },
+    {
+      "name": "parent_titles_v5_105bcfab55_hexyl_cinnamal",
+      "hits": 7,
+      "seen": 7,
+      "complete": 1
+    },
+    {
+      "name": "parent_titles_v5_f310fa5473_amyl_salicylate",
+      "hits": 5,
+      "seen": 5,
+      "complete": 1
+    },
+    {
+      "name": "parent_titles_v6_1c8f8a38e0_ethyl_phenylacetate",
+      "hits": 4,
+      "seen": 4,
+      "complete": 1
+    },
+    {
+      "name": "parent_titles_v6_b8d125ec62_methyl_phenylacetate",
+      "hits": 6,
+      "seen": 6,
+      "complete": 1
+    },
+    {
+      "name": "parent_titles_v6_a762ce55cb_benzylacetone",
+      "hits": 13,
+      "seen": 13,
+      "complete": 1
+    },
+    {
+      "name": "parent_titles_v6_adfb9d4242_ethyl_vanillin",
+      "hits": 42,
+      "seen": 42,
+      "complete": 1
+    },
+    {
+      "name": "parent_titles_v6_084acdf800_octanal",
+      "hits": 22,
+      "seen": 22,
+      "complete": 1
+    },
+    {
+      "name": "parent_titles_v6_c20c85e739_piperonal",
+      "hits": 45,
+      "seen": 45,
+      "complete": 1
+    },
+    {
+      "name": "parent_titles_v6_ca5ec08993_decanal",
+      "hits": 21,
+      "seen": 21,
+      "complete": 1
+    },
+    {
+      "name": "parent_titles_v6_02125fea20_cinnamyl_acetate",
+      "hits": 18,
+      "seen": 18,
+      "complete": 1
+    },
+    {
+      "name": "parent_titles_v6_e19ee10b66_hexyl_acetate",
+      "hits": 12,
+      "seen": 12,
+      "complete": 1
+    },
+    {
+      "name": "parent_titles_v6_219b958b55_nonanal",
+      "hits": 45,
+      "seen": 45,
+      "complete": 1
+    },
+    {
+      "name": "parent_titles_v6_fd2a520c12_neryl_acetate",
+      "hits": 4,
+      "seen": 4,
+      "complete": 1
+    },
+    {
+      "name": "parent_titles_v6_606fa0ca24_citronellyl_acetate",
+      "hits": 8,
+      "seen": 8,
+      "complete": 1
+    },
+    {
+      "name": "parent_titles_v6_3c973fe708_phenethyl_acetate",
+      "hits": 29,
+      "seen": 29,
+      "complete": 1
+    },
+    {
+      "name": "parent_titles_v6_661ac01923_musk_ketone",
+      "hits": 32,
+      "seen": 32,
+      "complete": 1
+    },
+    {
+      "name": "parent_titles_v6_ae48fb3d1f_phenylacetaldehyde",
+      "hits": 99,
+      "seen": 99,
+      "complete": 1
+    },
+    {
+      "name": "parent_titles_v6_40e348b46d_p_methoxybenzaldehyde",
+      "hits": 90,
+      "seen": 90,
+      "complete": 1
+    },
+    {
+      "name": "parent_titles_v6_c576210665_musk_xylene",
+      "hits": 42,
+      "seen": 42,
+      "complete": 1
+    },
+    {
+      "name": "parent_titles_v6_22d559c820_omega_6_hexadecenlactone",
+      "hits": 2,
+      "seen": 2,
+      "complete": 1
+    },
+    {
+      "name": "parent_titles_v6_0506ecfb4b_omega_pentadecalactone",
+      "hits": 35,
+      "seen": 35,
+      "complete": 1
+    },
+    {
+      "name": "parent_titles_v6_a75f0ec203_muscone",
+      "hits": 132,
+      "seen": 132,
+      "complete": 1
+    }
+  ],
+  "reference_status": {
+    "complete": 179836
+  },
+  "reference_retention": {
+    "returned_reference_rows": 4725293,
+    "retained_unique_raw_reference_rows": 5299792,
+    "complete_requests_returning_zero_references": 52011,
+    "note": "Returned request counts and retained rows may cover different providers; additional imports, deduplication and missing identifiers make these counts non-comparable. A successful zero-result request does not establish a paper has no references."
+  },
+  "integrity": {
+    "dangling_edges": 0,
+    "edges_outside_current_accepted_set": 0,
+    "self_edges": 0,
+    "duplicate_doi_groups": 0,
+    "duplicate_pmid_groups": 0,
+    "completed_reference_rows_retrieved_less_than_total": 1
+  },
+  "screening_warnings": {
+    "review_ectopic_receptor_context": 53,
+    "review_sensor_hardware_context": 971,
+    "diagnostic_review_exclusion_override_of_automatic_eligibility": 81,
+    "review_insect_context": 475,
+    "aromatic_or_aromatase_only": 835,
+    "curated_seed_override_of_automatic_eligibility": 6
+  },
+  "examples": {
+    "review_ectopic_receptor_context": [
+      {
+        "id": "AGR:IND609266639",
+        "title": "Olfactory receptors as metabolic Sensors: The potential role of food-derived odorants in metabolic health and functional foods"
+      },
+      {
+        "id": "pmid:42576458",
+        "title": "The Endoterpenoid System: A Membrane-Based Logic Framework for Integrating Cannabinoid, Olfactory, and Lipid-Sensitive Receptor Crosstalk."
+      },
+      {
+        "id": "pmid:42303203",
+        "title": "Activation of the olfactory receptors OR7D2 and OR10A4 by natural odorants modulates inflammatory responses in human keratinocytes."
+      },
+      {
+        "id": "pmid:40763923",
+        "title": "Bioactive ligands targeting ectopic olfactory receptors: Implications for therapeutic strategies."
+      },
+      {
+        "id": "pmid:41788573",
+        "title": "The ectopic olfactory receptor OR7A17 regulates the proliferation and differentiation of human epidermal keratinocytes, and ginsenoside Rh3 acts as its antagonist."
+      }
+    ],
+    "review_sensor_hardware_context": [
+      {
+        "id": "pmid:42225041",
+        "title": "Mechanistic insights into aroma aging of ripened Pu-erh tea during long-term storage."
+      },
+      {
+        "id": "AGR:IND609419612",
+        "title": "Aroma evolution and key volatile profiles of aged raw Pu-erh Tea: Insights from volatilomics, electronic sensing, and microbiomics"
+      },
+      {
+        "id": "AGR:IND609313031",
+        "title": "Optimizing apple brandy production by comparative analysis of distillation methods on yield, aroma, and sensory characteristics"
+      },
+      {
+        "id": "pmid:42893048",
+        "title": "Integrated volatilomics and lipidomics reveal aroma-related volatile and lipidomic changes associated with  Enterococcus faecalis  JM263 supplementation in yak meat."
+      },
+      {
+        "id": "pmid:41166805",
+        "title": "Mechanistic insights into the release of milk flavor compounds from \u03b2-casein matrices: Roles of environmental conditions and molecular interactions."
+      }
+    ],
+    "diagnostic_review_exclusion_override_of_automatic_eligibility": [
+      {
+        "id": "pmid:42914207",
+        "title": "Food aroma modification and consumer acceptance: A framework based on source transparency and material incorporation."
+      },
+      {
+        "id": "pmid:40293971",
+        "title": "Specific Odor Coding Using a Single Thin-Film Transistor."
+      },
+      {
+        "id": "pmid:42316573",
+        "title": "Consumer Perception and Technological Characterization of Mini Cakes Prepared With Special Beers."
+      },
+      {
+        "id": "pmid:42748884",
+        "title": "Multifunctional molecular encapsulating agents - Cyclodextrins: Physicochemical properties, safety, solubility, bioavailability and applications in pharmaceuticals and foods."
+      },
+      {
+        "id": "pmid:28235481",
+        "title": "Molecular determinants of the olfactory receptor Olfr544 activation by azelaic acid."
+      }
+    ],
+    "review_insect_context": [
+      {
+        "id": "pmid:40406726",
+        "title": "Comparative transcriptomic analysis of loquat floral fragrance and hormone synthesis regulation across developmental stages in petals and stamens."
+      },
+      {
+        "id": "doi:10.64898/2026.05.13.724861",
+        "title": "Engineering carotenoid and steroidal glycoalkaloid depleted tomato fruit for heterologous production of high value terpenes"
+      },
+      {
+        "id": "pmid:40863948",
+        "title": "Assessment of Organic Pollutants Desorbed from Plastic Litter Items Stranded on Cadiz Beaches (SW Spain)."
+      },
+      {
+        "id": "pmid:42353866",
+        "title": "OBP-Mediated Molecular Mechanism Underlying the Olfactory Repellent Effect of  Mosla chinensis  Essential Oil Against  Culex quinquefasciatus ."
+      },
+      {
+        "id": "pmid:41369347",
+        "title": "Cellular and Molecular Roles of Human Odorant-Binding Proteins and Related Lipocalins in Olfaction and Neuroinflammation."
+      }
+    ],
+    "aromatic_or_aromatase_only": [
+      {
+        "id": "pmid:42594654",
+        "title": "Volatile compounds and sensory attributes that drive the flavor of cooked sweetpotato."
+      },
+      {
+        "id": "pmid:41683173",
+        "title": "Multi-Analysis Characterization of  Makgeolli  Made from the Novel Glutinous Rice Cultivar ' Gureumchal ': Free Amino Acids, GC-MS Volatiles, and Electronic Tongue-Derived Flavor Profile."
+      },
+      {
+        "id": "pmid:42926797",
+        "title": "Structure-dependent inhibition of heterocyclic amines and advanced glycation end products by chemical modified chitosans in air-fried beef patties: Balancing safety and flavor quality."
+      },
+      {
+        "id": "pmid:41079311",
+        "title": "Unraveling flavor formation mechanism of cigar smoke through volatile compounds in cigar smoke and potential precursors in cigar tobacco."
+      },
+      {
+        "id": "AGR:IND609397270",
+        "title": "Effect of salt on volatile flavor substances in meat products-a review"
+      }
+    ],
+    "curated_seed_override_of_automatic_eligibility": [
+      {
+        "id": "pmid:34469532",
+        "title": "OlfactionBase: a repository to explore odors, odorants, olfactory receptors\u00a0and odorant-receptor interactions."
+      },
+      {
+        "id": "doi:10.1002/ejoc.200300174",
+        "title": "Conception, Characterization and Correlation of New Marine Odorants"
+      },
+      {
+        "id": "doi:10.1021/cr950068a",
+        "title": "Structure\u2212Odor Relationships"
+      },
+      {
+        "id": "doi:10.1055/s-0037-1610199",
+        "title": "Unconventional Rose Odorants: Serendipitous Discovery and Unique Olfactory Properties of 2,2-Bis(prenyl)-3-oxobutyronitrile and Its Derivatives"
+      },
+      {
+        "id": "doi:10.1002/hlca.200790126",
+        "title": "Structure\u2013Activity Relationship in the Domain of Odorants Having Marine Notes"
+      }
+    ]
+  },
+  "duplicate_doi_examples": [],
+  "limitations": "Synthetic fixture checks and automatic audits do not establish precision/recall or manual relevance. Warning contexts require inspection. Metadata coverage and citation availability are incomplete."
+}

@@ -16,5 +16,38 @@ runs/
 logs/
 data/pretrained-features.log
 *.partial
+.claude/
+.openai/
+.env*
+*.pem
+*.key
+*.p12
+*.eml
+*.mbox
+*.ics
+*.vcf
+*.docx
+*.pdf
+*.zip
+outreach*/
+exports/
+**/mail-canvas-*/
+**/Kontakte/
+**/Anhaenge/
+**/GbR*/
+Gesellschaftsvertrag*
+Email + Konzept extern.md
+CALNEW E-Mail-Kooperationen.*
+papers and mails.txt
+aroma_atlas/data/
+aroma_atlas/site/
+aroma_atlas/logs/
+*.sqlite*
+*.joblib
+*.pkl
+*.pt
+*.pth
+.ruff_cache/
+.mypy_cache/
 .env
 .papers and mails.txt.lock

@@ -1,0 +1,10 @@
+{
+  "artifact_sha256": "ef87e50dc493f7a3698af5beadc553e2468bd23374f806729dfc2dada5380260",
+  "descriptor_source_rows": 0,
+  "monotonicity": "Single endpoint; no dilution curve",
+  "recipe": "regularized",
+  "reserved_holdouts_opened": false,
+  "snapshot": "data/snapshots/828751d0a24e8149",
+  "training_molecules": 114,
+  "validated_endpoint": "Ravia published group-mean intensity at each molecule's most concentrated presentation"
+}

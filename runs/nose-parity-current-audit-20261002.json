@@ -1,0 +1,1125 @@
+{
+  "completion_audit": {
+    "all_eleven_paper_tasks_evaluated": false,
+    "all_reported_metrics_verified": false,
+    "original_train_only_five_task_pearson": false,
+    "reason": "Original train-only threshold/pleasantness gaps remain; data/targets/splits differ; other paper tasks and some metrics are missing",
+    "reserved_targets_fitted_or_scored": false,
+    "shared_data_reproduction": false
+  },
+  "development_connectivity_overlaps": {
+    "abraham": {
+      "42": {
+        "refit_train_test": [
+          "XMGQYMWWDOXHJM"
+        ],
+        "train_test": [
+          "XMGQYMWWDOXHJM"
+        ],
+        "train_validation": [
+          "XMGQYMWWDOXHJM"
+        ],
+        "validation_test": [
+          "XMGQYMWWDOXHJM"
+        ]
+      },
+      "43": {
+        "refit_train_test": [],
+        "train_test": [],
+        "train_validation": [
+          "XMGQYMWWDOXHJM"
+        ],
+        "validation_test": []
+      },
+      "44": {
+        "refit_train_test": [
+          "XMGQYMWWDOXHJM"
+        ],
+        "train_test": [
+          "XMGQYMWWDOXHJM"
+        ],
+        "train_validation": [],
+        "validation_test": []
+      },
+      "45": {
+        "refit_train_test": [],
+        "train_test": [],
+        "train_validation": [
+          "XMGQYMWWDOXHJM"
+        ],
+        "validation_test": []
+      },
+      "46": {
+        "refit_train_test": [
+          "XMGQYMWWDOXHJM"
+        ],
+        "train_test": [
+          "XMGQYMWWDOXHJM"
+        ],
+        "train_validation": [],
+        "validation_test": []
+      },
+      "48": {
+        "refit_train_test": [],
+        "train_test": [],
+        "train_validation": [
+          "XMGQYMWWDOXHJM"
+        ],
+        "validation_test": []
+      },
+      "50": {
+        "refit_train_test": [
+          "XMGQYMWWDOXHJM"
+        ],
+        "train_test": [
+          "XMGQYMWWDOXHJM"
+        ],
+        "train_validation": [],
+        "validation_test": []
+      },
+      "51": {
+        "refit_train_test": [
+          "XMGQYMWWDOXHJM"
+        ],
+        "train_test": [
+          "XMGQYMWWDOXHJM"
+        ],
+        "train_validation": [
+          "XMGQYMWWDOXHJM"
+        ],
+        "validation_test": [
+          "XMGQYMWWDOXHJM"
+        ]
+      }
+    },
+    "keller": {},
+    "ravia": {
+      "48": {
+        "refit_train_test": [
+          "NNWHUJCUHAELCL"
+        ],
+        "train_test": [
+          "NNWHUJCUHAELCL"
+        ],
+        "train_validation": [],
+        "validation_test": []
+      }
+    }
+  },
+  "host": "compute-host",
+  "new_training_only_trials": {
+    "nose-parity-pleasantness-grouped-inner-v2": {
+      "datasets": {
+        "keller": {
+          "mean_scores": {
+            "blend_classical_direction_boost": {
+              "mae": 8.0196399725896,
+              "pearson": 0.6997820519609496,
+              "rmse": 10.135070848445523
+            },
+            "blend_semantic_quality_boost": {
+              "mae": 7.964518730935744,
+              "pearson": 0.7000414759460617,
+              "rmse": 10.13162113280974
+            },
+            "blend_semantic_quality_ridge100": {
+              "mae": 8.114310571665007,
+              "pearson": 0.6839377214422009,
+              "rmse": 10.36519107951713
+            },
+            "classical_direction_boost": {
+              "mae": 8.296470386421445,
+              "pearson": 0.6726739731106258,
+              "rmse": 10.544675060509155
+            },
+            "current": {
+              "mae": 8.018147113648704,
+              "pearson": 0.7028185449595092,
+              "rmse": 10.09183220473095
+            },
+            "semantic_quality_boost": {
+              "mae": 8.271541951897424,
+              "pearson": 0.668463346613453,
+              "rmse": 10.60476586135525
+            },
+            "semantic_quality_ridge100": {
+              "mae": 8.96409449462307,
+              "pearson": 0.6145729522692219,
+              "rmse": 11.538616928968153
+            }
+          },
+          "passing": [],
+          "selected": "current"
+        }
+      },
+      "host": "compute-host",
+      "results_sha256": "88f4f7c44be503ffebf0dfb5eaeb6528e2ffb051c09bd1cd3ccdd8d008db01d9",
+      "status": "complete"
+    },
+    "nose-parity-threshold-water-inner-v2": {
+      "completed_fold_checkpoints": 2,
+      "status": "incomplete"
+    }
+  },
+  "original_train_only": {
+    "descriptor_strength_keller": {
+      "meets_exact_paper_pearson_point_estimate": true,
+      "metrics": {
+        "mae": {
+          "mean": 2.556144882441129,
+          "sd": 0.13974854183993263
+        },
+        "pearson": {
+          "mean": 0.4200067926711057,
+          "sd": 0.06623506261917757
+        }
+      },
+      "pearson_difference": 0.07200679267110571,
+      "predictions_verified": false,
+      "retained_evidence": "Saved benchmark metric summaries; raw task prediction arrays not retained",
+      "sha256": "eaae942f41172c05a5fbd0aa99aba6b829d797f360489f4c054b1ed66c10ecb1",
+      "source": "runs\\nose-protocol-v4\\results.json"
+    },
+    "intensity_keller": {
+      "meets_exact_paper_pearson_point_estimate": true,
+      "metrics": {
+        "mae": {
+          "mean": 10.519497040776873,
+          "sd": 0.6007657499512623
+        },
+        "mse": {
+          "mean": 193.23399799370543,
+          "sd": 32.758154344446204
+        },
+        "pearson": {
+          "mean": 0.6267451868227741,
+          "sd": 0.11079431603218973
+        },
+        "r2": {
+          "mean": 0.3539401940069359,
+          "sd": 0.1668659222094839
+        }
+      },
+      "original_test_ids_and_targets_verified": true,
+      "pearson_difference": 0.20874518682277415,
+      "per_split": [
+        {
+          "n": 33,
+          "scores": {
+            "mae": 10.389770379238255,
+            "mse": 208.57946362963605,
+            "pearson": 0.678000762484498,
+            "r2": 0.4495414481386276
+          },
+          "sha256": "9aae0f8f5ed7b55c2020bf1b01d27bbd2edb5b004954daab68d5bb4f5055c304",
+          "split": 42
+        },
+        {
+          "n": 33,
+          "scores": {
+            "mae": 11.297329393248923,
+            "mse": 194.29952179298007,
+            "pearson": 0.6806685880111759,
+            "r2": 0.42838719257241575
+          },
+          "sha256": "fcba8be8fbb42e1717118eeb238c3cc2ff180e1d4509e1493c368a17b4a3b47e",
+          "split": 43
+        },
+        {
+          "n": 33,
+          "scores": {
+            "mae": 11.610856330819745,
+            "mse": 268.5790397980694,
+            "pearson": 0.4194035799735369,
+            "r2": 0.05711674352102036
+          },
+          "sha256": "f9542895adbf3239321edc4bca148d17f781090f7d4f7c5c90a3b841a1474a00",
+          "split": 44
+        },
+        {
+          "n": 33,
+          "scores": {
+            "mae": 10.97551622967127,
+            "mse": 230.93207498152594,
+            "pearson": 0.5449064176106622,
+            "r2": 0.2676866667526445
+          },
+          "sha256": "21e24f49c85cb030c446f77d085e36e4d1536935b518ead58238904b51a2a08a",
+          "split": 45
+        },
+        {
+          "n": 33,
+          "scores": {
+            "mae": 9.52076390515828,
+            "mse": 173.34538013402474,
+            "pearson": 0.7083693980996518,
+            "r2": 0.4815321286592491
+          },
+          "sha256": "321b2f6149465ad50c62b0960403f481c94cf601850203c49ca69832d2dfcb16",
+          "split": 46
+        },
+        {
+          "n": 33,
+          "scores": {
+            "mae": 10.382412627129845,
+            "mse": 177.72018647520326,
+            "pearson": 0.4873631373636591,
+            "r2": 0.09989249527280175
+          },
+          "sha256": "2c3ae3a842a0f09c52bc10cd0c9541bb56cf18eae4abbaad8b88a33e3fcea89e",
+          "split": 47
+        },
+        {
+          "n": 33,
+          "scores": {
+            "mae": 10.016007934742792,
+            "mse": 152.48485521978802,
+            "pearson": 0.7607903010375379,
+            "r2": 0.5496810945910909
+          },
+          "sha256": "be1550e5511adca6802c9cd5dddbc3fcac1697ebf179055149db7ace87b36e0a",
+          "split": 48
+        },
+        {
+          "n": 33,
+          "scores": {
+            "mae": 9.955189496276,
+            "mse": 180.3608865594581,
+            "pearson": 0.7721536465573028,
+            "r2": 0.5463173049770165
+          },
+          "sha256": "f1a2d7689668122c1491f66ab8b9bd394b775e48943d0f7fe2d4e98f12c620a1",
+          "split": 49
+        },
+        {
+          "n": 33,
+          "scores": {
+            "mae": 10.516976417593018,
+            "mse": 180.65517067440507,
+            "pearson": 0.5794480672981032,
+            "r2": 0.2558312411998488
+          },
+          "sha256": "45ee723bfa10e112b540ce196dfc52f41290ae0a0e40b17c9394c7cd861a1087",
+          "split": 50
+        },
+        {
+          "n": 33,
+          "scores": {
+            "mae": 10.530147693890596,
+            "mse": 165.3834006719638,
+            "pearson": 0.6363479697916137,
+            "r2": 0.4034156243846435
+          },
+          "sha256": "1aafbe0445ebcf9aa2491518ae3f8058141fa24edd59c8472de73496ecb7b86a",
+          "split": 51
+        }
+      ],
+      "predictions_verified": true,
+      "source": "runs\\nose-intensity-keller-v3"
+    },
+    "intensity_ravia": {
+      "meets_exact_paper_pearson_point_estimate": true,
+      "metrics": {
+        "mae": {
+          "mean": 11.747955622133919,
+          "sd": 2.5133830069862615
+        },
+        "mse": {
+          "mean": 214.57266082663256,
+          "sd": 92.33335861837634
+        },
+        "pearson": {
+          "mean": 0.5973619139382522,
+          "sd": 0.17834687089361956
+        },
+        "r2": {
+          "mean": 0.2765056913636853,
+          "sd": 0.2754862069177116
+        }
+      },
+      "original_test_ids_and_targets_verified": true,
+      "pearson_difference": 0.11236191393825223,
+      "per_split": [
+        {
+          "n": 12,
+          "scores": {
+            "mae": 13.519080888256704,
+            "mse": 385.0925940841492,
+            "pearson": 0.46503271131166907,
+            "r2": 0.13536279023503073
+          },
+          "sha256": "3310cff6a9952f3512eab22fd1677c604ee3b8f4d7ec1766845cf345f786065a",
+          "split": 42
+        },
+        {
+          "n": 12,
+          "scores": {
+            "mae": 12.865965681201146,
+            "mse": 229.3539447077778,
+            "pearson": 0.4779704193153759,
+            "r2": 0.09809469937074955
+          },
+          "sha256": "1caccb18a86a094c4baa5f1ab2d4d2c99f2c577dfe208170b227a0a7b16ce063",
+          "split": 43
+        },
+        {
+          "n": 12,
+          "scores": {
+            "mae": 14.117098600576462,
+            "mse": 260.2486795188785,
+            "pearson": 0.3744646844168444,
+            "r2": -0.23241924139557502
+          },
+          "sha256": "0cd068bf0bae88d087a0828862d0131ae5b06e05d045fd1ee4a793641fd592ec",
+          "split": 44
+        },
+        {
+          "n": 12,
+          "scores": {
+            "mae": 14.233613693439928,
+            "mse": 278.1282226425186,
+            "pearson": 0.48409914097154294,
+            "r2": 0.1551421823852971
+          },
+          "sha256": "3d5f3526716bc18d446c8c88cc027bdc979bb0fe596dafe0db869e17b4bb7719",
+          "split": 45
+        },
+        {
+          "n": 12,
+          "scores": {
+            "mae": 11.681390745361755,
+            "mse": 218.4046136051778,
+            "pearson": 0.3935277857395398,
+            "r2": 0.02719693596936701
+          },
+          "sha256": "615e1e94796775785bc3706b331eb5259910937a75ce0f40b4ac328716004952",
+          "split": 46
+        },
+        {
+          "n": 12,
+          "scores": {
+            "mae": 9.882477562431525,
+            "mse": 120.43293399784211,
+            "pearson": 0.8985003244327727,
+            "r2": 0.6302768590543519
+          },
+          "sha256": "3d3d5a9e731973b0982a3c1b03c0d85e31210ead91f09c6b6ef7876bf0e56f82",
+          "split": 47
+        },
+        {
+          "n": 12,
+          "scores": {
+            "mae": 15.319187099450602,
+            "mse": 308.7255668735137,
+            "pearson": 0.5674497558877211,
+            "r2": 0.26518409033888557
+          },
+          "sha256": "1e219da98493ec3334767c59ed5fa6075ca00347c75cd0eabf4c642504e0337f",
+          "split": 48
+        },
+        {
+          "n": 12,
+          "scores": {
+            "mae": 9.560784132272094,
+            "mse": 154.1087475170065,
+            "pearson": 0.7616285250574635,
+            "r2": 0.5335825554567029
+          },
+          "sha256": "c0cbcf8976900eeaf6dd0ea849f9123661a5ae6451b5353474069d8564769989",
+          "split": 49
+        },
+        {
+          "n": 12,
+          "scores": {
+            "mae": 7.9499161950605,
+            "mse": 87.4247161582425,
+            "pearson": 0.7644935683102656,
+            "r2": 0.567934719959225
+          },
+          "sha256": "c3c41c0b5ba52a907898417e6d431707f4038c490aa3ae7073f67bc793711db7",
+          "split": 50
+        },
+        {
+          "n": 12,
+          "scores": {
+            "mae": 8.350041623288464,
+            "mse": 103.80658916121865,
+            "pearson": 0.7864522239393285,
+            "r2": 0.5847013222628179
+          },
+          "sha256": "20681ebfb6c8e2ea1dd2c42fde373ed957b5b105b1b6206f460ee4dd1f9e473f",
+          "split": 51
+        }
+      ],
+      "predictions_verified": true,
+      "source": "runs\\nose-intensity-ravia-joint-v2"
+    },
+    "pleasantness_keller": {
+      "meets_exact_paper_pearson_point_estimate": false,
+      "metrics": {
+        "mae": {
+          "mean": 7.622150663881714,
+          "sd": 0.6717564919786461
+        },
+        "mse": {
+          "mean": 94.30345768062001,
+          "sd": 15.637914187782743
+        },
+        "pearson": {
+          "mean": 0.692984096326976,
+          "sd": 0.07432787465828308
+        },
+        "r2": {
+          "mean": 0.4412793902176769,
+          "sd": 0.10064542654505525
+        }
+      },
+      "original_test_ids_and_targets_verified": true,
+      "pearson_difference": -0.022015903673023973,
+      "per_split": [
+        {
+          "n": 33,
+          "scores": {
+            "mae": 8.3146002522527,
+            "mse": 112.12746975112758,
+            "pearson": 0.5820520464243556,
+            "r2": 0.3244118844498456
+          },
+          "sha256": "b6a246674e0ea8299d1f397c4238e80dc72e3f967f2138cf111f6b70a3169ce5",
+          "split": 42
+        },
+        {
+          "n": 33,
+          "scores": {
+            "mae": 7.548269072018027,
+            "mse": 95.45324894607104,
+            "pearson": 0.6139346529704843,
+            "r2": 0.3603244827737765
+          },
+          "sha256": "c8839c3c65f9e56883cd89f238be1fb36f1a114d25b80e08b362b4d77d7c82fb",
+          "split": 43
+        },
+        {
+          "n": 33,
+          "scores": {
+            "mae": 7.80787417503345,
+            "mse": 105.13436479996156,
+            "pearson": 0.7547920547004997,
+            "r2": 0.3592234257760699
+          },
+          "sha256": "f56c260d04f1e52fb6cc8b6ad7c8e0e95fd6c1aa6dcdf12bf25260da0f94bc7a",
+          "split": 44
+        },
+        {
+          "n": 33,
+          "scores": {
+            "mae": 8.647095640244117,
+            "mse": 121.94374670833821,
+            "pearson": 0.6096714281602421,
+            "r2": 0.3652062856593219
+          },
+          "sha256": "d7ba6ac719d0a9ad8963253aae6202a39d17c7dbb292a340697415e044966b0c",
+          "split": 45
+        },
+        {
+          "n": 33,
+          "scores": {
+            "mae": 6.884855819602189,
+            "mse": 81.40157709415747,
+            "pearson": 0.7666891033298036,
+            "r2": 0.527445610484108
+          },
+          "sha256": "0f68acf071473c211e5de3979f379d5b8ea386d53f3bc0f2f240ddbd0e40f0db",
+          "split": 46
+        },
+        {
+          "n": 33,
+          "scores": {
+            "mae": 6.304375440374582,
+            "mse": 64.0735488362693,
+            "pearson": 0.7430585993594274,
+            "r2": 0.5226487623705407
+          },
+          "sha256": "faaa905674d4c75e39925233d9b93670713150e587d756f99110dcf2322a3698",
+          "split": 47
+        },
+        {
+          "n": 33,
+          "scores": {
+            "mae": 7.474408497659382,
+            "mse": 88.41078763814353,
+            "pearson": 0.753873811573078,
+            "r2": 0.5642445475548812
+          },
+          "sha256": "b66a22cf1c097f5c60af1eeb63773d0f1e78970260739e1d8818540cf44829f8",
+          "split": 48
+        },
+        {
+          "n": 33,
+          "scores": {
+            "mae": 7.446389315752512,
+            "mse": 84.03742580614865,
+            "pearson": 0.7595356625536921,
+            "r2": 0.5405106136712512
+          },
+          "sha256": "5334d960c71702dff9330070173f0c83b60ac9a137377f3ccb5894177fa028d2",
+          "split": 49
+        },
+        {
+          "n": 33,
+          "scores": {
+            "mae": 8.375816522946984,
+            "mse": 98.61797648595834,
+            "pearson": 0.7404384177405486,
+            "r2": 0.5447627105676204
+          },
+          "sha256": "5f2a546bc102a9e7761d881246553669c88755905f7edce2cee9c0bdce0e5c54",
+          "split": 50
+        },
+        {
+          "n": 33,
+          "scores": {
+            "mae": 7.4178219029331895,
+            "mse": 91.83443074002447,
+            "pearson": 0.6057951864576278,
+            "r2": 0.3040155788693544
+          },
+          "sha256": "fa8bf5dca0a7329902c03f802b74fe752ba632117d77f44782afe98f42d1ca3e",
+          "split": 51
+        }
+      ],
+      "predictions_verified": true,
+      "source": "runs\\nose-semantic-pleasantness-v3"
+    },
+    "threshold_abraham": {
+      "meets_exact_paper_pearson_point_estimate": false,
+      "metrics": {
+        "pearson": {
+          "mean": 0.7859350870164596,
+          "sd": 0.042568794727512814
+        }
+      },
+      "pearson_difference": -0.05006491298354032,
+      "predictions_verified": false,
+      "retained_evidence": "Saved benchmark metric summaries; raw task prediction arrays not retained",
+      "sha256": "eaae942f41172c05a5fbd0aa99aba6b829d797f360489f4c054b1ed66c10ecb1",
+      "source": "runs\\nose-protocol-v4\\results.json"
+    }
+  },
+  "paper": {
+    "precision": "Appendix A.9",
+    "references": {
+      "descriptor_strength_keller": {
+        "mae": 5.862,
+        "mse": 67.161,
+        "pearson": 0.348,
+        "r2": 0.075
+      },
+      "intensity_keller": {
+        "mae": 12.932,
+        "mse": 269.902,
+        "pearson": 0.418,
+        "r2": 0.156
+      },
+      "intensity_ravia": {
+        "mae": 11.078,
+        "mse": 216.326,
+        "pearson": 0.485,
+        "r2": 0.22
+      },
+      "pleasantness_keller": {
+        "mae": 6.911,
+        "mse": 89.28,
+        "pearson": 0.715,
+        "r2": 0.488
+      },
+      "threshold_abraham": {
+        "mae": 0.711,
+        "mse": 0.778,
+        "pearson": 0.836,
+        "r2": 0.652
+      }
+    },
+    "url": "https://arxiv.org/html/2604.10452v2#A9",
+    "version": "2604.10452v2"
+  },
+  "separate_protocols": {
+    "threshold_grouped_tenfold": {
+      "difference_from_paper": "Ten-fold connectivity CV instead of its fixed 54-molecule test; reduced cohort and water auxiliary targets",
+      "execution": "Per-seed workers after sequential checkpoint; fixed folds, recipes and threads unchanged",
+      "mean": 0.8429736948801341,
+      "model_seed_sd": 0.002162949333276739,
+      "model_seeds": [
+        42,
+        43,
+        44
+      ],
+      "molecules_scored": 186,
+      "pooled_pearson_per_model_seed": [
+        0.8443765922727202,
+        0.844626271227652,
+        0.8399182211400299
+      ],
+      "reserved_holdouts_opened": false,
+      "sha256": "df17227662440d51bcd6042d958f5fde6334f68beacb288f4501f08fe4c3517e",
+      "source": "runs\\nose-threshold-grouped-tenfold-v2\\results.json",
+      "training_counts": [
+        167,
+        167,
+        167,
+        167,
+        168,
+        168,
+        168,
+        166,
+        168,
+        168
+      ]
+    }
+  },
+  "validation_refit": {
+    "descriptor_strength_keller": {
+      "meets_exact_paper_pearson_point_estimate": true,
+      "metrics": {
+        "mae": {
+          "mean": 2.5477916351082968,
+          "sd": 0.12389720307315356
+        },
+        "pearson": {
+          "mean": 0.4190905842350771,
+          "sd": 0.06397232558938376
+        }
+      },
+      "pearson_difference": 0.07109058423507714,
+      "predictions_verified": false,
+      "retained_evidence": "Saved benchmark metric summaries; raw task prediction arrays not retained",
+      "sha256": "a0cc4dcc9b790b4e0861927685e68b39d16164cd4910784384e95adc861ca889",
+      "source": "runs\\nose-development-refit-v1\\results.json"
+    },
+    "intensity_keller": {
+      "meets_exact_paper_pearson_point_estimate": true,
+      "metrics": {
+        "mae": {
+          "mean": 10.384893511213914,
+          "sd": 0.6336614868227417
+        },
+        "mse": {
+          "mean": 188.33011190836407,
+          "sd": 32.42799616067198
+        },
+        "pearson": {
+          "mean": 0.6393982566472923,
+          "sd": 0.1130900775916597
+        },
+        "r2": {
+          "mean": 0.3654419440441397,
+          "sd": 0.18160272224268456
+        }
+      },
+      "original_test_ids_and_targets_verified": true,
+      "pearson_difference": 0.22139825664729235,
+      "per_split": [
+        {
+          "n": 33,
+          "scores": {
+            "mae": 10.979372581527048,
+            "mse": 215.49129276603873,
+            "pearson": 0.6624133689213043,
+            "r2": 0.43130055619783114
+          },
+          "sha256": "315f366c9e12a0f36e19a4db010e2564b6ddecc49118960d415b50b804430ad6",
+          "split": 42
+        },
+        {
+          "n": 33,
+          "scores": {
+            "mae": 10.42403914188674,
+            "mse": 174.72062861896256,
+            "pearson": 0.727536413785667,
+            "r2": 0.48598664516113166
+          },
+          "sha256": "045df5cbd10c61912b1f8c98a1cdef8338970bf2b1564281add42e8541105cdf",
+          "split": 43
+        },
+        {
+          "n": 33,
+          "scores": {
+            "mae": 11.145864916786252,
+            "mse": 238.21861357117268,
+            "pearson": 0.4844443454088413,
+            "r2": 0.16370114999752294
+          },
+          "sha256": "03d00575de96006a13b6f8b18eaa125cd026f5661aea3c1f4cdb1481076c2cca",
+          "split": 44
+        },
+        {
+          "n": 33,
+          "scores": {
+            "mae": 11.095770425970429,
+            "mse": 241.1641433705433,
+            "pearson": 0.5200825239344452,
+            "r2": 0.23523954952747939
+          },
+          "sha256": "ba0778dd52ed6ee6092305ee724541279514dbee5ba6b250d3b1e39697ca3237",
+          "split": 45
+        },
+        {
+          "n": 33,
+          "scores": {
+            "mae": 10.151985802451195,
+            "mse": 175.39641734130748,
+            "pearson": 0.7099325727793563,
+            "r2": 0.4753975729296508
+          },
+          "sha256": "6679fe6dfaf233ec15c905e0adb74c82fe1c13323159344b39d6d857cd6e1845",
+          "split": 46
+        },
+        {
+          "n": 33,
+          "scores": {
+            "mae": 10.75204657764464,
+            "mse": 189.28270557269522,
+            "pearson": 0.46856662374661445,
+            "r2": 0.04133127935456293
+          },
+          "sha256": "2f6bb1d3222d8fbdee58e52bfd2f5151b31a86b0a3108f27c362b3712e331531",
+          "split": 47
+        },
+        {
+          "n": 33,
+          "scores": {
+            "mae": 9.643430270701652,
+            "mse": 142.08488035225002,
+            "pearson": 0.7746753078527508,
+            "r2": 0.5803943434044204
+          },
+          "sha256": "fb6583d8985f32a8277082e213befa932b132cd315608b4743da36588126a556",
+          "split": 48
+        },
+        {
+          "n": 33,
+          "scores": {
+            "mae": 9.035974711758055,
+            "mse": 154.4131497195224,
+            "pearson": 0.8001863840137748,
+            "r2": 0.6115866624516393
+          },
+          "sha256": "57d76fe088618fa1ca6745daa089a5447911dccd924a5407f80cf18b8a0cfcaa",
+          "split": 49
+        },
+        {
+          "n": 33,
+          "scores": {
+            "mae": 10.253834408355843,
+            "mse": 193.0602295766431,
+            "pearson": 0.5876862951304257,
+            "r2": 0.20473136262090075
+          },
+          "sha256": "af783bd86130b17035df09d70512c2310ee5a84647c974d5bdd7deee3e1b96ba",
+          "split": 50
+        },
+        {
+          "n": 33,
+          "scores": {
+            "mae": 10.366616275057295,
+            "mse": 159.46905819450544,
+            "pearson": 0.6584587308997429,
+            "r2": 0.4247503187962577
+          },
+          "sha256": "a5afd76ea6f03341d485846ccfbe48141e946d4ad4b18e5b781b7ad6f09d4941",
+          "split": 51
+        }
+      ],
+      "predictions_verified": true,
+      "source": "runs\\nose-intensity-keller-refit-v3"
+    },
+    "intensity_ravia": {
+      "meets_exact_paper_pearson_point_estimate": true,
+      "metrics": {
+        "mae": {
+          "mean": 11.8545928891687,
+          "sd": 2.37413785844157
+        },
+        "mse": {
+          "mean": 214.07474352694038,
+          "sd": 85.38763494871486
+        },
+        "pearson": {
+          "mean": 0.6070087866585123,
+          "sd": 0.15579012059087943
+        },
+        "r2": {
+          "mean": 0.27734515443877006,
+          "sd": 0.26740740451131484
+        }
+      },
+      "original_test_ids_and_targets_verified": true,
+      "pearson_difference": 0.12200878665851234,
+      "per_split": [
+        {
+          "n": 12,
+          "scores": {
+            "mae": 13.68191888601558,
+            "mse": 365.9257638849859,
+            "pearson": 0.4935936438187355,
+            "r2": 0.17839751704627183
+          },
+          "sha256": "82a1d03f223bb7abbd6cd63f29ea1a483a04debebc4e4563dda156bc54689f9f",
+          "split": 42
+        },
+        {
+          "n": 12,
+          "scores": {
+            "mae": 12.350634541050958,
+            "mse": 218.34395037722663,
+            "pearson": 0.5438368369080367,
+            "r2": 0.1413901057753526
+          },
+          "sha256": "881046f9ae1290f8750def60c9e81e935a9c6be4c35e18af1d2bdac7d505b8db",
+          "split": 43
+        },
+        {
+          "n": 12,
+          "scores": {
+            "mae": 14.404856392057747,
+            "mse": 271.2558218532477,
+            "pearson": 0.35266133308194114,
+            "r2": -0.284544055364794
+          },
+          "sha256": "31b2bb96b6c87e3cd78d0128b26aab7aef4e7b6af24c955f50c91dd11c7d320e",
+          "split": 44
+        },
+        {
+          "n": 12,
+          "scores": {
+            "mae": 13.597245045754448,
+            "mse": 255.68350203826208,
+            "pearson": 0.560238118780014,
+            "r2": 0.223321518831339
+          },
+          "sha256": "0428551e83c6c379894c3d7cb05daedeed10e71246b9f85bee222466c9b5886a",
+          "split": 45
+        },
+        {
+          "n": 12,
+          "scores": {
+            "mae": 11.858809732084538,
+            "mse": 215.63784270348523,
+            "pearson": 0.42395087939530796,
+            "r2": 0.03952049986396011
+          },
+          "sha256": "bed44ad4e0fd20155b6dc1adb21a039b27a70e324c4df729dafce3881eec91a2",
+          "split": 46
+        },
+        {
+          "n": 12,
+          "scores": {
+            "mae": 10.909775299074788,
+            "mse": 168.22100463852055,
+            "pearson": 0.8099129447504526,
+            "r2": 0.4835698496799833
+          },
+          "sha256": "1e7538a2ee300146938940c1826fd374be1e9246d0083d57a0bb700de3f72793",
+          "split": 47
+        },
+        {
+          "n": 12,
+          "scores": {
+            "mae": 15.298683027090291,
+            "mse": 308.24215851025156,
+            "pearson": 0.5678783934472165,
+            "r2": 0.26633467906331665
+          },
+          "sha256": "afd18e0db6d7704a0ef817c771af7988aec3b5cd7bffc78a02c0c3578da64a0f",
+          "split": 48
+        },
+        {
+          "n": 12,
+          "scores": {
+            "mae": 10.01315545200056,
+            "mse": 153.91943928897723,
+            "pearson": 0.7559360965042394,
+            "r2": 0.5341555058009958
+          },
+          "sha256": "bb929c86789b510e961cc9f971f0ee959a66e23a88eb9c670165c22cae8e09b4",
+          "split": 49
+        },
+        {
+          "n": 12,
+          "scores": {
+            "mae": 7.6645084080187,
+            "mse": 79.12779022177011,
+            "pearson": 0.7829612876438575,
+            "r2": 0.6089392983639275
+          },
+          "sha256": "cf9a0655ae404073a5dbd8900fda4b029f9b02593bc161e826ed63c52a424fc5",
+          "split": 50
+        },
+        {
+          "n": 12,
+          "scores": {
+            "mae": 8.766342108539378,
+            "mse": 104.39016175267689,
+            "pearson": 0.7791183322553222,
+            "r2": 0.5823666253273481
+          },
+          "sha256": "d620f45c53d9439f26a740b8045c000d6fd971e02cfb6e91927df27451e7dfd6",
+          "split": 51
+        }
+      ],
+      "predictions_verified": true,
+      "source": "runs\\nose-intensity-ravia-joint-refit-v2"
+    },
+    "pleasantness_keller": {
+      "meets_exact_paper_pearson_point_estimate": false,
+      "metrics": {
+        "mae": {
+          "mean": 7.422152606133741,
+          "sd": 0.7883823982841232
+        },
+        "mse": {
+          "mean": 90.06249496546522,
+          "sd": 19.161138728446733
+        },
+        "pearson": {
+          "mean": 0.7088508631643873,
+          "sd": 0.08623205224297152
+        },
+        "r2": {
+          "mean": 0.4666939930234452,
+          "sd": 0.11661724061446978
+        }
+      },
+      "original_test_ids_and_targets_verified": true,
+      "pearson_difference": -0.00614913683561269,
+      "per_split": [
+        {
+          "n": 33,
+          "scores": {
+            "mae": 8.517819252764271,
+            "mse": 122.34993860077897,
+            "pearson": 0.5429439209543167,
+            "r2": 0.26281967620921787
+          },
+          "sha256": "923653de5f995018d17060a794f455e25975eb8e491652f5e0430769da5d43a8",
+          "split": 42
+        },
+        {
+          "n": 33,
+          "scores": {
+            "mae": 7.20592704429342,
+            "mse": 85.43810667568437,
+            "pearson": 0.6603745194509889,
+            "r2": 0.4274404938330051
+          },
+          "sha256": "4070cc53043973f0222c3ba43b6c1f99d3757c7b80e733f2111e0c704ded574a",
+          "split": 43
+        },
+        {
+          "n": 33,
+          "scores": {
+            "mae": 7.401680791707291,
+            "mse": 97.81517716091246,
+            "pearson": 0.7664843473285825,
+            "r2": 0.40383266453806355
+          },
+          "sha256": "300c2f1c3c3d053a187e61c2592b9af86f5a27c6909685a7ab800bf3b7827501",
+          "split": 44
+        },
+        {
+          "n": 33,
+          "scores": {
+            "mae": 8.699305797675947,
+            "mse": 122.2476646027507,
+            "pearson": 0.6104140785098918,
+            "r2": 0.36362420232781545
+          },
+          "sha256": "f2b451fb74d98b91ef339f67cf435115f4583bc5986daea61601545df4840e41",
+          "split": 45
+        },
+        {
+          "n": 33,
+          "scores": {
+            "mae": 6.230099926975635,
+            "mse": 64.08791752689093,
+            "pearson": 0.8185727641594328,
+            "r2": 0.6279552826447823
+          },
+          "sha256": "93cbc832724cd620d66ccd948e9cf5fbbf7c60ad3189ed936ad518b49f313c0c",
+          "split": 46
+        },
+        {
+          "n": 33,
+          "scores": {
+            "mae": 6.147241757722938,
+            "mse": 62.33885868342884,
+            "pearson": 0.7591483186383299,
+            "r2": 0.5355722933189826
+          },
+          "sha256": "7e761d7bfa9f7f295ed82038945bc968bde3ac3726297e9a8657101dd77a7ff8",
+          "split": 47
+        },
+        {
+          "n": 33,
+          "scores": {
+            "mae": 7.41026446752424,
+            "mse": 87.44458326212072,
+            "pearson": 0.7550736450368889,
+            "r2": 0.5690067359289008
+          },
+          "sha256": "b81203d1da2a8707553a861637573a24f76220b2469314809185b7c91c60e7cd",
+          "split": 48
+        },
+        {
+          "n": 33,
+          "scores": {
+            "mae": 7.4473495546026705,
+            "mse": 82.94654365080218,
+            "pearson": 0.7741203469193029,
+            "r2": 0.5464752034633442
+          },
+          "sha256": "b37b31a088199f9397a534ac186c4884ccaf6a0e1e43d5051839c8e5e2c522f1",
+          "split": 49
+        },
+        {
+          "n": 33,
+          "scores": {
+            "mae": 7.926688132034366,
+            "mse": 89.02227420013159,
+            "pearson": 0.7727110703590081,
+            "r2": 0.5890580982287315
+          },
+          "sha256": "f297782f9a49ec11e6c690ab69c39e9fc7422ffb133436ddab29f209021cf25d",
+          "split": 50
+        },
+        {
+          "n": 33,
+          "scores": {
+            "mae": 7.235149336036631,
+            "mse": 86.9338852911514,
+            "pearson": 0.6286656202871308,
+            "r2": 0.34115527974160953
+          },
+          "sha256": "f04a69e5984897692c1df53790efb73e573645f4a5056c05ab6a11672dd1a466",
+          "split": 51
+        }
+      ],
+      "predictions_verified": true,
+      "source": "runs\\nose-semantic-pleasantness-refit-v3"
+    },
+    "threshold_abraham": {
+      "meets_exact_paper_pearson_point_estimate": false,
+      "metrics": {
+        "pearson": {
+          "mean": 0.8244706330501144,
+          "sd": 0.030396477996063157
+        }
+      },
+      "pearson_difference": -0.0115293669498856,
+      "predictions_verified": false,
+      "retained_evidence": "Saved benchmark metric summaries; raw task prediction arrays not retained",
+      "sha256": "a0cc4dcc9b790b4e0861927685e68b39d16164cd4910784384e95adc861ca889",
+      "source": "runs\\nose-development-refit-v1\\results.json"
+    }
+  }
+}

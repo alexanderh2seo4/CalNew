@@ -1,0 +1,382 @@
+{
+  "manifest": {
+    "differences": "- CALNEW's reserved final tests and the pipeline test partition stay closed, so every dataset\n  is smaller than in the paper (e.g. Abraham 186 vs 268).\n- Keller molecule targets use each molecule's higher-concentration stimulus; descriptor\n  strength covers the 20 semantic descriptors (the paper's 21-dim target is not specified).\n- Ravia uses published group means at each molecule's most concentrated dilution\n  (178 molecules in the public files vs 248 in the paper).\n- Models train on the train split only; the validation split is not used (no early stopping).",
+    "paper_n": {
+      "descriptor_strength_keller": 474,
+      "intensity_keller": 474,
+      "intensity_ravia": 248,
+      "pleasantness_keller": 474,
+      "threshold_abraham": 268
+    },
+    "protocol": "NOSE arXiv:2604.10452 downstream: random split seed 42, model seeds [42]",
+    "reserved_holdouts_opened": false,
+    "seconds": 99,
+    "snapshot": "data/snapshots/828751d0a24e8149",
+    "split_id": "1baa09f9c3a81b9c2ec1e84120cb0ea2897fbb1e23cdc4d6cd38fda2f19ec0dc",
+    "splits": {
+      "abraham": {
+        "n": 186,
+        "test": 37,
+        "train": 112,
+        "val": 37
+      },
+      "keller": {
+        "n": 326,
+        "test": 33,
+        "train": 261,
+        "val": 32
+      },
+      "ravia": {
+        "n": 114,
+        "test": 11,
+        "train": 91,
+        "val": 12
+      }
+    }
+  },
+  "paper": {
+    "descriptor_strength_keller": {
+      "AttentiveFP": [
+        0.327,
+        0.065
+      ],
+      "ChemBERTa": [
+        0.33,
+        0.089
+      ],
+      "GCN": [
+        0.171,
+        0.006
+      ],
+      "GIN": [
+        0.128,
+        0.007
+      ],
+      "Morgan": [
+        0.244,
+        0.023
+      ],
+      "NOSE": [
+        0.348,
+        0.06
+      ],
+      "POM": [
+        0.314,
+        0.039
+      ],
+      "Uni-Mol": [
+        0.33,
+        0.05
+      ]
+    },
+    "intensity_keller": {
+      "AttentiveFP": [
+        0.33,
+        0.01
+      ],
+      "ChemBERTa": [
+        0.39,
+        0.07
+      ],
+      "GCN": [
+        0.11,
+        0.05
+      ],
+      "GIN": [
+        0.06,
+        0.14
+      ],
+      "Morgan": [
+        0.05,
+        0.02
+      ],
+      "NOSE": [
+        0.42,
+        0.01
+      ],
+      "POM": [
+        0.32,
+        0.07
+      ],
+      "Uni-Mol": [
+        0.27,
+        0.03
+      ]
+    },
+    "intensity_ravia": {
+      "AttentiveFP": [
+        0.47,
+        0.0
+      ],
+      "ChemBERTa": [
+        0.47,
+        0.06
+      ],
+      "GCN": [
+        0.19,
+        0.01
+      ],
+      "GIN": [
+        0.19,
+        0.11
+      ],
+      "Morgan": [
+        0.1,
+        0.19
+      ],
+      "NOSE": [
+        0.49,
+        0.03
+      ],
+      "POM": [
+        0.32,
+        0.06
+      ],
+      "Uni-Mol": [
+        0.31,
+        0.02
+      ]
+    },
+    "pleasantness_keller": {
+      "AttentiveFP": [
+        0.52,
+        0.05
+      ],
+      "ChemBERTa": [
+        0.65,
+        0.04
+      ],
+      "GCN": [
+        0.43,
+        0.01
+      ],
+      "GIN": [
+        0.3,
+        0.04
+      ],
+      "Morgan": [
+        0.51,
+        0.03
+      ],
+      "NOSE": [
+        0.71,
+        0.05
+      ],
+      "POM": [
+        0.68,
+        0.03
+      ],
+      "Uni-Mol": [
+        0.68,
+        0.02
+      ]
+    },
+    "threshold_abraham": {
+      "AttentiveFP": [
+        0.59,
+        0.35
+      ],
+      "ChemBERTa": [
+        0.81,
+        0.02
+      ],
+      "GCN": [
+        0.22,
+        0.09
+      ],
+      "GIN": [
+        0.72,
+        0.02
+      ],
+      "Morgan": [
+        0.6,
+        0.18
+      ],
+      "NOSE": [
+        0.84,
+        0.03
+      ],
+      "POM": [
+        0.79,
+        0.02
+      ],
+      "Uni-Mol": [
+        0.78,
+        0.05
+      ]
+    }
+  },
+  "paper_mae": {
+    "descriptor_strength_keller": {
+      "AttentiveFP": 6.232,
+      "ChemBERTa": 6.11,
+      "GCN": 6.247,
+      "GIN": 6.528,
+      "Morgan": 6.483,
+      "NOSE": 5.862,
+      "POM": 6.304,
+      "Uni-Mol": 6.741
+    }
+  },
+  "per_seed": {
+    "descriptor_strength_keller": [
+      {
+        "explicit_fp_extra_trees": {
+          "mae": 2.6340172356872205,
+          "pearson_flattened": 0.6285461357366621,
+          "pearson_mean_per_descriptor": 0.4434832270784591
+        },
+        "morgan_ridge": {
+          "mae": 2.7574274095452473,
+          "pearson_flattened": 0.5719372866635808,
+          "pearson_mean_per_descriptor": 0.3531290854077561
+        },
+        "pipeline_C": {
+          "mae": 2.7568706254784527,
+          "pearson_flattened": 0.604956365425173,
+          "pearson_mean_per_descriptor": 0.4014722292412879
+        }
+      }
+    ],
+    "intensity_keller": [
+      {
+        "explicit_fp_extra_trees": 0.41183959733049835,
+        "morgan_ridge": 0.44055200647102744,
+        "pipeline_B2": 0.6697126960958671
+      }
+    ],
+    "intensity_ravia": [
+      {
+        "explicit_fp_extra_trees": 0.22857822030946934,
+        "morgan_ridge": 0.1054778825907231,
+        "pipeline_B2": 0.00891324400804916
+      }
+    ],
+    "pleasantness_keller": [
+      {
+        "explicit_fp_extra_trees": 0.5482539611022066,
+        "morgan_ridge": 0.492827573203473,
+        "pipeline_C": 0.42256648609763475
+      }
+    ],
+    "threshold_abraham": [
+      {
+        "explicit_fp_extra_trees": 0.7368270279052557,
+        "morgan_ridge": 0.638262588443821,
+        "pipeline_B1_ensemble": 0.8145374765586345,
+        "pipeline_B1_fusion": 0.7538395999985306,
+        "ridge_explicit_quality": 0.8110373075675505
+      }
+    ]
+  },
+  "summary": {
+    "descriptor_strength_keller": {
+      "explicit_fp_extra_trees": {
+        "mae": [
+          2.6340172356872205,
+          0.0
+        ],
+        "pearson_flattened": [
+          0.6285461357366621,
+          0.0
+        ],
+        "pearson_mean_per_descriptor": [
+          0.4434832270784591,
+          0.0
+        ]
+      },
+      "morgan_ridge": {
+        "mae": [
+          2.7574274095452473,
+          0.0
+        ],
+        "pearson_flattened": [
+          0.5719372866635808,
+          0.0
+        ],
+        "pearson_mean_per_descriptor": [
+          0.3531290854077561,
+          0.0
+        ]
+      },
+      "pipeline_C": {
+        "mae": [
+          2.7568706254784527,
+          0.0
+        ],
+        "pearson_flattened": [
+          0.604956365425173,
+          0.0
+        ],
+        "pearson_mean_per_descriptor": [
+          0.4014722292412879,
+          0.0
+        ]
+      }
+    },
+    "intensity_keller": {
+      "explicit_fp_extra_trees": [
+        0.41183959733049835,
+        0.0
+      ],
+      "morgan_ridge": [
+        0.44055200647102744,
+        0.0
+      ],
+      "pipeline_B2": [
+        0.6697126960958671,
+        0.0
+      ]
+    },
+    "intensity_ravia": {
+      "explicit_fp_extra_trees": [
+        0.22857822030946934,
+        0.0
+      ],
+      "morgan_ridge": [
+        0.1054778825907231,
+        0.0
+      ],
+      "pipeline_B2": [
+        0.00891324400804916,
+        0.0
+      ]
+    },
+    "pleasantness_keller": {
+      "explicit_fp_extra_trees": [
+        0.5482539611022066,
+        0.0
+      ],
+      "morgan_ridge": [
+        0.492827573203473,
+        0.0
+      ],
+      "pipeline_C": [
+        0.42256648609763475,
+        0.0
+      ]
+    },
+    "threshold_abraham": {
+      "explicit_fp_extra_trees": [
+        0.7368270279052557,
+        0.0
+      ],
+      "morgan_ridge": [
+        0.638262588443821,
+        0.0
+      ],
+      "pipeline_B1_ensemble": [
+        0.8145374765586345,
+        0.0
+      ],
+      "pipeline_B1_fusion": [
+        0.7538395999985306,
+        0.0
+      ],
+      "ridge_explicit_quality": [
+        0.8110373075675505,
+        0.0
+      ]
+    }
+  }
+}

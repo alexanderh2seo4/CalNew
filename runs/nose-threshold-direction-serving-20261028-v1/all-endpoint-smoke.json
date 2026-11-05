@@ -1,0 +1,218 @@
+{
+  "run": "runs\\modular-pipeline-fingerprint-v5",
+  "anchor": "fingerprint",
+  "molecules": [
+    {
+      "smiles": "CCO",
+      "molecule_id": "LFQSCWFLJHTTHZ-UHFFFAOYSA-N",
+      "quality": {
+        "top_catalogue_labels": {
+          "alcoholic": 0.936,
+          "fermented": 0.931,
+          "ethereal": 0.897,
+          "winey": 0.475,
+          "oily": 0.368,
+          "sweet": 0.339
+        },
+        "semantics": "ranking of catalogue (Leffingwell) descriptor records; positive-weighted, not calibrated"
+      },
+      "threshold": {
+        "log10_ppbv": 2.907181519316741,
+        "ppbv": 807.5724956861429,
+        "baseline_log10_ppbv": 2.5271607097445936,
+        "branch_log10_ppbv": 3.2872023288888887
+      },
+      "dose_response": {
+        "representation": "blend_dose_semantic",
+        "curve": [
+          {
+            "log10_dilution": -7.0,
+            "intensity_0_100": 19.577716478762273
+          },
+          {
+            "log10_dilution": -6.0,
+            "intensity_0_100": 21.830874586052857
+          },
+          {
+            "log10_dilution": -5.0,
+            "intensity_0_100": 28.462792013548086
+          },
+          {
+            "log10_dilution": -4.0,
+            "intensity_0_100": 30.886487304422555
+          },
+          {
+            "log10_dilution": -3.0,
+            "intensity_0_100": 39.34833169246769
+          },
+          {
+            "log10_dilution": -2.0,
+            "intensity_0_100": 41.584547204978364
+          },
+          {
+            "log10_dilution": -1.0,
+            "intensity_0_100": 49.511940090226005
+          },
+          {
+            "log10_dilution": 0.0,
+            "intensity_0_100": 51.3018602215379
+          }
+        ],
+        "hill_component": {
+          "I_max": 69.49979400634766,
+          "x50_log10_dilution": -4.549801826477051,
+          "slope": 0.2794545590877533
+        }
+      },
+      "at_dilution": {
+        "dilution": 0.001,
+        "in_trained_range": true,
+        "intensity_0_100": 39.34833169246769,
+        "intensity_seed_sd": null,
+        "pleasantness_0_100": 41.00129737268597,
+        "profile": {
+          "acid": 4.47,
+          "ammonia/urinous": 3.05,
+          "bakery": 2.06,
+          "burnt": 3.2,
+          "chemical": 11.0,
+          "cold": 4.04,
+          "decayed": 2.73,
+          "edible": 3.88,
+          "fish": 1.09,
+          "flower": 3.41,
+          "fruit": 1.94,
+          "garlic": 2.56,
+          "grass": 2.65,
+          "musky": 7.55,
+          "sour": 6.65,
+          "spices": 4.12,
+          "sweaty": 3.82,
+          "sweet": 7.47,
+          "warm": 3.64,
+          "wood": 2.12
+        }
+      },
+      "applicability": {
+        "nearest_tanimoto_quality": 0.38461538461538464,
+        "nearest_tanimoto_threshold": 0.38461538461538464,
+        "nearest_tanimoto_panel": 0.38461538461538464
+      }
+    },
+    {
+      "smiles": "COCCC(=O)OCC(C)C",
+      "molecule_id": "BNIUEJUHBMPWKI-UHFFFAOYSA-N",
+      "quality": {
+        "top_catalogue_labels": {
+          "fruity": 0.975,
+          "winey": 0.941,
+          "apple": 0.921,
+          "pineapple": 0.858,
+          "ethereal": 0.761,
+          "banana": 0.741
+        },
+        "semantics": "ranking of catalogue (Leffingwell) descriptor records; positive-weighted, not calibrated"
+      },
+      "threshold": {
+        "log10_ppbv": 0.9157041334907485,
+        "ppbv": 8.235768556854248,
+        "baseline_log10_ppbv": 1.1870356086481657,
+        "branch_log10_ppbv": 0.6443726583333311
+      },
+      "dose_response": {
+        "representation": "blend_dose_semantic",
+        "curve": [
+          {
+            "log10_dilution": -7.0,
+            "intensity_0_100": 18.347973541818234
+          },
+          {
+            "log10_dilution": -6.0,
+            "intensity_0_100": 21.97186213593399
+          },
+          {
+            "log10_dilution": -5.0,
+            "intensity_0_100": 30.510460132667813
+          },
+          {
+            "log10_dilution": -4.0,
+            "intensity_0_100": 36.60016062780437
+          },
+          {
+            "log10_dilution": -3.0,
+            "intensity_0_100": 55.04017052926312
+          },
+          {
+            "log10_dilution": -2.0,
+            "intensity_0_100": 60.44695648016115
+          },
+          {
+            "log10_dilution": -1.0,
+            "intensity_0_100": 70.60840421434592
+          },
+          {
+            "log10_dilution": 0.0,
+            "intensity_0_100": 73.30262027276326
+          }
+        ],
+        "hill_component": {
+          "I_max": 85.50752258300781,
+          "x50_log10_dilution": -3.8541126251220703,
+          "slope": 0.5949212908744812
+        }
+      },
+      "at_dilution": {
+        "dilution": 0.001,
+        "in_trained_range": true,
+        "intensity_0_100": 55.04017052926312,
+        "intensity_seed_sd": null,
+        "pleasantness_0_100": 53.78641313229481,
+        "profile": {
+          "acid": 3.65,
+          "ammonia/urinous": 2.46,
+          "bakery": 3.76,
+          "burnt": 3.16,
+          "chemical": 9.3,
+          "cold": 2.74,
+          "decayed": 2.31,
+          "edible": 9.06,
+          "fish": 0.95,
+          "flower": 4.94,
+          "fruit": 6.45,
+          "garlic": 2.02,
+          "grass": 2.75,
+          "musky": 5.06,
+          "sour": 5.29,
+          "spices": 4.12,
+          "sweaty": 2.01,
+          "sweet": 15.97,
+          "warm": 4.85,
+          "wood": 1.96
+        }
+      },
+      "applicability": {
+        "nearest_tanimoto_quality": 0.6538461538461539,
+        "nearest_tanimoto_threshold": 0.6296296296296297,
+        "nearest_tanimoto_panel": 0.5555555555555556
+      }
+    }
+  ],
+  "concentration_axis": "log10 solution dilution in paraffin oil (Keller protocol)",
+  "intensity_model": {
+    "run": "runs\\nose-intensity-keller-refit-v3",
+    "recipe": "blend_dose_semantic",
+    "validated_endpoint": "Keller intensity at nominal paraffin-oil dilution; higher-concentration benchmark and both observed dilutions",
+    "uncertainty": "Not estimated for this head"
+  },
+  "pleasantness_model": {
+    "run": "runs\\nose-semantic-pleasantness-v3",
+    "recipe": "equal v2 + semantic transfer",
+    "validated_endpoint": "Keller pleasantness, higher-concentration stimulus"
+  },
+  "threshold_model": {
+    "run": "runs\\nose-threshold-direction-serving-20261028-v1",
+    "recipe": "0.5 frozen current-v2 + 0.5 descriptor direction/confidence tree",
+    "endpoint": "air_detection_threshold",
+    "uncertainty": "Not calibrated for this head"
+  }
+}

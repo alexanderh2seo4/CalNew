@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "nodes": 50104,
+  "directed_citation_pairs": 298910,
+  "citation_provenance_rows": 482025,
+  "metadata_shards": 101,
+  "edge_shards": 6,
+  "largest_asset": "graph.json",
+  "largest_asset_bytes": 25815586,
+  "graph_manifest_sha256": "9a9da34fd3ad4180418b03258bfaa22c3bd354935d761f4ac7c74c547493d548",
+  "scope_limit": "Reconciles exact accepted identifiers and all directed edges across SQLite/JSON/CSV/GEXF. It does not manually verify scientific relevance or exhaustive literature coverage."
+}

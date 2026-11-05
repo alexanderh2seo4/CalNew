@@ -1,0 +1,42 @@
+{
+  "additional_development_connectivities_excluded": 489,
+  "canonical_unique_pairs_before_exclusions": 1487286,
+  "checks": {
+    "binary_weights": true,
+    "endpoint_connectivity_disjoint": true,
+    "independent_canonical_pair_count_matches": true,
+    "parquet_roundtrip": true,
+    "sparse_roundtrip": true,
+    "unique_pairs": true
+  },
+  "code_sha256": "9fefe717bfa3228c276169aaace3b5652828aede1d01a8fb867a8d5a1fe80752",
+  "duplicate_raw_rows_removed": 1054030,
+  "endpoint_connectivity_overlap": [],
+  "export_molecules": 6445,
+  "export_pairs": 934458,
+  "files": {
+    "associations.parquet": "ddc7da2be9bcc9ea5079aefdd4a10de44fdcc96d2c0ce27243284e96dec8afed",
+    "binary-associations.npz": "79b85a95ce5b9cb63b829df3239499cc4df0ed59a8e8fd055cc7661034949002",
+    "excluded-development-connectivities.csv": "8b6deec7effc4dc53682ee51c3786dbd40fb1ec38341f0938e4c47dffc565cce",
+    "molecules.parquet": "bd382e518959980e42371723bb7fa52d59d00a696ddaa5ba420cd4af937d0c66",
+    "quarantine.csv": "eb30fdea672b1c75a336c8d132e2c114e2adc44f1cd8dbe4c2b9c8e548559a4f",
+    "source.json": "0c15f3b540317d6e69d19b11237c1f8da27363dd8965f1a49170ea6a03eade30",
+    "vocabulary.csv": "4f097f03323f633b015fa35894e29acc485ebfedf7ec2ce0a90dbc729ebf52d6"
+  },
+  "host": "compute-host",
+  "invalid_or_disconnected_smiles_quarantined": 474,
+  "labels": "Unweighted binary LLM-augmented associations; strong/weak positive provenance unavailable; not measured sensory responses",
+  "raw_rows": 2567558,
+  "raw_smiles": 9513,
+  "raw_unique_pairs": 1513528,
+  "rdkit": "2026.03.6",
+  "reserved_filtered_molecules": 7000,
+  "reserved_filtered_pairs": 1098957,
+  "reserved_targets_fitted_or_scored": false,
+  "rights": "Research compilation; repository MIT does not replace upstream third-party data terms",
+  "source_sha256": "858e482f407a3577870a87a61f8f16b488412ed06922dd35dd8d4fe4cf5e6ff2",
+  "source_url": "https://github.com/Xianyusyy/NOSE/releases/download/v1.0.0/nose-smiles-descriptor-v1.0.0.csv.gz",
+  "valid_unique_molecules": 9037,
+  "version": "20261028-v1",
+  "vocabulary": 1086
+}

@@ -1,0 +1,178 @@
+{
+  "comparison": "Reduced CALNEW targets; not exact NOSE reproduction",
+  "corpus_sha256": "858e482f407a3577870a87a61f8f16b488412ed06922dd35dd8d4fe4cf5e6ff2",
+  "per_split": {
+    "42": {
+      "scores": [
+        {
+          "seed": 42,
+          "semantic": 0.5925888007103692,
+          "v2": 0.5575872541437736,
+          "v3": 0.5820520464243555
+        },
+        {
+          "seed": 43,
+          "semantic": 0.5925888007103692,
+          "v2": 0.5208339407233116,
+          "v3": 0.5646976328428863
+        },
+        {
+          "seed": 44,
+          "semantic": 0.5925888007103692,
+          "v2": 0.5549525887813318,
+          "v3": 0.5835191043832375
+        }
+      ],
+      "source_rows": 6926,
+      "test_n": 33,
+      "train_n": 260
+    },
+    "43": {
+      "scores": [
+        {
+          "seed": 42,
+          "semantic": 0.5985979900021372,
+          "v2": 0.6113185413407995,
+          "v3": 0.6139346529704842
+        }
+      ],
+      "source_rows": 6920,
+      "test_n": 33,
+      "train_n": 260
+    },
+    "44": {
+      "scores": [
+        {
+          "seed": 42,
+          "semantic": 0.7622918595424595,
+          "v2": 0.73493302870541,
+          "v3": 0.7547920547004997
+        }
+      ],
+      "source_rows": 6929,
+      "test_n": 33,
+      "train_n": 260
+    },
+    "45": {
+      "scores": [
+        {
+          "seed": 42,
+          "semantic": 0.6082029873108434,
+          "v2": 0.5875730826453873,
+          "v3": 0.6096714281602421
+        }
+      ],
+      "source_rows": 6918,
+      "test_n": 33,
+      "train_n": 260
+    },
+    "46": {
+      "scores": [
+        {
+          "seed": 42,
+          "semantic": 0.765876472766528,
+          "v2": 0.7480030443914781,
+          "v3": 0.7666891033298036
+        }
+      ],
+      "source_rows": 6918,
+      "test_n": 33,
+      "train_n": 260
+    },
+    "47": {
+      "scores": [
+        {
+          "seed": 42,
+          "semantic": 0.7287843922263174,
+          "v2": 0.7140644291546998,
+          "v3": 0.7430585993594274
+        }
+      ],
+      "source_rows": 6912,
+      "test_n": 33,
+      "train_n": 260
+    },
+    "48": {
+      "scores": [
+        {
+          "seed": 42,
+          "semantic": 0.7719094923440114,
+          "v2": 0.715176207223077,
+          "v3": 0.7538738115730781
+        }
+      ],
+      "source_rows": 6912,
+      "test_n": 33,
+      "train_n": 260
+    },
+    "49": {
+      "scores": [
+        {
+          "seed": 42,
+          "semantic": 0.7518635596363148,
+          "v2": 0.7478260353002388,
+          "v3": 0.759535662553692
+        }
+      ],
+      "source_rows": 6911,
+      "test_n": 33,
+      "train_n": 260
+    },
+    "50": {
+      "scores": [
+        {
+          "seed": 42,
+          "semantic": 0.7260876054059713,
+          "v2": 0.7304280810465671,
+          "v3": 0.7404384177405485
+        }
+      ],
+      "source_rows": 6920,
+      "test_n": 33,
+      "train_n": 260
+    },
+    "51": {
+      "scores": [
+        {
+          "seed": 42,
+          "semantic": 0.6142504052012838,
+          "v2": 0.5850245904573252,
+          "v3": 0.6057951864576278
+        }
+      ],
+      "source_rows": 6920,
+      "test_n": 33,
+      "train_n": 260
+    }
+  },
+  "reserved_holdouts_opened": false,
+  "robustness": {
+    "semantic": {
+      "mean": 0.6920453565146236,
+      "sd": 0.07386226919736624
+    },
+    "v2": {
+      "mean": 0.6731934294408757,
+      "sd": 0.07347445648210804
+    },
+    "v3": {
+      "mean": 0.6929840963269759,
+      "sd": 0.0743278746582831
+    }
+  },
+  "seconds": 1812,
+  "validation_refit": false,
+  "word_vectors": {
+    "corpus_sha256": "858e482f407a3577870a87a61f8f16b488412ed06922dd35dd8d4fe4cf5e6ff2",
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "molecular_or_endpoint_labels_used": false,
+    "pooling": "attention-masked mean, L2 normalization",
+    "prompt": "This odor smells {term}.",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "sha256": "f29812b5b2b359b68c36848ad8f97e9b58800ef7e288eddc9e7c449b0ccd27e4",
+    "shape": [
+      1086,
+      384
+    ]
+  }
+}

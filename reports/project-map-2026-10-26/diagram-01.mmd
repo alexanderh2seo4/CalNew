@@ -1,0 +1,32 @@
+flowchart TD
+  SOURCES["Public observations and catalogue records<br/>Leffingwell · Abraham · Keller · Ravia"] --> CURATE["Resolve molecular identity and observation context<br/>units · medium · provenance · review"]
+  CURATE --> STORE["Evidence store and versioned data<br/>SQLite → immutable Parquet snapshots"]
+  STORE --> SPLIT["Protect existing final tests<br/>group development chemistry before fitting"]
+  SPLIT --> BASIC["Basic endpoint benchmark<br/>multiple experts → organiser → calibration"]
+  SPLIT --> BLOCKS["Molecular structure blocks<br/>transport · H-bond · osmophore · shape<br/>pharmacophore · fingerprints · optional embeddings"]
+  INPUT["New isomeric SMILES<br/>optional nominal solution dilution"] --> BLOCKS
+  BLOCKS --> A["Stage A: odour quality<br/>91 catalogue labels + panel direction"]
+  BLOCKS --> B1["Stage B1: air detection threshold<br/>log10 ppbv; separate endpoint"]
+  BLOCKS --> B2["Stage B2: Keller intensity<br/>monotone concentration response"]
+  A --> B1
+  A --> B2
+  A --> C["Stage C: 20-descriptor profile<br/>quality direction + intensity + dilution"]
+  B2 --> C
+  BLOCKS --> H["Separate pleasantness head<br/>legacy hedonic + descriptor transfer"]
+  A --> H
+  TRANSFER["Filtered descriptor associations<br/>generic MiniLM word vectors<br/>fold-specific molecular transfer"] --> B2
+  TRANSFER --> H
+  BLOCKS --> R["Separate Ravia intensity endpoint<br/>legacy + Keller proxies + shared-study trees"]
+  BASIC --> OUTPUT["Structured predictions and provenance<br/>endpoint-specific uncertainty and applicability"]
+  B1 --> OUTPUT
+  B2 --> OUTPUT
+  C --> OUTPUT
+  H --> OUTPUT
+  R --> OUTPUT
+  OUTPUT --> SELECT["Candidate screening and measurement priorities"]
+  SELECT -.-> MATERIAL["Purchase or synthesise defined materials<br/>verify identity and purity"]
+  MATERIAL -.-> DOSER["Gravimetric ingredient doser<br/>design; firmware and measured accuracy pending"]
+  MATERIAL -.-> OLFACT["Five-output dynamic-dilution olfactometer<br/>design; delivered concentration needs validation"]
+  OLFACT -.-> PANEL["New panel responses<br/>threshold · profile · intensity · liking"]
+  PANEL -.-> CURATE
+  PH4["Separate Olfr73 ligand pharmacophore<br/>retrospective receptor-activity ranking"] -.-> SELECT

@@ -1,0 +1,8 @@
+flowchart LR
+  B["25 published B-series Olfr73 agonists<br/>training ligands"] --> CON["ETKDGv3 conformers<br/>MMFF94s relaxation and energy filtering"]
+  CON --> ALIGN["Rigid O3A alignment<br/>E-isoeugenol reference"]
+  ALIGN --> CONS["Six support-weighted consensus sites<br/>1 donor · 2 acceptors · 1 aromatic · 2 hydrophobic"]
+  A["25 preselected A-series compounds<br/>17 actives / 8 nonresponses"] --> FIT["Conformer alignment + bounded rigid refinement<br/>best one-to-one feature fit"]
+  CONS --> FIT
+  FIT --> EVAL["Retrospective ROC AUC 0.6912<br/>95% bootstrap interval 0.4706–0.8897"]
+  FIT --> VIEW["Offline 3D viewer · ranked SDF/CSV<br/>computed coordinates and feature tolerances"]

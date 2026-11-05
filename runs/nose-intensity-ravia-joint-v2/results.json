@@ -1,0 +1,283 @@
+{
+  "dataset": "ravia",
+  "host": "compute-host",
+  "per_split": {
+    "42": {
+      "baseline": {
+        "mae": 13.211613137687612,
+        "pearson": 0.5038576454729243,
+        "rmse": 19.122229724349193
+      },
+      "previous_current_max_difference": 7.105427357601002e-15,
+      "proxy_source_counts": [
+        231,
+        236,
+        236,
+        250
+      ],
+      "selected": {
+        "mae": 13.519080888256704,
+        "pearson": 0.46503271131166907,
+        "rmse": 19.62377624424385
+      },
+      "source_molecules": 250,
+      "target_train_held_connectivity_overlaps": [],
+      "test": 12,
+      "train": 91,
+      "validation": 11
+    },
+    "43": {
+      "baseline": {
+        "mae": 13.874066804500279,
+        "pearson": 0.450903590047866,
+        "rmse": 15.816782380920685
+      },
+      "previous_current_max_difference": 0.0,
+      "proxy_source_counts": [
+        236,
+        232,
+        239,
+        252
+      ],
+      "selected": {
+        "mae": 12.865965681201146,
+        "pearson": 0.4779704193153759,
+        "rmse": 15.144436097385
+      },
+      "source_molecules": 252,
+      "target_train_held_connectivity_overlaps": [],
+      "test": 12,
+      "train": 91,
+      "validation": 11
+    },
+    "44": {
+      "baseline": {
+        "mae": 13.8572707688953,
+        "pearson": 0.2869812637588873,
+        "rmse": 16.21582990121241
+      },
+      "previous_current_max_difference": 0.0,
+      "proxy_source_counts": [
+        233,
+        234,
+        238,
+        251
+      ],
+      "selected": {
+        "mae": 14.117098600576462,
+        "pearson": 0.3744646844168444,
+        "rmse": 16.13222487813998
+      },
+      "source_molecules": 251,
+      "target_train_held_connectivity_overlaps": [],
+      "test": 12,
+      "train": 91,
+      "validation": 11
+    },
+    "45": {
+      "baseline": {
+        "mae": 13.265917744088114,
+        "pearson": 0.5669221813800752,
+        "rmse": 16.086948257568704
+      },
+      "previous_current_max_difference": 0.0,
+      "proxy_source_counts": [
+        233,
+        237,
+        241,
+        254
+      ],
+      "selected": {
+        "mae": 14.233613693439928,
+        "pearson": 0.48409914097154294,
+        "rmse": 16.677176698785637
+      },
+      "source_molecules": 254,
+      "target_train_held_connectivity_overlaps": [],
+      "test": 12,
+      "train": 91,
+      "validation": 11
+    },
+    "46": {
+      "baseline": {
+        "mae": 11.879093428691446,
+        "pearson": 0.3029329444135807,
+        "rmse": 15.272478606743775
+      },
+      "previous_current_max_difference": 0.0,
+      "proxy_source_counts": [
+        230,
+        233,
+        234,
+        247
+      ],
+      "selected": {
+        "mae": 11.681390745361755,
+        "pearson": 0.3935277857395398,
+        "rmse": 14.778518653951004
+      },
+      "source_molecules": 247,
+      "target_train_held_connectivity_overlaps": [],
+      "test": 12,
+      "train": 91,
+      "validation": 11
+    },
+    "47": {
+      "baseline": {
+        "mae": 9.966977791794207,
+        "pearson": 0.8800805188300258,
+        "rmse": 11.593076352753659
+      },
+      "previous_current_max_difference": 7.105427357601002e-15,
+      "proxy_source_counts": [
+        231,
+        233,
+        229,
+        245
+      ],
+      "selected": {
+        "mae": 9.882477562431525,
+        "pearson": 0.8985003244327727,
+        "rmse": 10.97419400219634
+      },
+      "source_molecules": 245,
+      "target_train_held_connectivity_overlaps": [],
+      "test": 12,
+      "train": 91,
+      "validation": 11
+    },
+    "48": {
+      "baseline": {
+        "mae": 15.643419314054194,
+        "pearson": 0.5418458159903191,
+        "rmse": 17.69039547003409
+      },
+      "previous_current_max_difference": 0.0,
+      "proxy_source_counts": [
+        238,
+        239,
+        236,
+        255
+      ],
+      "selected": {
+        "mae": 15.319187099450602,
+        "pearson": 0.5674497558877211,
+        "rmse": 17.57058811973901
+      },
+      "source_molecules": 255,
+      "target_train_held_connectivity_overlaps": [
+        "NNWHUJCUHAELCL"
+      ],
+      "test": 12,
+      "train": 91,
+      "validation": 11
+    },
+    "49": {
+      "baseline": {
+        "mae": 9.490433315813718,
+        "pearson": 0.7600727982629576,
+        "rmse": 12.38729327313138
+      },
+      "previous_current_max_difference": 7.105427357601002e-15,
+      "proxy_source_counts": [
+        234,
+        235,
+        234,
+        250
+      ],
+      "selected": {
+        "mae": 9.560784132272094,
+        "pearson": 0.7616285250574635,
+        "rmse": 12.414054435075048
+      },
+      "source_molecules": 250,
+      "target_train_held_connectivity_overlaps": [],
+      "test": 12,
+      "train": 91,
+      "validation": 11
+    },
+    "50": {
+      "baseline": {
+        "mae": 8.811791745793201,
+        "pearson": 0.7209404776055919,
+        "rmse": 10.270890088599872
+      },
+      "previous_current_max_difference": 0.0,
+      "proxy_source_counts": [
+        236,
+        233,
+        236,
+        251
+      ],
+      "selected": {
+        "mae": 7.9499161950605,
+        "pearson": 0.7644935683102656,
+        "rmse": 9.350118510384908
+      },
+      "source_molecules": 251,
+      "target_train_held_connectivity_overlaps": [],
+      "test": 12,
+      "train": 91,
+      "validation": 11
+    },
+    "51": {
+      "baseline": {
+        "mae": 8.509605888076763,
+        "pearson": 0.7821282671804961,
+        "rmse": 10.29140869329216
+      },
+      "previous_current_max_difference": 0.0,
+      "proxy_source_counts": [
+        234,
+        235,
+        234,
+        250
+      ],
+      "selected": {
+        "mae": 8.350041623288464,
+        "pearson": 0.7864522239393285,
+        "rmse": 10.1885518677199
+      },
+      "source_molecules": 250,
+      "target_train_held_connectivity_overlaps": [],
+      "test": 12,
+      "train": 91,
+      "validation": 11
+    }
+  },
+  "positive_pearson_splits": 8,
+  "recipe": "joint_0.25_current",
+  "reserved_holdouts_opened": false,
+  "seconds": 26,
+  "summary": {
+    "baseline": {
+      "mae": {
+        "mean": 11.851018993939482,
+        "sd": 2.3638513424590455
+      },
+      "pearson": {
+        "mean": 0.5796665502942725,
+        "sd": 0.192330423641709
+      },
+      "rmse": {
+        "mean": 14.474733274860593,
+        "sd": 2.963810201393283
+      }
+    },
+    "selected": {
+      "mae": {
+        "mean": 11.747955622133919,
+        "sd": 2.5133830069862615
+      },
+      "pearson": {
+        "mean": 0.5973619139382522,
+        "sd": 0.17834687089361956
+      },
+      "rmse": {
+        "mean": 14.285363950762067,
+        "sd": 3.240530453629483
+      }
+    }
+  },
+  "validation_refit": false
+}

@@ -1,0 +1,413 @@
+{
+  "host": "compute-host",
+  "main_validation_test_targets_scored": false,
+  "reserved_targets_fitted_or_scored": false,
+  "results": {
+    "abraham": {
+      "baseline_checkpoint_evidence": [
+        {
+          "fold": 0,
+          "path": "runs\\nose-parity-threshold-water-inner-v2\\abraham-repeat-0-fold-0.npz",
+          "repeat": 0,
+          "sha256": "ca1c6e922ae3e637b17c8881351b3ec7907d4f0e4760b725281e521c72bbb5a7"
+        },
+        {
+          "fold": 1,
+          "path": "runs\\nose-parity-threshold-water-inner-v2\\abraham-repeat-0-fold-1.npz",
+          "repeat": 0,
+          "sha256": "d2baf73b178a25f8880f1dcf002c5bd57d7b359c6f00114c1aaf6e98b0311b4f"
+        },
+        {
+          "fold": 2,
+          "path": "runs\\nose-parity-threshold-water-inner-v2\\abraham-repeat-0-fold-2.npz",
+          "repeat": 0,
+          "sha256": "e5ffa419e597ca903b02507bd0f7240274562d1fd02410e4845d7512e3331985"
+        },
+        {
+          "fold": 3,
+          "path": "runs\\nose-parity-threshold-water-inner-v2\\abraham-repeat-0-fold-3.npz",
+          "repeat": 0,
+          "sha256": "59dbe6835c907c5e73e64f4452e9180877539b8c06e783555df08e52038a39c0"
+        },
+        {
+          "fold": 4,
+          "path": "runs\\nose-parity-threshold-water-inner-v2\\abraham-repeat-0-fold-4.npz",
+          "repeat": 0,
+          "sha256": "6749861ea19d486971a4ded05fdd360667447076d5f581c89422a67b91c6e16a"
+        },
+        {
+          "fold": 0,
+          "path": "runs\\nose-parity-threshold-water-inner-v2\\abraham-repeat-1-fold-0.npz",
+          "repeat": 1,
+          "sha256": "32d44efa4341f8a5e658389cc9df3552f85cdc13ee73225c0a09e395ba1e1238"
+        },
+        {
+          "fold": 1,
+          "path": "runs\\nose-parity-threshold-water-inner-v2\\abraham-repeat-1-fold-1.npz",
+          "repeat": 1,
+          "sha256": "1749654e2b82ce445eba1cbbaa025529fd83a9918193c340385a3788e5e9a5f5"
+        },
+        {
+          "fold": 2,
+          "path": "runs\\nose-parity-threshold-water-inner-v2\\abraham-repeat-1-fold-2.npz",
+          "repeat": 1,
+          "sha256": "76ebd78e98895b0dd765bc5ceaadd66529ab1777a84cc8e9a7e290148038f143"
+        },
+        {
+          "fold": 3,
+          "path": "runs\\nose-parity-threshold-water-inner-v2\\abraham-repeat-1-fold-3.npz",
+          "repeat": 1,
+          "sha256": "c27be335bc35d9fac44fe61a3c8ae10c799b50e9f5caad1cf71e361f8794b75d"
+        },
+        {
+          "fold": 4,
+          "path": "runs\\nose-parity-threshold-water-inner-v2\\abraham-repeat-1-fold-4.npz",
+          "repeat": 1,
+          "sha256": "f3ffe11c9de08a73cd4bc78a2678a1bd9f2c7b0870f4f9ac7da2c05c71ab5776"
+        },
+        {
+          "fold": 0,
+          "path": "runs\\nose-parity-threshold-water-inner-v2\\abraham-repeat-2-fold-0.npz",
+          "repeat": 2,
+          "sha256": "70e2b6975acb51e50fc3f8a020e86d921a8e708330f4f49d300466c8060f6c14"
+        },
+        {
+          "fold": 1,
+          "path": "runs\\nose-parity-threshold-water-inner-v2\\abraham-repeat-2-fold-1.npz",
+          "repeat": 2,
+          "sha256": "eb18ee8abc2d819201c0b55eb699a24099afb915f68b950b6fc9e5dd5a61e9a7"
+        },
+        {
+          "fold": 2,
+          "path": "runs\\nose-parity-threshold-water-inner-v2\\abraham-repeat-2-fold-2.npz",
+          "repeat": 2,
+          "sha256": "f2b0834b68ac5cc6dad3388b9085fcfbfad5a74dcca34d30b5a8c64d50c0e655"
+        },
+        {
+          "fold": 3,
+          "path": "runs\\nose-parity-threshold-water-inner-v2\\abraham-repeat-2-fold-3.npz",
+          "repeat": 2,
+          "sha256": "d6fc9e358b20ce3a0d785b8ac806d5fb6814105d61f4bf44d28d188094787c36"
+        },
+        {
+          "fold": 4,
+          "path": "runs\\nose-parity-threshold-water-inner-v2\\abraham-repeat-2-fold-4.npz",
+          "repeat": 2,
+          "sha256": "8048c03af59aba19a5dee6f60856c6a7461fc4ece0cbddd5f58a3650d8dc13d8"
+        }
+      ],
+      "baseline_verified_folds": 15,
+      "complete_repeats": [
+        0,
+        1,
+        2
+      ],
+      "gate_evaluated": true,
+      "main_validation_test_targets_scored": false,
+      "observed_at_utc": "2026-10-01T23:35:23.330013+00:00",
+      "passing": [],
+      "required_baseline_folds": 15,
+      "reserved_targets_fitted_or_scored": false,
+      "scores": {
+        "additive_ridge10": [
+          {
+            "mae": 0.8331822146382488,
+            "pearson": 0.5669976538012483,
+            "rmse": 1.139805185435253
+          },
+          {
+            "mae": 0.9247511729181421,
+            "pearson": 0.33169349218082583,
+            "rmse": 1.635792476830668
+          },
+          {
+            "mae": 0.8739795042049419,
+            "pearson": 0.4731493308037213,
+            "rmse": 1.2756021792471084
+          }
+        ],
+        "additive_ridge100": [
+          {
+            "mae": 0.9227901629980048,
+            "pearson": 0.42157563916221563,
+            "rmse": 1.2259178598604896
+          },
+          {
+            "mae": 0.9161440477327684,
+            "pearson": 0.3964738843321546,
+            "rmse": 1.2504266053853792
+          },
+          {
+            "mae": 0.9297558476717263,
+            "pearson": 0.38540835839898896,
+            "rmse": 1.2545093111137877
+          }
+        ],
+        "blend_additive_ridge10": [
+          {
+            "mae": 0.7572087794963507,
+            "pearson": 0.6821819365261352,
+            "rmse": 0.9924964305043308
+          },
+          {
+            "mae": 0.7777937169631497,
+            "pearson": 0.5630757001271817,
+            "rmse": 1.1393012379866638
+          },
+          {
+            "mae": 0.7618007585366281,
+            "pearson": 0.6359181811252299,
+            "rmse": 1.0424979156876135
+          }
+        ],
+        "blend_additive_ridge100": [
+          {
+            "mae": 0.8181373123643374,
+            "pearson": 0.6585145880429012,
+            "rmse": 1.051270578301346
+          },
+          {
+            "mae": 0.7899129650736437,
+            "pearson": 0.6725724274758555,
+            "rmse": 1.0278079328548329
+          },
+          {
+            "mae": 0.8016085685383284,
+            "pearson": 0.6398230385426813,
+            "rmse": 1.061205551757736
+          }
+        ],
+        "blend_class_interactions_ridge10": [
+          {
+            "mae": 0.9183723951501052,
+            "pearson": 0.4626166260337485,
+            "rmse": 1.7033559352889414
+          },
+          {
+            "mae": 0.9551492655108654,
+            "pearson": 0.41406011967036316,
+            "rmse": 1.5438286005343083
+          },
+          {
+            "mae": 0.8027843300408966,
+            "pearson": 0.5545514607852908,
+            "rmse": 1.1567912265117248
+          }
+        ],
+        "blend_class_interactions_ridge100": [
+          {
+            "mae": 0.8720539035239981,
+            "pearson": 0.5270268842833408,
+            "rmse": 1.2731190589303436
+          },
+          {
+            "mae": 0.8799081134105344,
+            "pearson": 0.5007754265440864,
+            "rmse": 1.2336287913057986
+          },
+          {
+            "mae": 0.8263845655660039,
+            "pearson": 0.563163093407118,
+            "rmse": 1.1216269460676902
+          }
+        ],
+        "class_interactions_ridge10": [
+          {
+            "mae": 1.234433229464396,
+            "pearson": 0.3461232510865223,
+            "rmse": 3.1250685962570754
+          },
+          {
+            "mae": 1.3252584061716555,
+            "pearson": 0.22635125130701222,
+            "rmse": 2.6598233171495713
+          },
+          {
+            "mae": 0.9982589507964996,
+            "pearson": 0.3559134370917833,
+            "rmse": 1.681763953565716
+          }
+        ],
+        "class_interactions_ridge100": [
+          {
+            "mae": 1.113644614268237,
+            "pearson": 0.3692098431067747,
+            "rmse": 2.0481778614377957
+          },
+          {
+            "mae": 1.1598543298708714,
+            "pearson": 0.25166514368899295,
+            "rmse": 1.8749890098319553
+          },
+          {
+            "mae": 1.0136150338170622,
+            "pearson": 0.3043743809534928,
+            "rmse": 1.5150084852847587
+          }
+        ],
+        "current": [
+          {
+            "mae": 0.7499605496481808,
+            "pearson": 0.721962356521026,
+            "rmse": 0.9608777700194336
+          },
+          {
+            "mae": 0.7278339485582438,
+            "pearson": 0.7549101012869801,
+            "rmse": 0.9072864810967671
+          },
+          {
+            "mae": 0.7359098502874768,
+            "pearson": 0.7218485066169719,
+            "rmse": 0.9585220028549231
+          }
+        ]
+      },
+      "scores_for_complete_repeats": {
+        "0": {
+          "additive_ridge10": {
+            "mae": 0.8331822146382488,
+            "pearson": 0.5669976538012483,
+            "rmse": 1.139805185435253
+          },
+          "additive_ridge100": {
+            "mae": 0.9227901629980048,
+            "pearson": 0.42157563916221563,
+            "rmse": 1.2259178598604896
+          },
+          "blend_additive_ridge10": {
+            "mae": 0.7572087794963507,
+            "pearson": 0.6821819365261352,
+            "rmse": 0.9924964305043308
+          },
+          "blend_additive_ridge100": {
+            "mae": 0.8181373123643374,
+            "pearson": 0.6585145880429012,
+            "rmse": 1.051270578301346
+          },
+          "blend_class_interactions_ridge10": {
+            "mae": 0.9183723951501052,
+            "pearson": 0.4626166260337485,
+            "rmse": 1.7033559352889414
+          },
+          "blend_class_interactions_ridge100": {
+            "mae": 0.8720539035239981,
+            "pearson": 0.5270268842833408,
+            "rmse": 1.2731190589303436
+          },
+          "class_interactions_ridge10": {
+            "mae": 1.234433229464396,
+            "pearson": 0.3461232510865223,
+            "rmse": 3.1250685962570754
+          },
+          "class_interactions_ridge100": {
+            "mae": 1.113644614268237,
+            "pearson": 0.3692098431067747,
+            "rmse": 2.0481778614377957
+          },
+          "current": {
+            "mae": 0.7499605496481808,
+            "pearson": 0.721962356521026,
+            "rmse": 0.9608777700194336
+          }
+        },
+        "1": {
+          "additive_ridge10": {
+            "mae": 0.9247511729181421,
+            "pearson": 0.33169349218082583,
+            "rmse": 1.635792476830668
+          },
+          "additive_ridge100": {
+            "mae": 0.9161440477327684,
+            "pearson": 0.3964738843321546,
+            "rmse": 1.2504266053853792
+          },
+          "blend_additive_ridge10": {
+            "mae": 0.7777937169631497,
+            "pearson": 0.5630757001271817,
+            "rmse": 1.1393012379866638
+          },
+          "blend_additive_ridge100": {
+            "mae": 0.7899129650736437,
+            "pearson": 0.6725724274758555,
+            "rmse": 1.0278079328548329
+          },
+          "blend_class_interactions_ridge10": {
+            "mae": 0.9551492655108654,
+            "pearson": 0.41406011967036316,
+            "rmse": 1.5438286005343083
+          },
+          "blend_class_interactions_ridge100": {
+            "mae": 0.8799081134105344,
+            "pearson": 0.5007754265440864,
+            "rmse": 1.2336287913057986
+          },
+          "class_interactions_ridge10": {
+            "mae": 1.3252584061716555,
+            "pearson": 0.22635125130701222,
+            "rmse": 2.6598233171495713
+          },
+          "class_interactions_ridge100": {
+            "mae": 1.1598543298708714,
+            "pearson": 0.25166514368899295,
+            "rmse": 1.8749890098319553
+          },
+          "current": {
+            "mae": 0.7278339485582438,
+            "pearson": 0.7549101012869801,
+            "rmse": 0.9072864810967671
+          }
+        },
+        "2": {
+          "additive_ridge10": {
+            "mae": 0.8739795042049419,
+            "pearson": 0.4731493308037213,
+            "rmse": 1.2756021792471084
+          },
+          "additive_ridge100": {
+            "mae": 0.9297558476717263,
+            "pearson": 0.38540835839898896,
+            "rmse": 1.2545093111137877
+          },
+          "blend_additive_ridge10": {
+            "mae": 0.7618007585366281,
+            "pearson": 0.6359181811252299,
+            "rmse": 1.0424979156876135
+          },
+          "blend_additive_ridge100": {
+            "mae": 0.8016085685383284,
+            "pearson": 0.6398230385426813,
+            "rmse": 1.061205551757736
+          },
+          "blend_class_interactions_ridge10": {
+            "mae": 0.8027843300408966,
+            "pearson": 0.5545514607852908,
+            "rmse": 1.1567912265117248
+          },
+          "blend_class_interactions_ridge100": {
+            "mae": 0.8263845655660039,
+            "pearson": 0.563163093407118,
+            "rmse": 1.1216269460676902
+          },
+          "class_interactions_ridge10": {
+            "mae": 0.9982589507964996,
+            "pearson": 0.3559134370917833,
+            "rmse": 1.681763953565716
+          },
+          "class_interactions_ridge100": {
+            "mae": 1.0136150338170622,
+            "pearson": 0.3043743809534928,
+            "rmse": 1.5150084852847587
+          },
+          "current": {
+            "mae": 0.7359098502874768,
+            "pearson": 0.7218485066169719,
+            "rmse": 0.9585220028549231
+          }
+        }
+      },
+      "selected": "current",
+      "status": "comparison_complete"
+    }
+  }
+}

@@ -84,13 +84,20 @@ def ingest_source(raw_root: Path, store: EvidenceStore) -> dict:
         except (ValueError, TypeError) as exc:
             rejected.append({"cid": str(row["CID"]), "reason": str(exc)})
     store.db.commit()
+    if source["adapter"] == "ravia":
+        return _ingest_ravia(Path(raw_root), store, manifest, mapping, rejected)
     stimulus_table = pd.read_csv(Path(raw_root) / "stimuli.csv")
-    stimuli = {}
+    stimuli, unresolved_stimuli = {}, []
     for _, row in stimulus_table.iterrows():
         key = str(row["Stimulus"])
         if source["adapter"] != "catalogue_sparse":
             key = _cid(row["Stimulus"])
-        cid = _cid(row["CID"] if "CID" in row else row["CIDs"])
+        try:
+            cid = _cid(row["CID"] if "CID" in row else row["CIDs"])
+        except (ValueError, TypeError):
+            # Upstream occasionally stores a CAS number in the CID column; keep it out rather than guess.
+            unresolved_stimuli.append({"stimulus": key, "identifier": str(row.get("CID", row.get("CIDs")))})
+            continue
         if cid not in mapping:
             continue
         m = mapping[cid]
@@ -170,8 +177,66 @@ def ingest_source(raw_root: Path, store: EvidenceStore) -> dict:
                 count += int(store.add(observation))
         store.db.commit()
     report = {"source": sid, "new_observations": count, "molecules_resolved": len(mapping), "rejected_molecules": rejected,
-              "unresolved_behavior_rows": skipped, "source_manifest": manifest}
+              "unresolved_stimuli": unresolved_stimuli, "unresolved_behavior_rows": skipped, "source_manifest": manifest}
     write_json(Path(raw_root) / "ingestion-report.json", report)
+    return report
+
+
+def _ravia_fraction(label) -> tuple[float | None, str]:
+    text = "" if pd.isna(label) else str(label).strip()
+    if text.endswith("%"):
+        return float(text[:-1]) / 100, "reported_dilution_percent"
+    if text.lower() == "solid":
+        return None, "solid_undiluted"
+    return None, "unreported"
+
+
+def _ingest_ravia(raw_root: Path, store: EvidenceStore, manifest: dict, mapping: dict, rejected: list) -> dict:
+    """Ravia et al. 2020: published group-mean intensity per mono-molecule stimulus and dilution.
+
+    Only mono-molecule rows are ingested; mixtures stay in the raw files. Values are upstream
+    aggregates (no per-subject ratings are distributed in the processed files).
+    """
+    sid, source = manifest["source_id"], manifest["registry_entry"]
+    stimuli = pd.read_csv(raw_root / "stimuli.csv", dtype=str).set_index("Stimulus")
+    behavior = pd.read_csv(raw_root / "behavior_1.csv", dtype=str)
+    url, sha = manifest["files"]["behavior_1.csv"]["url"], manifest["files"]["behavior_1.csv"]["sha256"]
+    count, skipped = 0, []
+    for row_number, row in behavior.iterrows():
+        key, dilution_index, raw = str(row["Stimulus"]), str(row["Dilution #"]), row["Intensity"]
+        if pd.isna(raw):
+            continue
+        info = stimuli.loc[key]
+        if info["Type"] != "mono-molecule":
+            continue
+        try:
+            cid = _cid(info["CID"])
+        except (ValueError, TypeError):
+            skipped.append({"stimulus": key, "reason": f"unparseable CID {info['CID']}"})
+            continue
+        if cid not in mapping:
+            skipped.append({"stimulus": key, "reason": f"CID {cid} not resolved to a structure"})
+            continue
+        molecule = mapping[cid]
+        fraction, basis = _ravia_fraction(info.get(f"Dilution{dilution_index}"))
+        stimulus = Stimulus(stimulus_id=f"{sid}:{key}:d{dilution_index}", molecule_id=molecule.molecule_id, source_id=sid,
+                            nominal_concentration=fraction, concentration_unit="solution_fraction" if fraction is not None else None,
+                            concentration_basis=basis, metadata={"upstream_stimulus": key, "cid": cid, "experiment": info["Experiment"],
+                                                                 "dilution_label": info.get(f"Dilution{dilution_index}")})
+        store.add(stimulus)
+        evid = f"{sid}:{manifest['revision'][:12]}:behavior_1:row:{row_number + 2}"
+        store.add(Evidence(evidence_id=evid, source_id=sid, source_url=url, source_sha256=sha, doi=source.get("doi"),
+                           original_experiment_id=f"{sid}:{info['Experiment']}:{key}:d{dilution_index}", location=f"behavior_1.csv row {row_number + 2}",
+                           review_status="upstream_curated", permitted_use=source["permitted_use"], is_aggregate=True,
+                           metadata={"upstream_row": {k: (None if pd.isna(v) else v) for k, v in row.items()}}))
+        count += int(store.add(Observation(observation_id=evid, molecule_id=molecule.molecule_id, stimulus_id=stimulus.stimulus_id,
+                                           evidence_id=evid, source_id=sid, endpoint=Endpoint.INTENSITY, raw_value=str(raw),
+                                           value=float(raw), unit="rating_0_100", method="solution_presentation_group_mean",
+                                           value_origin="upstream_aggregate", metadata={"per_subject_ratings": "not distributed"})))
+    store.db.commit()
+    report = {"source": sid, "new_observations": count, "molecules_resolved": len(mapping), "rejected_molecules": rejected,
+              "skipped_behavior_rows": skipped, "source_manifest": manifest}
+    write_json(raw_root / "ingestion-report.json", report)
     return report
 
 

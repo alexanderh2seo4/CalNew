@@ -1,0 +1,15 @@
+{
+  "baseline": "runs/nose-intensity-ravia-inner-v1/ravia-inner-oof.npz",
+  "baseline_sha256": "80cc3dc4cc6ff6a28f8f5fb4e81d2a3323b85028c6010af4a58c3a3973f0c613",
+  "candidates": [
+    "regularized",
+    "all_trees",
+    "equal baseline blends"
+  ],
+  "promotion": "Mean Pearson gain >=0.01; positive in >=2 repeats; MAE <= baseline*1.01",
+  "reason": "First representation trial gave no clear Ravia gain; test smaller tree capacity on 91 training molecules",
+  "registered_regularization": "Boosting depth 2, min_child_weight 5, lambda 10; existing member inputs, epochs/trees unchanged",
+  "reserved_holdouts_opened": false,
+  "selection_data": "Original split-42 training only; same three repeated grouped 5-fold assignments as v1",
+  "test_based_model_selection": false
+}

@@ -1,0 +1,11 @@
+{
+  "scope": "Inner CV inside original split-42 training molecules only",
+  "repeats": [100, 101, 102],
+  "folds": 5,
+  "candidates": ["text semantic head", "structure+text semantic head", "equal blend of v2 and text semantic head", "equal blend of v2 and structure+text semantic head"],
+  "baseline": "Fully nested v2 OOF predictions from runs/nose-semantic-trees-inner-v2",
+  "alignment_required": "Exact equality of molecule IDs and target values before reusing baseline predictions",
+  "promotion_rule": "Mean Pearson gain at least 0.01 over v2 and positive gain in at least two repeats; otherwise retain v2",
+  "test_use": "No main validation/test or reserved targets used for candidate selection",
+  "independent_experiment": "Development train+validation refit is measured separately and does not change this selection rule"
+}

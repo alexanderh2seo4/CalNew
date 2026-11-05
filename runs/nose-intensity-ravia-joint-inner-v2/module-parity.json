@@ -1,0 +1,6 @@
+{
+  "host": "compute-host",
+  "max_absolute_difference": 7.105427357601002e-15,
+  "module_matches_frozen_experiment": true,
+  "scope": "First original-training CV fold only"
+}

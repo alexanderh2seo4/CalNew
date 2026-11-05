@@ -1,0 +1,139 @@
+{
+  "cache_stage_versions": [
+    {
+      "count": 97,
+      "kind": "semantic",
+      "sha256": "7a85dbe951a9b6375f65c86bb7e2225152c0744f951e3d56d73c1213326a264f"
+    },
+    {
+      "count": 50,
+      "kind": "semantic",
+      "sha256": "4f46a023ba6841b0deac9dc33760d181324ce8d5f90dee357c2a8654776b0e9d"
+    },
+    {
+      "count": 139,
+      "kind": "quality",
+      "sha256": "7a85dbe951a9b6375f65c86bb7e2225152c0744f951e3d56d73c1213326a264f"
+    },
+    {
+      "count": 71,
+      "kind": "quality",
+      "sha256": "4f46a023ba6841b0deac9dc33760d181324ce8d5f90dee357c2a8654776b0e9d"
+    },
+    {
+      "count": 6,
+      "kind": "quality",
+      "sha256": "8efb2f6545a66e30da14da8247c4a96095632f649577f06419e29f68a1116735"
+    },
+    {
+      "count": 2,
+      "kind": "semantic",
+      "sha256": "8efb2f6545a66e30da14da8247c4a96095632f649577f06419e29f68a1116735"
+    }
+  ],
+  "host": "compute-host",
+  "trials": {
+    "nose-intensity-keller-quality-inner-v2": {
+      "means": {
+        "blend_dose_quality_semantic": {
+          "mae": 10.702350699094225,
+          "pearson": 0.543490248032274,
+          "rmse": 14.221440459714186
+        },
+        "blend_dose_quality_semantic_shallow": {
+          "mae": 10.703155859575356,
+          "pearson": 0.5369669584611233,
+          "rmse": 14.281701989136815
+        },
+        "current": {
+          "mae": 10.5085706791246,
+          "pearson": 0.5543353012703518,
+          "rmse": 14.086144961050522
+        }
+      },
+      "passing": [],
+      "selected": "current"
+    },
+    "nose-intensity-ravia-joint-inner-v2": {
+      "means": {
+        "current": {
+          "mae": 10.488292132116241,
+          "pearson": 0.6318924843989702,
+          "rmse": 13.30718398799962
+        },
+        "joint_0.25_current": {
+          "mae": 10.252087284455117,
+          "pearson": 0.6610723390311191,
+          "rmse": 12.970350123257347
+        },
+        "joint_0.25_legacy": {
+          "mae": 10.205106636361576,
+          "pearson": 0.6432136400401111,
+          "rmse": 13.193235955135835
+        },
+        "joint_1.0_current": {
+          "mae": 10.562157219371668,
+          "pearson": 0.6532736673165479,
+          "rmse": 13.162491480646077
+        },
+        "joint_1.0_legacy": {
+          "mae": 10.449707204727062,
+          "pearson": 0.6414955796751248,
+          "rmse": 13.313614154903192
+        }
+      },
+      "passing": [
+        "joint_0.25_legacy",
+        "joint_0.25_current"
+      ],
+      "selected": "joint_0.25_current"
+    },
+    "nose-intensity-ravia-robust-inner-v2": {
+      "means": {
+        "blend_proxy_huber": {
+          "mae": 10.439761614364444,
+          "pearson": 0.6280499138738193,
+          "rmse": 13.306781819616708
+        },
+        "blend_proxy_median": {
+          "mae": 10.689404895373194,
+          "pearson": 0.6190824183415405,
+          "rmse": 13.619959116000851
+        },
+        "blend_proxy_svr": {
+          "mae": 10.410398163101787,
+          "pearson": 0.6135874823291507,
+          "rmse": 13.50370290742711
+        },
+        "current": {
+          "mae": 10.488292132116241,
+          "pearson": 0.6318924843989702,
+          "rmse": 13.30718398799962
+        }
+      },
+      "passing": [],
+      "selected": "current"
+    },
+    "nose-intensity-ravia-transport-inner-v2": {
+      "means": {
+        "blend_proxy_transport_ridge10": {
+          "mae": 10.356463960162928,
+          "pearson": 0.6298985205392594,
+          "rmse": 13.28824323170999
+        },
+        "blend_proxy_transport_ridge100": {
+          "mae": 10.491361185171641,
+          "pearson": 0.6257951838187316,
+          "rmse": 13.481404485988207
+        },
+        "current": {
+          "mae": 10.488292132116241,
+          "pearson": 0.6318924843989702,
+          "rmse": 13.30718398799962
+        }
+      },
+      "passing": [],
+      "selected": "current"
+    }
+  }
+}

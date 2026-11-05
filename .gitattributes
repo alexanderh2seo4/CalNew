@@ -1,0 +1,2 @@
+# Molecular SDF records use fixed-width fields with meaningful padding.
+*.sdf -whitespace

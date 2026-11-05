@@ -1,0 +1,24 @@
+{
+  "baseline_sha256": "80cc3dc4cc6ff6a28f8f5fb4e81d2a3323b85028c6010af4a58c3a3973f0c613",
+  "candidates": [
+    "proxy_ridge",
+    "dose_augmented",
+    "equal baseline blends"
+  ],
+  "fixed_reference_log10_doses": [
+    -5.0,
+    -3.0,
+    -1.0
+  ],
+  "host": "compute-host",
+  "promotion": "Mean Pearson gain >=0.01; positive in >=2 repeats; mean MAE <=baseline*1.01",
+  "registered_head_parameters": {
+    "ridge_alpha": 10,
+    "xgboost": "400 estimators, depth2, child5, lambda10, lr.03, subsample.8, columns.3"
+  },
+  "reserved_holdouts_opened": false,
+  "selection_data": "Original Ravia split-42 training only, three repeated grouped five-fold assignments (100,101,102)",
+  "source": "Original Keller split-42 training only; every held Ravia connectivity removed, with additional three-fold source cross-fitting for Ravia training features",
+  "source_sha256": "0c4310621ee728f2dde1f2fdae145badd4f5826775dc6ddd6e1d700e6445ec3b",
+  "test_based_model_selection": false
+}

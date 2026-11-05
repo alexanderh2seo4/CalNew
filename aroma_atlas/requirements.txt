@@ -1,0 +1,4 @@
+requests==2.34.2
+numpy==2.2.6
+scipy==1.18.1
+networkx==3.7

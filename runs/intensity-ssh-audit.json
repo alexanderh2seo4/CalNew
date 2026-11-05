@@ -1,0 +1,627 @@
+{
+  "host": "compute-host",
+  "runs": {
+    "nose-intensity-keller-quality-inner-v2": {
+      "reserved_holdouts_opened": false,
+      "selection": "current",
+      "training_cv": {
+        "blend_dose_quality_semantic": {
+          "mae": 10.702350699094225,
+          "pearson": 0.543490248032274,
+          "rmse": 14.221440459714186
+        },
+        "blend_dose_quality_semantic_shallow": {
+          "mae": 10.703155859575356,
+          "pearson": 0.5369669584611233,
+          "rmse": 14.281701989136815
+        },
+        "current": {
+          "mae": 10.5085706791246,
+          "pearson": 0.5543353012703518,
+          "rmse": 14.086144961050522
+        }
+      }
+    },
+    "nose-intensity-keller-refit-v3": {
+      "all_stimuli": {
+        "baseline": {
+          "mae": 12.261376183216814,
+          "pearson": 0.7082179519361927,
+          "rmse": 15.897883270300005
+        },
+        "selected": {
+          "mae": 11.060403077220261,
+          "pearson": 0.7471907827983375,
+          "rmse": 14.059736800214285
+        }
+      },
+      "artifact_bytes": 275536987,
+      "dose_monotonicity_violations": 0,
+      "mae_wins": 9,
+      "pearson_gains": {
+        "42": 0.042154816049703836,
+        "43": 0.05901521334414406,
+        "44": 0.17574831949137665,
+        "45": 0.05656742130699799,
+        "46": 0.07095139180475873,
+        "47": 0.05686229297349682,
+        "48": 0.004521337935541769,
+        "49": 0.044990626366973596,
+        "50": 0.06707193313031923,
+        "51": 0.0410862631489497
+      },
+      "positive_pearson_splits": 10,
+      "recipe": "blend_dose_semantic",
+      "reserved_holdouts_opened": false,
+      "serving": {
+        "artifact_sha256": "2604aa815ad95e3311281cbb124caf73dc1eb7d3964d0c647688b10042733679",
+        "descriptor_source_rows": 7000,
+        "monotonicity": "Nondecreasing for all doses, 0\u2013100",
+        "recipe": "blend_dose_semantic",
+        "reserved_holdouts_opened": false,
+        "snapshot": "data\\snapshots\\828751d0a24e8149",
+        "training_molecules": 326,
+        "validated_endpoint": "Keller intensity at nominal paraffin-oil dilution; higher-concentration benchmark and both observed dilutions"
+      },
+      "summary": {
+        "baseline": {
+          "mae": {
+            "mean": 11.580886623454486,
+            "sd": 1.2486535997138812
+          },
+          "pearson": {
+            "mean": 0.577501295092066,
+            "sd": 0.14147315982986244
+          },
+          "rmse": {
+            "mean": 15.622919067733068,
+            "sd": 1.8502830290544021
+          }
+        },
+        "selected": {
+          "mae": {
+            "mean": 10.384893511213914,
+            "sd": 0.6336614868227417
+          },
+          "pearson": {
+            "mean": 0.6393982566472923,
+            "sd": 0.1130900775916597
+          },
+          "rmse": {
+            "mean": 13.673230640907269,
+            "sd": 1.1716978061422987
+          }
+        }
+      }
+    },
+    "nose-intensity-keller-v3": {
+      "all_stimuli": {
+        "baseline": {
+          "mae": 12.320719337886844,
+          "pearson": 0.7021844318118227,
+          "rmse": 16.1261822325449
+        },
+        "selected": {
+          "mae": 11.06909960764766,
+          "pearson": 0.7392332089290959,
+          "rmse": 14.257973452633669
+        }
+      },
+      "dose_monotonicity_violations": 0,
+      "mae_wins": 8,
+      "pearson_gains": {
+        "42": 0.0133625561844537,
+        "43": 0.0681897236209098,
+        "44": 0.16454532948494183,
+        "45": 0.09512816956009335,
+        "46": 0.0681564943331322,
+        "47": 0.03241195170273148,
+        "48": -0.013844764904959117,
+        "49": 0.0698811059137211,
+        "50": 0.0725379115046264,
+        "51": 0.0030622912359474785
+      },
+      "positive_pearson_splits": 9,
+      "recipe": "blend_dose_semantic",
+      "reserved_holdouts_opened": false,
+      "summary": {
+        "baseline": {
+          "mae": {
+            "mean": 11.675662675978685,
+            "sd": 1.3144506643061216
+          },
+          "pearson": {
+            "mean": 0.5694021099592144,
+            "sd": 0.14493028790541773
+          },
+          "rmse": {
+            "mean": 15.686048543930102,
+            "sd": 1.9858365022779088
+          }
+        },
+        "selected": {
+          "mae": {
+            "mean": 10.519497040776873,
+            "sd": 0.6007657499512623
+          },
+          "pearson": {
+            "mean": 0.6267451868227742,
+            "sd": 0.11079431603218971
+          },
+          "rmse": {
+            "mean": 13.854276680644201,
+            "sd": 1.1371084600264476
+          }
+        }
+      }
+    },
+    "nose-intensity-ravia-dose-transfer-inner-v1": {
+      "reserved_holdouts_opened": false,
+      "selection": "blend_proxy_ridge",
+      "training_cv": {
+        "baseline": {
+          "mae": 10.575226439951619,
+          "pearson": 0.583138241414758,
+          "rmse": 13.89893866708151
+        },
+        "blend_dose_augmented": {
+          "mae": 10.554601413388653,
+          "pearson": 0.5907172002888678,
+          "rmse": 13.794958212066035
+        },
+        "blend_proxy_ridge": {
+          "mae": 10.48884649067758,
+          "pearson": 0.6309124521158463,
+          "rmse": 13.322771221390681
+        },
+        "dose_augmented": {
+          "mae": 10.977503268622653,
+          "pearson": 0.5536481678877757,
+          "rmse": 14.22250356393394
+        },
+        "proxy_ridge": {
+          "mae": 11.207794821427344,
+          "pearson": 0.5863261010228901,
+          "rmse": 13.8541406183949
+        }
+      }
+    },
+    "nose-intensity-ravia-dose-transfer-refit-v1": {
+      "artifact_bytes": 2726622,
+      "mae_wins": 5,
+      "max_paired_baseline_difference_from_macos": 4.103460311889648,
+      "original_test_ids_and_targets_verified": true,
+      "pearson_gains": {
+        "42": 0.058110649933598824,
+        "43": -0.008649755145452964,
+        "44": -0.08560810786764178,
+        "45": 0.10005299645116894,
+        "46": -0.005217149358314854,
+        "47": 0.13697680839749704,
+        "48": -0.01621549305003156,
+        "49": 0.004099442091755057,
+        "50": -0.0577328995160028,
+        "51": 0.02318316288388589
+      },
+      "positive_pearson_splits": 5,
+      "recipe": "blend_proxy_ridge",
+      "reserved_holdouts_opened": false,
+      "serving": {
+        "artifact_sha256": "9d570d8d379c19389123f764fe3e086ed625c72a46838d15ad21297edee905df",
+        "host": "compute-host",
+        "monotonicity": "Single endpoint; reference Keller proxy doses are fixed latent features",
+        "recipe": "blend_proxy_ridge",
+        "reference_log10_doses": [
+          -5.0,
+          -3.0,
+          -1.0
+        ],
+        "reserved_holdouts_opened": false,
+        "snapshot": "data\\snapshots\\828751d0a24e8149",
+        "source_molecules": 326,
+        "source_training_proxy_counts": [
+          301,
+          297,
+          305,
+          326
+        ],
+        "training_molecules": 114,
+        "validated_endpoint": "Ravia published group-mean intensity at each molecule's most concentrated presentation"
+      },
+      "summary": {
+        "baseline": {
+          "mae": {
+            "mean": 11.936783302915785,
+            "sd": 2.1498749553428778
+          },
+          "pearson": {
+            "mean": 0.574066307852576,
+            "sd": 0.1585969125311526
+          },
+          "rmse": {
+            "mean": 14.684279235573433,
+            "sd": 3.1448755044518886
+          }
+        },
+        "selected": {
+          "mae": {
+            "mean": 12.060447505977148,
+            "sd": 2.305656268244563
+          },
+          "pearson": {
+            "mean": 0.5889662733346224,
+            "sd": 0.18014063849471482
+          },
+          "rmse": {
+            "mean": 14.510458623394324,
+            "sd": 2.9224205569647634
+          }
+        }
+      }
+    },
+    "nose-intensity-ravia-dose-transfer-v1": {
+      "mae_wins": 3,
+      "max_paired_baseline_difference_from_macos": 3.7989931106567383,
+      "original_test_ids_and_targets_verified": true,
+      "pearson_gains": {
+        "42": 0.019077261376893473,
+        "43": -0.010123360019227645,
+        "44": -0.022434620842150754,
+        "45": 0.09847709051746462,
+        "46": 0.1520124433071931,
+        "47": 0.15434363291062425,
+        "48": 0.017036178201921826,
+        "49": -0.010058000008020818,
+        "50": -0.026752573391275014,
+        "51": 0.026743832153922398
+      },
+      "positive_pearson_splits": 6,
+      "recipe": "blend_proxy_ridge",
+      "reserved_holdouts_opened": false,
+      "summary": {
+        "baseline": {
+          "mae": {
+            "mean": 11.930023514298757,
+            "sd": 2.259024987504874
+          },
+          "pearson": {
+            "mean": 0.5398343618735378,
+            "sd": 0.19904111396487462
+          },
+          "rmse": {
+            "mean": 14.883012761965102,
+            "sd": 3.0434846456172817
+          }
+        },
+        "selected": {
+          "mae": {
+            "mean": 11.851018993939482,
+            "sd": 2.363851342459046
+          },
+          "pearson": {
+            "mean": 0.5796665502942725,
+            "sd": 0.192330423641709
+          },
+          "rmse": {
+            "mean": 14.474733274860593,
+            "sd": 2.963810201393283
+          }
+        }
+      }
+    },
+    "nose-intensity-ravia-joint-inner-v2": {
+      "reserved_holdouts_opened": false,
+      "selection": "joint_0.25_current",
+      "training_cv": {
+        "current": {
+          "mae": 10.488292132116241,
+          "pearson": 0.6318924843989702,
+          "rmse": 13.30718398799962
+        },
+        "joint_0.25_current": {
+          "mae": 10.252087284455117,
+          "pearson": 0.6610723390311191,
+          "rmse": 12.970350123257347
+        },
+        "joint_0.25_legacy": {
+          "mae": 10.205106636361576,
+          "pearson": 0.6432136400401111,
+          "rmse": 13.193235955135835
+        },
+        "joint_1.0_current": {
+          "mae": 10.562157219371668,
+          "pearson": 0.6532736673165479,
+          "rmse": 13.162491480646077
+        },
+        "joint_1.0_legacy": {
+          "mae": 10.449707204727062,
+          "pearson": 0.6414955796751248,
+          "rmse": 13.313614154903192
+        }
+      }
+    },
+    "nose-intensity-ravia-joint-refit-v2": {
+      "artifact_bytes": 2806296,
+      "mae_wins": 8,
+      "main_target_connectivity_overlaps": {
+        "48": [
+          "NNWHUJCUHAELCL"
+        ]
+      },
+      "max_baseline_difference_from_previous_head": 1.4210854715202004e-14,
+      "pearson_gains": {
+        "42": -0.04432886005147674,
+        "43": 0.04777378475044036,
+        "44": 0.08278503754716227,
+        "45": -0.06321603539405618,
+        "46": 0.09102395296893029,
+        "47": -0.003324581873255239,
+        "48": 0.0394430780707421,
+        "49": -0.002523873947191002,
+        "50": 0.030387780443618673,
+        "51": 0.0024048507239866623
+      },
+      "positive_pearson_splits": 6,
+      "previous_improved_baseline_verified": true,
+      "recipe": "joint_0.25_current",
+      "reserved_holdouts_opened": false,
+      "serving": {
+        "artifact_sha256": "d02eadb6ecbb2043d7f96ea1e0421c3ea4cf9ce947264ff95c7102ff9090dc0c",
+        "host": "compute-host",
+        "monotonicity": "Single Ravia endpoint; internal coordinate0 is study-conditioned, not measured dilution",
+        "recipe": "joint_0.25_current",
+        "reserved_holdouts_opened": false,
+        "snapshot": "data\\snapshots\\828751d0a24e8149",
+        "source_molecules": 326,
+        "source_proxy_counts": [
+          301,
+          297,
+          305,
+          326
+        ],
+        "source_weight": 0.25,
+        "training_molecules": 114,
+        "validated_endpoint": "Ravia published group-mean intensity at each molecule's most concentrated presentation"
+      },
+      "summary": {
+        "baseline": {
+          "mae": {
+            "mean": 12.060447505977148,
+            "sd": 2.305656268244563
+          },
+          "pearson": {
+            "mean": 0.5889662733346224,
+            "sd": 0.1801406384947148
+          },
+          "rmse": {
+            "mean": 14.510458623394324,
+            "sd": 2.9224205569647634
+          }
+        },
+        "selected": {
+          "mae": {
+            "mean": 11.8545928891687,
+            "sd": 2.37413785844157
+          },
+          "pearson": {
+            "mean": 0.6070087866585123,
+            "sd": 0.15579012059087943
+          },
+          "rmse": {
+            "mean": 14.309600550986266,
+            "sd": 3.051241648600441
+          }
+        }
+      }
+    },
+    "nose-intensity-ravia-joint-v2": {
+      "mae_wins": 6,
+      "main_target_connectivity_overlaps": {
+        "48": [
+          "NNWHUJCUHAELCL"
+        ]
+      },
+      "max_baseline_difference_from_previous_head": 7.105427357601002e-15,
+      "pearson_gains": {
+        "42": -0.038824934161255265,
+        "43": 0.027066829267509918,
+        "44": 0.08748342065795711,
+        "45": -0.08282304040853228,
+        "46": 0.09059484132595907,
+        "47": 0.01841980560274692,
+        "48": 0.02560393989740195,
+        "49": 0.001555726794505885,
+        "50": 0.043553090704673725,
+        "51": 0.004323956758832348
+      },
+      "positive_pearson_splits": 8,
+      "previous_improved_baseline_verified": true,
+      "recipe": "joint_0.25_current",
+      "reserved_holdouts_opened": false,
+      "summary": {
+        "baseline": {
+          "mae": {
+            "mean": 11.851018993939482,
+            "sd": 2.3638513424590455
+          },
+          "pearson": {
+            "mean": 0.5796665502942725,
+            "sd": 0.192330423641709
+          },
+          "rmse": {
+            "mean": 14.474733274860593,
+            "sd": 2.963810201393283
+          }
+        },
+        "selected": {
+          "mae": {
+            "mean": 11.747955622133919,
+            "sd": 2.5133830069862615
+          },
+          "pearson": {
+            "mean": 0.5973619139382522,
+            "sd": 0.17834687089361956
+          },
+          "rmse": {
+            "mean": 14.285363950762067,
+            "sd": 3.240530453629483
+          }
+        }
+      }
+    },
+    "nose-intensity-ravia-refit-v3": {
+      "artifact_bytes": 2333054,
+      "mae_wins": 4,
+      "pearson_gains": {
+        "42": 0.05191146812446046,
+        "43": 0.05914775438941494,
+        "44": 0.035569382583214126,
+        "45": 0.06073484581842292,
+        "46": -0.1767254490482833,
+        "47": -0.020478015305952613,
+        "48": 0.019029394692179902,
+        "49": -0.01831505409687295,
+        "50": 0.0366955750109077,
+        "51": -0.05840476017551266
+      },
+      "positive_pearson_splits": 6,
+      "recipe": "regularized",
+      "reserved_holdouts_opened": false,
+      "serving": {
+        "artifact_sha256": "ef87e50dc493f7a3698af5beadc553e2468bd23374f806729dfc2dada5380260",
+        "descriptor_source_rows": 0,
+        "monotonicity": "Single endpoint; no dilution curve",
+        "recipe": "regularized",
+        "reserved_holdouts_opened": false,
+        "snapshot": "data/snapshots/828751d0a24e8149",
+        "training_molecules": 114,
+        "validated_endpoint": "Ravia published group-mean intensity at each molecule's most concentrated presentation"
+      },
+      "summary": {
+        "baseline": {
+          "mae": {
+            "mean": 11.974290740581937,
+            "sd": 2.217043293328324
+          },
+          "pearson": {
+            "mean": 0.5615471074255305,
+            "sd": 0.16736251542680958
+          },
+          "rmse": {
+            "mean": 14.794596951181322,
+            "sd": 3.2126117049296115
+          }
+        },
+        "selected": {
+          "mae": {
+            "mean": 12.070360589098188,
+            "sd": 2.0863959223488178
+          },
+          "pearson": {
+            "mean": 0.5604636216247283,
+            "sd": 0.18508571268643487
+          },
+          "rmse": {
+            "mean": 14.717046171164778,
+            "sd": 3.037096373462204
+          }
+        }
+      }
+    },
+    "nose-intensity-ravia-robust-inner-v2": {
+      "reserved_holdouts_opened": false,
+      "selection": "current",
+      "training_cv": {
+        "blend_proxy_huber": {
+          "mae": 10.439761614364444,
+          "pearson": 0.6280499138738193,
+          "rmse": 13.306781819616708
+        },
+        "blend_proxy_median": {
+          "mae": 10.689404895373194,
+          "pearson": 0.6190824183415405,
+          "rmse": 13.619959116000851
+        },
+        "blend_proxy_svr": {
+          "mae": 10.410398163101787,
+          "pearson": 0.6135874823291507,
+          "rmse": 13.50370290742711
+        },
+        "current": {
+          "mae": 10.488292132116241,
+          "pearson": 0.6318924843989702,
+          "rmse": 13.30718398799962
+        }
+      }
+    },
+    "nose-intensity-ravia-transport-inner-v2": {
+      "reserved_holdouts_opened": false,
+      "selection": "current",
+      "training_cv": {
+        "blend_proxy_transport_ridge10": {
+          "mae": 10.356463960162928,
+          "pearson": 0.6298985205392594,
+          "rmse": 13.28824323170999
+        },
+        "blend_proxy_transport_ridge100": {
+          "mae": 10.491361185171641,
+          "pearson": 0.6257951838187316,
+          "rmse": 13.481404485988207
+        },
+        "current": {
+          "mae": 10.488292132116241,
+          "pearson": 0.6318924843989702,
+          "rmse": 13.30718398799962
+        }
+      }
+    },
+    "nose-intensity-ravia-v3": {
+      "mae_wins": 6,
+      "pearson_gains": {
+        "42": 0.020563536278469463,
+        "43": 0.05721428772543413,
+        "44": 0.027220486335589655,
+        "45": 0.10999308356311055,
+        "46": -0.0935573709577448,
+        "47": -0.03586957084001996,
+        "48": -0.027527472862894697,
+        "49": 0.01005053966265812,
+        "50": 0.03653248063725478,
+        "51": -0.01743250332605073
+      },
+      "positive_pearson_splits": 6,
+      "recipe": "regularized",
+      "reserved_holdouts_opened": false,
+      "summary": {
+        "baseline": {
+          "mae": {
+            "mean": 11.908560628532834,
+            "sd": 2.313138797011291
+          },
+          "pearson": {
+            "mean": 0.5381836898850066,
+            "sd": 0.21110151535962385
+          },
+          "rmse": {
+            "mean": 14.909371604584695,
+            "sd": 3.1310136939499875
+          }
+        },
+        "selected": {
+          "mae": {
+            "mean": 11.883608106858995,
+            "sd": 2.2167215258170074
+          },
+          "pearson": {
+            "mean": 0.5469024395065872,
+            "sd": 0.22260609904841971
+          },
+          "rmse": {
+            "mean": 14.74890577476035,
+            "sd": 3.0084880489531245
+          }
+        }
+      }
+    }
+  }
+}

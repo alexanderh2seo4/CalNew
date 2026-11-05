@@ -1,0 +1,21 @@
+{
+  "baseline": "runs/nose-semantic-trees-inner-v2",
+  "candidates": [
+    "structure_molecular",
+    "structure_semantic",
+    "semantic",
+    "equal v2+structure_molecular",
+    "equal v2+structure_semantic",
+    "equal v2+semantic"
+  ],
+  "downstream": "fixed 500-tree recipe; no endpoint model hyperparameter search",
+  "fold_seeds": [
+    100,
+    101,
+    102
+  ],
+  "heldout_tests_used_for_selection": false,
+  "promotion": "Mean Pearson gain >= 0.01 over nested v2; positive gain in at least two repeats",
+  "repeats": 3,
+  "source": "frozen original Uni-Mol1 plus filtered descriptor corpus and generic word vectors"
+}

@@ -1,0 +1,46 @@
+{
+  "frozen_selection_sha256": "579bb7d192e4a1944af9c81415ab877a3bcbbb4a69d4c6c2155687c15030c2b9",
+  "host": "compute-host",
+  "mae_ratio": 0.9955385265534097,
+  "mean_pearson_gain": 0.04611265300627754,
+  "passing": true,
+  "reserved_holdouts_opened": false,
+  "scope": "Only original split-42 training rows; confirmation of fixed recipe against fresh SSH baselines",
+  "scores": {
+    "baseline": [
+      {
+        "mae": 10.2823491114455,
+        "pearson": 0.6121250391541836,
+        "rmse": 13.567202505303575
+      },
+      {
+        "mae": 11.008705709700813,
+        "pearson": 0.5241869423605403,
+        "rmse": 14.620917974225492
+      },
+      {
+        "mae": 10.3148303928406,
+        "pearson": 0.621027512663354,
+        "rmse": 13.407760603030068
+      }
+    ],
+    "selected": [
+      {
+        "mae": 10.624916680903423,
+        "pearson": 0.6214801523743149,
+        "rmse": 13.482555215135818
+      },
+      {
+        "mae": 10.642588763760124,
+        "pearson": 0.6018977032403011,
+        "rmse": 13.669553897691033
+      },
+      {
+        "mae": 10.197370951685173,
+        "pearson": 0.6722995975822945,
+        "rmse": 12.769442851172009
+      }
+    ]
+  },
+  "selection_changed": false
+}

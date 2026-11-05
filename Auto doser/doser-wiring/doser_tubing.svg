@@ -1,0 +1,276 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1840" height="1010" viewBox="0 0 1840 1010" font-family="Helvetica, Arial, sans-serif"><title>Doser air and liquid tubing</title><rect width="100%" height="100%" fill="#ffffff"/><text x="40" y="42" font-size="24" text-anchor="start" font-weight="bold" fill="#222">4-line doser — air and liquid tubing</text>
+<text x="40" y="66" font-size="13" text-anchor="start" font-weight="normal" fill="#555">T-numbers = air tube pieces, L-numbers = liquid lines (table in Doser-4-Line-Wiring.md). Air never touches liquid; liquid only touches FEP, the PTFE septum face and glass.</text>
+<circle cx="110" cy="455" r="34" fill="#fff" stroke="#333" stroke-width="2"/><polygon points="94,471 126,471 110,437" fill="#333"/>
+<text x="110" y="513" font-size="12" text-anchor="middle" font-weight="bold" fill="#222">Pump 12 V</text>
+<text x="110" y="528" font-size="12" text-anchor="middle" font-weight="bold" fill="#222">(M5, PWM)</text>
+<polyline points="30,455 76,455" fill="none" stroke="#fff" stroke-width="6.6" stroke-linejoin="round"/>
+<polyline points="30,455 76,455" fill="none" stroke="#9aa7b0" stroke-width="2.6" stroke-linejoin="round" stroke-dasharray="7 5"/>
+<text x="30" y="405" font-size="10" text-anchor="start" font-weight="normal" fill="#666">inlet open,</text>
+<text x="30" y="418" font-size="10" text-anchor="start" font-weight="normal" fill="#666">away from bottles</text>
+<polyline points="144,455 205,455" fill="none" stroke="#fff" stroke-width="6.6" stroke-linejoin="round"/>
+<polyline points="144,455 205,455" fill="none" stroke="#2a7fbf" stroke-width="2.6" stroke-linejoin="round"/>
+<rect x="157.5" y="426" width="29" height="17" rx="8" fill="#fff" stroke="#2a7fbf" stroke-width="1.4"/>
+<text x="172" y="439" font-size="11" text-anchor="middle" font-weight="bold" fill="#2a7fbf">T01</text>
+<polyline points="237,442 217,455 237,468" fill="none" stroke="#2a7fbf" stroke-width="2.4"/><circle cx="231" cy="455" r="6" fill="#fff" stroke="#2a7fbf" stroke-width="2"/><rect x="205" y="439" width="40" height="32" fill="none" stroke="#888" stroke-dasharray="3 3"/>
+<text x="225" y="489" font-size="12" text-anchor="middle" font-weight="bold" fill="#222">CV0</text>
+<polyline points="245,455 300,455" fill="none" stroke="#fff" stroke-width="6.6" stroke-linejoin="round"/>
+<polyline points="245,455 300,455" fill="none" stroke="#2a7fbf" stroke-width="2.6" stroke-linejoin="round"/>
+<rect x="257.5" y="426" width="29" height="17" rx="8" fill="#fff" stroke="#2a7fbf" stroke-width="1.4"/>
+<text x="272" y="439" font-size="11" text-anchor="middle" font-weight="bold" fill="#2a7fbf">T02</text>
+<rect x="300" y="395" width="80" height="130" rx="14" fill="#f2f7fb" stroke="#333" stroke-width="2"/>
+<text x="340" y="475" font-size="12" text-anchor="middle" font-weight="bold" fill="#222">Buffer</text>
+<text x="340" y="490" font-size="12" text-anchor="middle" font-weight="bold" fill="#222">0.5 L</text>
+<text x="340" y="505" font-size="12" text-anchor="middle" font-weight="bold" fill="#222">PET</text>
+<text x="340" y="369" font-size="10" text-anchor="middle" font-weight="normal" fill="#666">2 bulkhead</text>
+<text x="340" y="382" font-size="10" text-anchor="middle" font-weight="normal" fill="#666">push-ins in cap</text>
+<polyline points="380,455 450,455" fill="none" stroke="#fff" stroke-width="6.6" stroke-linejoin="round"/>
+<polyline points="380,455 450,455" fill="none" stroke="#2a7fbf" stroke-width="2.6" stroke-linejoin="round"/>
+<rect x="400.5" y="426" width="29" height="17" rx="8" fill="#fff" stroke="#2a7fbf" stroke-width="1.4"/>
+<text x="415" y="439" font-size="11" text-anchor="middle" font-weight="bold" fill="#2a7fbf">T03</text>
+<circle cx="450" cy="455" r="4" fill="#2a7fbf"/>
+<polyline points="450,455 450,330" fill="none" stroke="#fff" stroke-width="6.6" stroke-linejoin="round"/>
+<polyline points="450,455 450,330" fill="none" stroke="#2a7fbf" stroke-width="2.6" stroke-linejoin="round"/>
+<rect x="435.5" y="386" width="29" height="17" rx="8" fill="#fff" stroke="#2a7fbf" stroke-width="1.4"/>
+<text x="450" y="399" font-size="11" text-anchor="middle" font-weight="bold" fill="#2a7fbf">T04</text>
+<rect x="395" y="270" width="110" height="60" rx="6" fill="#f4f6f8" stroke="#445" stroke-width="1.6"/>
+<text x="450.0" y="288" font-size="13" text-anchor="middle" font-weight="bold" fill="#222">PS sensor</text>
+<text x="450.0" y="304" font-size="11" text-anchor="middle" font-weight="normal" fill="#555">U3 · 3 mm port</text>
+<polyline points="450,455 560,455" fill="none" stroke="#fff" stroke-width="6.6" stroke-linejoin="round"/>
+<polyline points="450,455 560,455" fill="none" stroke="#2a7fbf" stroke-width="2.6" stroke-linejoin="round"/>
+<rect x="490.5" y="426" width="29" height="17" rx="8" fill="#fff" stroke="#2a7fbf" stroke-width="1.4"/>
+<text x="505" y="439" font-size="11" text-anchor="middle" font-weight="bold" fill="#2a7fbf">T05</text>
+<circle cx="560" cy="455" r="4" fill="#2a7fbf"/>
+<text x="450" y="483" font-size="11" text-anchor="middle" font-weight="bold" fill="#222">TE1</text>
+<text x="560" y="483" font-size="11" text-anchor="middle" font-weight="bold" fill="#222">TE2</text>
+<polyline points="560,455 560,330" fill="none" stroke="#fff" stroke-width="6.6" stroke-linejoin="round"/>
+<polyline points="560,455 560,330" fill="none" stroke="#2a7fbf" stroke-width="2.6" stroke-linejoin="round"/>
+<rect x="545.5" y="386" width="29" height="17" rx="8" fill="#fff" stroke="#2a7fbf" stroke-width="1.4"/>
+<text x="560" y="399" font-size="11" text-anchor="middle" font-weight="bold" fill="#2a7fbf">T06</text>
+<rect x="505" y="270" width="110" height="60" rx="6" fill="#f4f6f8" stroke="#445" stroke-width="1.6"/>
+<text x="560.0" y="288" font-size="13" text-anchor="middle" font-weight="bold" fill="#222">RV relief</text>
+<text x="560.0" y="304" font-size="11" text-anchor="middle" font-weight="normal" fill="#555">0.5 bar · vents</text>
+<polyline points="560,270 560,240" fill="none" stroke="#fff" stroke-width="6.6" stroke-linejoin="round"/>
+<polyline points="560,270 560,240" fill="none" stroke="#9aa7b0" stroke-width="2.6" stroke-linejoin="round" stroke-dasharray="7 5"/>
+<text x="560" y="232" font-size="10" text-anchor="middle" font-weight="normal" fill="#666">to air</text>
+<polyline points="560,455 660,455" fill="none" stroke="#fff" stroke-width="6.6" stroke-linejoin="round"/>
+<polyline points="560,455 660,455" fill="none" stroke="#2a7fbf" stroke-width="2.6" stroke-linejoin="round"/>
+<rect x="595.5" y="426" width="29" height="17" rx="8" fill="#fff" stroke="#2a7fbf" stroke-width="1.4"/>
+<text x="610" y="439" font-size="11" text-anchor="middle" font-weight="bold" fill="#2a7fbf">T07</text>
+<rect x="660" y="150" width="26" height="610" rx="4" fill="#dde6ee" stroke="#333" stroke-width="2"/>
+<text x="673" y="140" font-size="12" text-anchor="middle" font-weight="bold" fill="#222">MF 1→4</text>
+<polyline points="686,170 745,170" fill="none" stroke="#fff" stroke-width="6.6" stroke-linejoin="round"/>
+<polyline points="686,170 745,170" fill="none" stroke="#2a7fbf" stroke-width="2.6" stroke-linejoin="round"/>
+<rect x="700.5" y="141" width="29" height="17" rx="8" fill="#fff" stroke="#2a7fbf" stroke-width="1.4"/>
+<text x="715" y="154" font-size="11" text-anchor="middle" font-weight="bold" fill="#2a7fbf">T08</text>
+<polyline points="777,157 757,170 777,183" fill="none" stroke="#2a7fbf" stroke-width="2.4"/><circle cx="771" cy="170" r="6" fill="#fff" stroke="#2a7fbf" stroke-width="2"/><rect x="745" y="154" width="40" height="32" fill="none" stroke="#888" stroke-dasharray="3 3"/>
+<text x="765" y="202" font-size="12" text-anchor="middle" font-weight="bold" fill="#222">CV1</text>
+<polyline points="785,170 860,170" fill="none" stroke="#fff" stroke-width="6.6" stroke-linejoin="round"/>
+<polyline points="785,170 860,170" fill="none" stroke="#2a7fbf" stroke-width="2.6" stroke-linejoin="round"/>
+<rect x="807.5" y="141" width="29" height="17" rx="8" fill="#fff" stroke="#2a7fbf" stroke-width="1.4"/>
+<text x="822" y="154" font-size="11" text-anchor="middle" font-weight="bold" fill="#2a7fbf">T12</text>
+<rect x="860" y="140" width="130" height="60" rx="4" fill="#fff" stroke="#333" stroke-width="2"/><line x1="925" y1="140" x2="925" y2="200" stroke="#333" stroke-width="1.5"/>
+<text x="892" y="162" font-size="10" text-anchor="middle" font-weight="normal" fill="#555">on</text>
+<text x="892" y="180" font-size="12" text-anchor="middle" font-weight="bold" fill="#222">P → A</text>
+<text x="957" y="162" font-size="10" text-anchor="middle" font-weight="normal" fill="#555">off</text>
+<text x="957" y="180" font-size="12" text-anchor="middle" font-weight="bold" fill="#222">A → R</text>
+<text x="925" y="132" font-size="12" text-anchor="middle" font-weight="bold" fill="#222">V1 3/2 NC (M1)</text>
+<text x="866" y="174" font-size="11" text-anchor="start" font-weight="bold" fill="#c00">P</text>
+<text x="984" y="174" font-size="11" text-anchor="end" font-weight="bold" fill="#c00">A</text>
+<text x="925" y="216" font-size="11" text-anchor="middle" font-weight="bold" fill="#c00">R</text>
+<polyline points="925,200 925,240 1010,240" fill="none" stroke="#fff" stroke-width="6.6" stroke-linejoin="round"/>
+<polyline points="925,200 925,240 1010,240" fill="none" stroke="#9aa7b0" stroke-width="2.6" stroke-linejoin="round"/>
+<rect x="947.5" y="231" width="29" height="17" rx="8" fill="#fff" stroke="#9aa7b0" stroke-width="1.4"/>
+<text x="962" y="244" font-size="11" text-anchor="middle" font-weight="bold" fill="#9aa7b0">T16</text>
+<text x="1016" y="244" font-size="10" text-anchor="start" font-weight="normal" fill="#666">30 cm, open end away from balance</text>
+<polyline points="990,170 1050,170" fill="none" stroke="#fff" stroke-width="6.6" stroke-linejoin="round"/>
+<polyline points="990,170 1050,170" fill="none" stroke="#2a7fbf" stroke-width="2.6" stroke-linejoin="round"/>
+<rect x="1005.5" y="141" width="29" height="17" rx="8" fill="#fff" stroke="#2a7fbf" stroke-width="1.4"/>
+<text x="1020" y="154" font-size="11" text-anchor="middle" font-weight="bold" fill="#2a7fbf">T20</text>
+<rect x="1050" y="162" width="28" height="16" rx="3" fill="#f6c6c6" stroke="#a33"/>
+<text x="1064" y="196" font-size="11" text-anchor="middle" font-weight="bold" fill="#222">SJ1</text>
+<polyline points="1078,170 1150,170 1150,80 1215,80 1215,128" fill="none" stroke="#fff" stroke-width="6.6" stroke-linejoin="round"/>
+<polyline points="1078,170 1150,170 1150,80 1215,80 1215,128" fill="none" stroke="#00a0a0" stroke-width="2.6" stroke-linejoin="round"/>
+<rect x="1135.5" y="121" width="29" height="17" rx="8" fill="#fff" stroke="#00a0a0" stroke-width="1.4"/>
+<text x="1150" y="134" font-size="11" text-anchor="middle" font-weight="bold" fill="#00a0a0">T24</text>
+<rect x="1190" y="120" width="70" height="120" rx="12" fill="#f3e3c8" stroke="#6b4a1e" stroke-width="2"/><rect x="1196" y="104" width="58" height="18" rx="2" fill="#333"/><rect x="1205" y="101" width="40" height="5" fill="#d33"/>
+<rect x="1190" y="180" width="70" height="60" rx="10" fill="#e8c27a" opacity="0.8"/>
+<text x="1225" y="172" font-size="14" text-anchor="middle" font-weight="bold" fill="#6b4a1e">B1</text>
+<polyline points="1240,234 1240,60 1290,60" fill="none" stroke="#fff" stroke-width="6.2" stroke-linejoin="round"/>
+<polyline points="1240,234 1240,60 1290,60" fill="none" stroke="#c47a00" stroke-width="2.2" stroke-linejoin="round"/>
+<polyline points="686,360 745,360" fill="none" stroke="#fff" stroke-width="6.6" stroke-linejoin="round"/>
+<polyline points="686,360 745,360" fill="none" stroke="#2a7fbf" stroke-width="2.6" stroke-linejoin="round"/>
+<rect x="700.5" y="331" width="29" height="17" rx="8" fill="#fff" stroke="#2a7fbf" stroke-width="1.4"/>
+<text x="715" y="344" font-size="11" text-anchor="middle" font-weight="bold" fill="#2a7fbf">T09</text>
+<polyline points="777,347 757,360 777,373" fill="none" stroke="#2a7fbf" stroke-width="2.4"/><circle cx="771" cy="360" r="6" fill="#fff" stroke="#2a7fbf" stroke-width="2"/><rect x="745" y="344" width="40" height="32" fill="none" stroke="#888" stroke-dasharray="3 3"/>
+<text x="765" y="392" font-size="12" text-anchor="middle" font-weight="bold" fill="#222">CV2</text>
+<polyline points="785,360 860,360" fill="none" stroke="#fff" stroke-width="6.6" stroke-linejoin="round"/>
+<polyline points="785,360 860,360" fill="none" stroke="#2a7fbf" stroke-width="2.6" stroke-linejoin="round"/>
+<rect x="807.5" y="331" width="29" height="17" rx="8" fill="#fff" stroke="#2a7fbf" stroke-width="1.4"/>
+<text x="822" y="344" font-size="11" text-anchor="middle" font-weight="bold" fill="#2a7fbf">T13</text>
+<rect x="860" y="330" width="130" height="60" rx="4" fill="#fff" stroke="#333" stroke-width="2"/><line x1="925" y1="330" x2="925" y2="390" stroke="#333" stroke-width="1.5"/>
+<text x="892" y="352" font-size="10" text-anchor="middle" font-weight="normal" fill="#555">on</text>
+<text x="892" y="370" font-size="12" text-anchor="middle" font-weight="bold" fill="#222">P → A</text>
+<text x="957" y="352" font-size="10" text-anchor="middle" font-weight="normal" fill="#555">off</text>
+<text x="957" y="370" font-size="12" text-anchor="middle" font-weight="bold" fill="#222">A → R</text>
+<text x="925" y="322" font-size="12" text-anchor="middle" font-weight="bold" fill="#222">V2 3/2 NC (M2)</text>
+<text x="866" y="364" font-size="11" text-anchor="start" font-weight="bold" fill="#c00">P</text>
+<text x="984" y="364" font-size="11" text-anchor="end" font-weight="bold" fill="#c00">A</text>
+<text x="925" y="406" font-size="11" text-anchor="middle" font-weight="bold" fill="#c00">R</text>
+<polyline points="925,390 925,430 1010,430" fill="none" stroke="#fff" stroke-width="6.6" stroke-linejoin="round"/>
+<polyline points="925,390 925,430 1010,430" fill="none" stroke="#9aa7b0" stroke-width="2.6" stroke-linejoin="round"/>
+<rect x="947.5" y="421" width="29" height="17" rx="8" fill="#fff" stroke="#9aa7b0" stroke-width="1.4"/>
+<text x="962" y="434" font-size="11" text-anchor="middle" font-weight="bold" fill="#9aa7b0">T17</text>
+<text x="1016" y="434" font-size="10" text-anchor="start" font-weight="normal" fill="#666">30 cm, open end away from balance</text>
+<polyline points="990,360 1050,360" fill="none" stroke="#fff" stroke-width="6.6" stroke-linejoin="round"/>
+<polyline points="990,360 1050,360" fill="none" stroke="#2a7fbf" stroke-width="2.6" stroke-linejoin="round"/>
+<rect x="1005.5" y="331" width="29" height="17" rx="8" fill="#fff" stroke="#2a7fbf" stroke-width="1.4"/>
+<text x="1020" y="344" font-size="11" text-anchor="middle" font-weight="bold" fill="#2a7fbf">T21</text>
+<rect x="1050" y="352" width="28" height="16" rx="3" fill="#f6c6c6" stroke="#a33"/>
+<text x="1064" y="386" font-size="11" text-anchor="middle" font-weight="bold" fill="#222">SJ2</text>
+<polyline points="1078,360 1150,360 1150,270 1215,270 1215,318" fill="none" stroke="#fff" stroke-width="6.6" stroke-linejoin="round"/>
+<polyline points="1078,360 1150,360 1150,270 1215,270 1215,318" fill="none" stroke="#00a0a0" stroke-width="2.6" stroke-linejoin="round"/>
+<rect x="1135.5" y="311" width="29" height="17" rx="8" fill="#fff" stroke="#00a0a0" stroke-width="1.4"/>
+<text x="1150" y="324" font-size="11" text-anchor="middle" font-weight="bold" fill="#00a0a0">T25</text>
+<rect x="1190" y="310" width="70" height="120" rx="12" fill="#f3e3c8" stroke="#6b4a1e" stroke-width="2"/><rect x="1196" y="294" width="58" height="18" rx="2" fill="#333"/><rect x="1205" y="291" width="40" height="5" fill="#d33"/>
+<rect x="1190" y="370" width="70" height="60" rx="10" fill="#e8c27a" opacity="0.8"/>
+<text x="1225" y="362" font-size="14" text-anchor="middle" font-weight="bold" fill="#6b4a1e">B2</text>
+<polyline points="1240,424 1240,250 1290,250" fill="none" stroke="#fff" stroke-width="6.2" stroke-linejoin="round"/>
+<polyline points="1240,424 1240,250 1290,250" fill="none" stroke="#c47a00" stroke-width="2.2" stroke-linejoin="round"/>
+<polyline points="686,550 745,550" fill="none" stroke="#fff" stroke-width="6.6" stroke-linejoin="round"/>
+<polyline points="686,550 745,550" fill="none" stroke="#2a7fbf" stroke-width="2.6" stroke-linejoin="round"/>
+<rect x="700.5" y="521" width="29" height="17" rx="8" fill="#fff" stroke="#2a7fbf" stroke-width="1.4"/>
+<text x="715" y="534" font-size="11" text-anchor="middle" font-weight="bold" fill="#2a7fbf">T10</text>
+<polyline points="777,537 757,550 777,563" fill="none" stroke="#2a7fbf" stroke-width="2.4"/><circle cx="771" cy="550" r="6" fill="#fff" stroke="#2a7fbf" stroke-width="2"/><rect x="745" y="534" width="40" height="32" fill="none" stroke="#888" stroke-dasharray="3 3"/>
+<text x="765" y="582" font-size="12" text-anchor="middle" font-weight="bold" fill="#222">CV3</text>
+<polyline points="785,550 860,550" fill="none" stroke="#fff" stroke-width="6.6" stroke-linejoin="round"/>
+<polyline points="785,550 860,550" fill="none" stroke="#2a7fbf" stroke-width="2.6" stroke-linejoin="round"/>
+<rect x="807.5" y="521" width="29" height="17" rx="8" fill="#fff" stroke="#2a7fbf" stroke-width="1.4"/>
+<text x="822" y="534" font-size="11" text-anchor="middle" font-weight="bold" fill="#2a7fbf">T14</text>
+<rect x="860" y="520" width="130" height="60" rx="4" fill="#fff" stroke="#333" stroke-width="2"/><line x1="925" y1="520" x2="925" y2="580" stroke="#333" stroke-width="1.5"/>
+<text x="892" y="542" font-size="10" text-anchor="middle" font-weight="normal" fill="#555">on</text>
+<text x="892" y="560" font-size="12" text-anchor="middle" font-weight="bold" fill="#222">P → A</text>
+<text x="957" y="542" font-size="10" text-anchor="middle" font-weight="normal" fill="#555">off</text>
+<text x="957" y="560" font-size="12" text-anchor="middle" font-weight="bold" fill="#222">A → R</text>
+<text x="925" y="512" font-size="12" text-anchor="middle" font-weight="bold" fill="#222">V3 3/2 NC (M3)</text>
+<text x="866" y="554" font-size="11" text-anchor="start" font-weight="bold" fill="#c00">P</text>
+<text x="984" y="554" font-size="11" text-anchor="end" font-weight="bold" fill="#c00">A</text>
+<text x="925" y="596" font-size="11" text-anchor="middle" font-weight="bold" fill="#c00">R</text>
+<polyline points="925,580 925,620 1010,620" fill="none" stroke="#fff" stroke-width="6.6" stroke-linejoin="round"/>
+<polyline points="925,580 925,620 1010,620" fill="none" stroke="#9aa7b0" stroke-width="2.6" stroke-linejoin="round"/>
+<rect x="947.5" y="611" width="29" height="17" rx="8" fill="#fff" stroke="#9aa7b0" stroke-width="1.4"/>
+<text x="962" y="624" font-size="11" text-anchor="middle" font-weight="bold" fill="#9aa7b0">T18</text>
+<text x="1016" y="624" font-size="10" text-anchor="start" font-weight="normal" fill="#666">30 cm, open end away from balance</text>
+<polyline points="990,550 1050,550" fill="none" stroke="#fff" stroke-width="6.6" stroke-linejoin="round"/>
+<polyline points="990,550 1050,550" fill="none" stroke="#2a7fbf" stroke-width="2.6" stroke-linejoin="round"/>
+<rect x="1005.5" y="521" width="29" height="17" rx="8" fill="#fff" stroke="#2a7fbf" stroke-width="1.4"/>
+<text x="1020" y="534" font-size="11" text-anchor="middle" font-weight="bold" fill="#2a7fbf">T22</text>
+<rect x="1050" y="542" width="28" height="16" rx="3" fill="#f6c6c6" stroke="#a33"/>
+<text x="1064" y="576" font-size="11" text-anchor="middle" font-weight="bold" fill="#222">SJ3</text>
+<polyline points="1078,550 1150,550 1150,460 1215,460 1215,508" fill="none" stroke="#fff" stroke-width="6.6" stroke-linejoin="round"/>
+<polyline points="1078,550 1150,550 1150,460 1215,460 1215,508" fill="none" stroke="#00a0a0" stroke-width="2.6" stroke-linejoin="round"/>
+<rect x="1135.5" y="501" width="29" height="17" rx="8" fill="#fff" stroke="#00a0a0" stroke-width="1.4"/>
+<text x="1150" y="514" font-size="11" text-anchor="middle" font-weight="bold" fill="#00a0a0">T26</text>
+<rect x="1190" y="500" width="70" height="120" rx="12" fill="#f3e3c8" stroke="#6b4a1e" stroke-width="2"/><rect x="1196" y="484" width="58" height="18" rx="2" fill="#333"/><rect x="1205" y="481" width="40" height="5" fill="#d33"/>
+<rect x="1190" y="560" width="70" height="60" rx="10" fill="#e8c27a" opacity="0.8"/>
+<text x="1225" y="552" font-size="14" text-anchor="middle" font-weight="bold" fill="#6b4a1e">B3</text>
+<polyline points="1240,614 1240,440 1290,440" fill="none" stroke="#fff" stroke-width="6.2" stroke-linejoin="round"/>
+<polyline points="1240,614 1240,440 1290,440" fill="none" stroke="#c47a00" stroke-width="2.2" stroke-linejoin="round"/>
+<polyline points="686,740 745,740" fill="none" stroke="#fff" stroke-width="6.6" stroke-linejoin="round"/>
+<polyline points="686,740 745,740" fill="none" stroke="#2a7fbf" stroke-width="2.6" stroke-linejoin="round"/>
+<rect x="700.5" y="711" width="29" height="17" rx="8" fill="#fff" stroke="#2a7fbf" stroke-width="1.4"/>
+<text x="715" y="724" font-size="11" text-anchor="middle" font-weight="bold" fill="#2a7fbf">T11</text>
+<polyline points="777,727 757,740 777,753" fill="none" stroke="#2a7fbf" stroke-width="2.4"/><circle cx="771" cy="740" r="6" fill="#fff" stroke="#2a7fbf" stroke-width="2"/><rect x="745" y="724" width="40" height="32" fill="none" stroke="#888" stroke-dasharray="3 3"/>
+<text x="765" y="772" font-size="12" text-anchor="middle" font-weight="bold" fill="#222">CV4</text>
+<polyline points="785,740 860,740" fill="none" stroke="#fff" stroke-width="6.6" stroke-linejoin="round"/>
+<polyline points="785,740 860,740" fill="none" stroke="#2a7fbf" stroke-width="2.6" stroke-linejoin="round"/>
+<rect x="807.5" y="711" width="29" height="17" rx="8" fill="#fff" stroke="#2a7fbf" stroke-width="1.4"/>
+<text x="822" y="724" font-size="11" text-anchor="middle" font-weight="bold" fill="#2a7fbf">T15</text>
+<rect x="860" y="710" width="130" height="60" rx="4" fill="#fff" stroke="#333" stroke-width="2"/><line x1="925" y1="710" x2="925" y2="770" stroke="#333" stroke-width="1.5"/>
+<text x="892" y="732" font-size="10" text-anchor="middle" font-weight="normal" fill="#555">on</text>
+<text x="892" y="750" font-size="12" text-anchor="middle" font-weight="bold" fill="#222">P → A</text>
+<text x="957" y="732" font-size="10" text-anchor="middle" font-weight="normal" fill="#555">off</text>
+<text x="957" y="750" font-size="12" text-anchor="middle" font-weight="bold" fill="#222">A → R</text>
+<text x="925" y="702" font-size="12" text-anchor="middle" font-weight="bold" fill="#222">V4 3/2 NC (M4)</text>
+<text x="866" y="744" font-size="11" text-anchor="start" font-weight="bold" fill="#c00">P</text>
+<text x="984" y="744" font-size="11" text-anchor="end" font-weight="bold" fill="#c00">A</text>
+<text x="925" y="786" font-size="11" text-anchor="middle" font-weight="bold" fill="#c00">R</text>
+<polyline points="925,770 925,810 1010,810" fill="none" stroke="#fff" stroke-width="6.6" stroke-linejoin="round"/>
+<polyline points="925,770 925,810 1010,810" fill="none" stroke="#9aa7b0" stroke-width="2.6" stroke-linejoin="round"/>
+<rect x="947.5" y="801" width="29" height="17" rx="8" fill="#fff" stroke="#9aa7b0" stroke-width="1.4"/>
+<text x="962" y="814" font-size="11" text-anchor="middle" font-weight="bold" fill="#9aa7b0">T19</text>
+<text x="1016" y="814" font-size="10" text-anchor="start" font-weight="normal" fill="#666">30 cm, open end away from balance</text>
+<polyline points="990,740 1050,740" fill="none" stroke="#fff" stroke-width="6.6" stroke-linejoin="round"/>
+<polyline points="990,740 1050,740" fill="none" stroke="#2a7fbf" stroke-width="2.6" stroke-linejoin="round"/>
+<rect x="1005.5" y="711" width="29" height="17" rx="8" fill="#fff" stroke="#2a7fbf" stroke-width="1.4"/>
+<text x="1020" y="724" font-size="11" text-anchor="middle" font-weight="bold" fill="#2a7fbf">T23</text>
+<rect x="1050" y="732" width="28" height="16" rx="3" fill="#f6c6c6" stroke="#a33"/>
+<text x="1064" y="766" font-size="11" text-anchor="middle" font-weight="bold" fill="#222">SJ4</text>
+<polyline points="1078,740 1150,740 1150,650 1215,650 1215,698" fill="none" stroke="#fff" stroke-width="6.6" stroke-linejoin="round"/>
+<polyline points="1078,740 1150,740 1150,650 1215,650 1215,698" fill="none" stroke="#00a0a0" stroke-width="2.6" stroke-linejoin="round"/>
+<rect x="1135.5" y="691" width="29" height="17" rx="8" fill="#fff" stroke="#00a0a0" stroke-width="1.4"/>
+<text x="1150" y="704" font-size="11" text-anchor="middle" font-weight="bold" fill="#00a0a0">T27</text>
+<rect x="1190" y="690" width="70" height="120" rx="12" fill="#f3e3c8" stroke="#6b4a1e" stroke-width="2"/><rect x="1196" y="674" width="58" height="18" rx="2" fill="#333"/><rect x="1205" y="671" width="40" height="5" fill="#d33"/>
+<rect x="1190" y="750" width="70" height="60" rx="10" fill="#e8c27a" opacity="0.8"/>
+<text x="1225" y="742" font-size="14" text-anchor="middle" font-weight="bold" fill="#6b4a1e">B4</text>
+<polyline points="1240,804 1240,630 1290,630" fill="none" stroke="#fff" stroke-width="6.2" stroke-linejoin="round"/>
+<polyline points="1240,804 1240,630 1290,630" fill="none" stroke="#c47a00" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="1290" y="750" font-size="11" text-anchor="start" font-weight="normal" fill="#555">septum cap: tubes 5 mm apart</text>
+<text x="1290" y="764" font-size="11" text-anchor="start" font-weight="normal" fill="#555">air tip 5 mm below septum</text>
+<text x="1290" y="778" font-size="11" text-anchor="start" font-weight="normal" fill="#555">liquid tip 3 mm above bottom</text>
+<polyline points="1290,60 1625,60 1625,822" fill="none" stroke="#fff" stroke-width="6.2" stroke-linejoin="round"/>
+<polyline points="1290,60 1625,60 1625,822" fill="none" stroke="#c47a00" stroke-width="2.2" stroke-linejoin="round"/>
+<rect x="1329.0" y="51" width="22" height="17" rx="8" fill="#fff" stroke="#c47a00" stroke-width="1.4"/>
+<text x="1340" y="64" font-size="11" text-anchor="middle" font-weight="bold" fill="#c47a00">L1</text>
+<polyline points="1290,250 1605,250 1605,822" fill="none" stroke="#fff" stroke-width="6.2" stroke-linejoin="round"/>
+<polyline points="1290,250 1605,250 1605,822" fill="none" stroke="#c47a00" stroke-width="2.2" stroke-linejoin="round"/>
+<rect x="1329.0" y="241" width="22" height="17" rx="8" fill="#fff" stroke="#c47a00" stroke-width="1.4"/>
+<text x="1340" y="254" font-size="11" text-anchor="middle" font-weight="bold" fill="#c47a00">L2</text>
+<polyline points="1290,440 1585,440 1585,822" fill="none" stroke="#fff" stroke-width="6.2" stroke-linejoin="round"/>
+<polyline points="1290,440 1585,440 1585,822" fill="none" stroke="#c47a00" stroke-width="2.2" stroke-linejoin="round"/>
+<rect x="1329.0" y="431" width="22" height="17" rx="8" fill="#fff" stroke="#c47a00" stroke-width="1.4"/>
+<text x="1340" y="444" font-size="11" text-anchor="middle" font-weight="bold" fill="#c47a00">L3</text>
+<polyline points="1290,630 1565,630 1565,822" fill="none" stroke="#fff" stroke-width="6.2" stroke-linejoin="round"/>
+<polyline points="1290,630 1565,630 1565,822" fill="none" stroke="#c47a00" stroke-width="2.2" stroke-linejoin="round"/>
+<rect x="1329.0" y="621" width="22" height="17" rx="8" fill="#fff" stroke="#c47a00" stroke-width="1.4"/>
+<text x="1340" y="634" font-size="11" text-anchor="middle" font-weight="bold" fill="#c47a00">L4</text>
+<rect x="1545" y="770" width="100" height="40" rx="4" fill="#e9eef2" fill-opacity="0.85" stroke="#333" stroke-width="2"/>
+<text x="1535" y="795" font-size="12" text-anchor="end" font-weight="bold" fill="#222">Nozzle head</text>
+<text x="1692" y="778" font-size="11" text-anchor="start" font-weight="normal" fill="#555">4 bores 1.65 mm,</text>
+<text x="1692" y="792" font-size="11" text-anchor="start" font-weight="normal" fill="#555">5 mm apart; tips</text>
+<text x="1692" y="806" font-size="11" text-anchor="start" font-weight="normal" fill="#555">protrude 5 mm</text>
+<line x1="1540" y1="834" x2="1610" y2="828" stroke="#555" stroke-width="4"/>
+<text x="1692" y="836" font-size="11" text-anchor="start" font-weight="normal" fill="#555">shutter flap</text>
+<text x="1692" y="850" font-size="11" text-anchor="start" font-weight="normal" fill="#555">(servo), swings</text>
+<text x="1692" y="864" font-size="11" text-anchor="start" font-weight="normal" fill="#555">away to dose</text>
+<rect x="1555" y="850" width="80" height="70" rx="4" fill="#fff" stroke="#333" stroke-width="2"/><rect x="1520" y="920" width="150" height="20" rx="3" fill="#ccc" stroke="#333"/>
+<text x="1595" y="890" font-size="11" text-anchor="middle" font-weight="normal" fill="#222">vial</text>
+<rect x="1515" y="800" width="165" height="120" rx="6" fill="none" stroke="#5a8" stroke-dasharray="6 4"/>
+<text x="1510" y="910" font-size="10" text-anchor="end" font-weight="normal" fill="#5a8">draft</text>
+<text x="1510" y="923" font-size="10" text-anchor="end" font-weight="normal" fill="#5a8">shield</text>
+<text x="1595" y="960" font-size="12" text-anchor="middle" font-weight="bold" fill="#222">Balance (RS232 → U4)</text>
+<text x="1820" y="995" font-size="11" text-anchor="end" font-weight="normal" fill="#c00">Not to height scale. Real rig: every nozzle tip ABOVE the tallest bottle's shoulder (no siphon).</text>
+<rect x="40" y="790" width="700" height="170" rx="8" fill="#fafafa" stroke="#999"/>
+<text x="52" y="810" font-size="13" text-anchor="start" font-weight="bold" fill="#222">SJ sleeve joint (air side only): FEP 1/16" × 1.0 mm  ↔  PU 4 × 2.5 mm</text>
+<rect x="80" y="850" width="300" height="10" fill="#00a0a0"/><rect x="290" y="844" width="140" height="22" rx="3" fill="#f6c6c6" stroke="#a33"/><rect x="370" y="836" width="260" height="38" rx="4" fill="none" stroke="#2a7fbf" stroke-width="3"/><rect x="630" y="842" width="40" height="26" fill="#bbb" stroke="#333"/>
+<text x="160" y="886" font-size="11" text-anchor="middle" font-weight="normal" fill="#222">FEP 1.6 mm OD</text>
+<text x="340" y="902" font-size="11" text-anchor="middle" font-weight="normal" fill="#222">silicone 1 × 3 mm, 20 mm:</text>
+<text x="340" y="916" font-size="11" text-anchor="middle" font-weight="normal" fill="#222">10 mm over the FEP,</text>
+<text x="340" y="930" font-size="11" text-anchor="middle" font-weight="normal" fill="#222">10 mm pushed into the PU</text>
+<text x="520" y="896" font-size="11" text-anchor="middle" font-weight="normal" fill="#222">PU 4 × 2.5 mm stub (T20–T23)</text>
+<text x="520" y="910" font-size="11" text-anchor="middle" font-weight="normal" fill="#222">cable tie over the overlap</text>
+<text x="680" y="886" font-size="11" text-anchor="middle" font-weight="normal" fill="#222">valve A</text>
+<text x="680" y="900" font-size="11" text-anchor="middle" font-weight="normal" fill="#222">barb 3 mm</text>
+<text x="52" y="948" font-size="11" text-anchor="start" font-weight="normal" fill="#555">Mount SJ on the valve rail, ≥ 30 cm from the bottle: silicone only sees diluted headspace air.</text>
+<text x="800" y="836" font-size="13" text-anchor="start" font-weight="bold" fill="#222">Tube types</text>
+<line x1="800" y1="858" x2="834" y2="858" stroke="#2a7fbf" stroke-width="4"/>
+<text x="842" y="862" font-size="12" text-anchor="start" font-weight="normal" fill="#222">PU 4 × 2.5 mm, push-in / 3 mm barbs</text>
+<line x1="800" y1="882" x2="834" y2="882" stroke="#00a0a0" stroke-width="4"/>
+<text x="842" y="886" font-size="12" text-anchor="start" font-weight="normal" fill="#222">FEP 1/16" × 1.0 mm (air, through septum)</text>
+<line x1="800" y1="906" x2="834" y2="906" stroke="#c47a00" stroke-width="4"/>
+<text x="842" y="910" font-size="12" text-anchor="start" font-weight="normal" fill="#222">FEP 1/16" × 0.5 mm (liquid, one piece)</text>
+<line x1="800" y1="930" x2="834" y2="930" stroke="#9aa7b0" stroke-width="4"/>
+<text x="842" y="934" font-size="12" text-anchor="start" font-weight="normal" fill="#222">vent / open end</text>
+<text x="1130" y="862" font-size="12" text-anchor="start" font-weight="normal" fill="#333">CV = check valve (flow →), cracking ≤ 2 kPa</text>
+<text x="1130" y="877" font-size="12" text-anchor="start" font-weight="normal" fill="#333">TE = push-in tee, MF = 1→4 distributor</text>
+<text x="1130" y="892" font-size="12" text-anchor="start" font-weight="normal" fill="#333">V = 3/2 NC valve: P supply, A bottle, R exhaust</text>
+<text x="1130" y="907" font-size="12" text-anchor="start" font-weight="normal" fill="#333">(unpowered: A↔R, so the bottle vents)</text></svg>

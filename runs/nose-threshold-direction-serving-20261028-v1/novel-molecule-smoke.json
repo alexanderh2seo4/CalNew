@@ -1,0 +1,24 @@
+{
+  "run": "runs\\nose-threshold-direction-serving-20261028-v1",
+  "endpoint": "air_detection_threshold",
+  "model": "0.5 frozen current-v2 + 0.5 descriptor direction/confidence tree",
+  "evaluation": "Ten original development splits; final reserved holdouts remain closed",
+  "molecules": [
+    {
+      "smiles": "CCO",
+      "molecule_id": "LFQSCWFLJHTTHZ-UHFFFAOYSA-N",
+      "log10_ppbv": 2.907181519316741,
+      "ppbv": 807.5724956861429,
+      "baseline_log10_ppbv": 2.527160709744593,
+      "branch_log10_ppbv": 3.2872023288888887
+    },
+    {
+      "smiles": "COCCC(=O)OCC(C)C",
+      "molecule_id": "BNIUEJUHBMPWKI-UHFFFAOYSA-N",
+      "log10_ppbv": 0.9157041334907485,
+      "ppbv": 8.235768556854248,
+      "baseline_log10_ppbv": 1.1870356086481657,
+      "branch_log10_ppbv": 0.6443726583333316
+    }
+  ]
+}

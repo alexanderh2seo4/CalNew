@@ -1,0 +1,43 @@
+{
+  "created": "2026-11-02",
+  "sources": [
+    {
+      "source_id": "scent_chemistry_2022",
+      "local_path": null,
+      "bytes": 12350723,
+      "sha256": "ad179d1997d6770dc57bad56e3de2e2c0c14ae3513774f6ab78e65dd14d18423",
+      "edition": 2,
+      "pdf_pages": 438,
+      "printed_to_pdf_offset": 22,
+      "inspected_pdf_pages": [
+        131,
+        132,
+        133,
+        122
+      ],
+      "relevant_printed_pages": [
+        97,
+        100,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114
+      ]
+    },
+    {
+      "source_id": "kraft_eichenberger_2003",
+      "local_path": null,
+      "bytes": 233278,
+      "sha256": "75e4433da38baa2337ca5da2b2502f046c5e8436b64f093bef9e199559b1f237",
+      "doi": "10.1002/ejoc.200300174",
+      "table": "Table 1",
+      "figure": "Figure 3",
+      "printed_page": 3738,
+      "pdf_page": 4
+    }
+  ],
+  "book_origin": "Existing local user PDF export; Goodnotes desktop currently shows sign-in. No book contents uploaded to third parties."
+}

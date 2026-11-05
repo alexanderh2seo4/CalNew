@@ -1,0 +1,107 @@
+{
+  "host": "compute-host",
+  "main_validation_test_targets_scored": false,
+  "normalization_checks": {
+    "both_normalization_assertions_passed": true,
+    "excluded_label_perturbation_leaves_idf_and_targets_identical": true,
+    "same_connectivity_variants_excluded": true
+  },
+  "reserved_targets_fitted_or_scored": false,
+  "resource_sha256": "36d61dc8b23ea4fbe561c4d2a34e4af317a81bc7cfc6d96406274ae4ee527831",
+  "results": {
+    "keller": {
+      "passing": [],
+      "primary_train_main_held_connectivity_overlaps": [],
+      "scores": {
+        "blend_idf_average": [
+          {
+            "mae": 8.050128131751773,
+            "pearson": 0.7076249437357202,
+            "rmse": 10.024420114725286
+          },
+          {
+            "mae": 8.013293653257456,
+            "pearson": 0.7014043566156586,
+            "rmse": 10.113097321601979
+          },
+          {
+            "mae": 8.151340461380082,
+            "pearson": 0.6873089698384894,
+            "rmse": 10.304794513019502
+          }
+        ],
+        "blend_idf_unit": [
+          {
+            "mae": 8.0459829367481,
+            "pearson": 0.7092690323575832,
+            "rmse": 10.000851621815483
+          },
+          {
+            "mae": 8.01052495062588,
+            "pearson": 0.7048055520639441,
+            "rmse": 10.064761598559466
+          },
+          {
+            "mae": 8.122817169190231,
+            "pearson": 0.6918742615679867,
+            "rmse": 10.24316686599647
+          }
+        ],
+        "current": [
+          {
+            "mae": 8.022342301672152,
+            "pearson": 0.710425104627503,
+            "rmse": 9.984985069786328
+          },
+          {
+            "mae": 7.920832177842742,
+            "pearson": 0.7082539891315378,
+            "rmse": 10.019140594713853
+          },
+          {
+            "mae": 8.111266861431218,
+            "pearson": 0.689776541119487,
+            "rmse": 10.271370949692676
+          }
+        ],
+        "idf_average": [
+          {
+            "mae": 8.127168156261195,
+            "pearson": 0.6990300682684413,
+            "rmse": 10.146062211032069
+          },
+          {
+            "mae": 8.150678671315353,
+            "pearson": 0.689091955682374,
+            "rmse": 10.284229532227922
+          },
+          {
+            "mae": 8.26614976172422,
+            "pearson": 0.6794224592797455,
+            "rmse": 10.412219985104201
+          }
+        ],
+        "idf_unit": [
+          {
+            "mae": 8.131135791064558,
+            "pearson": 0.7006510864575405,
+            "rmse": 10.124348151188013
+          },
+          {
+            "mae": 8.133927971420404,
+            "pearson": 0.6948103954198321,
+            "rmse": 10.207508488256474
+          },
+          {
+            "mae": 8.20352431181467,
+            "pearson": 0.6883930464947275,
+            "rmse": 10.29320940390289
+          }
+        ]
+      },
+      "selected": "current",
+      "training_molecules": 260
+    }
+  },
+  "seconds": 3132
+}

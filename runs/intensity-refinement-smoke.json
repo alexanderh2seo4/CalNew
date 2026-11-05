@@ -1,0 +1,434 @@
+{
+  "cli": {
+    "keller": {
+      "dataset": "keller",
+      "molecules": [
+        {
+          "dilution": 0.001,
+          "intensity_0_100": 76.04395416885458,
+          "smiles": "S=C=NCCc1ccccc1"
+        },
+        {
+          "dilution": 0.001,
+          "intensity_0_100": 79.49857337781202,
+          "smiles": "CC(=O)c1ccccn1"
+        }
+      ],
+      "recipe": "blend_dose_semantic",
+      "run": "runs\\nose-intensity-keller-refit-v3",
+      "validated_endpoint": "Keller intensity at nominal paraffin-oil dilution; higher-concentration benchmark and both observed dilutions"
+    },
+    "ravia": {
+      "dataset": "ravia",
+      "molecules": [
+        {
+          "intensity_0_100": 59.35151668685037,
+          "smiles": "S=C=NCCc1ccccc1"
+        },
+        {
+          "intensity_0_100": 62.7295386666666,
+          "smiles": "CC(=O)c1ccccn1"
+        }
+      ],
+      "recipe": "joint_0.25_current",
+      "run": "runs\\nose-intensity-ravia-joint-refit-v2",
+      "validated_endpoint": "Ravia published group-mean intensity at each molecule's most concentrated presentation"
+    }
+  },
+  "cli_out_roundtrips": true,
+  "combined": {
+    "anchor": "fingerprint",
+    "concentration_axis": "log10 solution dilution in paraffin oil (Keller protocol)",
+    "intensity_model": {
+      "recipe": "blend_dose_semantic",
+      "run": "runs/nose-intensity-keller-refit-v3",
+      "uncertainty": "Not estimated for this head",
+      "validated_endpoint": "Keller intensity at nominal paraffin-oil dilution; higher-concentration benchmark and both observed dilutions"
+    },
+    "mixture": {
+      "component_intensities_at_primacy": [
+        61.05233914067279,
+        69.70277748964412
+      ],
+      "direction": [
+        0.29556679495898264,
+        0.23299798587018306,
+        0.1857419495253035,
+        0.35624796192496244,
+        0.5014247664554804,
+        0.045381194367391485,
+        0.2364514654667556,
+        0.37330376275344673,
+        0.07124705667832565,
+        0.031887078858081244,
+        0.06515425699298874,
+        0.10431916144773111,
+        0.03398503445308291,
+        0.20535541667275387,
+        0.1475299040267747,
+        0.3017882562770523,
+        0.10418077471589092,
+        0.12067508716053814,
+        0.182284570623412,
+        0.11025860261308232
+      ],
+      "intensity": 65.66370422500044,
+      "pleasantness": 37.32470884502283,
+      "profile_direction": {
+        "acid": 0.296,
+        "ammonia/urinous": 0.233,
+        "bakery": 0.186,
+        "burnt": 0.356,
+        "chemical": 0.501,
+        "cold": 0.045,
+        "decayed": 0.236,
+        "edible": 0.373,
+        "fish": 0.071,
+        "flower": 0.032,
+        "fruit": 0.065,
+        "garlic": 0.104,
+        "grass": 0.034,
+        "musky": 0.205,
+        "sour": 0.148,
+        "spices": 0.302,
+        "sweaty": 0.104,
+        "sweet": 0.121,
+        "warm": 0.182,
+        "wood": 0.11
+      },
+      "rule": "primacy(0.2) intensity-weighted; uniform direction average",
+      "validation": "unvalidated: no mixture observations are used by this pipeline"
+    },
+    "molecules": [
+      {
+        "applicability": {
+          "nearest_tanimoto_panel": 1.0,
+          "nearest_tanimoto_quality": 1.0,
+          "nearest_tanimoto_threshold": 0.4074074074074074
+        },
+        "at_dilution": {
+          "dilution": 0.001,
+          "in_trained_range": true,
+          "intensity_0_100": 76.04395416885458,
+          "intensity_seed_sd": null,
+          "pleasantness_0_100": 27.384930732098926,
+          "profile": {
+            "acid": 6.82,
+            "ammonia/urinous": 5.91,
+            "bakery": 2.58,
+            "burnt": 10.24,
+            "chemical": 13.31,
+            "cold": 1.93,
+            "decayed": 5.88,
+            "edible": 6.23,
+            "fish": 2.9,
+            "flower": 2.26,
+            "fruit": 2.07,
+            "garlic": 4.05,
+            "grass": 1.88,
+            "musky": 9.09,
+            "sour": 7.93,
+            "spices": 7.15,
+            "sweaty": 5.01,
+            "sweet": 5.35,
+            "warm": 5.14,
+            "wood": 3.88
+          }
+        },
+        "dose_response": {
+          "curve": [
+            {
+              "intensity_0_100": 28.994243999750097,
+              "log10_dilution": -7.0
+            },
+            {
+              "intensity_0_100": 35.372059762539834,
+              "log10_dilution": -6.0
+            },
+            {
+              "intensity_0_100": 49.78755892690197,
+              "log10_dilution": -5.0
+            },
+            {
+              "intensity_0_100": 58.71495525124499,
+              "log10_dilution": -4.0
+            },
+            {
+              "intensity_0_100": 76.04395416885458,
+              "log10_dilution": -3.0
+            },
+            {
+              "intensity_0_100": 80.15825742640973,
+              "log10_dilution": -2.0
+            },
+            {
+              "intensity_0_100": 89.86764698551167,
+              "log10_dilution": -1.0
+            },
+            {
+              "intensity_0_100": 90.90299890154247,
+              "log10_dilution": 0.0
+            }
+          ],
+          "hill_component": {
+            "I_max": 92.75028228759766,
+            "slope": 0.8020203113555908,
+            "x50_log10_dilution": -4.922350883483887
+          },
+          "representation": "blend_dose_semantic"
+        },
+        "molecule_id": "IZJDOKYDEWTZSO-UHFFFAOYSA-N",
+        "quality": {
+          "semantics": "ranking of catalogue (Leffingwell) descriptor records; positive-weighted, not calibrated",
+          "top_catalogue_labels": {
+            "burnt": 0.533,
+            "earthy": 0.595,
+            "pungent": 0.967,
+            "smoky": 0.488,
+            "spicy": 0.727,
+            "vegetable": 0.898
+          }
+        },
+        "smiles": "S=C=NCCc1ccccc1",
+        "threshold": {
+          "approx_90pct_log_interval": [
+            -0.30122283803290073,
+            3.019953414909052
+          ],
+          "fusion_sd_log10": 0.3028812110424042,
+          "log10_ppbv": 1.3593652884380758,
+          "ppbv": 22.875220468699272
+        }
+      },
+      {
+        "applicability": {
+          "nearest_tanimoto_panel": 1.0,
+          "nearest_tanimoto_quality": 1.0,
+          "nearest_tanimoto_threshold": 0.4230769230769231
+        },
+        "at_dilution": {
+          "dilution": 0.001,
+          "in_trained_range": true,
+          "intensity_0_100": 79.49857337781202,
+          "intensity_seed_sd": null,
+          "pleasantness_0_100": 46.030914339107014,
+          "profile": {
+            "acid": 4.52,
+            "ammonia/urinous": 3.8,
+            "bakery": 9.65,
+            "burnt": 7.49,
+            "chemical": 9.11,
+            "cold": 2.59,
+            "decayed": 3.9,
+            "edible": 16.64,
+            "fish": 1.38,
+            "flower": 2.47,
+            "fruit": 2.5,
+            "garlic": 3.6,
+            "grass": 1.58,
+            "musky": 6.86,
+            "sour": 4.48,
+            "spices": 9.68,
+            "sweaty": 2.99,
+            "sweet": 8.15,
+            "warm": 7.65,
+            "wood": 4.22
+          }
+        },
+        "dose_response": {
+          "curve": [
+            {
+              "intensity_0_100": 51.384710733138945,
+              "log10_dilution": -7.0
+            },
+            {
+              "intensity_0_100": 55.48992169276508,
+              "log10_dilution": -6.0
+            },
+            {
+              "intensity_0_100": 66.88675968329574,
+              "log10_dilution": -5.0
+            },
+            {
+              "intensity_0_100": 69.16526839433561,
+              "log10_dilution": -4.0
+            },
+            {
+              "intensity_0_100": 79.49857337781202,
+              "log10_dilution": -3.0
+            },
+            {
+              "intensity_0_100": 80.53927073431694,
+              "log10_dilution": -2.0
+            },
+            {
+              "intensity_0_100": 84.41179517932356,
+              "log10_dilution": -1.0
+            },
+            {
+              "intensity_0_100": 84.84535295988341,
+              "log10_dilution": 0.0
+            }
+          ],
+          "hill_component": {
+            "I_max": 90.57068634033203,
+            "slope": 0.470284640789032,
+            "x50_log10_dilution": -8.709293365478516
+          },
+          "representation": "blend_dose_semantic"
+        },
+        "molecule_id": "AJKVQEKCUACUMD-UHFFFAOYSA-N",
+        "quality": {
+          "semantics": "ranking of catalogue (Leffingwell) descriptor records; positive-weighted, not calibrated",
+          "top_catalogue_labels": {
+            "burnt": 0.754,
+            "fatty": 0.506,
+            "green": 0.425,
+            "meaty": 0.431,
+            "nutty": 0.612,
+            "roasted": 0.62
+          }
+        },
+        "smiles": "CC(=O)c1ccccn1",
+        "threshold": {
+          "approx_90pct_log_interval": [
+            -0.9118458969883887,
+            2.409330355953564
+          ],
+          "fusion_sd_log10": 0.2894028425216675,
+          "log10_ppbv": 0.7487422294825878,
+          "ppbv": 5.607150712355318
+        }
+      }
+    ],
+    "run": "runs/modular-pipeline-fingerprint-v5"
+  },
+  "dose_grid_points": 8,
+  "host": "compute-host",
+  "mixture_uses_selected_primacy_intensities": true,
+  "monotonicity_violations": 0,
+  "ravia_dilution_guard": true,
+  "smiles": [
+    "S=C=NCCc1ccccc1",
+    "CC(=O)c1ccccn1"
+  ],
+  "standalone_keller": {
+    "dataset": "keller",
+    "molecules": [
+      {
+        "dilution": 0.001,
+        "dose_response": {
+          "curve": [
+            {
+              "intensity_0_100": 28.994243999750097,
+              "log10_dilution": -7.0
+            },
+            {
+              "intensity_0_100": 35.372059762539834,
+              "log10_dilution": -6.0
+            },
+            {
+              "intensity_0_100": 49.78755892690197,
+              "log10_dilution": -5.0
+            },
+            {
+              "intensity_0_100": 58.71495525124499,
+              "log10_dilution": -4.0
+            },
+            {
+              "intensity_0_100": 76.04395416885458,
+              "log10_dilution": -3.0
+            },
+            {
+              "intensity_0_100": 80.15825742640973,
+              "log10_dilution": -2.0
+            },
+            {
+              "intensity_0_100": 89.86764698551167,
+              "log10_dilution": -1.0
+            },
+            {
+              "intensity_0_100": 90.90299890154247,
+              "log10_dilution": 0.0
+            }
+          ],
+          "hill_component": {
+            "I_max": 92.75028228759766,
+            "slope": 0.8020203113555908,
+            "x50_log10_dilution": -4.922350883483887
+          },
+          "representation": "blend_dose_semantic"
+        },
+        "intensity_0_100": 76.04395416885458,
+        "smiles": "S=C=NCCc1ccccc1"
+      },
+      {
+        "dilution": 0.001,
+        "dose_response": {
+          "curve": [
+            {
+              "intensity_0_100": 51.384710733138945,
+              "log10_dilution": -7.0
+            },
+            {
+              "intensity_0_100": 55.48992169276508,
+              "log10_dilution": -6.0
+            },
+            {
+              "intensity_0_100": 66.88675968329574,
+              "log10_dilution": -5.0
+            },
+            {
+              "intensity_0_100": 69.16526839433561,
+              "log10_dilution": -4.0
+            },
+            {
+              "intensity_0_100": 79.49857337781202,
+              "log10_dilution": -3.0
+            },
+            {
+              "intensity_0_100": 80.53927073431694,
+              "log10_dilution": -2.0
+            },
+            {
+              "intensity_0_100": 84.41179517932356,
+              "log10_dilution": -1.0
+            },
+            {
+              "intensity_0_100": 84.84535295988341,
+              "log10_dilution": 0.0
+            }
+          ],
+          "hill_component": {
+            "I_max": 90.57068634033203,
+            "slope": 0.470284640789032,
+            "x50_log10_dilution": -8.709293365478516
+          },
+          "representation": "blend_dose_semantic"
+        },
+        "intensity_0_100": 79.49857337781202,
+        "smiles": "CC(=O)c1ccccn1"
+      }
+    ],
+    "recipe": "blend_dose_semantic",
+    "run": "runs\\nose-intensity-keller-refit-v3",
+    "validated_endpoint": "Keller intensity at nominal paraffin-oil dilution; higher-concentration benchmark and both observed dilutions"
+  },
+  "standalone_ravia": {
+    "dataset": "ravia",
+    "molecules": [
+      {
+        "intensity_0_100": 59.35151668685037,
+        "smiles": "S=C=NCCc1ccccc1"
+      },
+      {
+        "intensity_0_100": 62.7295386666666,
+        "smiles": "CC(=O)c1ccccn1"
+      }
+    ],
+    "recipe": "joint_0.25_current",
+    "run": "runs\\nose-intensity-ravia-joint-refit-v2",
+    "validated_endpoint": "Ravia published group-mean intensity at each molecule's most concentrated presentation"
+  },
+  "thresholds_unchanged": true
+}

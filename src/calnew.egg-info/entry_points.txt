@@ -1,0 +1,2 @@
+[console_scripts]
+calnew = calnew.cli:main

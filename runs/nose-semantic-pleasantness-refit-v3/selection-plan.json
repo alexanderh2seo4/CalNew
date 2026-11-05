@@ -1,0 +1,19 @@
+{
+  "note": "Separate expanded-training evaluation, registered before running it; original test assignments retained.",
+  "recipe": "Same equal v2 + structure/text transfer pleasantness blend selected in training-only CV",
+  "selection_changed": false,
+  "split_seeds": [
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51
+  ],
+  "test_based_selection": false,
+  "validation_refit": true
+}

@@ -107,7 +107,7 @@ An LMU member doing research on humans must apply to the LMU ethics committee (M
 - Non-LMU (private/commercial) generation would need an independent ethics committee such as the Bavarian Landesärztekammer, which charges fees. Not verified.
 
 ### Gaps
-- Whether non-AMG studies by LMU members are fee-free, and typical turnaround times, are not stated on the pages retrieved. Email ethikkommission@med.uni-muenchen.de to confirm.
+- Whether non-AMG studies by LMU members are fee-free, and typical turnaround times, are not stated on the pages retrieved. Email [contact omitted] to confirm.
 
 ---
 

@@ -167,7 +167,7 @@ For a German university researcher, bulk access to the paywalled core is feasibl
 
   The Springer Nature Data Solutions full-text API (JSON/XML/plain text) is sold as subscription plans: usage-based for startups, custom enterprise plans, and "premium" for academia and government. Prices are on request — [Springer Nature TDM API](https://datasolutions.springernature.com/products/tdm/).
 - **ACS (JAFC, J Nat Prod, ACS Symposium Series)**:
-  - ACS handles TDM "on a project by project basis". Instead of allowing TDM on its platform, it delivers the content for each project to the PI (contact acs_pubs_assist@acs.org) — [Cranfield publisher TDM policies](https://library.cranfield.ac.uk/text-and-data-mining/publisher-policies).
+  - ACS handles TDM "on a project by project basis". Instead of allowing TDM on its platform, it delivers the content for each project to the PI (contact [contact omitted]) — [Cranfield publisher TDM policies](https://library.cranfield.ac.uk/text-and-data-mining/publisher-policies).
   - The commercial ACS TDM product delivers JATS XML for journals and BITS XML for books, for a fee that depends on breadth, duration, frequency and delivery. It can be combined with "ACS All Access" — [ACS Solutions: Text & Data Mining](https://solutions.acs.org/solutions/text-and-data-mining/).
   - ACS Terms of Use restrict TDM without permission — [ACS Terms of Use](https://pubs.acs.org/page/policy/termsofuse.html).
 - **DEAL (Germany)**:

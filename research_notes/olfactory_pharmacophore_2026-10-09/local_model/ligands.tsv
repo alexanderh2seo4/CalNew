@@ -1,0 +1,51 @@
+id	name	smiles	ec50_uM	ec50_uncertainty_uM	responsive	split	note
+B1	4-isopropylphenol	CC(C)c1ccc(O)cc1			1	training	Previously reported agonist, SI Table 3
+B2	4-(tert-butyl)-phenol	CC(C)(C)c1ccc(O)cc1			1	training	Previously reported agonist, SI Table 3
+B3	(E)-2-methoxy-4-(prop-1-en-1-yl)-phenol	COc1cc(/C=C/C)ccc1O			1	training	Isoeugenol, E geometry specified
+B4	4-allyl-2-methoxyphenol	COc1cc(CC=C)ccc1O			1	training	Eugenol
+B5	(E)-1,2-dimethoxy-4-(prop-1-en-1-yl)-benzene	COc1cc(/C=C/C)ccc1OC			1	training	E geometry specified
+B6	4-ethyl-1,2-dimethoxybenzene	COc1cc(CC)ccc1OC			1	training	Previously reported agonist, SI Table 3
+B7	1,2-dimethoxy-4-methylbenzene	COc1cc(C)ccc1OC			1	training	Previously reported agonist, SI Table 3
+B8	3-methoxy-4-methylbenzaldehyde	COc1cc(C=O)ccc1C			1	training	Previously reported agonist, SI Table 3
+B9	3,4-dimethoxybenzaldehyde	COc1cc(C=O)ccc1OC			1	training	Previously reported agonist, SI Table 3
+B10	3-ethoxy-4-methoxybenzaldehyde	CCOc1cc(C=O)ccc1OC			1	training	Previously reported agonist, SI Table 3
+B11	4-formyl-2-methoxyphenyl acetate	COc1cc(C=O)ccc1OC(C)=O			1	training	Previously reported agonist, SI Table 3
+B12	4-hydroxy-3-methylbenzaldehyde	Cc1cc(C=O)ccc1O			1	training	Previously reported agonist, SI Table 3
+B13	methyl-2,4-dihydroxy-3,6-dimethylbenzoate	COC(=O)c1c(O)c(C)c(O)cc1C			1	training	Previously reported agonist, SI Table 3
+B14	4-hydroxy-3-methoxybenzaldehyde	COc1cc(C=O)ccc1O			1	training	Vanillin
+B15	3-ethoxy-4-hydroxybenzaldehyde	CCOc1cc(C=O)ccc1O			1	training	Ethylvanillin
+B16	4-(3-ethoxy-4-hydroxyphenyl)-butan-2-one	CCOc1cc(CCC(C)=O)ccc1O			1	training	Previously reported agonist, SI Table 3
+B17	1-(3-hydroxy-4-methoxyphenyl)-ethan-1-one	COc1ccc(C(C)=O)cc1O			1	training	Isomer specified in SI
+B18	1-(4-hydroxy-3-methoxyphenyl)-ethan-1-one	COc1cc(C(C)=O)ccc1O			1	training	Acetovanillone
+B19	methyl-3-hydroxy-4-methoxybenzoate	COc1ccc(C(=O)OC)cc1O			1	training	Previously reported agonist, SI Table 3
+B20	4-(hydroxymethyl)-2-methoxyphenol	COc1cc(CO)ccc1O			1	training	Vanillyl alcohol
+B21	4-(4-hydroxyphenyl)-butan-2-one	CC(=O)CCc1ccc(O)cc1			1	training	Raspberry ketone
+B22	2-methoxybenzene-1,4-diol	COc1cc(O)ccc1O			1	training	Previously reported agonist, SI Table 3
+B23	4-(tert-butyl)-cyclohexan-1-one	CC(C)(C)C1CCC(=O)CC1			1	training	Previously reported agonist, SI Table 3
+B24	4-(tert-pentyl)-cyclohexan-1-one	CCC(C)(C)C1CCC(=O)CC1			1	training	Previously reported agonist, SI Table 3
+B25	(4aR,8aS)-5,5-dimethyloctahydronaphthalen-1-(2H)-one	O=C1CCC[C@H]2C(C)(C)CCC[C@H]12			1	training	Explicit stereo checked in structure audit
+A1	p-isobutylphenol	CC(C)Cc1ccc(O)cc1	12.9	0.9	1	holdout	SI Table 2
+A2	2',5'-dimethyl-4'-hydroxyacetophenone	CC(=O)c1c(C)cc(O)c(C)c1	16.0	1.5	1	holdout	SI Table 2
+A3	4-cyclohexylphenol	Oc1ccc(C2CCCCC2)cc1	50.8	0.5	1	holdout	SI misspelling cydohexyl normalized to cyclohexyl
+A4	4-tert-butyl-2-methoxyphenol	COc1cc(C(C)(C)C)ccc1O	55.6	0.7	1	holdout	SI Table 2
+A5	dihydroeugenol	COc1cc(CCC)ccc1O	61.0	6.9	1	holdout	SI Table 2
+A6	4-pentylcyclohexanone	CCCCCC1CCC(=O)CC1	63.1	1.5	1	holdout	SI Table 2
+A7	6,7-dimethoxy-1,2,3,4-tetrahydronaphthalene	COc1cc2CCCCc2cc1OC	88.4	1.3	1	holdout	SI Table 2
+A8	(E)-4-(but-1-en-1-yl)-1,2-dimethoxybenzene	COc1cc(/C=C/CC)ccc1OC	92.5	0.9	1	holdout	E geometry specified
+A9	1-(3-allyl-4-hydroxyphenyl)-ethanone	CC(=O)c1ccc(O)c(CC=C)c1	96.9	1.7	1	holdout	SI Table 2
+A10	2,3-dimethoxynaphthalene	COc1cc2ccccc2cc1OC	120	1	1	holdout	SI Table 2
+A11	isoeugenylethylether	CCOc1ccc(C=CC)cc1OC	193	3	1	holdout	Alkene E/Z unspecified by source, both enumerated
+A12	1,2-dimethoxy-4-(1-methylethenyl)-benzene	COc1cc(C(C)=C)ccc1OC	238	3	1	holdout	SI Table 2
+A13	4-hydroxy-3,5-dimethylacetophenone	CC(=O)c1cc(C)c(O)c(C)c1	250	3	1	holdout	SI Table 2
+A14	3-chloro-4-methoxyacetophenone	COc1ccc(C(C)=O)cc1Cl	265	3	1	holdout	SI Table 2
+A15	4-hydroxypropiophenone	CCC(=O)c1ccc(O)cc1	502	315	1	holdout	SI Table 2
+A16	ethylvanillate	CCOC(=O)c1cc(OC)c(O)cc1	505	109	1	holdout	Ethyl ester of vanillic acid
+A17	(2R,4R)-4-methyl-2-(2-methylprop-1-en-1-yl)-tetrahydro-2H-pyran	C[C@@H]1CCO[C@@H](C=C(C)C)C1	627	62	1	holdout	Rose oxide explicit stereo, RDKit CIP confirms C2=R and C4=R
+A18	6-methoxy-1-tetralone	COc1ccc2C(=O)CCCc2c1			0	holdout	SI n.a. means no active response, no EC50 supplied
+A19	4-tert-butyl-2-methylphenol	Cc1cc(C(C)(C)C)ccc1O			0	holdout	SI no active response
+A20	2,4-diisopropylphenol	CC(C)c1ccc(O)c(C(C)C)c1			0	holdout	SI no active response
+A21	4'-hydroxybutyrophenone	CCCC(=O)c1ccc(O)cc1			0	holdout	SI no active response
+A22	3,4-dimethoxyphenylthiocyanate	COc1cc(SC#N)ccc1OC			0	holdout	Thiocyanate S linkage as named
+A23	4-tert-butylanisole	COc1ccc(C(C)(C)C)cc1			0	holdout	SI terbutyl normalized to tert-butyl
+A24	1-isopropyl-2,3-dimethoxybenzene	COc1cccc(C(C)C)c1OC			0	holdout	SI no active response
+A25	4'-methoxybutyrophenone	CCCC(=O)c1ccc(OC)cc1			0	holdout	SI no active response

@@ -1,0 +1,16 @@
+{
+  "baseline_sha256": "bd42205763df141389fbe85e0f40ae8c1d4edb2ca8e782f30774aff042a97bcb",
+  "candidates": [
+    "equal baseline + transport/proxy ridge alpha10",
+    "equal baseline + transport/proxy ridge alpha100"
+  ],
+  "host": "compute-host",
+  "hypothesis": "Additional size/polarity/partition features may calibrate diluted Keller responses to a different Ravia presentation protocol",
+  "inputs": "Three fixed-dose Keller proxies plus the 11 existing transport descriptors; training-median imputation and standardization",
+  "promotion": "Mean Pearson gain >=0.01 versus current improved blend, positive in >=2 repeats, mean MAE <= current blend",
+  "reserved_holdouts_opened": false,
+  "selection_data": "Original split-42 Ravia training only; three repeated grouped five-fold assignments, seeds100,101,102",
+  "source_exclusions": "Keller original split-42 training only; every held Ravia connectivity and own proxy feature fold excluded",
+  "source_sha256": "82072da161fd81f70d526aae417795218a32b5c5ebc4e72e30935d6e13fe2ec6",
+  "test_based_model_selection": false
+}

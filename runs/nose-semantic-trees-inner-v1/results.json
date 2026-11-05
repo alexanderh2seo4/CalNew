@@ -1,0 +1,49 @@
+{
+  "alpha": 100.0,
+  "encoder": "extra_trees",
+  "projection_width": 128,
+  "reserved_holdouts_opened": false,
+  "results": {
+    "abraham": {
+      "corpus_molecules_per_fit": [
+        6918,
+        6933
+      ],
+      "inner_cv_pearson": {
+        "semantic": [
+          0.7199751962953576
+        ],
+        "structure": [
+          0.6962290788196999
+        ],
+        "structure_semantic": [
+          0.7391204908487532
+        ]
+      },
+      "n_training_molecules": 111,
+      "selection": "5-fold CV inside split-42 training only; main validation/test and reserved labels never scored"
+    },
+    "keller": {
+      "corpus_molecules_per_fit": [
+        6853,
+        6872
+      ],
+      "inner_cv_pearson": {
+        "semantic": [
+          0.6198866266496632
+        ],
+        "structure": [
+          0.6805730897402962
+        ],
+        "structure_semantic": [
+          0.7001837733370995
+        ]
+      },
+      "n_training_molecules": 260,
+      "selection": "5-fold CV inside split-42 training only; main validation/test and reserved labels never scored"
+    }
+  },
+  "script_sha256": "c004ff40d36a29fcb8a59084c7bc4e58a3d30f100342848e7414330af213cc71",
+  "seconds": 290,
+  "source_sha256": "858e482f407a3577870a87a61f8f16b488412ed06922dd35dd8d4fe4cf5e6ff2"
+}

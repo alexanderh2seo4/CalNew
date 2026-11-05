@@ -1,0 +1,341 @@
+{
+  "benchmarks": {
+    "nose-threshold-direction-original-v1": {
+      "comparison_limit": "Original random assignments retain recorded primary connectivity overlaps; proxy targets differ from paper",
+      "full_precision_NOSE_reference": 0.836,
+      "metrics": {
+        "baseline": {
+          "mae": {
+            "mean": 0.7958229852908147,
+            "sd": 0.10850597139154558
+          },
+          "mse": {
+            "mean": 1.092746170216466,
+            "sd": 0.27072296721519684
+          },
+          "pearson": {
+            "mean": 0.7838382165462845,
+            "sd": 0.043272052579366456
+          },
+          "r2": {
+            "mean": 0.5799224133101666,
+            "sd": 0.06074638519291718
+          }
+        },
+        "branch": {
+          "mae": {
+            "mean": 0.7822382893048243,
+            "sd": 0.1327066241275228
+          },
+          "mse": {
+            "mean": 1.0749533644676306,
+            "sd": 0.4008780260180169
+          },
+          "pearson": {
+            "mean": 0.7807796940821269,
+            "sd": 0.0652835903990728
+          },
+          "r2": {
+            "mean": 0.5929098143619103,
+            "sd": 0.10060184871636386
+          }
+        },
+        "selected": {
+          "mae": {
+            "mean": 0.7627673073681748,
+            "sd": 0.12339617039551445
+          },
+          "mse": {
+            "mean": 1.03368306663921,
+            "sd": 0.3376029001228042
+          },
+          "pearson": {
+            "mean": 0.792822745678024,
+            "sd": 0.05317205928975748
+          },
+          "r2": {
+            "mean": 0.6067603710778948,
+            "sd": 0.0801941837720385
+          }
+        }
+      },
+      "paired": {
+        "mae_wins": 9,
+        "mean_mae_change": -0.03305567792263997,
+        "mean_pearson_gain": 0.008984529131739527,
+        "pearson_wins": 8
+      },
+      "reference_reached": false,
+      "verified_splits": 10
+    },
+    "nose-threshold-direction-refit-v1": {
+      "comparison_limit": "Original random assignments retain recorded primary connectivity overlaps; proxy targets differ from paper",
+      "full_precision_NOSE_reference": 0.836,
+      "metrics": {
+        "baseline": {
+          "mae": {
+            "mean": 0.7231850097078909,
+            "sd": 0.09368013643238017
+          },
+          "mse": {
+            "mean": 0.8825878921048276,
+            "sd": 0.204405716249886
+          },
+          "pearson": {
+            "mean": 0.8225704699219207,
+            "sd": 0.032636537994397724
+          },
+          "r2": {
+            "mean": 0.6582127977356461,
+            "sd": 0.05399793344867118
+          }
+        },
+        "branch": {
+          "mae": {
+            "mean": 0.7306477893223682,
+            "sd": 0.08866561393920581
+          },
+          "mse": {
+            "mean": 0.8940699682373291,
+            "sd": 0.22406332824299324
+          },
+          "pearson": {
+            "mean": 0.8185092398587575,
+            "sd": 0.02928497970559164
+          },
+          "r2": {
+            "mean": 0.6547265064001617,
+            "sd": 0.053551015508316806
+          }
+        },
+        "selected": {
+          "mae": {
+            "mean": 0.7053042539003986,
+            "sd": 0.0898887249616257
+          },
+          "mse": {
+            "mean": 0.8520055010553638,
+            "sd": 0.20964076676070167
+          },
+          "pearson": {
+            "mean": 0.8287849985352507,
+            "sd": 0.028994751492174006
+          },
+          "r2": {
+            "mean": 0.6711919663369742,
+            "sd": 0.048187574974059955
+          }
+        }
+      },
+      "paired": {
+        "mae_wins": 8,
+        "mean_mae_change": -0.017880755807492266,
+        "mean_pearson_gain": 0.006214528613329939,
+        "pearson_wins": 4
+      },
+      "reference_reached": false,
+      "verified_splits": 10
+    }
+  },
+  "curated_dataset": {
+    "all_file_checksums_verified": true,
+    "binary_unique_associations_verified": true,
+    "endpoint_connectivity_overlap": [],
+    "molecules": 6445,
+    "pairs": 934458
+  },
+  "host": "compute-host",
+  "reserved_targets_fitted_or_scored": false,
+  "status": "verified",
+  "trials": {
+    "nose-compact-heads-inner-20261028-v1": {
+      "abraham": {
+        "mean_scores": {
+          "blend_compact_mae": {
+            "mae": 0.7669801896184977,
+            "pearson": 0.7025072525497941
+          },
+          "blend_compact_rmse": {
+            "mae": 0.7528492390921121,
+            "pearson": 0.706926875331388
+          },
+          "blend_full_rmse": {
+            "mae": 0.7494094272345002,
+            "pearson": 0.7117373732678559
+          },
+          "compact_mae": {
+            "mae": 0.8188457114086639,
+            "pearson": 0.6315922892678846
+          },
+          "compact_rmse": {
+            "mae": 0.7932871355461998,
+            "pearson": 0.647169981001139
+          },
+          "current": {
+            "mae": 0.7379014494979671,
+            "pearson": 0.7329069881416593
+          },
+          "full_rmse": {
+            "mae": 0.7814100875022524,
+            "pearson": 0.6652901907814766
+          }
+        },
+        "passing": [],
+        "selected": "current",
+        "verified_folds": 15
+      },
+      "keller": {
+        "mean_scores": {
+          "blend_compact_mae": {
+            "mae": 8.467600219034997,
+            "pearson": 0.6644144083792738
+          },
+          "blend_compact_rmse": {
+            "mae": 8.445310562450793,
+            "pearson": 0.665391849838186
+          },
+          "blend_full_rmse": {
+            "mae": 8.283601100840635,
+            "pearson": 0.6838386466304298
+          },
+          "compact_mae": {
+            "mae": 9.276157239796765,
+            "pearson": 0.5820065619084602
+          },
+          "compact_rmse": {
+            "mae": 9.132617432434362,
+            "pearson": 0.5935648028752539
+          },
+          "current": {
+            "mae": 8.018147113648704,
+            "pearson": 0.7028185449595092
+          },
+          "full_rmse": {
+            "mae": 8.756551791929406,
+            "pearson": 0.6440752015771292
+          }
+        },
+        "passing": [],
+        "selected": "current",
+        "verified_folds": 15
+      }
+    },
+    "nose-cooccurrence-inner-20261028-v1": {
+      "abraham": {
+        "mean_scores": {
+          "blend_direction_ridge": {
+            "mae": 0.7344117624269894,
+            "pearson": 0.7219001027905145
+          },
+          "blend_direction_trees": {
+            "mae": 0.7193106757189529,
+            "pearson": 0.7373268819523694
+          },
+          "blend_raw_ridge": {
+            "mae": 0.7276517688819086,
+            "pearson": 0.7272555402542746
+          },
+          "blend_raw_trees": {
+            "mae": 0.7141975432847887,
+            "pearson": 0.7414150774625045
+          },
+          "current": {
+            "mae": 0.7379014494979671,
+            "pearson": 0.7329069881416593
+          },
+          "direction_ridge": {
+            "mae": 0.780367198878099,
+            "pearson": 0.6599771682300312
+          },
+          "direction_trees": {
+            "mae": 0.728383609257591,
+            "pearson": 0.7206872323574016
+          },
+          "raw_ridge": {
+            "mae": 0.7640586840988005,
+            "pearson": 0.6758249581480796
+          },
+          "raw_trees": {
+            "mae": 0.7205349800500501,
+            "pearson": 0.7277628889807963
+          }
+        },
+        "passing": [],
+        "selected": "current",
+        "verified_folds": 15
+      },
+      "keller": {
+        "mean_scores": {
+          "blend_direction_ridge": {
+            "mae": 8.255100081261537,
+            "pearson": 0.6805500291045572
+          },
+          "blend_direction_trees": {
+            "mae": 8.098067972740296,
+            "pearson": 0.6992446561155684
+          },
+          "blend_raw_ridge": {
+            "mae": 8.368872171877532,
+            "pearson": 0.6671462501854774
+          },
+          "blend_raw_trees": {
+            "mae": 8.114007936964107,
+            "pearson": 0.6973922151726791
+          },
+          "current": {
+            "mae": 8.018147113648704,
+            "pearson": 0.7028185449595092
+          },
+          "direction_ridge": {
+            "mae": 9.24545030124562,
+            "pearson": 0.5796734213363595
+          },
+          "direction_trees": {
+            "mae": 8.265941833365362,
+            "pearson": 0.687895266483073
+          },
+          "raw_ridge": {
+            "mae": 9.30680552572584,
+            "pearson": 0.5730357803292861
+          },
+          "raw_trees": {
+            "mae": 8.299767472892539,
+            "pearson": 0.684127805728866
+          }
+        },
+        "passing": [],
+        "selected": "current",
+        "verified_folds": 15
+      }
+    },
+    "nose-sagar-measured-profile-inner-20261028-v1": {
+      "keller": {
+        "mean_scores": {
+          "blend_ridge": {
+            "mae": 8.789188029370473,
+            "pearson": 0.626816630920502
+          },
+          "blend_trees": {
+            "mae": 8.105556669088005,
+            "pearson": 0.6979712336898262
+          },
+          "current": {
+            "mae": 8.018147113648704,
+            "pearson": 0.7028185449595092
+          },
+          "ridge": {
+            "mae": 10.171337676072161,
+            "pearson": 0.45087002470733456
+          },
+          "trees": {
+            "mae": 8.324270670601221,
+            "pearson": 0.6828758000608198
+          }
+        },
+        "passing": [],
+        "selected": "current",
+        "verified_folds": 15
+      }
+    }
+  }
+}

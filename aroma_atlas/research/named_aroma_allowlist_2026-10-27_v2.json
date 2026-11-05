@@ -1,0 +1,354 @@
+{
+  "verified_date": "2026-10-27",
+  "scope": "Additional established parent aroma chemicals for pharmacology/toxicology literature discovery only.",
+  "chemicals": [
+    {
+      "name": "beta-caryophyllene",
+      "cas_as_source": "87-44-5",
+      "exact_parent_synonyms": [
+        "beta-caryophyllene",
+        "beta caryophyllene",
+        "β-caryophyllene",
+        "trans-beta-caryophyllene",
+        "(E)-beta-caryophyllene",
+        "(E)-caryophyllene",
+        "(-)-trans-caryophyllene"
+      ],
+      "source_url": "https://www.femaflavor.org/flavor-library/beta-caryophyllene",
+      "source_authority": "FEMA Flavor Ingredient Library",
+      "verified_use": "flavor ingredient",
+      "membership_evidence": "FEMA 2252 identifies this flavor ingredient and gives a spice/wood flavor profile.",
+      "verified_date": "2026-10-27",
+      "eligibility": "Unchanged parent centrally administered, assayed or mechanistically studied; exclude derivatives, scaffold libraries, extracts-only and solvent-only papers.",
+      "supporting_urls": [
+        "https://pubchem.ncbi.nlm.nih.gov/compound/Caryophyllene"
+      ],
+      "identity_note": "Distinct from alpha-caryophyllene (humulene) and caryophyllene oxide. Generic caryophyllene needs identity confirmation rather than automatic broad matching."
+    },
+    {
+      "name": "alpha-humulene",
+      "cas_as_source": "6753-98-6",
+      "exact_parent_synonyms": [
+        "alpha-humulene",
+        "alpha humulene",
+        "α-humulene",
+        "humulene",
+        "alpha-caryophyllene",
+        "α-caryophyllene"
+      ],
+      "source_url": "https://webprod.hc-sc.gc.ca/nhpid-bdipsn/ingredReq?id=14327",
+      "source_authority": "Health Canada NHPID",
+      "verified_use": "flavour enhancer",
+      "membership_evidence": "The individual NHPID chemical record explicitly lists a non-medicinal flavour-enhancer purpose.",
+      "verified_date": "2026-10-27",
+      "eligibility": "Unchanged parent centrally administered, assayed or mechanistically studied; exclude derivatives, scaffold libraries, extracts-only and solvent-only papers.",
+      "supporting_urls": [
+        "https://meshb.nlm.nih.gov/record/ui?ui=C042686"
+      ],
+      "identity_note": "Alpha-caryophyllene is a synonym of humulene, not beta-caryophyllene; one identity."
+    },
+    {
+      "name": "beta-myrcene",
+      "cas_as_source": "123-35-3",
+      "exact_parent_synonyms": [
+        "beta-myrcene",
+        "beta myrcene",
+        "β-myrcene",
+        "myrcene"
+      ],
+      "source_url": "https://www.femaflavor.org/flavor-library/myrcene",
+      "source_authority": "FEMA Flavor Ingredient Library",
+      "verified_use": "flavor ingredient",
+      "membership_evidence": "FEMA 2762 identifies this flavor ingredient and provides balsamic, fruit, geranium and herb profile terms.",
+      "verified_date": "2026-10-27",
+      "eligibility": "Unchanged parent centrally administered, assayed or mechanistically studied; exclude derivatives, scaffold libraries, extracts-only and solvent-only papers.",
+      "supporting_urls": [
+        "https://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=31253"
+      ],
+      "regulatory_note": "FEMA record notes synthetic myrcene is not permitted for addition to US food after October 9, 2020. Aroma membership does not imply current food authorization."
+    },
+    {
+      "name": "alpha-bisabolol",
+      "cas_as_source": "515-69-5",
+      "exact_parent_synonyms": [
+        "alpha-bisabolol",
+        "alpha bisabolol",
+        "α-bisabolol"
+      ],
+      "source_url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=bisabolol&set=FoodSubstances",
+      "source_authority": "US FDA Substances Added to Food",
+      "verified_use": "flavoring agent or adjuvant",
+      "membership_evidence": "FDA individual alpha-bisabolol record explicitly records flavoring use and FEMA 4666.",
+      "verified_date": "2026-10-27",
+      "eligibility": "Unchanged parent centrally administered, assayed or mechanistically studied; exclude derivatives, scaffold libraries, extracts-only and solvent-only papers.",
+      "supporting_urls": [
+        "https://www.femaflavor.org/flavor-library/alpha-bisabolol",
+        "https://webbook.nist.gov/cgi/cbook.cgi?ID=515-69-5"
+      ],
+      "additional_cas_as_source": [
+        "23089-26-1"
+      ],
+      "identity_note": "FEMA lists (±)-alpha-bisabolol with CAS 23089-26-1 and 515-69-5; FDA CAS is retained verbatim. Do not merge beta-bisabolol, epi-isomers, or assume enantiomer-specific results are equivalent. Generic bisabolol requires alpha identity confirmation."
+    },
+    {
+      "name": "isoborneol",
+      "cas_as_source": "124-76-5",
+      "exact_parent_synonyms": [
+        "isoborneol",
+        "isocamphol",
+        "isobornyl alcohol",
+        "2-exo-bornyl alcohol"
+      ],
+      "source_url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=ISOBORNEOL&set=FoodSubstances",
+      "source_authority": "US FDA Substances Added to Food",
+      "verified_use": "flavoring agent or adjuvant",
+      "membership_evidence": "FDA explicitly records flavoring use; FEMA 2158 gives a camphor/must profile.",
+      "verified_date": "2026-10-27",
+      "eligibility": "Unchanged parent centrally administered, assayed or mechanistically studied; exclude derivatives, scaffold libraries, extracts-only and solvent-only papers.",
+      "supporting_urls": [
+        "https://www.femaflavor.org/flavor-library/isoborneol",
+        "https://precision.fda.gov/ginas/app/ui/substances/20U67Z994U"
+      ],
+      "identity_note": "Exo-borneol, distinct from borneol. FDA food record is relative/racemic CAS 124-76-5; (-)-isoborneol has a separate absolute stereochemical FDA record and CAS 10334-13-1. Preserve study stereochemistry."
+    },
+    {
+      "name": "d-fenchone",
+      "cas_as_source": "4695-62-9",
+      "exact_parent_synonyms": [
+        "d-fenchone",
+        "(+)-fenchone"
+      ],
+      "source_url": "https://www.femaflavor.org/flavor-library/d-fenchone",
+      "source_authority": "FEMA Flavor Ingredient Library",
+      "verified_use": "flavor ingredient",
+      "membership_evidence": "FEMA 2479 identifies d-fenchone and a mint/cool profile.",
+      "verified_date": "2026-10-27",
+      "eligibility": "Unchanged parent centrally administered, assayed or mechanistically studied; exclude derivatives, scaffold libraries, extracts-only and solvent-only papers.",
+      "identity_note": "Keep distinct from l-fenchone. Generic fenchone title requires identity resolution; it is not a third discrete identity."
+    },
+    {
+      "name": "l-fenchone",
+      "cas_as_source": "7787-20-4",
+      "exact_parent_synonyms": [
+        "l-fenchone",
+        "(-)-fenchone"
+      ],
+      "source_url": "https://www.femaflavor.org/flavor-library/l-fenchone",
+      "source_authority": "FEMA Flavor Ingredient Library",
+      "verified_use": "flavor ingredient",
+      "membership_evidence": "FEMA 4519 identifies l-fenchone with a floral profile; JECFA record also describes camphor/herbal/woody aroma.",
+      "verified_date": "2026-10-27",
+      "eligibility": "Unchanged parent centrally administered, assayed or mechanistically studied; exclude derivatives, scaffold libraries, extracts-only and solvent-only papers.",
+      "supporting_urls": [
+        "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-flav/details/en/c/2173/"
+      ],
+      "identity_note": "Keep distinct from d-fenchone. Do not equate isofenchone with fenchone."
+    },
+    {
+      "name": "fenchol",
+      "cas_as_source": "1632-73-1",
+      "exact_parent_synonyms": [
+        "fenchol",
+        "fenchyl alcohol",
+        "2-fenchanol"
+      ],
+      "source_url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=FENCHYLALCOHOL&set=FoodSubstances",
+      "source_authority": "US FDA Substances Added to Food",
+      "verified_use": "flavor enhancer; flavoring agent or adjuvant",
+      "membership_evidence": "FDA lists fenchol as a synonym of fenchyl alcohol with explicit flavor roles; FEMA 2480 gives camphor/lemon profile.",
+      "verified_date": "2026-10-27",
+      "eligibility": "Unchanged parent centrally administered, assayed or mechanistically studied; exclude derivatives, scaffold libraries, extracts-only and solvent-only papers.",
+      "supporting_urls": [
+        "https://www.femaflavor.org/flavor-library/fenchyl-alcohol"
+      ],
+      "identity_note": "Use CAS and study stereochemistry; do not collapse every fenchol stereoisomer or substitute fenchone."
+    },
+    {
+      "name": "estragole",
+      "cas_as_source": "140-67-0",
+      "exact_parent_synonyms": [
+        "estragole",
+        "methyl chavicol",
+        "chavicol methyl ether",
+        "p-allylanisole",
+        "4-allylanisole"
+      ],
+      "source_url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=ESTRAGOLE&set=FoodSubstances",
+      "source_authority": "US FDA Substances Added to Food",
+      "verified_use": "flavoring agent or adjuvant; fragrance ingredient",
+      "membership_evidence": "FDA records explicit flavoring use; PubChem carries NTP anise odor and IFRA fragrance identity.",
+      "verified_date": "2026-10-27",
+      "eligibility": "Unchanged parent centrally administered, assayed or mechanistically studied; exclude derivatives, scaffold libraries, extracts-only and solvent-only papers.",
+      "supporting_urls": [
+        "https://pubchem.ncbi.nlm.nih.gov/compound/Estragole",
+        "https://www.femaflavor.org/sites/default/files/2024-05/gras31.pdf"
+      ],
+      "regulatory_note": "FEMA GRAS 31 (2024), pp. 50-51, removes estragole added as such from FEMA GRAS pending additional data. Include as established parent aroma chemical, never present as currently FEMA GRAS."
+    },
+    {
+      "name": "methyl eugenol",
+      "cas_as_source": "93-15-2",
+      "exact_parent_synonyms": [
+        "methyl eugenol",
+        "methyleugenol",
+        "eugenol methyl ether",
+        "eugenyl methyl ether",
+        "4-allylveratrole"
+      ],
+      "source_url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=EUGENYLMETHYLETHER&set=FoodSubstances",
+      "source_authority": "US FDA Substances Added to Food; US NTP",
+      "verified_use": "historical flavoring; fragrance ingredient",
+      "membership_evidence": "NTP TR-491 explicitly documents parent use as both flavor and fragrance; FDA provides the identity and no-longer-FEMA-GRAS status.",
+      "verified_date": "2026-10-27",
+      "eligibility": "Unchanged parent centrally administered, assayed or mechanistically studied; exclude derivatives, scaffold libraries, extracts-only and solvent-only papers.",
+      "supporting_urls": [
+        "https://ntp.niehs.nih.gov/data/tables/tr/400s/tr491",
+        "https://pubchem.ncbi.nlm.nih.gov/compound/Methyleugenol"
+      ],
+      "regulatory_note": "FDA record says NLFG-2475; no longer FEMA GRAS (GRAS 28, 2018). Historical aroma membership is not current authorization.",
+      "identity_note": "Distinct from isoeugenyl methyl ether / methyl isoeugenol and eugenol."
+    },
+    {
+      "name": "cuminaldehyde",
+      "cas_as_source": "122-03-2",
+      "exact_parent_synonyms": [
+        "cuminaldehyde",
+        "cuminic aldehyde",
+        "cuminal",
+        "cumaldehyde",
+        "p-isopropylbenzaldehyde",
+        "4-isopropylbenzaldehyde"
+      ],
+      "source_url": "https://www.femaflavor.org/flavor-library/cuminaldehyde",
+      "source_authority": "FEMA Flavor Ingredient Library",
+      "verified_use": "flavor ingredient",
+      "membership_evidence": "FEMA 2341 identifies the parent and a green/herbal/sharp profile; FEMA GRAS 3 supplies short parent synonyms.",
+      "verified_date": "2026-10-27",
+      "eligibility": "Unchanged parent centrally administered, assayed or mechanistically studied; exclude derivatives, scaffold libraries, extracts-only and solvent-only papers.",
+      "supporting_urls": [
+        "https://www.femaflavor.org/sites/default/files/GRAS3.pdf",
+        "https://pubchem.ncbi.nlm.nih.gov/compound/Cuminaldehyde"
+      ]
+    },
+    {
+      "name": "methyl anthranilate",
+      "cas_as_source": "134-20-3",
+      "exact_parent_synonyms": [
+        "methyl anthranilate",
+        "methylanthranilate",
+        "methyl 2-aminobenzoate",
+        "methyl o-aminobenzoate"
+      ],
+      "source_url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=METHYLANTHRANILATE&set=FoodSubstances",
+      "source_authority": "US FDA Substances Added to Food",
+      "verified_use": "flavoring agent or adjuvant; also solvent or vehicle",
+      "membership_evidence": "FDA records explicit flavoring role; FEMA 2682 describes flower/honey/peach profile.",
+      "verified_date": "2026-10-27",
+      "eligibility": "Unchanged parent centrally administered, assayed or mechanistically studied; exclude derivatives, scaffold libraries, extracts-only and solvent-only papers.",
+      "supporting_urls": [
+        "https://www.femaflavor.org/flavor-library/methyl-anthranilate"
+      ],
+      "identity_note": "Exclude solvent-only use. Do not transfer membership to anthranilate derivative libraries or N-methylanthranilate."
+    },
+    {
+      "name": "benzyl salicylate",
+      "cas_as_source": "118-58-1",
+      "exact_parent_synonyms": [
+        "benzyl salicylate",
+        "benzyl 2-hydroxybenzoate",
+        "salicylic acid benzyl ester"
+      ],
+      "source_url": "https://www.femaflavor.org/flavor-library/benzyl-salicylate",
+      "source_authority": "FEMA Flavor Ingredient Library; US FDA",
+      "verified_use": "flavor ingredient; fragrance ingredient",
+      "membership_evidence": "FEMA 2151 gives a honey profile; FDA Allergens in Cosmetics explicitly lists benzyl salicylate among fragrance ingredients.",
+      "verified_date": "2026-10-27",
+      "eligibility": "Unchanged parent centrally administered, assayed or mechanistically studied; exclude derivatives, scaffold libraries, extracts-only and solvent-only papers.",
+      "supporting_urls": [
+        "https://www.fda.gov/cosmetics/cosmetic-ingredients/allergens-cosmetics",
+        "https://precision.fda.gov/uniisearch/srs/unii/WAO5MNK9TU"
+      ],
+      "identity_note": "Only this unchanged parent; not generic salicylate chemistry."
+    },
+    {
+      "name": "alpha-santalol",
+      "cas_as_source": "115-71-9",
+      "exact_parent_synonyms": [
+        "alpha-santalol",
+        "alpha santalol",
+        "α-santalol",
+        "(Z)-alpha-santalol",
+        "santalol A"
+      ],
+      "source_url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=SANTALOLALPHA&set=FoodSubstances",
+      "source_authority": "US FDA Substances Added to Food",
+      "verified_use": "flavoring agent or adjuvant",
+      "membership_evidence": "Individual FDA alpha-santalol record explicitly records flavoring use and identity.",
+      "verified_date": "2026-10-27",
+      "eligibility": "Unchanged parent centrally administered, assayed or mechanistically studied; exclude derivatives, scaffold libraries, extracts-only and solvent-only papers.",
+      "supporting_urls": [
+        "https://pubchem.ncbi.nlm.nih.gov/compound/Santalol%20A"
+      ],
+      "identity_note": "Generic santalol CAS 11031-45-1 is an alpha/beta mixture (PubChem reference collection). Do not map it automatically to alpha-santalol; beta-santalol is distinct and not independently verified in this file."
+    },
+    {
+      "name": "safrole",
+      "cas_as_source": "94-59-7",
+      "exact_parent_synonyms": [
+        "safrole",
+        "5-(2-propenyl)-1,3-benzodioxole"
+      ],
+      "source_url": "https://ntp.niehs.nih.gov/sites/default/files/ntp/roc/content/profiles/safrole.pdf",
+      "source_authority": "US NTP Report on Carcinogens, 15th edition",
+      "verified_use": "historical flavoring agent; perfume use",
+      "membership_evidence": "NTP gives sassafras odor and documents historical flavoring of drugs and use in perfumes/soaps.",
+      "verified_date": "2026-10-27",
+      "eligibility": "Unchanged parent centrally administered, assayed or mechanistically studied; exclude derivatives, scaffold libraries, extracts-only and solvent-only papers.",
+      "regulatory_note": "NTP explicitly states direct food addition/use as human food is prohibited in the US. Historical odorant membership only; no safety or authorization inference.",
+      "identity_note": "Distinct from isosafrole and piperonyl butoxide; derivatives and manufacturing-only papers are not eligible."
+    },
+    {
+      "name": "p-cymene",
+      "cas_as_source": "99-87-6",
+      "exact_parent_synonyms": [
+        "p-cymene",
+        "para-cymene"
+      ],
+      "source_url": "https://www.femaflavor.org/flavor-library/p-cymene",
+      "source_authority": "FEMA Flavor Ingredient Library",
+      "verified_use": "flavor ingredient",
+      "membership_evidence": "FEMA 2356 identifies p-cymene and a fresh/citrus flavor profile.",
+      "verified_date": "2026-10-27",
+      "eligibility": "Unchanged parent centrally administered, assayed or mechanistically studied; exclude derivatives, scaffold libraries, extracts-only and solvent-only papers.",
+      "identity_note": "Distinct from o-cymene, m-cymene and p-cymen-8-ol. Exclude solvent-only papers."
+    }
+  ],
+  "unresolved_or_nonqualifying_identity_terms": [
+    {
+      "term": "caryophyllene",
+      "reason": "Generic name can be ambiguous; match beta identity only with evidence, never humulene or oxide by substring."
+    },
+    {
+      "term": "fenchone",
+      "reason": "Unspecified enantiomer; d and l entries are documented independently. A paper may be screened but cannot be assigned to one enantiomer by name alone."
+    },
+    {
+      "term": "santalol",
+      "cas": "11031-45-1",
+      "reason": "Generic alpha/beta mixture is not a discrete identity; alpha entry verified separately. Do not count generic and alpha as additional molecules.",
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/Santalol"
+    },
+    {
+      "term": "beta-santalol",
+      "reason": "Not independently source-verified for flavor/fragrance membership in this pass; no automatic addition."
+    }
+  ],
+  "notes": [
+    "This new file supplements existing allowlists; it is not a cumulative replacement.",
+    "16 verified entries represent the requested 15 labels with d/l-fenchone split and generic santalol restricted to alpha-santalol.",
+    "Identity, flavor/fragrance membership, present authorization, and paper relevance are different assertions.",
+    "Keep exact parent matching, central pharmacology/toxicology evidence and derivative/extract/solvent exclusions. Never count candidates as accepted studies or widen to meet numerical targets."
+  ],
+  "adopted_date": "2026-10-27",
+  "adoption_note": "Verified parent aroma identities adopted for central-parent pharmacology/toxicology, production and explicitly named volatility/partition-property discovery. Historical flavor roles do not imply current authorization. Original proposal preserved separately."
+}

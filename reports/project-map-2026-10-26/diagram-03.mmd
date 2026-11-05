@@ -1,0 +1,22 @@
+flowchart LR
+  S["Canonical isomeric SMILES"] --> T["Transport<br/>MW · logP · TPSA · rings · flexibility"]
+  S --> HB["Hydrogen bonding<br/>typed donors/acceptors · PEOE/VSA"]
+  S --> O["Osmophores<br/>35 functional-group SMARTS counts"]
+  S --> SH["Chain and shape<br/>branching · length bases · topology · stereo"]
+  S --> P["2D pharmacophore<br/>1,024 folded Gobbi counts"]
+  S --> FP["Fingerprint anchor<br/>chiral Morgan r2 + MACCS"]
+  S --> RD["Full RDKit descriptor block<br/>217 columns for tabular members"]
+  S --> U["Optional frozen Uni-Mol2<br/>conformer mean + chirality bits"]
+  T --> SCALE["Fit imputation/scaling on training only"]
+  HB --> SCALE
+  O --> SCALE
+  SH --> SCALE
+  P --> SCALE
+  FP --> SCALE
+  SCALE --> PROJ["Per-block two-layer projection<br/>default width 96"]
+  PROJ --> ORTH["Remove each non-anchor projection's<br/>component parallel to the anchor"]
+  ORTH --> FUSE["Softmax block weights + LayerNorm<br/>soft pairwise overlap penalty during training"]
+  FUSE --> HEAD["Separate task-specific fusion nets<br/>A quality · B1 threshold · B2 Hill parameters"]
+  RD --> TAB["Extra-trees / XGBoost / ridge members"]
+  U --> TAB
+  SCALE --> TAB

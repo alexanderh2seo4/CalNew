@@ -1,0 +1,49 @@
+{
+  "molecular_vectors": {
+    "available": 7129,
+    "checkpoint_sha256": "da27196af09a8c6d089e10b7764b6a716bcc33da227fc118f5b45b0e484585e9",
+    "conformer_seed": 42,
+    "dictionary_sha256": "94135cb9a9198f988de684cb61e2c372882a3bd59b8320effbae704c38057127",
+    "generated_conformers": 1,
+    "rdkit": "2026.03.6",
+    "remove_hydrogens": true,
+    "repository": "dptech/Uni-Mol-Models",
+    "reserved_molecules_scored": false,
+    "retained_conformers": 1,
+    "revision": "9f19c45c718192888a1c8a1c905f69f0755ea502",
+    "sha256": "5b18c90b11a134bbc0d33279736b0cf9ccc0075502309040fc8ebf039a285613",
+    "shape": [
+      7216,
+      513
+    ],
+    "training": "unlabeled molecular pretraining; frozen"
+  },
+  "reserved_holdouts_opened": false,
+  "results": {
+    "abraham": {
+      "inner_cv_pearson": {
+        "explicit_svr": [
+          0.643817208856895,
+          0.6619055574758161,
+          0.6713463866051776
+        ],
+        "rdkit_svr": [
+          0.6555586394777031,
+          0.6508817387581265,
+          0.7076913672512757
+        ],
+        "tanimoto_gp": [
+          0.5826231528007323,
+          0.6388696457575384,
+          0.6499610787350207
+        ],
+        "unimol1_svr": [
+          0.39516068299766594,
+          0.4681435768203379,
+          0.505005168345831
+        ]
+      }
+    }
+  },
+  "source_sha256": "153c5fbe25da4823e3589d4e00fd139a9b25cf21f13f5a6c5df793db2a9b3ab2"
+}

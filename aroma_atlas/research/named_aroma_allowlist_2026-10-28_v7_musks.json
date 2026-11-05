@@ -1,0 +1,224 @@
+{
+  "verified_date": "2026-10-28",
+  "status": "Adopted after root exact-identity review, 2026-10-28; generic ambrettolide remains conditional and absent automatic aliases.",
+  "scope": "Five discrete source-verified fragrance musk parent connectivities. New parent production needs explicit aroma/fragrance intent. Specific enantiomer/E-Z composition is not inferred from a generic identity.",
+  "compared_allowlists": [
+    "named_aroma_allowlist_expanded.json",
+    "named_aroma_allowlist_2026-10-27_v2.json",
+    "named_aroma_allowlist_2026-10-27_v4.json",
+    "named_aroma_allowlist_2026-10-27_v5.json",
+    "named_aroma_allowlist_2026-10-28_v6.json"
+  ],
+  "comparison_sha256": {
+    "named_aroma_allowlist_expanded.json": "8d9ed7b13a9a38cad3ad2255060a5025fdc7854ee185f30b18d3b9fd9fd291f3",
+    "named_aroma_allowlist_2026-10-27_v2.json": "a3e3ae561a42387110f697ac3afd6e7b1ceaa0b0ea141c700cbef33c574b52d2",
+    "named_aroma_allowlist_2026-10-27_v4.json": "f086b4fcec0d3d395e7e2eb5d6b4d89f3de3082763d615c98c7f189afe793dd9",
+    "named_aroma_allowlist_2026-10-27_v5.json": "04aedf83dcc47f962191a54ad65a8241c8621c28b94b6a1d701c9c3d75c8a66b",
+    "named_aroma_allowlist_2026-10-28_v6.json": "690188e89940f64f80858e4fb65b10e184781c0684ff0ee80877f9797bf542a8"
+  },
+  "fragrance_source_attribution": "Information derived from the IFRA Fragrance Ingredient Glossary, developed by The International Fragrance Association.",
+  "shared_status_caveat": "Historical fragrance identity, current authorization, concentration restrictions, safety and clinical efficacy are separate claims. Sources here establish the first and preserve limited historical restriction evidence; no current safety or unrestricted-use conclusion is made.",
+  "chemicals": [
+    {
+      "name": "muscone",
+      "cas_as_source": "541-91-3",
+      "exact_parent_synonyms": [
+        "muscone",
+        "muskone",
+        "3-methylcyclopentadecanone",
+        "3-methyl-1-cyclopentadecanone",
+        "3-methylcyclopentadecan-1-one"
+      ],
+      "source_url": "https://ifrafragrance.org/docs/default-source/glossary/ifra-fragrance-ingredient-glossary---april-2020.pdf?sfvrsn=dc0e87ff_2",
+      "source_authority": "International Fragrance Association; Health Canada; NIST Chemistry WebBook",
+      "verified_use": "fragrance ingredient",
+      "membership_evidence": "Official IFRA glossary CAS row uses 3-Methyl-1-cyclopentadecanone (PDF page 34, printed page 23); Health Canada independently maps muskone/muscone to this CAS and fragrance use.",
+      "supporting_urls": [
+        "https://www.canada.ca/en/health-canada/services/chemical-substances/chemicals-management-plan-3-substances/macrocyclic-lactones-ketones-ionones-cyclohexanone-group.html",
+        "https://www.canada.ca/en/environment-climate-change/services/evaluating-existing-substances/screening-assessment-macrocyclic-lactones-ketones-ionones-cyclohexanone-group.html",
+        "https://webbook.nist.gov/cgi/cbook.cgi?ID=C541913"
+      ],
+      "identity_evidence": "NIST gives CAS 541-91-3, formula C16H30O and InChIKey ALHUZKCOMYUFRB-UHFFFAOYSA-N, with the retained methylcyclopentadecanone aliases.",
+      "identity_note": "This is a stereochemically unspecified registry parent; the inspected NIST InChI contains no stereochemical layer. Do not label it inherently enantiopure or infer that unspecified material is necessarily racemic. Explicit R/S or optical rotation must be retained and separately resolved.",
+      "scope_guards": [
+        "Musk gland material, natural musk extracts and multi-component traditional medicines are not unchanged muscone. Separate cyclopentadecanone/exaltone, dehydromuscone and muscone derivatives.",
+        "Omit Moschus ketone and methylexaltone trade labels from automatic aliases; Moschus ketone risks confusion with nitro-aromatic musk ketone CAS 81-14-1.",
+        "No R/S or natural (-)-muscone aliases are automatically collapsed into CAS 541-91-3.",
+        "Only unchanged parent central aroma/perception, administered or assayed pharmacology/toxicology, measured allowed parent physical properties, or production explicitly intended for fragrance/flavor/aroma use can qualify.",
+        "Exclude arbitrary derivatives, amino/oxidative metabolites, polymer conjugates, drug scaffold libraries, generic musk families, solvent/reagent/vehicle/substrate-only roles, uncharacterized mixture assays, insect-only applications and incidental mentions.",
+        "Environmental occurrence, wastewater removal, biomonitoring presence and routine analysis panels alone are not parent pharmacology.",
+        "Preserve actual purity, composition and stereochemistry. A commercial fragrance material name does not establish a pure single parent or an enantiopure test agent."
+      ],
+      "regulatory_note": "No current authorization, dose, safety or clinical efficacy conclusion is made from identity or fragrance membership.",
+      "automatic_adoption": true
+    },
+    {
+      "name": "musk ketone",
+      "cas_as_source": "81-14-1",
+      "exact_parent_synonyms": [
+        "musk ketone",
+        "4-tert-butyl-2,6-dimethyl-3,5-dinitroacetophenone",
+        "4-tert-butyl-3,5-dinitro-2,6-dimethylacetophenone",
+        "1-[4-(1,1-dimethylethyl)-2,6-dimethyl-3,5-dinitrophenyl]ethanone"
+      ],
+      "source_url": "https://ifrafragrance.org/docs/default-source/glossary/ifra-fragrance-ingredient-glossary---april-2020.pdf?sfvrsn=dc0e87ff_2",
+      "source_authority": "International Fragrance Association; Health Canada; European Commission; NIST Chemistry WebBook",
+      "verified_use": "established nitromusk fragrance ingredient, subject to historical use conditions/restrictions",
+      "membership_evidence": "Official IFRA glossary explicitly lists musk ketone CAS 81-14-1 (PDF page 88, printed page 77). The European Commission opinion independently states fragrance use and CAS.",
+      "supporting_urls": [
+        "https://www.canada.ca/en/environment-climate-change/services/evaluating-existing-substances/screening-assessment-nitro-musks-group.html",
+        "https://health.ec.europa.eu/other-pages/health-sc-basic-page/opinion-scientific-committee-cosmetic-products-and-non-food-products-intended-consumers-concerning_en",
+        "https://webbook.nist.gov/cgi/cbook.cgi?ID=81-14-1"
+      ],
+      "identity_evidence": "NIST provides CAS 81-14-1, C14H18N2O5 and InChIKey WXCMHFPAUCOJIG-UHFFFAOYSA-N with exact acetophenone aliases. Health Canada supplies the same registry identity.",
+      "identity_note": "This is the discrete nitro-aromatic parent, distinct from macrocyclic muscone and other nitromusks. No defined configurational stereochemistry is assigned by the inspected identity record.",
+      "scope_guards": [
+        "No bare MK abbreviation, generic ketone musk, nitromusk family or acetophenone scaffold matching. Exclude amino-musk ketone and other reduction/oxidation products; they are different substances.",
+        "Nitro-aromatic ingredient membership does not justify substituted acetophenone drug chemistry.",
+        "Only unchanged parent central aroma/perception, administered or assayed pharmacology/toxicology, measured allowed parent physical properties, or production explicitly intended for fragrance/flavor/aroma use can qualify.",
+        "Exclude arbitrary derivatives, amino/oxidative metabolites, polymer conjugates, drug scaffold libraries, generic musk families, solvent/reagent/vehicle/substrate-only roles, uncharacterized mixture assays, insect-only applications and incidental mentions.",
+        "Environmental occurrence, wastewater removal, biomonitoring presence and routine analysis panels alone are not parent pharmacology.",
+        "Preserve actual purity, composition and stereochemistry. A commercial fragrance material name does not establish a pure single parent or an enantiopure test agent."
+      ],
+      "regulatory_note": "The historical European committee opinion attaches conditions and excludes oral care products. Health Canada notes restrictions/bans in some jurisdictions. These historical statements are not a determination of contemporary permitted uses or safety.",
+      "automatic_adoption": true
+    },
+    {
+      "name": "musk xylene",
+      "cas_as_source": "81-15-2",
+      "exact_parent_synonyms": [
+        "musk xylene",
+        "musk xylol",
+        "1-tert-butyl-3,5-dimethyl-2,4,6-trinitrobenzene",
+        "5-tert-butyl-2,4,6-trinitro-m-xylene"
+      ],
+      "source_url": "https://www.canada.ca/en/environment-climate-change/services/evaluating-existing-substances/screening-assessment-nitro-musks-group.html",
+      "source_authority": "Health Canada and Environment and Climate Change Canada; historical IFRA prohibition record",
+      "verified_use": "historical synthetic fragrance ingredient; restriction/prohibition evidence preserved",
+      "membership_evidence": "The 2020 final Canadian screening assessment explicitly maps CAS 81-15-2 to musk xylene and fragrance use. No row was found in the inspected April 2020 IFRA glossary.",
+      "supporting_urls": [
+        "https://ifrafragrance.org/standards/IFRA_STD48_0107.pdf",
+        "https://ifrafragrance.org/docs/default-source/ifra-code-of-practice-and-standards/ifra-standards---50th-amendment/ifra-50th-amendment-%28att-03%29---index-of-ifra-standards-june-30-2021.pdf?sfvrsn=8585e1ce_6"
+      ],
+      "identity_evidence": "Canadian final assessment gives the discrete trinitrobenzene identity, CAS 81-15-2, formula C12H15N3O6 and the 5-tert-butyl-2,4,6-trinitro-m-xylene structural name in its EU risk-assessment references.",
+      "identity_note": "Achiral discrete nitro-aromatic parent. Do not confuse with xylene solvents, musk ketone, musk ambrette, musk moskene or musk tibetene.",
+      "scope_guards": [
+        "No bare MX, musk or nitromusk aliases. Exclude 2-/4-amino musk xylene, other metabolites, environmental removal/occurrence panels and generic xylene toxicology.",
+        "Only unchanged parent central aroma/perception, administered or assayed pharmacology/toxicology, measured allowed parent physical properties, or production explicitly intended for fragrance/flavor/aroma use can qualify.",
+        "Exclude arbitrary derivatives, amino/oxidative metabolites, polymer conjugates, drug scaffold libraries, generic musk families, solvent/reagent/vehicle/substrate-only roles, uncharacterized mixture assays, insect-only applications and incidental mentions.",
+        "Environmental occurrence, wastewater removal, biomonitoring presence and routine analysis panels alone are not parent pharmacology.",
+        "Preserve actual purity, composition and stereochemistry. A commercial fragrance material name does not establish a pure single parent or an enantiopure test agent."
+      ],
+      "regulatory_note": "Canada documents EU SVHC/vPvB and REACH Annex XIV authorization context. The official IFRA indexed standard and 2021 index identify a prohibition dating to 2009. The full historical standard returned 403 and the index timed out on direct open; indexed evidence is recorded with that limitation. No present unrestricted-use or safety claim is made.",
+      "regulatory_source_limitations": [
+        "Historical IFRA standard indexed synonyms contain apparent musk-ketone cross-contamination; no acetophenone/ethanone alias was imported from it. Government structure/CAS controls musk-xylene identity."
+      ],
+      "automatic_adoption": true
+    },
+    {
+      "name": "omega-pentadecalactone",
+      "cas_as_source": "106-02-5",
+      "exact_parent_synonyms": [
+        "omega-pentadecalactone",
+        "ω-pentadecalactone",
+        "pentadecalactone",
+        "pentadecanolide",
+        "pentadecan-15-olide",
+        "oxacyclohexadecan-2-one",
+        "cyclopentadecanolide",
+        "exaltolide"
+      ],
+      "source_url": "https://www.femaflavor.org/flavor-library/omega-pentadecalactone",
+      "source_authority": "FEMA Flavor Ingredient Library; International Fragrance Association; FDA GSRS; Health Canada",
+      "verified_use": "fragrance ingredient; independently documented flavor ingredient",
+      "membership_evidence": "FEMA 2840 identifies CAS 106-02-5. Official IFRA glossary independently lists omega-Pentadecalactone (PDF page 92, printed page 81).",
+      "supporting_urls": [
+        "https://ifrafragrance.org/docs/default-source/glossary/ifra-fragrance-ingredient-glossary---april-2020.pdf?sfvrsn=dc0e87ff_2",
+        "https://precision.fda.gov/uniisearch/srs/unii/OK17S3S98K",
+        "https://www.canada.ca/en/health-canada/services/chemical-substances/chemicals-management-plan-3-substances/macrocyclic-lactones-ketones-ionones-cyclohexanone-group.html",
+        "https://www.canada.ca/en/environment-climate-change/services/evaluating-existing-substances/screening-assessment-macrocyclic-lactones-ketones-ionones-cyclohexanone-group.html"
+      ],
+      "identity_evidence": "FDA GSRS UNII OK17S3S98K maps CAS 106-02-5, Exaltolide, pentadecan-15-olide and oxacyclohexadecan-2-one; formula C15H28O2 and InChIKey FKUPPRZPSYCDRS-UHFFFAOYSA-N.",
+      "identity_note": "Achiral saturated macrocyclic lactone. CAS 106-02-5 has fifteen carbon atoms and a sixteen-membered lactone ring. It is distinct from already adopted hexadecanolactone/hexadecanolide CAS 109-29-5, whose ring includes one extra carbon.",
+      "scope_guards": [
+        "Bare Exaltolide is retained only as the conventional chemical parent name supported by government identity records. Exaltolide Total, diluted commercial grades, branded formulations or blends require their actual composition and cannot be treated as pure CAS 106-02-5 by name alone.",
+        "Omit ambiguous Angelica lactone, generic macrolide and musk lactone aliases; do not merge pentadecanone/exaltone, pentadecenolides, hexadecanolide or polymers/ring-opening products.",
+        "Only unchanged parent central aroma/perception, administered or assayed pharmacology/toxicology, measured allowed parent physical properties, or production explicitly intended for fragrance/flavor/aroma use can qualify.",
+        "Exclude arbitrary derivatives, amino/oxidative metabolites, polymer conjugates, drug scaffold libraries, generic musk families, solvent/reagent/vehicle/substrate-only roles, uncharacterized mixture assays, insect-only applications and incidental mentions.",
+        "Environmental occurrence, wastewater removal, biomonitoring presence and routine analysis panels alone are not parent pharmacology.",
+        "Preserve actual purity, composition and stereochemistry. A commercial fragrance material name does not establish a pure single parent or an enantiopure test agent."
+      ],
+      "regulatory_note": "FDA UNII identity and FEMA membership do not imply regulatory review/approval, unrestricted use or safety.",
+      "automatic_adoption": true
+    },
+    {
+      "name": "omega-6-hexadecenlactone",
+      "cas_as_source": "7779-50-2",
+      "exact_parent_synonyms": [
+        "omega-6-hexadecenlactone",
+        "ω-6-hexadecenlactone",
+        "oxacycloheptadec-7-en-2-one",
+        "1-oxa-7-cycloheptadecen-2-one",
+        "6-hexadecenolide",
+        "hexadec-6-eno-1,16-lactone"
+      ],
+      "conditional_parent_labels": [
+        {
+          "label": "ambrettolide",
+          "requirement": "CAS 7779-50-2 or an unambiguous 7-en lactone structural name must corroborate the label; bare label cannot trigger automatic admission."
+        }
+      ],
+      "source_url": "https://hfpappexternal.fda.gov/Scripts/Fdcc/index.cfm?id=HEXADECENLACTONE&set=FoodSubstances",
+      "source_authority": "US FDA Substances Added to Food; Health Canada NHPID and final assessment; International Fragrance Association",
+      "verified_use": "fragrance ingredient; flavoring agent or adjuvant",
+      "membership_evidence": "FDA records CAS 7779-50-2 and FEMA 2555. Official IFRA glossary explicitly lists omega-6-Hexadecenlactone at that CAS (PDF page 92, printed page 81). Health Canada independently maps Ambrettolide to the 7-en lactone.",
+      "supporting_urls": [
+        "https://ifrafragrance.org/docs/default-source/glossary/ifra-fragrance-ingredient-glossary---april-2020.pdf?sfvrsn=dc0e87ff_2",
+        "https://webprod.hc-sc.gc.ca/nhpid-bdipsn/ingredReq?id=17321&lang=eng&wbdisable=true",
+        "https://www.canada.ca/en/health-canada/services/chemical-substances/chemicals-management-plan-3-substances/macrocyclic-lactones-ketones-ionones-cyclohexanone-group.html",
+        "https://www.canada.ca/en/environment-climate-change/services/evaluating-existing-substances/screening-assessment-macrocyclic-lactones-ketones-ionones-cyclohexanone-group.html"
+      ],
+      "identity_evidence": "FDA supplies oxacycloheptadec-7-en-2-one and related exact structural aliases; NHPID supplies hexadec-6-eno-1,16-lactone. Health Canada separately identifies isoambrettolide CAS 28645-51-4 as oxacycloheptadec-10-en-2-one.",
+      "identity_note": "This proposal identifies the generic 7-en lactone connectivity only. The inspected ingredient records do not settle E/Z composition; no E/Z-specific alias or effect equivalence is asserted. Preserve reported geometric composition and purity, and defer unresolvable commercial ambrettolide mixtures.",
+      "scope_guards": [
+        "Bare ambrettolide is excluded from exact_parent_synonyms. Commercial nomenclature cannot override CAS and bond position. Do not merge isoambrettolide CAS 28645-51-4, positional/geometric isomer blends, saturated hexadecanolide CAS 109-29-5, ambrettol, musk ambrette or ambrette seed extracts.",
+        "FDA delta6-isoambrettolide aliases are omitted from automatic matching because isoambrettolide without exact delta6/CAS corroboration is ambiguous.",
+        "Only unchanged parent central aroma/perception, administered or assayed pharmacology/toxicology, measured allowed parent physical properties, or production explicitly intended for fragrance/flavor/aroma use can qualify.",
+        "Exclude arbitrary derivatives, amino/oxidative metabolites, polymer conjugates, drug scaffold libraries, generic musk families, solvent/reagent/vehicle/substrate-only roles, uncharacterized mixture assays, insect-only applications and incidental mentions.",
+        "Environmental occurrence, wastewater removal, biomonitoring presence and routine analysis panels alone are not parent pharmacology.",
+        "Preserve actual purity, composition and stereochemistry. A commercial fragrance material name does not establish a pure single parent or an enantiopure test agent."
+      ],
+      "regulatory_note": "This verifies ingredient identity and use only, not present authorization or safety. E/Z-specific parent membership remains unresolved by this bounded pass.",
+      "automatic_adoption": true
+    }
+  ],
+  "deferred_terms": [
+    {
+      "term": "bare commercial ambrettolide / ambrettolide isomer mixtures",
+      "reason": "The 7-en lactone CAS 7779-50-2 is independently resolved, but commercial label alone cannot settle positional identity, E/Z ratio or mixture composition. Require exact CAS/structure and preserve test composition."
+    },
+    {
+      "term": "enantiopure natural muscone versus generic muscone CAS 541-91-3",
+      "reason": "The generic source record does not prove a specific R/S or rotation assignment; no extra enantiomer CAS or optical label is automatically added."
+    },
+    {
+      "term": "additional musk families and mixtures",
+      "reason": "No musk extracts, generic musks, polycyclic musk mixtures or unrelated drug derivatives inherit these entries."
+    }
+  ],
+  "source_access_notes": [
+    "Four proposed identities have explicit CAS/name rows in the inspected April 2020 IFRA glossary. Musk xylene was not found there; its historical fragrance identity is independently explicit in the Canadian final assessment.",
+    "Government nitromusk identity takes precedence over apparent copied acetophenone synonyms in the indexed historical IFRA musk-xylene standard.",
+    "Some guessed FEMA/NIST routes were inaccessible. Only opened source contents or explicitly marked official indexed evidence are used; no supplier evidence establishes membership."
+  ],
+  "review_and_adoption_requirements": [
+    "Proposal only. Root must review identities and role/stereochemistry guards before any separate adoption.",
+    "Use longest complete parent matches and exclude derivative/polymer/auxiliary-role contexts. CAS-level ingredient membership does not itself admit a paper.",
+    "All five CAS identities are absent from the inspected adopted/candidate lists. Existing hexadecanolide CAS 109-29-5 is preserved as a different parent.",
+    "Only this new proposal JSON was written; no paper counts or efficacy conclusions were generated."
+  ],
+  "proposal_source": {
+    "path": "research/additional_musk_parents_proposal_2026-10-28.json",
+    "sha256": "b833130ecf4ab19023fd6720481ee092c507e996c78b2185300100f0fdd887c6"
+  }
+}

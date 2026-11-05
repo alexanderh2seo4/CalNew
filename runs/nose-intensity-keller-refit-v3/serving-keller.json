@@ -1,0 +1,10 @@
+{
+  "artifact_sha256": "2604aa815ad95e3311281cbb124caf73dc1eb7d3964d0c647688b10042733679",
+  "descriptor_source_rows": 7000,
+  "monotonicity": "Nondecreasing for all doses, 0\u2013100",
+  "recipe": "blend_dose_semantic",
+  "reserved_holdouts_opened": false,
+  "snapshot": "data\\snapshots\\828751d0a24e8149",
+  "training_molecules": 326,
+  "validated_endpoint": "Keller intensity at nominal paraffin-oil dilution; higher-concentration benchmark and both observed dilutions"
+}

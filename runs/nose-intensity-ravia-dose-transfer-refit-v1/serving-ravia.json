@@ -1,0 +1,22 @@
+{
+  "artifact_sha256": "9d570d8d379c19389123f764fe3e086ed625c72a46838d15ad21297edee905df",
+  "host": "compute-host",
+  "monotonicity": "Single endpoint; reference Keller proxy doses are fixed latent features",
+  "recipe": "blend_proxy_ridge",
+  "reference_log10_doses": [
+    -5.0,
+    -3.0,
+    -1.0
+  ],
+  "reserved_holdouts_opened": false,
+  "snapshot": "data\\snapshots\\828751d0a24e8149",
+  "source_molecules": 326,
+  "source_training_proxy_counts": [
+    301,
+    297,
+    305,
+    326
+  ],
+  "training_molecules": 114,
+  "validated_endpoint": "Ravia published group-mean intensity at each molecule's most concentrated presentation"
+}

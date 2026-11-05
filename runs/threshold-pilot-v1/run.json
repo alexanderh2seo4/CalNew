@@ -1,0 +1,85 @@
+{
+  "identity": {
+    "code_identity": "e36dd5aab39c6fb134366699b2cfde57f46912edb67929c13ac105fb98b73c31",
+    "configuration": {
+      "bootstrap_repeats": 100,
+      "inner_folds": 2,
+      "minimum_positive_labels": 20,
+      "models": [
+        {
+          "C": 0.1,
+          "alpha": 10.0,
+          "estimator": "linear",
+          "family": "classical",
+          "features": "descriptors",
+          "name": "descriptor_linear"
+        },
+        {
+          "estimator": "rf",
+          "family": "classical",
+          "features": "morgan",
+          "min_samples_leaf": 2,
+          "n_estimators": 120,
+          "name": "fingerprint_rf"
+        },
+        {
+          "estimator": "xgb",
+          "family": "classical",
+          "features": "morgan",
+          "max_depth": 4,
+          "n_estimators": 100,
+          "name": "fingerprint_xgb"
+        },
+        {
+          "batch_size": 64,
+          "depth": 3,
+          "dropout": 0.1,
+          "epochs": 15,
+          "family": "graph",
+          "learning_rate": 0.001,
+          "name": "stereo_dmpnn",
+          "width": 128
+        },
+        {
+          "estimator": "gp",
+          "family": "classical",
+          "features": "morgan",
+          "name": "tanimoto_gp",
+          "task": "regression"
+        }
+      ],
+      "name": "public-data-pilot",
+      "organisers": [
+        "mean",
+        "stacking",
+        "gating"
+      ],
+      "outer_folds": 3,
+      "profile": "pilot",
+      "seed": 42,
+      "seeds": [
+        42
+      ],
+      "strategy": "structural",
+      "trials": 1
+    },
+    "dataset_signature": "af53039f4237cf554251e291546612921a0ea2c4ea83af419abd7edef4a668fd",
+    "endpoint": "air_detection_threshold",
+    "snapshot": "/path/to/calnew/data/snapshots/955c3ab05ff9fb7d",
+    "source": "abraham_2012"
+  },
+  "packages": {
+    "chemprop": "2.3.1",
+    "numpy": "2.2.6",
+    "pandas": "3.0.6",
+    "rdkit": "2026.3.6",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "torch": "2.14.0",
+    "transformers": "5.17.0",
+    "unimol-tools": "0.1.6",
+    "xgboost": "3.4.1"
+  },
+  "status": "complete",
+  "test_accessed": false
+}

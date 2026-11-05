@@ -1,0 +1,41 @@
+{
+  "cache_archive_sha256": "fb0efc2274d6e565a7ebb97e20b39a3d848f4f02a68cadcb86b9196096e9fad7",
+  "host": "compute-host",
+  "migrated_cache_files": 6119,
+  "per_molecule_cache_checksums_verified": true,
+  "prediction": {
+    "endpoint": "air_detection_threshold",
+    "evaluation": "Ten original development splits; final reserved holdouts remain closed",
+    "model": "0.5 frozen current-v2 + 0.5 descriptor direction/confidence tree",
+    "molecules": [
+      {
+        "baseline_log10_ppbv": 1.910200401322909,
+        "branch_log10_ppbv": 1.6523911830555547,
+        "log10_ppbv": 1.7812957921892318,
+        "molecule_id": "PPBRXRYQALVLMV-UHFFFAOYSA-N",
+        "ppbv": 60.43601108579766,
+        "smiles": "C=Cc1ccccc1"
+      },
+      {
+        "baseline_log10_ppbv": 1.861153179371535,
+        "branch_log10_ppbv": 1.8906624272222228,
+        "log10_ppbv": 1.875907803296879,
+        "molecule_id": "HVCNXQOWACZAFN-UHFFFAOYSA-N",
+        "ppbv": 75.1463348362771,
+        "smiles": "CCN1CCOCC1"
+      },
+      {
+        "baseline_log10_ppbv": 2.0138330014734214,
+        "branch_log10_ppbv": 2.062253064444444,
+        "log10_ppbv": 2.0380430329589325,
+        "molecule_id": "WOYWLLHHWAMFCB-UHFFFAOYSA-N",
+        "ppbv": 109.15484894098589,
+        "smiles": "CCCCC(CC)COC(C)=O"
+      }
+    ],
+    "run": "runs\\nose-threshold-direction-serving-20261028-v1"
+  },
+  "public_api_feature_parity_max_error": 2.220446049250313e-16,
+  "serialization_parity_max_error": 2.220446049250313e-16,
+  "status": "verified"
+}

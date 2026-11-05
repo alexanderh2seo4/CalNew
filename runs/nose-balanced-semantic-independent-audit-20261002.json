@@ -1,0 +1,182 @@
+{
+  "host": "compute-host",
+  "runs": {
+    "runs/nose-balanced-semantic-grouped-inner-v1": {
+      "folds": [
+        {
+          "fold": 0,
+          "path": "runs\\nose-balanced-semantic-grouped-inner-v1\\keller-repeat-0-fold-0.npz",
+          "repeat": 0,
+          "sha256": "7eba0de68d2945cc5990450b118a168f9fc6d90582043582aa72bae7c1a4c82f"
+        },
+        {
+          "fold": 1,
+          "path": "runs\\nose-balanced-semantic-grouped-inner-v1\\keller-repeat-0-fold-1.npz",
+          "repeat": 0,
+          "sha256": "adec3c3830ad1d94cd86b6ba9af37e3d7cf8623047459a2c0a606f130b8075b9"
+        },
+        {
+          "fold": 2,
+          "path": "runs\\nose-balanced-semantic-grouped-inner-v1\\keller-repeat-0-fold-2.npz",
+          "repeat": 0,
+          "sha256": "ff2c4a6916a041e20f3c497590b39cbe2484d9b97aed1e1e8200dbf852da26b2"
+        },
+        {
+          "fold": 3,
+          "path": "runs\\nose-balanced-semantic-grouped-inner-v1\\keller-repeat-0-fold-3.npz",
+          "repeat": 0,
+          "sha256": "872c81be576e5ed7f9cbed50fb670926d9b69b07c12e08aac2c1848d796dcbfa"
+        },
+        {
+          "fold": 4,
+          "path": "runs\\nose-balanced-semantic-grouped-inner-v1\\keller-repeat-0-fold-4.npz",
+          "repeat": 0,
+          "sha256": "645bdd0dceb2142981ffe52e3a8edeec340aeefcb1247cc67048df49bb481920"
+        },
+        {
+          "fold": 0,
+          "path": "runs\\nose-balanced-semantic-grouped-inner-v1\\keller-repeat-1-fold-0.npz",
+          "repeat": 1,
+          "sha256": "135f5ec1514b3cf45fe2e131bbe20dcb7226333b2752b8d44e26619f3583a1ca"
+        },
+        {
+          "fold": 1,
+          "path": "runs\\nose-balanced-semantic-grouped-inner-v1\\keller-repeat-1-fold-1.npz",
+          "repeat": 1,
+          "sha256": "caa9b382b1563fe759fb1850cc0fcf74a743438bd5c1fd1b25a4e65ccbb99cfd"
+        },
+        {
+          "fold": 2,
+          "path": "runs\\nose-balanced-semantic-grouped-inner-v1\\keller-repeat-1-fold-2.npz",
+          "repeat": 1,
+          "sha256": "d5d8bccb5f508746222d21d61479c546e4d2dc86d55fce84b574faa01d76eb2c"
+        },
+        {
+          "fold": 3,
+          "path": "runs\\nose-balanced-semantic-grouped-inner-v1\\keller-repeat-1-fold-3.npz",
+          "repeat": 1,
+          "sha256": "75b29478d2baff5c161142b84c533e2c7dc5f3ecb255422bf3139f19e1014186"
+        },
+        {
+          "fold": 4,
+          "path": "runs\\nose-balanced-semantic-grouped-inner-v1\\keller-repeat-1-fold-4.npz",
+          "repeat": 1,
+          "sha256": "017b94e9908c3e8e68bd6ee8e5c750e9c1027d619b5164362398162ef7874f17"
+        },
+        {
+          "fold": 0,
+          "path": "runs\\nose-balanced-semantic-grouped-inner-v1\\keller-repeat-2-fold-0.npz",
+          "repeat": 2,
+          "sha256": "c1249a1051722fa1e769b2021fed81b9874fbeb86d83f4b723cecfffdfee9776"
+        },
+        {
+          "fold": 1,
+          "path": "runs\\nose-balanced-semantic-grouped-inner-v1\\keller-repeat-2-fold-1.npz",
+          "repeat": 2,
+          "sha256": "bef950493dab847bb61372d3dd6136adc4bc254bcf67692d2a00fddb53ad0e2e"
+        },
+        {
+          "fold": 2,
+          "path": "runs\\nose-balanced-semantic-grouped-inner-v1\\keller-repeat-2-fold-2.npz",
+          "repeat": 2,
+          "sha256": "05e759ede44f8ceb516ff0d93524e08475a0237b1f0ebfed5693f29b8f8dd89f"
+        },
+        {
+          "fold": 3,
+          "path": "runs\\nose-balanced-semantic-grouped-inner-v1\\keller-repeat-2-fold-3.npz",
+          "repeat": 2,
+          "sha256": "3229459b1465fd6f34c43a067c954ba55e8e62dd7d85c3fb37d33b094a4b5d11"
+        },
+        {
+          "fold": 4,
+          "path": "runs\\nose-balanced-semantic-grouped-inner-v1\\keller-repeat-2-fold-4.npz",
+          "repeat": 2,
+          "sha256": "2de5035e5a983a13929b6c7b250843286fe17af8676aa86333bf3579b6c7963e"
+        }
+      ],
+      "limit": "Verifies saved evidence and source boundary, without recreating source/model fits",
+      "main_test_targets_scored": false,
+      "oof_sha256": "a3ed6290295a6dfb13539a6247e838e81c6182b4eee1cc2b56801c50f49d1618",
+      "passing": [],
+      "reserved_targets_fitted_or_scored": false,
+      "resource_sha256": "36d61dc8b23ea4fbe561c4d2a34e4af317a81bc7cfc6d96406274ae4ee527831",
+      "results_sha256": "4c0dc9a94bb7f97573495c9103d5187a6ab20e3a9ea6027fb8c4ab161ff06c88",
+      "selected": "current",
+      "status": "verified",
+      "summary": {
+        "blend_idf_average": {
+          "mae": {
+            "mean": 8.071587415463105,
+            "sd": 0.05836440668343338
+          },
+          "pearson": {
+            "mean": 0.6987794233966227,
+            "sd": 0.008499113861712818
+          },
+          "rmse": {
+            "mean": 10.147437316448922,
+            "sd": 0.11700962136872031
+          }
+        },
+        "blend_idf_unit": {
+          "mae": {
+            "mean": 8.059775018854738,
+            "sd": 0.04686897861167977
+          },
+          "pearson": {
+            "mean": 0.7019829486631713,
+            "sd": 0.007376531713219092
+          },
+          "rmse": {
+            "mean": 10.10292669545714,
+            "sd": 0.10253974954955877
+          }
+        },
+        "current": {
+          "mae": {
+            "mean": 8.018147113648704,
+            "sd": 0.07780120770388606
+          },
+          "pearson": {
+            "mean": 0.7028185449595092,
+            "sd": 0.009264586112236597
+          },
+          "rmse": {
+            "mean": 10.09183220473095,
+            "sd": 0.12771653685040626
+          }
+        },
+        "idf_average": {
+          "mae": {
+            "mean": 8.181332196433589,
+            "sd": 0.06073823955247495
+          },
+          "pearson": {
+            "mean": 0.689181494410187,
+            "sd": 0.008005023233413264
+          },
+          "rmse": {
+            "mean": 10.280837242788065,
+            "sd": 0.10868492963758712
+          }
+        },
+        "idf_unit": {
+          "mae": {
+            "mean": 8.156196024766544,
+            "sd": 0.033485560410095656
+          },
+          "pearson": {
+            "mean": 0.6946181761240334,
+            "sd": 0.005006169335645622
+          },
+          "rmse": {
+            "mean": 10.20835534778246,
+            "sd": 0.0689399185059089
+          }
+        }
+      },
+      "training_molecules": 260
+    }
+  },
+  "script_sha256": "37e97f170b52cda92ee7958d5fda549336073fc8e6c0af1182a81b1911e79e0b"
+}

@@ -1,0 +1,75 @@
+{
+  "baseline_paths": {
+    "abraham": "runs\\nose-parity-threshold-water-inner-v2",
+    "keller": "runs\\nose-parity-pleasantness-grouped-inner-v2"
+  },
+  "blends": "Each standalone and fixed equal blend with frozen current comparator",
+  "candidates": {
+    "compact_mae": [
+      "compact",
+      "MAE"
+    ],
+    "compact_rmse": [
+      "compact",
+      "RMSE"
+    ],
+    "full_rmse": [
+      "full",
+      "RMSE"
+    ]
+  },
+  "catboost_version": "1.2.8",
+  "code_sha256": "01fedae6f517327a8ba9a9d94f4fc54882c2895683b63a1f2d658a6809e4dd19",
+  "dependencies": {
+    "numpy": "2.2.6",
+    "pandas": "3.0.6",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "rdkit": "2026.3.6",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.17.1",
+    "threadpoolctl": "3.7.0",
+    "torch": "2.14.0",
+    "xgboost": "3.2.0"
+  },
+  "features": {
+    "compact": [
+      "rdkit",
+      "transport",
+      "hbond",
+      "osmophore",
+      "chain"
+    ],
+    "full": [
+      "rdkit",
+      "transport",
+      "hbond",
+      "osmophore",
+      "chain",
+      "fingerprint"
+    ]
+  },
+  "folds": "GroupKFold5 connectivity; repeats100/101/102",
+  "gate": {
+    "mean_pearson_gain_min": 0.01,
+    "no_mean_mae_increase": true,
+    "positive_repeats_min": 2
+  },
+  "host": "compute-host",
+  "main_validation_test_targets_scored": false,
+  "model_parameters": {
+    "allow_writing_files": false,
+    "depth": 4,
+    "iterations": 700,
+    "l2_leaf_reg": 10,
+    "learning_rate": 0.03,
+    "loss_function": "RMSE",
+    "random_seed": 42,
+    "task_type": "CPU",
+    "thread_count": 2,
+    "verbose": false
+  },
+  "reserved_targets_fitted_or_scored": false,
+  "scope": "Original split42 training111/260 only",
+  "source_fits": 0
+}

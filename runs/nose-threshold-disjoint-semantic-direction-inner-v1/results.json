@@ -1,0 +1,565 @@
+{
+  "host": "compute-host",
+  "main_validation_test_targets_scored": false,
+  "reserved_targets_fitted_or_scored": false,
+  "results": {
+    "abraham": {
+      "baseline_checkpoint_evidence": [
+        {
+          "fold": 0,
+          "metadata_sha256": "6eb7ccde79fd3b0d0ec1b8eaa1c9dc21614b5b4499aeefe5de1178b68319365e",
+          "path": "runs\\nose-parity-threshold-water-inner-v2\\abraham-repeat-0-fold-0.npz",
+          "quality_cache_sha256": "978e8892e28c41f49652142e87bb80662b3b8ddbea51ada03d529ad4478d3c73",
+          "repeat": 0,
+          "sha256": "ca1c6e922ae3e637b17c8881351b3ec7907d4f0e4760b725281e521c72bbb5a7",
+          "source_counts": {
+            "water_source_counts": [
+              517,
+              518,
+              521,
+              529
+            ]
+          }
+        },
+        {
+          "fold": 1,
+          "metadata_sha256": "bc46a2061508ef16e314349a10a4650d1d9dbf0f45465aa6824cedd7435a16ee",
+          "path": "runs\\nose-parity-threshold-water-inner-v2\\abraham-repeat-0-fold-1.npz",
+          "quality_cache_sha256": "d59b4c09a3e435fc11a8792dd5c37376369b0b6a41b68cba9bb644aee68e4cba",
+          "repeat": 0,
+          "sha256": "d2baf73b178a25f8880f1dcf002c5bd57d7b359c6f00114c1aaf6e98b0311b4f",
+          "source_counts": {
+            "water_source_counts": [
+              516,
+              514,
+              516,
+              524
+            ]
+          }
+        },
+        {
+          "fold": 2,
+          "metadata_sha256": "16a166ebeb35670c4c75af55687007c41aa418c96d987aad1158d2c38234e528",
+          "path": "runs\\nose-parity-threshold-water-inner-v2\\abraham-repeat-0-fold-2.npz",
+          "quality_cache_sha256": "3d7dfde0c626e1b940c36f28a17842458ee186557147ce67f9aa10665d131404",
+          "repeat": 0,
+          "sha256": "e5ffa419e597ca903b02507bd0f7240274562d1fd02410e4845d7512e3331985",
+          "source_counts": {
+            "water_source_counts": [
+              516,
+              517,
+              517,
+              526
+            ]
+          }
+        },
+        {
+          "fold": 3,
+          "metadata_sha256": "3609a797cd296ddaee552d64d6922a43d012370b849c614fb6b0a3989b77291a",
+          "path": "runs\\nose-parity-threshold-water-inner-v2\\abraham-repeat-0-fold-3.npz",
+          "quality_cache_sha256": "c242cde70e1d184a98fd7e9bf3ba17edb9ea5654f3346bcf8587166e7261f84e",
+          "repeat": 0,
+          "sha256": "59dbe6835c907c5e73e64f4452e9180877539b8c06e783555df08e52038a39c0",
+          "source_counts": {
+            "water_source_counts": [
+              517,
+              517,
+              516,
+              526
+            ]
+          }
+        },
+        {
+          "fold": 4,
+          "metadata_sha256": "f12f22f8f822c0dd3fb098f627ed164f062c0c70dde56c80bf7af585a8711c30",
+          "path": "runs\\nose-parity-threshold-water-inner-v2\\abraham-repeat-0-fold-4.npz",
+          "quality_cache_sha256": "c2c005c6c7da6ccd50c3aa78823fdf333f8736295e50ce0da3ed394bca42b84e",
+          "repeat": 0,
+          "sha256": "6749861ea19d486971a4ded05fdd360667447076d5f581c89422a67b91c6e16a",
+          "source_counts": {
+            "water_source_counts": [
+              519,
+              516,
+              521,
+              529
+            ]
+          }
+        },
+        {
+          "fold": 0,
+          "metadata_sha256": "59eb0818794915b2a9e7199ffb80e0a51eb4ef7510ee5820d713b01a1ca28f6d",
+          "path": "runs\\nose-parity-threshold-water-inner-v2\\abraham-repeat-1-fold-0.npz",
+          "quality_cache_sha256": "70326e969f4d7d31fbaa26f04fd0fa9ac2d8a452d5da8c2ad9fec724d2d7c0f9",
+          "repeat": 1,
+          "sha256": "32d44efa4341f8a5e658389cc9df3552f85cdc13ee73225c0a09e395ba1e1238",
+          "source_counts": {
+            "water_source_counts": [
+              517,
+              517,
+              520,
+              528
+            ]
+          }
+        },
+        {
+          "fold": 1,
+          "metadata_sha256": "e8f7d9fcae1b1cf1cd95fce2c0b0dc6449377448c1187bc8875da49806628349",
+          "path": "runs\\nose-parity-threshold-water-inner-v2\\abraham-repeat-1-fold-1.npz",
+          "quality_cache_sha256": "a5e421935a3a21802629c19a3fb7f39f277d5910b7cf5b619332fafa9ed021e6",
+          "repeat": 1,
+          "sha256": "1749654e2b82ce445eba1cbbaa025529fd83a9918193c340385a3788e5e9a5f5",
+          "source_counts": {
+            "water_source_counts": [
+              516,
+              515,
+              519,
+              526
+            ]
+          }
+        },
+        {
+          "fold": 2,
+          "metadata_sha256": "a47b5629ca70f0744f04d614023afd122d7adb4e22538a31b7bc65712e5b4071",
+          "path": "runs\\nose-parity-threshold-water-inner-v2\\abraham-repeat-1-fold-2.npz",
+          "quality_cache_sha256": "07e799c8f87d5193bdd4d28dd4297b4b5c1ec2ab659ba32360b2d89fe8c3125e",
+          "repeat": 1,
+          "sha256": "76ebd78e98895b0dd765bc5ceaadd66529ab1777a84cc8e9a7e290148038f143",
+          "source_counts": {
+            "water_source_counts": [
+              518,
+              512,
+              516,
+              524
+            ]
+          }
+        },
+        {
+          "fold": 3,
+          "metadata_sha256": "598c81d4c17680e301adc446de16fef2ed5440e6186c830a46c5704fd3d9797b",
+          "path": "runs\\nose-parity-threshold-water-inner-v2\\abraham-repeat-1-fold-3.npz",
+          "quality_cache_sha256": "3ac6223a1727df6b91425de9f93435ece6c127f9654b010d717070b7dd8fb4b0",
+          "repeat": 1,
+          "sha256": "c27be335bc35d9fac44fe61a3c8ae10c799b50e9f5caad1cf71e361f8794b75d",
+          "source_counts": {
+            "water_source_counts": [
+              516,
+              519,
+              519,
+              528
+            ]
+          }
+        },
+        {
+          "fold": 4,
+          "metadata_sha256": "4ac8cf325750b38237a82273cdaa314c2abe73e0ede99d4354b1d3ba3dddffbf",
+          "path": "runs\\nose-parity-threshold-water-inner-v2\\abraham-repeat-1-fold-4.npz",
+          "quality_cache_sha256": "d4c1e3f8c1fbdaec694900fff61dbb3d169e8bd6f5fd4f279bde08330afadac6",
+          "repeat": 1,
+          "sha256": "f3ffe11c9de08a73cd4bc78a2678a1bd9f2c7b0870f4f9ac7da2c05c71ab5776",
+          "source_counts": {
+            "water_source_counts": [
+              520,
+              515,
+              519,
+              528
+            ]
+          }
+        },
+        {
+          "fold": 0,
+          "metadata_sha256": "f96787651839e070dad89d84e1c6b7750e2dd08c5ac4e2461f91bd3b4aff45e9",
+          "path": "runs\\nose-parity-threshold-water-inner-v2\\abraham-repeat-2-fold-0.npz",
+          "quality_cache_sha256": "c98c720cf6f28133ef30ba2fdaa90b58f954022a43f0b016e1a811967d40bab7",
+          "repeat": 2,
+          "sha256": "70e2b6975acb51e50fc3f8a020e86d921a8e708330f4f49d300466c8060f6c14",
+          "source_counts": {
+            "water_source_counts": [
+              515,
+              517,
+              516,
+              525
+            ]
+          }
+        },
+        {
+          "fold": 1,
+          "metadata_sha256": "cd4b21ad45fde6fdf5438746c020ec5cd81d1b50dc41e2e9c3b60dd4a7a98e39",
+          "path": "runs\\nose-parity-threshold-water-inner-v2\\abraham-repeat-2-fold-1.npz",
+          "quality_cache_sha256": "ff87362fbf85222e3ce39b27183954cef7703997954691df1e13512721777f99",
+          "repeat": 2,
+          "sha256": "eb18ee8abc2d819201c0b55eb699a24099afb915f68b950b6fc9e5dd5a61e9a7",
+          "source_counts": {
+            "water_source_counts": [
+              518,
+              520,
+              516,
+              528
+            ]
+          }
+        },
+        {
+          "fold": 2,
+          "metadata_sha256": "7c525708a1ba86ef245aaeab0bc4939bf06216b71dbb7fa331f460d5a0c75cce",
+          "path": "runs\\nose-parity-threshold-water-inner-v2\\abraham-repeat-2-fold-2.npz",
+          "quality_cache_sha256": "ccc2ee974b74f472e2363bfb5bce8a5c9f50bb3390aeb441302c213a450c7ef3",
+          "repeat": 2,
+          "sha256": "f2b0834b68ac5cc6dad3388b9085fcfbfad5a74dcca34d30b5a8c64d50c0e655",
+          "source_counts": {
+            "water_source_counts": [
+              519,
+              517,
+              518,
+              528
+            ]
+          }
+        },
+        {
+          "fold": 3,
+          "metadata_sha256": "294863f0d640470feef28f0ad1f9a6410b516990537cb84497bf91e0bf70d976",
+          "path": "runs\\nose-parity-threshold-water-inner-v2\\abraham-repeat-2-fold-3.npz",
+          "quality_cache_sha256": "2ceb1ba2d46835d3c0128f46210b9d4e27794816703f6ef3e663dc28b450a820",
+          "repeat": 2,
+          "sha256": "d6fc9e358b20ce3a0d785b8ac806d5fb6814105d61f4bf44d28d188094787c36",
+          "source_counts": {
+            "water_source_counts": [
+              515,
+              521,
+              518,
+              528
+            ]
+          }
+        },
+        {
+          "fold": 4,
+          "metadata_sha256": "5bf45efe0d10a2c2c3cf4346b6eaee984dce2dbadb36c3e99f3920acbf6e515c",
+          "path": "runs\\nose-parity-threshold-water-inner-v2\\abraham-repeat-2-fold-4.npz",
+          "quality_cache_sha256": "8157b6f821bdd461e86c92ddf489a4968214050314d691729a92b5ef4bb644ed",
+          "repeat": 2,
+          "sha256": "8048c03af59aba19a5dee6f60856c6a7461fc4ece0cbddd5f58a3650d8dc13d8",
+          "source_counts": {
+            "water_source_counts": [
+              514,
+              518,
+              516,
+              525
+            ]
+          }
+        }
+      ],
+      "baseline_verified_folds": 15,
+      "complete_repeats": [
+        0,
+        1,
+        2
+      ],
+      "gate_evaluated": true,
+      "main_validation_test_targets_scored": false,
+      "observed_at_utc": "2026-10-01T23:41:14.467574+00:00",
+      "passing": [
+        "blend_idf_unit_trees"
+      ],
+      "required_baseline_folds": 15,
+      "reserved_targets_fitted_or_scored": false,
+      "scores": {
+        "blend_idf_average_ridge100": [
+          {
+            "mae": 0.7492141159170248,
+            "pearson": 0.71315600379436,
+            "rmse": 0.952522861346795
+          },
+          {
+            "mae": 0.7562291944688162,
+            "pearson": 0.7138302695371862,
+            "rmse": 0.9498797394502547
+          },
+          {
+            "mae": 0.7467357370634853,
+            "pearson": 0.7232469934579768,
+            "rmse": 0.9409120525651277
+          }
+        ],
+        "blend_idf_average_trees": [
+          {
+            "mae": 0.7395424994989136,
+            "pearson": 0.7170228358898374,
+            "rmse": 0.9487308079719834
+          },
+          {
+            "mae": 0.7136658676221045,
+            "pearson": 0.7520190968799986,
+            "rmse": 0.8979001686131657
+          },
+          {
+            "mae": 0.7226452978963552,
+            "pearson": 0.7326574225464598,
+            "rmse": 0.927424321209637
+          }
+        ],
+        "blend_idf_unit_ridge100": [
+          {
+            "mae": 0.732762900156493,
+            "pearson": 0.7341498402883473,
+            "rmse": 0.9279026149556983
+          },
+          {
+            "mae": 0.742817287459497,
+            "pearson": 0.7415115168583004,
+            "rmse": 0.915633358946457
+          },
+          {
+            "mae": 0.7408482269187707,
+            "pearson": 0.7324843753620099,
+            "rmse": 0.9279682996641011
+          }
+        ],
+        "blend_idf_unit_trees": [
+          {
+            "mae": 0.7268670847206605,
+            "pearson": 0.7296957258064742,
+            "rmse": 0.9330727606384068
+          },
+          {
+            "mae": 0.702897096685998,
+            "pearson": 0.761999039141959,
+            "rmse": 0.8835982972521353
+          },
+          {
+            "mae": 0.7089154015109315,
+            "pearson": 0.7407731763880383,
+            "rmse": 0.9169403708907746
+          }
+        ],
+        "current": [
+          {
+            "mae": 0.7499605496481808,
+            "pearson": 0.721962356521026,
+            "rmse": 0.9608777700194336
+          },
+          {
+            "mae": 0.7278339485582438,
+            "pearson": 0.7549101012869801,
+            "rmse": 0.9072864810967671
+          },
+          {
+            "mae": 0.7359098502874768,
+            "pearson": 0.7218485066169719,
+            "rmse": 0.9585220028549231
+          }
+        ],
+        "idf_average_ridge100": [
+          {
+            "mae": 0.8129346844172287,
+            "pearson": 0.6495006767686052,
+            "rmse": 1.0397946364551456
+          },
+          {
+            "mae": 0.8444954164625895,
+            "pearson": 0.5973620205126001,
+            "rmse": 1.1192730128249861
+          },
+          {
+            "mae": 0.7902518638148276,
+            "pearson": 0.6790704431667899,
+            "rmse": 0.9945749077592244
+          }
+        ],
+        "idf_average_trees": [
+          {
+            "mae": 0.7662711662037033,
+            "pearson": 0.685517833612448,
+            "rmse": 0.9841783225534245
+          },
+          {
+            "mae": 0.7298708233433432,
+            "pearson": 0.7223313070412558,
+            "rmse": 0.9350214804617547
+          },
+          {
+            "mae": 0.7450612368693696,
+            "pearson": 0.7132546117360719,
+            "rmse": 0.9469211172367306
+          }
+        ],
+        "idf_unit_ridge100": [
+          {
+            "mae": 0.779876695498967,
+            "pearson": 0.6860388568576561,
+            "rmse": 0.9869735879063185
+          },
+          {
+            "mae": 0.8222899392537254,
+            "pearson": 0.6549117654168536,
+            "rmse": 1.0364911784063924
+          },
+          {
+            "mae": 0.7925007985734907,
+            "pearson": 0.6947405091243402,
+            "rmse": 0.974557782489958
+          }
+        ],
+        "idf_unit_trees": [
+          {
+            "mae": 0.7441874936436439,
+            "pearson": 0.7084688182953417,
+            "rmse": 0.9529515083710552
+          },
+          {
+            "mae": 0.7095282739339338,
+            "pearson": 0.7419517817999396,
+            "rmse": 0.907083345147102
+          },
+          {
+            "mae": 0.7278559009859862,
+            "pearson": 0.7285806297861593,
+            "rmse": 0.9247137910841889
+          }
+        ]
+      },
+      "scores_for_complete_repeats": {
+        "0": {
+          "blend_idf_average_ridge100": {
+            "mae": 0.7492141159170248,
+            "pearson": 0.71315600379436,
+            "rmse": 0.952522861346795
+          },
+          "blend_idf_average_trees": {
+            "mae": 0.7395424994989136,
+            "pearson": 0.7170228358898374,
+            "rmse": 0.9487308079719834
+          },
+          "blend_idf_unit_ridge100": {
+            "mae": 0.732762900156493,
+            "pearson": 0.7341498402883473,
+            "rmse": 0.9279026149556983
+          },
+          "blend_idf_unit_trees": {
+            "mae": 0.7268670847206605,
+            "pearson": 0.7296957258064742,
+            "rmse": 0.9330727606384068
+          },
+          "current": {
+            "mae": 0.7499605496481808,
+            "pearson": 0.721962356521026,
+            "rmse": 0.9608777700194336
+          },
+          "idf_average_ridge100": {
+            "mae": 0.8129346844172287,
+            "pearson": 0.6495006767686052,
+            "rmse": 1.0397946364551456
+          },
+          "idf_average_trees": {
+            "mae": 0.7662711662037033,
+            "pearson": 0.685517833612448,
+            "rmse": 0.9841783225534245
+          },
+          "idf_unit_ridge100": {
+            "mae": 0.779876695498967,
+            "pearson": 0.6860388568576561,
+            "rmse": 0.9869735879063185
+          },
+          "idf_unit_trees": {
+            "mae": 0.7441874936436439,
+            "pearson": 0.7084688182953417,
+            "rmse": 0.9529515083710552
+          }
+        },
+        "1": {
+          "blend_idf_average_ridge100": {
+            "mae": 0.7562291944688162,
+            "pearson": 0.7138302695371862,
+            "rmse": 0.9498797394502547
+          },
+          "blend_idf_average_trees": {
+            "mae": 0.7136658676221045,
+            "pearson": 0.7520190968799986,
+            "rmse": 0.8979001686131657
+          },
+          "blend_idf_unit_ridge100": {
+            "mae": 0.742817287459497,
+            "pearson": 0.7415115168583004,
+            "rmse": 0.915633358946457
+          },
+          "blend_idf_unit_trees": {
+            "mae": 0.702897096685998,
+            "pearson": 0.761999039141959,
+            "rmse": 0.8835982972521353
+          },
+          "current": {
+            "mae": 0.7278339485582438,
+            "pearson": 0.7549101012869801,
+            "rmse": 0.9072864810967671
+          },
+          "idf_average_ridge100": {
+            "mae": 0.8444954164625895,
+            "pearson": 0.5973620205126001,
+            "rmse": 1.1192730128249861
+          },
+          "idf_average_trees": {
+            "mae": 0.7298708233433432,
+            "pearson": 0.7223313070412558,
+            "rmse": 0.9350214804617547
+          },
+          "idf_unit_ridge100": {
+            "mae": 0.8222899392537254,
+            "pearson": 0.6549117654168536,
+            "rmse": 1.0364911784063924
+          },
+          "idf_unit_trees": {
+            "mae": 0.7095282739339338,
+            "pearson": 0.7419517817999396,
+            "rmse": 0.907083345147102
+          }
+        },
+        "2": {
+          "blend_idf_average_ridge100": {
+            "mae": 0.7467357370634853,
+            "pearson": 0.7232469934579768,
+            "rmse": 0.9409120525651277
+          },
+          "blend_idf_average_trees": {
+            "mae": 0.7226452978963552,
+            "pearson": 0.7326574225464598,
+            "rmse": 0.927424321209637
+          },
+          "blend_idf_unit_ridge100": {
+            "mae": 0.7408482269187707,
+            "pearson": 0.7324843753620099,
+            "rmse": 0.9279682996641011
+          },
+          "blend_idf_unit_trees": {
+            "mae": 0.7089154015109315,
+            "pearson": 0.7407731763880383,
+            "rmse": 0.9169403708907746
+          },
+          "current": {
+            "mae": 0.7359098502874768,
+            "pearson": 0.7218485066169719,
+            "rmse": 0.9585220028549231
+          },
+          "idf_average_ridge100": {
+            "mae": 0.7902518638148276,
+            "pearson": 0.6790704431667899,
+            "rmse": 0.9945749077592244
+          },
+          "idf_average_trees": {
+            "mae": 0.7450612368693696,
+            "pearson": 0.7132546117360719,
+            "rmse": 0.9469211172367306
+          },
+          "idf_unit_ridge100": {
+            "mae": 0.7925007985734907,
+            "pearson": 0.6947405091243402,
+            "rmse": 0.974557782489958
+          },
+          "idf_unit_trees": {
+            "mae": 0.7278559009859862,
+            "pearson": 0.7285806297861593,
+            "rmse": 0.9247137910841889
+          }
+        }
+      },
+      "selected": "blend_idf_unit_trees",
+      "status": "comparison_complete"
+    }
+  }
+}

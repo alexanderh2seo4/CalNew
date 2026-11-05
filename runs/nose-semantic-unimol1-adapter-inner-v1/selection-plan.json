@@ -1,0 +1,19 @@
+{
+  "baseline": "runs/nose-semantic-trees-inner-v2",
+  "candidates": [
+    "structure_semantic",
+    "semantic",
+    "equal v2+structure_semantic",
+    "equal v2+semantic"
+  ],
+  "dataset": "abraham",
+  "encoder": "Fixed 256/128 MLP adapter, 40 epochs; no endpoint-label pretraining",
+  "fold_seeds": [
+    100,
+    101,
+    102
+  ],
+  "promotion": "Mean Pearson gain >=0.01 over nested v2; gain positive in at least two repeats",
+  "repeats": 3,
+  "test_scores_used_for_selection": false
+}

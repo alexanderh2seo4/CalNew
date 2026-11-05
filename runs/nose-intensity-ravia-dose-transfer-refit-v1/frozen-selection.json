@@ -1,0 +1,268 @@
+{
+  "host": "compute-host",
+  "reserved_holdouts_opened": false,
+  "results": {
+    "ravia": {
+      "n": 91,
+      "passing": [
+        "blend_proxy_ridge"
+      ],
+      "scores": {
+        "baseline": [
+          {
+            "mae": 10.551257081460918,
+            "pearson": 0.5878742025206417,
+            "rmse": 13.849444613313917
+          },
+          {
+            "mae": 10.814551773203197,
+            "pearson": 0.5470761523680314,
+            "rmse": 14.341936084005397
+          },
+          {
+            "mae": 10.359870465190737,
+            "pearson": 0.614464369355601,
+            "rmse": 13.50543530392521
+          }
+        ],
+        "blend_dose_augmented": [
+          {
+            "mae": 10.413325125230502,
+            "pearson": 0.5992009363717445,
+            "rmse": 13.708890185581883
+          },
+          {
+            "mae": 10.943788236537834,
+            "pearson": 0.5301574671609636,
+            "rmse": 14.513523149697408
+          },
+          {
+            "mae": 10.306690878397626,
+            "pearson": 0.6427931973338953,
+            "rmse": 13.162461300918816
+          }
+        ],
+        "blend_proxy_ridge": [
+          {
+            "mae": 10.758584894003647,
+            "pearson": 0.6077704016211637,
+            "rmse": 13.637754056269198
+          },
+          {
+            "mae": 10.512724440887817,
+            "pearson": 0.6151768918723454,
+            "rmse": 13.509577358779604
+          },
+          {
+            "mae": 10.195230137141277,
+            "pearson": 0.6697900628540301,
+            "rmse": 12.820982249123238
+          }
+        ],
+        "dose_augmented": [
+          {
+            "mae": 10.79250769143576,
+            "pearson": 0.5715135277189668,
+            "rmse": 14.040543827558054
+          },
+          {
+            "mae": 11.581527662172423,
+            "pearson": 0.46665095056742123,
+            "rmse": 15.231137517536231
+          },
+          {
+            "mae": 10.558474452259775,
+            "pearson": 0.6227800253769393,
+            "rmse": 13.395829346707531
+          }
+        ],
+        "proxy_ridge": [
+          {
+            "mae": 11.373887263142606,
+            "pearson": 0.5501716614423469,
+            "rmse": 14.299269648860589
+          },
+          {
+            "mae": 11.333556007334304,
+            "pearson": 0.5863741129915792,
+            "rmse": 13.869631818219956
+          },
+          {
+            "mae": 10.915941193805127,
+            "pearson": 0.6224325286347442,
+            "rmse": 13.393520388104157
+          }
+        ]
+      },
+      "selected": "blend_proxy_ridge"
+    }
+  },
+  "seconds": 55,
+  "source_audit": [
+    {
+      "fold": 0,
+      "held_connectivity_exclusions": 41,
+      "repeat": 0,
+      "source_molecules_per_fit": [
+        229,
+        229,
+        233,
+        244
+      ]
+    },
+    {
+      "fold": 1,
+      "held_connectivity_exclusions": 41,
+      "repeat": 0,
+      "source_molecules_per_fit": [
+        228,
+        225,
+        228,
+        239
+      ]
+    },
+    {
+      "fold": 2,
+      "held_connectivity_exclusions": 41,
+      "repeat": 0,
+      "source_molecules_per_fit": [
+        229,
+        227,
+        225,
+        239
+      ]
+    },
+    {
+      "fold": 3,
+      "held_connectivity_exclusions": 41,
+      "repeat": 0,
+      "source_molecules_per_fit": [
+        229,
+        228,
+        228,
+        241
+      ]
+    },
+    {
+      "fold": 4,
+      "held_connectivity_exclusions": 41,
+      "repeat": 0,
+      "source_molecules_per_fit": [
+        229,
+        224,
+        230,
+        240
+      ]
+    },
+    {
+      "fold": 0,
+      "held_connectivity_exclusions": 41,
+      "repeat": 1,
+      "source_molecules_per_fit": [
+        225,
+        226,
+        232,
+        240
+      ]
+    },
+    {
+      "fold": 1,
+      "held_connectivity_exclusions": 41,
+      "repeat": 1,
+      "source_molecules_per_fit": [
+        231,
+        227,
+        229,
+        242
+      ]
+    },
+    {
+      "fold": 2,
+      "held_connectivity_exclusions": 41,
+      "repeat": 1,
+      "source_molecules_per_fit": [
+        226,
+        229,
+        232,
+        242
+      ]
+    },
+    {
+      "fold": 3,
+      "held_connectivity_exclusions": 41,
+      "repeat": 1,
+      "source_molecules_per_fit": [
+        229,
+        224,
+        230,
+        240
+      ]
+    },
+    {
+      "fold": 4,
+      "held_connectivity_exclusions": 41,
+      "repeat": 1,
+      "source_molecules_per_fit": [
+        224,
+        226,
+        231,
+        239
+      ]
+    },
+    {
+      "fold": 0,
+      "held_connectivity_exclusions": 41,
+      "repeat": 2,
+      "source_molecules_per_fit": [
+        227,
+        224,
+        228,
+        238
+      ]
+    },
+    {
+      "fold": 1,
+      "held_connectivity_exclusions": 41,
+      "repeat": 2,
+      "source_molecules_per_fit": [
+        231,
+        227,
+        225,
+        240
+      ]
+    },
+    {
+      "fold": 2,
+      "held_connectivity_exclusions": 41,
+      "repeat": 2,
+      "source_molecules_per_fit": [
+        226,
+        228,
+        231,
+        241
+      ]
+    },
+    {
+      "fold": 3,
+      "held_connectivity_exclusions": 41,
+      "repeat": 2,
+      "source_molecules_per_fit": [
+        228,
+        228,
+        233,
+        243
+      ]
+    },
+    {
+      "fold": 4,
+      "held_connectivity_exclusions": 41,
+      "repeat": 2,
+      "source_molecules_per_fit": [
+        229,
+        227,
+        229,
+        241
+      ]
+    }
+  ]
+}

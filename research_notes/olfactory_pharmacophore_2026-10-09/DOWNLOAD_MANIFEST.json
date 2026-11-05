@@ -1,0 +1,123 @@
+{
+  "research_date": "2026-10-09",
+  "timezone": "Europe/Berlin",
+  "note": "Research sources and derived text/render files. OR9Q2 archive matched deposited Zenodo MD5. URLs cited in RESEARCH.md; local calculation source manifest is separate. ORco supplement archive retrieval timed out; no ZIP obtained.",
+  "files": [
+    {
+      "file": "8F76.cif",
+      "bytes": 874156,
+      "sha256": "2c547f8b128239c543bcdb690acdc24ce7ce0e50fcdedaab403621b51c9ac4d9"
+    },
+    {
+      "file": "9W45.cif",
+      "bytes": 865163,
+      "sha256": "f0e142c3aedb0104216d1d36ea7f690f6ef52d4c30f9adbd979036d3259e848f"
+    },
+    {
+      "file": "muguet_s2.zip",
+      "bytes": 135659,
+      "sha256": "5bb20d76f3a4238136bc59d665f255a1de223c70c26f8a7af040295ff894aa8f"
+    },
+    {
+      "file": "olfr73.html",
+      "bytes": 539725,
+      "sha256": "141f3dd5426a4f64d441ca4cfd351b3f744b1540839b14f408dea657c90379c2"
+    },
+    {
+      "file": "or9q2_additional_data.zip",
+      "bytes": 89706706,
+      "sha256": "15e1963d06d2ff759661146453faad2889faba5ea53af7c4093df0af03722c7b"
+    },
+    {
+      "file": "or9q2_selected/LSD_No3.pdb",
+      "bytes": 399676,
+      "sha256": "464bf7211bcdeafcc6167b2d9d952111215c02b124d931b79db25eee46fb1f98"
+    },
+    {
+      "file": "or9q2_selected/LSD_No6.pdb",
+      "bytes": 399676,
+      "sha256": "86dbf76bd7c323af83ecd736fc779ae7c2f89a6baf9e6f38b507698fd1ba04a5"
+    },
+    {
+      "file": "or9q2_selected/LSD_No7.pdb",
+      "bytes": 399672,
+      "sha256": "1b2018b342b495b06ad07f782ebbc255cf3ad0be522fa3c6c1c0d9dc5018aa85"
+    },
+    {
+      "file": "or9q2_selected/SMILES_decoy.txt",
+      "bytes": 12106,
+      "sha256": "ff96fdd16ca6088e5b3c89e89fc6c7aea88940ccaf9a2c5440e49bb0848a9133"
+    },
+    {
+      "file": "or9q2_selected/extract_LSD.py",
+      "bytes": 1090,
+      "sha256": "e90cf46185c64ead623fe168a4411386da5e550bcf36586e14908e40dfdd3cf0"
+    },
+    {
+      "file": "or9q2_selected/initial_structure.pdb",
+      "bytes": 408079,
+      "sha256": "ad6f3c10b6c561904daeb2455a8eb0a53b43e7476468b3088ce4e8b1d1aac3f9"
+    },
+    {
+      "file": "or9q2_selected/production_MD.mdp",
+      "bytes": 1199,
+      "sha256": "790735608047d69c1126e6690ac777fca41b04aad25922260683c5f713a040c5"
+    },
+    {
+      "file": "or9q2_selected/screening_parameter.in",
+      "bytes": 6467,
+      "sha256": "6b0cca8d4d2b0e499b1c3b58877e3cdc6f248ae4007d26f555b5fbe6e26f89d8"
+    },
+    {
+      "file": "or9q2_zenodo_metadata.json",
+      "bytes": 5125,
+      "sha256": "a9b126cec4bddc90e88d403fd3fc9a54baa3b69f9a221f4461342e6ff9a351df"
+    },
+    {
+      "file": "orco.html",
+      "bytes": 134,
+      "sha256": "c996c0469ef05ff6fdd1f7cefbc3f7e109bb21969de42fcf591498a828a7ad5f",
+      "note": "Failed HTTP response retained; use orco_xml.xml for article content."
+    },
+    {
+      "file": "orco.txt",
+      "bytes": 84757,
+      "sha256": "d0ea98c57e2d162000e652b8335a5814c8bf47fce20d67ac489a9898ee1bf887"
+    },
+    {
+      "file": "orco_xml.xml",
+      "bytes": 215789,
+      "sha256": "7febb4089a35d04c79068457558cec14b2ae2448c1bd5d42070c5851935e331c"
+    },
+    {
+      "file": "rose.pdf",
+      "bytes": 667102,
+      "sha256": "5c14319f47e683119ac7412639dfb741be9eab8d7c999a276e9b1b2638ebfc0b"
+    },
+    {
+      "file": "rose.txt",
+      "bytes": 30129,
+      "sha256": "3bd96451d0e5c8b44fbbed0550251adbce30a7dd9e26b3ace9e3b3572a929364"
+    },
+    {
+      "file": "rose_page-4.png",
+      "bytes": 902372,
+      "sha256": "0910ff36130e1c29e8b4a9396590176987753984ee5661253e71a32e14f798ab"
+    },
+    {
+      "file": "slitor25.html",
+      "bytes": 406815,
+      "sha256": "62d638d3dca498e5da8f305a5f5d50f4ed1e9f1e07e03fa7a44721009d2f45ad"
+    },
+    {
+      "file": "slitor25_si.docx",
+      "bytes": 3573018,
+      "sha256": "1dc58383165b39d52aa1cb679364f3676d6190ffbff67b09ed8b574e4986746a"
+    },
+    {
+      "file": "slitor25_si.txt",
+      "bytes": 9756,
+      "sha256": "e7c5044f8b223ab49d72aee7abf0fb465941503ef2287a7a5c444aa8cbabe78e"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "artifact_sha256": "d970bc89f53c36503bd0ca76db548ab8bd4430b26c66c6cc3c3adca10d5fabe5",
+  "reserved_holdouts_opened": false,
+  "snapshot": "data/snapshots/828751d0a24e8149",
+  "training_molecules": 326,
+  "validated_endpoint": "Keller pleasantness at each molecule's higher-concentration stimulus"
+}

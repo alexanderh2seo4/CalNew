@@ -1,0 +1,74 @@
+{
+  "NOSE_reference_reached": false,
+  "artifact_sha256": "dcf43ffa0f454af242c895df6a01d820099d4a5ef675c5296d4bff618581e753",
+  "endpoint": "air_detection_threshold",
+  "host": "compute-host",
+  "original_development_metrics": {
+    "baseline": {
+      "mae": {
+        "mean": 0.7958229852908147,
+        "sd": 0.10850597139154558
+      },
+      "mse": {
+        "mean": 1.092746170216466,
+        "sd": 0.27072296721519684
+      },
+      "pearson": {
+        "mean": 0.7838382165462845,
+        "sd": 0.043272052579366456
+      },
+      "r2": {
+        "mean": 0.5799224133101666,
+        "sd": 0.06074638519291718
+      }
+    },
+    "branch": {
+      "mae": {
+        "mean": 0.7822382893048243,
+        "sd": 0.1327066241275228
+      },
+      "mse": {
+        "mean": 1.0749533644676306,
+        "sd": 0.4008780260180169
+      },
+      "pearson": {
+        "mean": 0.7807796940821269,
+        "sd": 0.0652835903990728
+      },
+      "r2": {
+        "mean": 0.5929098143619103,
+        "sd": 0.10060184871636386
+      }
+    },
+    "selected": {
+      "mae": {
+        "mean": 0.7627673073681748,
+        "sd": 0.12339617039551445
+      },
+      "mse": {
+        "mean": 1.03368306663921,
+        "sd": 0.3376029001228042
+      },
+      "pearson": {
+        "mean": 0.792822745678024,
+        "sd": 0.05317205928975748
+      },
+      "r2": {
+        "mean": 0.6067603710778948,
+        "sd": 0.0801941837720385
+      }
+    }
+  },
+  "paired": {
+    "mae_wins": 9,
+    "mean_mae_change": -0.03305567792263997,
+    "mean_pearson_gain": 0.008984529131739527,
+    "pearson_wins": 8
+  },
+  "reserved_targets_fitted_or_scored": false,
+  "source_held_connectivity_overlap": [],
+  "source_molecules": 6859,
+  "source_parity_max_abs_error": 0.0,
+  "training_molecules": 186,
+  "uncertainty": "No calibrated prospective prediction interval is claimed"
+}

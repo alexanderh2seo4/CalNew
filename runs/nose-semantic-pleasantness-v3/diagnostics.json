@@ -1,0 +1,8 @@
+{
+  "mean_split_mae": {
+    "v2": 7.70864118022251,
+    "v3": 7.622150663881714
+  },
+  "positive_pearson_gain_splits": 10,
+  "split_count": 10
+}

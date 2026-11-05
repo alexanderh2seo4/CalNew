@@ -1,0 +1,31 @@
+{
+  "all_connectivity_groups_disjoint": true,
+  "all_outputs_finite": true,
+  "checkpoint_sha256": "f67c2e848169cbfc739a5e312c5cdea978a126e8b2ad520fbdf227a80edd7ed8",
+  "reused_predictions_per_seed": [
+    130,
+    130,
+    112
+  ],
+  "reused_values_bitwise_unchanged": true,
+  "workers": [
+    {
+      "model_seed": 42,
+      "predictions_sha256": "db65c1216a2a404c8b1a24e017adae12d83b5c7ad02b64185053ffca59f87ccb",
+      "results_sha256": "e1e95fe01ce8967d7650b58d4b4406a3953c6fdaf1a6a99d36a2d9f013b1fdce",
+      "worker": "runs/nose-threshold-grouped-tenfold-seed-42"
+    },
+    {
+      "model_seed": 43,
+      "predictions_sha256": "c0c365a714b565ce95610d4ea5fd2cd5fbbeab1e977f5f36686b770944514ae2",
+      "results_sha256": "c3cdabeb9bdf06948a47d55ca092361271d65d9f0a6f41c2ed75714ed6fabf8a",
+      "worker": "runs/nose-threshold-grouped-tenfold-seed-43"
+    },
+    {
+      "model_seed": 44,
+      "predictions_sha256": "2e4884e4675bd054f3f6fc780170041ebe4d95e38ec1befdb518181225686f4f",
+      "results_sha256": "9b427897b51a96eab8aa8ce5c091f0522fde507b797642e66ee0649f3ad57315",
+      "worker": "runs/nose-threshold-grouped-tenfold-seed-44"
+    }
+  ]
+}

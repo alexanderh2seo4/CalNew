@@ -1,0 +1,20 @@
+{
+  "verified_on": "2026-10-09",
+  "sdf_valid_molecules": 50,
+  "maximum_SDF_vs_JSON_coordinate_rounding_A": 4.9988246532572944e-05,
+  "selected_MMFF_and_rigid_optimizations_converged": 50,
+  "all_rigid_optimizations_converged": 328,
+  "training_only_consensus_sites": 6,
+  "independently_recomputed_pairwise_ROC_AUC": 0.6911764705882353,
+  "source_and_script_manifest_hashes_match": true,
+  "donor_free_A8_confirmed": true,
+  "browser_checks": [
+    "Top5 calculated overlay renders",
+    "Single A8 feature view has no donor markers",
+    "Nonhit overlay includes A19 A20 A21",
+    "Labels default off and controls work",
+    "Screenshot saved; tab retained"
+  ],
+  "browser_export_check": "Save 3D PNG data-URI download event not confirmed by in-app browser; no new JS error. Scientific PNG files verified separately.",
+  "limitations": "45/50 chemical graphs PubChem-confirmed; five manual transcriptions flagged. Reconstruction is not the original Phase hypothesis or receptor pipeline."
+}

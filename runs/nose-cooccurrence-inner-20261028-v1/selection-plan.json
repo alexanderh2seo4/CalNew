@@ -1,0 +1,57 @@
+{
+  "candidate_blends": "Each standalone and fixed half/current",
+  "candidates": {
+    "direction_ridge": [
+      "direction",
+      "ridge"
+    ],
+    "direction_trees": [
+      "direction",
+      "trees"
+    ],
+    "raw_ridge": [
+      "raw",
+      "ridge"
+    ],
+    "raw_trees": [
+      "raw",
+      "trees"
+    ]
+  },
+  "code_sha256": {
+    "C:\\calnew\\scripts\\nose_cooccurrence_refine.py": "ab75908643f62a58deca7f98686c0c07ceda6fef098d5fcb1d1d58f82adf481d",
+    "src\\calnew\\pipeline\\cooccurrence.py": "c2de4ef72b7bb27975e7405e05ef856fd50f55114713be9516b300800d34a4a0"
+  },
+  "dependencies": {
+    "numpy": "2.2.6",
+    "pandas": "3.0.6",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "rdkit": "2026.3.6",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.17.1",
+    "threadpoolctl": "3.7.0",
+    "torch": "2.14.0",
+    "xgboost": "3.2.0"
+  },
+  "gate": {
+    "mean_pearson_gain_min": 0.01,
+    "no_mean_mae_increase": true,
+    "positive_repeats_min": 2
+  },
+  "heads": {
+    "ridge": "Training-fold median/scale/Ridge100 on EXPLICIT_BLOCKS+latent",
+    "trees": "ET500 leaf2 maxfeatures.3 seed42 on SEMANTIC_BASE+latent"
+  },
+  "host": "compute-host",
+  "main_validation_test_targets_scored": false,
+  "reserved_targets_fitted_or_scored": false,
+  "source_features": [
+    "rdkit",
+    "fingerprint"
+  ],
+  "source_manifest_sha256": "6cbcc2bb3e5c5fdcf3cb93cfec895bc1268f91624886cdbd9915beb5cd62ee09",
+  "source_recipe": "L2 TF-IDF; SVD64 seed173 n_iter7; standardize64 target axes; ET150 leaf4 maxfeatures.3 seed173",
+  "source_scope": "All reserved groups and ALL primary development connectivities excluded",
+  "training_scope": "Original split42 training111/260 only; 3 repeats GroupKFold5 seeds100..102"
+}

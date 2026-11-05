@@ -1,0 +1,166 @@
+{
+  "allowed_after_reserved_groups": 115,
+  "allowed_observations_sha256": "d1153bf2e885071b4a8ac8da3fe502ff4f869173ac74fb51664841ed98f1e3bf",
+  "ambiguous_cids": {
+    "439570": [
+      "ULDHMXUKGWMISQ-UHFFFAOYSA-N",
+      "ULDHMXUKGWMISQ-SECBINFHSA-N"
+    ],
+    "444539": [
+      "WBYWAXJHAXSJNI-UHFFFAOYSA-N",
+      "WBYWAXJHAXSJNI-VOTSOKGWSA-N"
+    ],
+    "5365027": [
+      "NSSALFVIQPAIQK-UHFFFAOYSA-N",
+      "NSSALFVIQPAIQK-FPLPWBNLSA-N"
+    ],
+    "6106": [
+      "ROHFNLRQFUQHCH-UHFFFAOYSA-N",
+      "ROHFNLRQFUQHCH-YFKPBYRVSA-N"
+    ],
+    "637563": [
+      "RUVINXPYWBROJD-UHFFFAOYSA-N",
+      "RUVINXPYWBROJD-ONEGZZNKSA-N"
+    ],
+    "637566": [
+      "GLZPCOQZEFWAFX-JXMROGBWSA-N",
+      "GLZPCOQZEFWAFX-UHFFFAOYSA-N"
+    ],
+    "638014": [
+      "PSQYTAPXSHCGMF-UHFFFAOYSA-N",
+      "PSQYTAPXSHCGMF-BQYQJAHWSA-N"
+    ],
+    "643820": [
+      "GLZPCOQZEFWAFX-UHFFFAOYSA-N",
+      "GLZPCOQZEFWAFX-YFHOEESVSA-N"
+    ],
+    "82227": [
+      "GRWFGVWFFZKLTI-UHFFFAOYSA-N",
+      "GRWFGVWFFZKLTI-RKDXNWHRSA-N"
+    ]
+  },
+  "candidate_cids": 195,
+  "endpoint_training_or_evaluation_performed": false,
+  "host": "compute-host",
+  "identity_files_sha256": {
+    "data\\raw\\abraham_2012\\8054ea98ed675005ec10e67359902f500e4911b0\\molecules.csv": "75415d71c881f0fe450bab1a79c9f8ffef6f1194649bfb5646dcd478cbf08e6e",
+    "data\\raw\\keller_2016\\8054ea98ed675005ec10e67359902f500e4911b0\\molecules.csv": "5f862b6ea62dd3ee0a15138605ea2567d06a527263284348a5982844f9bec81f",
+    "data\\raw\\leffingwell\\8054ea98ed675005ec10e67359902f500e4911b0\\molecules.csv": "a06841a275c35b9db9253a24ac913ad97bf39f2c778e4f8a5c4df641e7dc0fa6",
+    "data\\raw\\ravia_2020\\8054ea98ed675005ec10e67359902f500e4911b0\\molecules.csv": "ea03779465f0637d2993ba2c5224106e6575149499d11df92c61c800b09a6594"
+  },
+  "resolved_unique_cids": 186,
+  "source_revision": "6c4169b7d92b063d9ce011afe8cb4790a4ffe8aa",
+  "subjects": {
+    "behav_ratings_NEMO01": {
+      "allowed_endpoint_ranges": {
+        "intensity": {
+          "finite": 98,
+          "max": 1.0,
+          "min": -1.0
+        },
+        "pleasantness": {
+          "finite": 98,
+          "max": 0.9050359712230214,
+          "min": -0.9784172661870505
+        }
+      },
+      "allowed_rows": 98,
+      "percepts": [
+        "intensity",
+        "pleasantness",
+        "fishy",
+        "burnt",
+        "sour",
+        "decayed",
+        "musky",
+        "fruity",
+        "sweaty",
+        "cool",
+        "chemical-like",
+        "flowery",
+        "sweet",
+        "warm",
+        "bakery-like",
+        "garlic-like",
+        "spicey",
+        "acidic"
+      ],
+      "raw_rows": 160
+    },
+    "behav_ratings_NEMO02": {
+      "allowed_endpoint_ranges": {
+        "intensity": {
+          "finite": 97,
+          "max": 0.7777777777777777,
+          "min": -0.9361111111111112
+        },
+        "pleasantness": {
+          "finite": 97,
+          "max": 0.9361111111111111,
+          "min": -1.0
+        }
+      },
+      "allowed_rows": 97,
+      "percepts": [
+        "intensity",
+        "pleasantness",
+        "fishy",
+        "burnt",
+        "sour",
+        "decayed",
+        "musky",
+        "fruity",
+        "sweaty",
+        "cool",
+        "floral",
+        "sweet",
+        "warm",
+        "bakery",
+        "spicy",
+        "ammonia",
+        "edible",
+        "familiar"
+      ],
+      "raw_rows": 160
+    },
+    "behav_ratings_NEMO03": {
+      "allowed_endpoint_ranges": {
+        "intensity": {
+          "finite": 97,
+          "max": 0.14791666666666667,
+          "min": -0.8958333333333333
+        },
+        "pleasantness": {
+          "finite": 97,
+          "max": 0.3041666666666667,
+          "min": -0.875
+        }
+      },
+      "allowed_rows": 97,
+      "percepts": [
+        "intensity",
+        "pleasantness",
+        "fishy",
+        "burnt",
+        "sour",
+        "decayed",
+        "musky",
+        "fruity",
+        "sweaty",
+        "cool",
+        "floral",
+        "sweet",
+        "warm",
+        "bakery",
+        "spicy",
+        "ammonia",
+        "edible",
+        "familiar"
+      ],
+      "raw_rows": 160
+    }
+  },
+  "target_rows_from_reserved_molecules_summarized_or_exported": false,
+  "training_admission": "Pending study-specific held-connectivity exclusions and protocol-scale assessment",
+  "unresolved_cids": []
+}

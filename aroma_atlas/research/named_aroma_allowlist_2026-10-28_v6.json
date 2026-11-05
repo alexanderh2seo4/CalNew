@@ -1,0 +1,705 @@
+{
+  "verified_date": "2026-10-28",
+  "status": "Adopted after root identity/alias review on 2026-10-28; wired into screening and versioned title discovery.",
+  "scope": "15 primary-source-verified discrete fragrance parents; existing scope/role/type/date guards remain mandatory. New parent production requires explicit aroma/flavor/fragrance intent.",
+  "compared_active_sources": [
+    "pipeline/atlas.py NAMED_AROMA base list",
+    "research/named_aroma_allowlist_expanded.json",
+    "research/named_aroma_allowlist_2026-10-27_v2.json",
+    "research/named_aroma_allowlist_2026-10-27_v4.json",
+    "research/named_aroma_allowlist_2026-10-27_v5.json"
+  ],
+  "comparison_sha256": {
+    "named_aroma_allowlist_expanded.json": "8d9ed7b13a9a38cad3ad2255060a5025fdc7854ee185f30b18d3b9fd9fd291f3",
+    "named_aroma_allowlist_2026-10-27_v2.json": "a3e3ae561a42387110f697ac3afd6e7b1ceaa0b0ea141c700cbef33c574b52d2",
+    "named_aroma_allowlist_2026-10-27_v4.json": "f086b4fcec0d3d395e7e2eb5d6b4d89f3de3082763d615c98c7f189afe793dd9",
+    "named_aroma_allowlist_2026-10-27_v5.json": "04aedf83dcc47f962191a54ad65a8241c8621c28b94b6a1d701c9c3d75c8a66b"
+  },
+  "methodology_read": [
+    "research/NAMED_AROMA_PHARMACOLOGY.md",
+    "research/ESSENTIAL_OIL_SCOPE.md",
+    "research/CITATION_NEIGHBOR_METHOD.md"
+  ],
+  "shared_eligibility": "Ingredient membership establishes a finite parent identity only. Papers must centrally administer/assay the unchanged parent for pharmacology/toxicology; centrally study aroma/perception; measure a permitted exact-parent physical property; or explicitly produce the parent for an aroma/flavor/fragrance purpose. Presence in a GC-MS list, breath biomarker panel, essential oil, generic synthetic substrate panel or drug-scaffold name is insufficient by itself. Composition studies require the separate validated composition-method route and do not become parent pharmacology.",
+  "shared_exclusions": [
+    "No arbitrary derivatives, Schiff bases, complexes, substituted scaffold libraries, metabolites, polymer conjugates or compound families inherit membership.",
+    "No solvent/vehicle/reagent/stain/substrate-only records, incidental background/absence mentions, uncharacterized mixture assays, insect-only applications or environmental occurrence/removal engineering without an independently eligible central-parent endpoint.",
+    "Production must have explicit aroma/flavor/fragrance intent; generic drug intermediate or test-substrate synthesis is excluded.",
+    "Physical-property routes require the parent to be the measured/calculated target, not a solvent, modifier or auxiliary. Generic materials characterization and routine spectra alone are not the bounded physical-property route.",
+    "Short trade abbreviations and commercially ambiguous aldehyde C-number names are not unconditional exact aliases.",
+    "Retain stereochemistry, test purity and formulation; source membership of a generic identity does not prove a specific enantiomer has the same effects."
+  ],
+  "shared_status_caveat": "Historical fragrance/flavor ingredient identity is distinct from current authorization, permitted concentration, safety and therapeutic efficacy. This research verifies membership and identity only, not unrestricted contemporary approval or safe use. No regulatory compliance or clinical conclusion is implied by FEMA, IFRA or FDA listing.",
+  "primary_fragrance_source": {
+    "url": "https://ifrafragrance.org/docs/default-source/glossary/ifra-fragrance-ingredient-glossary---april-2020.pdf?sfvrsn=dc0e87ff_2",
+    "edition": "April 2020",
+    "scope_evidence": "Introductory PDF pages 2-3 say the glossary describes fragrance ingredients and covers IFRA Transparency List materials except functional ingredients lacking odor-giving use. Individual CAS/name rows were inspected.",
+    "attribution": "Information derived from the IFRA Fragrance Ingredient Glossary, developed by The International Fragrance Association."
+  },
+  "chemicals": [
+    {
+      "name": "ethyl vanillin",
+      "cas_as_source": "121-32-4",
+      "exact_parent_synonyms": [
+        "ethyl vanillin",
+        "3-ethoxy-4-hydroxybenzaldehyde",
+        "2-ethoxy-4-formylphenol"
+      ],
+      "source_url": "https://www.femaflavor.org/flavor-library/ethyl-vanillin",
+      "source_authority": "FEMA Flavor Ingredient Library; International Fragrance Association; US FDA Substances Added to Food",
+      "verified_use": "established fragrance ingredient; independently listed flavor ingredient",
+      "membership_evidence": "Individual FEMA record pairs this parent with CAS 121-32-4 (FEMA 2464). Official IFRA glossary includes the same CAS/name as an odor-giving fragrance ingredient.",
+      "fema_number": 2464,
+      "supporting_urls": [
+        "https://ifrafragrance.org/docs/default-source/glossary/ifra-fragrance-ingredient-glossary---april-2020.pdf?sfvrsn=dc0e87ff_2",
+        "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=ETHYLVANILLIN&set=FoodSubstances"
+      ],
+      "fragrance_evidence": {
+        "url": "https://ifrafragrance.org/docs/default-source/glossary/ifra-fragrance-ingredient-glossary---april-2020.pdf?sfvrsn=dc0e87ff_2",
+        "pdf_page_zero_based": 69,
+        "printed_page": 58,
+        "lookup_key": "121-32-4",
+        "attribution": "Information derived from the IFRA Fragrance Ingredient Glossary, developed by The International Fragrance Association."
+      },
+      "identity_evidence": "FDA pairs exact aldehyde/phenol aliases with the same CAS. Achiral parent.",
+      "scope_guards": [
+        "Separate from vanillin, ethylvanillin glucoside, oximes, Schiff bases and other derivatives. Vanillin membership cannot establish this parent; it is independently verified. Exclude antioxidant packaging/polymer work without eligible unchanged-parent measurements.",
+        "Exclude arbitrary derivatives, substituted analogues, polymers/materials conjugates, reagent/stain/solvent/vehicle/substrate-only roles and uncharacterized mixture assays. Parent production requires explicit aroma/flavor/fragrance intent."
+      ],
+      "recommended_routes": [
+        "central-parent aroma / perception chemistry",
+        "central-parent pharmacology / toxicology if the unchanged administered or assayed chemical is established",
+        "measured parent volatility, partitioning, solubility or diffusion",
+        "production explicitly intended for aroma / flavor / fragrance use"
+      ],
+      "automatic_adoption": false,
+      "identity_note": "FDA pairs exact aldehyde/phenol aliases with the same CAS. Achiral parent. Preserve reported purity, stereochemistry and formulation; exact names establish only the stated parent identity."
+    },
+    {
+      "name": "piperonal",
+      "cas_as_source": "120-57-0",
+      "exact_parent_synonyms": [
+        "piperonal",
+        "heliotropin",
+        "heliotropine",
+        "piperonaldehyde",
+        "1,3-benzodioxole-5-carbaldehyde",
+        "1,3-benzodioxole-5-carboxaldehyde"
+      ],
+      "source_url": "https://www.femaflavor.org/flavor-library/piperonal",
+      "source_authority": "FEMA Flavor Ingredient Library; International Fragrance Association; NIST Chemistry WebBook",
+      "verified_use": "established fragrance ingredient; independently listed flavor ingredient",
+      "membership_evidence": "Individual FEMA record pairs this parent with CAS 120-57-0 (FEMA 2911). Official IFRA glossary includes the same CAS/name as an odor-giving fragrance ingredient.",
+      "fema_number": 2911,
+      "supporting_urls": [
+        "https://ifrafragrance.org/docs/default-source/glossary/ifra-fragrance-ingredient-glossary---april-2020.pdf?sfvrsn=dc0e87ff_2",
+        "https://webbook.nist.gov/cgi/cbook.cgi?ID=C120570"
+      ],
+      "fragrance_evidence": {
+        "url": "https://ifrafragrance.org/docs/default-source/glossary/ifra-fragrance-ingredient-glossary---april-2020.pdf?sfvrsn=dc0e87ff_2",
+        "pdf_page_zero_based": 98,
+        "printed_page": 87,
+        "lookup_key": "120-57-0",
+        "attribution": "Information derived from the IFRA Fragrance Ingredient Glossary, developed by The International Fragrance Association."
+      },
+      "identity_evidence": "NIST explicitly maps heliotropin and benzodioxole aldehyde aliases to CAS 120-57-0. Achiral parent.",
+      "scope_guards": [
+        "Separate from piperonyl alcohol, piperonylic acid, piperonyl butoxide and substituted benzodioxole drugs. Exclude generic precursor chemistry or controlled-drug synthesis; a benzodioxole scaffold does not establish unchanged piperonal.",
+        "Exclude arbitrary derivatives, substituted analogues, polymers/materials conjugates, reagent/stain/solvent/vehicle/substrate-only roles and uncharacterized mixture assays. Parent production requires explicit aroma/flavor/fragrance intent."
+      ],
+      "recommended_routes": [
+        "central-parent aroma / perception chemistry",
+        "central-parent pharmacology / toxicology if the unchanged administered or assayed chemical is established",
+        "measured parent volatility, partitioning, solubility or diffusion",
+        "production explicitly intended for aroma / flavor / fragrance use"
+      ],
+      "automatic_adoption": false,
+      "identity_note": "NIST explicitly maps heliotropin and benzodioxole aldehyde aliases to CAS 120-57-0. Achiral parent. Preserve reported purity, stereochemistry and formulation; exact names establish only the stated parent identity."
+    },
+    {
+      "name": "methyl phenylacetate",
+      "cas_as_source": "101-41-7",
+      "exact_parent_synonyms": [
+        "methyl phenylacetate",
+        "methyl benzeneacetate",
+        "methyl phenylethanoate",
+        "benzeneacetic acid, methyl ester"
+      ],
+      "source_url": "https://www.femaflavor.org/flavor-library/methyl-phenylacetate",
+      "source_authority": "FEMA Flavor Ingredient Library; International Fragrance Association; US FDA Substances Added to Food",
+      "verified_use": "established fragrance ingredient; independently listed flavor ingredient",
+      "membership_evidence": "Individual FEMA record pairs this parent with CAS 101-41-7 (FEMA 2733). Official IFRA glossary includes the same CAS/name as an odor-giving fragrance ingredient.",
+      "fema_number": 2733,
+      "supporting_urls": [
+        "https://ifrafragrance.org/docs/default-source/glossary/ifra-fragrance-ingredient-glossary---april-2020.pdf?sfvrsn=dc0e87ff_2",
+        "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=METHYLPHENYLACETATE&set=FoodSubstances"
+      ],
+      "fragrance_evidence": {
+        "url": "https://ifrafragrance.org/docs/default-source/glossary/ifra-fragrance-ingredient-glossary---april-2020.pdf?sfvrsn=dc0e87ff_2",
+        "pdf_page_zero_based": 87,
+        "printed_page": 76,
+        "lookup_key": "101-41-7",
+        "attribution": "Information derived from the IFRA Fragrance Ingredient Glossary, developed by The International Fragrance Association."
+      },
+      "identity_evidence": "FDA explicitly supplies these exact methyl-ester aliases and CAS. Achiral parent.",
+      "scope_guards": [
+        "Separate from methyl benzoate, methyl phenoxyacetate, phenyl acetate, methyl alpha-substituted phenylacetates and the free acid. Exclude substituted ester libraries, auxiliary substrates and phenylacetate drug-family expansion.",
+        "Exclude arbitrary derivatives, substituted analogues, polymers/materials conjugates, reagent/stain/solvent/vehicle/substrate-only roles and uncharacterized mixture assays. Parent production requires explicit aroma/flavor/fragrance intent."
+      ],
+      "recommended_routes": [
+        "central-parent aroma / perception chemistry",
+        "central-parent pharmacology / toxicology if the unchanged administered or assayed chemical is established",
+        "measured parent volatility, partitioning, solubility or diffusion",
+        "production explicitly intended for aroma / flavor / fragrance use"
+      ],
+      "automatic_adoption": false,
+      "identity_note": "FDA explicitly supplies these exact methyl-ester aliases and CAS. Achiral parent. Preserve reported purity, stereochemistry and formulation; exact names establish only the stated parent identity."
+    },
+    {
+      "name": "ethyl phenylacetate",
+      "cas_as_source": "101-97-3",
+      "exact_parent_synonyms": [
+        "ethyl phenylacetate",
+        "ethyl benzeneacetate",
+        "benzeneacetic acid, ethyl ester",
+        "ethyl alpha-toluate"
+      ],
+      "source_url": "https://www.femaflavor.org/flavor-library/ethyl-phenylacetate",
+      "source_authority": "FEMA Flavor Ingredient Library; International Fragrance Association; US FDA Substances Added to Food",
+      "verified_use": "established fragrance ingredient; independently listed flavor ingredient",
+      "membership_evidence": "Individual FEMA record pairs this parent with CAS 101-97-3 (FEMA 2452). Official IFRA glossary includes the same CAS/name as an odor-giving fragrance ingredient.",
+      "fema_number": 2452,
+      "supporting_urls": [
+        "https://ifrafragrance.org/docs/default-source/glossary/ifra-fragrance-ingredient-glossary---april-2020.pdf?sfvrsn=dc0e87ff_2",
+        "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=ETHYLPHENYLACETATE&set=FoodSubstances"
+      ],
+      "fragrance_evidence": {
+        "url": "https://ifrafragrance.org/docs/default-source/glossary/ifra-fragrance-ingredient-glossary---april-2020.pdf?sfvrsn=dc0e87ff_2",
+        "pdf_page_zero_based": 69,
+        "printed_page": 58,
+        "lookup_key": "101-97-3",
+        "attribution": "Information derived from the IFRA Fragrance Ingredient Glossary, developed by The International Fragrance Association."
+      },
+      "identity_evidence": "FDA explicitly supplies the ethyl-ester aliases and CAS. Achiral parent.",
+      "scope_guards": [
+        "Separate from ethyl benzoate, phenethyl acetate, ethyl phenoxyacetate and alpha-substituted ester libraries. Exclude solvent/substrate-only and unrelated phenylacetate pharmacology.",
+        "Exclude arbitrary derivatives, substituted analogues, polymers/materials conjugates, reagent/stain/solvent/vehicle/substrate-only roles and uncharacterized mixture assays. Parent production requires explicit aroma/flavor/fragrance intent."
+      ],
+      "recommended_routes": [
+        "central-parent aroma / perception chemistry",
+        "central-parent pharmacology / toxicology if the unchanged administered or assayed chemical is established",
+        "measured parent volatility, partitioning, solubility or diffusion",
+        "production explicitly intended for aroma / flavor / fragrance use"
+      ],
+      "automatic_adoption": false,
+      "identity_note": "FDA explicitly supplies the ethyl-ester aliases and CAS. Achiral parent. Preserve reported purity, stereochemistry and formulation; exact names establish only the stated parent identity."
+    },
+    {
+      "name": "benzylacetone",
+      "cas_as_source": "2550-26-7",
+      "exact_parent_synonyms": [
+        "benzylacetone",
+        "benzyl acetone",
+        "4-phenylbutan-2-one",
+        "4-phenyl-2-butanone",
+        "methyl phenethyl ketone",
+        "phenethyl methyl ketone"
+      ],
+      "source_url": "https://ifrafragrance.org/docs/default-source/glossary/ifra-fragrance-ingredient-glossary---april-2020.pdf?sfvrsn=dc0e87ff_2",
+      "source_authority": "International Fragrance Association; NIST Chemistry WebBook",
+      "verified_use": "established fragrance ingredient",
+      "membership_evidence": "Official IFRA glossary includes the same CAS/name as an odor-giving fragrance ingredient.",
+      "fema_number": null,
+      "supporting_urls": [
+        "https://ifrafragrance.org/docs/default-source/glossary/ifra-fragrance-ingredient-glossary---april-2020.pdf?sfvrsn=dc0e87ff_2",
+        "https://webbook.nist.gov/cgi/cbook.cgi?ID=C2550267"
+      ],
+      "fragrance_evidence": {
+        "url": "https://ifrafragrance.org/docs/default-source/glossary/ifra-fragrance-ingredient-glossary---april-2020.pdf?sfvrsn=dc0e87ff_2",
+        "pdf_page_zero_based": 49,
+        "printed_page": 38,
+        "lookup_key": "2550-26-7",
+        "attribution": "Information derived from the IFRA Fragrance Ingredient Glossary, developed by The International Fragrance Association."
+      },
+      "identity_evidence": "NIST resolves the saturated ketone CAS 2550-26-7 and the exact aliases; formula C10H12O, InChIKey AKGGYBADQZYZPD-UHFFFAOYSA-N. Achiral parent.",
+      "scope_guards": [
+        "Do not confuse with benzylideneacetone / 4-phenyl-3-buten-2-one CAS 122-57-6 or benzyl methyl ketone / phenylacetone CAS 103-79-7. Some historical source labels conflate benzyl acetone with the unsaturated ketone; require CAS or unambiguous saturated structure. Exclude insect-only floral attraction and substrate-only work.",
+        "Exclude arbitrary derivatives, substituted analogues, polymers/materials conjugates, reagent/stain/solvent/vehicle/substrate-only roles and uncharacterized mixture assays. Parent production requires explicit aroma/flavor/fragrance intent."
+      ],
+      "recommended_routes": [
+        "central-parent aroma / perception chemistry",
+        "central-parent pharmacology / toxicology if the unchanged administered or assayed chemical is established",
+        "measured parent volatility, partitioning, solubility or diffusion",
+        "production explicitly intended for aroma / flavor / fragrance use"
+      ],
+      "automatic_adoption": false,
+      "identity_note": "NIST resolves the saturated ketone CAS 2550-26-7 and the exact aliases; formula C10H12O, InChIKey AKGGYBADQZYZPD-UHFFFAOYSA-N. Achiral parent. Preserve reported purity, stereochemistry and formulation; exact names establish only the stated parent identity."
+    },
+    {
+      "name": "octanal",
+      "cas_as_source": "124-13-0",
+      "exact_parent_synonyms": [
+        "octanal",
+        "caprylic aldehyde",
+        "caprylaldehyde",
+        "octanaldehyde",
+        "1-octanal"
+      ],
+      "source_url": "https://www.femaflavor.org/flavor-library/octanal",
+      "source_authority": "FEMA Flavor Ingredient Library; International Fragrance Association; US FDA Substances Added to Food",
+      "verified_use": "established fragrance ingredient; independently listed flavor ingredient",
+      "membership_evidence": "Individual FEMA record pairs this parent with CAS 124-13-0 (FEMA 2797). Official IFRA glossary includes the same CAS/name as an odor-giving fragrance ingredient.",
+      "fema_number": 2797,
+      "supporting_urls": [
+        "https://ifrafragrance.org/docs/default-source/glossary/ifra-fragrance-ingredient-glossary---april-2020.pdf?sfvrsn=dc0e87ff_2",
+        "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=OCTANAL&set=FoodSubstances"
+      ],
+      "fragrance_evidence": {
+        "url": "https://ifrafragrance.org/docs/default-source/glossary/ifra-fragrance-ingredient-glossary---april-2020.pdf?sfvrsn=dc0e87ff_2",
+        "pdf_page_zero_based": 91,
+        "printed_page": 80,
+        "lookup_key": "124-13-0",
+        "attribution": "Information derived from the IFRA Fragrance Ingredient Glossary, developed by The International Fragrance Association."
+      },
+      "identity_evidence": "FDA explicitly identifies the straight-chain saturated C8 aldehyde and exact aliases. Achiral parent.",
+      "scope_guards": [
+        "Exclude octenal, branched octanals, octanal acetals, oxidation biomarkers or untargeted headspace mentions without central eligible parent measurement. Do not use generic aldehyde C-8 as an automatic alias without identity corroboration.",
+        "Exclude arbitrary derivatives, substituted analogues, polymers/materials conjugates, reagent/stain/solvent/vehicle/substrate-only roles and uncharacterized mixture assays. Parent production requires explicit aroma/flavor/fragrance intent."
+      ],
+      "recommended_routes": [
+        "central-parent aroma / perception chemistry",
+        "central-parent pharmacology / toxicology if the unchanged administered or assayed chemical is established",
+        "measured parent volatility, partitioning, solubility or diffusion",
+        "production explicitly intended for aroma / flavor / fragrance use"
+      ],
+      "automatic_adoption": false,
+      "identity_note": "FDA explicitly identifies the straight-chain saturated C8 aldehyde and exact aliases. Achiral parent. Preserve reported purity, stereochemistry and formulation; exact names establish only the stated parent identity."
+    },
+    {
+      "name": "nonanal",
+      "cas_as_source": "124-19-6",
+      "exact_parent_synonyms": [
+        "nonanal",
+        "n-nonanal",
+        "nonaldehyde",
+        "pelargonaldehyde",
+        "pelargonic aldehyde",
+        "nonanoic aldehyde"
+      ],
+      "source_url": "https://www.femaflavor.org/flavor-library/nonanal",
+      "source_authority": "FEMA Flavor Ingredient Library; International Fragrance Association; NIST Chemistry WebBook",
+      "verified_use": "established fragrance ingredient; independently listed flavor ingredient",
+      "membership_evidence": "Individual FEMA record pairs this parent with CAS 124-19-6 (FEMA 2782). Official IFRA glossary includes the same CAS/name as an odor-giving fragrance ingredient.",
+      "fema_number": 2782,
+      "supporting_urls": [
+        "https://ifrafragrance.org/docs/default-source/glossary/ifra-fragrance-ingredient-glossary---april-2020.pdf?sfvrsn=dc0e87ff_2",
+        "https://webbook.nist.gov/cgi/cbook.cgi?ID=C124196"
+      ],
+      "fragrance_evidence": {
+        "url": "https://ifrafragrance.org/docs/default-source/glossary/ifra-fragrance-ingredient-glossary---april-2020.pdf?sfvrsn=dc0e87ff_2",
+        "pdf_page_zero_based": 89,
+        "printed_page": 78,
+        "lookup_key": "124-19-6",
+        "attribution": "Information derived from the IFRA Fragrance Ingredient Glossary, developed by The International Fragrance Association."
+      },
+      "identity_evidence": "NIST supplies CAS and the straight-chain saturated C9 aldehyde aliases. Achiral parent.",
+      "scope_guards": [
+        "Exclude nonenal/nonadienal, branched aldehydes, acetals and generic lipid-peroxidation biomarkers. Presence in breath or environmental samples alone is not parent pharmacology. Omit commercial C-9 aldehyde shorthand from automatic aliases.",
+        "Exclude arbitrary derivatives, substituted analogues, polymers/materials conjugates, reagent/stain/solvent/vehicle/substrate-only roles and uncharacterized mixture assays. Parent production requires explicit aroma/flavor/fragrance intent."
+      ],
+      "recommended_routes": [
+        "central-parent aroma / perception chemistry",
+        "central-parent pharmacology / toxicology if the unchanged administered or assayed chemical is established",
+        "measured parent volatility, partitioning, solubility or diffusion",
+        "production explicitly intended for aroma / flavor / fragrance use"
+      ],
+      "automatic_adoption": false,
+      "identity_note": "NIST supplies CAS and the straight-chain saturated C9 aldehyde aliases. Achiral parent. Preserve reported purity, stereochemistry and formulation; exact names establish only the stated parent identity."
+    },
+    {
+      "name": "decanal",
+      "cas_as_source": "112-31-2",
+      "exact_parent_synonyms": [
+        "decanal",
+        "n-decanal",
+        "decaldehyde",
+        "capraldehyde",
+        "capric aldehyde",
+        "decyl aldehyde"
+      ],
+      "source_url": "https://www.femaflavor.org/flavor-library/decanal",
+      "source_authority": "FEMA Flavor Ingredient Library; International Fragrance Association; NIST Chemistry WebBook",
+      "verified_use": "established fragrance ingredient; independently listed flavor ingredient",
+      "membership_evidence": "Individual FEMA record pairs this parent with CAS 112-31-2 (FEMA 2362). Official IFRA glossary includes the same CAS/name as an odor-giving fragrance ingredient.",
+      "fema_number": 2362,
+      "supporting_urls": [
+        "https://ifrafragrance.org/docs/default-source/glossary/ifra-fragrance-ingredient-glossary---april-2020.pdf?sfvrsn=dc0e87ff_2",
+        "https://webbook.nist.gov/cgi/cbook.cgi?ID=C112312"
+      ],
+      "fragrance_evidence": {
+        "url": "https://ifrafragrance.org/docs/default-source/glossary/ifra-fragrance-ingredient-glossary---april-2020.pdf?sfvrsn=dc0e87ff_2",
+        "pdf_page_zero_based": 63,
+        "printed_page": 52,
+        "lookup_key": "112-31-2",
+        "attribution": "Information derived from the IFRA Fragrance Ingredient Glossary, developed by The International Fragrance Association."
+      },
+      "identity_evidence": "NIST supplies CAS and the straight-chain saturated C10 aldehyde aliases. Achiral parent.",
+      "scope_guards": [
+        "Separate from decenal, 2-methyldecanal, decanal acetals and decanal-methylanthranilate Schiff base. Exclude incidental oxidation/biomarker occurrences and generic C10 aldehyde mixtures; omit aldehyde C10 shorthand from automatic aliases.",
+        "Exclude arbitrary derivatives, substituted analogues, polymers/materials conjugates, reagent/stain/solvent/vehicle/substrate-only roles and uncharacterized mixture assays. Parent production requires explicit aroma/flavor/fragrance intent."
+      ],
+      "recommended_routes": [
+        "central-parent aroma / perception chemistry",
+        "central-parent pharmacology / toxicology if the unchanged administered or assayed chemical is established",
+        "measured parent volatility, partitioning, solubility or diffusion",
+        "production explicitly intended for aroma / flavor / fragrance use"
+      ],
+      "automatic_adoption": false,
+      "identity_note": "NIST supplies CAS and the straight-chain saturated C10 aldehyde aliases. Achiral parent. Preserve reported purity, stereochemistry and formulation; exact names establish only the stated parent identity."
+    },
+    {
+      "name": "cinnamyl acetate",
+      "cas_as_source": "103-54-8",
+      "exact_parent_synonyms": [
+        "cinnamyl acetate",
+        "cinnamyl alcohol, acetate",
+        "3-phenyl-2-propenyl acetate",
+        "3-phenyl-2-propen-1-yl acetate",
+        "acetic acid, cinnamyl ester"
+      ],
+      "source_url": "https://www.femaflavor.org/flavor-library/cinnamyl-acetate",
+      "source_authority": "FEMA Flavor Ingredient Library; International Fragrance Association; NIST Chemistry WebBook",
+      "verified_use": "established fragrance ingredient; independently listed flavor ingredient",
+      "membership_evidence": "Individual FEMA record pairs this parent with CAS 103-54-8 (FEMA 2293). Official IFRA glossary includes the same CAS/name as an odor-giving fragrance ingredient.",
+      "fema_number": 2293,
+      "supporting_urls": [
+        "https://ifrafragrance.org/docs/default-source/glossary/ifra-fragrance-ingredient-glossary---april-2020.pdf?sfvrsn=dc0e87ff_2",
+        "https://webbook.nist.gov/cgi/cbook.cgi?ID=C103548"
+      ],
+      "fragrance_evidence": {
+        "url": "https://ifrafragrance.org/docs/default-source/glossary/ifra-fragrance-ingredient-glossary---april-2020.pdf?sfvrsn=dc0e87ff_2",
+        "pdf_page_zero_based": 56,
+        "printed_page": 45,
+        "lookup_key": "103-54-8",
+        "attribution": "Information derived from the IFRA Fragrance Ingredient Glossary, developed by The International Fragrance Association."
+      },
+      "identity_evidence": "NIST generic CAS 103-54-8 has an unspecified E/Z InChI and explicitly links E and Z stereoisomer records. Do not infer trans identity or merge generic and stereopure effects.",
+      "scope_guards": [
+        "Separate from cinnamyl alcohol, cinnamaldehyde, cinnamic acid and cinnamate esters. Preserve explicit E/Z composition; exclude catalytic substrate-only, derivative and unrelated materials studies.",
+        "Exclude arbitrary derivatives, substituted analogues, polymers/materials conjugates, reagent/stain/solvent/vehicle/substrate-only roles and uncharacterized mixture assays. Parent production requires explicit aroma/flavor/fragrance intent."
+      ],
+      "recommended_routes": [
+        "central-parent aroma / perception chemistry",
+        "central-parent pharmacology / toxicology if the unchanged administered or assayed chemical is established",
+        "measured parent volatility, partitioning, solubility or diffusion",
+        "production explicitly intended for aroma / flavor / fragrance use"
+      ],
+      "automatic_adoption": false,
+      "identity_note": "NIST generic CAS 103-54-8 has an unspecified E/Z InChI and explicitly links E and Z stereoisomer records. Do not infer trans identity or merge generic and stereopure effects. Preserve reported purity, stereochemistry and formulation; exact names establish only the stated parent identity."
+    },
+    {
+      "name": "hexyl acetate",
+      "cas_as_source": "142-92-7",
+      "exact_parent_synonyms": [
+        "hexyl acetate",
+        "hexyl ethanoate",
+        "acetic acid, hexyl ester"
+      ],
+      "source_url": "https://www.femaflavor.org/flavor-library/hexyl-acetate",
+      "source_authority": "FEMA Flavor Ingredient Library; International Fragrance Association; US FDA Substances Added to Food",
+      "verified_use": "established fragrance ingredient; independently listed flavor ingredient",
+      "membership_evidence": "Individual FEMA record pairs this parent with CAS 142-92-7 (FEMA 2565). Official IFRA glossary includes the same CAS/name as an odor-giving fragrance ingredient.",
+      "fema_number": 2565,
+      "supporting_urls": [
+        "https://ifrafragrance.org/docs/default-source/glossary/ifra-fragrance-ingredient-glossary---april-2020.pdf?sfvrsn=dc0e87ff_2",
+        "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=HEXYLACETATE&set=FoodSubstances"
+      ],
+      "fragrance_evidence": {
+        "url": "https://ifrafragrance.org/docs/default-source/glossary/ifra-fragrance-ingredient-glossary---april-2020.pdf?sfvrsn=dc0e87ff_2",
+        "pdf_page_zero_based": 75,
+        "printed_page": 64,
+        "lookup_key": "142-92-7",
+        "attribution": "Information derived from the IFRA Fragrance Ingredient Glossary, developed by The International Fragrance Association."
+      },
+      "identity_evidence": "FDA identifies the linear hexyl acetate parent CAS 142-92-7 with exact ester aliases. Achiral parent.",
+      "scope_guards": [
+        "Separate from hexenyl acetates including cis-3-hexenyl acetate, branched isohexyl acetates and hexyl salicylate. Exclude incidental solvent/extraction and substrate-only uses. Generic acetate chemistry is not an eligible route.",
+        "Exclude arbitrary derivatives, substituted analogues, polymers/materials conjugates, reagent/stain/solvent/vehicle/substrate-only roles and uncharacterized mixture assays. Parent production requires explicit aroma/flavor/fragrance intent."
+      ],
+      "recommended_routes": [
+        "central-parent aroma / perception chemistry",
+        "central-parent pharmacology / toxicology if the unchanged administered or assayed chemical is established",
+        "measured parent volatility, partitioning, solubility or diffusion",
+        "production explicitly intended for aroma / flavor / fragrance use"
+      ],
+      "automatic_adoption": false,
+      "identity_note": "FDA identifies the linear hexyl acetate parent CAS 142-92-7 with exact ester aliases. Achiral parent. Preserve reported purity, stereochemistry and formulation; exact names establish only the stated parent identity."
+    },
+    {
+      "name": "phenethyl acetate",
+      "cas_as_source": "103-45-7",
+      "exact_parent_synonyms": [
+        "phenethyl acetate",
+        "2-phenylethyl acetate",
+        "benzylcarbinyl acetate",
+        "acetic acid, 2-phenylethyl ester"
+      ],
+      "source_url": "https://www.femaflavor.org/flavor-library/phenethyl-acetate",
+      "source_authority": "FEMA Flavor Ingredient Library; International Fragrance Association; US FDA Substances Added to Food",
+      "verified_use": "established fragrance ingredient; independently listed flavor ingredient",
+      "membership_evidence": "Individual FEMA record pairs this parent with CAS 103-45-7 (FEMA 2857). Official IFRA glossary includes the same CAS/name as an odor-giving fragrance ingredient.",
+      "fema_number": 2857,
+      "supporting_urls": [
+        "https://ifrafragrance.org/docs/default-source/glossary/ifra-fragrance-ingredient-glossary---april-2020.pdf?sfvrsn=dc0e87ff_2",
+        "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=PHENETHYLACETATE&set=FoodSubstances"
+      ],
+      "fragrance_evidence": {
+        "url": "https://ifrafragrance.org/docs/default-source/glossary/ifra-fragrance-ingredient-glossary---april-2020.pdf?sfvrsn=dc0e87ff_2",
+        "pdf_page_zero_based": 96,
+        "printed_page": 85,
+        "lookup_key": "103-45-7",
+        "attribution": "Information derived from the IFRA Fragrance Ingredient Glossary, developed by The International Fragrance Association."
+      },
+      "identity_evidence": "FDA maps exact 2-phenylethyl ester names to CAS 103-45-7. Achiral parent.",
+      "scope_guards": [
+        "Separate from 1-phenylethyl acetate, benzyl acetate and ethyl phenylacetate; the latter is a constitutional isomer. Exclude generic phenethyl drug scaffolds and incidental ester substrates. No abbreviation-only PEA alias.",
+        "Exclude arbitrary derivatives, substituted analogues, polymers/materials conjugates, reagent/stain/solvent/vehicle/substrate-only roles and uncharacterized mixture assays. Parent production requires explicit aroma/flavor/fragrance intent."
+      ],
+      "recommended_routes": [
+        "central-parent aroma / perception chemistry",
+        "central-parent pharmacology / toxicology if the unchanged administered or assayed chemical is established",
+        "measured parent volatility, partitioning, solubility or diffusion",
+        "production explicitly intended for aroma / flavor / fragrance use"
+      ],
+      "automatic_adoption": false,
+      "identity_note": "FDA maps exact 2-phenylethyl ester names to CAS 103-45-7. Achiral parent. Preserve reported purity, stereochemistry and formulation; exact names establish only the stated parent identity.",
+      "alias_review_note": "Unqualified phenylethyl acetate was omitted from automatic aliases to avoid 1- versus 2-phenylethyl ambiguity; phenethyl acetate and explicit 2-phenylethyl names remain."
+    },
+    {
+      "name": "neryl acetate",
+      "cas_as_source": "141-12-8",
+      "exact_parent_synonyms": [
+        "neryl acetate",
+        "nerol acetate",
+        "cis-geranyl acetate",
+        "(2Z)-3,7-dimethyl-2,6-octadienyl acetate"
+      ],
+      "source_url": "https://www.femaflavor.org/flavor-library/neryl-acetate",
+      "source_authority": "FEMA Flavor Ingredient Library; International Fragrance Association; NIST Chemistry WebBook",
+      "verified_use": "established fragrance ingredient; independently listed flavor ingredient",
+      "membership_evidence": "Individual FEMA record pairs this parent with CAS 141-12-8 (FEMA 2773). Official IFRA glossary includes the same CAS/name as an odor-giving fragrance ingredient.",
+      "fema_number": 2773,
+      "supporting_urls": [
+        "https://ifrafragrance.org/docs/default-source/glossary/ifra-fragrance-ingredient-glossary---april-2020.pdf?sfvrsn=dc0e87ff_2",
+        "https://webbook.nist.gov/cgi/cbook.cgi?ID=C141128"
+      ],
+      "fragrance_evidence": {
+        "url": "https://ifrafragrance.org/docs/default-source/glossary/ifra-fragrance-ingredient-glossary---april-2020.pdf?sfvrsn=dc0e87ff_2",
+        "pdf_page_zero_based": 89,
+        "printed_page": 78,
+        "lookup_key": "141-12-8",
+        "attribution": "Information derived from the IFRA Fragrance Ingredient Glossary, developed by The International Fragrance Association."
+      },
+      "identity_evidence": "NIST explicitly defines the 2Z ester CAS 141-12-8 and separates geranyl acetate stereoisomer records. The Z geometry belongs to this identity.",
+      "scope_guards": [
+        "Do not merge geranyl acetate (2E), nerol, nerolidyl acetate or a commercial geranyl/neryl mixture. Retain E/Z purity and do not transfer effects between isomers.",
+        "Exclude arbitrary derivatives, substituted analogues, polymers/materials conjugates, reagent/stain/solvent/vehicle/substrate-only roles and uncharacterized mixture assays. Parent production requires explicit aroma/flavor/fragrance intent."
+      ],
+      "recommended_routes": [
+        "central-parent aroma / perception chemistry",
+        "central-parent pharmacology / toxicology if the unchanged administered or assayed chemical is established",
+        "measured parent volatility, partitioning, solubility or diffusion",
+        "production explicitly intended for aroma / flavor / fragrance use"
+      ],
+      "automatic_adoption": false,
+      "identity_note": "NIST explicitly defines the 2Z ester CAS 141-12-8 and separates geranyl acetate stereoisomer records. The Z geometry belongs to this identity. Preserve reported purity, stereochemistry and formulation; exact names establish only the stated parent identity."
+    },
+    {
+      "name": "citronellyl acetate",
+      "cas_as_source": "150-84-5",
+      "exact_parent_synonyms": [
+        "citronellyl acetate",
+        "citronellyl ethanoate",
+        "beta-citronellyl acetate",
+        "3,7-dimethyl-6-octenyl acetate",
+        "3,7-dimethyl-6-octen-1-yl ethanoate"
+      ],
+      "source_url": "https://www.femaflavor.org/flavor-library/citronellyl-acetate",
+      "source_authority": "FEMA Flavor Ingredient Library; International Fragrance Association; US FDA Substances Added to Food",
+      "verified_use": "established fragrance ingredient; independently listed flavor ingredient",
+      "membership_evidence": "Individual FEMA record pairs this parent with CAS 150-84-5 (FEMA 2311). Official IFRA glossary includes the same CAS/name as an odor-giving fragrance ingredient.",
+      "fema_number": 2311,
+      "supporting_urls": [
+        "https://ifrafragrance.org/docs/default-source/glossary/ifra-fragrance-ingredient-glossary---april-2020.pdf?sfvrsn=dc0e87ff_2",
+        "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=CITRONELLYLACETATE&set=FoodSubstances"
+      ],
+      "fragrance_evidence": {
+        "url": "https://ifrafragrance.org/docs/default-source/glossary/ifra-fragrance-ingredient-glossary---april-2020.pdf?sfvrsn=dc0e87ff_2",
+        "pdf_page_zero_based": 59,
+        "printed_page": 48,
+        "lookup_key": "150-84-5",
+        "attribution": "Information derived from the IFRA Fragrance Ingredient Glossary, developed by The International Fragrance Association."
+      },
+      "identity_evidence": "FDA records generic CAS 150-84-5 and the exact aliases without assigning R/S material. Preserve enantiomer/racemate and purity distinctions; generic membership does not establish stereospecific effects.",
+      "scope_guards": [
+        "Separate from citronellol, citronellal, geranyl/neryl acetates and substituted citronellyl esters. No automatic merging of enantiopure material or formulated fragrance mixtures.",
+        "Exclude arbitrary derivatives, substituted analogues, polymers/materials conjugates, reagent/stain/solvent/vehicle/substrate-only roles and uncharacterized mixture assays. Parent production requires explicit aroma/flavor/fragrance intent."
+      ],
+      "recommended_routes": [
+        "central-parent aroma / perception chemistry",
+        "central-parent pharmacology / toxicology if the unchanged administered or assayed chemical is established",
+        "measured parent volatility, partitioning, solubility or diffusion",
+        "production explicitly intended for aroma / flavor / fragrance use"
+      ],
+      "automatic_adoption": false,
+      "identity_note": "FDA records generic CAS 150-84-5 and the exact aliases without assigning R/S material. Preserve enantiomer/racemate and purity distinctions; generic membership does not establish stereospecific effects. Preserve reported purity, stereochemistry and formulation; exact names establish only the stated parent identity."
+    },
+    {
+      "name": "phenylacetaldehyde",
+      "cas_as_source": "122-78-1",
+      "exact_parent_synonyms": [
+        "phenylacetaldehyde",
+        "benzeneacetaldehyde",
+        "phenylethanal",
+        "phenylacetic aldehyde",
+        "1-oxo-2-phenylethane"
+      ],
+      "source_url": "https://www.femaflavor.org/flavor-library/phenylacetaldehyde",
+      "source_authority": "FEMA Flavor Ingredient Library; International Fragrance Association; US FDA Substances Added to Food",
+      "verified_use": "established fragrance ingredient; independently listed flavor ingredient",
+      "membership_evidence": "Individual FEMA record pairs this parent with CAS 122-78-1 (FEMA 2874). Official IFRA glossary includes the same CAS/name as an odor-giving fragrance ingredient.",
+      "fema_number": 2874,
+      "supporting_urls": [
+        "https://ifrafragrance.org/docs/default-source/glossary/ifra-fragrance-ingredient-glossary---april-2020.pdf?sfvrsn=dc0e87ff_2",
+        "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=PHENYLACETALDEHYDE&set=FoodSubstances"
+      ],
+      "fragrance_evidence": {
+        "url": "https://ifrafragrance.org/docs/default-source/glossary/ifra-fragrance-ingredient-glossary---april-2020.pdf?sfvrsn=dc0e87ff_2",
+        "pdf_page_zero_based": 96,
+        "printed_page": 85,
+        "lookup_key": "122-78-1",
+        "attribution": "Information derived from the IFRA Fragrance Ingredient Glossary, developed by The International Fragrance Association."
+      },
+      "identity_evidence": "FDA supplies exact aldehyde aliases and CAS. Achiral parent.",
+      "scope_guards": [
+        "Separate from phenylacetaldehyde acetals, substituted phenylacetaldehydes, phenylacetone and phenylacetic acid. Exclude biomarker-only/precursor-only and generic phenylalanine-metabolism records without central parent assays or aroma endpoints. Omit ambiguous PAA and commercial hyacinthin automatic aliases.",
+        "Exclude arbitrary derivatives, substituted analogues, polymers/materials conjugates, reagent/stain/solvent/vehicle/substrate-only roles and uncharacterized mixture assays. Parent production requires explicit aroma/flavor/fragrance intent."
+      ],
+      "recommended_routes": [
+        "central-parent aroma / perception chemistry",
+        "central-parent pharmacology / toxicology if the unchanged administered or assayed chemical is established",
+        "measured parent volatility, partitioning, solubility or diffusion",
+        "production explicitly intended for aroma / flavor / fragrance use"
+      ],
+      "automatic_adoption": false,
+      "identity_note": "FDA supplies exact aldehyde aliases and CAS. Achiral parent. Preserve reported purity, stereochemistry and formulation; exact names establish only the stated parent identity."
+    },
+    {
+      "name": "p-methoxybenzaldehyde",
+      "cas_as_source": "123-11-5",
+      "exact_parent_synonyms": [
+        "p-methoxybenzaldehyde",
+        "4-methoxybenzaldehyde",
+        "p-anisaldehyde",
+        "para-anisaldehyde"
+      ],
+      "source_url": "https://www.femaflavor.org/flavor-library/p-methoxybenzaldehyde",
+      "source_authority": "FEMA Flavor Ingredient Library; International Fragrance Association",
+      "verified_use": "established fragrance ingredient; independently listed flavor ingredient",
+      "membership_evidence": "Individual FEMA record pairs this parent with CAS 123-11-5 (FEMA 2670). Official IFRA glossary includes the same CAS/name as an odor-giving fragrance ingredient.",
+      "fema_number": 2670,
+      "supporting_urls": [
+        "https://ifrafragrance.org/docs/default-source/glossary/ifra-fragrance-ingredient-glossary---april-2020.pdf?sfvrsn=dc0e87ff_2"
+      ],
+      "fragrance_evidence": {
+        "url": "https://ifrafragrance.org/docs/default-source/glossary/ifra-fragrance-ingredient-glossary---april-2020.pdf?sfvrsn=dc0e87ff_2",
+        "pdf_page_zero_based": 98,
+        "printed_page": 87,
+        "lookup_key": "123-11-5",
+        "attribution": "Information derived from the IFRA Fragrance Ingredient Glossary, developed by The International Fragrance Association."
+      },
+      "identity_evidence": "FEMA and IFRA independently pair the explicit para methoxybenzaldehyde parent with CAS 123-11-5. 4-Methoxy and para-anisaldehyde are the corresponding exact positional names. Achiral parent.",
+      "scope_guards": [
+        "Do not use bare anisaldehyde without positional/CAS corroboration: ortho/meta isomers and commercial mixtures are distinct. Separate from anisyl alcohol, anisic acid, anisaldehyde acetals and Schiff bases. Exclude anisaldehyde reagent/stain-only analytical use and unrelated synthetic substrate chemistry.",
+        "Exclude arbitrary derivatives, substituted analogues, polymers/materials conjugates, reagent/stain/solvent/vehicle/substrate-only roles and uncharacterized mixture assays. Parent production requires explicit aroma/flavor/fragrance intent."
+      ],
+      "recommended_routes": [
+        "central-parent aroma / perception chemistry",
+        "central-parent pharmacology / toxicology if the unchanged administered or assayed chemical is established",
+        "measured parent volatility, partitioning, solubility or diffusion",
+        "production explicitly intended for aroma / flavor / fragrance use"
+      ],
+      "automatic_adoption": false,
+      "identity_note": "FEMA and IFRA independently pair the explicit para methoxybenzaldehyde parent with CAS 123-11-5. 4-Methoxy and para-anisaldehyde are the corresponding exact positional names. Achiral parent. Preserve reported purity, stereochemistry and formulation; exact names establish only the stated parent identity."
+    }
+  ],
+  "already_adopted_candidates_not_reproposed": [
+    {
+      "name": "nerol",
+      "cas": "106-25-2",
+      "existing_source": "research/named_aroma_allowlist_expanded.json"
+    },
+    {
+      "name": "verbenone",
+      "cas": "80-57-9",
+      "existing_source": "research/named_aroma_allowlist_expanded.json"
+    },
+    {
+      "name": "benzyl acetate",
+      "cas": "140-11-4",
+      "existing_source": "research/named_aroma_allowlist_expanded.json"
+    }
+  ],
+  "deferred_identity_or_scope_candidates": [
+    {
+      "name": "acetophenone",
+      "cas": "98-86-2",
+      "membership_verified": true,
+      "urls": [
+        "https://www.femaflavor.org/flavor-library/acetophenone",
+        "https://ifrafragrance.org/docs/default-source/glossary/ifra-fragrance-ingredient-glossary---april-2020.pdf?sfvrsn=dc0e87ff_2",
+        "https://webbook.nist.gov/cgi/cbook.cgi?ID=C98862"
+      ],
+      "reason": "Established fragrance/flavor parent, but exceptionally common generic catalytic substrate and medicinal-chemistry scaffold. Deferred from this conservative batch pending explicit unchanged-parent role and substring guards; no derivative pharmacology or substrate-panel expansion.",
+      "automatic_adoption": false
+    }
+  ],
+  "source_access_notes": [
+    "The initial guessed FEMA benzylacetone URL was inaccessible; fragrance membership instead rests on the official IFRA CAS row plus accessible NIST saturated-parent identity. No membership claim is taken from suppliers.",
+    "Several guessed anisaldehyde URLs were inaccessible; the explicit FEMA p-methoxybenzaldehyde record was accessible and matches IFRA CAS 123-11-5.",
+    "Some direct NIST URLs were inaccessible through browsing; only accessible NIST/FDA records and inspected FEMA/IFRA contents support the retained aliases. Para/4-methoxy equivalence and orthographic forms are normalized chemical nomenclature, not guessed trade formulations."
+  ],
+  "review_and_adoption_requirements": [
+    "This proposal does not activate any parent or alias.",
+    "Review all identity/role guards before any later adoption; lexical name hits alone cannot establish an unchanged parent.",
+    "Alias matching must resolve the longest complete parent identity and apply derivative context guards: ethyl vanillin must not be attributed to unchanged vanillin, ester names must not be attributed to their precursor alcohol/acid, and benzylacetone must not be conflated with benzylideneacetone or phenylacetone.",
+    "Source rows establish fragrance identity; literature usefulness remains unquantified and must not be reported as additional papers.",
+    "Only this proposal file was written. Active allowlists, pipeline, database and Site were not edited; no collectors ran."
+  ],
+  "proposal_source": {
+    "path": "research/additional_fragrance_parents_v6_proposal_2026-10-28.json",
+    "sha256": "abff09d62dad6786f8cf5c63dfc858730f750ae7a9540f77fbd64c962df20a09",
+    "preserved_unchanged": true
+  },
+  "notes": [
+    "Schema follows v5: chemicals entries retain name, cas_as_source, exact_parent_synonyms, source_url, source_authority, verified_use, membership_evidence, supporting_urls, identity_evidence, identity_note and scope_guards. Extra provenance and cautions are retained.",
+    "The file is prepared for review and is not referenced by pipeline code in this change.",
+    "All 15 identities have individual CAS/name rows in the official IFRA fragrance glossary. Ingredient membership is independent of current regulatory authorization or safe use.",
+    "No generic trade abbreviations, commercial aldehyde C-number labels, unspecified anisaldehyde, short PAA/PEA, acetophenone or already adopted nerol/verbenone/benzyl acetate are added."
+  ],
+  "identity_corrections_and_deferred_terms": [
+    {
+      "name": "acetophenone",
+      "cas": "98-86-2",
+      "membership_verified": true,
+      "urls": [
+        "https://www.femaflavor.org/flavor-library/acetophenone",
+        "https://ifrafragrance.org/docs/default-source/glossary/ifra-fragrance-ingredient-glossary---april-2020.pdf?sfvrsn=dc0e87ff_2",
+        "https://webbook.nist.gov/cgi/cbook.cgi?ID=C98862"
+      ],
+      "reason": "Established fragrance/flavor parent, but exceptionally common generic catalytic substrate and medicinal-chemistry scaffold. Deferred from this conservative batch pending explicit unchanged-parent role and substring guards; no derivative pharmacology or substrate-panel expansion.",
+      "automatic_adoption": false
+    }
+  ],
+  "adoption_note": "Prepared proposal and original source evidence remain unchanged. Root adopted conservative exact aliases, excluding unqualified phenylethyl acetate and acetophenone; no paper is accepted solely by allowlist membership."
+}

@@ -1,0 +1,2715 @@
+{
+  "audit_scope": "Saved original-training fold checkpoints only; no fits, main development held scores, or reserved scores",
+  "audit_script": {
+    "bytes": 19091,
+    "exists": true,
+    "path": "C:\\calnew\\scripts\\nose_parity_progress.py",
+    "sha256": "a2d5a0d2738011af904f423c05a13cb00bc5fa8e5d1fad1394311f9981a64210"
+  },
+  "completed_at_utc": "2026-10-01T23:37:43.155567+00:00",
+  "host": "compute-host",
+  "resource_provenance_timing": "SUPPLEMENTAL AUDIT AFTER SOME FITS; not pre-fit provenance",
+  "runs": {
+    "runs/nose-parity-threshold-water-inner-v2": {
+      "datasets": {
+        "abraham": {
+          "folds": [
+            {
+              "evaluate_rows": 23,
+              "feature_caches": {
+                "quality": {
+                  "cache_identity_sha256": "d8ae9bcdcb3a6d766908ead935b519f05740ebe46b944c8247ef1cb5336ac4bf",
+                  "code_data_source_identity_exact": true,
+                  "manifest": "runs\\nose-intensity-feature-cache-v1\\d8ae9bcdcb3a6d766908ead935b519f05740ebe46b944c8247ef1cb5336ac4bf.json",
+                  "manifest_sha256": "9ddd99137639f7e7de0878a918395d9c2c33c2ca137da50c1327419c49037e1e",
+                  "path": "runs\\nose-intensity-feature-cache-v1\\d8ae9bcdcb3a6d766908ead935b519f05740ebe46b944c8247ef1cb5336ac4bf.npz",
+                  "sha256": "978e8892e28c41f49652142e87bb80662b3b8ddbea51ada03d529ad4478d3c73",
+                  "shape": {
+                    "direction": [
+                      2738,
+                      20
+                    ],
+                    "quality": [
+                      2738,
+                      91
+                    ]
+                  },
+                  "status": "verified",
+                  "training_and_held_ids_exact": true
+                }
+              },
+              "fold": 0,
+              "metadata_sha256": "6eb7ccde79fd3b0d0ec1b8eaa1c9dc21614b5b4499aeefe5de1178b68319365e",
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\abraham-repeat-0-fold-0.npz",
+              "repeat": 0,
+              "sha256": "ca1c6e922ae3e637b17c8881351b3ec7907d4f0e4760b725281e521c72bbb5a7",
+              "source_counts": {
+                "water_source_counts": [
+                  517,
+                  518,
+                  521,
+                  529
+                ]
+              },
+              "status": "verified"
+            },
+            {
+              "evaluate_rows": 22,
+              "feature_caches": {
+                "quality": {
+                  "cache_identity_sha256": "8f5d51851f8abeae65b518ae1f03b5859a65069bf9a9781b97c5b08b14da5e3d",
+                  "code_data_source_identity_exact": true,
+                  "manifest": "runs\\nose-intensity-feature-cache-v1\\8f5d51851f8abeae65b518ae1f03b5859a65069bf9a9781b97c5b08b14da5e3d.json",
+                  "manifest_sha256": "77ed5941c9b70d0e933a17c5e10d0b56758377c33b4b6f062dad153274f44abf",
+                  "path": "runs\\nose-intensity-feature-cache-v1\\8f5d51851f8abeae65b518ae1f03b5859a65069bf9a9781b97c5b08b14da5e3d.npz",
+                  "sha256": "d59b4c09a3e435fc11a8792dd5c37376369b0b6a41b68cba9bb644aee68e4cba",
+                  "shape": {
+                    "direction": [
+                      2738,
+                      20
+                    ],
+                    "quality": [
+                      2738,
+                      91
+                    ]
+                  },
+                  "status": "verified",
+                  "training_and_held_ids_exact": true
+                }
+              },
+              "fold": 1,
+              "metadata_sha256": "bc46a2061508ef16e314349a10a4650d1d9dbf0f45465aa6824cedd7435a16ee",
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\abraham-repeat-0-fold-1.npz",
+              "repeat": 0,
+              "sha256": "d2baf73b178a25f8880f1dcf002c5bd57d7b359c6f00114c1aaf6e98b0311b4f",
+              "source_counts": {
+                "water_source_counts": [
+                  516,
+                  514,
+                  516,
+                  524
+                ]
+              },
+              "status": "verified"
+            },
+            {
+              "evaluate_rows": 22,
+              "feature_caches": {
+                "quality": {
+                  "cache_identity_sha256": "a5ede4772a219e18879883a10b0c2ffcf4907f5b542b25adf382c21805ba00c6",
+                  "code_data_source_identity_exact": true,
+                  "manifest": "runs\\nose-intensity-feature-cache-v1\\a5ede4772a219e18879883a10b0c2ffcf4907f5b542b25adf382c21805ba00c6.json",
+                  "manifest_sha256": "00a2f4345f9c74d91fa271bdc35955a12f7469dbea8ae535b86b1ee34ab341cd",
+                  "path": "runs\\nose-intensity-feature-cache-v1\\a5ede4772a219e18879883a10b0c2ffcf4907f5b542b25adf382c21805ba00c6.npz",
+                  "sha256": "3d7dfde0c626e1b940c36f28a17842458ee186557147ce67f9aa10665d131404",
+                  "shape": {
+                    "direction": [
+                      2738,
+                      20
+                    ],
+                    "quality": [
+                      2738,
+                      91
+                    ]
+                  },
+                  "status": "verified",
+                  "training_and_held_ids_exact": true
+                }
+              },
+              "fold": 2,
+              "metadata_sha256": "16a166ebeb35670c4c75af55687007c41aa418c96d987aad1158d2c38234e528",
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\abraham-repeat-0-fold-2.npz",
+              "repeat": 0,
+              "sha256": "e5ffa419e597ca903b02507bd0f7240274562d1fd02410e4845d7512e3331985",
+              "source_counts": {
+                "water_source_counts": [
+                  516,
+                  517,
+                  517,
+                  526
+                ]
+              },
+              "status": "verified"
+            },
+            {
+              "evaluate_rows": 22,
+              "feature_caches": {
+                "quality": {
+                  "cache_identity_sha256": "8c571238d0ddfc5ad946a6d8a7268b2477598ed06f2b77926e62471db2b839e9",
+                  "code_data_source_identity_exact": true,
+                  "manifest": "runs\\nose-intensity-feature-cache-v1\\8c571238d0ddfc5ad946a6d8a7268b2477598ed06f2b77926e62471db2b839e9.json",
+                  "manifest_sha256": "3a1095b80a0f28620c3be23720d3f128d1c99ade6e1007bd9157088669daa6fa",
+                  "path": "runs\\nose-intensity-feature-cache-v1\\8c571238d0ddfc5ad946a6d8a7268b2477598ed06f2b77926e62471db2b839e9.npz",
+                  "sha256": "c242cde70e1d184a98fd7e9bf3ba17edb9ea5654f3346bcf8587166e7261f84e",
+                  "shape": {
+                    "direction": [
+                      2738,
+                      20
+                    ],
+                    "quality": [
+                      2738,
+                      91
+                    ]
+                  },
+                  "status": "verified",
+                  "training_and_held_ids_exact": true
+                }
+              },
+              "fold": 3,
+              "metadata_sha256": "3609a797cd296ddaee552d64d6922a43d012370b849c614fb6b0a3989b77291a",
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\abraham-repeat-0-fold-3.npz",
+              "repeat": 0,
+              "sha256": "59dbe6835c907c5e73e64f4452e9180877539b8c06e783555df08e52038a39c0",
+              "source_counts": {
+                "water_source_counts": [
+                  517,
+                  517,
+                  516,
+                  526
+                ]
+              },
+              "status": "verified"
+            },
+            {
+              "evaluate_rows": 22,
+              "feature_caches": {
+                "quality": {
+                  "cache_identity_sha256": "3ae3fe623fe77c3139220c5131a7a43d27dd6fe11f4cdbca04f48bc07787fc35",
+                  "code_data_source_identity_exact": true,
+                  "manifest": "runs\\nose-intensity-feature-cache-v1\\3ae3fe623fe77c3139220c5131a7a43d27dd6fe11f4cdbca04f48bc07787fc35.json",
+                  "manifest_sha256": "55582f503fb818e0105cfe4a4f94f3bbb26c84f8468eab620e2dffbe3025263e",
+                  "path": "runs\\nose-intensity-feature-cache-v1\\3ae3fe623fe77c3139220c5131a7a43d27dd6fe11f4cdbca04f48bc07787fc35.npz",
+                  "sha256": "c2c005c6c7da6ccd50c3aa78823fdf333f8736295e50ce0da3ed394bca42b84e",
+                  "shape": {
+                    "direction": [
+                      2738,
+                      20
+                    ],
+                    "quality": [
+                      2738,
+                      91
+                    ]
+                  },
+                  "status": "verified",
+                  "training_and_held_ids_exact": true
+                }
+              },
+              "fold": 4,
+              "metadata_sha256": "f12f22f8f822c0dd3fb098f627ed164f062c0c70dde56c80bf7af585a8711c30",
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\abraham-repeat-0-fold-4.npz",
+              "repeat": 0,
+              "sha256": "6749861ea19d486971a4ded05fdd360667447076d5f581c89422a67b91c6e16a",
+              "source_counts": {
+                "water_source_counts": [
+                  519,
+                  516,
+                  521,
+                  529
+                ]
+              },
+              "status": "verified"
+            },
+            {
+              "evaluate_rows": 23,
+              "feature_caches": {
+                "quality": {
+                  "cache_identity_sha256": "b555da11901de6be1d50d5135b28e09b3fcfec042228d3b2e11a5723c7f4942d",
+                  "code_data_source_identity_exact": true,
+                  "manifest": "runs\\nose-intensity-feature-cache-v1\\b555da11901de6be1d50d5135b28e09b3fcfec042228d3b2e11a5723c7f4942d.json",
+                  "manifest_sha256": "b15f899543c4b110d7b7e6365cde7ee6ebe693ae6d4f2f3c4b1df4e77c79c821",
+                  "path": "runs\\nose-intensity-feature-cache-v1\\b555da11901de6be1d50d5135b28e09b3fcfec042228d3b2e11a5723c7f4942d.npz",
+                  "sha256": "70326e969f4d7d31fbaa26f04fd0fa9ac2d8a452d5da8c2ad9fec724d2d7c0f9",
+                  "shape": {
+                    "direction": [
+                      2738,
+                      20
+                    ],
+                    "quality": [
+                      2738,
+                      91
+                    ]
+                  },
+                  "status": "verified",
+                  "training_and_held_ids_exact": true
+                }
+              },
+              "fold": 0,
+              "metadata_sha256": "59eb0818794915b2a9e7199ffb80e0a51eb4ef7510ee5820d713b01a1ca28f6d",
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\abraham-repeat-1-fold-0.npz",
+              "repeat": 1,
+              "sha256": "32d44efa4341f8a5e658389cc9df3552f85cdc13ee73225c0a09e395ba1e1238",
+              "source_counts": {
+                "water_source_counts": [
+                  517,
+                  517,
+                  520,
+                  528
+                ]
+              },
+              "status": "verified"
+            },
+            {
+              "evaluate_rows": 22,
+              "feature_caches": {
+                "quality": {
+                  "cache_identity_sha256": "927c81f5297c65daa9a24e0085311f47028383b6a48b3c72f57949cbf6dabe9c",
+                  "code_data_source_identity_exact": true,
+                  "manifest": "runs\\nose-intensity-feature-cache-v1\\927c81f5297c65daa9a24e0085311f47028383b6a48b3c72f57949cbf6dabe9c.json",
+                  "manifest_sha256": "6ebe6654173cb6197fe1cef0845a0e430c7ad9218e56d61373b80f12fa03c587",
+                  "path": "runs\\nose-intensity-feature-cache-v1\\927c81f5297c65daa9a24e0085311f47028383b6a48b3c72f57949cbf6dabe9c.npz",
+                  "sha256": "a5e421935a3a21802629c19a3fb7f39f277d5910b7cf5b619332fafa9ed021e6",
+                  "shape": {
+                    "direction": [
+                      2738,
+                      20
+                    ],
+                    "quality": [
+                      2738,
+                      91
+                    ]
+                  },
+                  "status": "verified",
+                  "training_and_held_ids_exact": true
+                }
+              },
+              "fold": 1,
+              "metadata_sha256": "e8f7d9fcae1b1cf1cd95fce2c0b0dc6449377448c1187bc8875da49806628349",
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\abraham-repeat-1-fold-1.npz",
+              "repeat": 1,
+              "sha256": "1749654e2b82ce445eba1cbbaa025529fd83a9918193c340385a3788e5e9a5f5",
+              "source_counts": {
+                "water_source_counts": [
+                  516,
+                  515,
+                  519,
+                  526
+                ]
+              },
+              "status": "verified"
+            },
+            {
+              "evaluate_rows": 22,
+              "feature_caches": {
+                "quality": {
+                  "cache_identity_sha256": "eb4230e6dfc82afa70aa59f2bbe3f745706238672b1d3057bcf43956d90888ce",
+                  "code_data_source_identity_exact": true,
+                  "manifest": "runs\\nose-intensity-feature-cache-v1\\eb4230e6dfc82afa70aa59f2bbe3f745706238672b1d3057bcf43956d90888ce.json",
+                  "manifest_sha256": "dcb7efec6d848059cd5efbac966fec198e89fccbf875e18e727a134159df9eb3",
+                  "path": "runs\\nose-intensity-feature-cache-v1\\eb4230e6dfc82afa70aa59f2bbe3f745706238672b1d3057bcf43956d90888ce.npz",
+                  "sha256": "07e799c8f87d5193bdd4d28dd4297b4b5c1ec2ab659ba32360b2d89fe8c3125e",
+                  "shape": {
+                    "direction": [
+                      2738,
+                      20
+                    ],
+                    "quality": [
+                      2738,
+                      91
+                    ]
+                  },
+                  "status": "verified",
+                  "training_and_held_ids_exact": true
+                }
+              },
+              "fold": 2,
+              "metadata_sha256": "a47b5629ca70f0744f04d614023afd122d7adb4e22538a31b7bc65712e5b4071",
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\abraham-repeat-1-fold-2.npz",
+              "repeat": 1,
+              "sha256": "76ebd78e98895b0dd765bc5ceaadd66529ab1777a84cc8e9a7e290148038f143",
+              "source_counts": {
+                "water_source_counts": [
+                  518,
+                  512,
+                  516,
+                  524
+                ]
+              },
+              "status": "verified"
+            },
+            {
+              "evaluate_rows": 22,
+              "feature_caches": {
+                "quality": {
+                  "cache_identity_sha256": "e9b92b8cd80ce4ad6c43985231a4394e59d3c04d4a883c28c2d594de85482891",
+                  "code_data_source_identity_exact": true,
+                  "manifest": "runs\\nose-intensity-feature-cache-v1\\e9b92b8cd80ce4ad6c43985231a4394e59d3c04d4a883c28c2d594de85482891.json",
+                  "manifest_sha256": "8d52f23948016cbdccb1fc45a8f5b7d018e2b8d062200d89f0729f07ec9a98f2",
+                  "path": "runs\\nose-intensity-feature-cache-v1\\e9b92b8cd80ce4ad6c43985231a4394e59d3c04d4a883c28c2d594de85482891.npz",
+                  "sha256": "3ac6223a1727df6b91425de9f93435ece6c127f9654b010d717070b7dd8fb4b0",
+                  "shape": {
+                    "direction": [
+                      2738,
+                      20
+                    ],
+                    "quality": [
+                      2738,
+                      91
+                    ]
+                  },
+                  "status": "verified",
+                  "training_and_held_ids_exact": true
+                }
+              },
+              "fold": 3,
+              "metadata_sha256": "598c81d4c17680e301adc446de16fef2ed5440e6186c830a46c5704fd3d9797b",
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\abraham-repeat-1-fold-3.npz",
+              "repeat": 1,
+              "sha256": "c27be335bc35d9fac44fe61a3c8ae10c799b50e9f5caad1cf71e361f8794b75d",
+              "source_counts": {
+                "water_source_counts": [
+                  516,
+                  519,
+                  519,
+                  528
+                ]
+              },
+              "status": "verified"
+            },
+            {
+              "evaluate_rows": 22,
+              "feature_caches": {
+                "quality": {
+                  "cache_identity_sha256": "a116a6646b4379c13a7297cf6c744ee88e5f9c6e3617ebcff09fb8098e78a3b1",
+                  "code_data_source_identity_exact": true,
+                  "manifest": "runs\\nose-intensity-feature-cache-v1\\a116a6646b4379c13a7297cf6c744ee88e5f9c6e3617ebcff09fb8098e78a3b1.json",
+                  "manifest_sha256": "9a636c443ed6d5e50ab447f0234e433cd519fe65c4c52dd993702b717fbfd36b",
+                  "path": "runs\\nose-intensity-feature-cache-v1\\a116a6646b4379c13a7297cf6c744ee88e5f9c6e3617ebcff09fb8098e78a3b1.npz",
+                  "sha256": "d4c1e3f8c1fbdaec694900fff61dbb3d169e8bd6f5fd4f279bde08330afadac6",
+                  "shape": {
+                    "direction": [
+                      2738,
+                      20
+                    ],
+                    "quality": [
+                      2738,
+                      91
+                    ]
+                  },
+                  "status": "verified",
+                  "training_and_held_ids_exact": true
+                }
+              },
+              "fold": 4,
+              "metadata_sha256": "4ac8cf325750b38237a82273cdaa314c2abe73e0ede99d4354b1d3ba3dddffbf",
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\abraham-repeat-1-fold-4.npz",
+              "repeat": 1,
+              "sha256": "f3ffe11c9de08a73cd4bc78a2678a1bd9f2c7b0870f4f9ac7da2c05c71ab5776",
+              "source_counts": {
+                "water_source_counts": [
+                  520,
+                  515,
+                  519,
+                  528
+                ]
+              },
+              "status": "verified"
+            },
+            {
+              "evaluate_rows": 23,
+              "feature_caches": {
+                "quality": {
+                  "cache_identity_sha256": "976e85c9e1026dffacee67c30ee84e17ffd2d8944d284ca01fdd9e469b4bdb92",
+                  "code_data_source_identity_exact": true,
+                  "manifest": "runs\\nose-intensity-feature-cache-v1\\976e85c9e1026dffacee67c30ee84e17ffd2d8944d284ca01fdd9e469b4bdb92.json",
+                  "manifest_sha256": "b5a48c71352a8b23981eb035fe7334ee2c7547656de2782f1052d5257a66e09c",
+                  "path": "runs\\nose-intensity-feature-cache-v1\\976e85c9e1026dffacee67c30ee84e17ffd2d8944d284ca01fdd9e469b4bdb92.npz",
+                  "sha256": "c98c720cf6f28133ef30ba2fdaa90b58f954022a43f0b016e1a811967d40bab7",
+                  "shape": {
+                    "direction": [
+                      2738,
+                      20
+                    ],
+                    "quality": [
+                      2738,
+                      91
+                    ]
+                  },
+                  "status": "verified",
+                  "training_and_held_ids_exact": true
+                }
+              },
+              "fold": 0,
+              "metadata_sha256": "f96787651839e070dad89d84e1c6b7750e2dd08c5ac4e2461f91bd3b4aff45e9",
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\abraham-repeat-2-fold-0.npz",
+              "repeat": 2,
+              "sha256": "70e2b6975acb51e50fc3f8a020e86d921a8e708330f4f49d300466c8060f6c14",
+              "source_counts": {
+                "water_source_counts": [
+                  515,
+                  517,
+                  516,
+                  525
+                ]
+              },
+              "status": "verified"
+            },
+            {
+              "evaluate_rows": 22,
+              "feature_caches": {
+                "quality": {
+                  "cache_identity_sha256": "766fd78647081fc99dd739c83ce6362f7a99130e787c577c3ef6dc50bbd653ac",
+                  "code_data_source_identity_exact": true,
+                  "manifest": "runs\\nose-intensity-feature-cache-v1\\766fd78647081fc99dd739c83ce6362f7a99130e787c577c3ef6dc50bbd653ac.json",
+                  "manifest_sha256": "832dbf22a13ce6d25052a45e937fee23e53324aa65a489baec2d710336300d32",
+                  "path": "runs\\nose-intensity-feature-cache-v1\\766fd78647081fc99dd739c83ce6362f7a99130e787c577c3ef6dc50bbd653ac.npz",
+                  "sha256": "ff87362fbf85222e3ce39b27183954cef7703997954691df1e13512721777f99",
+                  "shape": {
+                    "direction": [
+                      2738,
+                      20
+                    ],
+                    "quality": [
+                      2738,
+                      91
+                    ]
+                  },
+                  "status": "verified",
+                  "training_and_held_ids_exact": true
+                }
+              },
+              "fold": 1,
+              "metadata_sha256": "cd4b21ad45fde6fdf5438746c020ec5cd81d1b50dc41e2e9c3b60dd4a7a98e39",
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\abraham-repeat-2-fold-1.npz",
+              "repeat": 2,
+              "sha256": "eb18ee8abc2d819201c0b55eb699a24099afb915f68b950b6fc9e5dd5a61e9a7",
+              "source_counts": {
+                "water_source_counts": [
+                  518,
+                  520,
+                  516,
+                  528
+                ]
+              },
+              "status": "verified"
+            },
+            {
+              "evaluate_rows": 22,
+              "feature_caches": {
+                "quality": {
+                  "cache_identity_sha256": "840a591402dde11d092b2a72c7cc6e0c6c104cdc37a4f188ccafdf45cc36255f",
+                  "code_data_source_identity_exact": true,
+                  "manifest": "runs\\nose-intensity-feature-cache-v1\\840a591402dde11d092b2a72c7cc6e0c6c104cdc37a4f188ccafdf45cc36255f.json",
+                  "manifest_sha256": "79446c5f7696898ecf859d523edd8563ef0e307ac592afa5f5d8123b19c4db63",
+                  "path": "runs\\nose-intensity-feature-cache-v1\\840a591402dde11d092b2a72c7cc6e0c6c104cdc37a4f188ccafdf45cc36255f.npz",
+                  "sha256": "ccc2ee974b74f472e2363bfb5bce8a5c9f50bb3390aeb441302c213a450c7ef3",
+                  "shape": {
+                    "direction": [
+                      2738,
+                      20
+                    ],
+                    "quality": [
+                      2738,
+                      91
+                    ]
+                  },
+                  "status": "verified",
+                  "training_and_held_ids_exact": true
+                }
+              },
+              "fold": 2,
+              "metadata_sha256": "7c525708a1ba86ef245aaeab0bc4939bf06216b71dbb7fa331f460d5a0c75cce",
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\abraham-repeat-2-fold-2.npz",
+              "repeat": 2,
+              "sha256": "f2b0834b68ac5cc6dad3388b9085fcfbfad5a74dcca34d30b5a8c64d50c0e655",
+              "source_counts": {
+                "water_source_counts": [
+                  519,
+                  517,
+                  518,
+                  528
+                ]
+              },
+              "status": "verified"
+            },
+            {
+              "evaluate_rows": 22,
+              "feature_caches": {
+                "quality": {
+                  "cache_identity_sha256": "e61f87bd735848e933b66439e88781d56a7d2eaef3d0c932156beae445d65a5c",
+                  "code_data_source_identity_exact": true,
+                  "manifest": "runs\\nose-intensity-feature-cache-v1\\e61f87bd735848e933b66439e88781d56a7d2eaef3d0c932156beae445d65a5c.json",
+                  "manifest_sha256": "86dd8aef59811e747f77a8ebaa624b5adf7f3e860e12936f50b674be5955cb17",
+                  "path": "runs\\nose-intensity-feature-cache-v1\\e61f87bd735848e933b66439e88781d56a7d2eaef3d0c932156beae445d65a5c.npz",
+                  "sha256": "2ceb1ba2d46835d3c0128f46210b9d4e27794816703f6ef3e663dc28b450a820",
+                  "shape": {
+                    "direction": [
+                      2738,
+                      20
+                    ],
+                    "quality": [
+                      2738,
+                      91
+                    ]
+                  },
+                  "status": "verified",
+                  "training_and_held_ids_exact": true
+                }
+              },
+              "fold": 3,
+              "metadata_sha256": "294863f0d640470feef28f0ad1f9a6410b516990537cb84497bf91e0bf70d976",
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\abraham-repeat-2-fold-3.npz",
+              "repeat": 2,
+              "sha256": "d6fc9e358b20ce3a0d785b8ac806d5fb6814105d61f4bf44d28d188094787c36",
+              "source_counts": {
+                "water_source_counts": [
+                  515,
+                  521,
+                  518,
+                  528
+                ]
+              },
+              "status": "verified"
+            },
+            {
+              "evaluate_rows": 22,
+              "feature_caches": {
+                "quality": {
+                  "cache_identity_sha256": "becdc01a611fb37811bb676635370880874986bc4f2bd563b245bdbdadb91ac3",
+                  "code_data_source_identity_exact": true,
+                  "manifest": "runs\\nose-intensity-feature-cache-v1\\becdc01a611fb37811bb676635370880874986bc4f2bd563b245bdbdadb91ac3.json",
+                  "manifest_sha256": "efff39f49b7fedb9d93a86e05e09179edeae186be8e96312df69db6ddba47d20",
+                  "path": "runs\\nose-intensity-feature-cache-v1\\becdc01a611fb37811bb676635370880874986bc4f2bd563b245bdbdadb91ac3.npz",
+                  "sha256": "8157b6f821bdd461e86c92ddf489a4968214050314d691729a92b5ef4bb644ed",
+                  "shape": {
+                    "direction": [
+                      2738,
+                      20
+                    ],
+                    "quality": [
+                      2738,
+                      91
+                    ]
+                  },
+                  "status": "verified",
+                  "training_and_held_ids_exact": true
+                }
+              },
+              "fold": 4,
+              "metadata_sha256": "5bf45efe0d10a2c2c3cf4346b6eaee984dce2dbadb36c3e99f3920acbf6e515c",
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\abraham-repeat-2-fold-4.npz",
+              "repeat": 2,
+              "sha256": "8048c03af59aba19a5dee6f60856c6a7461fc4ece0cbddd5f58a3650d8dc13d8",
+              "source_counts": {
+                "water_source_counts": [
+                  514,
+                  518,
+                  516,
+                  525
+                ]
+              },
+              "status": "verified"
+            }
+          ],
+          "main_held_ids_sha256": "f1994aba08e4e440a2eb08db68e43b8bd224e8504252154e36ee1a75da56aa11",
+          "primary_train_main_held_connectivity_overlaps": [
+            "XMGQYMWWDOXHJM"
+          ],
+          "repeats": [
+            {
+              "completed_folds": 5,
+              "fold_seed": 100,
+              "repeat": 0,
+              "status": "complete",
+              "training_only_scores": {
+                "blend_water_boost2": {
+                  "mae": 0.8129979637190915,
+                  "pearson": 0.6637162552116334,
+                  "rmse": 1.023234856037586
+                },
+                "blend_water_boost3": {
+                  "mae": 0.8136276110477692,
+                  "pearson": 0.6616550492232836,
+                  "rmse": 1.0247239443321556
+                },
+                "blend_water_ridge10": {
+                  "mae": 0.7608299730326781,
+                  "pearson": 0.68090996401839,
+                  "rmse": 0.9905641420638296
+                },
+                "blend_water_ridge100": {
+                  "mae": 0.7694246114313461,
+                  "pearson": 0.6810293364996967,
+                  "rmse": 1.0012362461048787
+                },
+                "current": {
+                  "mae": 0.7499605496481808,
+                  "pearson": 0.721962356521026,
+                  "rmse": 0.9608777700194336
+                },
+                "water_boost2": {
+                  "mae": 0.8926338245070669,
+                  "pearson": 0.5543181730669822,
+                  "rmse": 1.1238300170610782
+                },
+                "water_boost3": {
+                  "mae": 0.9031410779013576,
+                  "pearson": 0.5519233140480913,
+                  "rmse": 1.1260303062947303
+                },
+                "water_ridge10": {
+                  "mae": 0.8763358730267712,
+                  "pearson": 0.6065304816310383,
+                  "rmse": 1.1566256962962511
+                },
+                "water_ridge100": {
+                  "mae": 0.8440707012137958,
+                  "pearson": 0.5779943277614228,
+                  "rmse": 1.1036161132619646
+                }
+              },
+              "unique_original_training_coverage_verified": true
+            },
+            {
+              "completed_folds": 5,
+              "fold_seed": 101,
+              "repeat": 1,
+              "status": "complete",
+              "training_only_scores": {
+                "blend_water_boost2": {
+                  "mae": 0.7440192813301082,
+                  "pearson": 0.7350189087268424,
+                  "rmse": 0.9362764385007617
+                },
+                "blend_water_boost3": {
+                  "mae": 0.7372533831414858,
+                  "pearson": 0.7420858790427373,
+                  "rmse": 0.9241850772689473
+                },
+                "blend_water_ridge10": {
+                  "mae": 0.7330136114563383,
+                  "pearson": 0.6996370353390623,
+                  "rmse": 0.9651705486881539
+                },
+                "blend_water_ridge100": {
+                  "mae": 0.7535875514459814,
+                  "pearson": 0.7111144511246762,
+                  "rmse": 0.9691008372204891
+                },
+                "current": {
+                  "mae": 0.7278339485582438,
+                  "pearson": 0.7549101012869801,
+                  "rmse": 0.9072864810967671
+                },
+                "water_boost2": {
+                  "mae": 0.8085733701734008,
+                  "pearson": 0.6482491058151434,
+                  "rmse": 1.0288687186046603
+                },
+                "water_boost3": {
+                  "mae": 0.7915070439282051,
+                  "pearson": 0.6679381444105493,
+                  "rmse": 1.006268635053263
+                },
+                "water_ridge10": {
+                  "mae": 0.8320243565184733,
+                  "pearson": 0.5916268501014896,
+                  "rmse": 1.1399029219079757
+                },
+                "water_ridge100": {
+                  "mae": 0.8401113400197082,
+                  "pearson": 0.5613081903795445,
+                  "rmse": 1.1230644143184223
+                }
+              },
+              "unique_original_training_coverage_verified": true
+            },
+            {
+              "completed_folds": 5,
+              "fold_seed": 102,
+              "repeat": 2,
+              "status": "complete",
+              "training_only_scores": {
+                "blend_water_boost2": {
+                  "mae": 0.7653222812869759,
+                  "pearson": 0.6804214622104741,
+                  "rmse": 1.000659650058041
+                },
+                "blend_water_boost3": {
+                  "mae": 0.7651369720036666,
+                  "pearson": 0.6807951852857215,
+                  "rmse": 0.9995508971368591
+                },
+                "blend_water_ridge10": {
+                  "mae": 0.8075763969923446,
+                  "pearson": 0.5468082062659004,
+                  "rmse": 1.2151471006223373
+                },
+                "blend_water_ridge100": {
+                  "mae": 0.7587924455003523,
+                  "pearson": 0.6969291892426605,
+                  "rmse": 0.9883329245692165
+                },
+                "current": {
+                  "mae": 0.7359098502874768,
+                  "pearson": 0.7218485066169719,
+                  "rmse": 0.9585220028549231
+                },
+                "water_boost2": {
+                  "mae": 0.8243160011339528,
+                  "pearson": 0.5925595332773477,
+                  "rmse": 1.0900634707723516
+                },
+                "water_boost3": {
+                  "mae": 0.8258824599739147,
+                  "pearson": 0.5941568577621364,
+                  "rmse": 1.0890165600452755
+                },
+                "water_ridge10": {
+                  "mae": 0.9568137921622211,
+                  "pearson": 0.3923653722723612,
+                  "rmse": 1.7822085963231984
+                },
+                "water_ridge100": {
+                  "mae": 0.8331630910076662,
+                  "pearson": 0.6043638839038258,
+                  "rmse": 1.0762238991999773
+                }
+              },
+              "unique_original_training_coverage_verified": true
+            }
+          ],
+          "saved_final_results_verified": {
+            "passing": [],
+            "scores_and_promotion_exact": true,
+            "selected": "current",
+            "sha256": "ccecabbc06deed708b562e5acdec723f69593e97fb7b84e9a1074a3b2ea6147a"
+          },
+          "status": "complete",
+          "training_ids_sha256": "85e479c4809c404eb3fba075152c0954741611563d2bc9902eec562be72ba67b",
+          "training_rows": 111,
+          "training_targets": {
+            "dtype": "float64",
+            "sha256_header_and_c_order_bytes": "1ebde4e287d0c42af82844289a26f0c4d19e1d2ac5fea9ac8abb35b09ebd93a7",
+            "shape": [
+              111
+            ]
+          }
+        }
+      },
+      "path": "runs\\nose-parity-threshold-water-inner-v2",
+      "selection_plan_sha256": "01270d65bc5f19480089ad4dc0727fcac3db9b1fa34638c344f6baaa718ba14e",
+      "source_archive": {
+        "archive_verified": true,
+        "current_executable_code_matches_archive": true,
+        "files": [
+          {
+            "appledouble_metadata": false,
+            "archive": {
+              "bytes": 13906,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\scripts\\nose_intensity_experiment.py",
+              "sha256": "99e46b11019300de261a9e04545799a1c56ea882b0cba726d2ea9f291df97196"
+            },
+            "current": {
+              "bytes": 13906,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "scripts\\nose_intensity_experiment.py",
+              "sha256": "99e46b11019300de261a9e04545799a1c56ea882b0cba726d2ea9f291df97196"
+            },
+            "relative_path": "scripts\\nose_intensity_experiment.py"
+          },
+          {
+            "appledouble_metadata": false,
+            "archive": {
+              "bytes": 16087,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\scripts\\nose_parity_refine.py",
+              "sha256": "a8214b981aa08464f5c86ed2213cacc02fecf9c113be6267b3cb203fe73d9b33"
+            },
+            "current": {
+              "bytes": 16087,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "scripts\\nose_parity_refine.py",
+              "sha256": "a8214b981aa08464f5c86ed2213cacc02fecf9c113be6267b3cb203fe73d9b33"
+            },
+            "relative_path": "scripts\\nose_parity_refine.py"
+          },
+          {
+            "appledouble_metadata": false,
+            "archive": {
+              "bytes": 13930,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\scripts\\nose_semantic_experiment.py",
+              "sha256": "784d971f1950b3d8f2d8281a067a01f686c932de369d874b462c2e06480e62bd"
+            },
+            "current": {
+              "bytes": 13930,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "scripts\\nose_semantic_experiment.py",
+              "sha256": "784d971f1950b3d8f2d8281a067a01f686c932de369d874b462c2e06480e62bd"
+            },
+            "relative_path": "scripts\\nose_semantic_experiment.py"
+          },
+          {
+            "appledouble_metadata": true,
+            "archive": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\.___init__.py",
+              "sha256": "af4176be8a08753b23d49eeebd80b3e9d91a16df6638b07f532e0db1fd791a07"
+            },
+            "current": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\.___init__.py",
+              "sha256": "af4176be8a08753b23d49eeebd80b3e9d91a16df6638b07f532e0db1fd791a07"
+            },
+            "relative_path": "src\\calnew\\.___init__.py"
+          },
+          {
+            "appledouble_metadata": true,
+            "archive": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\.___main__.py",
+              "sha256": "af4176be8a08753b23d49eeebd80b3e9d91a16df6638b07f532e0db1fd791a07"
+            },
+            "current": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\.___main__.py",
+              "sha256": "af4176be8a08753b23d49eeebd80b3e9d91a16df6638b07f532e0db1fd791a07"
+            },
+            "relative_path": "src\\calnew\\.___main__.py"
+          },
+          {
+            "appledouble_metadata": true,
+            "archive": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\._active.py",
+              "sha256": "af4176be8a08753b23d49eeebd80b3e9d91a16df6638b07f532e0db1fd791a07"
+            },
+            "current": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\._active.py",
+              "sha256": "af4176be8a08753b23d49eeebd80b3e9d91a16df6638b07f532e0db1fd791a07"
+            },
+            "relative_path": "src\\calnew\\._active.py"
+          },
+          {
+            "appledouble_metadata": true,
+            "archive": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\._benchmark.py",
+              "sha256": "b63f60822292e3b859fbfe9220448438b00011ca7883f123bdc8fc7060cf116d"
+            },
+            "current": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\._benchmark.py",
+              "sha256": "b63f60822292e3b859fbfe9220448438b00011ca7883f123bdc8fc7060cf116d"
+            },
+            "relative_path": "src\\calnew\\._benchmark.py"
+          },
+          {
+            "appledouble_metadata": true,
+            "archive": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\._calibration.py",
+              "sha256": "af4176be8a08753b23d49eeebd80b3e9d91a16df6638b07f532e0db1fd791a07"
+            },
+            "current": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\._calibration.py",
+              "sha256": "af4176be8a08753b23d49eeebd80b3e9d91a16df6638b07f532e0db1fd791a07"
+            },
+            "relative_path": "src\\calnew\\._calibration.py"
+          },
+          {
+            "appledouble_metadata": true,
+            "archive": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\._chemistry.py",
+              "sha256": "af4176be8a08753b23d49eeebd80b3e9d91a16df6638b07f532e0db1fd791a07"
+            },
+            "current": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\._chemistry.py",
+              "sha256": "af4176be8a08753b23d49eeebd80b3e9d91a16df6638b07f532e0db1fd791a07"
+            },
+            "relative_path": "src\\calnew\\._chemistry.py"
+          },
+          {
+            "appledouble_metadata": true,
+            "archive": {
+              "bytes": 263,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\._cli.py",
+              "sha256": "1c3c8d6e221ce10427e6fed3e93b5ff522370b965ad95388b6a7ae4c91b5adf7"
+            },
+            "current": {
+              "bytes": 263,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\._cli.py",
+              "sha256": "1c3c8d6e221ce10427e6fed3e93b5ff522370b965ad95388b6a7ae4c91b5adf7"
+            },
+            "relative_path": "src\\calnew\\._cli.py"
+          },
+          {
+            "appledouble_metadata": true,
+            "archive": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\._conformers.py",
+              "sha256": "af4176be8a08753b23d49eeebd80b3e9d91a16df6638b07f532e0db1fd791a07"
+            },
+            "current": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\._conformers.py",
+              "sha256": "af4176be8a08753b23d49eeebd80b3e9d91a16df6638b07f532e0db1fd791a07"
+            },
+            "relative_path": "src\\calnew\\._conformers.py"
+          },
+          {
+            "appledouble_metadata": true,
+            "archive": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\._contextual.py",
+              "sha256": "af4176be8a08753b23d49eeebd80b3e9d91a16df6638b07f532e0db1fd791a07"
+            },
+            "current": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\._contextual.py",
+              "sha256": "af4176be8a08753b23d49eeebd80b3e9d91a16df6638b07f532e0db1fd791a07"
+            },
+            "relative_path": "src\\calnew\\._contextual.py"
+          },
+          {
+            "appledouble_metadata": true,
+            "archive": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\._dataset.py",
+              "sha256": "af4176be8a08753b23d49eeebd80b3e9d91a16df6638b07f532e0db1fd791a07"
+            },
+            "current": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\._dataset.py",
+              "sha256": "af4176be8a08753b23d49eeebd80b3e9d91a16df6638b07f532e0db1fd791a07"
+            },
+            "relative_path": "src\\calnew\\._dataset.py"
+          },
+          {
+            "appledouble_metadata": true,
+            "archive": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\._ensemble.py",
+              "sha256": "af4176be8a08753b23d49eeebd80b3e9d91a16df6638b07f532e0db1fd791a07"
+            },
+            "current": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\._ensemble.py",
+              "sha256": "af4176be8a08753b23d49eeebd80b3e9d91a16df6638b07f532e0db1fd791a07"
+            },
+            "relative_path": "src\\calnew\\._ensemble.py"
+          },
+          {
+            "appledouble_metadata": true,
+            "archive": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\._features.py",
+              "sha256": "af4176be8a08753b23d49eeebd80b3e9d91a16df6638b07f532e0db1fd791a07"
+            },
+            "current": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\._features.py",
+              "sha256": "af4176be8a08753b23d49eeebd80b3e9d91a16df6638b07f532e0db1fd791a07"
+            },
+            "relative_path": "src\\calnew\\._features.py"
+          },
+          {
+            "appledouble_metadata": true,
+            "archive": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\._hierarchical.py",
+              "sha256": "af4176be8a08753b23d49eeebd80b3e9d91a16df6638b07f532e0db1fd791a07"
+            },
+            "current": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\._hierarchical.py",
+              "sha256": "af4176be8a08753b23d49eeebd80b3e9d91a16df6638b07f532e0db1fd791a07"
+            },
+            "relative_path": "src\\calnew\\._hierarchical.py"
+          },
+          {
+            "appledouble_metadata": true,
+            "archive": {
+              "bytes": 263,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\._ingest.py",
+              "sha256": "07ef5eaf03d9e59213b4af484ebcefc17e2d668dddb2c2c0aab26320924fbf50"
+            },
+            "current": {
+              "bytes": 263,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\._ingest.py",
+              "sha256": "07ef5eaf03d9e59213b4af484ebcefc17e2d668dddb2c2c0aab26320924fbf50"
+            },
+            "relative_path": "src\\calnew\\._ingest.py"
+          },
+          {
+            "appledouble_metadata": true,
+            "archive": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\._io.py",
+              "sha256": "af4176be8a08753b23d49eeebd80b3e9d91a16df6638b07f532e0db1fd791a07"
+            },
+            "current": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\._io.py",
+              "sha256": "af4176be8a08753b23d49eeebd80b3e9d91a16df6638b07f532e0db1fd791a07"
+            },
+            "relative_path": "src\\calnew\\._io.py"
+          },
+          {
+            "appledouble_metadata": true,
+            "archive": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\._losses.py",
+              "sha256": "af4176be8a08753b23d49eeebd80b3e9d91a16df6638b07f532e0db1fd791a07"
+            },
+            "current": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\._losses.py",
+              "sha256": "af4176be8a08753b23d49eeebd80b3e9d91a16df6638b07f532e0db1fd791a07"
+            },
+            "relative_path": "src\\calnew\\._losses.py"
+          },
+          {
+            "appledouble_metadata": true,
+            "archive": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\._metrics.py",
+              "sha256": "af4176be8a08753b23d49eeebd80b3e9d91a16df6638b07f532e0db1fd791a07"
+            },
+            "current": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\._metrics.py",
+              "sha256": "af4176be8a08753b23d49eeebd80b3e9d91a16df6638b07f532e0db1fd791a07"
+            },
+            "relative_path": "src\\calnew\\._metrics.py"
+          },
+          {
+            "appledouble_metadata": true,
+            "archive": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\._panel.py",
+              "sha256": "af4176be8a08753b23d49eeebd80b3e9d91a16df6638b07f532e0db1fd791a07"
+            },
+            "current": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\._panel.py",
+              "sha256": "af4176be8a08753b23d49eeebd80b3e9d91a16df6638b07f532e0db1fd791a07"
+            },
+            "relative_path": "src\\calnew\\._panel.py"
+          },
+          {
+            "appledouble_metadata": true,
+            "archive": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\._pharmacophore.py",
+              "sha256": "af4176be8a08753b23d49eeebd80b3e9d91a16df6638b07f532e0db1fd791a07"
+            },
+            "current": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\._pharmacophore.py",
+              "sha256": "af4176be8a08753b23d49eeebd80b3e9d91a16df6638b07f532e0db1fd791a07"
+            },
+            "relative_path": "src\\calnew\\._pharmacophore.py"
+          },
+          {
+            "appledouble_metadata": true,
+            "archive": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\._predict.py",
+              "sha256": "af4176be8a08753b23d49eeebd80b3e9d91a16df6638b07f532e0db1fd791a07"
+            },
+            "current": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\._predict.py",
+              "sha256": "af4176be8a08753b23d49eeebd80b3e9d91a16df6638b07f532e0db1fd791a07"
+            },
+            "relative_path": "src\\calnew\\._predict.py"
+          },
+          {
+            "appledouble_metadata": true,
+            "archive": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\._report.py",
+              "sha256": "af4176be8a08753b23d49eeebd80b3e9d91a16df6638b07f532e0db1fd791a07"
+            },
+            "current": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\._report.py",
+              "sha256": "af4176be8a08753b23d49eeebd80b3e9d91a16df6638b07f532e0db1fd791a07"
+            },
+            "relative_path": "src\\calnew\\._report.py"
+          },
+          {
+            "appledouble_metadata": true,
+            "archive": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\._review.py",
+              "sha256": "af4176be8a08753b23d49eeebd80b3e9d91a16df6638b07f532e0db1fd791a07"
+            },
+            "current": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\._review.py",
+              "sha256": "af4176be8a08753b23d49eeebd80b3e9d91a16df6638b07f532e0db1fd791a07"
+            },
+            "relative_path": "src\\calnew\\._review.py"
+          },
+          {
+            "appledouble_metadata": true,
+            "archive": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\._schema.py",
+              "sha256": "af4176be8a08753b23d49eeebd80b3e9d91a16df6638b07f532e0db1fd791a07"
+            },
+            "current": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\._schema.py",
+              "sha256": "af4176be8a08753b23d49eeebd80b3e9d91a16df6638b07f532e0db1fd791a07"
+            },
+            "relative_path": "src\\calnew\\._schema.py"
+          },
+          {
+            "appledouble_metadata": true,
+            "archive": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\._splits.py",
+              "sha256": "af4176be8a08753b23d49eeebd80b3e9d91a16df6638b07f532e0db1fd791a07"
+            },
+            "current": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\._splits.py",
+              "sha256": "af4176be8a08753b23d49eeebd80b3e9d91a16df6638b07f532e0db1fd791a07"
+            },
+            "relative_path": "src\\calnew\\._splits.py"
+          },
+          {
+            "appledouble_metadata": true,
+            "archive": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\._store.py",
+              "sha256": "af4176be8a08753b23d49eeebd80b3e9d91a16df6638b07f532e0db1fd791a07"
+            },
+            "current": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\._store.py",
+              "sha256": "af4176be8a08753b23d49eeebd80b3e9d91a16df6638b07f532e0db1fd791a07"
+            },
+            "relative_path": "src\\calnew\\._store.py"
+          },
+          {
+            "appledouble_metadata": true,
+            "archive": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\._units.py",
+              "sha256": "af4176be8a08753b23d49eeebd80b3e9d91a16df6638b07f532e0db1fd791a07"
+            },
+            "current": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\._units.py",
+              "sha256": "af4176be8a08753b23d49eeebd80b3e9d91a16df6638b07f532e0db1fd791a07"
+            },
+            "relative_path": "src\\calnew\\._units.py"
+          },
+          {
+            "appledouble_metadata": false,
+            "archive": {
+              "bytes": 501,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\__init__.py",
+              "sha256": "2fcaf43d532969a6ef5c6b694450e79b9b4b6183ab1a377018102fac8b86e4dc"
+            },
+            "current": {
+              "bytes": 501,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\__init__.py",
+              "sha256": "2fcaf43d532969a6ef5c6b694450e79b9b4b6183ab1a377018102fac8b86e4dc"
+            },
+            "relative_path": "src\\calnew\\__init__.py"
+          },
+          {
+            "appledouble_metadata": false,
+            "archive": {
+              "bytes": 31,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\__main__.py",
+              "sha256": "11cf323249f4ba4e79c9fb7660c0979fc91a3822bc5362286376b69808b41195"
+            },
+            "current": {
+              "bytes": 31,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\__main__.py",
+              "sha256": "11cf323249f4ba4e79c9fb7660c0979fc91a3822bc5362286376b69808b41195"
+            },
+            "relative_path": "src\\calnew\\__main__.py"
+          },
+          {
+            "appledouble_metadata": false,
+            "archive": {
+              "bytes": 2636,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\active.py",
+              "sha256": "b6ec3c228a16d6ea1b685bc04d23f97e6948a88e8f800955524e9f2a71895220"
+            },
+            "current": {
+              "bytes": 2636,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\active.py",
+              "sha256": "b6ec3c228a16d6ea1b685bc04d23f97e6948a88e8f800955524e9f2a71895220"
+            },
+            "relative_path": "src\\calnew\\active.py"
+          },
+          {
+            "appledouble_metadata": false,
+            "archive": {
+              "bytes": 15145,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\benchmark.py",
+              "sha256": "c1b5980970319588951cde6182c489537a25393216d72ce8b02216b7560b6336"
+            },
+            "current": {
+              "bytes": 15145,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\benchmark.py",
+              "sha256": "c1b5980970319588951cde6182c489537a25393216d72ce8b02216b7560b6336"
+            },
+            "relative_path": "src\\calnew\\benchmark.py"
+          },
+          {
+            "appledouble_metadata": false,
+            "archive": {
+              "bytes": 2538,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\calibration.py",
+              "sha256": "917abbd1a4f1064fffd1bf83ddf7b78ca232fbef7d12dcefb00378157b78743d"
+            },
+            "current": {
+              "bytes": 2538,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\calibration.py",
+              "sha256": "917abbd1a4f1064fffd1bf83ddf7b78ca232fbef7d12dcefb00378157b78743d"
+            },
+            "relative_path": "src\\calnew\\calibration.py"
+          },
+          {
+            "appledouble_metadata": false,
+            "archive": {
+              "bytes": 3087,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\chemistry.py",
+              "sha256": "98d01e5705f7885501eedcebcf3249504182d7b9b4b242adb1062be2bc36090a"
+            },
+            "current": {
+              "bytes": 3087,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\chemistry.py",
+              "sha256": "98d01e5705f7885501eedcebcf3249504182d7b9b4b242adb1062be2bc36090a"
+            },
+            "relative_path": "src\\calnew\\chemistry.py"
+          },
+          {
+            "appledouble_metadata": false,
+            "archive": {
+              "bytes": 11375,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\cli.py",
+              "sha256": "6d4745a4f50aa6aad386f00ec2c784f77330ad70a7890fce6b51a6e056ac13fc"
+            },
+            "current": {
+              "bytes": 11375,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\cli.py",
+              "sha256": "6d4745a4f50aa6aad386f00ec2c784f77330ad70a7890fce6b51a6e056ac13fc"
+            },
+            "relative_path": "src\\calnew\\cli.py"
+          },
+          {
+            "appledouble_metadata": false,
+            "archive": {
+              "bytes": 2872,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\conformers.py",
+              "sha256": "2a4240173a29e432b5c93a7fa1e7c838125ec6daa5cc8a8f1790f661a9dfb082"
+            },
+            "current": {
+              "bytes": 2872,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\conformers.py",
+              "sha256": "2a4240173a29e432b5c93a7fa1e7c838125ec6daa5cc8a8f1790f661a9dfb082"
+            },
+            "relative_path": "src\\calnew\\conformers.py"
+          },
+          {
+            "appledouble_metadata": false,
+            "archive": {
+              "bytes": 4214,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\contextual.py",
+              "sha256": "59fd3bcf03e0c7dabd96df344930fea649ea9b144b809a1abb7b88d7d1cd5f4e"
+            },
+            "current": {
+              "bytes": 4214,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\contextual.py",
+              "sha256": "59fd3bcf03e0c7dabd96df344930fea649ea9b144b809a1abb7b88d7d1cd5f4e"
+            },
+            "relative_path": "src\\calnew\\contextual.py"
+          },
+          {
+            "appledouble_metadata": false,
+            "archive": {
+              "bytes": 4502,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\dataset.py",
+              "sha256": "00b033868915c19ebcd0b5da3961fbc91345ae417a8860133cb4cf883d5d68a9"
+            },
+            "current": {
+              "bytes": 4502,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\dataset.py",
+              "sha256": "00b033868915c19ebcd0b5da3961fbc91345ae417a8860133cb4cf883d5d68a9"
+            },
+            "relative_path": "src\\calnew\\dataset.py"
+          },
+          {
+            "appledouble_metadata": false,
+            "archive": {
+              "bytes": 5202,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\ensemble.py",
+              "sha256": "407362b7d0c970d71a100371cbb2c54891c98a164d210f609be75e80888af7e5"
+            },
+            "current": {
+              "bytes": 5202,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\ensemble.py",
+              "sha256": "407362b7d0c970d71a100371cbb2c54891c98a164d210f609be75e80888af7e5"
+            },
+            "relative_path": "src\\calnew\\ensemble.py"
+          },
+          {
+            "appledouble_metadata": false,
+            "archive": {
+              "bytes": 1700,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\features.py",
+              "sha256": "9432cacd9a546a82986f31b2d39b2402267d7505c6668740349a3b936616acf1"
+            },
+            "current": {
+              "bytes": 1700,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\features.py",
+              "sha256": "9432cacd9a546a82986f31b2d39b2402267d7505c6668740349a3b936616acf1"
+            },
+            "relative_path": "src\\calnew\\features.py"
+          },
+          {
+            "appledouble_metadata": false,
+            "archive": {
+              "bytes": 3546,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\hierarchical.py",
+              "sha256": "6f63a2a128227bc076b969ece05694a7602d57f186856e9b10abfa5d5df64341"
+            },
+            "current": {
+              "bytes": 3546,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\hierarchical.py",
+              "sha256": "6f63a2a128227bc076b969ece05694a7602d57f186856e9b10abfa5d5df64341"
+            },
+            "relative_path": "src\\calnew\\hierarchical.py"
+          },
+          {
+            "appledouble_metadata": false,
+            "archive": {
+              "bytes": 15740,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\ingest.py",
+              "sha256": "5b75ec5024628d24fa6b2560dba9a96f6bce57c4def625824449d5f757f129af"
+            },
+            "current": {
+              "bytes": 15740,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\ingest.py",
+              "sha256": "5b75ec5024628d24fa6b2560dba9a96f6bce57c4def625824449d5f757f129af"
+            },
+            "relative_path": "src\\calnew\\ingest.py"
+          },
+          {
+            "appledouble_metadata": false,
+            "archive": {
+              "bytes": 1703,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\io.py",
+              "sha256": "be6644177e4357326eea7be9e926e99b6c18852fd4e2791a32252b104f562e51"
+            },
+            "current": {
+              "bytes": 1703,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\io.py",
+              "sha256": "be6644177e4357326eea7be9e926e99b6c18852fd4e2791a32252b104f562e51"
+            },
+            "relative_path": "src\\calnew\\io.py"
+          },
+          {
+            "appledouble_metadata": false,
+            "archive": {
+              "bytes": 2529,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\losses.py",
+              "sha256": "2f9c96dea663823beb9bb4216a9b90bd084bb9dac161beae275d536dd12162c9"
+            },
+            "current": {
+              "bytes": 2529,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\losses.py",
+              "sha256": "2f9c96dea663823beb9bb4216a9b90bd084bb9dac161beae275d536dd12162c9"
+            },
+            "relative_path": "src\\calnew\\losses.py"
+          },
+          {
+            "appledouble_metadata": false,
+            "archive": {
+              "bytes": 4094,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\metrics.py",
+              "sha256": "59e4dd69dab28a4fbe0f130b5b0625a7e60bdc8b5fecca6ebc6d7ba7affea676"
+            },
+            "current": {
+              "bytes": 4094,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\metrics.py",
+              "sha256": "59e4dd69dab28a4fbe0f130b5b0625a7e60bdc8b5fecca6ebc6d7ba7affea676"
+            },
+            "relative_path": "src\\calnew\\metrics.py"
+          },
+          {
+            "appledouble_metadata": true,
+            "archive": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\models\\.___init__.py",
+              "sha256": "af4176be8a08753b23d49eeebd80b3e9d91a16df6638b07f532e0db1fd791a07"
+            },
+            "current": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\models\\.___init__.py",
+              "sha256": "af4176be8a08753b23d49eeebd80b3e9d91a16df6638b07f532e0db1fd791a07"
+            },
+            "relative_path": "src\\calnew\\models\\.___init__.py"
+          },
+          {
+            "appledouble_metadata": true,
+            "archive": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\models\\._base.py",
+              "sha256": "af4176be8a08753b23d49eeebd80b3e9d91a16df6638b07f532e0db1fd791a07"
+            },
+            "current": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\models\\._base.py",
+              "sha256": "af4176be8a08753b23d49eeebd80b3e9d91a16df6638b07f532e0db1fd791a07"
+            },
+            "relative_path": "src\\calnew\\models\\._base.py"
+          },
+          {
+            "appledouble_metadata": true,
+            "archive": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\models\\._classical.py",
+              "sha256": "af4176be8a08753b23d49eeebd80b3e9d91a16df6638b07f532e0db1fd791a07"
+            },
+            "current": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\models\\._classical.py",
+              "sha256": "af4176be8a08753b23d49eeebd80b3e9d91a16df6638b07f532e0db1fd791a07"
+            },
+            "relative_path": "src\\calnew\\models\\._classical.py"
+          },
+          {
+            "appledouble_metadata": true,
+            "archive": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\models\\._external.py",
+              "sha256": "af4176be8a08753b23d49eeebd80b3e9d91a16df6638b07f532e0db1fd791a07"
+            },
+            "current": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\models\\._external.py",
+              "sha256": "af4176be8a08753b23d49eeebd80b3e9d91a16df6638b07f532e0db1fd791a07"
+            },
+            "relative_path": "src\\calnew\\models\\._external.py"
+          },
+          {
+            "appledouble_metadata": true,
+            "archive": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\models\\._neural.py",
+              "sha256": "af4176be8a08753b23d49eeebd80b3e9d91a16df6638b07f532e0db1fd791a07"
+            },
+            "current": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\models\\._neural.py",
+              "sha256": "af4176be8a08753b23d49eeebd80b3e9d91a16df6638b07f532e0db1fd791a07"
+            },
+            "relative_path": "src\\calnew\\models\\._neural.py"
+          },
+          {
+            "appledouble_metadata": true,
+            "archive": {
+              "bytes": 263,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\models\\._pretrained.py",
+              "sha256": "07ef5eaf03d9e59213b4af484ebcefc17e2d668dddb2c2c0aab26320924fbf50"
+            },
+            "current": {
+              "bytes": 263,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\models\\._pretrained.py",
+              "sha256": "07ef5eaf03d9e59213b4af484ebcefc17e2d668dddb2c2c0aab26320924fbf50"
+            },
+            "relative_path": "src\\calnew\\models\\._pretrained.py"
+          },
+          {
+            "appledouble_metadata": false,
+            "archive": {
+              "bytes": 1071,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\models\\__init__.py",
+              "sha256": "13732209800dc7bffef9564e17caca945da0e0c60f988a2d2b8858433234cc1f"
+            },
+            "current": {
+              "bytes": 1071,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\models\\__init__.py",
+              "sha256": "13732209800dc7bffef9564e17caca945da0e0c60f988a2d2b8858433234cc1f"
+            },
+            "relative_path": "src\\calnew\\models\\__init__.py"
+          },
+          {
+            "appledouble_metadata": false,
+            "archive": {
+              "bytes": 1348,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\models\\base.py",
+              "sha256": "5565f2d6a2dc81eead0ecbaa9325a34d23fa42baefa5e2d7c43fe9295cc9ddeb"
+            },
+            "current": {
+              "bytes": 1348,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\models\\base.py",
+              "sha256": "5565f2d6a2dc81eead0ecbaa9325a34d23fa42baefa5e2d7c43fe9295cc9ddeb"
+            },
+            "relative_path": "src\\calnew\\models\\base.py"
+          },
+          {
+            "appledouble_metadata": false,
+            "archive": {
+              "bytes": 6991,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\models\\classical.py",
+              "sha256": "1979c1d144b331deea90ac781e212d8b80592aa70d586dc97872047f3e435edc"
+            },
+            "current": {
+              "bytes": 6991,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\models\\classical.py",
+              "sha256": "1979c1d144b331deea90ac781e212d8b80592aa70d586dc97872047f3e435edc"
+            },
+            "relative_path": "src\\calnew\\models\\classical.py"
+          },
+          {
+            "appledouble_metadata": false,
+            "archive": {
+              "bytes": 5231,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\models\\external.py",
+              "sha256": "06c96285f334407d31f0ae43fb88615bb86b76be8599e7bcfabd433a8c1205de"
+            },
+            "current": {
+              "bytes": 5231,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\models\\external.py",
+              "sha256": "06c96285f334407d31f0ae43fb88615bb86b76be8599e7bcfabd433a8c1205de"
+            },
+            "relative_path": "src\\calnew\\models\\external.py"
+          },
+          {
+            "appledouble_metadata": false,
+            "archive": {
+              "bytes": 9149,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\models\\neural.py",
+              "sha256": "9296e1d0ae5edf62dac1604d3e6bd0c5e05c85a86dc12d9fe911b2bbb28ef2b6"
+            },
+            "current": {
+              "bytes": 9149,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\models\\neural.py",
+              "sha256": "9296e1d0ae5edf62dac1604d3e6bd0c5e05c85a86dc12d9fe911b2bbb28ef2b6"
+            },
+            "relative_path": "src\\calnew\\models\\neural.py"
+          },
+          {
+            "appledouble_metadata": false,
+            "archive": {
+              "bytes": 6305,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\models\\pretrained.py",
+              "sha256": "140cb1ccce078f96a0b799ee8bb32987810377ebf85531182ad20c8196d966f8"
+            },
+            "current": {
+              "bytes": 6305,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\models\\pretrained.py",
+              "sha256": "140cb1ccce078f96a0b799ee8bb32987810377ebf85531182ad20c8196d966f8"
+            },
+            "relative_path": "src\\calnew\\models\\pretrained.py"
+          },
+          {
+            "appledouble_metadata": false,
+            "archive": {
+              "bytes": 2052,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\panel.py",
+              "sha256": "e1d6db46742a7fece9861a6731c41acc2828c2d3b84bc52aa55ac72f534240cb"
+            },
+            "current": {
+              "bytes": 2052,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\panel.py",
+              "sha256": "e1d6db46742a7fece9861a6731c41acc2828c2d3b84bc52aa55ac72f534240cb"
+            },
+            "relative_path": "src\\calnew\\panel.py"
+          },
+          {
+            "appledouble_metadata": false,
+            "archive": {
+              "bytes": 1374,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\pharmacophore.py",
+              "sha256": "5c39fdff26e2f622c4080c6fc11cf7cae64f1f6912dca905c1294478a49561d0"
+            },
+            "current": {
+              "bytes": 1374,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\pharmacophore.py",
+              "sha256": "5c39fdff26e2f622c4080c6fc11cf7cae64f1f6912dca905c1294478a49561d0"
+            },
+            "relative_path": "src\\calnew\\pharmacophore.py"
+          },
+          {
+            "appledouble_metadata": true,
+            "archive": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\pipeline\\.___init__.py",
+              "sha256": "865dfaee13386c62e394a8fab6b146241025dcc777210dcfd2e6a9b102b087af"
+            },
+            "current": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\pipeline\\.___init__.py",
+              "sha256": "865dfaee13386c62e394a8fab6b146241025dcc777210dcfd2e6a9b102b087af"
+            },
+            "relative_path": "src\\calnew\\pipeline\\.___init__.py"
+          },
+          {
+            "appledouble_metadata": true,
+            "archive": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\pipeline\\._auxiliary.py",
+              "sha256": "865dfaee13386c62e394a8fab6b146241025dcc777210dcfd2e6a9b102b087af"
+            },
+            "current": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\pipeline\\._auxiliary.py",
+              "sha256": "865dfaee13386c62e394a8fab6b146241025dcc777210dcfd2e6a9b102b087af"
+            },
+            "relative_path": "src\\calnew\\pipeline\\._auxiliary.py"
+          },
+          {
+            "appledouble_metadata": true,
+            "archive": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\pipeline\\._blocks.py",
+              "sha256": "865dfaee13386c62e394a8fab6b146241025dcc777210dcfd2e6a9b102b087af"
+            },
+            "current": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\pipeline\\._blocks.py",
+              "sha256": "865dfaee13386c62e394a8fab6b146241025dcc777210dcfd2e6a9b102b087af"
+            },
+            "relative_path": "src\\calnew\\pipeline\\._blocks.py"
+          },
+          {
+            "appledouble_metadata": true,
+            "archive": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\pipeline\\._data.py",
+              "sha256": "865dfaee13386c62e394a8fab6b146241025dcc777210dcfd2e6a9b102b087af"
+            },
+            "current": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\pipeline\\._data.py",
+              "sha256": "865dfaee13386c62e394a8fab6b146241025dcc777210dcfd2e6a9b102b087af"
+            },
+            "relative_path": "src\\calnew\\pipeline\\._data.py"
+          },
+          {
+            "appledouble_metadata": true,
+            "archive": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\pipeline\\._fusion.py",
+              "sha256": "865dfaee13386c62e394a8fab6b146241025dcc777210dcfd2e6a9b102b087af"
+            },
+            "current": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\pipeline\\._fusion.py",
+              "sha256": "865dfaee13386c62e394a8fab6b146241025dcc777210dcfd2e6a9b102b087af"
+            },
+            "relative_path": "src\\calnew\\pipeline\\._fusion.py"
+          },
+          {
+            "appledouble_metadata": true,
+            "archive": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\pipeline\\._intensity.py",
+              "sha256": "b63f60822292e3b859fbfe9220448438b00011ca7883f123bdc8fc7060cf116d"
+            },
+            "current": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\pipeline\\._intensity.py",
+              "sha256": "b63f60822292e3b859fbfe9220448438b00011ca7883f123bdc8fc7060cf116d"
+            },
+            "relative_path": "src\\calnew\\pipeline\\._intensity.py"
+          },
+          {
+            "appledouble_metadata": true,
+            "archive": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\pipeline\\._molecular.py",
+              "sha256": "b63f60822292e3b859fbfe9220448438b00011ca7883f123bdc8fc7060cf116d"
+            },
+            "current": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\pipeline\\._molecular.py",
+              "sha256": "b63f60822292e3b859fbfe9220448438b00011ca7883f123bdc8fc7060cf116d"
+            },
+            "relative_path": "src\\calnew\\pipeline\\._molecular.py"
+          },
+          {
+            "appledouble_metadata": true,
+            "archive": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\pipeline\\._paper_benchmark.py",
+              "sha256": "b63f60822292e3b859fbfe9220448438b00011ca7883f123bdc8fc7060cf116d"
+            },
+            "current": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\pipeline\\._paper_benchmark.py",
+              "sha256": "b63f60822292e3b859fbfe9220448438b00011ca7883f123bdc8fc7060cf116d"
+            },
+            "relative_path": "src\\calnew\\pipeline\\._paper_benchmark.py"
+          },
+          {
+            "appledouble_metadata": true,
+            "archive": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\pipeline\\._run.py",
+              "sha256": "b63f60822292e3b859fbfe9220448438b00011ca7883f123bdc8fc7060cf116d"
+            },
+            "current": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\pipeline\\._run.py",
+              "sha256": "b63f60822292e3b859fbfe9220448438b00011ca7883f123bdc8fc7060cf116d"
+            },
+            "relative_path": "src\\calnew\\pipeline\\._run.py"
+          },
+          {
+            "appledouble_metadata": true,
+            "archive": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\pipeline\\._semantic.py",
+              "sha256": "b63f60822292e3b859fbfe9220448438b00011ca7883f123bdc8fc7060cf116d"
+            },
+            "current": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\pipeline\\._semantic.py",
+              "sha256": "b63f60822292e3b859fbfe9220448438b00011ca7883f123bdc8fc7060cf116d"
+            },
+            "relative_path": "src\\calnew\\pipeline\\._semantic.py"
+          },
+          {
+            "appledouble_metadata": true,
+            "archive": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\pipeline\\._stages.py",
+              "sha256": "b63f60822292e3b859fbfe9220448438b00011ca7883f123bdc8fc7060cf116d"
+            },
+            "current": {
+              "bytes": 163,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\pipeline\\._stages.py",
+              "sha256": "b63f60822292e3b859fbfe9220448438b00011ca7883f123bdc8fc7060cf116d"
+            },
+            "relative_path": "src\\calnew\\pipeline\\._stages.py"
+          },
+          {
+            "appledouble_metadata": false,
+            "archive": {
+              "bytes": 269,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\pipeline\\__init__.py",
+              "sha256": "a287a8b9f5c55162146edb37b640157e7d6f2d3f63bf6dac43c182593175e746"
+            },
+            "current": {
+              "bytes": 269,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\pipeline\\__init__.py",
+              "sha256": "a287a8b9f5c55162146edb37b640157e7d6f2d3f63bf6dac43c182593175e746"
+            },
+            "relative_path": "src\\calnew\\pipeline\\__init__.py"
+          },
+          {
+            "appledouble_metadata": false,
+            "archive": {
+              "bytes": 3668,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\pipeline\\auxiliary.py",
+              "sha256": "8974b095657d772d660ff97a7eb86d4e4b055dcd2e4aa99871e27b9aa42dfef7"
+            },
+            "current": {
+              "bytes": 3668,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\pipeline\\auxiliary.py",
+              "sha256": "8974b095657d772d660ff97a7eb86d4e4b055dcd2e4aa99871e27b9aa42dfef7"
+            },
+            "relative_path": "src\\calnew\\pipeline\\auxiliary.py"
+          },
+          {
+            "appledouble_metadata": false,
+            "archive": {
+              "bytes": 11950,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\pipeline\\blocks.py",
+              "sha256": "e9eac2de1533714c5fd6f2ad43b89b80f583a5938f8186731ae1226ee0cd02be"
+            },
+            "current": {
+              "bytes": 11950,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\pipeline\\blocks.py",
+              "sha256": "e9eac2de1533714c5fd6f2ad43b89b80f583a5938f8186731ae1226ee0cd02be"
+            },
+            "relative_path": "src\\calnew\\pipeline\\blocks.py"
+          },
+          {
+            "appledouble_metadata": false,
+            "archive": {
+              "bytes": 10678,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\pipeline\\data.py",
+              "sha256": "3ca7837bd1d1e00308ee92ed336b727a5c979ab348f054a850422036ea32deaa"
+            },
+            "current": {
+              "bytes": 10678,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\pipeline\\data.py",
+              "sha256": "3ca7837bd1d1e00308ee92ed336b727a5c979ab348f054a850422036ea32deaa"
+            },
+            "relative_path": "src\\calnew\\pipeline\\data.py"
+          },
+          {
+            "appledouble_metadata": false,
+            "archive": {
+              "bytes": 1741,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\pipeline\\dose_transfer.py",
+              "sha256": "2c795a4f72b3dad936ebb00c9fcfa4fde1f72eddebaf6da73ff2720f280b09ed"
+            },
+            "current": {
+              "bytes": 1741,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\pipeline\\dose_transfer.py",
+              "sha256": "2c795a4f72b3dad936ebb00c9fcfa4fde1f72eddebaf6da73ff2720f280b09ed"
+            },
+            "relative_path": "src\\calnew\\pipeline\\dose_transfer.py"
+          },
+          {
+            "appledouble_metadata": false,
+            "archive": {
+              "bytes": 5820,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\pipeline\\fusion.py",
+              "sha256": "6f56f7ad8c7d741883fd593759a2e0b301c0455c51df9a56643012bfb98203eb"
+            },
+            "current": {
+              "bytes": 5820,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\pipeline\\fusion.py",
+              "sha256": "6f56f7ad8c7d741883fd593759a2e0b301c0455c51df9a56643012bfb98203eb"
+            },
+            "relative_path": "src\\calnew\\pipeline\\fusion.py"
+          },
+          {
+            "appledouble_metadata": false,
+            "archive": {
+              "bytes": 13375,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\pipeline\\intensity.py",
+              "sha256": "a3147b3ef4476fd8e7f0768d611cfb21e40de8074cd33b16d9f7d88d50da7118"
+            },
+            "current": {
+              "bytes": 13375,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\pipeline\\intensity.py",
+              "sha256": "a3147b3ef4476fd8e7f0768d611cfb21e40de8074cd33b16d9f7d88d50da7118"
+            },
+            "relative_path": "src\\calnew\\pipeline\\intensity.py"
+          },
+          {
+            "appledouble_metadata": false,
+            "archive": {
+              "bytes": 3664,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\pipeline\\joint_intensity.py",
+              "sha256": "58b937d4bf40167808f512311a7f9368741365de775bfecc02535c19e6b4b405"
+            },
+            "current": {
+              "bytes": 3664,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\pipeline\\joint_intensity.py",
+              "sha256": "58b937d4bf40167808f512311a7f9368741365de775bfecc02535c19e6b4b405"
+            },
+            "relative_path": "src\\calnew\\pipeline\\joint_intensity.py"
+          },
+          {
+            "appledouble_metadata": false,
+            "archive": {
+              "bytes": 4190,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\pipeline\\molecular.py",
+              "sha256": "688675a00c79246cc38bffe90846d9d2e1d76c647959518440e498a79ada07e7"
+            },
+            "current": {
+              "bytes": 4190,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\pipeline\\molecular.py",
+              "sha256": "688675a00c79246cc38bffe90846d9d2e1d76c647959518440e498a79ada07e7"
+            },
+            "relative_path": "src\\calnew\\pipeline\\molecular.py"
+          },
+          {
+            "appledouble_metadata": false,
+            "archive": {
+              "bytes": 29051,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\pipeline\\paper_benchmark.py",
+              "sha256": "d07d15407b7879703f8946826608cd0af33567d38d064206ccdfc52959aea555"
+            },
+            "current": {
+              "bytes": 29051,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\pipeline\\paper_benchmark.py",
+              "sha256": "d07d15407b7879703f8946826608cd0af33567d38d064206ccdfc52959aea555"
+            },
+            "relative_path": "src\\calnew\\pipeline\\paper_benchmark.py"
+          },
+          {
+            "appledouble_metadata": false,
+            "archive": {
+              "bytes": 28356,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\pipeline\\run.py",
+              "sha256": "c917e493e7ea65413f1040080b903f7a1defc3afaca9896b22ae368e87d22698"
+            },
+            "current": {
+              "bytes": 28356,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\pipeline\\run.py",
+              "sha256": "c917e493e7ea65413f1040080b903f7a1defc3afaca9896b22ae368e87d22698"
+            },
+            "relative_path": "src\\calnew\\pipeline\\run.py"
+          },
+          {
+            "appledouble_metadata": false,
+            "archive": {
+              "bytes": 7866,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\pipeline\\semantic.py",
+              "sha256": "4c84ed9c6d101fb9a5ce702d2c65ea88bebb33b57b944cb6f3160cf478cf9050"
+            },
+            "current": {
+              "bytes": 7866,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\pipeline\\semantic.py",
+              "sha256": "4c84ed9c6d101fb9a5ce702d2c65ea88bebb33b57b944cb6f3160cf478cf9050"
+            },
+            "relative_path": "src\\calnew\\pipeline\\semantic.py"
+          },
+          {
+            "appledouble_metadata": false,
+            "archive": {
+              "bytes": 25426,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\pipeline\\stages.py",
+              "sha256": "4f46a023ba6841b0deac9dc33760d181324ce8d5f90dee357c2a8654776b0e9d"
+            },
+            "current": {
+              "bytes": 25426,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\pipeline\\stages.py",
+              "sha256": "4f46a023ba6841b0deac9dc33760d181324ce8d5f90dee357c2a8654776b0e9d"
+            },
+            "relative_path": "src\\calnew\\pipeline\\stages.py"
+          },
+          {
+            "appledouble_metadata": false,
+            "archive": {
+              "bytes": 2976,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\predict.py",
+              "sha256": "80f0586c91eb3c2289afc459a1e61cce0068b608130d0d6fde098adeaaa6c95a"
+            },
+            "current": {
+              "bytes": 2976,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\predict.py",
+              "sha256": "80f0586c91eb3c2289afc459a1e61cce0068b608130d0d6fde098adeaaa6c95a"
+            },
+            "relative_path": "src\\calnew\\predict.py"
+          },
+          {
+            "appledouble_metadata": false,
+            "archive": {
+              "bytes": 1743,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\report.py",
+              "sha256": "027c61a12842e6a0f8e00ee6a2457a1fbd01deac139f8e35a60ce0f5df160105"
+            },
+            "current": {
+              "bytes": 1743,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\report.py",
+              "sha256": "027c61a12842e6a0f8e00ee6a2457a1fbd01deac139f8e35a60ce0f5df160105"
+            },
+            "relative_path": "src\\calnew\\report.py"
+          },
+          {
+            "appledouble_metadata": false,
+            "archive": {
+              "bytes": 4494,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\review.py",
+              "sha256": "dadb8e4a61a71f0f83ba136569262b36c4496a9607091f6bf8a43505a75475ee"
+            },
+            "current": {
+              "bytes": 4494,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\review.py",
+              "sha256": "dadb8e4a61a71f0f83ba136569262b36c4496a9607091f6bf8a43505a75475ee"
+            },
+            "relative_path": "src\\calnew\\review.py"
+          },
+          {
+            "appledouble_metadata": false,
+            "archive": {
+              "bytes": 5079,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\schema.py",
+              "sha256": "3437ae91f69bc2200ae212482961aeed8f4816c0d3324820e059d89cb00a3aa2"
+            },
+            "current": {
+              "bytes": 5079,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\schema.py",
+              "sha256": "3437ae91f69bc2200ae212482961aeed8f4816c0d3324820e059d89cb00a3aa2"
+            },
+            "relative_path": "src\\calnew\\schema.py"
+          },
+          {
+            "appledouble_metadata": false,
+            "archive": {
+              "bytes": 5288,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\splits.py",
+              "sha256": "f99c4cd96246be67077bc0d1368acd905b51e0bab7b3f4696b110291b5795b09"
+            },
+            "current": {
+              "bytes": 5288,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\splits.py",
+              "sha256": "f99c4cd96246be67077bc0d1368acd905b51e0bab7b3f4696b110291b5795b09"
+            },
+            "relative_path": "src\\calnew\\splits.py"
+          },
+          {
+            "appledouble_metadata": false,
+            "archive": {
+              "bytes": 4514,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\store.py",
+              "sha256": "98fd0faf8bf5fadd0bf2afe7e126d6591ee536a1b4e8f77cfb59a1625d5d8a30"
+            },
+            "current": {
+              "bytes": 4514,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\store.py",
+              "sha256": "98fd0faf8bf5fadd0bf2afe7e126d6591ee536a1b4e8f77cfb59a1625d5d8a30"
+            },
+            "relative_path": "src\\calnew\\store.py"
+          },
+          {
+            "appledouble_metadata": false,
+            "archive": {
+              "bytes": 2361,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "runs\\nose-parity-threshold-water-inner-v2\\source-code\\src\\calnew\\units.py",
+              "sha256": "047492cd8bf3efe6e66ccc0ec80e0239c7bab3a8adc490b16a5b44216f6aaa4e"
+            },
+            "current": {
+              "bytes": 2361,
+              "exists": true,
+              "matches_pinned_sha256": true,
+              "path": "src\\calnew\\units.py",
+              "sha256": "047492cd8bf3efe6e66ccc0ec80e0239c7bab3a8adc490b16a5b44216f6aaa4e"
+            },
+            "relative_path": "src\\calnew\\units.py"
+          }
+        ],
+        "note": "AppleDouble entries are archive metadata, not executable Python dependencies"
+      },
+      "status": "complete"
+    }
+  },
+  "started_at_utc": "2026-10-01T23:37:37.173512+00:00",
+  "supplemental_current_resource_identity": {
+    "context_arrays": {
+      "chain": {
+        "dtype": "float32",
+        "sha256_header_and_c_order_bytes": "4770d1cae3c34ad2f2bfb54bb105892060232761efb304a4f52639b215bfd35d",
+        "shape": [
+          2738,
+          26
+        ]
+      },
+      "fingerprint": {
+        "dtype": "float32",
+        "sha256_header_and_c_order_bytes": "47d87e828a5890951da03a5068500d0a6a935b5b3d6730fed3265edfe075b1f6",
+        "shape": [
+          2738,
+          1191
+        ]
+      },
+      "hbond": {
+        "dtype": "float32",
+        "sha256_header_and_c_order_bytes": "7c4e5884e8740f4a34c17b9453fc1015ed3fd44eb420fb618cc42f7134a16fb1",
+        "shape": [
+          2738,
+          29
+        ]
+      },
+      "osmophore": {
+        "dtype": "float32",
+        "sha256_header_and_c_order_bytes": "a8c682e23c4356abb19719d81a3ba5cafaf718e43077764b0df48cb72e9fdb8e",
+        "shape": [
+          2738,
+          35
+        ]
+      },
+      "pharmacophore": {
+        "dtype": "float32",
+        "sha256_header_and_c_order_bytes": "5c07c6230ff67033ce4b015b90804030045d779e416cf0103fef71326577ae07",
+        "shape": [
+          2738,
+          1024
+        ]
+      },
+      "rdkit": {
+        "dtype": "float32",
+        "sha256_header_and_c_order_bytes": "0b93761589dc07495cd532edb9470045f64a91a90b19e24e0a4cfb51f780d844",
+        "shape": [
+          2738,
+          217
+        ]
+      },
+      "transport": {
+        "dtype": "float32",
+        "sha256_header_and_c_order_bytes": "a8c01c7a0029830935b7d238383ddec2bfd79382f5c944f166fae24d6a6b3403",
+        "shape": [
+          2738,
+          11
+        ]
+      },
+      "unimol2": {
+        "dtype": "float32",
+        "sha256_header_and_c_order_bytes": "b51ece2f04498a03d239e7af5a5bb49af0f668c62613b7aceb85466964bc84bc",
+        "shape": [
+          2738,
+          1025
+        ]
+      }
+    },
+    "context_training_arrays": {
+      "panel_direction": {
+        "dtype": "float64",
+        "sha256_header_and_c_order_bytes": "361b9b2404d9baa18a26e6b63e1bc824779f3e66bccaf3c861cc76868c6f1d81",
+        "shape": [
+          2738,
+          20
+        ]
+      },
+      "panel_profile": {
+        "dtype": "float64",
+        "sha256_header_and_c_order_bytes": "89169fc542d9a490ef832a729978143b8e57d12be304716bd65d2cb705e05e03",
+        "shape": [
+          658,
+          20
+        ]
+      },
+      "quality_labels": {
+        "dtype": "float64",
+        "sha256_header_and_c_order_bytes": "f3684d47789a4c477bed2e3931a2d630c042ff446b0a05171d85976a3fb3367f",
+        "shape": [
+          2738,
+          91
+        ]
+      }
+    },
+    "context_water_arrays": {
+      "chain": {
+        "dtype": "float32",
+        "sha256_header_and_c_order_bytes": "40052e7b1ed8b628fe54967da3bbf03d4f79c1963c668f437dccb5e513877959",
+        "shape": [
+          567,
+          26
+        ]
+      },
+      "fingerprint": {
+        "dtype": "float32",
+        "sha256_header_and_c_order_bytes": "0e0932652f606025be43d553c9f564f3ce571073be50cf9ca692963e40c172a4",
+        "shape": [
+          567,
+          1191
+        ]
+      },
+      "hbond": {
+        "dtype": "float32",
+        "sha256_header_and_c_order_bytes": "cdcc949a5184eff1c32ab42d9b6c742b4448e8615ca104fb4932a200a2bf3adf",
+        "shape": [
+          567,
+          29
+        ]
+      },
+      "osmophore": {
+        "dtype": "float32",
+        "sha256_header_and_c_order_bytes": "cf0c44ce0b09222b1f6be6f88b2a5ef22b3f2de2a71d38cb18128827a33ccc45",
+        "shape": [
+          567,
+          35
+        ]
+      },
+      "rdkit": {
+        "dtype": "float32",
+        "sha256_header_and_c_order_bytes": "54335e13a3c080d88381e16e60ba71f44973d1d62e20e39cc25a1589b85f2811",
+        "shape": [
+          567,
+          217
+        ]
+      },
+      "transport": {
+        "dtype": "float32",
+        "sha256_header_and_c_order_bytes": "ac0115fb402d106c8ca484430799fd082ba599e302a5eae824d7bd38b1e2ea66",
+        "shape": [
+          567,
+          11
+        ]
+      }
+    },
+    "dependency_versions": {
+      "numpy": "2.2.6",
+      "pandas": "3.0.6",
+      "platform": "Windows-10-10.0.19045-SP0",
+      "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+      "rdkit": "2026.3.6",
+      "scikit-learn": "1.9.1",
+      "scipy": "1.17.1",
+      "threadpoolctl": "3.7.0",
+      "torch": "2.14.0",
+      "xgboost": "3.2.0"
+    },
+    "observed_at_utc": "2026-10-01T23:37:42.404578+00:00",
+    "provenance_timing": "SUPPLEMENTAL AUDIT AFTER SOME FITS; not pre-fit provenance",
+    "reserved_manifest_files": {
+      "runs\\basic-descriptor-models": {
+        "._run.json": {
+          "bytes": 163,
+          "exists": true,
+          "path": "runs\\basic-descriptor-models\\._run.json",
+          "sha256": "b63f60822292e3b859fbfe9220448438b00011ca7883f123bdc8fc7060cf116d"
+        },
+        "._split.json": {
+          "bytes": 163,
+          "exists": true,
+          "path": "runs\\basic-descriptor-models\\._split.json",
+          "sha256": "b63f60822292e3b859fbfe9220448438b00011ca7883f123bdc8fc7060cf116d"
+        },
+        "run.json": {
+          "bytes": 2175,
+          "exists": true,
+          "path": "runs\\basic-descriptor-models\\run.json",
+          "sha256": "541ccd0f8994c0931c54a4ca16f231f2d42061c92e1b0955d02dbe2d3e967281"
+        },
+        "split.json": {
+          "bytes": 269206,
+          "exists": true,
+          "path": "runs\\basic-descriptor-models\\split.json",
+          "sha256": "1af948fc2695550a6763584bb37f127ddecc6327202e14fd73f177b0ba29216d"
+        }
+      },
+      "runs\\basic-threshold-models": {
+        "._run.json": {
+          "bytes": 163,
+          "exists": true,
+          "path": "runs\\basic-threshold-models\\._run.json",
+          "sha256": "b63f60822292e3b859fbfe9220448438b00011ca7883f123bdc8fc7060cf116d"
+        },
+        "._split.json": {
+          "bytes": 163,
+          "exists": true,
+          "path": "runs\\basic-threshold-models\\._split.json",
+          "sha256": "b63f60822292e3b859fbfe9220448438b00011ca7883f123bdc8fc7060cf116d"
+        },
+        "run.json": {
+          "bytes": 2963,
+          "exists": true,
+          "path": "runs\\basic-threshold-models\\run.json",
+          "sha256": "9a373a2c7c96d54dfbc1d751d40182a61c20b8980056bea876f3fe40d4a703ef"
+        },
+        "split.json": {
+          "bytes": 22506,
+          "exists": true,
+          "path": "runs\\basic-threshold-models\\split.json",
+          "sha256": "50f6e7c91982fc7aad9c9372bf9ac17c5f1a1023f080eec73734062754b97906"
+        }
+      }
+    },
+    "settings_sha256": "9ada3100263bf3a6fc996a8e0b3ad5262e04b54fd16851d3e5c8613563fcdf39",
+    "snapshot": "data\\snapshots\\828751d0a24e8149",
+    "snapshot_parquets": {
+      "molecules.parquet": {
+        "bytes": 295464,
+        "exists": true,
+        "path": "data\\snapshots\\828751d0a24e8149\\molecules.parquet",
+        "sha256": "21b0611756703a96d80544de5c15a60222762f0e77d38af3cc9cd50e1a04d61f"
+      },
+      "observations.parquet": {
+        "bytes": 7389938,
+        "exists": true,
+        "path": "data\\snapshots\\828751d0a24e8149\\observations.parquet",
+        "sha256": "5aacc6cd726a7ebf1aaaffd0bfc25b42550b9b87bed690d3f08882b82866403a"
+      },
+      "stimuli.parquet": {
+        "bytes": 181658,
+        "exists": true,
+        "path": "data\\snapshots\\828751d0a24e8149\\stimuli.parquet",
+        "sha256": "451d374118ceee4886637271da6f4d0bf7fad23953fcc252156e799df705d3c9"
+      }
+    },
+    "source_files": {
+      "descriptor_source_csv": {
+        "bytes": 9142922,
+        "exists": true,
+        "matches_pinned_sha256": true,
+        "path": "data\\raw\\nose\\v1.0.0\\nose-smiles-descriptor-v1.0.0.csv.gz",
+        "sha256": "858e482f407a3577870a87a61f8f16b488412ed06922dd35dd8d4fe4cf5e6ff2"
+      },
+      "descriptor_word_manifest": {
+        "bytes": 459,
+        "exists": true,
+        "path": "data\\features\\nose-descriptor-minilm.json",
+        "sha256": "a26e212d39a75d2b84b09071bccf6e8133c5ddf65f456c479ed880c64b632422"
+      },
+      "descriptor_word_vectors": {
+        "bytes": 1553463,
+        "exists": true,
+        "manifest_corpus_matches_source": true,
+        "matches_manifest_sha256": true,
+        "path": "data\\features\\nose-descriptor-minilm.npz",
+        "sha256": "f29812b5b2b359b68c36848ad8f97e9b58800ef7e288eddc9e7c449b0ccd27e4"
+      },
+      "water_source_csv": {
+        "bytes": 23785,
+        "exists": true,
+        "matches_pinned_sha256": true,
+        "path": "data\\raw\\li_2025\\zenodo-17559514-v1\\threshold_data_med.csv",
+        "sha256": "8800c21198ffec96f170a2b7000ab7577718e2857689984906f3e47fdb9e5eb2"
+      }
+    },
+    "universe_ids_sha256": "f3bac6b707e6280056142b5b79653f03085509bf55b8d21292ca0bff643c9192",
+    "water_source_ids_sha256": "cc4942cbfb33772af6919c3531793bff3bcc86d28a91130e36daca7f890ea4f9",
+    "water_source_rows": 567,
+    "water_source_targets": {
+      "dtype": "float64",
+      "sha256_header_and_c_order_bytes": "31da8ccc33c3a47c1e59505c4934b55bacb38fffd397ba951f862bdff2c5a68d",
+      "shape": [
+        567
+      ]
+    }
+  },
+  "threads": 2
+}

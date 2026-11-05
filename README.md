@@ -1,82 +1,39 @@
 # CALNEW
 
-A runnable research system for comparing molecular odour models. The initial implementation predicts **catalogue descriptor annotations** and **airborne detection thresholds** as separate tasks. It trains actual models on public observations, saves calibrated prediction artifacts, and reserves the final holdout.
+CALNEW is a molecular odour research project combining prediction software, receptor/pharmacophore research and experimental instrument designs.
 
-**Current stage: basic models and computational pilots.** This is not yet a prospectively validated human odour system. Water thresholds, participant-specific predictions, receptor transfer and molecule generation are not trained endpoints in the supplied artifacts.
-
-Verification: **21 automated tests passed**, dependency checks passed, saved prediction artifacts were exercised, and both final holdouts remain unopened. See [artifact verification](docs/verification.json).
+**Status:** computational research and hardware designs. Reported retrospective results do not establish prospective human sensory performance. Receptor-to-perception transfer, learned mixture prediction and automatic formula-to-doser control remain research work.
 
 ## Start here
 
-- [Basic-model results and interpretation](docs/BASIC-MODELS.md)
-- [Architecture and implementation status](docs/ARCHITECTURE.md)
-- [Improvements with substantial computing capacity](docs/IMPROVEMENTS.md)
-- [Evidence acquisition and reproducibility](docs/DATA.md)
-- [Original project canvas](CALNEW.canvas) and [olfactometer notes](Olfactometer-Build.md)
+- [Anonymized research notes and next steps](docs/research-notes/README.md) — German summary of the late-October / early-November discussions, with no personal names, contacts or schedules.
+- [Project architecture and performance](CALNEW%20Project%20Architecture%20and%20Performance.md) — system map, endpoint definitions, results and limitations.
+- [Current model/data report](docs/NOSE-RESEARCH-2026-10-28.md), [methods and comparison limits](docs/NOSE-PARITY-AND-METHODS-REPORT.md), and [pipeline documentation](docs/PIPELINE.md).
+- [Basic models](docs/BASIC-MODELS.md), [evidence acquisition](docs/DATA.md), and [architecture](docs/ARCHITECTURE.md).
+- [Four-line ingredient doser](Auto%20doser/OVERVIEW.md) — parts workbook, wiring/tubing, sealing analysis and Blender concepts. Firmware and measured accuracy remain pending.
+- [Five-output olfactometer](Olfactometer-Five-Output-Design.md) and [build notes](Olfactometer-Build.md).
+- [Receptor/docking research](reports/AlphaFold%20Docking%20und%20Pharmakophore%20f%C3%BCr%20CALNEW.md), [ligand-based prototype](research_notes/olfactory_pharmacophore_2026-10-09/local_model/README.md), and [literature atlas code](aroma_atlas/README.md).
+- [Public export scope and verification](docs/PUBLICATION.md).
 
-## Run the installed system
+## Install the research software
 
-Run commands from this directory. The local `.venv` is already installed.
-
-```bash
-.venv/bin/python -m calnew doctor
-.venv/bin/python -m pytest -q
-
-.venv/bin/python -m calnew predict \
-  --run runs/basic-threshold-models \
-  --smiles 'CCO' 'CC(=O)c1ccccc1' \
-  --out data/example-threshold-predictions.json
-
-.venv/bin/python -m calnew predict \
-  --run runs/basic-descriptor-models \
-  --smiles 'CCO' 'CC(=O)c1ccccc1' \
-  --out data/example-descriptor-predictions.json
-```
-
-Predictions report the endpoint, training semantics, selected model, expert outputs, model disagreement, training similarity and data/model versions. Threshold intervals target 90% coverage under the calibration assumptions. Unsupported endpoints and invalid structures return `unavailable` with a reason. A catalogue probability means the source would record that descriptor; it is not automatically a human-panel endorsement probability.
-
-## Reproduce the basic comparisons
-
-```bash
-.venv/bin/python -m calnew benchmark \
-  --snapshot data/snapshots/955c3ab05ff9fb7d \
-  --endpoint catalogue_descriptor --source leffingwell \
-  --config configs/pilot.yaml --out runs/my-descriptor-pilot
-
-.venv/bin/python -m calnew benchmark \
-  --snapshot data/snapshots/955c3ab05ff9fb7d \
-  --endpoint air_detection_threshold --source abraham_2012 \
-  --config configs/four-family-pilot.yaml --out runs/my-threshold-pilot
-```
-
-Use a new output directory when changing source code, data or configuration. A run contains its manifest, split, selected configurations, nested-fold predictions, fitted models, calibration object and report. Current runs also archive the Python source used to execute them.
-
-`configs/pilot.yaml` compares descriptors, fingerprints, XGBoost and a native stereochemistry-aware directed graph network. `configs/four-family-pilot.yaml` adds Chemprop, the Tanimoto Gaussian process, frozen MoLFormer and frozen Uni-Mol2. The 3D branch uses up to 16 optimised diverse conformers from 32 initial conformers; it appends an explicit chirality-aware fingerprint.
-
-## Fresh installation
-
-Python 3.12 was used for the completed runs. Core dependencies are in `pyproject.toml`; exact local versions are in `requirements-lock.txt`.
+The Python project is at the repository root. Python 3.12 was used for the recorded runs; the package declares Python 3.11 or newer.
 
 ```bash
 python3.12 -m venv .venv
 .venv/bin/python -m pip install -e '.[models,pretrained,dev]'
 .venv/bin/python -m calnew doctor
+.venv/bin/python -m calnew --help
 ```
 
-The lock file includes an editable local-project entry: install the project from this directory when recreating the environment. Hardware-specific packages may need platform-specific wheels. On this Mac, the XGBoost wheel needed its OpenMP search path repaired; `scripts/fix_macos_xgboost.py` reproduces the local environment repair when the sklearn runtime exists. The current environment exposes CPU only.
+Core requirements and optional model packages are defined in [pyproject.toml](pyproject.toml). [requirements-lock.txt](requirements-lock.txt) records the previous environment; platform-specific packages can require different wheels. Research scripts retain their compute-host guards. On the authorized remote machine, set `CALNEW_COMPUTE_HOST` to that machine's actual hostname before using guarded scripts; the variable is unset by default. Configure an authorized compute environment before numerical experiments.
 
-## Data commands
+## Data and reproducibility
 
-```bash
-.venv/bin/python -m calnew sources
-.venv/bin/python -m calnew fetch leffingwell
-.venv/bin/python -m calnew ingest leffingwell
-.venv/bin/python -m calnew fetch abraham_2012
-.venv/bin/python -m calnew ingest abraham_2012
-.venv/bin/python -m calnew snapshot
-.venv/bin/python -m calnew quality-audit data/snapshots/955c3ab05ff9fb7d
-```
+This public snapshot contains code, configuration, reviewed research reports, example outputs, hardware assets and selected lightweight benchmark evidence. It excludes raw/downloaded datasets, trained model files, credentials, correspondence, contact lists, calendars, company/legal documents and private hosting receipts.
 
-Acquisition is explicit. The source register records rights separately from accessibility; unverified sources cannot be ingested through the public-data adapter. Raw downloads retain checksums and original values. Research-only inputs do not acquire commercial permission by being processed.
+Published `runs/` directories contain selected reports, metrics and protocol records. They are **not complete inference bundles**. Historical commands in the methods reports require the corresponding model/data artifacts or a newly reproduced run. Original artifact hashes identify historical calculations; public copies may have account paths and host identities removed.
 
-The final test set is not used in the supplied pilot reports. `audit-holdout` refuses pilot runs. A subsequent preregistered full comparison can use `configs/full.yaml`, but that configuration currently expands only implemented model routes—it does not implement every future experiment described in the research plan.
+Fetch and ingest data explicitly through the source register, checking each source's permissions. Processing a research-only source does not grant commercial rights. Preserve the reserved final holdouts and keep development results separate from final evaluation.
+
+The new discussion notes are proposals, not evidence of an agreed collaboration or completed validation. Public literature citations retain their scholarly attribution.

@@ -1,0 +1,11 @@
+{
+  "contains_positive_strength_or_source_labels": false,
+  "molecules_after_reserved_exclusion": 7000,
+  "pairs_after_exclusion": 1098957,
+  "rights": "NOSE MIT code licence does not replace underlying third-party dataset terms",
+  "sha256": "858e482f407a3577870a87a61f8f16b488412ed06922dd35dd8d4fe4cf5e6ff2",
+  "terms": 1086,
+  "unique_valid_molecules": 9037,
+  "url": "https://github.com/Xianyusyy/NOSE/releases/download/v1.0.0/nose-smiles-descriptor-v1.0.0.csv.gz",
+  "use": "research experiment; augmented associations, not measured panel targets"
+}

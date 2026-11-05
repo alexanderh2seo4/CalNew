@@ -1,0 +1,93 @@
+{
+  "cases": {
+    "original-42": {
+      "raw_prediction_and_metric_verification": true,
+      "test_molecules": 33
+    },
+    "original-43": {
+      "raw_prediction_and_metric_verification": true,
+      "test_molecules": 33
+    },
+    "original-44": {
+      "raw_prediction_and_metric_verification": true,
+      "test_molecules": 33
+    },
+    "original-45": {
+      "raw_prediction_and_metric_verification": true,
+      "test_molecules": 33
+    },
+    "original-46": {
+      "raw_prediction_and_metric_verification": true,
+      "test_molecules": 33
+    },
+    "original-47": {
+      "raw_prediction_and_metric_verification": true,
+      "test_molecules": 33
+    },
+    "original-48": {
+      "raw_prediction_and_metric_verification": true,
+      "test_molecules": 33
+    },
+    "original-49": {
+      "raw_prediction_and_metric_verification": true,
+      "test_molecules": 33
+    },
+    "original-50": {
+      "raw_prediction_and_metric_verification": true,
+      "test_molecules": 33
+    },
+    "original-51": {
+      "raw_prediction_and_metric_verification": true,
+      "test_molecules": 33
+    },
+    "validation_refit-42": {
+      "raw_prediction_and_metric_verification": true,
+      "test_molecules": 33
+    },
+    "validation_refit-43": {
+      "raw_prediction_and_metric_verification": true,
+      "test_molecules": 33
+    },
+    "validation_refit-44": {
+      "raw_prediction_and_metric_verification": true,
+      "test_molecules": 33
+    },
+    "validation_refit-45": {
+      "raw_prediction_and_metric_verification": true,
+      "test_molecules": 33
+    },
+    "validation_refit-46": {
+      "raw_prediction_and_metric_verification": true,
+      "test_molecules": 33
+    },
+    "validation_refit-47": {
+      "raw_prediction_and_metric_verification": true,
+      "test_molecules": 33
+    },
+    "validation_refit-48": {
+      "raw_prediction_and_metric_verification": true,
+      "test_molecules": 33
+    },
+    "validation_refit-49": {
+      "raw_prediction_and_metric_verification": true,
+      "test_molecules": 33
+    },
+    "validation_refit-50": {
+      "raw_prediction_and_metric_verification": true,
+      "test_molecules": 33
+    },
+    "validation_refit-51": {
+      "raw_prediction_and_metric_verification": true,
+      "test_molecules": 33
+    }
+  },
+  "frozen_intensity_inputs_and_feature_cache_checksums_verified": true,
+  "host": "compute-host",
+  "models_and_archived_source_checksums_verified": true,
+  "raw_predictions_and_metrics_verified": true,
+  "resource_manifest_sha256": "bdbbfbee9016f8d7e00aa9e5657d41d1237f7fbf05d5793ca13ad51bf723da85",
+  "results_sha256": "b7562d9e1546e4a6b41b9beb2fe3e0773abcc5a85cad2653758413152ff5d167",
+  "summary_aggregates_verified": true,
+  "verification_script_sha256": "10212a1adf235a49bf1597acd37bf9eff79bfb55ac65b5b6866902e8589242c9",
+  "verified_cases": 20
+}

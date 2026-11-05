@@ -1,0 +1,270 @@
+{
+  "verified_date": "2026-10-27",
+  "chemicals": [
+    {
+      "name": "carvacrol",
+      "cas_as_source": "499-75-2",
+      "exact_parent_synonyms": [
+        "carvacrol",
+        "isothymol"
+      ],
+      "source_url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=CARVACROL&set=FoodSubstances",
+      "source_authority": "US FDA Substances Added to Food",
+      "verified_use": "flavoring agent or adjuvant",
+      "verified_date": "2026-10-27",
+      "eligibility": "Unchanged parent as central pharmacological agent; not arbitrary derivatives."
+    },
+    {
+      "name": "thymol",
+      "cas_as_source": "89-83-8",
+      "exact_parent_synonyms": [
+        "thymol"
+      ],
+      "source_url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=THYMOL&set=FoodSubstances",
+      "source_authority": "US FDA Substances Added to Food",
+      "verified_use": "flavoring agent or adjuvant",
+      "verified_date": "2026-10-27",
+      "eligibility": "Unchanged parent as central pharmacological agent; not arbitrary derivatives."
+    },
+    {
+      "name": "cinnamaldehyde",
+      "cas_as_source": "104-55-2",
+      "exact_parent_synonyms": [
+        "cinnamaldehyde",
+        "cinnamic aldehyde",
+        "cinnamal"
+      ],
+      "source_url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=CINNAMALDEHYDE&set=FoodSubstances",
+      "source_authority": "US FDA Substances Added to Food",
+      "verified_use": "flavoring agent or adjuvant",
+      "verified_date": "2026-10-27",
+      "eligibility": "Unchanged parent as central pharmacological agent; not arbitrary derivatives."
+    },
+    {
+      "name": "isoeugenol",
+      "cas_as_source": "97-54-1",
+      "exact_parent_synonyms": [
+        "isoeugenol"
+      ],
+      "source_url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=ISOEUGENOL&set=FoodSubstances",
+      "source_authority": "US FDA Substances Added to Food",
+      "verified_use": "flavoring agent or adjuvant",
+      "verified_date": "2026-10-27",
+      "eligibility": "Unchanged parent as central pharmacological agent; not arbitrary derivatives."
+    },
+    {
+      "name": "citronellal",
+      "cas_as_source": "106-23-0",
+      "exact_parent_synonyms": [
+        "citronellal"
+      ],
+      "source_url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=CITRONELLAL&set=FoodSubstances",
+      "source_authority": "US FDA Substances Added to Food",
+      "verified_use": "flavoring agent or adjuvant",
+      "verified_date": "2026-10-27",
+      "eligibility": "Unchanged parent as central pharmacological agent; not arbitrary derivatives."
+    },
+    {
+      "name": "eucalyptol",
+      "cas_as_source": "470-82-6",
+      "exact_parent_synonyms": [
+        "eucalyptol",
+        "1,8-cineole",
+        "1,8 cineole",
+        "1,8-cineol"
+      ],
+      "source_url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=EUCALYPTOL&set=FoodSubstances",
+      "source_authority": "US FDA Substances Added to Food",
+      "verified_use": "flavoring agent or adjuvant",
+      "verified_date": "2026-10-27",
+      "eligibility": "Unchanged parent as central pharmacological agent; not arbitrary derivatives.",
+      "supporting_urls": [
+        "https://webprod.hc-sc.gc.ca/nhpid-bdipsn/ingredReq?id=1509&lang=eng&wbdisable=true",
+        "https://pubchem.ncbi.nlm.nih.gov/compound/eucalyptol"
+      ],
+      "pubchem_cid": 2758
+    },
+    {
+      "name": "borneol",
+      "cas_as_source": "507-70-0",
+      "exact_parent_synonyms": [
+        "borneol"
+      ],
+      "source_url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=BORNEOL&set=FoodSubstances",
+      "source_authority": "US FDA Substances Added to Food",
+      "verified_use": "flavoring agent or adjuvant",
+      "verified_date": "2026-10-27",
+      "eligibility": "Unchanged parent as central pharmacological agent; not arbitrary derivatives."
+    },
+    {
+      "name": "nerolidol",
+      "cas_as_source": "7212-44-4",
+      "exact_parent_synonyms": [
+        "nerolidol"
+      ],
+      "source_url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=NEROLIDOL&set=FoodSubstances",
+      "source_authority": "US FDA Substances Added to Food",
+      "verified_use": "flavoring agent or adjuvant",
+      "verified_date": "2026-10-27",
+      "eligibility": "Unchanged parent as central pharmacological agent; not arbitrary derivatives."
+    },
+    {
+      "name": "nerol",
+      "cas_as_source": "106-25-2",
+      "exact_parent_synonyms": [
+        "nerol"
+      ],
+      "source_url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=NEROL&set=FoodSubstances",
+      "source_authority": "US FDA Substances Added to Food",
+      "verified_use": "flavoring agent or adjuvant",
+      "verified_date": "2026-10-27",
+      "eligibility": "Unchanged parent as central pharmacological agent; not arbitrary derivatives."
+    },
+    {
+      "name": "menthone",
+      "cas_as_source": "89-80-5",
+      "exact_parent_synonyms": [
+        "menthone"
+      ],
+      "source_url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=MENTHONE&set=FoodSubstances",
+      "source_authority": "US FDA Substances Added to Food",
+      "verified_use": "flavoring agent or adjuvant",
+      "verified_date": "2026-10-27",
+      "eligibility": "Unchanged parent as central pharmacological agent; not arbitrary derivatives."
+    },
+    {
+      "name": "methyl salicylate",
+      "cas_as_source": "119-36-8",
+      "exact_parent_synonyms": [
+        "methyl salicylate"
+      ],
+      "source_url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=METHYLSALICYLATE&set=FoodSubstances",
+      "source_authority": "US FDA Substances Added to Food",
+      "verified_use": "flavoring agent or adjuvant",
+      "verified_date": "2026-10-27",
+      "eligibility": "Unchanged parent as central pharmacological agent; not arbitrary derivatives."
+    },
+    {
+      "name": "benzaldehyde",
+      "cas_as_source": "100-52-7",
+      "exact_parent_synonyms": [
+        "benzaldehyde"
+      ],
+      "source_url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=BENZALDEHYDE&set=FoodSubstances",
+      "source_authority": "US FDA Substances Added to Food",
+      "verified_use": "flavoring agent or adjuvant",
+      "verified_date": "2026-10-27",
+      "eligibility": "Unchanged parent as central pharmacological agent; not arbitrary derivatives."
+    },
+    {
+      "name": "benzyl acetate",
+      "cas_as_source": "140-11-4",
+      "exact_parent_synonyms": [
+        "benzyl acetate"
+      ],
+      "source_url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=BENZYLACETATE&set=FoodSubstances",
+      "source_authority": "US FDA Substances Added to Food",
+      "verified_use": "flavoring agent or adjuvant",
+      "verified_date": "2026-10-27",
+      "eligibility": "Unchanged parent as central pharmacological agent; not arbitrary derivatives."
+    },
+    {
+      "name": "phenethyl alcohol",
+      "cas_as_source": "60-12-8",
+      "exact_parent_synonyms": [
+        "phenethyl alcohol",
+        "phenylethyl alcohol",
+        "2-phenylethanol",
+        "2-phenyl ethanol"
+      ],
+      "source_url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=PHENETHYLALCOHOL&set=FoodSubstances",
+      "source_authority": "US FDA Substances Added to Food",
+      "verified_use": "flavoring agent or adjuvant",
+      "verified_date": "2026-10-27",
+      "eligibility": "Unchanged parent as central pharmacological agent; not arbitrary derivatives."
+    },
+    {
+      "name": "alpha-ionone",
+      "cas_as_source": "127-41-3",
+      "exact_parent_synonyms": [
+        "alpha-ionone",
+        "alpha ionone",
+        "\u03b1-ionone"
+      ],
+      "source_url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=IONONEalpha&set=FoodSubstances",
+      "source_authority": "US FDA Substances Added to Food",
+      "verified_use": "flavoring agent or adjuvant",
+      "verified_date": "2026-10-27",
+      "eligibility": "Unchanged parent as central pharmacological agent; not arbitrary derivatives."
+    },
+    {
+      "name": "beta-ionone",
+      "cas_as_source": "14901-07-6",
+      "exact_parent_synonyms": [
+        "beta-ionone",
+        "beta ionone",
+        "\u03b2-ionone"
+      ],
+      "source_url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=IONONEbeta&set=FoodSubstances",
+      "source_authority": "US FDA Substances Added to Food",
+      "verified_use": "flavoring agent or adjuvant",
+      "verified_date": "2026-10-27",
+      "eligibility": "Unchanged parent as central pharmacological agent; not arbitrary derivatives."
+    },
+    {
+      "name": "camphene",
+      "cas_as_source": "79-92-5",
+      "exact_parent_synonyms": [
+        "camphene"
+      ],
+      "source_url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=CAMPHENE&set=FoodSubstances",
+      "source_authority": "US FDA Substances Added to Food",
+      "verified_use": "flavoring agent or adjuvant",
+      "verified_date": "2026-10-27",
+      "eligibility": "Unchanged parent as central pharmacological agent; not arbitrary derivatives."
+    },
+    {
+      "name": "verbenone",
+      "cas_as_source": "80-57-9",
+      "exact_parent_synonyms": [
+        "verbenone"
+      ],
+      "source_url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=VERBENONE&set=FoodSubstances",
+      "source_authority": "US FDA Substances Added to Food",
+      "verified_use": "flavoring agent or adjuvant",
+      "verified_date": "2026-10-27",
+      "eligibility": "Unchanged parent as central pharmacological agent; not arbitrary derivatives."
+    },
+    {
+      "name": "damascenone",
+      "cas_as_source": "23696-85-7",
+      "exact_parent_synonyms": [
+        "damascenone",
+        "beta-damascenone",
+        "beta damascenone",
+        "\u03b2-damascenone"
+      ],
+      "source_url": "https://webprod.hc-sc.gc.ca/nhpid-bdipsn/ingredReq?id=2057",
+      "source_authority": "Health Canada NHPID",
+      "verified_use": "flavour enhancer; flavouring agent only",
+      "supporting_urls": [
+        "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/4578"
+      ],
+      "verified_date": "2026-10-27",
+      "eligibility": "Unchanged parent as central pharmacological agent; not arbitrary derivatives."
+    }
+  ],
+  "excluded_generic_terms": [
+    "coumarin",
+    "ionone",
+    "aromatic",
+    "salicylate"
+  ],
+  "notes": [
+    "eucalyptol and 1,8-cineole are one chemical identity; do not count them as different molecules.",
+    "Generic ionone is not an identity-specific allowlist entry; distinguish alpha and beta ionones. FDA CAS values are recorded as reported, and may differ by stereoisomer specificity.",
+    "Flavor/fragrance use evidence does not establish clinical efficacy, safety, or every mentioning paper relevance.",
+    "Require parent chemical in title and pharmacological activity/mechanism; exclude derivative/hybrid libraries, polymers/materials/solvent-only use, menthol cigarette epidemiology.",
+    "Some listed parent odorants also function as solvents; exclude solvent-only papers, not established odorant identity."
+  ]
+}

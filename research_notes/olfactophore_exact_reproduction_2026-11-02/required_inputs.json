@@ -1,0 +1,21 @@
+{
+  "objective": "Reproduce original marine olfactophore geometry, original calculated thresholds, then score new molecules in 3D",
+  "status": "blocked_missing_original_model_and_executable_workflow",
+  "trained_or_imported_model_exists": false,
+  "prediction_engine_implemented_in_this_package": false,
+  "source_date": "2026-11-02",
+  "required_before_claiming_original_model_reproduction": [
+    {"id": "original_hypothesis", "available": false, "required_content": "Native hypothesis/project export, or complete feature coordinates in angstrom, feature types, tolerance radii, directional vectors, optional/required mapping rules, excluded-volume centers/radii and all model weights"},
+    {"id": "threshold_mapping", "available": false, "required_content": "Original quantitative activity/threshold mapping, all coefficients/intercept, units, transform, fit normalization, treatment of unmapped features and parameter precision"},
+    {"id": "training_ligand_archive", "available": false, "required_content": "Original molecular structures with atom mapping, stereo/protonation, selected and generated conformers, aligned 3D coordinates, energy/force-field/conformer settings, activities and training membership"},
+    {"id": "software_workflow", "available": false, "required_content": "Available licensed Catalyst/Discovery Studio pharmacophore execution engine, exact original version where reproducibility requires it, protocols, feature dictionary, random seeds and manual editing history"},
+    {"id": "reference_data", "available": true, "files": ["calone_2003_reference.csv", "book_marine_reference.csv"], "limitation": "Transcribed printed rounded values and R-group notation, not a complete structure/conformer or model archive"},
+    {"id": "rendering_scene", "available": false, "required_content": "Original aligned ligands plus saved camera/projection, molecule/feature display radii, transparency, colors, clipping and labels", "priority": "after numerical and geometry verification"}
+  ],
+  "known_model_constraints": {
+    "marine_original": {"hba_sites": 3, "aromatic_sites": 1, "aliphatic_hydrophobes": 1, "excluded_volumes": 3, "aromatic_to_aliphatic_hydrophobe_angstrom": 6.3, "conformational_energy_window_kcal_mol": 3, "manually_placed_excluded_volumes": true, "geometry_complete": false},
+    "marine_revised": {"hba_sites": 2, "aromatic_sites": 1, "aliphatic_hydrophobes": 1, "excluded_volumes": 6, "aromatic_to_aliphatic_hydrophobe_angstrom": 7.23, "geometry_complete": false, "source_article_doi": "10.1055/s-0030-1258142"}
+  },
+  "prohibited_shortcuts": ["No coordinates or model weights invented from a picture and labeled original", "No regressor trained on the published calculated column to mimic the original software", "No manual adjustment of model coordinates to improve image resemblance", "No claim of quantitative threshold prediction from a geometry-only fit", "No numerical-equivalence claim based only on an image or one correlation"],
+  "acceptance_gates": ["Original hypothesis provenance and completeness verified", "Feature geometry and excluded volumes equivalent under a proper rigid transform, with numerical tolerances documented", "Per-ligand mapping and printed calculated thresholds reproduced within documented rounding, not merely the reported correlation", "New molecule inference performs actual 3D conformer search and pharmacophore fitting; returns pose, conformer, feature mapping and model-derived quantitative output", "Saved rendering verified against original only after numerical gates", "Predictive performance for new molecules reported separately from reproduction of fitted training values"]
+}

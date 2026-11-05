@@ -1,0 +1,210 @@
+{
+  "host": "compute-host",
+  "runs": {
+    "runs/nose-pleasantness-all-stimuli-inner-v1": {
+      "folds": [
+        {
+          "fold": 0,
+          "path": "runs\\nose-pleasantness-all-stimuli-inner-v1\\keller-repeat-0-fold-0.npz",
+          "repeat": 0,
+          "sha256": "d0eff55d8903f302e3c4d91bfcb0140f9c9629e2a24eb0108e41583f7be13ebe"
+        },
+        {
+          "fold": 1,
+          "path": "runs\\nose-pleasantness-all-stimuli-inner-v1\\keller-repeat-0-fold-1.npz",
+          "repeat": 0,
+          "sha256": "d4b303bb3caf5788d8b53b1376450e2893614b222a58012911825bd7e83f8816"
+        },
+        {
+          "fold": 2,
+          "path": "runs\\nose-pleasantness-all-stimuli-inner-v1\\keller-repeat-0-fold-2.npz",
+          "repeat": 0,
+          "sha256": "16e9ff3f5c176f7e00c7c30ff18d3b3a451da1f53ea812da34972b0e78677d96"
+        },
+        {
+          "fold": 3,
+          "path": "runs\\nose-pleasantness-all-stimuli-inner-v1\\keller-repeat-0-fold-3.npz",
+          "repeat": 0,
+          "sha256": "412ca709a624f73199455b117900e57c320558756e43d4088cdd843671bd5f64"
+        },
+        {
+          "fold": 4,
+          "path": "runs\\nose-pleasantness-all-stimuli-inner-v1\\keller-repeat-0-fold-4.npz",
+          "repeat": 0,
+          "sha256": "83a3c5d001ab181281622ba37100cf07d2a16bff741c7e4cc4dfb300875ae262"
+        },
+        {
+          "fold": 0,
+          "path": "runs\\nose-pleasantness-all-stimuli-inner-v1\\keller-repeat-1-fold-0.npz",
+          "repeat": 1,
+          "sha256": "3da9dec0fe75a7d149bb4461b01201740ab9727b8045e36ab0deb388e0de478b"
+        },
+        {
+          "fold": 1,
+          "path": "runs\\nose-pleasantness-all-stimuli-inner-v1\\keller-repeat-1-fold-1.npz",
+          "repeat": 1,
+          "sha256": "d9359ce9eef97d121a05fac52f87d231ece717925e60e11f72772ea3f4d87607"
+        },
+        {
+          "fold": 2,
+          "path": "runs\\nose-pleasantness-all-stimuli-inner-v1\\keller-repeat-1-fold-2.npz",
+          "repeat": 1,
+          "sha256": "2980fbb2cd28c38cc063f1e3d847eb5f0bc3fa6853f1624f62683810c689a612"
+        },
+        {
+          "fold": 3,
+          "path": "runs\\nose-pleasantness-all-stimuli-inner-v1\\keller-repeat-1-fold-3.npz",
+          "repeat": 1,
+          "sha256": "71ee82645484b2367bc5f0a024644edf8ef38e299152fa103edc5c0cc84f6dca"
+        },
+        {
+          "fold": 4,
+          "path": "runs\\nose-pleasantness-all-stimuli-inner-v1\\keller-repeat-1-fold-4.npz",
+          "repeat": 1,
+          "sha256": "13c003638f29dbec7353655a12326a3fb1301763ab8b4fe7a9431e8efcfab4f6"
+        },
+        {
+          "fold": 0,
+          "path": "runs\\nose-pleasantness-all-stimuli-inner-v1\\keller-repeat-2-fold-0.npz",
+          "repeat": 2,
+          "sha256": "dc6336859263fdb49c74a5bbf76c3222d479bc2509f00c699316bd7ba0cede75"
+        },
+        {
+          "fold": 1,
+          "path": "runs\\nose-pleasantness-all-stimuli-inner-v1\\keller-repeat-2-fold-1.npz",
+          "repeat": 2,
+          "sha256": "8e7a1cb8717e58f025895f891b25b19f34f08b2d52ce5a79b96123921445a261"
+        },
+        {
+          "fold": 2,
+          "path": "runs\\nose-pleasantness-all-stimuli-inner-v1\\keller-repeat-2-fold-2.npz",
+          "repeat": 2,
+          "sha256": "aa702d660502df0eb12f7f2165aeff30f339e69432094b71445e14e89e1387d4"
+        },
+        {
+          "fold": 3,
+          "path": "runs\\nose-pleasantness-all-stimuli-inner-v1\\keller-repeat-2-fold-3.npz",
+          "repeat": 2,
+          "sha256": "1a31cc411562f2f3f37200fbd1116022048a75ed21fde0ab373e2c7324f3fc68"
+        },
+        {
+          "fold": 4,
+          "path": "runs\\nose-pleasantness-all-stimuli-inner-v1\\keller-repeat-2-fold-4.npz",
+          "repeat": 2,
+          "sha256": "bc8c47171a19317abf44b705fd363dbdd38126d7c661a1a6bf3cf3cc6eaa5b23"
+        }
+      ],
+      "limit": "Verifies saved evidence and source boundary, without recreating source/model fits",
+      "main_test_targets_scored": false,
+      "oof_sha256": "c698c4f1331618db1b54582ff4eef8fa9d4d9a43d4c9617ee76a707caaeb2d17",
+      "passing": [],
+      "reserved_targets_fitted_or_scored": false,
+      "resource_sha256": "1916e68166f77ec8c8c737357c2bf222d6dfcb3fd5d4745567df443520810b14",
+      "results_sha256": "990b67375fa7018f44b5c499b5f414d92b863a556cbb096673a6ea7ae5207e9b",
+      "selected": "current",
+      "status": "verified",
+      "summary": {
+        "all_ensemble": {
+          "mae": {
+            "mean": 8.284487569364837,
+            "sd": 0.11689938350332915
+          },
+          "pearson": {
+            "mean": 0.6939196086437533,
+            "sd": 0.01376514802510877
+          },
+          "rmse": {
+            "mean": 10.40841097666452,
+            "sd": 0.16155128616599823
+          }
+        },
+        "all_hedonic": {
+          "mae": {
+            "mean": 8.428811145113048,
+            "sd": 0.09706149746462647
+          },
+          "pearson": {
+            "mean": 0.6755149162590236,
+            "sd": 0.012699793373846566
+          },
+          "rmse": {
+            "mean": 10.636895607364472,
+            "sd": 0.13609952366142075
+          }
+        },
+        "all_semantic": {
+          "mae": {
+            "mean": 8.295255870135792,
+            "sd": 0.11054998574672402
+          },
+          "pearson": {
+            "mean": 0.6929631585441628,
+            "sd": 0.013931627483767507
+          },
+          "rmse": {
+            "mean": 10.370323320318299,
+            "sd": 0.17499272160478124
+          }
+        },
+        "blend_all_ensemble": {
+          "mae": {
+            "mean": 8.065393150417364,
+            "sd": 0.09391151144454381
+          },
+          "pearson": {
+            "mean": 0.7033673074417789,
+            "sd": 0.011097447881256502
+          },
+          "rmse": {
+            "mean": 10.149313633684347,
+            "sd": 0.14368740570597655
+          }
+        },
+        "blend_all_hedonic": {
+          "mae": {
+            "mean": 8.115262033122152,
+            "sd": 0.09512182291501445
+          },
+          "pearson": {
+            "mean": 0.6974633478159856,
+            "sd": 0.010860344176830425
+          },
+          "rmse": {
+            "mean": 10.232219015266198,
+            "sd": 0.13553648461530432
+          }
+        },
+        "blend_all_semantic": {
+          "mae": {
+            "mean": 8.046296775476678,
+            "sd": 0.09264790775267007
+          },
+          "pearson": {
+            "mean": 0.7050071808609144,
+            "sd": 0.0112839364208774
+          },
+          "rmse": {
+            "mean": 10.11546472202358,
+            "sd": 0.15046554578328467
+          }
+        },
+        "current": {
+          "mae": {
+            "mean": 8.018147113648704,
+            "sd": 0.07780120770388606
+          },
+          "pearson": {
+            "mean": 0.7028185449595092,
+            "sd": 0.009264586112236597
+          },
+          "rmse": {
+            "mean": 10.09183220473095,
+            "sd": 0.12771653685040626
+          }
+        }
+      },
+      "training_molecules": 260
+    }
+  },
+  "script_sha256": "37e97f170b52cda92ee7958d5fda549336073fc8e6c0af1182a81b1911e79e0b"
+}

@@ -1,0 +1,104 @@
+{
+  "alpha": 100.0,
+  "encoder": "extra_trees",
+  "include_v2": false,
+  "molecular_vectors": {
+    "available": 7129,
+    "checkpoint_sha256": "da27196af09a8c6d089e10b7764b6a716bcc33da227fc118f5b45b0e484585e9",
+    "conformer_seed": 42,
+    "dictionary_sha256": "94135cb9a9198f988de684cb61e2c372882a3bd59b8320effbae704c38057127",
+    "generated_conformers": 1,
+    "rdkit": "2026.03.6",
+    "remove_hydrogens": true,
+    "repository": "dptech/Uni-Mol-Models",
+    "reserved_molecules_scored": false,
+    "retained_conformers": 1,
+    "revision": "9f19c45c718192888a1c8a1c905f69f0755ea502",
+    "sha256": "5b18c90b11a134bbc0d33279736b0cf9ccc0075502309040fc8ebf039a285613",
+    "shape": [
+      7216,
+      513
+    ],
+    "training": "unlabeled molecular pretraining; frozen"
+  },
+  "projection_width": 128,
+  "reserved_holdouts_opened": false,
+  "results": {
+    "abraham": {
+      "corpus_molecules_per_fit": [
+        6917,
+        6933
+      ],
+      "inner_cv_pearson": {
+        "semantic": [
+          0.7353458840620213,
+          0.6552493923050601,
+          0.7047726638813478
+        ],
+        "structure": [
+          0.6962290788196999,
+          0.6920837532717784,
+          0.7017056700158142
+        ],
+        "structure_molecular": [
+          0.6922874842293336,
+          0.6708287227092493,
+          0.6903200100388809
+        ],
+        "structure_semantic": [
+          0.7315947196258473,
+          0.6787598692541909,
+          0.7337434667132035
+        ]
+      },
+      "n_training_molecules": 111,
+      "selection": "5-fold CV inside split-42 training only; main validation/test and reserved labels never scored"
+    },
+    "keller": {
+      "corpus_molecules_per_fit": [
+        6848,
+        6872
+      ],
+      "inner_cv_pearson": {
+        "semantic": [
+          0.6214353695834518,
+          0.6194055582352789,
+          0.5939919376382601
+        ],
+        "structure": [
+          0.6805730897402962,
+          0.6999699121090892,
+          0.6832843284649384
+        ],
+        "structure_molecular": [
+          0.6868482750525411,
+          0.6865966051641583,
+          0.6656792035806366
+        ],
+        "structure_semantic": [
+          0.6882663842793258,
+          0.7006031044168546,
+          0.6871441702060959
+        ]
+      },
+      "n_training_molecules": 260,
+      "selection": "5-fold CV inside split-42 training only; main validation/test and reserved labels never scored"
+    }
+  },
+  "script_sha256": "784d971f1950b3d8f2d8281a067a01f686c932de369d874b462c2e06480e62bd",
+  "seconds": 3826,
+  "source_sha256": "858e482f407a3577870a87a61f8f16b488412ed06922dd35dd8d4fe4cf5e6ff2",
+  "word_vectors": {
+    "corpus_sha256": "858e482f407a3577870a87a61f8f16b488412ed06922dd35dd8d4fe4cf5e6ff2",
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "molecular_or_endpoint_labels_used": false,
+    "pooling": "attention-masked mean, L2 normalization",
+    "prompt": "This odor smells {term}.",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "sha256": "f29812b5b2b359b68c36848ad8f97e9b58800ef7e288eddc9e7c449b0ccd27e4",
+    "shape": [
+      1086,
+      384
+    ]
+  }
+}

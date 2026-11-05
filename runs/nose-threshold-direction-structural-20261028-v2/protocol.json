@@ -1,0 +1,12 @@
+{
+  "baseline_oof_sha256": "a98e82fbc948ca5d1e247295b61e5fdbdbb63adbbc9b87728ab1aa5c07accc6e",
+  "code_sha256": "175cbd0313c41617ca47960ce0f7ddf34b1532447df551f110c9d500684dfd6f",
+  "folds": "GroupKFold10 seed42; all186 development molecules",
+  "model_selection": false,
+  "not_independent_nested_model_selection": true,
+  "purpose": "Connectivity-disjoint development sensitivity check; no new selection",
+  "recipe": "Previously frozen half/current + half direction-confidence ET",
+  "reserved_targets_fitted_or_scored": false,
+  "source_boundary": "All186 development connectivities excluded before source training",
+  "source_sha256": "f4a3a5b3e4411084416385f15a1434ea8494dbe3aebdd5dee59347656009cbb4"
+}

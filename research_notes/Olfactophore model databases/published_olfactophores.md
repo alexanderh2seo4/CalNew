@@ -1,5 +1,7 @@
 # Published olfactophore / pharmacophore models for odor families in fragrance chemistry
 
+> **Update 2026-11-02:** The [new review](../../reports/AlphaFold%20Docking%20und%20Pharmakophore%20f%C3%BCr%20CALNEW.md) supersedes the access-limited Calone entries below: the 2003 full text identifies Catalyst and contains a distance diagram. The archived 2021 review author's reply also resolves the earlier speculation about an unpublished calculation by that review group. Historical entries below retain their original uncertainty labels.
+
 Research notes, compiled 2026-09-28. Scope: every published olfactophore model (odor family, authors/year/venue, training set, method, features, validation, whether geometry/files are published, access/licence). Wiley (Helv Chim Acta, EurJOC, ChemBiodiv, Angew), ResearchGate and Perfumer & Flavorist full texts returned HTTP 403 to automated fetching. Facts from those papers therefore come from abstracts (via OpenAlex), from open-access papers that cite them, or from search-engine snippets, and each is labelled as such. Access status ("closed", "bronze", "gold", "diamond") is OpenAlex's `oa_status` field.
 
 ---

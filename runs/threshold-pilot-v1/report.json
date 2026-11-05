@@ -1,0 +1,266 @@
+{
+  "best_point_estimate": "descriptor_linear",
+  "calibration_rows": 40,
+  "data_caveats": {
+    "aggregate_observations": 57,
+    "permitted_use": "research",
+    "snapshot_id": "955c3ab05ff9fb7d6d0af5af4ab1d5f09c01a4ebeabacb45b6a2027ba7705833",
+    "source": "abraham_2012",
+    "target_semantics": "air_detection_threshold",
+    "unit": "log10(ppbv)"
+  },
+  "development_rows": 188,
+  "endpoint": "air_detection_threshold",
+  "failures": {},
+  "final_test_accessed": false,
+  "labels": [
+    "air_detection_threshold"
+  ],
+  "limitations": [
+    "No source-disjoint or prospective result is inferred from structural CV.",
+    "Abraham processed duplicates are already aggregated.",
+    "Pilot results do not establish the final architecture winner."
+  ],
+  "one_se_cutoff": -0.9925423532981517,
+  "paired_comparisons_vs_first_control": {
+    "fingerprint_rf": {
+      "ci95": [
+        -0.41124196915602207,
+        -0.16046445104277887
+      ],
+      "mean_improvement": -0.2925339099364387,
+      "repeats": 100,
+      "resampling_unit": "molecule_connectivity"
+    },
+    "fingerprint_xgb": {
+      "ci95": [
+        -0.27972884993287145,
+        -0.04259240503402211
+      ],
+      "mean_improvement": -0.1706402439902263,
+      "repeats": 100,
+      "resampling_unit": "molecule_connectivity"
+    },
+    "stereo_dmpnn": {
+      "ci95": [
+        -0.5589703398374524,
+        -0.28685825903924955
+      ],
+      "mean_improvement": -0.42329907711256015,
+      "repeats": 100,
+      "resampling_unit": "molecule_connectivity"
+    },
+    "tanimoto_gp": {
+      "ci95": [
+        -0.3459080508733803,
+        -0.14120252069881856
+      ],
+      "mean_improvement": -0.2412586302359529,
+      "repeats": 100,
+      "resampling_unit": "molecule_connectivity"
+    }
+  },
+  "profile": "pilot",
+  "prospective_validation": "not_performed",
+  "reserved_test_rows": 40,
+  "rows": 268,
+  "runtime_seconds": 6.044704914093018,
+  "selected": "descriptor_linear",
+  "selection_rule": "simplest candidate in declared order within one standard error of best outer-CV score",
+  "source": "abraham_2012",
+  "status": "computational_pilot",
+  "summary": {
+    "descriptor_linear": {
+      "evaluation": {
+        "per_label": {
+          "air_detection_threshold": {
+            "mae": 0.9261922725225341,
+            "n": 188,
+            "rmse": 1.1992800700175594,
+            "spearman": 0.6398155322411866
+          }
+        },
+        "primary": 0.9261922725225341,
+        "primary_metric": "macro_mae",
+        "supported_labels": 1,
+        "task": "regression",
+        "total_labels": 1
+      },
+      "fold_scores": [
+        -1.0425927848302206,
+        -0.9076523144769034,
+        -0.8705896848736387
+      ],
+      "mean_score": -0.9402782613935875,
+      "standard_error": 0.05226409190456416
+    },
+    "fingerprint_rf": {
+      "evaluation": {
+        "per_label": {
+          "air_detection_threshold": {
+            "mae": 1.2153271107557644,
+            "n": 188,
+            "rmse": 1.5391509284416904,
+            "spearman": 0.2224124659030033
+          }
+        },
+        "primary": 1.2153271107557644,
+        "primary_metric": "macro_mae",
+        "supported_labels": 1,
+        "task": "regression",
+        "total_labels": 1
+      },
+      "fold_scores": [
+        -1.0623642039684542,
+        -1.3543190304251598,
+        -1.223265171618216
+      ],
+      "mean_score": -1.2133161353372766,
+      "standard_error": 0.08442677826580626
+    },
+    "fingerprint_xgb": {
+      "evaluation": {
+        "per_label": {
+          "air_detection_threshold": {
+            "mae": 1.1016563536574568,
+            "n": 188,
+            "rmse": 1.432127967088015,
+            "spearman": 0.3828892880886777
+          }
+        },
+        "primary": 1.1016563536574568,
+        "primary_metric": "macro_mae",
+        "supported_labels": 1,
+        "task": "regression",
+        "total_labels": 1
+      },
+      "fold_scores": [
+        -0.8377632786556879,
+        -1.0250287560875575,
+        -1.2951340085277232
+      ],
+      "mean_score": -1.0526420144236563,
+      "standard_error": 0.13275147853899993
+    },
+    "organiser_gating": {
+      "evaluation": {
+        "per_label": {
+          "air_detection_threshold": {
+            "mae": 0.9904229423238348,
+            "n": 188,
+            "rmse": 1.2832855930493603,
+            "spearman": 0.5152074336393172
+          }
+        },
+        "primary": 0.9904229423238348,
+        "primary_metric": "macro_mae",
+        "supported_labels": 1,
+        "task": "regression",
+        "total_labels": 1
+      },
+      "fold_scores": [
+        -0.9737937430154165,
+        -0.899122452692922,
+        -1.051746629221182
+      ],
+      "mean_score": -0.9748876083098401,
+      "standard_error": 0.044062199298998975
+    },
+    "organiser_mean": {
+      "evaluation": {
+        "per_label": {
+          "air_detection_threshold": {
+            "mae": 1.0597853842036715,
+            "n": 188,
+            "rmse": 1.3371818047397745,
+            "spearman": 0.49210020749400885
+          }
+        },
+        "primary": 1.0597853842036715,
+        "primary_metric": "macro_mae",
+        "supported_labels": 1,
+        "task": "regression",
+        "total_labels": 1
+      },
+      "fold_scores": [
+        -0.9293588047202248,
+        -1.012768584833185,
+        -1.1606054858252246
+      ],
+      "mean_score": -1.0342442917928782,
+      "standard_error": 0.06761326638213176
+    },
+    "organiser_stacking": {
+      "evaluation": {
+        "per_label": {
+          "air_detection_threshold": {
+            "mae": 1.0704000083628686,
+            "n": 188,
+            "rmse": 1.3392657911887376,
+            "spearman": 0.480551560998548
+          }
+        },
+        "primary": 1.0704000083628686,
+        "primary_metric": "macro_mae",
+        "supported_labels": 1,
+        "task": "regression",
+        "total_labels": 1
+      },
+      "fold_scores": [
+        -1.0625586063429457,
+        -1.2479224338861785,
+        -0.9739903359177624
+      ],
+      "mean_score": -1.0948237920489623,
+      "standard_error": 0.08070621667675767
+    },
+    "stereo_dmpnn": {
+      "evaluation": {
+        "per_label": {
+          "air_detection_threshold": {
+            "mae": 1.3321629037900005,
+            "n": 188,
+            "rmse": 1.6594552379431835,
+            "spearman": 0.17630446022157928
+          }
+        },
+        "primary": 1.3321629037900005,
+        "primary_metric": "macro_mae",
+        "supported_labels": 1,
+        "task": "regression",
+        "total_labels": 1
+      },
+      "fold_scores": [
+        -1.091436214734904,
+        -1.3448847084482827,
+        -1.4617111335609174
+      ],
+      "mean_score": -1.2993440189147014,
+      "standard_error": 0.10928760936217527
+    },
+    "tanimoto_gp": {
+      "evaluation": {
+        "per_label": {
+          "air_detection_threshold": {
+            "mae": 1.1660063895532393,
+            "n": 188,
+            "rmse": 1.459934378481755,
+            "spearman": 0.3493316514230492
+          }
+        },
+        "primary": 1.1660063895532393,
+        "primary_metric": "macro_mae",
+        "supported_labels": 1,
+        "task": "regression",
+        "total_labels": 1
+      },
+      "fold_scores": [
+        -0.9884913895703121,
+        -1.1096509736330227,
+        -1.2988873076800258
+      ],
+      "mean_score": -1.1323432236277868,
+      "standard_error": 0.09031908279753081
+    }
+  }
+}

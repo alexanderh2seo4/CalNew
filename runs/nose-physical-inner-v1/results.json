@@ -1,0 +1,72 @@
+{
+  "protocol": "Repeated five-fold inner CV in split-42 train only; additional measured physical inputs",
+  "reserved_holdouts_scored": false,
+  "results": {
+    "abraham": {
+      "inner_cv_pearson": {
+        "equal_ensemble": [
+          0.7013863300397232,
+          0.669583359341801,
+          0.6934075669433285
+        ],
+        "physical_ridge": [
+          0.6413349445797147,
+          0.5496581168570693,
+          0.6164930727175706
+        ],
+        "structure": [
+          0.6962290788196999,
+          0.6920837532717784,
+          0.7017056700158142
+        ],
+        "structure_physical": [
+          0.6952319632675905,
+          0.6854297047114032,
+          0.6983180574621326
+        ]
+      },
+      "physical_properties_available": 111,
+      "training_molecules": 111
+    },
+    "keller": {
+      "inner_cv_pearson": {
+        "equal_ensemble": [
+          0.6291984286870635,
+          0.6612145072580207,
+          0.6241722618841479
+        ],
+        "physical_ridge": [
+          0.26345364397315685,
+          0.28497021648969945,
+          0.21959145904700986
+        ],
+        "structure": [
+          0.6805730897402962,
+          0.6999699121090892,
+          0.6832843284649384
+        ],
+        "structure_physical": [
+          0.681527656634511,
+          0.6953151225758134,
+          0.6840994552291357
+        ]
+      },
+      "physical_properties_available": 39,
+      "training_molecules": 260
+    }
+  },
+  "source": {
+    "behavior_sha256": "d0d4f8682e0bbad9163f3d908bfd106f91930f8ea464c731413852f60d170e08",
+    "molecules_sha256": "75415d71c881f0fe450bab1a79c9f8ffef6f1194649bfb5646dcd478cbf08e6e",
+    "odor_target_columns_loaded": false,
+    "property_columns": [
+      "E",
+      "S",
+      "A",
+      "B",
+      "L",
+      "V"
+    ],
+    "source": "Abraham et al. 2012, DOI 10.1093/chemse/bjr094"
+  }
+}

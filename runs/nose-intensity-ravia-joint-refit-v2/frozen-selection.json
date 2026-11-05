@@ -1,0 +1,224 @@
+{
+  "host": "compute-host",
+  "reserved_holdouts_opened": false,
+  "results": {
+    "ravia": {
+      "n": 91,
+      "passing": [
+        "joint_0.25_legacy",
+        "joint_0.25_current"
+      ],
+      "scores": {
+        "current": [
+          {
+            "mae": 10.624916680903423,
+            "pearson": 0.6214801523743149,
+            "rmse": 13.482555215135818
+          },
+          {
+            "mae": 10.642588763760124,
+            "pearson": 0.6018977032403011,
+            "rmse": 13.669553897691033
+          },
+          {
+            "mae": 10.197370951685173,
+            "pearson": 0.6722995975822945,
+            "rmse": 12.769442851172009
+          }
+        ],
+        "joint_0.25_current": [
+          {
+            "mae": 10.339800233605992,
+            "pearson": 0.6493024481709172,
+            "rmse": 13.16381113847337
+          },
+          {
+            "mae": 10.379939572582229,
+            "pearson": 0.646676526222057,
+            "rmse": 13.160900640694132
+          },
+          {
+            "mae": 10.036522047177128,
+            "pearson": 0.687238042700383,
+            "rmse": 12.586338590604543
+          }
+        ],
+        "joint_0.25_legacy": [
+          {
+            "mae": 10.13695669720157,
+            "pearson": 0.6482394349694351,
+            "rmse": 13.165596558046802
+          },
+          {
+            "mae": 10.464307819073856,
+            "pearson": 0.6139392159995021,
+            "rmse": 13.575443168474424
+          },
+          {
+            "mae": 10.014055392809299,
+            "pearson": 0.6674622691513962,
+            "rmse": 12.83866813888628
+          }
+        ],
+        "joint_1.0_current": [
+          {
+            "mae": 10.706272301889857,
+            "pearson": 0.6382233187456972,
+            "rmse": 13.405701138870871
+          },
+          {
+            "mae": 10.709718936978229,
+            "pearson": 0.63563250972504,
+            "rmse": 13.367013137036658
+          },
+          {
+            "mae": 10.270480419246915,
+            "pearson": 0.6859651734789065,
+            "rmse": 12.714760166030707
+          }
+        ],
+        "joint_1.0_legacy": [
+          {
+            "mae": 10.462842846389602,
+            "pearson": 0.6425191794027835,
+            "rmse": 13.354131978092608
+          },
+          {
+            "mae": 10.723468000021855,
+            "pearson": 0.6096711897397563,
+            "rmse": 13.701791942654578
+          },
+          {
+            "mae": 10.162810767769727,
+            "pearson": 0.6722963698828348,
+            "rmse": 12.88491854396239
+          }
+        ]
+      },
+      "selected": "joint_0.25_current"
+    }
+  },
+  "seconds": 18,
+  "source_audit": [
+    {
+      "fold": 0,
+      "held_connectivities": 41,
+      "repeat": 0,
+      "source_molecules": 244,
+      "source_stimuli": 492,
+      "target_training": 73
+    },
+    {
+      "fold": 1,
+      "held_connectivities": 41,
+      "repeat": 0,
+      "source_molecules": 239,
+      "source_stimuli": 482,
+      "target_training": 73
+    },
+    {
+      "fold": 2,
+      "held_connectivities": 41,
+      "repeat": 0,
+      "source_molecules": 239,
+      "source_stimuli": 482,
+      "target_training": 73
+    },
+    {
+      "fold": 3,
+      "held_connectivities": 41,
+      "repeat": 0,
+      "source_molecules": 241,
+      "source_stimuli": 486,
+      "target_training": 72
+    },
+    {
+      "fold": 4,
+      "held_connectivities": 41,
+      "repeat": 0,
+      "source_molecules": 240,
+      "source_stimuli": 484,
+      "target_training": 73
+    },
+    {
+      "fold": 0,
+      "held_connectivities": 41,
+      "repeat": 1,
+      "source_molecules": 240,
+      "source_stimuli": 484,
+      "target_training": 73
+    },
+    {
+      "fold": 1,
+      "held_connectivities": 41,
+      "repeat": 1,
+      "source_molecules": 242,
+      "source_stimuli": 488,
+      "target_training": 72
+    },
+    {
+      "fold": 2,
+      "held_connectivities": 41,
+      "repeat": 1,
+      "source_molecules": 242,
+      "source_stimuli": 488,
+      "target_training": 73
+    },
+    {
+      "fold": 3,
+      "held_connectivities": 41,
+      "repeat": 1,
+      "source_molecules": 240,
+      "source_stimuli": 484,
+      "target_training": 73
+    },
+    {
+      "fold": 4,
+      "held_connectivities": 41,
+      "repeat": 1,
+      "source_molecules": 239,
+      "source_stimuli": 482,
+      "target_training": 73
+    },
+    {
+      "fold": 0,
+      "held_connectivities": 41,
+      "repeat": 2,
+      "source_molecules": 238,
+      "source_stimuli": 480,
+      "target_training": 72
+    },
+    {
+      "fold": 1,
+      "held_connectivities": 41,
+      "repeat": 2,
+      "source_molecules": 240,
+      "source_stimuli": 484,
+      "target_training": 73
+    },
+    {
+      "fold": 2,
+      "held_connectivities": 41,
+      "repeat": 2,
+      "source_molecules": 241,
+      "source_stimuli": 486,
+      "target_training": 73
+    },
+    {
+      "fold": 3,
+      "held_connectivities": 41,
+      "repeat": 2,
+      "source_molecules": 243,
+      "source_stimuli": 490,
+      "target_training": 73
+    },
+    {
+      "fold": 4,
+      "held_connectivities": 41,
+      "repeat": 2,
+      "source_molecules": 241,
+      "source_stimuli": 486,
+      "target_training": 73
+    }
+  ]
+}

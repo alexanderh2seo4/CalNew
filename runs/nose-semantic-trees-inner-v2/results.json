@@ -1,0 +1,82 @@
+{
+  "alpha": 100.0,
+  "encoder": "extra_trees",
+  "include_v2": true,
+  "projection_width": 128,
+  "reserved_holdouts_opened": false,
+  "results": {
+    "abraham": {
+      "corpus_molecules_per_fit": [
+        6917,
+        6933
+      ],
+      "inner_cv_pearson": {
+        "semantic": [
+          0.7199751962953576,
+          0.6923103334698149,
+          0.7027835932105821
+        ],
+        "structure": [
+          0.6962290788196999,
+          0.6920837532717784,
+          0.7017056700158142
+        ],
+        "structure_semantic": [
+          0.7391204908487532,
+          0.709897660004275,
+          0.7489272462512493
+        ],
+        "v2": [
+          0.7357180740829439,
+          0.7500872015998036,
+          0.7677524278133718
+        ],
+        "v2_plus_semantic": [
+          0.7518448919759237,
+          0.7450596475967846,
+          0.7711025385739442
+        ]
+      },
+      "n_training_molecules": 111,
+      "selection": "5-fold CV inside split-42 training only; main validation/test and reserved labels never scored"
+    },
+    "keller": {
+      "corpus_molecules_per_fit": [
+        6848,
+        6872
+      ],
+      "inner_cv_pearson": {
+        "semantic": [
+          0.6198866266496632,
+          0.6054317656810133,
+          0.6066313311232545
+        ],
+        "structure": [
+          0.680573089740296,
+          0.6999699121090892,
+          0.6832843284649384
+        ],
+        "structure_semantic": [
+          0.7001837733370994,
+          0.7032566885878522,
+          0.6943692207420546
+        ],
+        "v2": [
+          0.6914920338226114,
+          0.7116112824296335,
+          0.6829682126600132
+        ],
+        "v2_plus_semantic": [
+          0.7012882336896261,
+          0.712980562274226,
+          0.6937678937038589
+        ]
+      },
+      "n_training_molecules": 260,
+      "selection": "5-fold CV inside split-42 training only; main validation/test and reserved labels never scored"
+    }
+  },
+  "script_sha256": "2f8d69e8ba7f80c601ea158119775ecc00dc222ceb21d54a5df1d86df644b1bd",
+  "seconds": 2696,
+  "source_sha256": "858e482f407a3577870a87a61f8f16b488412ed06922dd35dd8d4fe4cf5e6ff2"
+}

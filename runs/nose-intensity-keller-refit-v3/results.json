@@ -1,0 +1,354 @@
+{
+  "dataset": "keller",
+  "molecular_vectors": null,
+  "per_split": {
+    "42": {
+      "all_stimuli": {
+        "baseline": {
+          "mae": 12.20222525378608,
+          "pearson": 0.7453193272663929,
+          "rmse": 15.939005018612576
+        },
+        "n": 66,
+        "selected": {
+          "mae": 11.942734638254239,
+          "pearson": 0.7691839362741181,
+          "rmse": 14.99994862061904
+        }
+      },
+      "baseline": {
+        "mae": 11.853374357241634,
+        "pearson": 0.6202585528716005,
+        "rmse": 15.990208777931663
+      },
+      "dose_monotonicity_violations": 0,
+      "selected": {
+        "mae": 10.979372581527048,
+        "pearson": 0.6624133689213043,
+        "rmse": 14.6796216833418
+      },
+      "source_rows": 6965,
+      "test": 33,
+      "train": 293,
+      "validation": 0
+    },
+    "43": {
+      "all_stimuli": {
+        "baseline": {
+          "mae": 12.73128609986865,
+          "pearson": 0.6730931224847878,
+          "rmse": 16.848454950209682
+        },
+        "n": 68,
+        "selected": {
+          "mae": 11.373294235952091,
+          "pearson": 0.7206615614682993,
+          "rmse": 14.628122812841879
+        }
+      },
+      "baseline": {
+        "mae": 11.276583369555118,
+        "pearson": 0.668521200441523,
+        "rmse": 15.146525852362288
+      },
+      "dose_monotonicity_violations": 0,
+      "selected": {
+        "mae": 10.42403914188674,
+        "pearson": 0.727536413785667,
+        "rmse": 13.218193092059238
+      },
+      "source_rows": 6962,
+      "test": 33,
+      "train": 293,
+      "validation": 0
+    },
+    "44": {
+      "all_stimuli": {
+        "baseline": {
+          "mae": 12.617275013996974,
+          "pearson": 0.679465703948315,
+          "rmse": 16.52844450397075
+        },
+        "n": 66,
+        "selected": {
+          "mae": 10.65373792742573,
+          "pearson": 0.7605940390954515,
+          "rmse": 13.734764235881022
+        }
+      },
+      "baseline": {
+        "mae": 13.814346108337498,
+        "pearson": 0.3086960259174647,
+        "rmse": 19.031193664340993
+      },
+      "dose_monotonicity_violations": 0,
+      "selected": {
+        "mae": 11.145864916786252,
+        "pearson": 0.48444434540884135,
+        "rmse": 15.434332300788807
+      },
+      "source_rows": 6963,
+      "test": 33,
+      "train": 293,
+      "validation": 0
+    },
+    "45": {
+      "all_stimuli": {
+        "baseline": {
+          "mae": 13.135888671172236,
+          "pearson": 0.6383282382635793,
+          "rmse": 17.135312556046784
+        },
+        "n": 66,
+        "selected": {
+          "mae": 11.630120988410228,
+          "pearson": 0.6857839544063451,
+          "rmse": 15.08727180779134
+        }
+      },
+      "baseline": {
+        "mae": 12.263507827555788,
+        "pearson": 0.4635151026274472,
+        "rmse": 17.444274797341198
+      },
+      "dose_monotonicity_violations": 0,
+      "selected": {
+        "mae": 11.095770425970429,
+        "pearson": 0.5200825239344452,
+        "rmse": 15.529460498373512
+      },
+      "source_rows": 6959,
+      "test": 33,
+      "train": 293,
+      "validation": 0
+    },
+    "46": {
+      "all_stimuli": {
+        "baseline": {
+          "mae": 13.040431077029616,
+          "pearson": 0.703008183857345,
+          "rmse": 16.594660169404715
+        },
+        "n": 66,
+        "selected": {
+          "mae": 10.801316941164997,
+          "pearson": 0.7612894840435455,
+          "rmse": 13.729700626241545
+        }
+      },
+      "baseline": {
+        "mae": 12.36037801426154,
+        "pearson": 0.6389811809745976,
+        "rmse": 15.856732181828212
+      },
+      "dose_monotonicity_violations": 0,
+      "selected": {
+        "mae": 10.151985802451195,
+        "pearson": 0.7099325727793563,
+        "rmse": 13.243731246945005
+      },
+      "source_rows": 6965,
+      "test": 33,
+      "train": 293,
+      "validation": 0
+    },
+    "47": {
+      "all_stimuli": {
+        "baseline": {
+          "mae": 13.105898570538523,
+          "pearson": 0.6760749598940661,
+          "rmse": 16.19455889803861
+        },
+        "n": 68,
+        "selected": {
+          "mae": 11.6135828517724,
+          "pearson": 0.7226404381118926,
+          "rmse": 14.20540370393077
+        }
+      },
+      "baseline": {
+        "mae": 12.96483874041618,
+        "pearson": 0.41170433077311763,
+        "rmse": 16.512920996133
+      },
+      "dose_monotonicity_violations": 0,
+      "selected": {
+        "mae": 10.75204657764464,
+        "pearson": 0.46856662374661445,
+        "rmse": 13.75800514510353
+      },
+      "source_rows": 6957,
+      "test": 33,
+      "train": 293,
+      "validation": 0
+    },
+    "48": {
+      "all_stimuli": {
+        "baseline": {
+          "mae": 9.831403946722164,
+          "pearson": 0.8404741880921797,
+          "rmse": 12.038888389331575
+        },
+        "n": 66,
+        "selected": {
+          "mae": 9.435991947455642,
+          "pearson": 0.8373261883506788,
+          "rmse": 11.721536231290754
+        }
+      },
+      "baseline": {
+        "mae": 9.901511699614492,
+        "pearson": 0.7701539699172091,
+        "rmse": 12.108615600032829
+      },
+      "dose_monotonicity_violations": 0,
+      "selected": {
+        "mae": 9.643430270701652,
+        "pearson": 0.7746753078527508,
+        "rmse": 11.919936256215887
+      },
+      "source_rows": 6955,
+      "test": 33,
+      "train": 293,
+      "validation": 0
+    },
+    "49": {
+      "all_stimuli": {
+        "baseline": {
+          "mae": 10.471476662751872,
+          "pearson": 0.80560996827828,
+          "rmse": 13.278923477017354
+        },
+        "n": 66,
+        "selected": {
+          "mae": 9.509650236727905,
+          "pearson": 0.8267536392213275,
+          "rmse": 11.910887122993293
+        }
+      },
+      "baseline": {
+        "mae": 9.893415655110285,
+        "pearson": 0.7551957576468012,
+        "rmse": 13.821998200708446
+      },
+      "dose_monotonicity_violations": 0,
+      "selected": {
+        "mae": 9.035974711758055,
+        "pearson": 0.8001863840137748,
+        "rmse": 12.426308772902853
+      },
+      "source_rows": 6956,
+      "test": 33,
+      "train": 293,
+      "validation": 0
+    },
+    "50": {
+      "all_stimuli": {
+        "baseline": {
+          "mae": 13.532741684524494,
+          "pearson": 0.6090443295866332,
+          "rmse": 18.789490663222928
+        },
+        "n": 66,
+        "selected": {
+          "mae": 12.247105343663232,
+          "pearson": 0.6513405078796277,
+          "rmse": 16.38788867909466
+        }
+      },
+      "baseline": {
+        "mae": 11.168682134973276,
+        "pearson": 0.5206143620001065,
+        "rmse": 16.17519404123775
+      },
+      "dose_monotonicity_violations": 0,
+      "selected": {
+        "mae": 10.253834408355843,
+        "pearson": 0.5876862951304257,
+        "rmse": 13.894611530253126
+      },
+      "source_rows": 6959,
+      "test": 33,
+      "train": 293,
+      "validation": 0
+    },
+    "51": {
+      "all_stimuli": {
+        "baseline": {
+          "mae": 11.945134851777558,
+          "pearson": 0.7117614976903476,
+          "rmse": 15.631094077145057
+        },
+        "n": 68,
+        "selected": {
+          "mae": 11.396495661376155,
+          "pearson": 0.7363340791320885,
+          "rmse": 14.191844161458537
+        }
+      },
+      "baseline": {
+        "mae": 10.312228327479044,
+        "pearson": 0.6173724677507932,
+        "rmse": 14.141526565414296
+      },
+      "dose_monotonicity_violations": 0,
+      "selected": {
+        "mae": 10.366616275057295,
+        "pearson": 0.6584587308997429,
+        "rmse": 12.628105883088937
+      },
+      "source_rows": 6959,
+      "test": 33,
+      "train": 293,
+      "validation": 0
+    }
+  },
+  "positive_pearson_splits": 10,
+  "recipe": "blend_dose_semantic",
+  "reserved_holdouts_opened": false,
+  "seconds": 276,
+  "summary": {
+    "baseline": {
+      "mae": {
+        "mean": 11.580886623454486,
+        "sd": 1.2486535997138812
+      },
+      "pearson": {
+        "mean": 0.577501295092066,
+        "sd": 0.14147315982986244
+      },
+      "rmse": {
+        "mean": 15.622919067733068,
+        "sd": 1.8502830290544021
+      }
+    },
+    "selected": {
+      "mae": {
+        "mean": 10.384893511213914,
+        "sd": 0.6336614868227417
+      },
+      "pearson": {
+        "mean": 0.6393982566472923,
+        "sd": 0.1130900775916597
+      },
+      "rmse": {
+        "mean": 13.673230640907269,
+        "sd": 1.1716978061422987
+      }
+    }
+  },
+  "validation_refit": true,
+  "word_vectors": {
+    "corpus_sha256": "858e482f407a3577870a87a61f8f16b488412ed06922dd35dd8d4fe4cf5e6ff2",
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "molecular_or_endpoint_labels_used": false,
+    "pooling": "attention-masked mean, L2 normalization",
+    "prompt": "This odor smells {term}.",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "sha256": "f29812b5b2b359b68c36848ad8f97e9b58800ef7e288eddc9e7c449b0ccd27e4",
+    "shape": [
+      1086,
+      384
+    ]
+  }
+}

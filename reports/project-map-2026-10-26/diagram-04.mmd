@@ -1,0 +1,31 @@
+flowchart TD
+  X["Structure blocks"] --> A["Stage A<br/>positive-weighted masked BCE<br/>catalogue logits + Keller direction"]
+  A --> Q["Cross-fitted quality features in training"]
+  X --> TH["B1: threshold<br/>fusion + ridge + tabular members<br/>air log10 ppbv"]
+  Q --> TH
+  X --> HILL["B2 baseline<br/>Hill parameters Imax, x50, slope"]
+  Q --> HILL
+  DOSE["Nominal log10 solution dilution"] --> HILL
+  SEM["Molecular prediction of 128-dimensional<br/>descriptor-transfer targets<br/>held connectivities excluded from source fits"] --> KT["Monotone Keller dose trees"]
+  X --> KT
+  DOSE --> KT
+  HILL --> KB["Selected Keller intensity<br/>0.5 Hill + 0.5 semantic dose trees"]
+  KT --> KB
+  KB --> C["Fixed C descriptor combiner<br/>quality direction + intensity + dilution"]
+  Q --> C
+  DOSE --> C
+  C --> PROF["20 descriptor strengths"]
+  X --> HED["Legacy hedonic trees"]
+  Q --> HED
+  DOSE --> HED
+  SEM --> ST["Semantic pleasantness trees"]
+  X --> ST
+  DOSE --> ST
+  HED --> HP["Selected pleasantness<br/>0.5 legacy + 0.5 semantic trees"]
+  ST --> HP
+  X --> RL["Legacy Ravia ensemble"]
+  X --> KP["Cross-fitted Keller-source proxies<br/>fixed reference log dilutions −5, −3, −1<br/>ridge alpha 10"]
+  X --> JT["Shared Keller/Ravia trees<br/>study indicator + internal dose coordinate"]
+  RL --> RB["Selected Ravia intensity<br/>0.25 legacy + 0.25 proxy ridge<br/>+ 0.50 shared-study trees"]
+  KP --> RB
+  JT --> RB

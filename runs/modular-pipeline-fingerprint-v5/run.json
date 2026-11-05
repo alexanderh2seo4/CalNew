@@ -1,0 +1,108 @@
+{
+  "code_identity": "c6e72467b4e0bdb7a023da7eec5eefd781b303dd51ff30ff4c7a914ace8c7871",
+  "concentration_axis": "log10 solution dilution in paraffin oil (not gas-phase concentration)",
+  "counts": {
+    "panel_molecules": 326,
+    "panel_stimuli": 658,
+    "quality_labels": 91,
+    "quality_molecules": 2589,
+    "threshold_molecules": 186,
+    "threshold_observations": 186,
+    "usable_molecules": 2725
+  },
+  "folds": 5,
+  "packages": {
+    "calnew": "0.1.0",
+    "numpy": "2.2.6",
+    "rdkit": "2026.3.6",
+    "scikit-learn": "1.9.1",
+    "torch": "2.14.0"
+  },
+  "panel_descriptors": [
+    "acid",
+    "ammonia/urinous",
+    "bakery",
+    "burnt",
+    "chemical",
+    "cold",
+    "decayed",
+    "edible",
+    "fish",
+    "flower",
+    "fruit",
+    "garlic",
+    "grass",
+    "musky",
+    "sour",
+    "spices",
+    "sweaty",
+    "sweet",
+    "warm",
+    "wood"
+  ],
+  "pipeline_split_id": "d3482ae9b4c77b73c087db6ebd1a5f80c249a590e67e3c9b4415ca84c418086c",
+  "pipeline_test_accessed": false,
+  "profile_semantics": "DREAM convention: per stimulus, sum of descriptor ratings divided by the number of participants who rated intensity; a descriptor a participant did not select counts as zero applicability for that participant",
+  "reserved": {
+    "earlier_run_test_connectivity": 549,
+    "earlier_run_test_scaffolds": 94,
+    "molecules_excluded_for_earlier_holdouts": 709,
+    "pipeline_test_groups": 42,
+    "pipeline_test_molecules": 273
+  },
+  "reserved_runs": [
+    "runs\\basic-threshold-models",
+    "runs\\basic-descriptor-models"
+  ],
+  "seconds": 1445,
+  "seed": 42,
+  "settings": {
+    "anchor": "fingerprint",
+    "combiner": {
+      "epochs": 400
+    },
+    "intensity": {
+      "epochs": 150,
+      "seeds": [
+        0,
+        1,
+        2
+      ]
+    },
+    "potency_blocks": [
+      "transport",
+      "hbond",
+      "osmophore",
+      "chain",
+      "fingerprint",
+      "quality"
+    ],
+    "quality": {
+      "epochs": 40,
+      "seeds": [
+        0,
+        1
+      ]
+    },
+    "quality_blocks": [
+      "transport",
+      "hbond",
+      "osmophore",
+      "chain",
+      "pharmacophore",
+      "fingerprint"
+    ],
+    "threshold": {
+      "epochs": 120,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  "snapshot": "data\\snapshots\\828751d0a24e8149",
+  "snapshot_id": "828751d0a24e8149c8596b7554fac21823306a9853b844daad180799c9fe8ba1"
+}

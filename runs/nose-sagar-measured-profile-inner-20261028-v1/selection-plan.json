@@ -1,0 +1,57 @@
+{
+  "aliases": {
+    "bakery-like": "bakery",
+    "flowery": "floral",
+    "spicey": "spicy"
+  },
+  "candidates": "Two standalone and two fixed half/current blends",
+  "code_sha256": "1481f0c178a354213f542a71974b5fa3660d9ecc919c01581fdbe9ffbb8afd5b",
+  "dependencies": {
+    "numpy": "2.2.6",
+    "pandas": "3.0.6",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "rdkit": "2026.3.6",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.17.1",
+    "threadpoolctl": "3.7.0",
+    "torch": "2.14.0",
+    "xgboost": "3.2.0"
+  },
+  "gate": {
+    "mean_pearson_gain_min": 0.01,
+    "no_mean_mae_increase": true,
+    "positive_repeats_min": 2
+  },
+  "heads": {
+    "ridge": "Training-only median/scale/Ridge100, EXPLICIT_BLOCKS+dilution+source15",
+    "trees": "ET500 leaf2 maxfeatures.3 seed42, SEMANTIC_BASE+dilution+source15"
+  },
+  "host": "compute-host",
+  "main_validation_test_targets_scored": false,
+  "outer_cv": "Three connectivity GroupKFold5 repeats seeds100/101/102",
+  "reserved_targets_fitted_or_scored": false,
+  "scope": "Original Keller split42 training260 only",
+  "source": "Sagar2023 measured common15 profiles; equal subject average per molecule; native [-1,1] retained",
+  "source_crossfit": "GroupKFold3 seed173; every source fit excludes all main-held/outer-held connectivities and its feature-fold connectivities",
+  "source_identity_audit_sha256": "0a31c24aa98f99731f086ab5051a7027e7db9bbd68a0a16528aae44f7ef8036a",
+  "source_model": "ET150 leaf3 maxfeatures.3 seed173, train-source-only median imputation and target standardization",
+  "source_revision": "6c4169b7d92b063d9ce011afe8cb4790a4ffe8aa",
+  "terms": [
+    "bakery",
+    "burnt",
+    "cool",
+    "decayed",
+    "fishy",
+    "floral",
+    "fruity",
+    "intensity",
+    "musky",
+    "pleasantness",
+    "sour",
+    "spicy",
+    "sweaty",
+    "sweet",
+    "warm"
+  ]
+}

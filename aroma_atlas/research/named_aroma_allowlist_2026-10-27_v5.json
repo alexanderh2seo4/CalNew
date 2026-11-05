@@ -1,0 +1,445 @@
+{
+  "verified_date": "2026-10-27",
+  "status": "Adopted primary-source-backed exact identities; original proposal and diagnostic evidence preserved.",
+  "scope": "Bounded identity and independent fragrance/flavor membership verification for 16 additional aroma parents. No paper counts, code changes, database edits, active allowlist adoption, Site changes or live collection.",
+  "compared_active_sources": [
+    "pipeline/atlas.py NAMED_AROMA base list",
+    "research/named_aroma_allowlist_expanded.json",
+    "research/named_aroma_allowlist_2026-10-27_v2.json",
+    "research/named_aroma_allowlist_2026-10-27_v4.json"
+  ],
+  "shared_eligibility": "An unchanged parent must be central to aroma/perception, administered/assayed pharmacology or toxicology, intended aroma-parent production, or expressly measured parent volatility/partitioning/physical properties. Ingredient membership alone does not admit a paper. Exclude derivatives, complexes, scaffold libraries, substrate/reagent-only, solvent/vehicle-only, background/absence mentions, unrelated materials/polymers, insect-only applications, general herbal clinical studies and uncharacterized mixtures. An established ester or lactone is its own verified parent, not automatic evidence for every derivative of its precursor.",
+  "shared_status_caveat": "Source ingredient membership, present regulatory authorization, safety and clinical efficacy are separate assertions. These entries establish membership and identity only; no unrestricted-use, approval, safety or therapeutic claim is made. Preserve study-specific purity, stereochemistry and formulation information.",
+  "chemicals": [
+    {
+      "name": "delta-decalactone",
+      "cas_as_source": "705-86-2",
+      "exact_parent_synonyms": [
+        "delta-decalactone",
+        "delta decalactone",
+        "\u03b4-decalactone",
+        "5-decanolide",
+        "decan-5-olide",
+        "6-pentyltetrahydro-2H-pyran-2-one",
+        "tetrahydro-6-pentyl-2H-pyran-2-one",
+        "5-hydroxydecanoic acid delta-lactone"
+      ],
+      "source_url": "https://www.femaflavor.org/flavor-library/delta-decalactone",
+      "source_authority": "FEMA Flavor Ingredient Library; US FDA Substances Added to Food",
+      "verified_use": "flavor ingredient; flavoring agent or adjuvant",
+      "membership_evidence": "FEMA 2361 identifies CAS 705-86-2 with coconut flavor profile. FDA independently assigns explicit flavoring technical effect to the same CAS parent.",
+      "supporting_urls": [
+        "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=DECALACTONEdelta&set=foodsubstances",
+        "https://precision.fda.gov/uniisearch/srs/unii/CNA0S5T234"
+      ],
+      "identity_evidence": "FDA food record supplies the pyranone/decan-5-olide aliases. FDA GSRS identifies the generic/racemic entry rather than a specified R or S enantiomer.",
+      "identity_note": "Distinct from gamma-decalactone CAS 706-14-9. Generic decalactone cannot select the ring position; preserve explicit enantiomer and racemate results rather than treating all stereochemical levels as equivalent.",
+      "scope_guards": [
+        "Do not include decanoic acid, 5-hydroxydecanoic acid itself, generic lactones, functionalized lactones, ring-opening polymers, substrate-only transformations or derivatives by substring.",
+        "Specific R/S identities require source evidence; this entry does not establish a particular enantiomer's membership or effects."
+      ],
+      "diagnostic_link": "Membership evidence relevant to later explicit review of DOI 10.1021/jo00033a007; this proposal does not reclassify that paper or edit the frozen uncertain diagnostic."
+    },
+    {
+      "name": "gamma-decalactone",
+      "cas_as_source": "706-14-9",
+      "exact_parent_synonyms": [
+        "gamma-decalactone",
+        "gamma decalactone",
+        "\u03b3-decalactone",
+        "gamma-decanolactone",
+        "decan-4-olide",
+        "4-hexyl-gamma-butyrolactone",
+        "5-hexyldihydro-2(3H)-furanone"
+      ],
+      "source_url": "https://www.femaflavor.org/flavor-library/gamma-decalactone",
+      "source_authority": "FEMA Flavor Ingredient Library; US FDA",
+      "verified_use": "flavor ingredient; flavoring agent or adjuvant",
+      "membership_evidence": "FEMA 2360 gives CAS 706-14-9 and fat/fruit/lactone/peach flavor profile. FDA independently identifies explicit flavoring use.",
+      "supporting_urls": [
+        "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=DECALACTONEgamma&set=FoodSubstances",
+        "https://www.femaflavor.org/flavor-library/search?fulltext=&page=7"
+      ],
+      "identity_evidence": "FDA supplies the gamma-decanolactone, hexylbutyrolactone and furanone aliases; FEMA search supplies decan-4-olide.",
+      "identity_note": "CAS here is generic stereochemical parent. Do not silently merge enantiopure material, delta-decalactone or unspecified decalactone.",
+      "scope_guards": [
+        "No broad decalactone or butyrolactone-family match. Exclude polymer/material, derivative and substrate-only studies unless an eligible unchanged-parent measurement or intended aroma-parent production is central."
+      ]
+    },
+    {
+      "name": "gamma-nonalactone",
+      "cas_as_source": "104-61-0",
+      "exact_parent_synonyms": [
+        "gamma-nonalactone",
+        "gamma nonalactone",
+        "\u03b3-nonalactone",
+        "nonan-4-olide",
+        "dihydro-5-pentyl-2(3H)-furanone",
+        "5-pentyldihydro-2(3H)-furanone"
+      ],
+      "source_url": "https://webprod.hc-sc.gc.ca/nhpid-bdipsn/ingredReq?id=2499&wbdisable=true",
+      "source_authority": "Health Canada NHPID; FEMA",
+      "verified_use": "flavour enhancer; fragrance ingredient",
+      "membership_evidence": "Individual NHPID chemical record identifies CAS 104-61-0 and explicit flavour-enhancer/fragrance-ingredient purposes; topical fragrance and oral flavor roles are distinguished in its restrictions.",
+      "supporting_urls": [
+        "https://www.femaflavor.org/flavor-library/gamma-nonalactone",
+        "https://precision.fda.gov/ginas/app/ui/substances/99a11123-4b6b-41c5-b472-a70449e3a6b4"
+      ],
+      "identity_evidence": "NHPID supplies nonan-4-olide and pentylfuranone identity; FDA GSRS identifies the gamma-nonalactone record as racemic.",
+      "identity_note": "Preserve racemate versus enantiopure results and distinguish other nonalactone ring-position isomers.",
+      "scope_guards": [
+        "Do not use generic nonalactone, gamma-lactone class or odorless substituted derivatives as exact matches. Mixture-only product assays do not establish parent activity."
+      ]
+    },
+    {
+      "name": "gamma-undecalactone",
+      "cas_as_source": "104-67-6",
+      "exact_parent_synonyms": [
+        "gamma-undecalactone",
+        "gamma undecalactone",
+        "\u03b3-undecalactone"
+      ],
+      "source_url": "https://www.femaflavor.org/flavor-library/gamma-undecalactone",
+      "source_authority": "FEMA Flavor Ingredient Library",
+      "verified_use": "flavor ingredient",
+      "membership_evidence": "FEMA 3091 identifies CAS 104-67-6 with apricot/fruit flavor profile.",
+      "supporting_urls": [],
+      "identity_evidence": "Individual FEMA record pairs this gamma-lactone name with CAS 104-67-6. Canonical orthographic forms only are proposed here, without relying on supplier trade-name aliases.",
+      "identity_note": "Do not infer a specific enantiomer from generic CAS/name. Aldehyde C-14 and peach aldehyde trade labels are omitted from automatic aliases because they can cause identity/category mistakes.",
+      "scope_guards": [
+        "Other undecalactones and functionalized derivatives remain distinct. Require central unchanged parent rather than mixture, polymer or reagent-only uses."
+      ]
+    },
+    {
+      "name": "hydroxycitronellal",
+      "cas_as_source": "107-75-5",
+      "exact_parent_synonyms": [
+        "hydroxycitronellal",
+        "hydroxy citronellal",
+        "7-hydroxycitronellal",
+        "7-hydroxy-3,7-dimethyloctanal",
+        "3,7-dimethyl-7-hydroxyoctanal",
+        "oxydihydrocitronellal"
+      ],
+      "source_url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=HYDROXYCITRONELLAL&set=FoodSubstances",
+      "source_authority": "US FDA Substances Added to Food; FDA cosmetic fragrance list",
+      "verified_use": "flavoring agent or adjuvant; fragrance ingredient",
+      "membership_evidence": "FDA food record identifies CAS 107-75-5 and explicit flavoring use, FEMA 2583; FDA cosmetic page explicitly lists hydroxycitronellal as a fragrance ingredient.",
+      "supporting_urls": [
+        "https://www.fda.gov/cosmetics/cosmetic-ingredients/allergens-cosmetics",
+        "https://precision.fda.gov/uniisearch/srs/unii/8SQ0VA4YUR"
+      ],
+      "identity_evidence": "FDA records supply exact hydroxy-octanal aliases; retained aldehyde names avoid a misleading octanol alias in a FEMA search snippet.",
+      "identity_note": "Generic stereochemistry does not establish R/S material. Distinct from citronellal, hydroxycitronellol, HICC/Lyral and acetals.",
+      "scope_guards": [
+        "Do not match hydroxycitronellal dimethyl/diethyl/propylene-glycol acetals or generic hydroxycitronellol by substring. Preserve tested purity and stereo identity."
+      ]
+    },
+    {
+      "name": "cinnamyl alcohol",
+      "cas_as_source": "104-54-1",
+      "exact_parent_synonyms": [
+        "cinnamyl alcohol",
+        "cinnamic alcohol",
+        "3-phenyl-2-propen-1-ol",
+        "gamma-phenylallyl alcohol",
+        "styryl carbinol",
+        "zimtalcohol"
+      ],
+      "source_url": "https://www.hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=CINNAMYLALCOHOL&set=FoodSubstances",
+      "source_authority": "US FDA Substances Added to Food; FDA cosmetic fragrance list",
+      "verified_use": "flavoring agent or adjuvant; fragrance ingredient",
+      "membership_evidence": "FDA identifies CAS 104-54-1, FEMA 2294 and explicit flavoring use; FDA cosmetic list independently names cinnamyl alcohol.",
+      "supporting_urls": [
+        "https://www.fda.gov/cosmetics/cosmetic-ingredients/allergens-cosmetics",
+        "https://www.femaflavor.org/flavor-library/search?fulltext=&page=5"
+      ],
+      "identity_evidence": "Exact aliases are supplied by the FDA individual food record.",
+      "identity_note": "Do not assign generic cinnamyl-alcohol studies to an E/trans or Z/cis stereoisomer without evidence. Cinnamaldehyde, cinnamic acid and cinnamyl esters are distinct parents.",
+      "scope_guards": [
+        "Cinnamyl alcohol is a common catalytic substrate: exclude synthesis of unrelated products, derivative libraries and reagent-only appearances unless intended aroma-parent production or eligible parent measurement is central."
+      ]
+    },
+    {
+      "name": "anisyl alcohol",
+      "cas_as_source": "105-13-5",
+      "exact_parent_synonyms": [
+        "anisyl alcohol",
+        "anise alcohol",
+        "anisic alcohol",
+        "p-methoxybenzyl alcohol",
+        "4-methoxybenzyl alcohol"
+      ],
+      "source_url": "https://www.femaflavor.org/flavor-library/anisyl-alcohol",
+      "source_authority": "FEMA Flavor Ingredient Library; FDA cosmetic fragrance list",
+      "verified_use": "flavor ingredient; fragrance ingredient",
+      "membership_evidence": "FEMA 2099 identifies CAS 105-13-5 with flower/herb flavor profile. FDA cosmetic list independently names anisyl alcohol.",
+      "supporting_urls": [
+        "https://www.femaflavor.org/flavor-library/search?fulltext=&page=1",
+        "https://www.fda.gov/cosmetics/cosmetic-ingredients/allergens-cosmetics"
+      ],
+      "identity_evidence": "FEMA search aliases explicitly identify the para-methoxybenzyl alcohol parent. 4-Methoxy is the equivalent para positional notation.",
+      "identity_note": "Do not merge o-/m-methoxybenzyl alcohol or an unspecified o/m/p commercial mixture with para CAS 105-13-5.",
+      "scope_guards": [
+        "Exclude anisyl protecting groups, anisyl alcohol as incidental substrate/reagent/solvent, anisaldehyde and anisyl esters by substring."
+      ]
+    },
+    {
+      "name": "geranyl acetate",
+      "cas_as_source": "105-87-3",
+      "exact_parent_synonyms": [
+        "geranyl acetate",
+        "geranyl ethanoate",
+        "trans-geranyl acetate",
+        "trans-geraniol acetate",
+        "(2E)-3,7-dimethylocta-2,6-dien-1-yl acetate"
+      ],
+      "source_url": "https://www.femaflavor.org/flavor-library/geranyl-acetate",
+      "source_authority": "FEMA Flavor Ingredient Library; FDA cosmetic fragrance list; NIST identity record",
+      "verified_use": "flavor ingredient; fragrance ingredient",
+      "membership_evidence": "FEMA 2509 pairs CAS 105-87-3 with lavender/rose profile. FDA explicitly includes Geranyl Acetate in its added fragrance-substance list.",
+      "supporting_urls": [
+        "https://www.fda.gov/cosmetics/cosmetic-ingredients/allergens-cosmetics",
+        "https://webbook.nist.gov/cgi/cbook.cgi?ID=C105873&Mask=2000&Type=KOVATS-RI-NON-POLAR-CUSTOM"
+      ],
+      "identity_evidence": "NIST identifies E-geranyl acetate CAS 105-87-3 and the exact listed ester aliases, separating Z-neryl acetate as a stereoisomer.",
+      "identity_note": "Neryl acetate, geraniol and mixed geranyl/neryl material are distinct. Preserve commercial purity and E/Z composition.",
+      "scope_guards": [
+        "Existing geraniol membership does not by itself justify geranyl-esters; this ester is independently verified. Do not admit unrelated substituted geranyl compounds or an unspecified ester mixture."
+      ]
+    },
+    {
+      "name": "eugenyl acetate",
+      "cas_as_source": "93-28-7",
+      "exact_parent_synonyms": [
+        "eugenyl acetate",
+        "acetyl eugenol",
+        "4-allyl-2-methoxyphenyl acetate",
+        "2-methoxy-4-(2-propen-1-yl)phenyl acetate"
+      ],
+      "source_url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=EUGENYLACETATE&set=foodsubstances",
+      "source_authority": "US FDA Substances Added to Food; FEMA; FDA cosmetic fragrance list",
+      "verified_use": "flavoring agent or adjuvant; fragrance ingredient",
+      "membership_evidence": "FDA food record identifies CAS 93-28-7, FEMA 2469 and explicit flavoring use; FEMA gives floral profile. FDA cosmetic list also names Eugenyl Acetate.",
+      "supporting_urls": [
+        "https://www.femaflavor.org/flavor-library/eugenyl-acetate",
+        "https://www.fda.gov/cosmetics/cosmetic-ingredients/allergens-cosmetics"
+      ],
+      "identity_evidence": "Exact ester aliases come from the FDA individual food record.",
+      "identity_note": "Distinct from eugenol, methyl eugenol, isoeugenol and isoeugenyl acetate CAS 93-29-8.",
+      "scope_guards": [
+        "Only unchanged eugenyl acetate is verified here; no automatic acceptance of generic acetylated eugenol derivatives, polymers or bioconjugates."
+      ]
+    },
+    {
+      "name": "alpha-terpinene",
+      "cas_as_source": "99-86-5",
+      "exact_parent_synonyms": [
+        "alpha-terpinene",
+        "alpha terpinene",
+        "\u03b1-terpinene",
+        "p-mentha-1,3-diene",
+        "1-methyl-4-isopropyl-1,3-cyclohexadiene"
+      ],
+      "source_url": "https://www.femaflavor.org/flavor-library/p-mentha-13-diene",
+      "source_authority": "FEMA Flavor Ingredient Library; FDA cosmetic fragrance list; FAO/JECFA",
+      "verified_use": "flavor ingredient; fragrance ingredient",
+      "membership_evidence": "FEMA 3558 identifies CAS 99-86-5 with lemon profile; FDA cosmetic list names Alpha-Terpinene.",
+      "supporting_urls": [
+        "https://www.femaflavor.org/flavor-library/search?fulltext=&page=30",
+        "https://www.fda.gov/cosmetics/cosmetic-ingredients/allergens-cosmetics",
+        "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-flav/details/en/c/1338/"
+      ],
+      "identity_evidence": "FEMA and JECFA explicitly map alpha-terpinene to p-mentha-1,3-diene CAS 99-86-5.",
+      "identity_note": "Distinct from gamma-terpinene, terpinolene and terpineol. JECFA commercial specification permits secondary components; a commercial assay does not make them the same parent.",
+      "scope_guards": [
+        "Generic terpinene does not establish alpha identity. Exclude oxidized terpinene products, terpene mixtures, atmospheric reaction-product-only, solvent-only and unrelated pesticidal studies."
+      ]
+    },
+    {
+      "name": "gamma-terpinene",
+      "cas_as_source": "99-85-4",
+      "exact_parent_synonyms": [
+        "gamma-terpinene",
+        "gamma terpinene",
+        "\u03b3-terpinene",
+        "p-mentha-1,4-diene",
+        "1-methyl-4-isopropyl-1,4-cyclohexadiene"
+      ],
+      "source_url": "https://www.femaflavor.org/flavor-library/p-mentha-14-diene",
+      "source_authority": "FEMA Flavor Ingredient Library; FAO/JECFA",
+      "verified_use": "flavor ingredient",
+      "membership_evidence": "FEMA 3559 identifies CAS 99-85-4 with bitter/citrus profile; FAO/JECFA independently lists it as flavoring with herbaceous-citrus aroma.",
+      "supporting_urls": [
+        "https://www.femaflavor.org/flavor-library/search?fulltext=&page=30",
+        "https://www.fao.org/4/y5777e/y5777e00.pdf"
+      ],
+      "identity_evidence": "FEMA search and FAO specification explicitly map gamma-terpinene to p-mentha-1,4-diene CAS 99-85-4.",
+      "identity_note": "Distinct from alpha-terpinene and terpinolene. Preserve composition of terpene mixtures and commercial material.",
+      "scope_guards": [
+        "Generic terpinene is ambiguous; no alpha/gamma interchange. Exclude oxidation/transformation-product, solvent-only, uncharacterized oil-mixture and insect-only applications."
+      ]
+    },
+    {
+      "name": "terpinolene",
+      "cas_as_source": "586-62-9",
+      "exact_parent_synonyms": [
+        "terpinolene"
+      ],
+      "source_url": "https://www.femaflavor.org/flavor-library/terpinolene",
+      "source_authority": "FEMA Flavor Ingredient Library; FDA cosmetic fragrance list",
+      "verified_use": "flavor ingredient; fragrance ingredient",
+      "membership_evidence": "FEMA 3046 identifies CAS 586-62-9 with pine flavor profile. FDA cosmetic list names Terpinolene.",
+      "supporting_urls": [
+        "https://www.fda.gov/cosmetics/cosmetic-ingredients/allergens-cosmetics"
+      ],
+      "identity_evidence": "Individual FEMA record directly pairs the canonical name with CAS 586-62-9.",
+      "identity_note": "Do not confuse terpinolene, terpinenes and terpineol. Commercial terpinolene grades may contain other monoterpenes; preserve tested composition.",
+      "scope_guards": [
+        "Exclude terpene mixtures without identified parent, oxidation-product-only, reagent/solvent-only and insect-only studies."
+      ]
+    },
+    {
+      "name": "(-)-sclareol",
+      "cas_as_source": "515-03-7",
+      "exact_parent_synonyms": [
+        "(-)-sclareol",
+        "sclareol",
+        "(13R)-labd-14-ene-8,13-diol"
+      ],
+      "source_url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=SCLAREOL&set=foodsubstances",
+      "source_authority": "US FDA Substances Added to Food; FEMA; Health Canada",
+      "verified_use": "flavoring agent or adjuvant; fragrance ingredient",
+      "membership_evidence": "FDA identifies (-)-sclareol CAS 515-03-7 with explicit flavoring role and FEMA 4502. FEMA gives floral profile; Health Canada's full assessment independently documents use of sclareol itself in fine fragrances and as a perfumery fixative.",
+      "supporting_urls": [
+        "https://www.femaflavor.org/flavor-library/sclareol",
+        "https://www.canada.ca/en/environment-climate-change/services/evaluating-existing-substances/screening-assessment-forchallenge-1-naphthalenepropanol-a-ethenyldecahydro-2-hydroxy-a2558a-pentamethyl-1r-1.html",
+        "https://www.fda.gov/cosmetics/cosmetic-ingredients/allergens-cosmetics"
+      ],
+      "identity_evidence": "FDA's specified parent includes the (13R)-labd-14-ene-8,13-diol alias, and Health Canada supplies full absolute-identity nomenclature for CAS 515-03-7.",
+      "identity_note": "Generic sclareol needs CAS or matching stereo identity where ambiguity matters. Do not merge epi-sclareol, sclareol glycol, sclareolide or sclareol metabolites. Established fragrance membership is for the parent itself, not merely a clary-sage mixture.",
+      "scope_guards": [
+        "Exclude clary sage/extract assays without measured parent, generic labdane antitumor scaffold libraries, analogues, complexes and precursor-only production of unrelated products. Preserve specified stereochemistry."
+      ]
+    },
+    {
+      "name": "hexadecanolactone",
+      "cas_as_source": "109-29-5",
+      "exact_parent_synonyms": [
+        "hexadecanolactone",
+        "hexadecanolide",
+        "oxacycloheptadecan-2-one"
+      ],
+      "source_url": "https://www.fda.gov/cosmetics/cosmetic-ingredients/allergens-cosmetics",
+      "source_authority": "US FDA cosmetic fragrance list; Health Canada/ECCC screening assessment; official cosmetic ingredient annex",
+      "verified_use": "fragrance ingredient",
+      "membership_evidence": "FDA explicitly lists Hexadecanolactone among added fragrance substances. Health Canada identifies hexadecanolide CAS 109-29-5 and states the assessed substances are used primarily as fragrances/fragrance ingredients.",
+      "supporting_urls": [
+        "https://www.canada.ca/en/environment-climate-change/services/evaluating-existing-substances/screening-assessment-macrocyclic-lactones-ketones-ionones-cyclohexanone-group.html",
+        "https://www.sfda.gov.sa/sites/default/files/2024-12/29147.pdf"
+      ],
+      "identity_evidence": "Health Canada explicitly maps hexadecanolide to oxacycloheptadecan-2-one CAS 109-29-5 (C16H30O2); official SFDA annex entry 335 maps the same chemical/CAS to the cosmetic name Hexadecanolactone.",
+      "identity_note": "NOT Exaltolide. Exaltolide is pentadecalactone/oxacyclohexadecan-2-one CAS 106-02-5 (C15H28O2), a different ring size. Also distinct from unsaturated hexadecenlactone/Ambrettolide.",
+      "scope_guards": [
+        "Do not broaden the ring-size parent to macrocyclic lactones generally, Exaltolide, ambrettolide, ring-opening polymers or derivatives. Commercial fragrance blends are mixtures, not this discrete parent."
+      ]
+    },
+    {
+      "name": "hexyl cinnamal",
+      "cas_as_source": "101-86-0",
+      "exact_parent_synonyms": [
+        "hexyl cinnamal",
+        "hexyl cinnamaldehyde",
+        "alpha-hexylcinnamaldehyde",
+        "alpha hexylcinnamaldehyde",
+        "\u03b1-hexylcinnamaldehyde",
+        "2-benzylideneoctanal"
+      ],
+      "source_url": "https://www.femaflavor.org/flavor-library/alpha-hexylcinnamaldehyde",
+      "source_authority": "FEMA Flavor Ingredient Library; FDA cosmetic fragrance list; FDA GSRS",
+      "verified_use": "flavor ingredient; fragrance ingredient",
+      "membership_evidence": "FEMA 2569 identifies alpha-hexylcinnamaldehyde CAS 101-86-0 as flavor ingredient. FDA cosmetic fragrance list independently includes hexyl cinnamaldehyde (rendered Hexyl cinnamaladehyde on that page).",
+      "supporting_urls": [
+        "https://precision.fda.gov/uniisearch/srs/unii/7X6O37OK2I",
+        "https://www.fda.gov/cosmetics/cosmetic-ingredients/allergens-cosmetics"
+      ],
+      "identity_evidence": "FDA GSRS maps Hexyl Cinnamal, alpha-hexylcinnamaldehyde and 2-benzylideneoctanal to CAS 101-86-0.",
+      "identity_note": "Generic commercial E/Z identity is retained; do not silently identify an isolated geometric isomer. Distinct from cinnamaldehyde and alpha-amylcinnamaldehyde.",
+      "scope_guards": [
+        "No generic cinnamal/cinnamaldehyde scaffold or hexyl-cinnamyl-alcohol matching. Exclude derivatives, complexes, product-mixture-only studies and incidental formula ingredients."
+      ]
+    },
+    {
+      "name": "amyl salicylate",
+      "cas_as_source": "2050-08-0",
+      "exact_parent_synonyms": [
+        "amyl salicylate",
+        "pentyl salicylate",
+        "pentyl 2-hydroxybenzoate",
+        "salicylic acid pentyl ester",
+        "benzoic acid, 2-hydroxy-, pentyl ester"
+      ],
+      "source_url": "https://www.fda.gov/cosmetics/cosmetic-ingredients/allergens-cosmetics",
+      "source_authority": "US FDA cosmetic fragrance list; FDA Substances Added to Food identity record",
+      "verified_use": "fragrance ingredient",
+      "membership_evidence": "FDA explicitly lists Amyl Salicylate among added fragrance substances. The independent FDA food inventory record establishes exact CAS/ester identity; its presence alone is not treated as evidence of a flavoring technical effect.",
+      "supporting_urls": [
+        "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=AMYLSALICYLATE&set=FoodSubstances"
+      ],
+      "identity_evidence": "FDA individual inventory record gives CAS 2050-08-0 and pentyl 2-hydroxybenzoate/pentyl salicylate aliases.",
+      "identity_note": "This is the straight-chain pentyl ester, not isoamyl/isopentyl salicylate or other amyl isomers, and not amyl 4-dimethylaminobenzoate sunscreen chemistry.",
+      "scope_guards": [
+        "Do not use broad amyl/salicylate or drug-family matching. Exclude other alkyl salicylates, salicylic-acid derivatives, solvent-only, UV-filter-only incidental formula components and generic salicylate pharmacology."
+      ]
+    }
+  ],
+  "delta_decalactone_membership_review": {
+    "reviewed_date": "2026-10-27",
+    "parent": "delta-decalactone",
+    "cas": "705-86-2",
+    "primary_membership_sources": [
+      {
+        "authority": "FEMA Flavor Ingredient Library",
+        "url": "https://www.femaflavor.org/flavor-library/delta-decalactone",
+        "evidence": "FEMA 2361; CAS 705-86-2; coconut flavor profile."
+      },
+      {
+        "authority": "US FDA Substances Added to Food",
+        "url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=DECALACTONEdelta&set=foodsubstances",
+        "evidence": "DELTA-DECALACTONE; CAS 705-86-2; explicit FLAVORING AGENT OR ADJUVANT; FEMA 2361."
+      }
+    ],
+    "paper_to_review_separately": "10.1021/jo00033a007",
+    "scope_of_this_finding": "Independent aroma-parent membership is established. This finding alone does not establish that the original paper centrally studies unchanged parent, satisfies provider/date/type gates, or should be admitted.",
+    "frozen_diagnostic_policy": "Preserve the original uncertain judgment and its original evidence verbatim. If root later readjudicates using these newly verified sources, retain a separately dated amendment with rationale and provenance. No diagnostic was edited in this task."
+  },
+  "identity_corrections_and_deferred_terms": [
+    {
+      "term": "hexadecanolactone / Exaltolide",
+      "decision": "Reject alias equivalence; keep hexadecanolactone CAS 109-29-5 in the 16-parent proposal.",
+      "reason": "Exaltolide is a separate verified fragrance parent, CAS 106-02-5, pentadecalactone/oxacyclohexadecan-2-one. It is not silently included as a synonym, extra molecule or 17th proposed parent in this bounded pass.",
+      "source_urls": [
+        "https://webprod.hc-sc.gc.ca/nhpid-bdipsn/ingredReq?id=2526",
+        "https://www.canada.ca/en/environment-climate-change/services/evaluating-existing-substances/screening-assessment-macrocyclic-lactones-ketones-ionones-cyclohexanone-group.html"
+      ]
+    },
+    {
+      "term": "decalactone / nonalactone / undecalactone / terpinene without positional designation",
+      "decision": "No automatic mapping to a proposed specific parent.",
+      "reason": "Ring position and alpha/gamma identity are material chemical distinctions; only a separate CAS, structure or exact identity statement can resolve them."
+    },
+    {
+      "term": "enantiopure or enriched commercial fragrance grades",
+      "decision": "Preserve study-specific stereochemistry and composition; no silent generic-to-specific CAS assignment.",
+      "reason": "Generic/racemic ingredient evidence does not establish a specific enantiomer's properties or effects, and blended commercial material is not automatically pure parent."
+    }
+  ],
+  "notes": [
+    "All 16 proposed names are absent from the inspected base/expanded/v2/v4 active parent-name lists.",
+    "This is a source-verified proposal for root review, not automatic allowlist activation or paper inclusion.",
+    "Primary official ingredient records and explicit odor/flavor profiles establish membership; generic medicinal plant, drug-scaffold, solvent-only or taste-only membership was not used.",
+    "FDA GSRS/UNII and NIST identity records support identity only when paired with separate ingredient-membership evidence.",
+    "Exact aliases are deliberately conservative; no broad scaffold/class terms, speculative trade-name bridges or CAS-based stereoisomer collapsing are proposed.",
+    "Shared eligibility and per-parent guards must be maintained before any discovery/classifier expansion."
+  ]
+}

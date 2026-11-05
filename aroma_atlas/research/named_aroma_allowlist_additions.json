@@ -1,0 +1,52 @@
+{
+  "source": "FDA Substances Added to Food, browsed individual government records",
+  "chemicals": [
+    {
+      "name": "carvacrol",
+      "cas": "499-75-2",
+      "exact_parent_synonyms": [
+        "carvacrol",
+        "isothymol"
+      ],
+      "source_url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=CARVACROL&set=FoodSubstances",
+      "verified_use": "flavoring agent or adjuvant",
+      "verified_date": "2026-10-27",
+      "inclusion_note": "Parent compound pharmacology is eligible; unrelated derivatives/scaffold libraries are not automatically eligible."
+    },
+    {
+      "name": "thymol",
+      "cas": "89-83-8",
+      "exact_parent_synonyms": [
+        "thymol"
+      ],
+      "source_url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=THYMOL&set=FoodSubstances",
+      "verified_use": "flavoring agent or adjuvant",
+      "verified_date": "2026-10-27",
+      "inclusion_note": "Parent compound pharmacology is eligible; unrelated derivatives/scaffold libraries are not automatically eligible."
+    },
+    {
+      "name": "cinnamaldehyde",
+      "cas": "104-55-2",
+      "exact_parent_synonyms": [
+        "cinnamaldehyde",
+        "cinnamic aldehyde",
+        "cinnamal"
+      ],
+      "source_url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=CINNAMALDEHYDE&set=FoodSubstances",
+      "verified_use": "flavoring agent or adjuvant",
+      "verified_date": "2026-10-27",
+      "inclusion_note": "Parent compound pharmacology is eligible; unrelated derivatives/scaffold libraries are not automatically eligible."
+    },
+    {
+      "name": "isoeugenol",
+      "cas": "97-54-1",
+      "exact_parent_synonyms": [
+        "isoeugenol"
+      ],
+      "source_url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=ISOEUGENOL&set=FoodSubstances",
+      "verified_use": "flavoring agent or adjuvant",
+      "verified_date": "2026-10-27",
+      "inclusion_note": "Parent compound pharmacology is eligible; unrelated derivatives/scaffold libraries are not automatically eligible."
+    }
+  ]
+}

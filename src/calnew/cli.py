@@ -30,6 +30,26 @@ def main(argv=None):
     s=sub.add_parser('retrieve');s.add_argument('pmcid');s.add_argument('--out',type=Path,default=Path('data/documents'))
     s=sub.add_parser('extraction-audit');s.add_argument('--gold',type=Path,required=True);s.add_argument('--predicted',type=Path,required=True);s.add_argument('--out',type=Path,required=True)
     s=sub.add_parser('suggest');s.add_argument('pool',type=Path);s.add_argument('--batch-size',type=int,required=True);s.add_argument('--policy',choices=['mixed','random','diversity'],default='mixed');s.add_argument('--out',type=Path,required=True)
+    s=sub.add_parser('pipeline',help='Modular quality -> potency -> combiner pipeline')
+    ps=s.add_subparsers(dest='pipeline_command',required=True)
+    t=ps.add_parser('train');t.add_argument('--snapshot',type=Path);t.add_argument('--out',type=Path,required=True)
+    t.add_argument('--reserved-run',type=Path,nargs='*',default=[Path('runs/basic-threshold-models'),Path('runs/basic-descriptor-models')])
+    t.add_argument('--anchor',choices=['fingerprint','unimol2'],default='fingerprint');t.add_argument('--folds',type=int,default=5)
+    t.add_argument('--fast',action='store_true');t.add_argument('--threads',type=int,default=8);t.add_argument('--cache',type=Path,default=Path('data/features'))
+    t=ps.add_parser('paper-benchmark',help='NOSE (arXiv:2604.10452) downstream protocol on non-reserved molecules')
+    t.add_argument('--snapshot',type=Path);t.add_argument('--out',type=Path,required=True);t.add_argument('--seeds',type=int,nargs='+',default=[42,43,44])
+    t.add_argument('--split-seed',type=int,default=42);t.add_argument('--threads',type=int,default=8)
+    t.add_argument('--robustness-splits',type=int,nargs='*',default=[43,44,45,46])
+    t.add_argument('--refit-validation',action='store_true',help='Separate expanded-training experiment: refit on development train+validation, retaining original test assignments and all reserved exclusions')
+    t.add_argument('--reserved-run',type=Path,nargs='*',default=[Path('runs/basic-threshold-models'),Path('runs/basic-descriptor-models')])
+    t=ps.add_parser('predict');t.add_argument('--run',type=Path,required=True);t.add_argument('--smiles',nargs='+',required=True)
+    t.add_argument('--dilution',type=float,default=1e-3);t.add_argument('--mixture',action='store_true');t.add_argument('--out',type=Path)
+    t.add_argument('--semantic-run',type=Path,help='Use a saved v3 pleasantness head validated on Keller higher-concentration targets')
+    t.add_argument('--intensity-run',type=Path,help='Use a saved Keller intensity head and its full dose curve')
+    t=ps.add_parser('intensity-predict',help='Predict with a saved training-selected Keller or Ravia intensity head')
+    t.add_argument('--run',type=Path,required=True);t.add_argument('--smiles',nargs='+',required=True)
+    t.add_argument('--dataset',choices=['keller','ravia'],default='keller');t.add_argument('--dilution',type=float)
+    t.add_argument('--out',type=Path)
     a=p.parse_args(argv)
     try:
         if a.command=='doctor':
@@ -103,6 +123,27 @@ def main(argv=None):
             pool=read_json(a.pool)
             result=suggest(pool['candidates'],a.batch_size,anchors=pool.get('anchors',[]),protected_groups=pool.get('protected_groups',[]),policy=a.policy)
             write_json(a.out,result)
+        elif a.command=='pipeline':
+            from .pipeline.run import predict as pipeline_predict,run_pipeline
+            if a.pipeline_command=='intensity-predict':
+                from .pipeline.intensity import predict_intensity
+                result=predict_intensity(a.run,a.smiles,a.dataset,a.dilution)
+                if a.out: write_json(a.out,result)
+            elif a.pipeline_command=='train':
+                snapshot=a.snapshot or Path(read_json(Path('data/current.json'))['snapshot'])
+                metrics=run_pipeline(snapshot,a.reserved_run,a.out,anchor=a.anchor,folds=a.folds,fast=a.fast,cache_root=a.cache,threads=a.threads,
+                                     log=lambda m:print(m,file=__import__('sys').stderr,flush=True))
+                result={'report':str(a.out/'REPORT.md'),'threshold_ensemble':metrics['threshold']['ensemble'],'threshold_v2':metrics['threshold']['v2'],
+                        'intensity':metrics['intensity']['pipeline_stage_B2_hill']}
+            elif a.pipeline_command=='paper-benchmark':
+                from .pipeline.paper_benchmark import run_paper_benchmark
+                snapshot=a.snapshot or Path(read_json(Path('data/current.json'))['snapshot'])
+                result=run_paper_benchmark(snapshot,a.reserved_run,a.out,tuple(a.seeds),a.split_seed,tuple(a.robustness_splits),threads=a.threads,
+                                           log=lambda m:print(m,file=__import__('sys').stderr,flush=True),refit_validation=a.refit_validation)
+                result={'report':str(a.out/'REPORT.md'),'summary':result}
+            else:
+                result=pipeline_predict(a.run,a.smiles,a.dilution,a.mixture,semantic_run=a.semantic_run,intensity_run=a.intensity_run)
+                if a.out: write_json(a.out,result)
         print(json.dumps(clean_json(result),indent=2))
     except (ValueError,RuntimeError,OSError,ImportError,KeyError) as exc:
         p.exit(2,f'CALNEW: {type(exc).__name__}: {exc}\n')

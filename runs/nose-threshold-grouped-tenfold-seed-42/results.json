@@ -1,0 +1,26 @@
+{
+  "difference_from_paper": "Ten-fold CV instead of its fixed 54-molecule test; reduced cohort and water auxiliary targets",
+  "mean": 0.8443765922727202,
+  "model_seed_sd": 0.0,
+  "model_seeds": [
+    42
+  ],
+  "molecules_scored": 186,
+  "pooled_pearson_per_model_seed": [
+    0.8443765922727202
+  ],
+  "reserved_holdouts_opened": false,
+  "seconds": 279,
+  "training_counts": [
+    167,
+    167,
+    167,
+    167,
+    168,
+    168,
+    168,
+    166,
+    168,
+    168
+  ]
+}

@@ -1,0 +1,14 @@
+pyproject.toml
+src/calnew/__init__.py
+src/calnew/__main__.py
+src/calnew/chemistry.py
+src/calnew/io.py
+src/calnew/schema.py
+src/calnew/store.py
+src/calnew/units.py
+src/calnew.egg-info/PKG-INFO
+src/calnew.egg-info/SOURCES.txt
+src/calnew.egg-info/dependency_links.txt
+src/calnew.egg-info/entry_points.txt
+src/calnew.egg-info/requires.txt
+src/calnew.egg-info/top_level.txt
