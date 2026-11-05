@@ -8,7 +8,7 @@ This folder holds a perfume ingredient dosing machine. It belongs to the wider *
 
 1. Predict molecular odour descriptors and airborne detection thresholds with a Python research pipeline.
 2. Build a gravimetric dispenser that doses ingredients into a vial, targeting **±20 mg** per dose (this folder).
-3. Measure odour thresholds with a separate dynamic-dilution olfactometer and feed the results back into the research.
+3. Measure odour thresholds with the sponsored olfactometer and feed the results back into the research.
 
 **What exists for the doser:**
 - feasibility analysis;
@@ -53,7 +53,7 @@ The public repository contains the reviewed design files in this folder. The Pyt
 | Diagrams alone | [electrical](doser-wiring/doser_wiring_electrical.svg), [air and liquid](doser-wiring/doser_tubing.svg) |
 | Visual concepts and scene generators | [doser-3d/](doser-3d) |
 | Overall research project and installation | [CALNEW README](../README.md) |
-| Separate odour measurement instrument | [Olfactometer-Build.md](../Olfactometer-Build.md) |
+| Sponsored odour measurement instrument | [Experimental measurements](../docs/ARCHITECTURE.md#experimental-measurements) |
 | Original research map | [CALNEW.canvas](../CALNEW.canvas) (open in Obsidian) |
 | Model results and architecture | [BASIC-MODELS.md](../docs/BASIC-MODELS.md), [ARCHITECTURE.md](../docs/ARCHITECTURE.md) |
 
@@ -148,7 +148,7 @@ The git branches carry only the source; environments, runs and snapshots are ign
 | `docs/` | Architecture, data provenance, model results, pipeline, NOSE-parity reports, improvement programme |
 | `tests/`, `scripts/` | Test suite; artifact verification, shuffle controls, candidate screening, macOS XGBoost repair |
 | `results/`, `reports/`, `research_notes/` | Candidate screening, six research syntheses, topic notes |
-| `olfactometer.py` | Standalone CLI for concentration, permeation, flow calibration, triads and threshold estimates |
+| `src/calnew/panel.py` | Response bounds and analysis utilities for prospective panel measurements |
 
 **Two endpoints:** catalogue descriptor annotations and airborne detection thresholds.
 

@@ -7,13 +7,7 @@ flowchart TD
   NOZZLE -.-> BAL["Balance → RS232 → ESP32<br/>closed-loop mass control; ±20 mg target"]
   BAL -.-> AIR
   UI["Planned phone/PC Wi-Fi or Bluetooth interface"] -.-> BAL
-  MATERIAL -.-> SYR["Separate olfactometer syringe feed"]
-  CLEAN["Qualified clean-air supply"] -.-> EVAP["Carrier + controlled evaporator<br/>vapor buffer; no aerosol"]
-  SYR -.-> EVAP
-  EVAP -.-> DIL["Source dilution + matched sample/blank selector<br/>one calibrated sample takeoff"]
-  CLEAN -.-> DIL
-  DIL -.-> MIX["One shared final mixer + bulk clean air"]
-  MIX -.-> CONES["Five balanced sniffing cones<br/>same concentration simultaneously"]
-  CONES -.-> RESP["Individual assessor responses<br/>delivered dose and protocol metadata"]
-  RESP -.-> BET["olfactometer.py / panel.py<br/>censoring-aware BET and panel analysis"]
+  MATERIAL -.-> OLFACT["Sponsored olfactometer<br/>secured for controlled odour presentation"]
+  OLFACT -.-> RESP["Individual assessor responses<br/>delivered dose and protocol metadata"]
+  RESP -.-> BET["panel.py<br/>censoring-aware threshold bounds and panel analysis"]
   BET -.-> REVIEW["Reviewed observations → evidence store<br/>future prospective evaluation"]

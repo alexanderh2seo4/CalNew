@@ -1,5 +1,5 @@
 {
-  "compiled": "2026-10-26",
+  "compiled": "2026-11-05",
   "method": "Read and format saved local artifacts; no new model computation or final-test target access.",
   "structural_cv": {
     "run": "modular-pipeline-fingerprint-v5",
@@ -890,134 +890,134 @@
   },
   "sources": [
     {
-      "path": "Support/README.md",
-      "bytes": 5364,
-      "sha256": "77ad02a3f5d5f1e7268093fb7b7fb2b9a571fa931e962a541bf94ff695da0a97"
+      "path": "README.md",
+      "bytes": 3748,
+      "sha256": "279e5995dd96dbe9ad177e7a7fdc9d0c1d9e5405b0fd85d9fefc328e5521938a"
     },
     {
-      "path": "Support/docs/ARCHITECTURE.md",
-      "bytes": 8989,
-      "sha256": "27bb96f66c84780687e160e2df9adc1981101224ed5d9f2c548a96515c14fcd3"
+      "path": "docs/ARCHITECTURE.md",
+      "bytes": 9217,
+      "sha256": "ed2c942d9b9631b40a5ce6cd8718fa784da2e7d156728582ac6a78419b589ddb"
     },
     {
-      "path": "Support/docs/DATA.md",
+      "path": "docs/DATA.md",
       "bytes": 4821,
       "sha256": "23aeceb5656e7a1d3f81e191cddae0bb8d3057a6edd3114c1acc36ac5bf35b2d"
     },
     {
-      "path": "Support/docs/BASIC-MODELS.md",
+      "path": "docs/BASIC-MODELS.md",
       "bytes": 5728,
       "sha256": "a7817d4475876d737206d2ebb9a21ee17a546408eb447d0a21cdf3ca31bd2b13"
     },
     {
-      "path": "Support/docs/PIPELINE.md",
-      "bytes": 22498,
-      "sha256": "ea13f8528154bf5de113e58358d2f4b9445102301e0dc92feffbedf7d9e3995d"
+      "path": "docs/PIPELINE.md",
+      "bytes": 22508,
+      "sha256": "8cf8b6b79ddbb5a55e77c717dee448bd8d0a054c784a31184f0c7dc317631184"
     },
     {
-      "path": "Support/docs/CONTINUATION.md",
-      "bytes": 12750,
-      "sha256": "faf529361242dd0f69242b0e7515ef0cfae858f63bded4208a34c380d4b0827f"
+      "path": "docs/CONTINUATION.md",
+      "bytes": 13694,
+      "sha256": "10ee982b2d86a33f57d7e0d569d8a56271c1e88a1fe14c039ad3701fa0beef2a"
     },
     {
-      "path": "Support/docs/NOSE-PARITY-AND-METHODS-REPORT.md",
-      "bytes": 19271,
-      "sha256": "54fe313050ebac6788d324600c00c74362257629b8c847e56f8eb0943ceeb784"
+      "path": "docs/NOSE-PARITY-AND-METHODS-REPORT.md",
+      "bytes": 19701,
+      "sha256": "850aadc40c18b0274905a6114018c14933ac3ec659baf20c5426f05f6ceee4f2"
     },
     {
-      "path": "Support/docs/INTENSITY-IMPROVEMENT.md",
-      "bytes": 16782,
-      "sha256": "48799cffbb68d11055737090e2603b97a72f8320f86f7e7e681240765dc7b98a"
+      "path": "docs/INTENSITY-IMPROVEMENT.md",
+      "bytes": 16702,
+      "sha256": "df04bfbb2c1c01f30f04eed061d47968c9c1b1b10f131fbc125325b2f7d3ca21"
     },
     {
-      "path": "Support/runs/modular-pipeline-fingerprint-v5/metrics.json",
-      "bytes": 9213,
-      "sha256": "892d0af54d1e1fba960daac089d4b507135a3ecf2f81d8aa2626a3cc85ccb264"
+      "path": "runs/modular-pipeline-fingerprint-v5/metrics.json",
+      "bytes": 8934,
+      "sha256": "7fdf73998a81d0d77093c2128ab77450fe04f0c68e45507753259c87a6475bbe"
     },
     {
-      "path": "Support/runs/modular-pipeline-fingerprint-v5/run.json",
-      "bytes": 2521,
-      "sha256": "80983a2f4ce0894a8e585464dd938b85ac5708c2f2bab811ac3eeb4cacdb8b94"
+      "path": "runs/modular-pipeline-fingerprint-v5/run.json",
+      "bytes": 2413,
+      "sha256": "1aa7702f398c119a8cebc4c2d0a50a18980c55c8b36d96bf5c22439ebadf16f5"
     },
     {
-      "path": "Support/runs/modular-pipeline-fingerprint-v5/REPORT.md",
-      "bytes": 3062,
-      "sha256": "843ac856897094f51e6c502a3a640d31115b84c08571c36c4a6923339550bfb9"
+      "path": "runs/modular-pipeline-fingerprint-v5/REPORT.md",
+      "bytes": 3008,
+      "sha256": "f8098cb1969d2b51ed083f8a085a96cf88ab5b1d73c37fe3ec21827ddbec5ec5"
     },
     {
-      "path": "Support/runs/nose-parity-current-audit-20261002.json",
-      "bytes": 34750,
-      "sha256": "d506eda8f503773b46aeeec8089ece8fb58d88cef855bef4addb63bbbaf8a3bc"
+      "path": "runs/nose-parity-current-audit-20261002.json",
+      "bytes": 33629,
+      "sha256": "d4392e9c513d52105040abbce68f15c826d629aa1841044f68f822c6a4296eb0"
     },
     {
-      "path": "Support/runs/nose-descriptor-selected-intensity-audit-v3/results.json",
-      "bytes": 457288,
-      "sha256": "b7562d9e1546e4a6b41b9beb2fe3e0773abcc5a85cad2653758413152ff5d167"
+      "path": "runs/nose-descriptor-selected-intensity-audit-v3/results.json",
+      "bytes": 445925,
+      "sha256": "2e33ad9c3ebe5cddda7b04e1e526f6e3b863306e8f14f5598b41f23fc7cf0aa8"
     },
     {
-      "path": "Support/runs/nose-descriptor-selected-intensity-audit-v3/verification.json",
-      "bytes": 2923,
-      "sha256": "d2a7efb871e2cce3bd5c009bed80df821f3cb1aa59af6a9978ebcd87745a0306"
+      "path": "runs/nose-descriptor-selected-intensity-audit-v3/verification.json",
+      "bytes": 2832,
+      "sha256": "aa35a9339e6bb5ace3a267796abf04eea5a9497dda3b68faeaac03ad228b0921"
     },
     {
-      "path": "Support/runs/nose-threshold-disjoint-semantic-direction-inner-v1/gate-summary.json",
-      "bytes": 2038,
-      "sha256": "e4749375c59252b4a059a392dec435f9fb149296b1f14862e8d70eae4e280541"
+      "path": "runs/nose-threshold-disjoint-semantic-direction-inner-v1/gate-summary.json",
+      "bytes": 1970,
+      "sha256": "4e64bad0ce7bcd82fe0e836659c6807bf59a7015fcea25cc02b0a210a02a9eb0"
     },
     {
-      "path": "Support/runs/basic-threshold-models/REPORT.md",
+      "path": "runs/basic-threshold-models/REPORT.md",
       "bytes": 1607,
       "sha256": "83eb32e3284594c17f2c15653a9a95ad5fcdbb4ce689dde01a8a055dc576d61a"
     },
     {
-      "path": "Support/runs/basic-descriptor-models/REPORT.md",
+      "path": "runs/basic-descriptor-models/REPORT.md",
       "bytes": 1430,
       "sha256": "d65d3ad075dab1917562f7560920eea08e0750be5d37a16445c28e7dc799b134"
     },
     {
-      "path": "Support/src/calnew/pipeline/run.py",
+      "path": "src/calnew/pipeline/run.py",
       "bytes": 28356,
       "sha256": "c917e493e7ea65413f1040080b903f7a1defc3afaca9896b22ae368e87d22698"
     },
     {
-      "path": "Support/src/calnew/pipeline/blocks.py",
+      "path": "src/calnew/pipeline/blocks.py",
       "bytes": 11950,
       "sha256": "e9eac2de1533714c5fd6f2ad43b89b80f583a5938f8186731ae1226ee0cd02be"
     },
     {
-      "path": "Support/src/calnew/pipeline/fusion.py",
+      "path": "src/calnew/pipeline/fusion.py",
       "bytes": 5820,
       "sha256": "6f56f7ad8c7d741883fd593759a2e0b301c0455c51df9a56643012bfb98203eb"
     },
     {
-      "path": "Support/src/calnew/pipeline/stages.py",
+      "path": "src/calnew/pipeline/stages.py",
       "bytes": 25426,
       "sha256": "4f46a023ba6841b0deac9dc33760d181324ce8d5f90dee357c2a8654776b0e9d"
     },
     {
-      "path": "Support/src/calnew/pipeline/semantic.py",
+      "path": "src/calnew/pipeline/semantic.py",
       "bytes": 7866,
       "sha256": "4c84ed9c6d101fb9a5ce702d2c65ea88bebb33b57b944cb6f3160cf478cf9050"
     },
     {
-      "path": "Support/src/calnew/pipeline/intensity.py",
+      "path": "src/calnew/pipeline/intensity.py",
       "bytes": 13375,
       "sha256": "a3147b3ef4476fd8e7f0768d611cfb21e40de8074cd33b16d9f7d88d50da7118"
     },
     {
-      "path": "Support/src/calnew/pipeline/dose_transfer.py",
+      "path": "src/calnew/pipeline/dose_transfer.py",
       "bytes": 1741,
       "sha256": "2c795a4f72b3dad936ebb00c9fcfa4fde1f72eddebaf6da73ff2720f280b09ed"
     },
     {
-      "path": "Support/src/calnew/pipeline/joint_intensity.py",
+      "path": "src/calnew/pipeline/joint_intensity.py",
       "bytes": 3664,
       "sha256": "58b937d4bf40167808f512311a7f9368741365de775bfecc02535c19e6b4b405"
     },
     {
       "path": "Auto doser/OVERVIEW.md",
-      "bytes": 10983,
-      "sha256": "e3a5674c72d8142b60bcb53a828e70365e93de35d8124a23c96bdbad44109b57"
+      "bytes": 10274,
+      "sha256": "b28261d8ca653c9de00866215bcdaef5cd0d7f877624eafc5916f0acbe7f6ac1"
     },
     {
       "path": "Auto doser/Doser-4-Line-Wiring.md",
@@ -1025,22 +1025,17 @@
       "sha256": "d64946c70a0d6144699b9eb3f480c680993a18bb779063cbf9d3b2bfc7246e30"
     },
     {
-      "path": "Support/Olfactometer-Five-Output-Design.md",
-      "bytes": 21944,
-      "sha256": "9a8ab58486bff4c581b1ecd08c338102d569e5f83c3c5f5b8ca2d30b4a4db2f8"
-    },
-    {
-      "path": "Support/research_notes/olfactory_pharmacophore_2026-10-09/local_model/README.md",
+      "path": "research_notes/olfactory_pharmacophore_2026-10-09/local_model/README.md",
       "bytes": 10187,
       "sha256": "cb6cf0002ad148670a546827c5bd774507dd1bd962e66a9fd42815f692edd93b"
     },
     {
-      "path": "Support/research_notes/olfactory_pharmacophore_2026-10-09/local_model/outputs/results.json",
+      "path": "research_notes/olfactory_pharmacophore_2026-10-09/local_model/outputs/results.json",
       "bytes": 646479,
       "sha256": "617888e6023f325709d5000699d1aa8dc7476693da5592bd2fed713cbd9c22dc"
     },
     {
-      "path": "Support/research_notes/olfactory_pharmacophore_2026-10-09/local_model/outputs/run_manifest.json",
+      "path": "research_notes/olfactory_pharmacophore_2026-10-09/local_model/outputs/run_manifest.json",
       "bytes": 8595,
       "sha256": "af3b5c8fe53a4061efae0066c8f4c7e4eb39467b882450fd9a45f8d528ff3034"
     }

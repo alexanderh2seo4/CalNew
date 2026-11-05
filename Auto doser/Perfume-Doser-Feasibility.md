@@ -6,7 +6,7 @@ come in**. One central air pump pressurises the headspace of each ingredient bot
 through its own solenoid; the liquid is pushed out through a dip tube and a dedicated
 line to a nozzle above the vial. Arduino-class control. Natural consumer of
 [CalNew](../README.md) formulas: the model proposes a formula, the doser makes it, a nose
-or the [olfactometer](../Olfactometer-Build.md) judges it.
+or the [sponsored olfactometer](../docs/ARCHITECTURE.md#experimental-measurements) supports its sensory evaluation.
 
 **Verdict: doable and cheap, in this form:**
 

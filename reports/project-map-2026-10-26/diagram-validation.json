@@ -4,7 +4,7 @@
     {
       "file": "diagram-01.svg",
       "nodes": 21,
-      "viewBox": "0 0 1658.5 2278",
+      "viewBox": "0 0 1658.5 2254",
       "nodeOverlaps": []
     },
     {
@@ -27,8 +27,8 @@
     },
     {
       "file": "diagram-05.svg",
-      "nodes": 17,
-      "viewBox": "0 0 1282.734375 1758",
+      "nodes": 12,
+      "viewBox": "0 0 988.5 1078",
       "nodeOverlaps": []
     },
     {
@@ -37,5 +37,6 @@
       "viewBox": "0 0 1791.09375 318",
       "nodeOverlaps": []
     }
-  ]
+  ],
+  "updated": "2026-11-05"
 }

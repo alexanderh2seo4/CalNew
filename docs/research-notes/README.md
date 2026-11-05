@@ -53,6 +53,8 @@ Einträge am 5. November 2026 anhand der RCSB-PDB-Seiten geprüft. Alle fünf Ei
 
 ## Experimentelle Übertragung und Geräte
 
+**Aktueller Gerätestand, 5. November 2026:** Ein Olfaktometer ist durch Sponsoring gesichert. Die experimentelle Planung richtet sich auf Messungen mit diesem Gerät.
+
 - Prüfen, wie gut eine Zelllinienantwort die Situation im Riechepithel abbildet. Lokale Anreicherung, Membranumgebung und Signalverarbeitung bleiben offene Erklärungsansätze.
 - Kontrollierte Geruchsdarbietung mit einem Olfaktometer und sensorbasierte Detektion beziehungsweise elektrische Signalaufzeichnung als unterschiedliche Messaufgaben planen.
 - Für Mischungsexperimente Konzentration, Mischungsverhältnis, Transportweg und zeitliche Abfolge dokumentieren.

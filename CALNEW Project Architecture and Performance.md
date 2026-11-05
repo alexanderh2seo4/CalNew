@@ -3,13 +3,13 @@ title: CALNEW Project Architecture and Model Performance
 compiled: 2026-10-26
 sensory_results_as_of: 2026-10-02
 pharmacophore_results_as_of: 2026-10-09
-hardware_overview_as_of: 2026-10-22
+hardware_overview_as_of: 2026-11-05
 tags: [calnew, architecture, model-performance, project-map]
 ---
 
 # CALNEW: project architecture and model performance
 
-CALNEW connects molecular odour prediction, candidate selection and proposed laboratory measurement. The working software has two model routes: an endpoint-specific benchmark system and a modular quality → intensity → descriptor-profile pipeline. A separate mouse-receptor pharmacophore calculation and two hardware designs extend the research, but are not validated parts of one integrated prediction-to-laboratory system.
+CALNEW connects molecular odour prediction, candidate selection and proposed laboratory measurement. The working software has two model routes: an endpoint-specific benchmark system and a modular quality → intensity → descriptor-profile pipeline. A separate mouse-receptor pharmacophore calculation, an ingredient-doser design and measurements using a sponsored olfactometer extend the research, but are not validated parts of one integrated prediction-to-laboratory system.
 
 **Read the editable map:** [[CALNEW Detailed Project Map.canvas]]. This report supplies the detailed diagrams, score tables and source links behind that map. A [scalable overview diagram](reports/project-map-2026-10-26/project-flowchart.svg) is also available. The companion [evidence manifest](reports/project-map-2026-10-26/evidence.json) retains exact values and hashes of the inspected files.
 
@@ -17,7 +17,7 @@ Compiled from saved local code, manifests and results. No models were retrained,
 
 ## 1. Whole-project flow
 
-Solid arrows show implemented data/model paths. Dashed arrows show proposed integration or future experimental work. Hardware nodes describe designs; their arrows do not establish that a rig has been built or calibrated.
+Solid arrows show implemented data/model paths. Dashed arrows show proposed integration or future experimental work. The doser remains a design; a sponsored olfactometer has been secured. Experimental arrows do not establish completed measurements or instrument calibration.
 
 ```mermaid
 flowchart TD
@@ -48,7 +48,7 @@ flowchart TD
   OUTPUT --> SELECT["Candidate screening and measurement priorities"]
   SELECT -.-> MATERIAL["Purchase or synthesise defined materials<br/>verify identity and purity"]
   MATERIAL -.-> DOSER["Gravimetric ingredient doser<br/>design; firmware and measured accuracy pending"]
-  MATERIAL -.-> OLFACT["Five-output dynamic-dilution olfactometer<br/>design; delivered concentration needs validation"]
+  MATERIAL -.-> OLFACT["Sponsored olfactometer<br/>secured for experimental measurements"]
   OLFACT -.-> PANEL["New panel responses<br/>threshold · profile · intensity · liking"]
   PANEL -.-> CURATE
   PH4["Separate Olfr73 ligand pharmacophore<br/>retrospective receptor-activity ranking"] -.-> SELECT
@@ -300,25 +300,19 @@ flowchart TD
   NOZZLE -.-> BAL["Balance → RS232 → ESP32<br/>closed-loop mass control; ±20 mg target"]
   BAL -.-> AIR
   UI["Planned phone/PC Wi-Fi or Bluetooth interface"] -.-> BAL
-  MATERIAL -.-> SYR["Separate olfactometer syringe feed"]
-  CLEAN["Qualified clean-air supply"] -.-> EVAP["Carrier + controlled evaporator<br/>vapor buffer; no aerosol"]
-  SYR -.-> EVAP
-  EVAP -.-> DIL["Source dilution + matched sample/blank selector<br/>one calibrated sample takeoff"]
-  CLEAN -.-> DIL
-  DIL -.-> MIX["One shared final mixer + bulk clean air"]
-  MIX -.-> CONES["Five balanced sniffing cones<br/>same concentration simultaneously"]
-  CONES -.-> RESP["Individual assessor responses<br/>delivered dose and protocol metadata"]
-  RESP -.-> BET["olfactometer.py / panel.py<br/>censoring-aware BET and panel analysis"]
+  MATERIAL -.-> OLFACT["Sponsored olfactometer<br/>secured for controlled odour presentation"]
+  OLFACT -.-> RESP["Individual assessor responses<br/>delivered dose and protocol metadata"]
+  RESP -.-> BET["panel.py<br/>censoring-aware threshold bounds and panel analysis"]
   BET -.-> REVIEW["Reviewed observations → evidence store<br/>future prospective evaluation"]
 ```
 
 The **doser** prepares ingredient mass. Its available work is feasibility, parts, wiring/tubing, septum analysis and Blender concepts. Firmware, wireless control implementation and measured dosing validation are pending. **±20 mg is an engineering target, not observed performance.**
 
-The **olfactometer** delivers odour in air. The revised five-output design makes one final mixture and splits it to five cones, nominally about 22 L/min per outlet. Calibration, settling, recovery and delivered-concentration validation remain necessary project work. The notes describe DIN performance targets and explicitly do not claim demonstrated compliance. Existing software can process responses; it does not validate physical delivery.
+A **sponsored olfactometer has been secured** for controlled odour presentation. The experimental programme now centres on using that instrument and recording delivered concentration, protocol and assessor responses. The measurement analysis remains separate from the instrument and does not certify its performance.
 
 There is no implemented automatic formula generator linking model output to the doser. The prospective synthesize/measure/retrain loop is a project direction rather than a completed experimental dataset.
 
-Sources: [doser overview](Auto%20doser/OVERVIEW.md), [wiring](Auto%20doser/Doser-4-Line-Wiring.md), [five-output olfactometer design](Olfactometer-Five-Output-Design.md), [candidate-screening report](results/canvas-candidates-2026-09-24/REPORT.md), [measurement selection](src/calnew/active.py).
+Sources: [doser overview](Auto%20doser/OVERVIEW.md), [wiring](Auto%20doser/Doser-4-Line-Wiring.md), [sponsored instrument and measurements](docs/ARCHITECTURE.md#experimental-measurements), [candidate-screening report](results/canvas-candidates-2026-09-24/REPORT.md), [measurement selection](src/calnew/active.py).
 
 ## 7. Separate receptor pharmacophore prototype
 
@@ -349,7 +343,7 @@ Sources: [prototype method and limitations](research_notes/olfactory_pharmacopho
 | Modular orchestration | `pipeline/data.py`, `blocks.py`, `fusion.py`, `stages.py`, `run.py` | `modular-pipeline-fingerprint-v5/{run,metrics,gates}.json`; OOF predictions; `pipeline.joblib` |
 | Improved head serving | `pipeline/{semantic,intensity,dose_transfer,joint_intensity}.py` | Keller, pleasantness and Ravia bundles listed above |
 | Evaluation/audits | `pipeline/paper_benchmark.py`; `Support/scripts/nose_*` | Frozen selections, raw predictions where retained, independent audit JSONs |
-| Future experimental loop | `active.py`, `panel.py`, `Support/olfactometer.py` | Candidate report and hardware design notes; no prospective validation series found |
+| Future experimental loop | `active.py`, `panel.py` | Candidate report, doser design and sponsored olfactometer; no prospective validation series found |
 | Receptor prototype | `local_model/run_model.py` in the pharmacophore research directory | `outputs/results.json`, manifest, SDF, plots and viewer |
 
 The saved project documentation reports **71 passing SSH tests** for the earlier intensity integration. That is historical verification, not a fresh test run for this report. Later audits verify particular prediction arrays and boundaries separately. Existing instructions in the project continuation restrict numerical training/evaluation/inference/tests to SSH; this reporting task only inspects and formats files locally.

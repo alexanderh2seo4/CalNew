@@ -11,7 +11,7 @@ CALNEW is a molecular odour research project combining prediction software, rece
 - [Current model/data report](docs/NOSE-RESEARCH-2026-10-28.md), [methods and comparison limits](docs/NOSE-PARITY-AND-METHODS-REPORT.md), and [pipeline documentation](docs/PIPELINE.md).
 - [Basic models](docs/BASIC-MODELS.md), [evidence acquisition](docs/DATA.md), and [architecture](docs/ARCHITECTURE.md).
 - [Four-line ingredient doser](Auto%20doser/OVERVIEW.md) — parts workbook, wiring/tubing, sealing analysis and Blender concepts. Firmware and measured accuracy remain pending.
-- [Five-output olfactometer](Olfactometer-Five-Output-Design.md) and [build notes](Olfactometer-Build.md).
+- [Experimental measurements](docs/ARCHITECTURE.md#experimental-measurements) — a sponsored olfactometer has been secured for the project.
 - [Receptor/docking research](reports/AlphaFold%20Docking%20und%20Pharmakophore%20f%C3%BCr%20CALNEW.md), [ligand-based prototype](research_notes/olfactory_pharmacophore_2026-10-09/local_model/README.md), and [literature atlas code](aroma_atlas/README.md).
 - [Public export scope and verification](docs/PUBLICATION.md).
 

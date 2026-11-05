@@ -90,7 +90,11 @@ These are software components, not validated sensory model branches:
 - `active.py`: uncertainty/diversity/analogue/anchor allocation, random and diversity controls, protected prospective groups and explicit material eligibility.
 - `panel.py`: response bounds and molecule-level pilot power simulation.
 
-The original `olfactometer.py` now reports below-range and above-range responses as censored, identifies mixed repeats, and labels interior BET values as derived estimates. Its ppb documentation now correctly says nmol/mol. The software does not certify rig delivery, panel protocol compliance or material purity.
+## Experimental measurements
+
+A sponsored olfactometer has been secured for CALNEW. The experimental programme will use this instrument for controlled odour presentation and panel measurements. Record the instrument configuration, delivered concentration, protocol and assessor responses alongside material identity and purity.
+
+`panel.py` preserves response bounds and censoring and distinguishes derived threshold estimates from raw observations. These analysis utilities do not certify instrument performance or panel protocol compliance.
 
 ## Completion boundary
 

@@ -8,7 +8,7 @@ The public repository combines the current local research software, methods, sel
 - Model architecture/method reports and selected lightweight run reports, metrics, protocols, frozen selections and audits.
 - An anonymized research-discussion README, with verified links to the five cited PDB entries.
 - Doser parts/wiring/tubing documentation, supplier workbook, diagram/Blender generators and visual assets.
-- Olfactometer design and analytical utility code.
+- Sponsored-instrument measurement context and general panel-analysis utilities.
 - Literature atlas collection/screening code and research methods, plus ligand-based pharmacophore prototype code and calculated outputs.
 
 ## Excluded or sanitized
@@ -23,6 +23,10 @@ The earlier contact-oriented literature compilation and researcher contact list 
 
 Verification for this export covers publication privacy screening, text/JSON/canvas parsing, Python syntax and the reviewed Git file set. Numerical model fitting, inference and tests remain restricted to the authorized remote compute environment. Historical reports of passing numerical tests are retained as historical evidence, not represented as a new run for this publication.
 
-The reviewed snapshot contains 577 files, approximately 30 MB. Static checks parsed 163 Python files, 251 JSON/canvas files and nine SVGs, checked the supplier workbook archive and verified the local Markdown links. The core package, existing tests and configurations match the local source snapshot byte for byte. PNG metadata containing local paths was removed while retaining the original compressed pixel data.
+The initial reviewed export contained 577 files, approximately 30 MB. Its static checks parsed 163 Python files, 251 JSON/canvas files and nine SVGs, checked the supplier workbook archive and verified the local Markdown links. At that initial export, the core package, existing tests and configurations matched the local source snapshot byte for byte. PNG metadata containing local paths was removed while retaining the original compressed pixel data.
 
 Third-party data and dependencies retain their source-specific conditions. The publication does not grant new rights to omitted datasets or to third-party materials referenced by the research reports.
+
+## Sponsored instrument update — 5 November 2026
+
+A sponsored olfactometer has been secured. The DIY build specifications, dedicated build/standards research, device canvas, rig calculators and their standalone CLI test were removed from the current tree. Project maps and hardware references now reflect use of the sponsored instrument. General panel-analysis code and scientific olfactometry references remain applicable to measurements.

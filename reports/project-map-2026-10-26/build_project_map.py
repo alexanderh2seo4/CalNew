@@ -6,7 +6,7 @@ import json
 import re
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[3]
+ROOT = Path(__file__).resolve().parents[2]
 OUT = Path(__file__).resolve().parent
 REPORT = ROOT / "CALNEW Project Architecture and Performance.md"
 CANVAS = ROOT / "CALNEW Detailed Project Map.canvas"
@@ -24,38 +24,37 @@ def digest(relative):
 
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
-    metrics = read_json("Support/runs/modular-pipeline-fingerprint-v5/metrics.json")
-    run = read_json("Support/runs/modular-pipeline-fingerprint-v5/run.json")
-    audit = read_json("Support/runs/nose-parity-current-audit-20261002.json")
-    descriptors = read_json("Support/runs/nose-descriptor-selected-intensity-audit-v3/results.json")
-    verification = read_json("Support/runs/nose-descriptor-selected-intensity-audit-v3/verification.json")
-    gate = read_json("Support/runs/nose-threshold-disjoint-semantic-direction-inner-v1/gate-summary.json")
-    ph4 = read_json("Support/research_notes/olfactory_pharmacophore_2026-10-09/local_model/outputs/results.json")
+    metrics = read_json("runs/modular-pipeline-fingerprint-v5/metrics.json")
+    run = read_json("runs/modular-pipeline-fingerprint-v5/run.json")
+    audit = read_json("runs/nose-parity-current-audit-20261002.json")
+    descriptors = read_json("runs/nose-descriptor-selected-intensity-audit-v3/results.json")
+    verification = read_json("runs/nose-descriptor-selected-intensity-audit-v3/verification.json")
+    gate = read_json("runs/nose-threshold-disjoint-semantic-direction-inner-v1/gate-summary.json")
+    ph4 = read_json("research_notes/olfactory_pharmacophore_2026-10-09/local_model/outputs/results.json")
     source_paths = [
-        "Support/README.md", "Support/docs/ARCHITECTURE.md", "Support/docs/DATA.md",
-        "Support/docs/BASIC-MODELS.md", "Support/docs/PIPELINE.md", "Support/docs/CONTINUATION.md",
-        "Support/docs/NOSE-PARITY-AND-METHODS-REPORT.md", "Support/docs/INTENSITY-IMPROVEMENT.md",
-        "Support/runs/modular-pipeline-fingerprint-v5/metrics.json",
-        "Support/runs/modular-pipeline-fingerprint-v5/run.json",
-        "Support/runs/modular-pipeline-fingerprint-v5/REPORT.md",
-        "Support/runs/nose-parity-current-audit-20261002.json",
-        "Support/runs/nose-descriptor-selected-intensity-audit-v3/results.json",
-        "Support/runs/nose-descriptor-selected-intensity-audit-v3/verification.json",
-        "Support/runs/nose-threshold-disjoint-semantic-direction-inner-v1/gate-summary.json",
-        "Support/runs/basic-threshold-models/REPORT.md",
-        "Support/runs/basic-descriptor-models/REPORT.md",
-        "Support/src/calnew/pipeline/run.py", "Support/src/calnew/pipeline/blocks.py",
-        "Support/src/calnew/pipeline/fusion.py", "Support/src/calnew/pipeline/stages.py",
-        "Support/src/calnew/pipeline/semantic.py", "Support/src/calnew/pipeline/intensity.py",
-        "Support/src/calnew/pipeline/dose_transfer.py", "Support/src/calnew/pipeline/joint_intensity.py",
+        "README.md", "docs/ARCHITECTURE.md", "docs/DATA.md",
+        "docs/BASIC-MODELS.md", "docs/PIPELINE.md", "docs/CONTINUATION.md",
+        "docs/NOSE-PARITY-AND-METHODS-REPORT.md", "docs/INTENSITY-IMPROVEMENT.md",
+        "runs/modular-pipeline-fingerprint-v5/metrics.json",
+        "runs/modular-pipeline-fingerprint-v5/run.json",
+        "runs/modular-pipeline-fingerprint-v5/REPORT.md",
+        "runs/nose-parity-current-audit-20261002.json",
+        "runs/nose-descriptor-selected-intensity-audit-v3/results.json",
+        "runs/nose-descriptor-selected-intensity-audit-v3/verification.json",
+        "runs/nose-threshold-disjoint-semantic-direction-inner-v1/gate-summary.json",
+        "runs/basic-threshold-models/REPORT.md",
+        "runs/basic-descriptor-models/REPORT.md",
+        "src/calnew/pipeline/run.py", "src/calnew/pipeline/blocks.py",
+        "src/calnew/pipeline/fusion.py", "src/calnew/pipeline/stages.py",
+        "src/calnew/pipeline/semantic.py", "src/calnew/pipeline/intensity.py",
+        "src/calnew/pipeline/dose_transfer.py", "src/calnew/pipeline/joint_intensity.py",
         "Auto doser/OVERVIEW.md", "Auto doser/Doser-4-Line-Wiring.md",
-        "Support/Olfactometer-Five-Output-Design.md",
-        "Support/research_notes/olfactory_pharmacophore_2026-10-09/local_model/README.md",
-        "Support/research_notes/olfactory_pharmacophore_2026-10-09/local_model/outputs/results.json",
-        "Support/research_notes/olfactory_pharmacophore_2026-10-09/local_model/outputs/run_manifest.json",
+        "research_notes/olfactory_pharmacophore_2026-10-09/local_model/README.md",
+        "research_notes/olfactory_pharmacophore_2026-10-09/local_model/outputs/results.json",
+        "research_notes/olfactory_pharmacophore_2026-10-09/local_model/outputs/run_manifest.json",
     ]
     evidence = {
-        "compiled": "2026-10-26",
+        "compiled": "2026-11-05",
         "method": "Read and format saved local artifacts; no new model computation or final-test target access.",
         "structural_cv": {"run": "modular-pipeline-fingerprint-v5", "manifest": run, "metrics": metrics},
         "repeated_development": {
@@ -153,10 +152,10 @@ def main():
     node("priorities", "## Screening and measurement priorities\n\nCombine model uncertainty, diversity, analogue comparisons and anchors. Preserve protected evaluation groups.\n\nExisting candidate-screening outputs demonstrate prioritisation, not new experimental validation or a validated probability of a potent derivative.\n\n[[src/calnew/active.py|active.py]] · [[results/canvas-candidates-2026-09-24/REPORT|Candidate report]]", 1660, 2890, 620, 300)
     node("materials", "## Material acquisition and chemistry\n\nPurchase defined references or synthesise matched analogues; verify chemical identity, stereochemistry and purity.\n\nA planned experimental route. The model does not implement a validated molecule or perfume-formula generator.\n\n[[CALNEW|Original research canvas]]", 2350, 2890, 620, 300, "2")
     node("doser", "## Gravimetric ingredient doser · design\n\nPump/buffer → bottle-specific normally-closed 3/2 air valves → dedicated FEP lines → fixed four-line nozzle. Balance feedback over RS232 to ESP32.\n\n**±20 mg is a target, not a measured result.**\n\nParts, wiring/tubing, cap/septum analysis and Blender concepts exist.\n\n[[Auto doser/OVERVIEW|Doser overview]]", 3040, 2890, 620, 300, "2")
-    node("olfactometer", "## Five-output olfactometer · design\n\nSyringe + carrier → controlled evaporator/vapour buffer → source dilution and sample/blank selector → one calibrated takeoff → shared final mixer → five balanced cones.\n\nFive people receive the same concentration; design targets ~22 L/min per cone. Delivered concentration/settling/recovery need verification. No demonstrated DIN compliance.\n\n[[Olfactometer-Five-Output-Design|Revised flow and performance targets]]", 3730, 2890, 790, 300, "2")
+    node("olfactometer", "## Sponsored olfactometer · secured\n\nA sponsored instrument has been secured for CALNEW. Use it for controlled odour presentation and prospective panel measurements.\n\nRecord instrument settings, delivered concentration, protocol and assessor responses with each measurement.\n\n[[docs/ARCHITECTURE#Experimental measurements|Experimental measurement context]]", 3730, 2890, 790, 300, "2")
     node("lab-separation", "## Two instruments, two different functions\n\nThe doser measures **ingredient mass into a vial**. The olfactometer controls **odour presentation in air**. They are not an implemented continuous automatic chain.\n\nThe Keller solution-dilution model does not establish the delivered airborne dose. Prospective measurements must retain material, protocol, concentration and assessor context.\n\n[[Auto doser/OVERVIEW|System status]] · [[docs/ARCHITECTURE|Observation model]]", 1660, 3340, 1310, 320)
     node("doser-pending", "## Doser work still pending\n\nFirmware; wireless control implementation; dosing-validation log.\n\nWi-Fi/Bluetooth control is a specification. Formula-to-doser execution is future work.\n\nAccuracy depends on balance feedback and after-drip control, not valve timing alone.\n\n[[Auto doser/Doser-4-Line-Wiring|Bring-up plan]]", 3040, 3340, 620, 320, "2")
-    node("panel", "## New panel observations · planned\n\nRecord each assessor's responses, delivered concentration and stimulus context.\n\nExisting olfactometer/panel code handles response bounds and censored BET estimates; software does not certify physical delivery or sensory validity.\n\nProspective thresholds, profiles, intensity, liking and recovery measurements would test the model.\n\n[[olfactometer.py|Response analysis]] · [[src/calnew/panel.py|Panel utilities]]", 3730, 3340, 790, 320, "2")
+    node("panel", "## New panel observations · planned\n\nRecord each assessor's responses, delivered concentration and stimulus context.\n\nExisting panel code handles response bounds and censored BET estimates; software does not certify physical delivery or sensory validity.\n\nProspective thresholds, profiles, intensity, liking and recovery measurements would test the model.\n\n[[src/calnew/panel.py|Panel utilities]]", 3730, 3340, 790, 320, "2")
     node("new-evidence", "## Proposed feedback to the evidence store\n\nReview new measurements with lineage, units, medium, material identity and experiment IDs. Feed accepted independent observations into a new snapshot and a preregistered evaluation.\n\nNo prospective end-to-end validation series was identified in the inspected artifacts.\n\n[[src/calnew/review.py|Review gates]]", 2350, 3820, 900, 320, "2")
 
     node("ph4-train", "## Receptor-specific training ligands\n\n25 published B-series agonists of mouse Olfr73.\n\nThis is a separate ligand-geometry calculation, not a trained human olfactory-receptor network.\n\n[[research_notes/olfactory_pharmacophore_2026-10-09/local_model/README|Prototype method]]", 40, 3900, 650, 300)
